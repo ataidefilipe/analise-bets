@@ -1,0 +1,4 @@
+Variavel,Periodo_Controle,Media_Controle,Desv_Controle,Periodo_Tratamento,Media_Tratamento,Desv_Tratamento,Delta_Absoluto,Delta_Pct,T_Stat,P_Valor_T,Mann_Whitney_U,P_Valor_U,Cohen_d
+Cartões por Partida,2014-2018 (Pré-Bets),5.054,2.32,2022-2024 (Alta Exposição),5.469,2.48,0.415,8.2,-4.6194,4.0106e-06,956730.0,1.3767e-05,0.1726
+Faltas por Partida,2015-2018 (Pré-Bets),30.733,7.125,2022-2023 (Alta Exposição),27.778,6.183,-2.956,-9.62,9.7466,5.1055e-22,723713.5,4.1160e-23,-0.4431
+Taxa Cartão / Falta,2015-2018 (Pré-Bets),0.169,0.075,2022-2023 (Alta Exposição),0.199,0.09,0.03,17.79,-8.3543,1.1372e-16,451367.0,2.3090e-14,0.3625

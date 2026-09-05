@@ -1,0 +1,28 @@
+{
+  "datasets": {
+    "partidas": {
+      "linhas": 8785,
+      "colunas": 22,
+      "csv_bytes": 1294320,
+      "parquet_bytes": 182772
+    },
+    "cartoes": {
+      "linhas": 20953,
+      "colunas": 14,
+      "csv_bytes": 2076167,
+      "parquet_bytes": 277879
+    },
+    "estatisticas": {
+      "linhas": 17570,
+      "colunas": 16,
+      "csv_bytes": 1064281,
+      "parquet_bytes": 151946
+    },
+    "gols": {
+      "linhas": 9861,
+      "colunas": 12,
+      "csv_bytes": 840359,
+      "parquet_bytes": 140380
+    }
+  }
+}
