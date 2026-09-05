@@ -1,0 +1,31 @@
+{
+  "source": "https://github.com/adaoduque/Brasileirao_Dataset",
+  "download_timestamp": "2026-09-05T11:52:58.288677",
+  "files": {
+    "campeonato-brasileiro-full.csv": {
+      "size_bytes": 1187343,
+      "sha256": "c09d03d36debfd7d7aee71da9a9f0909b5e420fc80a1705f215efc93c76e83fc",
+      "url": "https://raw.githubusercontent.com/adaoduque/Brasileirao_Dataset/master/campeonato-brasileiro-full.csv"
+    },
+    "campeonato-brasileiro-estatisticas-full.csv": {
+      "size_bytes": 1158368,
+      "sha256": "f6b9a1198fbc5641c0d0257ff7510029bb01aa01bbfbf692013529f7849f6c20",
+      "url": "https://raw.githubusercontent.com/adaoduque/Brasileirao_Dataset/master/campeonato-brasileiro-estatisticas-full.csv"
+    },
+    "campeonato-brasileiro-cartoes.csv": {
+      "size_bytes": 1550718,
+      "sha256": "4376ed95901b25d6c425127bf542b7746e086e1a20116b49d7a5d87949ac95e8",
+      "url": "https://raw.githubusercontent.com/adaoduque/Brasileirao_Dataset/master/campeonato-brasileiro-cartoes.csv"
+    },
+    "campeonato-brasileiro-gols.csv": {
+      "size_bytes": 509564,
+      "sha256": "625262ca9e7301907f94a0ef235b672d803a488d1e9d8833c31e51d4ffbe5664",
+      "url": "https://raw.githubusercontent.com/adaoduque/Brasileirao_Dataset/master/campeonato-brasileiro-gols.csv"
+    },
+    "Legenda.txt": {
+      "size_bytes": 2113,
+      "sha256": "dfedf5fb55d9d7b178bce0e0e0b639c380d42d27af76a7d3ef1f1d6db6d1de1f",
+      "url": "https://raw.githubusercontent.com/adaoduque/Brasileirao_Dataset/master/Legenda.txt"
+    }
+  }
+}
