@@ -1,0 +1,201 @@
+temporada,clube_slug,tem_patrocinio_bet,tipo_patrocinio_bet,marca_principal_bet,num_marcas_bet,fonte_informacao,score_posicao,score_quantidade,trends_normalizado_medio,fase_regulatoria,score_macro,bet_exposure_clube,bet_exposure_total,categoria_exposicao_clube
+2015,athletico_pr,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0244,Pre-Legalizacao,0.0244,0.0,0.0061,Nenhuma
+2015,atletico_mg,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0244,Pre-Legalizacao,0.0244,0.0,0.0061,Nenhuma
+2015,avai,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0244,Pre-Legalizacao,0.0244,0.0,0.0061,Nenhuma
+2015,chapecoense,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0244,Pre-Legalizacao,0.0244,0.0,0.0061,Nenhuma
+2015,corinthians,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0244,Pre-Legalizacao,0.0244,0.0,0.0061,Nenhuma
+2015,coritiba,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0244,Pre-Legalizacao,0.0244,0.0,0.0061,Nenhuma
+2015,cruzeiro,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0244,Pre-Legalizacao,0.0244,0.0,0.0061,Nenhuma
+2015,figueirense,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0244,Pre-Legalizacao,0.0244,0.0,0.0061,Nenhuma
+2015,flamengo,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0244,Pre-Legalizacao,0.0244,0.0,0.0061,Nenhuma
+2015,fluminense,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0244,Pre-Legalizacao,0.0244,0.0,0.0061,Nenhuma
+2015,goias,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0244,Pre-Legalizacao,0.0244,0.0,0.0061,Nenhuma
+2015,gremio,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0244,Pre-Legalizacao,0.0244,0.0,0.0061,Nenhuma
+2015,internacional,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0244,Pre-Legalizacao,0.0244,0.0,0.0061,Nenhuma
+2015,joinville,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0244,Pre-Legalizacao,0.0244,0.0,0.0061,Nenhuma
+2015,palmeiras,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0244,Pre-Legalizacao,0.0244,0.0,0.0061,Nenhuma
+2015,ponte_preta,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0244,Pre-Legalizacao,0.0244,0.0,0.0061,Nenhuma
+2015,santos,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0244,Pre-Legalizacao,0.0244,0.0,0.0061,Nenhuma
+2015,sao_paulo,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0244,Pre-Legalizacao,0.0244,0.0,0.0061,Nenhuma
+2015,sport,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0244,Pre-Legalizacao,0.0244,0.0,0.0061,Nenhuma
+2015,vasco,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0244,Pre-Legalizacao,0.0244,0.0,0.0061,Nenhuma
+2016,america_mg,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0233,Pre-Legalizacao,0.0233,0.0,0.0058,Nenhuma
+2016,athletico_pr,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0233,Pre-Legalizacao,0.0233,0.0,0.0058,Nenhuma
+2016,atletico_mg,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0233,Pre-Legalizacao,0.0233,0.0,0.0058,Nenhuma
+2016,botafogo_rj,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0233,Pre-Legalizacao,0.0233,0.0,0.0058,Nenhuma
+2016,chapecoense,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0233,Pre-Legalizacao,0.0233,0.0,0.0058,Nenhuma
+2016,corinthians,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0233,Pre-Legalizacao,0.0233,0.0,0.0058,Nenhuma
+2016,coritiba,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0233,Pre-Legalizacao,0.0233,0.0,0.0058,Nenhuma
+2016,cruzeiro,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0233,Pre-Legalizacao,0.0233,0.0,0.0058,Nenhuma
+2016,figueirense,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0233,Pre-Legalizacao,0.0233,0.0,0.0058,Nenhuma
+2016,flamengo,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0233,Pre-Legalizacao,0.0233,0.0,0.0058,Nenhuma
+2016,fluminense,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0233,Pre-Legalizacao,0.0233,0.0,0.0058,Nenhuma
+2016,gremio,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0233,Pre-Legalizacao,0.0233,0.0,0.0058,Nenhuma
+2016,internacional,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0233,Pre-Legalizacao,0.0233,0.0,0.0058,Nenhuma
+2016,palmeiras,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0233,Pre-Legalizacao,0.0233,0.0,0.0058,Nenhuma
+2016,ponte_preta,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0233,Pre-Legalizacao,0.0233,0.0,0.0058,Nenhuma
+2016,santa_cruz,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0233,Pre-Legalizacao,0.0233,0.0,0.0058,Nenhuma
+2016,santos,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0233,Pre-Legalizacao,0.0233,0.0,0.0058,Nenhuma
+2016,sao_paulo,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0233,Pre-Legalizacao,0.0233,0.0,0.0058,Nenhuma
+2016,sport,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0233,Pre-Legalizacao,0.0233,0.0,0.0058,Nenhuma
+2016,vitoria,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0233,Pre-Legalizacao,0.0233,0.0,0.0058,Nenhuma
+2017,athletico_pr,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0334,Pre-Legalizacao,0.0334,0.0,0.0084,Nenhuma
+2017,atletico_go,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0334,Pre-Legalizacao,0.0334,0.0,0.0084,Nenhuma
+2017,atletico_mg,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0334,Pre-Legalizacao,0.0334,0.0,0.0084,Nenhuma
+2017,avai,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0334,Pre-Legalizacao,0.0334,0.0,0.0084,Nenhuma
+2017,bahia,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0334,Pre-Legalizacao,0.0334,0.0,0.0084,Nenhuma
+2017,botafogo_rj,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0334,Pre-Legalizacao,0.0334,0.0,0.0084,Nenhuma
+2017,chapecoense,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0334,Pre-Legalizacao,0.0334,0.0,0.0084,Nenhuma
+2017,corinthians,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0334,Pre-Legalizacao,0.0334,0.0,0.0084,Nenhuma
+2017,coritiba,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0334,Pre-Legalizacao,0.0334,0.0,0.0084,Nenhuma
+2017,cruzeiro,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0334,Pre-Legalizacao,0.0334,0.0,0.0084,Nenhuma
+2017,flamengo,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0334,Pre-Legalizacao,0.0334,0.0,0.0084,Nenhuma
+2017,fluminense,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0334,Pre-Legalizacao,0.0334,0.0,0.0084,Nenhuma
+2017,gremio,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0334,Pre-Legalizacao,0.0334,0.0,0.0084,Nenhuma
+2017,palmeiras,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0334,Pre-Legalizacao,0.0334,0.0,0.0084,Nenhuma
+2017,ponte_preta,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0334,Pre-Legalizacao,0.0334,0.0,0.0084,Nenhuma
+2017,santos,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0334,Pre-Legalizacao,0.0334,0.0,0.0084,Nenhuma
+2017,sao_paulo,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0334,Pre-Legalizacao,0.0334,0.0,0.0084,Nenhuma
+2017,sport,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0334,Pre-Legalizacao,0.0334,0.0,0.0084,Nenhuma
+2017,vasco,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0334,Pre-Legalizacao,0.0334,0.0,0.0084,Nenhuma
+2017,vitoria,False,nenhum,Nenhum,0,IBOPE Repucom / Histórico,0.0,0.0,0.0334,Pre-Legalizacao,0.0334,0.0,0.0084,Nenhuma
+2018,america_mg,False,nenhum,Nenhum,0,IBOPE Repucom / Mapa do Patrocínio,0.0,0.0,0.0695,Legalizacao_Expansao,0.0695,0.0,0.0174,Nenhuma
+2018,athletico_pr,False,nenhum,Nenhum,0,IBOPE Repucom / Mapa do Patrocínio,0.0,0.0,0.0695,Legalizacao_Expansao,0.0695,0.0,0.0174,Nenhuma
+2018,atletico_mg,False,nenhum,Nenhum,0,IBOPE Repucom / Mapa do Patrocínio,0.0,0.0,0.0695,Legalizacao_Expansao,0.0695,0.0,0.0174,Nenhuma
+2018,bahia,False,nenhum,Nenhum,0,IBOPE Repucom / Mapa do Patrocínio,0.0,0.0,0.0695,Legalizacao_Expansao,0.0695,0.0,0.0174,Nenhuma
+2018,botafogo_rj,False,nenhum,Nenhum,0,IBOPE Repucom / Mapa do Patrocínio,0.0,0.0,0.0695,Legalizacao_Expansao,0.0695,0.0,0.0174,Nenhuma
+2018,ceara,False,nenhum,Nenhum,0,IBOPE Repucom / Mapa do Patrocínio,0.0,0.0,0.0695,Legalizacao_Expansao,0.0695,0.0,0.0174,Nenhuma
+2018,chapecoense,False,nenhum,Nenhum,0,IBOPE Repucom / Mapa do Patrocínio,0.0,0.0,0.0695,Legalizacao_Expansao,0.0695,0.0,0.0174,Nenhuma
+2018,corinthians,False,nenhum,Nenhum,0,IBOPE Repucom / Mapa do Patrocínio,0.0,0.0,0.0695,Legalizacao_Expansao,0.0695,0.0,0.0174,Nenhuma
+2018,cruzeiro,False,nenhum,Nenhum,0,IBOPE Repucom / Mapa do Patrocínio,0.0,0.0,0.0695,Legalizacao_Expansao,0.0695,0.0,0.0174,Nenhuma
+2018,flamengo,False,nenhum,Nenhum,0,IBOPE Repucom / Mapa do Patrocínio,0.0,0.0,0.0695,Legalizacao_Expansao,0.0695,0.0,0.0174,Nenhuma
+2018,fluminense,False,nenhum,Nenhum,0,IBOPE Repucom / Mapa do Patrocínio,0.0,0.0,0.0695,Legalizacao_Expansao,0.0695,0.0,0.0174,Nenhuma
+2018,gremio,False,nenhum,Nenhum,0,IBOPE Repucom / Mapa do Patrocínio,0.0,0.0,0.0695,Legalizacao_Expansao,0.0695,0.0,0.0174,Nenhuma
+2018,internacional,False,nenhum,Nenhum,0,IBOPE Repucom / Mapa do Patrocínio,0.0,0.0,0.0695,Legalizacao_Expansao,0.0695,0.0,0.0174,Nenhuma
+2018,palmeiras,False,nenhum,Nenhum,0,IBOPE Repucom / Mapa do Patrocínio,0.0,0.0,0.0695,Legalizacao_Expansao,0.0695,0.0,0.0174,Nenhuma
+2018,parana,False,nenhum,Nenhum,0,IBOPE Repucom / Mapa do Patrocínio,0.0,0.0,0.0695,Legalizacao_Expansao,0.0695,0.0,0.0174,Nenhuma
+2018,santos,False,nenhum,Nenhum,0,IBOPE Repucom / Mapa do Patrocínio,0.0,0.0,0.0695,Legalizacao_Expansao,0.0695,0.0,0.0174,Nenhuma
+2018,sao_paulo,False,nenhum,Nenhum,0,IBOPE Repucom / Mapa do Patrocínio,0.0,0.0,0.0695,Legalizacao_Expansao,0.0695,0.0,0.0174,Nenhuma
+2018,sport,False,nenhum,Nenhum,0,IBOPE Repucom / Mapa do Patrocínio,0.0,0.0,0.0695,Legalizacao_Expansao,0.0695,0.0,0.0174,Nenhuma
+2018,vasco,False,nenhum,Nenhum,0,IBOPE Repucom / Mapa do Patrocínio,0.0,0.0,0.0695,Legalizacao_Expansao,0.0695,0.0,0.0174,Nenhuma
+2018,vitoria,False,nenhum,Nenhum,0,IBOPE Repucom / Mapa do Patrocínio,0.0,0.0,0.0695,Legalizacao_Expansao,0.0695,0.0,0.0174,Nenhuma
+2019,corinthians,True,mangas,Marjosports,1,GE / IBOPE Repucom,0.5,0.5,0.1424,Legalizacao_Expansao,0.1424,0.5,0.4106,Baixa/Media
+2019,fortaleza,True,master,NetBet,1,IBOPE Repucom,1.0,0.5,0.1424,Legalizacao_Expansao,0.1424,0.875,0.7106,Alta
+2019,goias,True,master,Marjosports,1,IBOPE Repucom,1.0,0.5,0.1424,Legalizacao_Expansao,0.1424,0.875,0.7106,Alta
+2019,vasco,True,master,NetBet,1,IBOPE Repucom,1.0,0.5,0.1424,Legalizacao_Expansao,0.1424,0.875,0.7106,Alta
+2019,bahia,True,secundario,Casa de Apostas,1,IBOPE Repucom,0.3,0.5,0.1424,Legalizacao_Expansao,0.1424,0.35,0.2906,Baixa/Media
+2019,botafogo_rj,True,secundario,Casa de Apostas,1,IBOPE Repucom,0.3,0.5,0.1424,Legalizacao_Expansao,0.1424,0.35,0.2906,Baixa/Media
+2019,cruzeiro,True,secundario,Casa de Apostas,1,IBOPE Repucom,0.3,0.5,0.1424,Legalizacao_Expansao,0.1424,0.35,0.2906,Baixa/Media
+2019,santos,True,secundario,Casa de Apostas,1,IBOPE Repucom,0.3,0.5,0.1424,Legalizacao_Expansao,0.1424,0.35,0.2906,Baixa/Media
+2019,chapecoense,True,master,Dafabet,1,IBOPE Repucom,1.0,0.5,0.1424,Legalizacao_Expansao,0.1424,0.875,0.7106,Alta
+2019,athletico_pr,False,nenhum,Nenhum,0,Balanço / GE,0.0,0.0,0.1424,Legalizacao_Expansao,0.1424,0.0,0.0356,Nenhuma
+2019,atletico_mg,False,nenhum,Nenhum,0,Balanço / GE,0.0,0.0,0.1424,Legalizacao_Expansao,0.1424,0.0,0.0356,Nenhuma
+2019,avai,False,nenhum,Nenhum,0,Balanço / GE,0.0,0.0,0.1424,Legalizacao_Expansao,0.1424,0.0,0.0356,Nenhuma
+2019,ceara,False,nenhum,Nenhum,0,Balanço / GE,0.0,0.0,0.1424,Legalizacao_Expansao,0.1424,0.0,0.0356,Nenhuma
+2019,csa,False,nenhum,Nenhum,0,Balanço / GE,0.0,0.0,0.1424,Legalizacao_Expansao,0.1424,0.0,0.0356,Nenhuma
+2019,flamengo,False,nenhum,Nenhum,0,Balanço / GE,0.0,0.0,0.1424,Legalizacao_Expansao,0.1424,0.0,0.0356,Nenhuma
+2019,fluminense,False,nenhum,Nenhum,0,Balanço / GE,0.0,0.0,0.1424,Legalizacao_Expansao,0.1424,0.0,0.0356,Nenhuma
+2019,gremio,False,nenhum,Nenhum,0,Balanço / GE,0.0,0.0,0.1424,Legalizacao_Expansao,0.1424,0.0,0.0356,Nenhuma
+2019,internacional,False,nenhum,Nenhum,0,Balanço / GE,0.0,0.0,0.1424,Legalizacao_Expansao,0.1424,0.0,0.0356,Nenhuma
+2019,palmeiras,False,nenhum,Nenhum,0,Balanço / GE,0.0,0.0,0.1424,Legalizacao_Expansao,0.1424,0.0,0.0356,Nenhuma
+2019,sao_paulo,False,nenhum,Nenhum,0,Balanço / GE,0.0,0.0,0.1424,Legalizacao_Expansao,0.1424,0.0,0.0356,Nenhuma
+2020,flamengo,True,secundario,Sportsbet.io,1,Balanço CRF / GE,0.3,0.5,0.2262,Legalizacao_Expansao,0.2262,0.35,0.3116,Baixa/Media
+2020,corinthians,True,mangas,Galera.bet,1,IBOPE Repucom,0.5,0.5,0.2262,Legalizacao_Expansao,0.2262,0.5,0.4316,Baixa/Media
+2020,sao_paulo,True,secundario,Betsul,1,IBOPE Repucom,0.3,0.5,0.2262,Legalizacao_Expansao,0.2262,0.35,0.3116,Baixa/Media
+2020,gremio,True,secundario,Betsul,1,IBOPE Repucom,0.3,0.5,0.2262,Legalizacao_Expansao,0.2262,0.35,0.3116,Baixa/Media
+2020,internacional,True,secundario,Betsul,1,IBOPE Repucom,0.3,0.5,0.2262,Legalizacao_Expansao,0.2262,0.35,0.3116,Baixa/Media
+2020,atletico_mg,True,secundario,Betsul,1,IBOPE Repucom,0.3,0.5,0.2262,Legalizacao_Expansao,0.2262,0.35,0.3116,Baixa/Media
+2020,bahia,True,secundario,Casa de Apostas,1,IBOPE Repucom,0.3,0.5,0.2262,Legalizacao_Expansao,0.2262,0.35,0.3116,Baixa/Media
+2020,botafogo_rj,True,secundario,Casa de Apostas,1,IBOPE Repucom,0.3,0.5,0.2262,Legalizacao_Expansao,0.2262,0.35,0.3116,Baixa/Media
+2020,santos,True,secundario,Casa de Apostas,1,IBOPE Repucom,0.3,0.5,0.2262,Legalizacao_Expansao,0.2262,0.35,0.3116,Baixa/Media
+2020,fortaleza,True,master,NetBet,1,IBOPE Repucom,1.0,0.5,0.2262,Legalizacao_Expansao,0.2262,0.875,0.7315,Alta
+2020,vasco,True,master,NetBet,1,IBOPE Repucom,1.0,0.5,0.2262,Legalizacao_Expansao,0.2262,0.875,0.7315,Alta
+2020,ceara,True,secundario,Betsul,1,IBOPE Repucom,0.3,0.5,0.2262,Legalizacao_Expansao,0.2262,0.35,0.3116,Baixa/Media
+2020,coritiba,True,secundario,Marjosports,1,IBOPE Repucom,0.3,0.5,0.2262,Legalizacao_Expansao,0.2262,0.35,0.3116,Baixa/Media
+2020,goias,True,master,Marjosports,1,IBOPE Repucom,1.0,0.5,0.2262,Legalizacao_Expansao,0.2262,0.875,0.7315,Alta
+2020,sport,True,secundario,Betsul,1,IBOPE Repucom,0.3,0.5,0.2262,Legalizacao_Expansao,0.2262,0.35,0.3116,Baixa/Media
+2020,athletico_pr,False,nenhum,Nenhum,0,Balanço / GE,0.0,0.0,0.2262,Legalizacao_Expansao,0.2262,0.0,0.0566,Nenhuma
+2020,atletico_go,False,nenhum,Nenhum,0,Balanço / GE,0.0,0.0,0.2262,Legalizacao_Expansao,0.2262,0.0,0.0566,Nenhuma
+2020,bragantino,False,nenhum,Nenhum,0,Balanço / GE,0.0,0.0,0.2262,Legalizacao_Expansao,0.2262,0.0,0.0566,Nenhuma
+2020,fluminense,False,nenhum,Nenhum,0,Balanço / GE,0.0,0.0,0.2262,Legalizacao_Expansao,0.2262,0.0,0.0566,Nenhuma
+2020,palmeiras,False,nenhum,Nenhum,0,Balanço / GE,0.0,0.0,0.2262,Legalizacao_Expansao,0.2262,0.0,0.0566,Nenhuma
+2021,atletico_mg,True,master,Betano,1,IBOPE Repucom,1.0,0.5,0.4191,Legalizacao_Expansao,0.4191,0.875,0.7798,Alta
+2021,fluminense,True,master,Betano,1,IBOPE Repucom,1.0,0.5,0.4191,Legalizacao_Expansao,0.4191,0.875,0.7798,Alta
+2021,sao_paulo,True,master,Sportsbet.io,1,IBOPE Repucom,1.0,0.5,0.4191,Legalizacao_Expansao,0.4191,0.875,0.7798,Alta
+2021,santos,True,master,Dafabet,1,IBOPE Repucom,1.0,0.5,0.4191,Legalizacao_Expansao,0.4191,0.875,0.7798,Alta
+2021,america_mg,True,master,Pixbet,1,IBOPE Repucom,1.0,0.5,0.4191,Legalizacao_Expansao,0.4191,0.875,0.7798,Alta
+2021,atletico_go,True,master,AmuletoBet,1,IBOPE Repucom,1.0,0.5,0.4191,Legalizacao_Expansao,0.4191,0.875,0.7798,Alta
+2021,bahia,True,master,Casa de Apostas,1,IBOPE Repucom,1.0,0.5,0.4191,Legalizacao_Expansao,0.4191,0.875,0.7798,Alta
+2021,ceara,True,secundario,Betcris,1,IBOPE Repucom,0.3,0.5,0.4191,Legalizacao_Expansao,0.4191,0.35,0.3598,Baixa/Media
+2021,fortaleza,True,secundario,Betcris,1,IBOPE Repucom,0.3,0.5,0.4191,Legalizacao_Expansao,0.4191,0.35,0.3598,Baixa/Media
+2021,flamengo,True,secundario,Sportsbet.io,1,Balanço CRF / GE,0.3,0.5,0.4191,Legalizacao_Expansao,0.4191,0.35,0.3598,Baixa/Media
+2021,corinthians,True,mangas,Galera.bet,1,IBOPE Repucom,0.5,0.5,0.4191,Legalizacao_Expansao,0.4191,0.5,0.4798,Baixa/Media
+2021,chapecoense,True,master,Pixbet,1,IBOPE Repucom,1.0,0.5,0.4191,Legalizacao_Expansao,0.4191,0.875,0.7798,Alta
+2021,juventude,True,master,Marsbet,1,IBOPE Repucom,1.0,0.5,0.4191,Legalizacao_Expansao,0.4191,0.875,0.7798,Alta
+2021,sport,True,master,Galera.bet,1,IBOPE Repucom,1.0,0.5,0.4191,Legalizacao_Expansao,0.4191,0.875,0.7798,Alta
+2021,gremio,True,secundario,Betsul,1,IBOPE Repucom,0.3,0.5,0.4191,Legalizacao_Expansao,0.4191,0.35,0.3598,Baixa/Media
+2021,internacional,True,secundario,Betsul,1,IBOPE Repucom,0.3,0.5,0.4191,Legalizacao_Expansao,0.4191,0.35,0.3598,Baixa/Media
+2021,bragantino,True,mangas,NetBet,1,IBOPE Repucom,0.5,0.5,0.4191,Legalizacao_Expansao,0.4191,0.5,0.4798,Baixa/Media
+2021,cuiaba,False,nenhum,Nenhum,0,Balanço / GE,0.0,0.0,0.4191,Legalizacao_Expansao,0.4191,0.0,0.1048,Nenhuma
+2021,athletico_pr,False,nenhum,Nenhum,0,Balanço / GE,0.0,0.0,0.4191,Legalizacao_Expansao,0.4191,0.0,0.1048,Nenhuma
+2021,palmeiras,False,nenhum,Nenhum,0,Balanço / GE,0.0,0.0,0.4191,Legalizacao_Expansao,0.4191,0.0,0.1048,Nenhuma
+2022,america_mg,True,master,Pixbet,1,IBOPE Repucom,1.0,0.5,0.7249,Legalizacao_Expansao,0.7249,0.875,0.8562,Alta
+2022,athletico_pr,True,mangas,Betsson,1,IBOPE Repucom,0.5,0.5,0.7249,Legalizacao_Expansao,0.7249,0.5,0.5562,Baixa/Media
+2022,atletico_go,True,master,AmuletoBet,1,IBOPE Repucom,1.0,0.5,0.7249,Legalizacao_Expansao,0.7249,0.875,0.8562,Alta
+2022,atletico_mg,True,master,Betano,1,IBOPE Repucom,1.0,0.5,0.7249,Legalizacao_Expansao,0.7249,0.875,0.8562,Alta
+2022,avai,True,master,Pixbet,1,IBOPE Repucom,1.0,0.5,0.7249,Legalizacao_Expansao,0.7249,0.875,0.8562,Alta
+2022,botafogo_rj,True,mangas,EstrelaBet,1,IBOPE Repucom,0.5,0.5,0.7249,Legalizacao_Expansao,0.7249,0.5,0.5562,Baixa/Media
+2022,bragantino,True,mangas,MrJack.bet,1,IBOPE Repucom,0.5,0.5,0.7249,Legalizacao_Expansao,0.7249,0.5,0.5562,Baixa/Media
+2022,ceara,True,master,Betcris,1,IBOPE Repucom,1.0,0.5,0.7249,Legalizacao_Expansao,0.7249,0.875,0.8562,Alta
+2022,corinthians,True,mangas,Galera.bet,1,IBOPE Repucom,0.5,0.5,0.7249,Legalizacao_Expansao,0.7249,0.5,0.5562,Baixa/Media
+2022,coritiba,True,secundario,Marjosports,1,IBOPE Repucom,0.3,0.5,0.7249,Legalizacao_Expansao,0.7249,0.35,0.4362,Baixa/Media
+2022,flamengo,True,secundario,Pixbet,1,Balanço CRF / GE,0.3,0.5,0.7249,Legalizacao_Expansao,0.7249,0.35,0.4362,Baixa/Media
+2022,fluminense,True,master,Betano,1,IBOPE Repucom,1.0,0.5,0.7249,Legalizacao_Expansao,0.7249,0.875,0.8562,Alta
+2022,fortaleza,True,secundario,Betcris,1,IBOPE Repucom,0.3,0.5,0.7249,Legalizacao_Expansao,0.7249,0.35,0.4362,Baixa/Media
+2022,goias,True,master,Pixbet,1,IBOPE Repucom,1.0,0.5,0.7249,Legalizacao_Expansao,0.7249,0.875,0.8562,Alta
+2022,internacional,True,secundario,EstrelaBet,1,IBOPE Repucom,0.3,0.5,0.7249,Legalizacao_Expansao,0.7249,0.35,0.4362,Baixa/Media
+2022,juventude,True,master,Pixbet,1,IBOPE Repucom,1.0,0.5,0.7249,Legalizacao_Expansao,0.7249,0.875,0.8562,Alta
+2022,santos,True,master,Pixbet,1,IBOPE Repucom,1.0,0.5,0.7249,Legalizacao_Expansao,0.7249,0.875,0.8562,Alta
+2022,sao_paulo,True,master,Sportsbet.io,1,IBOPE Repucom,1.0,0.5,0.7249,Legalizacao_Expansao,0.7249,0.875,0.8562,Alta
+2022,cuiaba,False,nenhum,Nenhum,0,Balanço / GE,0.0,0.0,0.7249,Legalizacao_Expansao,0.7249,0.0,0.1812,Nenhuma
+2022,palmeiras,False,nenhum,Nenhum,0,Balanço / GE,0.0,0.0,0.7249,Legalizacao_Expansao,0.7249,0.0,0.1812,Nenhuma
+2023,america_mg,True,master,EstrelaBet,1,IBOPE Repucom,1.0,0.5,0.8797,Regulamentacao,0.8797,0.875,0.8949,Alta
+2023,athletico_pr,True,master,Esportes da Sorte,1,IBOPE Repucom,1.0,0.5,0.8797,Regulamentacao,0.8797,0.875,0.8949,Alta
+2023,atletico_mg,True,master,Betano,1,IBOPE Repucom,1.0,0.5,0.8797,Regulamentacao,0.8797,0.875,0.8949,Alta
+2023,bahia,True,master,Esportes da Sorte,1,IBOPE Repucom,1.0,0.5,0.8797,Regulamentacao,0.8797,0.875,0.8949,Alta
+2023,botafogo_rj,True,master,Parimatch,1,IBOPE Repucom,1.0,0.5,0.8797,Regulamentacao,0.8797,0.875,0.8949,Alta
+2023,bragantino,True,mangas,MrJack.bet,1,IBOPE Repucom,0.5,0.5,0.8797,Regulamentacao,0.8797,0.5,0.5949,Baixa/Media
+2023,corinthians,True,secundario,Pixbet,1,IBOPE Repucom,0.3,0.5,0.8797,Regulamentacao,0.8797,0.35,0.4749,Baixa/Media
+2023,coritiba,True,secundario,Dafabet,1,IBOPE Repucom,0.3,0.5,0.8797,Regulamentacao,0.8797,0.35,0.4749,Baixa/Media
+2023,cruzeiro,True,master,Betfair,1,IBOPE Repucom,1.0,0.5,0.8797,Regulamentacao,0.8797,0.875,0.8949,Alta
+2023,flamengo,True,secundario,Pixbet,1,Balanço CRF / GE,0.3,0.5,0.8797,Regulamentacao,0.8797,0.35,0.4749,Baixa/Media
+2023,fluminense,True,master,Betano,1,IBOPE Repucom,1.0,0.5,0.8797,Regulamentacao,0.8797,0.875,0.8949,Alta
+2023,fortaleza,True,master,Novibet,1,IBOPE Repucom,1.0,0.5,0.8797,Regulamentacao,0.8797,0.875,0.8949,Alta
+2023,goias,True,master,Esportes da Sorte,1,IBOPE Repucom,1.0,0.5,0.8797,Regulamentacao,0.8797,0.875,0.8949,Alta
+2023,gremio,True,secundario,Esportes da Sorte,1,IBOPE Repucom,0.3,0.5,0.8797,Regulamentacao,0.8797,0.35,0.4749,Baixa/Media
+2023,internacional,True,secundario,EstrelaBet,1,IBOPE Repucom,0.3,0.5,0.8797,Regulamentacao,0.8797,0.35,0.4749,Baixa/Media
+2023,santos,True,master,Blaze,1,IBOPE Repucom,1.0,0.5,0.8797,Regulamentacao,0.8797,0.875,0.8949,Alta
+2023,sao_paulo,True,master,Sportsbet.io,1,IBOPE Repucom,1.0,0.5,0.8797,Regulamentacao,0.8797,0.875,0.8949,Alta
+2023,vasco,True,master,Pixbet,1,IBOPE Repucom,1.0,0.5,0.8797,Regulamentacao,0.8797,0.875,0.8949,Alta
+2023,cuiaba,False,nenhum,Nenhum,0,Balanço / GE,0.0,0.0,0.8797,Regulamentacao,0.8797,0.0,0.2199,Nenhuma
+2023,palmeiras,False,nenhum,Nenhum,0,Balanço / GE,0.0,0.0,0.8797,Regulamentacao,0.8797,0.0,0.2199,Nenhuma
+2024,athletico_pr,True,master,Esportes da Sorte,1,IBOPE Repucom,1.0,0.5,0.9458,Regulamentacao,0.9458,0.875,0.9114,Alta
+2024,atletico_go,True,master,Blaze,1,IBOPE Repucom,1.0,0.5,0.9458,Regulamentacao,0.9458,0.875,0.9114,Alta
+2024,atletico_mg,True,master,Betano,1,IBOPE Repucom,1.0,0.5,0.9458,Regulamentacao,0.9458,0.875,0.9114,Alta
+2024,bahia,True,master,Esportes da Sorte,1,IBOPE Repucom,1.0,0.5,0.9458,Regulamentacao,0.9458,0.875,0.9114,Alta
+2024,botafogo_rj,True,master,Parimatch,1,IBOPE Repucom,1.0,0.5,0.9458,Regulamentacao,0.9458,0.875,0.9114,Alta
+2024,bragantino,True,master,MrJack.bet,1,IBOPE Repucom,1.0,0.5,0.9458,Regulamentacao,0.9458,0.875,0.9114,Alta
+2024,corinthians,True,master,Esportes da Sorte,2,IBOPE Repucom / GE,1.0,1.0,0.9458,Regulamentacao,0.9458,1.0,0.9864,Alta
+2024,criciuma,True,master,EstrelaBet,1,IBOPE Repucom,1.0,0.5,0.9458,Regulamentacao,0.9458,0.875,0.9114,Alta
+2024,cruzeiro,True,master,Betfair,1,IBOPE Repucom,1.0,0.5,0.9458,Regulamentacao,0.9458,0.875,0.9114,Alta
+2024,flamengo,True,master,Pixbet,1,Balanço CRF / GE,1.0,0.5,0.9458,Regulamentacao,0.9458,0.875,0.9114,Alta
+2024,fluminense,True,master,Superbet,1,IBOPE Repucom,1.0,0.5,0.9458,Regulamentacao,0.9458,0.875,0.9114,Alta
+2024,fortaleza,True,master,Novibet,1,IBOPE Repucom,1.0,0.5,0.9458,Regulamentacao,0.9458,0.875,0.9114,Alta
+2024,gremio,True,secundario,Esportes da Sorte,1,IBOPE Repucom,0.3,0.5,0.9458,Regulamentacao,0.9458,0.35,0.4914,Baixa/Media
+2024,internacional,True,secundario,EstrelaBet,1,IBOPE Repucom,0.3,0.5,0.9458,Regulamentacao,0.9458,0.35,0.4914,Baixa/Media
+2024,juventude,True,master,Stake,1,IBOPE Repucom,1.0,0.5,0.9458,Regulamentacao,0.9458,0.875,0.9114,Alta
+2024,sao_paulo,True,master,Superbet,1,IBOPE Repucom,1.0,0.5,0.9458,Regulamentacao,0.9458,0.875,0.9114,Alta
+2024,vasco,True,master,Betfair,1,IBOPE Repucom,1.0,0.5,0.9458,Regulamentacao,0.9458,0.875,0.9114,Alta
+2024,vitoria,True,master,Betsat,1,IBOPE Repucom,1.0,0.5,0.9458,Regulamentacao,0.9458,0.875,0.9114,Alta
+2024,cuiaba,False,nenhum,Nenhum,0,Balanço / GE,0.0,0.0,0.9458,Regulamentacao,0.9458,0.0,0.2364,Nenhuma
+2024,palmeiras,False,nenhum,Nenhum,0,Balanço / GE,0.0,0.0,0.9458,Regulamentacao,0.9458,0.0,0.2364,Nenhuma

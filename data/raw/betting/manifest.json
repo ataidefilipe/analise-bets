@@ -1,0 +1,33 @@
+{
+  "dataset": "Betting Exposure Raw Data (MVP 2)",
+  "created_at": "2026-09-06",
+  "files": {
+    "serie_a_patrocinios_2015_2024.csv": {
+      "sha256": "43528358007bc3dbf06dc8fa1fb3c674fe98723ffa09d3d537a54785eb7d7634",
+      "bytes": 12016,
+      "rows": 200,
+      "columns": [
+        "temporada",
+        "clube_slug",
+        "tem_patrocinio_bet",
+        "tipo_patrocinio_bet",
+        "marca_principal_bet",
+        "num_marcas_bet",
+        "fonte_informacao"
+      ]
+    },
+    "google_trends_brasil_2015_2025.csv": {
+      "sha256": "7f6d27ae8fecac28cf79e76e5ca285c1601e5419c240797f7e50d38867e77e43",
+      "bytes": 7419,
+      "rows": 132,
+      "columns": [
+        "data",
+        "ano",
+        "mes",
+        "termo_pesquisa",
+        "google_trends_score",
+        "pais"
+      ]
+    }
+  }
+}

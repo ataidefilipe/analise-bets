@@ -1,0 +1,38 @@
+{
+  "dataset": "Betting Exposure Processed Data (MVP 2)",
+  "created_at": "2026-09-06",
+  "files": {
+    "trends_mensal.parquet": {
+      "sha256": "a058f1685dd5f8a02ba7ec7c30af1fefbeae07af4e02171505363b2602834f01",
+      "bytes": 8510
+    },
+    "trends_mensal.csv": {
+      "sha256": "6bef76374a463837ee7d98647016448709183216511d8432d1f94ddc71c69551",
+      "bytes": 10737
+    },
+    "trends_anual.parquet": {
+      "sha256": "60d67ddff7e31b7d2ecb7f3e01282b68344c3284bf026d023d1049dd50d3f94c",
+      "bytes": 6258
+    },
+    "trends_anual.csv": {
+      "sha256": "c091d6c75d5f38c97b5e2e3a4ce86d69d9848b2b21855ee8fc35dce6a2d9fed6",
+      "bytes": 1049
+    },
+    "exposicao_clubes_temporada.parquet": {
+      "sha256": "95a1cdb27bec9758b8cb87b038639d2a6b681ca7d57af8d567511b7ec64bf32d",
+      "bytes": 11808
+    },
+    "exposicao_clubes_temporada.csv": {
+      "sha256": "524929ada3390dd61d33b6d57e8d315b79a1a5a9848a01a71b40106d10c5f67b",
+      "bytes": 24159
+    },
+    "partidas_com_exposure.parquet": {
+      "sha256": "1783d4d7c636bdbfaa04d1d71c2be3490ce01de9d8e5543887844510dc62e9c5",
+      "bytes": 209675
+    },
+    "partidas_com_exposure.csv": {
+      "sha256": "d3e598f6bff9db1a9da042d74551312da9b1cba07515011e55c24cecf043f793",
+      "bytes": 2246068
+    }
+  }
+}

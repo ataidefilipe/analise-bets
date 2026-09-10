@@ -1,4 +1,4 @@
-﻿# Dicionário de Dados — Datasets Processados da Série A
+# Dicionário de Dados — Datasets Processados da Série A
 
 **Projeto:** Impacto das Apostas Esportivas no Futebol Brasileiro  
 **Localização dos Arquivos:** `data/processed/serie_a/`  
@@ -133,3 +133,56 @@ Os datasets da Série A foram normalizados a partir dos dados brutos do Adão Du
 | `acrescimo` | `int64` | Não | Minutos de acréscimo | $\ge 0$ |
 | `periodo` | `string` | Não | Etapa do gol | `1T` ou `2T` |
 | `tipo_de_gol` | `string` | Não | Modo de conversão do gol | `Normal` (8.678), `Penalty` (935), `Gol Contra` (248) |
+
+---
+
+## 6. Datasets de Apostas e Exposição (`data/processed/betting/`)
+
+### 6.1 Dataset: `trends_mensal` e `trends_anual`
+* **Descrição:** Série histórica de interesse por apostas esportivas no Brasil extraída do Google Trends (2015–2025).
+* **Granularidade:** Mensal (132 registros) e Anual (11 registros).
+* **Campos Principais:**
+  * `ano` (`int64`): Temporada de referência (2015–2025).
+  * `mes` (`int64`, mensal): Mês de referência (1 a 12).
+  * `fase_regulatoria` (`string`): `Pre-Legalizacao`, `Legalizacao_Expansao`, `Regulamentacao`, `Mercado_Regulado`.
+  * `google_trends_score` (`float64`): Pontuação de interesse relativo na escala 0 a 100.
+  * `trends_normalizado` (`float64`): Escala decimal `[0.0, 1.0]`.
+
+### 6.2 Dataset: `exposicao_clubes_temporada`
+* **Descrição:** Matriz histórica de patrocínios de bets e cálculo do índice de exposição dos clubes na Série A (2015–2024).
+* **Granularidade:** 1 linha por clube $\times$ temporada (200 registros = 20 clubes $\times$ 10 anos).
+* **Chave Composta:** `temporada` + `clube_slug`.
+
+| Campo | Tipo | Nulos | Descrição | Regras e Valores Válidos |
+| :--- | :--- | :---: | :--- | :--- |
+| `temporada` | `int64` | Não | Edição do campeonato | 2015 a 2024 |
+| `clube_slug` | `string` | Não | Slug canônico do clube | Ex.: `flamengo`, `palmeiras` |
+| `tem_patrocinio_bet` | `bool` | Não | Indica existência de patrocínio de aposta | `True` ou `False` |
+| `tipo_patrocinio_bet` | `string` | Não | Categoria da propriedade no uniforme | `master`, `mangas`, `secundario`, `nenhum` |
+| `marca_principal_bet` | `string` | Não | Marca de aposta patrocinadora | Ex.: "Pixbet", "Betano" ou "Nenhum" |
+| `num_marcas_bet` | `int64` | Não | Contagem de marcas de apostas vinculadas | $\ge 0$ |
+| `score_posicao` | `float64` | Não | Peso da posição na camisa ($S_{\text{pos}}$) | 1.0 (master), 0.5 (mangas), 0.3 (secundário), 0.0 |
+| `score_quantidade` | `float64` | Não | Multiplicidade de marcas ($S_{\text{qtd}}$) | $\min(1.0, \text{num\_marcas}/2)$ |
+| `score_macro` | `float64` | Não | Ambiente macro digital ($S_{\text{macro}}$) | Média anual normalizada do Google Trends |
+| `bet_exposure_clube` | `float64` | Não | Exposição contratual direta do clube | $0.75 \times S_{\text{pos}} + 0.25 \times S_{\text{qtd}} \in [0.0, 1.0]$ |
+| `bet_exposure_total` | `float64` | Não | Exposição combinada com efeito macro | $0.60 \times S_{\text{pos}} + 0.15 \times S_{\text{qtd}} + 0.25 \times S_{\text{macro}} \in [0.0, 1.0]$ |
+| `categoria_exposicao_clube` | `string` | Não | Classificação ordinal | `Nenhuma` ($=0$), `Baixa/Media` ($<0,7$), `Alta` ($\ge 0,7$) |
+| `fonte_informacao` | `string` | Não | Origem do dado de patrocínio | IBOPE Repucom, Balanços, GE |
+
+---
+
+## 7. Dataset Enriquecido: `partidas_com_exposure`
+* **Localização:** `data/processed/serie_a/partidas_com_exposure.parquet` (e `.csv`).
+* **Volume:** 8.785 partidas (2003–2024) $\times$ 39 colunas.
+* **Colunas Adicionadas ao Dataset de Partidas:**
+  * `tem_bet_mandante` / `tem_bet_visitante` (`bool`): Indicadores por equipe.
+  * `tipo_bet_mandante` / `tipo_bet_visitante` (`string`): `master`, `mangas`, etc.
+  * `marca_bet_mandante` / `marca_bet_visitante` (`string`): Marcas patrocinadoras.
+  * `exposure_clube_mandante` / `exposure_clube_visitante` (`float64`): Índices contratuais $[0.0, 1.0]$.
+  * `exposure_total_mandante` / `exposure_total_visitante` (`float64`): Índices totais $[0.0, 1.0]$.
+  * `exposure_clube_partida` (`float64`): Média simples entre mandante e visitante $[0.0, 1.0]$.
+  * `exposure_total_partida` (`float64`): Média simples do índice total $[0.0, 1.0]$.
+  * `ambos_patrocinados_bet` (`bool`): `True` se ambos os times têm patrocinador de aposta.
+  * `algum_patrocinado_bet` (`bool`): `True` se ao menos um dos times tem patrocinador de aposta.
+  * `categoria_exposicao_partida` (`string`): `Nenhuma`, `Parcial (1 clube)`, `Total (2 clubes)`.
+

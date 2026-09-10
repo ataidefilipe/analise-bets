@@ -1,0 +1,30 @@
+clube_slug,temporadas_serie_a,temporadas_com_bet,temporadas_bet_master,marcas_distintas,exp_clube_medio,exp_total_medio
+america_mg,3,3,3,"EstrelaBet, Pixbet",0.875,0.844
+chapecoense,2,2,2,"Dafabet, Pixbet",0.875,0.745
+criciuma,1,1,1,EstrelaBet,0.875,0.911
+vasco,4,4,4,"Betfair, NetBet, Pixbet",0.875,0.812
+goias,4,4,4,"Esportes da Sorte, Marjosports, Pixbet",0.875,0.798
+juventude,3,3,3,"Marsbet, Pixbet, Stake",0.875,0.849
+vitoria,1,1,1,Betsat,0.875,0.911
+cruzeiro,3,3,2,"Betfair, Casa de Apostas",0.7,0.699
+fortaleza,6,6,4,"Betcris, NetBet, Novibet",0.7,0.674
+bahia,5,5,3,"Casa de Apostas, Esportes da Sorte",0.665,0.638
+santos,5,5,3,"Blaze, Casa de Apostas, Dafabet, Pixbet",0.665,0.627
+atletico_go,4,3,3,"AmuletoBet, Blaze",0.656,0.651
+atletico_mg,6,5,4,"Betano, Betsul",0.642,0.632
+sao_paulo,6,5,4,"Betsul, Sportsbet.io, Superbet",0.642,0.632
+sport,2,2,1,"Betsul, Galera.bet",0.612,0.546
+botafogo_rj,5,5,2,"Casa de Apostas, EstrelaBet, Parimatch",0.59,0.593
+fluminense,6,4,4,"Betano, Superbet",0.583,0.589
+corinthians,6,6,1,"Esportes da Sorte, Galera.bet, Marjosports, Pixbet",0.558,0.557
+bragantino,5,4,1,"MrJack.bet, NetBet",0.475,0.52
+avai,2,1,1,Pixbet,0.438,0.446
+ceara,4,3,1,"Betcris, Betsul",0.394,0.391
+flamengo,6,5,1,"Pixbet, Sportsbet.io",0.379,0.422
+athletico_pr,6,3,2,"Betsson, Esportes da Sorte",0.375,0.427
+coritiba,3,3,0,"Dafabet, Marjosports",0.35,0.408
+internacional,6,5,0,"Betsul, EstrelaBet",0.292,0.352
+gremio,5,4,0,"Betsul, Esportes da Sorte",0.28,0.335
+cuiaba,4,0,0,Nenhuma,0.0,0.186
+csa,1,0,0,Nenhuma,0.0,0.036
+palmeiras,6,0,0,Nenhuma,0.0,0.139

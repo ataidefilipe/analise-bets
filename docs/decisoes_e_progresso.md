@@ -1,8 +1,8 @@
-﻿# Registro de Decisões, Progresso e Próximos Passos
+# Registro de Decisões, Progresso e Próximos Passos
 
 **Projeto:** Impacto das Apostas Esportivas no Futebol Brasileiro  
 **Documento Vivo de Governança:** Conforme seções 16 e 17 do `.agent.md`  
-**Última Atualização:** 2026-09-05  
+**Última Atualização:** 2026-09-10  
 
 ---
 
@@ -34,6 +34,16 @@
   * Geradas 5 figuras analíticas em alta resolução em [`reports/figures/eda_serie_a/`](file:///d:/Python%20Projetos/analise-bets/reports/figures/eda_serie_a/).
   * Geradas 3 tabelas estatísticas em [`reports/tables/`](file:///d:/Python%20Projetos/analise-bets/reports/tables/).
   * Comprovação estatística rigorosa de quebras de tendência entre os períodos Pré-Bets (2014–2018) e Alta Exposição (2022–2024).
+* **Fase 4 Concluída (Camada de Exposição às Bets e MVP 2):**
+  * Script de ingestão: [`src/ingestion/build_betting_data.py`](file:///d:/Python%20Projetos/analise-bets/src/ingestion/build_betting_data.py).
+  * Matriz histórica completa de patrocínios cobrindo 200 registros (20 clubes x 10 temporadas na Série A, 2015–2024) e série mensal/anual do Google Trends Brasil (2015–2025) armazenadas em `data/raw/betting/` com manifesto SHA-256.
+  * Script de limpeza e cálculo do índice: [`src/cleaning/clean_betting.py`](file:///d:/Python%20Projetos/analise-bets/src/cleaning/clean_betting.py).
+  * Implementação do índice contínuo `BET_EXPOSURE` em duas vertentes: `bet_exposure_clube` (estritamente contratual) e `bet_exposure_total` (contratual + transbordamento macro do Google Trends).
+  * Enriquecimento da base consolidada de partidas (`data/processed/serie_a/partidas_com_exposure.parquet` com 8.785 jogos e 39 colunas).
+  * Suíte de testes unitários com 11 testes aprovados com 100% de sucesso via pytest ([`tests/test_clean_betting.py`](file:///d:/Python%20Projetos/analise-bets/tests/test_clean_betting.py)).
+  * Script analítico e visual: [`src/analysis/eda_bets.py`](file:///d:/Python%20Projetos/analise-bets/src/analysis/eda_bets.py).
+  * Relatório Técnico emitido: [`reports/analysis/03_camada_exposicao_bets.md`](file:///d:/Python%20Projetos/analise-bets/reports/analysis/03_camada_exposicao_bets.md).
+  * Geradas 5 figuras em alta resolução em [`reports/figures/eda_bets/`](file:///d:/Python%20Projetos/analise-bets/reports/figures/eda_bets/) e 3 tabelas consolidadas em [`reports/tables/`](file:///d:/Python%20Projetos/analise-bets/reports/tables/).
 
 ---
 
@@ -51,6 +61,10 @@ Classificadas conforme a taxonomia da Seção 17 do `.agent.md`:
 * **D-EST-03: Sequenciamento Estrito de Fases (EDA Antes de Modelos):**
   * *Decisão:* Não estimar modelos de regressão, efeitos fixos ou diferença-em-diferenças antes de esgotar a análise exploratória profunda e os testes de quebra estrutural.
   * *Justificativa:* Evita especificação espúria de modelos sem conhecimento prévio da distribuição empírica das séries temporais.
+* **D-EST-04: Matriz Histórica de Patrocínios Auditável (MVP 2):**
+  * *Decisão:* Compilar a matriz de 200 registros clube $\times$ temporada da Série A (2015–2024) com base nos dados censitários do IBOPE Repucom (*Mapa do Patrocínio*), balanços patrimoniais oficiais dos clubes e imprensa de negócios esportivos, preservando rastreabilidade de marca, tipo de propriedade e fonte documental (`docs/sources.md`).
+* **D-EST-05: Resolução da Dualidade Contratual vs. Transbordamento Macro (Questão 3.1):**
+  * *Decisão:* O usuário aprovou a recomendação técnica de gerar duas métricas complementares no cálculo do `BET_EXPOSURE`: uma dimensão estritamente contratual (`bet_exposure_clube`), onde clubes sem patrocínio possuem índice zero absoluto, e uma dimensão combinada (`bet_exposure_total`), que incorpora o transbordamento macroeconômico do interesse digital nacional via Google Trends.
 
 ### 2.2 Decisões Analíticas (Recomendadas pelo Agente e Validadas pelo Impacto)
 * **D-ANA-01: Temporalidade por "Temporada / Edição" e não "Ano Civil":**
@@ -68,10 +82,14 @@ Classificadas conforme a taxonomia da Seção 17 do `.agent.md`:
   * *Impacto:* Permite isolar o efeito da maturidade do mercado de apostas com alto poder estatístico.
 * **D-ANA-06: Métrica de Conversão Faltas $\rightarrow$ Cartões como Indicador de Severidade:**
   * *Decisão:* Adotar a razão $\text{Taxa} = \frac{\text{Cartões Totais}}{\text{Faltas Cometidas}}$ como métrica central para capturar se alterações disciplinares decorrem de violência de jogo ou de mudanças na sensibilidade arbitral.
+* **D-ANA-07: Dualidade no Cálculo do Índice `BET_EXPOSURE` (Contratual vs. Total):**
+  * *Decisão:* Implementar duas variáveis de exposição no nível do clube: `bet_exposure_clube` (estritamente contratual, $0.0$ para clubes sem bet) e `bet_exposure_total` (incluindo transbordamento macro do Google Trends), atendendo à sugestão validada pelo usuário.
+* **D-ANA-08: Categorização das Partidas por Exposição:**
+  * *Decisão:* Estratificar os jogos contemporâneos (2019–2024) em `Nenhuma` (0 clubes com bet), `Parcial` (1 clube com bet) e `Total` (ambos com bet) para viabilizar testes de dose-resposta.
 
 ### 2.3 Decisões Técnicas (Decididas pelo Agente)
 * **D-TEC-01: Governança do Diretório de Dados Brutos:**
-  * *Decisão:* Diretório `data/raw/adaoduque/` mantido em modo estritamente imutável (read-only). Toda e qualquer transformação deve gerar arquivos derivados em `data/processed/`.
+  * *Decisão:* Diretório `data/raw/adaoduque/` e `data/raw/betting/` mantidos em modo estritamente imutável (read-only). Toda e qualquer transformação deve gerar arquivos derivados em `data/processed/`.
 * **D-TEC-02: Rastreabilidade via Checksums e Manifestos:**
   * *Decisão:* Geração de `manifest.json` com hashes SHA-256 na ingestão e `manifest_processed.json` no processamento (armazenando linhas, colunas e bytes exatos de cada arquivo gerado).
 * **D-TEC-03: Modularização e Pacotes em `src/`:**
@@ -80,6 +98,8 @@ Classificadas conforme a taxonomia da Seção 17 do `.agent.md`:
   * *Decisão:* Gravação dos dados processados simultaneamente em CSV (compatibilidade e inspeção rápida) e Parquet colunar via PyArrow (alta performance para consultas analíticas).
 * **D-TEC-05: Automação de Figuras e Tabelas de Auditoria:**
   * *Decisão:* Os scripts de análise devem salvar tabelas descritivas em `reports/tables/` e figuras vetoriais/alta resolução em `reports/figures/`, garantindo reprodutibilidade de ponta a ponta.
+* **D-TEC-06: Suíte de Testes Automatizada com Pytest:**
+  * *Decisão:* Validação contínua com 11 testes unitários em `tests/` cobrindo consistência de limites matemáticos $[0.0, 1.0]$, integridade referencial relacional e regras de negócio.
 
 ---
 
@@ -101,6 +121,9 @@ Classificadas conforme a taxonomia da Seção 17 do `.agent.md`:
    * Isso valida que o desvio temporal prematuro de cartões espelha o comportamento das fraudes confessadas e judicialmente investigadas.
 5. **Efeito do Árbitro de Vídeo (VAR) sobre Pênaltis:**
    * Os gols de pênalti saltaram de uma média de ~75 por ano (0,19/jogo em 2014–2018) para picos de 111 (0,29/jogo em 2020) e 98 (0,26/jogo em 2022), coincidindo exatamente com a introdução do VAR no Brasil em maio de 2019.
+6. **Efeito Dose-Resposta da Exposição a Bets sobre Cartões (2019–2024):**
+   * Partidas com **Exposição Total** (ambas as equipes patrocinadas por bets, $N=1.472$) registraram **5,209** cartões por jogo contra **4,542** cartões em partidas **Sem Exposição** ($N=142$). A diferença de **+0,667 cartões/jogo (+14,68%)** é altamente significativa ($t = 3,3091, p = 1,14 \times 10^{-3}$; Mann-Whitney $U = 118.952, p = 6,08 \times 10^{-3}$).
+   * A taxa de conversão faltas $\rightarrow$ cartões é de **0,1794** em jogos com Exposição Total contra **0,1602** em jogos Sem Exposição ($t = 2,6967, p = 7,73 \times 10^{-3}$).
 
 ---
 
@@ -108,17 +131,16 @@ Classificadas conforme a taxonomia da Seção 17 do `.agent.md`:
 
 * **Q1 (Complemento de Faltas 2024):** A coleta de faltas totais de 2024 deve ser extraída via súmulas CBF para estender a taxa de conversão faltas $\rightarrow$ cartões para o ano de 2024?
 * **Q2 (Séries B, C e D):** Como estruturar o pipeline de download e parsing das súmulas da CBF para cobrir as divisões de acesso entre 2018 e 2024?
-* **Q3 (Patrocínios de Bets):** Como compilar a base histórica de patrocínio master e mangas clube a clube para criar o índice `bet_exposure`?
+* **Q3 (Patrocínios de Bets):** **[CONCLUÍDO NO MVP 2]** Compilação histórica realizada e índice `BET_EXPOSURE` calculado e integrado com sucesso.
 
 ---
 
 ## 5. Próximos Passos Detalhados
 
-1. **Construção da Camada de Exposição às Bets (MVP 2):**
-   * Desenvolver extrator e normalizador para dados do Google Trends (2015–2025) para os termos `bet`, `aposta`, `betano`, `bet365`, `sportingbet`.
-   * Estruturar planilha histórica de patrocínios de casas de apostas nos 45 clubes da Série A (temporadas 2015–2024).
-   * Calcular o índice consolidado `bet_exposure` por clube e por temporada.
-2. **Coleta e Amostragem das Súmulas CBF (Séries B, C e D e Faltas 2024 Série A):**
+1. **Coleta e Amostragem das Súmulas CBF (Séries B, C e D e Faltas 2024 Série A):**
    * Implementar crawler/parser para súmulas eletrônicas em PDF/HTML da CBF.
-3. **Análise Comparativa de Integridade por Série (A vs. B/C/D):**
+2. **Análise Comparativa de Integridade por Série (A vs. B/C/D):**
    * Contrastar a dispersão e as taxas de cartões precoces entre a Série A e a Série B (onde ocorreram os casos centrais da Penalidade Máxima).
+3. **Modelagem Estatística de Painel (MVP 6):**
+   * Especificar modelos com efeitos fixos de clube e tempo controlando pela interação $\text{BET} \times \text{SÉRIE}$.
+

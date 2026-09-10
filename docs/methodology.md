@@ -1,4 +1,4 @@
-﻿# Metodologia e Modelagem Estatística
+# Metodologia e Modelagem Estatística
 
 **Projeto:** Impacto das Apostas Esportivas no Futebol Brasileiro  
 **Documento de Referência Metodológica:** `docs/methodology.md`  
@@ -56,3 +56,40 @@ $$d = \frac{\bar{X}_1 - \bar{X}_0}{s_{\text{pooled}}}, \quad \text{onde } s_{\te
   * $|d| < 0,2$: efeito negligenciável.
   * $0,2 \le |d| < 0,5$: efeito pequeno a moderado.
   * $|d| \ge 0,8$: efeito grande.
+
+---
+
+## 4. Modelagem da Exposição às Bets (`BET_EXPOSURE`)
+
+Para quantificar o grau de exposição econômica de cada clube $c$ na temporada $t$, desenvolvemos uma formulação aditiva e normalizada decomposta em três dimensões:
+
+### 4.1 Dimensões Componentes
+
+1. **Relevância Contratual da Propriedade ($S_{\text{pos}}$):**
+   $$S_{\text{pos}} = \begin{cases} 1,00, & \text{se patrocínio master (espaço nobre da camisa)} \\ 0,50, & \text{se mangas / omoplata / costas} \\ 0,30, & \text{se propriedades secundárias (shorts/barra)} \\ 0,00, & \text{se ausente} \end{cases}$$
+
+2. **Multiplicidade de Marcas Parceiras ($S_{\text{qtd}}$):**
+   $$S_{\text{qtd}} = \min\left(1,0, \; \frac{N_{\text{marcas}}}{2}\right)$$
+
+3. **Ambiente Macro e Demanda Digital ($S_{\text{macro}}$):**
+   $$S_{\text{macro}, t} = \frac{\text{Trends}_t}{\text{Trends}_{\max}} \in [0,0, \; 1,0]$$
+   Onde $\text{Trends}_t$ é a média anual de buscas no Google Trends Brasil para termos de apostas esportivas e $\text{Trends}_{\max} = 100$.
+
+### 4.2 Índices no Nível do Clube
+
+Conforme diretriz analítica `D-ANA-07`, foram computadas duas variáveis complementares:
+1. **Exposição Contratual Estrita (`bet_exposure_clube`):**
+   $$\text{BET\_EXPOSURE}_{\text{clube}, c, t} = \begin{cases} 0,75 \cdot S_{\text{pos}} + 0,25 \cdot S_{\text{qtd}}, & \text{se clube possui patrocínio de bet} \\ 0,00, & \text{caso contrário} \end{cases}$$
+2. **Exposição Combinada com Transbordamento Macro (`bet_exposure_total`):**
+   $$\text{BET\_EXPOSURE}_{\text{total}, c, t} = 0,60 \cdot S_{\text{pos}} + 0,15 \cdot S_{\text{qtd}} + 0,25 \cdot S_{\text{macro}, t}$$
+
+### 4.3 Agregação no Nível da Partida
+
+Para cada partida $i$ entre o mandante $M$ e o visitante $V$ na edição $t$:
+$$\text{Exposure}_{\text{partida}, i} = \frac{\text{BET\_EXPOSURE}_{M, t} + \text{BET\_EXPOSURE}_{V, t}}{2}$$
+
+Categorização das partidas contemporâneas (2019–2024):
+* **Nenhuma:** Nem mandante nem visitante possuem patrocínio de apostas.
+* **Parcial (1 clube):** Exatamente uma das equipes possui patrocínio ativo.
+* **Total (2 clubes):** Ambas as equipes possuem patrocínio ativo no uniforme.
+
