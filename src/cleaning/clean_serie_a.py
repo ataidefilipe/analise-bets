@@ -1,4 +1,4 @@
-﻿import json
+import json
 import logging
 import re
 import unicodedata
@@ -180,13 +180,78 @@ def clean_cards(df_raw: pd.DataFrame, season_map: Dict[int, int]) -> pd.DataFram
     return df[final_cols]
 
 
-def clean_stats(df_raw: pd.DataFrame, season_map: Dict[int, int]) -> pd.DataFrame:
+def clean_stats(
+    df_raw: pd.DataFrame,
+    season_map: Dict[int, int],
+    df_matches_clean: Optional[pd.DataFrame] = None,
+    sofascore_dir: Optional[Path] = Path('data/raw/sofascore'),
+) -> pd.DataFrame:
     df = df_raw.copy()
     df['temporada'] = df['partida_id'].map(season_map)
     df['clube_slug'] = df['clube'].apply(slugify)
     df['posse_de_bola_pct'] = df['posse_de_bola'].apply(parse_percent)
     df['precisao_passes_pct'] = df['precisao_passes'].apply(parse_percent)
-    df['scouts_validos'] = df['temporada'].between(2015, 2023)
+
+    # Injetar scouts de 2024 do Sofascore se disponível
+    if (
+        sofascore_dir is not None
+        and (sofascore_dir / 'estatisticas.parquet').exists()
+        and (sofascore_dir / 'partidas.parquet').exists()
+        and df_matches_clean is not None
+    ):
+        try:
+            df_sofa_stats = pd.read_parquet(sofascore_dir / 'estatisticas.parquet')
+            df_sofa_matches = pd.read_parquet(sofascore_dir / 'partidas.parquet')
+            s2024_stats = df_sofa_stats[df_sofa_stats['temporada'] == 2024].copy()
+            s2024_matches = df_sofa_matches[df_sofa_matches['temporada'] == 2024].copy()
+
+            s2024_matches['mandante_slug'] = s2024_matches['mandante'].apply(slugify)
+            s2024_matches['visitante_slug'] = s2024_matches['visitante'].apply(slugify)
+
+            p2024_our = df_matches_clean[df_matches_clean['temporada'] == 2024]
+
+            match_mapping = pd.merge(
+                s2024_matches[['partida_id', 'rodada', 'mandante_slug', 'visitante_slug']],
+                p2024_our[['partida_id', 'rodada', 'clube_mandante_slug', 'clube_visitante_slug']],
+                left_on=['rodada', 'mandante_slug', 'visitante_slug'],
+                right_on=['rodada', 'clube_mandante_slug', 'clube_visitante_slug'],
+                suffixes=('_sofa', '_our'),
+            )
+
+            sofa_to_our_pid = dict(zip(match_mapping['partida_id_sofa'], match_mapping['partida_id_our']))
+            sofa_mandante = dict(zip(match_mapping['partida_id_sofa'], match_mapping['mandante_slug']))
+            sofa_visitante = dict(zip(match_mapping['partida_id_sofa'], match_mapping['visitante_slug']))
+
+            s2024_stats['our_partida_id'] = s2024_stats['partida_id'].map(sofa_to_our_pid)
+            s2024_stats['resolved_clube_slug'] = s2024_stats.apply(
+                lambda r: sofa_mandante.get(r['partida_id']) if r['clube'] == 'mandante' else sofa_visitante.get(r['partida_id']),
+                axis=1,
+            )
+
+            s2024_stats['merge_key'] = s2024_stats['our_partida_id'].astype(str) + '_' + s2024_stats['resolved_clube_slug']
+            df['merge_key'] = df['partida_id'].astype(str) + '_' + df['clube_slug']
+
+            stat_cols_to_update = ['faltas', 'escanteios', 'chutes', 'passes', 'impedimentos']
+            for col in stat_cols_to_update:
+                if col in s2024_stats.columns:
+                    col_map = s2024_stats.dropna(subset=['merge_key']).set_index('merge_key')[col].to_dict()
+                    mask_2024 = (df['temporada'] == 2024) & (df['merge_key'].isin(col_map))
+                    df.loc[mask_2024, col] = df.loc[mask_2024, 'merge_key'].map(col_map).fillna(0).astype(int)
+
+            if 'posse_de_bola' in s2024_stats.columns:
+                posse_map = s2024_stats.dropna(subset=['merge_key']).set_index('merge_key')['posse_de_bola'].apply(parse_percent).to_dict()
+                mask_2024 = (df['temporada'] == 2024) & (df['merge_key'].isin(posse_map))
+                df.loc[mask_2024, 'posse_de_bola_pct'] = df.loc[mask_2024, 'merge_key'].map(posse_map).astype(float)
+
+            df.drop(columns=['merge_key'], inplace=True)
+            logger.info('Scouts de 2024 enriquecidos com sucesso via Sofascore.')
+        except Exception as e:
+            logger.warning('Falha ao enriquecer scouts de 2024 via Sofascore: %s', e)
+
+    df['scouts_validos'] = (
+        (df['temporada'].between(2015, 2023))
+        | ((df['temporada'] == 2024) & (df['faltas'].fillna(0) > 0))
+    )
 
     df = df.rename(columns={'rodata': 'rodada'})
     final_cols = [
@@ -245,6 +310,7 @@ def clean_goals(df_raw: pd.DataFrame, season_map: Dict[int, int]) -> pd.DataFram
 def run_pipeline(
     raw_dir: Path = Path('data/raw/adaoduque'),
     output_dir: Path = Path('data/processed/serie_a'),
+    sofascore_dir: Optional[Path] = Path('data/raw/sofascore'),
 ) -> Dict[str, Any]:
     output_dir.mkdir(parents=True, exist_ok=True)
     logger.info('Iniciando pipeline de limpeza da Série A...')
@@ -258,7 +324,7 @@ def run_pipeline(
 
     df_clean_matches = clean_matches(df_raw_matches, df_with_season)
     df_clean_cards = clean_cards(df_raw_cards, season_map)
-    df_clean_stats = clean_stats(df_raw_stats, season_map)
+    df_clean_stats = clean_stats(df_raw_stats, season_map, df_clean_matches, sofascore_dir)
     df_clean_goals = clean_goals(df_raw_goals, season_map)
 
     datasets = {

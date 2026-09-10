@@ -1,0 +1,27 @@
+{
+  "created_at": "2026-09-10T12:01:45.186358",
+  "temporadas": [
+    2022,
+    2023
+  ],
+  "datasets": {
+    "partidas": {
+      "linhas": 760,
+      "colunas": 20,
+      "csv_bytes": 113094,
+      "parquet_bytes": 27033
+    },
+    "cartoes": {
+      "linhas": 3671,
+      "colunas": 16,
+      "csv_bytes": 1281219,
+      "parquet_bytes": 193573
+    },
+    "gols": {
+      "linhas": 2137,
+      "colunas": 14,
+      "csv_bytes": 316013,
+      "parquet_bytes": 61165
+    }
+  }
+}

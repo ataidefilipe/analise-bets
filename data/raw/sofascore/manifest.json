@@ -1,0 +1,17 @@
+{
+  "source": "https://github.com/leeofernandes1980/brasileirao-dataset",
+  "provider": "Sofascore Public API",
+  "download_timestamp": "2026-09-10T11:34:30.199138",
+  "files": {
+    "estatisticas.parquet": {
+      "size_bytes": 152273,
+      "sha256": "90244ae05afa5322348d1a1097ca7a0e076cac6a66c5ba709e60bb902d815655",
+      "url": "https://raw.githubusercontent.com/leeofernandes1980/brasileirao-dataset/master/datalake/silver/estatisticas.parquet"
+    },
+    "partidas.parquet": {
+      "size_bytes": 174728,
+      "sha256": "0fe7953a1691f5e39e98514f45e39e6fcbbebe6f185e220668007535cb20eb4a",
+      "url": "https://raw.githubusercontent.com/leeofernandes1980/brasileirao-dataset/master/datalake/silver/partidas.parquet"
+    }
+  }
+}

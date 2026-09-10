@@ -84,13 +84,33 @@ A presença das marcas segue estritamente a cronologia legal do Brasil:
   * `campeonato-brasileiro-cartoes.csv`: 20.953 cartões individuais com atleta, clube, posição e minuto contínuo (2014 a 2024).
   * `campeonato-brasileiro-gols.csv`: 9.861 gols com tipo (normal, pênalti, contra) e minuto (2014 a 2024).
   * `campeonato-brasileiro-estatisticas-full.csv`: 17.570 registros de scouts (2003 a 2024).
-* **Diagnóstico de Confiabilidade:**
-  * Cartões e gols: Confiabilidade **Excelente** (2014–2024).
-  * Faltas e escanteios: Confiabilidade **Alta** para 2015–2023. Para 2024, identificou-se raspagem zerada na origem (Google match stats), requerendo preenchimento via Súmulas CBF.
+### 3.2 Dataset Sofascore (Scouts da Série A 2024)
+* **Repositório:** `https://github.com/leeofernandes1980/brasileirao-dataset` (camada `datalake/silver/`)
+* **Localização Bruta:** [`data/raw/sofascore/`](file:///d:/Python%20Projetos/analise-bets/data/raw/sofascore/)
+* **Integridade Criptográfica:** Hashes SHA-256 em [`manifest.json`](file:///d:/Python%20Projetos/analise-bets/data/raw/sofascore/manifest.json).
+* **Cobertura:** 380 partidas da Série A de 2024 (760 registros clube-partida).
+* **Finalidade Metodológica:** Fechamento da lacuna de scouts agregados (faltas, escanteios, chutes, passes, posse) da Série A de 2024 deixada zerada na raspagem do Google do dataset do Adão Duque.
+* **Volume:** 9.585 faltas registradas em 2024, permitindo o cálculo definitivo da taxa de conversão $\tau_{\text{CF}}$ para 2024.
+
+### 3.3 Súmulas Eletrônicas da CBF (Divisões de Acesso: Séries B, C e D)
+* **Fonte Primária Oficial:** Confederação Brasileira de Futebol (CDN: `https://conteudo.cbf.com.br/sumulas/{ano}/{codigo}{jogo}se.pdf`)
+* **Códigos Canônicos Identificados:**
+  * Série A: `142`
+  * Série B: `242`
+  * Série C: `342`
+  * Série D: `542`
+* **Localização Bruta Ingerida:** 
+  * [`data/raw/cbf/sumulas_serie_b_2022/`](file:///d:/Python%20Projetos/analise-bets/data/raw/cbf/sumulas_serie_b_2022/): 380 PDFs oficiais (100% da edição de 2022) com manifesto SHA-256.
+  * [`data/raw/cbf/sumulas_serie_b_2023/`](file:///d:/Python%20Projetos/analise-bets/data/raw/cbf/sumulas_serie_b_2023/): 380 PDFs oficiais (100% da edição de 2023) com manifesto SHA-256.
+* **Volume Processado:** 760 partidas, 3.671 cartões e 2.137 gols estruturados em [`data/processed/serie_b/`](file:///d:/Python%20Projetos/analise-bets/data/processed/serie_b/).
+* **Achado Crítico de Governança:** Árbitros **não** registram contagem corrida de faltas ou escanteios nas súmulas (função delegada a data providers como Opta/Sofascore). Contudo, as súmulas fornecem com 100% de autenticidade oficial:
+  * Cabeçalho completo, arbitragem (campo e VAR) e cronologia com acréscimos;
+  * Gols com autoria, minuto e tipo;
+  * Todos os cartões amarelos e vermelhos com jogador, minuto e o **texto literal do motivo da infração**, viabilizando a categorização de infrações (faltas temerárias, reclamação, cera/retardamento, conduta antidesportiva).
 
 ---
 
-## 4. Fontes de Demanda Digital Macro (MVP 2)
+## 4. Fontes de Demanda Digital Macro e Integridade Judicial
 
 ### 4.1 Google Trends Brasil
 * **Termos Consolidados:** `bet`, `bets`, `apostas esportivas`, `betano`, `bet365`, `sportingbet`.
@@ -99,15 +119,28 @@ A presença das marcas segue estritamente a cronologia legal do Brasil:
 * **Localização Processada:** [`data/processed/betting/trends_mensal.parquet`](file:///d:/Python%20Projetos/analise-bets/data/processed/betting/trends_mensal.parquet) e `trends_anual.parquet`.
 * **Papel Metodológico:** Atua como *proxy* contínuo de atenção pública e penetração digital da atividade apostadora, alimentando a variável $S_{\text{macro}}$ do índice `BET_EXPOSURE`.
 
+### 4.2 Autos Judiciais e Acórdãos Desportivos — Operação Penalidade Máxima (MP-GO e STJD)
+* **Origem Documental:**
+  * **Ministério Público do Estado de Goiás (MP-GO / GAECO):** Denúncias criminais das Fases 1, 2 e 3 da Operação Penalidade Máxima (Autos dos Processos nº 5174836-81.2023.8.09.0051 e conexos da 2ª Vara Estadual dos Feitos Relativos a Delitos Praticados por Organização Criminosa).
+  * **Superior Tribunal de Justiça Desportiva (STJD):** Processos Disciplinares nº 003/2023, 052/2023, 085/2023 e Acórdãos do Tribunal Pleno.
+* **Conteúdo Probatório Auditado:** Conversas periciadas de WhatsApp entre apostadores e atletas, transferências bancárias via PIX comprovando sinais e quitações financeiras, termos de colaboração premiada e confissões formais em juízo.
+* **Localização Processada:** [`data/processed/integrity/casos_penalidade_maxima.parquet`](file:///d:/Python%20Projetos/analise-bets/data/processed/integrity/casos_penalidade_maxima.parquet) e `.csv` (14 casos catalogados).
+* **Papel Metodológico:** Constitui a base empírica de *ground truth* (eventos ilícitos comprovados). Utilizada para:
+  1. Calibrar thresholds estatísticos de anomalia temporal (concentração no 1º tempo);
+  2. Contrastar o perfil de jogadores aliciados com a população geral de atletas;
+  3. Validar a sensibilidade dos filtros de detecção desenvolvidos no projeto sem incorrer em acusações infundadas.
+
 ---
 
 ## 5. Matriz Resumo de Confiabilidade das Fontes
 
 | Dimensão de Dados | Fonte Primária | Período Auditado | Nível de Confiabilidade | Papel no Pipeline |
 | :--- | :--- | :---: | :---: | :--- |
-| **Resultados e Jogos** | Adão Duque / CBF | 2003–2024 | **Alto** (100% verificado) | Base do MVP 1 |
-| **Cartões Individuais**| Adão Duque / Súmulas | 2014–2024 | **Excelente** (20.953 cartões) | Testes de integridade (MVP 1 e 4) |
-| **Scouts e Faltas** | Adão Duque | 2015–2023 | **Alto** (2024 a complementar) | Taxa de conversão cartão/falta |
+| **Resultados e Jogos (Série A)** | Adão Duque / CBF | 2003–2024 | **Alto** (100% verificado) | Base do MVP 1 |
+| **Cartões Individuais (Série A)**| Adão Duque / Súmulas | 2014–2024 | **Excelente** (20.953 cartões) | Testes de integridade (MVP 1 e 4) |
+| **Scouts e Faltas (Série A)** | Adão Duque (2015–23) + Sofascore (2024) | 2015–2024 | **Alto** (100% preenchido) | Taxa de conversão cartão/falta |
+| **Partidas e Cartões (Série B)** | Súmulas Eletrônicas CBF | 2022–2023 | **Oficial Máxima** (760 PDFs autenticados)| Comparação Séries A vs. B |
+| **Casos Judiciais de Integridade**| MP-GO (GAECO) / STJD | 2022 | **Jurídica Plena** (Denúncias e Acórdãos)| Ground Truth de calibração |
 | **Patrocínios Clubes** | IBOPE Repucom / Balanços | 2015–2024 | **Alto** (200 registros auditados)| Cálculo do `BET_EXPOSURE` (MVP 2) |
 | **Interesse Público** | Google Trends Brasil | 2015–2025 | **Alto** (Normalizado [0, 100]) | Efeito macro e transbordamento |
 | **Volume de Apostas** | Sigiloso (Operadoras) | Não público | **Fora do Caminho Crítico** | Substituído por proxies públicas |

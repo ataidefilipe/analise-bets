@@ -1,0 +1,761 @@
+partida_id,temporada,serie,rodada,data,horario,estadio,cidade,uf_estadio,clube_mandante,clube_mandante_slug,mandante_uf,clube_visitante,clube_visitante_slug,visitante_uf,arbitro,gols_mandante,gols_visitante,total_gols,resultado
+43,2022,B,0,,,,,,,,,,,,,1,0,9,Vitoria Mandante
+61,2022,B,0,,,,,,,,,,,,,0,0,1,Empate
+146,2022,B,0,,,,,,,,,,,,,0,0,3,Empate
+244,2022,B,0,,,,,,,,,,,,,0,0,2,Empate
+1,2022,B,1,2022-04-09,16:30,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Grêmio,gremio,RS,Paulo Roberto Alves Junior,0,0,0,Empate
+2,2022,B,1,2022-05-04,21:00,Rei Pelé,Maceio,,Csa,csa,AL,Criciúma,criciuma,SC,Thiago Luis Scarascati,1,1,2,Empate
+3,2022,B,1,2022-04-09,18:30,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Sampaio Corrêa,sampaio_correa,MA,Denis da Silva Ribeiro Serafim,1,0,1,Vitoria Mandante
+4,2022,B,1,2022-04-08,19:00,Aderbal Ramos da Silva,Florianopolis,,Brusque,brusque,SC,Guarani,guarani,SP,Jefferson Ferreira de Moraes,1,0,1,Vitoria Mandante
+5,2022,B,1,2022-05-04,19:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Crb,crb,AL,Paulo Henrique Schleich Vollkopf,2,2,4,Empate
+6,2022,B,1,2022-04-10,11:00,Jacy Scaff,Londrina,,Londrina,londrina,PR,Náutico,nautico,PE,Paulo Cesar Zanovelli da Silva,2,0,2,Vitoria Mandante
+7,2022,B,1,2022-04-08,19:00,São Januário,Rio de Janeiro,,Vasco da Gama,vasco_da_gama,RJ,Vila Nova,vila_nova,GO,Leandro Pedro Vuaden,1,1,2,Empate
+8,2022,B,1,2022-04-08,21:30,Octávio Mangabeira,Salvador,,Bahia,bahia,BA,Cruzeiro Saf,cruzeiro_saf,MG,Ramon Abatti Abel,2,0,2,Vitoria Mandante
+9,2022,B,1,2022-04-09,21:00,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Operário,operario,PR,Rodrigo Jose Pereira de Lima,1,1,2,Empate
+10,2022,B,1,2022-04-09,16:00,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Ituano,ituano,SP,Marcelo de Lima Henrique,1,1,2,Empate
+11,2022,B,2,2022-04-16,18:30,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Sport,sport,PE,Alisson Sidnei Furtado,0,0,0,Empate
+12,2022,B,2,2022-04-16,19:00,Rei Pelé,Maceio,,Crb,crb,AL,Vasco da Gama,vasco_da_gama,RJ,Diego Pombo Lopez,1,1,2,Empate
+13,2022,B,2,2022-04-15,21:30,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Bahia,bahia,BA,Rodrigo Batista Raposo,0,1,10,Vitoria Visitante
+14,2022,B,2,2022-04-14,20:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Londrina,londrina,PR,Dyorgines Jose Padovani de Andrade,1,0,1,Vitoria Mandante
+15,2022,B,2,2022-04-16,16:00,Novelli Junior,Itu,,Ituano,ituano,SP,Csa,csa,AL,Fábio Augusto Santos Sá Junior,0,0,0,Empate
+16,2022,B,2,2022-04-16,11:00,Germano Kruger,Ponta Grossa,,Operário,operario,PR,Ponte Preta,ponte_preta,SP,Paulo Henrique Schleich Vollkopf,1,1,2,Empate
+17,2022,B,2,2022-04-15,19:00,Arena do Grêmio,Porto Alegre,,Grêmio,gremio,RS,Chapecoense,chapecoense,SC,Edina Alves Batista,0,1,1,Vitoria Visitante
+18,2022,B,2,2022-04-16,16:30,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Tombense,tombense,MG,Dewson Fernando Freitas da Silva,1,1,2,Empate
+19,2022,B,2,2022-04-12,21:30,Magalhães Pinto,Belo Horizonte,,Cruzeiro Saf,cruzeiro_saf,MG,Brusque,brusque,SC,Antonio Dib Moraes de Sousa,1,0,1,Vitoria Mandante
+20,2022,B,2,2022-04-12,19:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Novorizontino,novorizontino,SP,Ivan da Silva Guimarães Junior,0,0,0,Empate
+21,2022,B,3,2022-04-23,16:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,CRB,crb,AL,Ramon Abatti Abel,1,0,1,Vitoria Mandante
+22,2022,B,3,2022-04-22,19:00,Rei Pelé,Maceio,,CSA,csa,AL,Bahia,bahia,BA,Jefferson Ferreira de Moraes,1,1,2,Empate
+23,2022,B,3,2022-04-24,16:00,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Operário,operario,PR,Dewson Fernando Freitas da Silva,2,0,2,Vitoria Mandante
+24,2022,B,3,2022-04-23,11:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Sport,sport,PE,Leandro Pedro Vuaden,1,1,2,Empate
+25,2022,B,3,2022-04-23,19:00,Novelli Junior,Itu,,Ituano,ituano,SP,Vila Nova,vila_nova,GO,Denis da Silva Ribeiro Serafim,3,1,4,Vitoria Mandante
+26,2022,B,3,2022-04-21,19:00,Jacy Scaff,Londrina,,Londrina,londrina,PR,Novorizontino,novorizontino,SP,Alexandre Vargas Tavares de Jesus,1,1,2,Empate
+27,2022,B,3,2022-04-21,16:30,Arena do Grêmio,Porto Alegre,,Grêmio,gremio,RS,Guarani,guarani,SP,Andre Luiz de Freitas Castro,3,1,4,Vitoria Mandante
+28,2022,B,3,2022-04-23,18:30,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Brusque,brusque,SC,Paulo Henrique Schleich Vollkopf,3,1,4,Vitoria Mandante
+29,2022,B,3,2022-04-23,19:00,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Cruzeiro Saf,cruzeiro_saf,MG,Rodolpho Toski Marques,1,1,2,Empate
+30,2022,B,3,2022-04-22,21:30,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Vasco da Gama,vasco_da_gama,RJ,Vinicius Gonçalves Dias Araujo,0,0,0,Empate
+31,2022,B,4,2022-04-27,21:00,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Criciúma,criciuma,SC,Emerson Ricardo de Almeida Andrade,1,0,1,Vitoria Mandante
+32,2022,B,4,2022-04-27,19:00,Rei Pelé,Maceio,,Crb,crb,AL,Náutico,nautico,PE,Zandick Gondim Alves Junior,1,2,3,Vitoria Visitante
+33,2022,B,4,2022-04-26,19:00,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Ituano,ituano,SP,Marcelo de Lima Henrique,1,0,1,Vitoria Mandante
+34,2022,B,4,2022-04-26,20:30,Augusto Bauer,Brusque,,Brusque,brusque,SC,Csa,csa,AL,Rafael Martins de Sá,2,0,2,Vitoria Mandante
+35,2022,B,4,2022-04-26,19:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Chapecoense,chapecoense,SC,Paulo Cesar Zanovelli da Silva,0,3,3,Vitoria Visitante
+36,2022,B,4,2022-04-27,19:00,Germano Kruger,Ponta Grossa,,Operário,operario,PR,Grêmio,gremio,RS,Flavio Rodrigues de Souza,0,1,1,Vitoria Visitante
+37,2022,B,4,2022-04-27,21:30,São Januário,Rio de Janeiro,,Vasco da Gama,vasco_da_gama,RJ,Ponte Preta,ponte_preta,SP,Rodolpho Toski Marques,1,0,1,Vitoria Mandante
+38,2022,B,4,2022-04-26,21:30,Octávio Mangabeira,Salvador,,Bahia,bahia,BA,Sampaio Corrêa,sampaio_correa,MA,Rafael Traci,1,0,1,Vitoria Mandante
+39,2022,B,4,2022-04-26,21:30,Magalhães Pinto,Belo Horizonte,,Cruzeiro Saf,cruzeiro_saf,MG,Londrina,londrina,PR,Douglas Schwengber da Silva,1,0,1,Vitoria Mandante
+40,2022,B,4,2022-04-26,20:30,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Tombense,tombense,MG,Matheus Delgado Candançan,1,1,2,Empate
+41,2022,B,5,2022-04-30,20:30,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Brusque,brusque,SC,Jean Pierre Goncalves Lima,2,0,2,Vitoria Mandante
+42,2022,B,5,2022-04-30,16:00,Rei Pelé,Maceio,,Csa,csa,AL,Sport,sport,PE,Paulo Roberto Alves Junior,1,0,1,Vitoria Mandante
+44,2022,B,5,2022-05-01,11:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Novorizontino,novorizontino,SP,Wagner do Nascimento Magalhaes,1,1,10,Empate
+45,2022,B,5,2022-04-29,21:30,Novelli Junior,Itu,,Ituano,ituano,SP,Bahia,bahia,BA,Dewson Fernando Freitas da Silva,1,0,1,Vitoria Mandante
+46,2022,B,5,2022-04-29,19:00,Jacy Scaff,Londrina,,Londrina,londrina,PR,Vila Nova,vila_nova,GO,Diego Pombo Lopez,2,2,13,Empate
+47,2022,B,5,2022-04-30,16:30,Arena do Grêmio,Porto Alegre,,Grêmio,gremio,RS,Crb,crb,AL,Felipe Fernandes de Lima,2,0,2,Vitoria Mandante
+48,2022,B,5,2022-04-30,16:30,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Operário,operario,PR,Alexandre Vargas Tavares de Jesus,1,1,2,Empate
+49,2022,B,5,2022-05-01,18:00,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Vasco da Gama,vasco_da_gama,RJ,Andre Luiz de Freitas Castro,2,0,2,Vitoria Mandante
+50,2022,B,5,2022-04-30,19:00,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Cruzeiro Saf,cruzeiro_saf,MG,Luiz Flavio de Oliveira,0,2,2,Vitoria Visitante
+51,2022,B,6,2022-05-08,16:00,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Ponte Preta,ponte_preta,SP,Luiz Flavio de Oliveira,0,0,0,Empate
+52,2022,B,6,2022-05-09,20:00,Rei Pelé,Maceio,,Crb,crb,AL,Sampaio Corrêa,sampaio_correa,MA,Heber Roberto Lopes,2,1,3,Vitoria Mandante
+53,2022,B,6,2022-05-06,21:30,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Tombense,tombense,MG,Edina Alves Batista,2,0,2,Vitoria Mandante
+54,2022,B,6,2022-05-05,21:30,Augusto Bauer,Brusque,,Brusque,brusque,SC,Chapecoense,chapecoense,SC,Marcelo de Lima Henrique,0,0,0,Empate
+55,2022,B,6,2022-05-07,19:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Ituano,ituano,SP,Rodolpho Toski Marques,2,1,3,Vitoria Mandante
+56,2022,B,6,2022-05-07,16:30,Germano Kruger,Ponta Grossa,,Operário,operario,PR,Criciúma,criciuma,SC,Marielson Alves Silva,2,0,2,Vitoria Mandante
+57,2022,B,6,2022-05-07,19:00,São Januário,Rio de Janeiro,,Vasco da Gama,vasco_da_gama,RJ,Csa,csa,AL,Douglas Marques das Flores,1,0,1,Vitoria Mandante
+58,2022,B,6,2022-05-03,19:00,Octávio Mangabeira,Salvador,,Bahia,bahia,BA,Londrina,londrina,PR,Felipe Fernandes de Lima,4,0,4,Vitoria Mandante
+59,2022,B,6,2022-05-08,16:00,Raimundo Sampaio,Belo Horizonte,,Cruzeiro Saf,cruzeiro_saf,MG,Grêmio,gremio,RS,Flavio Rodrigues de Souza,0,1,1,Vitoria Visitante
+60,2022,B,6,2022-05-06,19:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Náutico,nautico,PE,Paulo Roberto Alves Junior,2,0,2,Vitoria Mandante
+62,2022,B,7,2022-05-14,20:30,Rei Pelé,Maceio,,Csa,csa,AL,Operário,operario,PR,Diego Pombo Lopez,0,0,6,Empate
+63,2022,B,7,2022-05-15,16:00,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Cruzeiro Saf,cruzeiro_saf,MG,Leandro Pedro Vuaden,0,1,1,Vitoria Visitante
+64,2022,B,7,2022-05-14,11:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Crb,crb,AL,Jean Pierre Goncalves Lima,3,0,3,Vitoria Mandante
+65,2022,B,7,2022-05-16,20:00,Novelli Junior,Itu,,Ituano,ituano,SP,Grêmio,gremio,RS,Savio Pereira Sampaio,1,1,2,Empate
+66,2022,B,7,2022-05-14,11:00,Jacy Scaff,Londrina,,Londrina,londrina,PR,Brusque,brusque,SC,Paulo Henrique Schleich Vollkopf,2,1,3,Vitoria Mandante
+67,2022,B,7,2022-05-15,16:00,São Januário,Rio de Janeiro,,Vasco da Gama,vasco_da_gama,RJ,Bahia,bahia,BA,Raphael Claus,1,0,1,Vitoria Mandante
+68,2022,B,7,2022-05-14,18:30,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Vila Nova,vila_nova,GO,Zandick Gondim Alves Junior,2,0,2,Vitoria Mandante
+69,2022,B,7,2022-05-14,16:00,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Guarani,guarani,SP,Luiz Augusto Silveira Tisne,1,1,2,Empate
+70,2022,B,7,2022-05-13,21:30,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Sport,sport,PE,Andre Luiz de Freitas Castro,0,1,1,Vitoria Visitante
+71,2022,B,8,2022-05-19,21:30,Arena da Amazônia,Manaus,,Guarani,guarani,SP,Vasco da Gama,vasco_da_gama,RJ,Paulo Roberto Alves Junior,0,0,0,Empate
+72,2022,B,8,2022-05-18,21:30,Rei Pelé,Maceio,,Crb,crb,AL,Londrina,londrina,PR,Diego da Costa Cidral,1,0,1,Vitoria Mandante
+73,2022,B,8,2022-05-19,21:30,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Csa,csa,AL,Edina Alves Batista,1,1,2,Empate
+74,2022,B,8,2022-05-20,19:00,Augusto Bauer,Brusque,,Brusque,brusque,SC,Tombense,tombense,MG,Felipe da Silva Gonçalves Paludo,1,0,1,Vitoria Mandante
+75,2022,B,8,2022-05-17,21:30,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Sport,sport,PE,Dewson Fernando Freitas da Silva,0,0,0,Empate
+76,2022,B,8,2022-05-21,11:00,Germano Kruger,Ponta Grossa,,Operário,operario,PR,Ituano,ituano,SP,Felipe Fernandes de Lima,3,2,13,Vitoria Mandante
+77,2022,B,8,2022-05-19,19:00,Arena do Grêmio,Porto Alegre,,Grêmio,gremio,RS,Criciúma,criciuma,SC,Wilton Pereira Sampaio,0,0,0,Empate
+78,2022,B,8,2022-05-20,21:30,Octávio Mangabeira,Salvador,,Bahia,bahia,BA,Ponte Preta,ponte_preta,SP,Denis da Silva Ribeiro Serafim,2,1,3,Vitoria Mandante
+79,2022,B,8,2022-05-22,11:00,Magalhães Pinto,Belo Horizonte,,Cruzeiro Saf,cruzeiro_saf,MG,Sampaio Corrêa,sampaio_correa,MA,Jefferson Ferreira de Moraes,2,0,2,Vitoria Mandante
+80,2022,B,8,2022-05-19,19:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Chapecoense,chapecoense,SC,Wagner do Nascimento Magalhaes,0,0,0,Empate
+81,2022,B,9,2022-05-24,21:30,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Chapecoense,chapecoense,SC,Marielson Alves Silva,0,0,0,Empate
+82,2022,B,9,2022-05-28,16:30,Rei Pelé,Maceio,,Csa,csa,AL,Novorizontino,novorizontino,SP,Alisson Sidnei Furtado,2,1,3,Vitoria Mandante
+83,2022,B,9,2022-05-24,19:00,Arena Pernambuco Governador Carlos Wilson Campos,São Lourenço da Mata,,Sport,sport,PE,Crb,crb,AL,Vinicius Gonçalves Dias Araujo,0,1,1,Vitoria Visitante
+84,2022,B,9,2022-05-27,21:30,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Cruzeiro Saf,cruzeiro_saf,MG,Paulo Roberto Alves Junior,0,1,1,Vitoria Visitante
+85,2022,B,9,2022-05-26,21:30,Novelli Junior,Itu,,Ituano,ituano,SP,Náutico,nautico,PE,Paulo Henrique Schleich Vollkopf,0,0,0,Empate
+86,2022,B,9,2022-05-25,19:00,Jacy Scaff,Londrina,,Londrina,londrina,PR,Operário,operario,PR,Leandro Pedro Vuaden,2,1,3,Vitoria Mandante
+87,2022,B,9,2022-05-26,19:00,São Januário,Rio de Janeiro,,Vasco da Gama,vasco_da_gama,RJ,Brusque,brusque,SC,Caio Max Augusto Vieira,2,0,2,Vitoria Mandante
+88,2022,B,9,2022-05-28,19:00,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Guarani,guarani,SP,Rodolpho Toski Marques,2,1,3,Vitoria Mandante
+89,2022,B,9,2022-05-27,19:00,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Bahia,bahia,BA,Rafael Traci,1,0,1,Vitoria Mandante
+90,2022,B,9,2022-05-29,16:00,Serra Dourada,Goiania,,Vila Nova,vila_nova,GO,Grêmio,gremio,RS,Douglas Marques das Flores,0,0,0,Empate
+91,2022,B,10,2022-06-02,21:30,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Vila Nova,vila_nova,GO,Felipe Fernandes de Lima,1,1,2,Empate
+92,2022,B,10,2022-06-01,21:30,Rei Pelé,Maceio,,Crb,crb,AL,Csa,csa,AL,Wagner do Nascimento Magalhaes,0,0,0,Empate
+93,2022,B,10,2022-06-02,21:30,Arena Pernambuco Governador Carlos Wilson Campos,São Lourenço da Mata,,Sport,sport,PE,Ponte Preta,ponte_preta,SP,Andre Luiz de Freitas Castro,2,1,3,Vitoria Mandante
+94,2022,B,10,2022-06-04,19:00,Augusto Bauer,Brusque,,Brusque,brusque,SC,Náutico,nautico,PE,Vinicius Gonçalves Dias Araujo,2,1,3,Vitoria Mandante
+95,2022,B,10,2022-06-04,16:30,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Sampaio Corrêa,sampaio_correa,MA,Paulo Roberto Alves Junior,0,0,0,Empate
+96,2022,B,10,2022-06-03,21:30,Germano Kruger,Ponta Grossa,,Operário,operario,PR,Cruzeiro Saf,cruzeiro_saf,MG,Ramon Abatti Abel,1,2,3,Vitoria Visitante
+97,2022,B,10,2022-06-02,20:00,São Januário,Rio de Janeiro,,Vasco da Gama,vasco_da_gama,RJ,Grêmio,gremio,RS,Luiz Flavio de Oliveira,0,0,0,Empate
+98,2022,B,10,2022-06-04,16:30,Octávio Mangabeira,Salvador,,Bahia,bahia,BA,Criciúma,criciuma,SC,Marcelo de Lima Henrique,2,1,11,Vitoria Mandante
+99,2022,B,10,2022-06-04,19:00,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Ituano,ituano,SP,Marielson Alves Silva,2,1,3,Vitoria Mandante
+100,2022,B,10,2022-07-05,19:00,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Londrina,londrina,PR,Rafael Rodrigo Klein,0,3,3,Vitoria Visitante
+101,2022,B,11,2022-06-06,20:00,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Operário,operario,PR,Maguielson Lima Barbosa,0,3,3,Vitoria Visitante
+102,2022,B,11,2022-06-07,21:30,Rei Pelé,Maceio,,Csa,csa,AL,Chapecoense,chapecoense,SC,Dewson Fernando Freitas da Silva,1,1,2,Empate
+103,2022,B,11,2022-06-07,19:00,José do Rêgo Maciel,Recife,,Náutico,nautico,PE,Vasco da Gama,vasco_da_gama,RJ,Flavio Rodrigues de Souza,2,3,5,Vitoria Visitante
+104,2022,B,11,2022-06-07,20:30,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Sampaio Corrêa,sampaio_correa,MA,Douglas Schwengber da Silva,2,2,4,Empate
+105,2022,B,11,2022-06-07,20:30,Novelli Junior,Itu,,Ituano,ituano,SP,Ponte Preta,ponte_preta,SP,Jean Pierre Goncalves Lima,1,2,3,Vitoria Visitante
+106,2022,B,11,2022-06-07,19:00,Jacy Scaff,Londrina,,Londrina,londrina,PR,Tombense,tombense,MG,Zandick Gondim Alves Junior,1,1,9,Empate
+107,2022,B,11,2022-06-07,21:30,Arena do Grêmio,Porto Alegre,,Grêmio,gremio,RS,Novorizontino,novorizontino,SP,Savio Pereira Sampaio,2,0,2,Vitoria Mandante
+108,2022,B,11,2022-06-08,21:30,Octávio Mangabeira,Salvador,,Bahia,bahia,BA,Sport,sport,PE,Braulio da Silva Machado,1,0,9,Vitoria Mandante
+109,2022,B,11,2022-06-08,19:00,Magalhães Pinto,Belo Horizonte,,Cruzeiro Saf,cruzeiro_saf,MG,Crb,crb,AL,Caio Max Augusto Vieira,2,0,6,Vitoria Mandante
+110,2022,B,11,2022-06-07,19:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Brusque,brusque,SC,Paulo Cesar Zanovelli da Silva,1,1,2,Empate
+111,2022,B,12,2022-06-11,16:30,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Londrina,londrina,PR,Paulo Henrique Schleich Vollkopf,0,0,0,Empate
+112,2022,B,12,2022-06-11,16:30,Rei Pelé,Maceio,,Crb,crb,AL,Vila Nova,vila_nova,GO,Leonardo Willers Lorenzatto,1,0,1,Vitoria Mandante
+113,2022,B,12,2022-06-13,20:00,Arena Pernambuco Governador Carlos Wilson Campos,São Lourenço da Mata,,Sport,sport,PE,Grêmio,gremio,RS,Wilton Pereira Sampaio,0,0,9,Empate
+114,2022,B,12,2022-06-11,11:00,Augusto Bauer,Brusque,,Brusque,brusque,SC,Ituano,ituano,SP,Diego Pombo Lopez,0,1,10,Vitoria Visitante
+115,2022,B,12,2022-06-12,11:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Guarani,guarani,SP,Jean Pierre Goncalves Lima,1,2,3,Vitoria Visitante
+116,2022,B,12,2022-06-11,18:30,Germano Kruger,Ponta Grossa,,Operário,operario,PR,Bahia,bahia,BA,Caio Max Augusto Vieira,0,1,1,Vitoria Visitante
+117,2022,B,12,2022-06-12,16:00,Jornalista Mário Filho,Rio de Janeiro,,Vasco da Gama,vasco_da_gama,RJ,Cruzeiro Saf,cruzeiro_saf,MG,Anderson Daronco,1,0,1,Vitoria Mandante
+118,2022,B,12,2022-06-10,19:00,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Náutico,nautico,PE,Antonio Dib Moraes de Sousa,2,0,2,Vitoria Mandante
+119,2022,B,12,2022-06-12,19:00,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Csa,csa,AL,Rafael Rodrigo Klein,2,1,3,Vitoria Mandante
+120,2022,B,12,2022-06-10,21:30,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Criciúma,criciuma,SC,Rodolpho Toski Marques,2,3,5,Vitoria Visitante
+121,2022,B,13,2022-06-19,11:00,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Csa,csa,AL,Leonardo Willers Lorenzatto,0,0,0,Empate
+122,2022,B,13,2022-06-17,21:30,Rei Pelé,Maceio,,Crb,crb,AL,Ituano,ituano,SP,Maguielson Lima Barbosa,1,1,2,Empate
+123,2022,B,13,2022-06-18,18:30,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Sport,sport,PE,Wagner do Nascimento Magalhaes,1,1,2,Empate
+124,2022,B,13,2022-06-17,19:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Brusque,brusque,SC,Jefferson Ferreira de Moraes,0,1,1,Vitoria Visitante
+125,2022,B,13,2022-06-18,16:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Tombense,tombense,MG,Paulo Henrique de Melo Salmazio,1,3,16,Vitoria Visitante
+126,2022,B,13,2022-06-18,16:00,Jacy Scaff,Londrina,,Londrina,londrina,PR,Vasco da Gama,vasco_da_gama,RJ,Jean Pierre Goncalves Lima,0,1,1,Vitoria Visitante
+127,2022,B,13,2022-06-18,11:00,Arena do Grêmio,Porto Alegre,,Grêmio,gremio,RS,Sampaio Corrêa,sampaio_correa,MA,Andre Luiz de Freitas Castro,2,0,2,Vitoria Mandante
+128,2022,B,13,2022-06-14,19:00,Octávio Mangabeira,Salvador,,Bahia,bahia,BA,Chapecoense,chapecoense,SC,Douglas Marques das Flores,0,1,11,Vitoria Visitante
+129,2022,B,13,2022-06-16,16:00,Magalhães Pinto,Belo Horizonte,,Cruzeiro Saf,cruzeiro_saf,MG,Ponte Preta,ponte_preta,SP,Paulo Roberto Alves Junior,2,0,2,Vitoria Mandante
+130,2022,B,13,2022-06-16,20:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Operário,operario,PR,Rafael Rodrigo Klein,0,0,0,Empate
+131,2022,B,14,2022-06-23,21:30,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Sampaio Corrêa,sampaio_correa,MA,Diego Pombo Lopez,0,0,0,Empate
+132,2022,B,14,2022-06-23,21:30,Rei Pelé,Maceio,,Csa,csa,AL,Grêmio,gremio,RS,Ramon Abatti Abel,1,1,2,Empate
+133,2022,B,14,2022-06-25,18:30,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Brusque,brusque,SC,Edina Alves Batista,0,0,0,Empate
+134,2022,B,14,2022-06-25,11:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Vila Nova,vila_nova,GO,Paulo Henrique Schleich Vollkopf,1,0,1,Vitoria Mandante
+135,2022,B,14,2022-07-05,19:00,Novelli Junior,Itu,,Ituano,ituano,SP,Cruzeiro Saf,cruzeiro_saf,MG,Bruno Arleu de Araujo,1,1,2,Empate
+136,2022,B,14,2022-06-24,19:00,Jacy Scaff,Londrina,,Londrina,londrina,PR,Guarani,guarani,SP,Denis da Silva Ribeiro Serafim,3,1,4,Vitoria Mandante
+137,2022,B,14,2022-06-24,19:00,São Januário,Rio de Janeiro,,Vasco da Gama,vasco_da_gama,RJ,Operário,operario,PR,Vinicius Gonçalves Dias Araujo,3,0,3,Vitoria Mandante
+138,2022,B,14,2022-06-25,16:00,Octávio Mangabeira,Salvador,,Bahia,bahia,BA,Novorizontino,novorizontino,SP,Marcelo de Lima Henrique,0,1,1,Vitoria Visitante
+139,2022,B,14,2022-06-26,11:00,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Náutico,nautico,PE,Leonardo Willers Lorenzatto,1,1,2,Empate
+140,2022,B,14,2022-06-21,19:00,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Crb,crb,AL,Edina Alves Batista,1,2,3,Vitoria Visitante
+141,2022,B,15,2022-06-28,21:30,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Ituano,ituano,SP,Braulio da Silva Machado,0,2,2,Vitoria Visitante
+142,2022,B,15,2022-06-29,21:30,Rei Pelé,Maceio,,Crb,crb,AL,Tombense,tombense,MG,Bruno Arleu de Araujo,0,0,0,Empate
+143,2022,B,15,2022-06-29,19:00,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Criciúma,criciuma,SC,Andre Luiz de Freitas Castro,1,1,2,Empate
+144,2022,B,15,2022-06-28,19:00,Augusto Bauer,Brusque,,Brusque,brusque,SC,Bahia,bahia,BA,Luiz Flavio de Oliveira,0,2,2,Vitoria Visitante
+145,2022,B,15,2022-06-29,21:30,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Vasco da Gama,vasco_da_gama,RJ,Ramon Abatti Abel,2,0,2,Vitoria Mandante
+147,2022,B,15,2022-06-28,19:00,Arena do Grêmio,Porto Alegre,,Grêmio,gremio,RS,Londrina,londrina,PR,Marielson Alves Silva,1,0,1,Vitoria Mandante
+148,2022,B,15,2022-06-27,20:00,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Csa,csa,AL,Felipe Fernandes de Lima,2,0,2,Vitoria Mandante
+149,2022,B,15,2022-06-28,21:30,Magalhães Pinto,Belo Horizonte,,Cruzeiro Saf,cruzeiro_saf,MG,Sport,sport,PE,Leandro Pedro Vuaden,1,2,3,Vitoria Visitante
+150,2022,B,15,2022-06-28,21:30,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Ponte Preta,ponte_preta,SP,Antonio Dib Moraes de Sousa,1,1,2,Empate
+151,2022,B,16,2022-07-03,11:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Tombense,tombense,MG,Denis da Silva Ribeiro Serafim,0,0,0,Empate
+152,2022,B,16,2022-07-02,20:30,Rei Pelé,Maceio,,Crb,crb,AL,Guarani,guarani,SP,Antonio Dib Moraes de Sousa,1,1,2,Empate
+153,2022,B,16,2022-07-02,18:30,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Novorizontino,novorizontino,SP,Jefferson Ferreira de Moraes,3,1,4,Vitoria Mandante
+154,2022,B,16,2022-07-01,21:30,Augusto Bauer,Brusque,,Brusque,brusque,SC,Operário,operario,PR,Leandro Pedro Vuaden,2,0,2,Vitoria Mandante
+155,2022,B,16,2022-07-02,16:00,Novelli Junior,Itu,,Ituano,ituano,SP,Criciúma,criciuma,SC,Diego Pombo Lopez,1,2,3,Vitoria Visitante
+156,2022,B,16,2022-07-02,11:00,Jacy Scaff,Londrina,,Londrina,londrina,PR,Csa,csa,AL,Vinicius Gomes do Amaral,0,0,0,Empate
+157,2022,B,16,2022-07-03,16:00,Jornalista Mário Filho,Rio de Janeiro,,Vasco da Gama,vasco_da_gama,RJ,Sport,sport,PE,Luiz Flavio de Oliveira,0,0,0,Empate
+158,2022,B,16,2022-07-03,16:00,Octávio Mangabeira,Salvador,,Bahia,bahia,BA,Grêmio,gremio,RS,Raphael Claus,0,0,0,Empate
+159,2022,B,16,2022-07-01,21:30,Magalhães Pinto,Belo Horizonte,,Cruzeiro Saf,cruzeiro_saf,MG,Vila Nova,vila_nova,GO,Edina Alves Batista,2,0,2,Vitoria Mandante
+160,2022,B,16,2022-07-01,19:00,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Sampaio Corrêa,sampaio_correa,MA,Vinicius Gonçalves Dias Araujo,2,2,4,Empate
+161,2022,B,17,2022-07-09,11:00,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Cruzeiro Saf,cruzeiro_saf,MG,Jean Pierre Goncalves Lima,1,0,1,Vitoria Mandante
+162,2022,B,17,2022-07-07,19:00,Rei Pelé,Maceio,,Csa,csa,AL,Ponte Preta,ponte_preta,SP,Wagner do Nascimento Magalhaes,0,1,1,Vitoria Visitante
+163,2022,B,17,2022-07-09,16:00,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Londrina,londrina,PR,Douglas Marques das Flores,2,0,2,Vitoria Mandante
+164,2022,B,17,2022-07-09,16:30,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Vasco da Gama,vasco_da_gama,RJ,Leandro Pedro Vuaden,0,1,1,Vitoria Visitante
+165,2022,B,17,2022-07-06,21:30,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Brusque,brusque,SC,Marcelo de Lima Henrique,1,0,1,Vitoria Mandante
+166,2022,B,17,2022-07-05,21:30,Germano Kruger,Ponta Grossa,,Operário,operario,PR,Crb,crb,AL,Marielson Alves Silva,2,3,5,Vitoria Visitante
+167,2022,B,17,2022-07-08,21:30,Arena do Grêmio,Porto Alegre,,Grêmio,gremio,RS,Náutico,nautico,PE,Braulio da Silva Machado,2,0,2,Vitoria Mandante
+168,2022,B,17,2022-07-09,18:30,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Ituano,ituano,SP,Paulo Roberto Alves Junior,2,0,2,Vitoria Mandante
+169,2022,B,17,2022-07-09,16:30,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Chapecoense,chapecoense,SC,Marielson Alves Silva,2,1,3,Vitoria Mandante
+170,2022,B,17,2022-07-08,19:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Bahia,bahia,BA,Caio Max Augusto Vieira,1,1,2,Empate
+171,2022,B,18,2022-07-16,18:30,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Bahia,bahia,BA,Bruno Arleu de Araujo,0,2,2,Vitoria Visitante
+172,2022,B,18,2022-07-16,16:00,Rei Pelé,Maceio,,Crb,crb,AL,Brusque,brusque,SC,Jefferson Ferreira de Moraes,1,1,2,Empate
+173,2022,B,18,2022-07-17,16:00,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Chapecoense,chapecoense,SC,Denis da Silva Ribeiro Serafim,1,2,3,Vitoria Visitante
+174,2022,B,18,2022-07-15,19:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Ponte Preta,ponte_preta,SP,Caio Max Augusto Vieira,1,1,2,Empate
+175,2022,B,18,2022-07-16,11:00,Novelli Junior,Itu,,Ituano,ituano,SP,Londrina,londrina,PR,Paulo Cesar Zanovelli da Silva,0,0,0,Empate
+176,2022,B,18,2022-07-14,18:30,Germano Kruger,Ponta Grossa,,Operário,operario,PR,Sport,sport,PE,Wagner do Nascimento Magalhaes,0,0,0,Empate
+177,2022,B,18,2022-07-16,16:30,Arena do Grêmio,Porto Alegre,,Grêmio,gremio,RS,Tombense,tombense,MG,Marcelo de Lima Henrique,3,0,3,Vitoria Mandante
+178,2022,B,18,2022-07-16,16:30,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Vasco da Gama,vasco_da_gama,RJ,Diego Pombo Lopez,3,1,4,Vitoria Mandante
+179,2022,B,18,2022-07-17,16:00,Magalhães Pinto,Belo Horizonte,,Cruzeiro Saf,cruzeiro_saf,MG,Novorizontino,novorizontino,SP,Braulio da Silva Machado,2,1,3,Vitoria Mandante
+180,2022,B,18,2022-07-15,21:30,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Csa,csa,AL,Rodolpho Toski Marques,1,2,3,Vitoria Visitante
+181,2022,B,19,2022-07-20,19:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Náutico,nautico,PE,Jefferson Ferreira de Moraes,1,0,1,Vitoria Mandante
+182,2022,B,19,2022-07-20,19:00,Rei Pelé,Maceio,,Csa,csa,AL,Cruzeiro Saf,cruzeiro_saf,MG,Flavio Rodrigues de Souza,1,1,10,Empate
+183,2022,B,19,2022-07-18,20:00,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Vila Nova,vila_nova,GO,Maguielson Lima Barbosa,0,0,0,Empate
+184,2022,B,19,2022-07-19,19:00,Augusto Bauer,Brusque,,Brusque,brusque,SC,Grêmio,gremio,RS,Luiz Flavio de Oliveira,1,1,2,Empate
+185,2022,B,19,2022-07-20,21:30,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Operário,operario,PR,Marielson Alves Silva,2,1,3,Vitoria Mandante
+186,2022,B,19,2022-07-19,19:00,Jacy Scaff,Londrina,,Londrina,londrina,PR,Sampaio Corrêa,sampaio_correa,MA,Rodrigo Jose Pereira de Lima,1,0,1,Vitoria Mandante
+187,2022,B,19,2022-07-19,21:30,São Januário,Rio de Janeiro,,Vasco da Gama,vasco_da_gama,RJ,Ituano,ituano,SP,Rodolpho Toski Marques,1,1,2,Empate
+188,2022,B,19,2022-07-19,19:00,Octávio Mangabeira,Salvador,,Bahia,bahia,BA,Crb,crb,AL,Andre Luiz de Freitas Castro,1,1,2,Empate
+189,2022,B,19,2022-07-19,19:00,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Criciúma,criciuma,SC,Douglas Marques das Flores,1,0,1,Vitoria Mandante
+190,2022,B,19,2022-07-20,19:00,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Guarani,guarani,SP,Savio Pereira Sampaio,0,0,0,Empate
+191,2022,B,20,2022-07-24,11:00,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Brusque,brusque,SC,Rodolpho Toski Marques,1,1,2,Empate
+192,2022,B,20,2022-07-23,20:30,Rei Pelé,Maceio,,Crb,crb,AL,Novorizontino,novorizontino,SP,Wagner do Nascimento Magalhaes,2,1,3,Vitoria Mandante
+193,2022,B,20,2022-07-23,18:30,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Londrina,londrina,PR,Antonio Dib Moraes de Sousa,1,2,3,Vitoria Visitante
+194,2022,B,20,2022-07-25,19:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Csa,csa,AL,Maguielson Lima Barbosa,2,1,3,Vitoria Mandante
+195,2022,B,20,2022-07-23,19:00,Novelli Junior,Itu,,Ituano,ituano,SP,Chapecoense,chapecoense,SC,Jefferson Ferreira de Moraes,1,0,1,Vitoria Mandante
+196,2022,B,20,2022-07-25,19:00,Germano Kruger,Ponta Grossa,,Operário,operario,PR,Tombense,tombense,MG,Flavio Rodrigues de Souza,0,0,0,Empate
+197,2022,B,20,2022-07-23,16:30,Arena do Grêmio,Porto Alegre,,Grêmio,gremio,RS,Ponte Preta,ponte_preta,SP,Paulo Cesar Zanovelli da Silva,2,1,3,Vitoria Mandante
+198,2022,B,20,2022-07-22,21:30,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Sport,sport,PE,Vinicius Gonçalves Dias Araujo,4,1,5,Vitoria Mandante
+199,2022,B,20,2022-07-23,16:00,Magalhães Pinto,Belo Horizonte,,Cruzeiro Saf,cruzeiro_saf,MG,Bahia,bahia,BA,Luiz Flavio de Oliveira,1,0,1,Vitoria Mandante
+200,2022,B,20,2022-07-23,16:30,Serra Dourada,Goiania,,Vila Nova,vila_nova,GO,Vasco da Gama,vasco_da_gama,RJ,Savio Pereira Sampaio,1,0,1,Vitoria Mandante
+201,2022,B,21,2022-07-30,19:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Operário,operario,PR,Felipe Fernandes de Lima,3,0,3,Vitoria Mandante
+202,2022,B,21,2022-07-30,20:30,Rei Pelé,Maceio,,Csa,csa,AL,Ituano,ituano,SP,José Mendonça da Silva Junior,1,3,4,Vitoria Visitante
+203,2022,B,21,2022-07-28,21:30,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Guarani,guarani,SP,Andre Luiz de Freitas Castro,2,1,3,Vitoria Mandante
+204,2022,B,21,2022-07-30,11:00,Augusto Bauer,Brusque,,Brusque,brusque,SC,Cruzeiro Saf,cruzeiro_saf,MG,Paulo Roberto Alves Junior,0,0,0,Empate
+205,2022,B,21,2022-07-30,18:30,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Vila Nova,vila_nova,GO,Diego Pombo Lopez,1,1,11,Empate
+206,2022,B,21,2022-07-30,16:00,Jacy Scaff,Londrina,,Londrina,londrina,PR,Criciúma,criciuma,SC,Marielson Alves Silva,2,0,2,Vitoria Mandante
+207,2022,B,21,2022-07-28,19:00,São Januário,Rio de Janeiro,,Vasco da Gama,vasco_da_gama,RJ,Crb,crb,AL,Caio Max Augusto Vieira,4,0,4,Vitoria Mandante
+208,2022,B,21,2022-07-29,19:00,Octávio Mangabeira,Salvador,,Bahia,bahia,BA,Náutico,nautico,PE,Flavio Rodrigues de Souza,3,0,3,Vitoria Mandante
+209,2022,B,21,2022-07-29,21:30,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Sampaio Corrêa,sampaio_correa,MA,Savio Pereira Sampaio,3,0,3,Vitoria Mandante
+210,2022,B,21,2022-07-26,18:30,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Grêmio,gremio,RS,Paulo Roberto Alves Junior,0,0,0,Empate
+211,2022,B,22,2022-08-05,21:30,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Grêmio,gremio,RS,Savio Pereira Sampaio,1,2,3,Vitoria Visitante
+212,2022,B,22,2022-08-04,21:30,Rei Pelé,Maceio,,Crb,crb,AL,Ponte Preta,ponte_preta,SP,Dyorgines Jose Padovani de Andrade,1,1,2,Empate
+213,2022,B,22,2022-08-02,21:30,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Criciúma,criciuma,SC,Savio Pereira Sampaio,1,1,2,Empate
+214,2022,B,22,2022-08-04,19:00,Augusto Bauer,Brusque,,Brusque,brusque,SC,Sampaio Corrêa,sampaio_correa,MA,Leonilson Fernandes Trigueiro Filho,1,1,2,Empate
+215,2022,B,22,2022-08-06,19:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Londrina,londrina,PR,Leandro Pedro Vuaden,0,1,1,Vitoria Visitante
+216,2022,B,22,2022-08-05,19:00,Germano Kruger,Ponta Grossa,,Operário,operario,PR,Náutico,nautico,PE,Vinicius Gonçalves Dias Araujo,1,0,1,Vitoria Mandante
+217,2022,B,22,2022-07-31,16:00,São Januário,Rio de Janeiro,,Vasco da Gama,vasco_da_gama,RJ,Chapecoense,chapecoense,SC,Douglas Marques das Flores,0,0,12,Empate
+218,2022,B,22,2022-08-06,16:30,Octávio Mangabeira,Salvador,,Bahia,bahia,BA,Csa,csa,AL,Felipe Fernandes de Lima,1,0,1,Vitoria Mandante
+219,2022,B,22,2022-08-06,19:00,Magalhães Pinto,Belo Horizonte,,Cruzeiro Saf,cruzeiro_saf,MG,Tombense,tombense,MG,Andre Luiz de Freitas Castro,2,0,2,Vitoria Mandante
+220,2022,B,22,2022-08-05,19:00,Serra Dourada,Goiania,,Vila Nova,vila_nova,GO,Ituano,ituano,SP,Rodrigo Jose Pereira de Lima,1,1,2,Empate
+221,2022,B,23,2022-08-09,20:30,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Vasco da Gama,vasco_da_gama,RJ,Anderson Daronco,3,1,4,Vitoria Mandante
+222,2022,B,23,2022-08-09,20:30,Rei Pelé,Maceio,,Csa,csa,AL,Brusque,brusque,SC,Leandro Pedro Vuaden,1,0,8,Vitoria Mandante
+223,2022,B,23,2022-08-10,19:00,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Crb,crb,AL,Rafael Traci,2,1,9,Vitoria Mandante
+224,2022,B,23,2022-08-10,21:30,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Guarani,guarani,SP,Rodolpho Toski Marques,0,0,0,Empate
+225,2022,B,23,2022-08-09,19:00,Novelli Junior,Itu,,Ituano,ituano,SP,Sport,sport,PE,Paulo Roberto Alves Junior,4,1,5,Vitoria Mandante
+226,2022,B,23,2022-08-09,21:00,Jacy Scaff,Londrina,,Londrina,londrina,PR,Cruzeiro Saf,cruzeiro_saf,MG,Marcelo de Lima Henrique,2,1,3,Vitoria Mandante
+227,2022,B,23,2022-08-09,19:00,Arena do Grêmio,Porto Alegre,,Grêmio,gremio,RS,Operário,operario,PR,Bruno Arleu de Araujo,4,2,6,Vitoria Mandante
+228,2022,B,23,2022-08-09,21:30,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Bahia,bahia,BA,José Mendonça da Silva Junior,2,0,2,Vitoria Mandante
+229,2022,B,23,2022-08-09,21:30,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Vila Nova,vila_nova,GO,Paulo Henrique de Melo Salmazio,0,0,0,Empate
+230,2022,B,23,2022-08-10,19:00,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Novorizontino,novorizontino,SP,Rodrigo Jose Pereira de Lima,2,2,4,Empate
+231,2022,B,24,2022-08-13,18:30,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Náutico,nautico,PE,Diego Pombo Lopez,1,0,1,Vitoria Mandante
+232,2022,B,24,2022-08-13,20:30,Rei Pelé,Maceio,,Crb,crb,AL,Grêmio,gremio,RS,Vinicius Gonçalves Dias Araujo,2,0,2,Vitoria Mandante
+233,2022,B,24,2022-08-13,16:00,Arena Pernambuco Governador Carlos Wilson Campos,São Lourenço da Mata,,Sport,sport,PE,Csa,csa,AL,José Mendonça da Silva Junior,4,0,4,Vitoria Mandante
+234,2022,B,24,2022-08-12,21:30,Augusto Bauer,Brusque,,Brusque,brusque,SC,Ponte Preta,ponte_preta,SP,Wagner do Nascimento Magalhaes,2,1,3,Vitoria Mandante
+235,2022,B,24,2022-08-14,11:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Criciúma,criciuma,SC,Felipe Fernandes de Lima,3,1,4,Vitoria Mandante
+236,2022,B,24,2022-08-13,11:00,Germano Kruger,Ponta Grossa,,Operário,operario,PR,Sampaio Corrêa,sampaio_correa,MA,Alisson Sidnei Furtado,1,1,2,Empate
+237,2022,B,24,2022-08-13,11:00,São Januário,Rio de Janeiro,,Vasco da Gama,vasco_da_gama,RJ,Tombense,tombense,MG,Leandro Pedro Vuaden,3,1,12,Vitoria Mandante
+238,2022,B,24,2022-08-12,21:30,Octávio Mangabeira,Salvador,,Bahia,bahia,BA,Ituano,ituano,SP,Braulio da Silva Machado,2,0,2,Vitoria Mandante
+239,2022,B,24,2022-08-13,16:30,Arbitragem,Brasilia,,Cruzeiro Saf,cruzeiro_saf,MG,Chapecoense,chapecoense,SC,Savio Pereira Sampaio,1,1,2,Empate
+240,2022,B,24,2022-08-12,19:00,Serra Dourada,Goiania,,Vila Nova,vila_nova,GO,Londrina,londrina,PR,Dyorgines Jose Padovani de Andrade,0,0,0,Empate
+241,2022,B,25,2022-08-20,11:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Guarani,guarani,SP,Marcelo de Lima Henrique,1,0,1,Vitoria Mandante
+242,2022,B,25,2022-08-18,20:00,Rei Pelé,Maceio,,Csa,csa,AL,Vasco da Gama,vasco_da_gama,RJ,Paulo Cesar Zanovelli da Silva,2,0,2,Vitoria Mandante
+243,2022,B,25,2022-08-19,21:30,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Vila Nova,vila_nova,GO,Jean Pierre Goncalves Lima,0,3,3,Vitoria Visitante
+245,2022,B,25,2022-08-19,19:00,Novelli Junior,Itu,,Ituano,ituano,SP,Novorizontino,novorizontino,SP,Marielson Alves Silva,1,0,1,Vitoria Mandante
+246,2022,B,25,2022-08-16,20:30,Jacy Scaff,Londrina,,Londrina,londrina,PR,Bahia,bahia,BA,Andre Luiz de Freitas Castro,1,1,2,Empate
+247,2022,B,25,2022-08-21,16:00,Arena do Grêmio,Porto Alegre,,Grêmio,gremio,RS,Cruzeiro Saf,cruzeiro_saf,MG,Braulio da Silva Machado,2,2,11,Empate
+248,2022,B,25,2022-08-20,19:00,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Crb,crb,AL,Wagner do Nascimento Magalhaes,0,3,3,Vitoria Visitante
+249,2022,B,25,2022-08-18,21:30,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Sport,sport,PE,Caio Max Augusto Vieira,1,0,1,Vitoria Mandante
+250,2022,B,25,2022-08-20,16:30,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Brusque,brusque,SC,José Mendonça da Silva Junior,1,0,1,Vitoria Mandante
+251,2022,B,26,2022-08-27,11:00,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Tombense,tombense,MG,Jefferson Ferreira de Moraes,2,1,3,Vitoria Mandante
+252,2022,B,26,2022-08-27,16:00,Rei Pelé,Maceio,,Crb,crb,AL,Criciúma,criciuma,SC,Edina Alves Batista,0,0,0,Empate
+253,2022,B,26,2022-08-23,21:30,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Chapecoense,chapecoense,SC,Felipe Fernandes de Lima,1,0,1,Vitoria Mandante
+254,2022,B,26,2022-08-26,19:00,Augusto Bauer,Brusque,,Brusque,brusque,SC,Londrina,londrina,PR,Luiz Flavio de Oliveira,0,1,8,Vitoria Visitante
+255,2022,B,26,2022-08-25,21:30,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Ponte Preta,ponte_preta,SP,Caio Max Augusto Vieira,1,1,12,Empate
+256,2022,B,26,2022-08-27,18:30,Germano Kruger,Ponta Grossa,,Operário,operario,PR,Csa,csa,AL,Antonio Dib Moraes de Sousa,0,0,0,Empate
+257,2022,B,26,2022-08-26,19:00,Arena do Grêmio,Porto Alegre,,Grêmio,gremio,RS,Ituano,ituano,SP,Andre Luiz de Freitas Castro,0,1,1,Vitoria Visitante
+258,2022,B,26,2022-08-28,16:00,Octávio Mangabeira,Salvador,,Bahia,bahia,BA,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,RJ,Raphael Claus,2,1,3,Vitoria Mandante
+259,2022,B,26,2022-08-26,21:30,Raimundo Sampaio,Belo Horizonte,,Cruzeiro Saf,cruzeiro_saf,MG,Náutico,nautico,PE,Rodolpho Toski Marques,4,0,4,Vitoria Mandante
+260,2022,B,26,2022-08-25,19:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Sampaio Corrêa,sampaio_correa,MA,Leandro Pedro Vuaden,0,0,0,Empate
+261,2022,B,27,2022-08-31,21:30,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Bahia,bahia,BA,Rafael Traci,2,0,2,Vitoria Mandante
+262,2022,B,27,2022-08-30,21:30,Rei Pelé,Maceio,,Csa,csa,AL,Náutico,nautico,PE,Anderson Daronco,2,0,2,Vitoria Mandante
+263,2022,B,27,2022-08-30,20:30,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Novorizontino,novorizontino,SP,Rafael Rodrigo Klein,1,0,1,Vitoria Mandante
+264,2022,B,27,2022-08-30,21:30,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Grêmio,gremio,RS,Marcelo de Lima Henrique,2,0,2,Vitoria Mandante
+265,2022,B,27,2022-08-30,20:30,Novelli Junior,Itu,,Ituano,ituano,SP,Operário,operario,PR,Paulo Henrique Schleich Vollkopf,0,0,0,Empate
+266,2022,B,27,2022-08-30,19:00,Jacy Scaff,Londrina,,Londrina,londrina,PR,Crb,crb,AL,Alisson Sidnei Furtado,1,0,1,Vitoria Mandante
+267,2022,B,27,2022-08-31,19:00,São Januário,Rio de Janeiro,,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,RJ,Guarani,guarani,SP,Jean Pierre Goncalves Lima,3,0,3,Vitoria Mandante
+268,2022,B,27,2022-08-30,19:00,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Cruzeiro Saf,cruzeiro_saf,MG,Edina Alves Batista,1,1,2,Empate
+269,2022,B,27,2022-08-30,21:30,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Brusque,brusque,SC,Rodrigo Jose Pereira de Lima,1,0,1,Vitoria Mandante
+270,2022,B,27,2022-08-29,20:00,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Vila Nova,vila_nova,GO,Luiz Flavio de Oliveira,0,3,3,Vitoria Visitante
+271,2022,B,28,2022-09-03,16:30,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Sampaio Corrêa,sampaio_correa,MA,José Mendonça da Silva Junior,3,0,3,Vitoria Mandante
+272,2022,B,28,2022-09-03,17:00,Rei Pelé,Maceio,,Crb,crb,AL,Sport,sport,PE,Leandro Pedro Vuaden,2,0,2,Vitoria Mandante
+273,2022,B,28,2022-09-02,19:00,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Ituano,ituano,SP,Marcelo de Lima Henrique,2,0,2,Vitoria Mandante
+274,2022,B,28,2022-09-03,16:30,Augusto Bauer,Brusque,,Brusque,brusque,SC,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,RJ,Wilton Pereira Sampaio,1,0,1,Vitoria Mandante
+275,2022,B,28,2022-09-03,11:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Csa,csa,AL,Paulo Roberto Alves Junior,1,1,2,Empate
+276,2022,B,28,2022-09-03,20:30,Germano Kruger,Ponta Grossa,,Operário,operario,PR,Londrina,londrina,PR,Vinicius Gonçalves Dias Araujo,1,0,8,Vitoria Mandante
+277,2022,B,28,2022-09-02,21:30,Arena do Grêmio,Porto Alegre,,Grêmio,gremio,RS,Vila Nova,vila_nova,GO,Savio Pereira Sampaio,2,1,3,Vitoria Mandante
+278,2022,B,28,2022-09-03,19:00,Octávio Mangabeira,Salvador,,Bahia,bahia,BA,Tombense,tombense,MG,Edina Alves Batista,3,1,4,Vitoria Mandante
+279,2022,B,28,2022-09-04,16:00,Magalhães Pinto,Belo Horizonte,,Cruzeiro Saf,cruzeiro_saf,MG,Criciúma,criciuma,SC,Marielson Alves Silva,1,1,2,Empate
+280,2022,B,28,2022-09-03,19:00,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Ponte Preta,ponte_preta,SP,Rodolpho Toski Marques,3,0,3,Vitoria Mandante
+281,2022,B,29,2022-09-07,19:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Sport,sport,PE,Ramon Abatti Abel,1,0,1,Vitoria Mandante
+282,2022,B,29,2022-09-10,16:00,Rei Pelé,Maceio,,Csa,csa,AL,Crb,crb,AL,Bruno Arleu de Araujo,1,1,2,Empate
+283,2022,B,29,2022-09-09,21:30,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Brusque,brusque,SC,Wagner do Nascimento Magalhaes,1,0,9,Vitoria Mandante
+284,2022,B,29,2022-09-08,19:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Bahia,bahia,BA,Luiz Flavio de Oliveira,0,0,0,Empate
+285,2022,B,29,2022-09-10,11:00,Novelli Junior,Itu,,Ituano,ituano,SP,Tombense,tombense,MG,Ivan da Silva Guimarães Junior,3,0,3,Vitoria Mandante
+286,2022,B,29,2022-09-10,18:30,Jacy Scaff,Londrina,,Londrina,londrina,PR,Chapecoense,chapecoense,SC,Marielson Alves Silva,2,1,3,Vitoria Mandante
+287,2022,B,29,2022-09-11,16:00,Arena do Grêmio,Porto Alegre,,Grêmio,gremio,RS,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,RJ,Raphael Claus,2,1,3,Vitoria Mandante
+288,2022,B,29,2022-09-07,21:30,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Novorizontino,novorizontino,SP,Antonio Dib Moraes de Sousa,2,1,3,Vitoria Mandante
+289,2022,B,29,2022-09-08,21:30,Magalhães Pinto,Belo Horizonte,,Cruzeiro Saf,cruzeiro_saf,MG,Operário,operario,PR,Douglas Marques das Flores,1,0,1,Vitoria Mandante
+290,2022,B,29,2022-09-06,21:30,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Guarani,guarani,SP,Leandro Pedro Vuaden,2,1,3,Vitoria Mandante
+291,2022,B,30,2022-09-13,21:30,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Ituano,ituano,SP,Rafael Rodrigo Klein,1,1,2,Empate
+292,2022,B,30,2022-09-17,20:30,Rei Pelé,Maceio,,Crb,crb,AL,Cruzeiro Saf,cruzeiro_saf,MG,Vinicius Gonçalves Dias Araujo,0,2,2,Vitoria Visitante
+293,2022,B,30,2022-09-12,20:00,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Bahia,bahia,BA,Edina Alves Batista,1,0,1,Vitoria Mandante
+294,2022,B,30,2022-09-17,16:30,Augusto Bauer,Brusque,,Brusque,brusque,SC,Vila Nova,vila_nova,GO,Marcelo de Lima Henrique,0,1,1,Vitoria Visitante
+295,2022,B,30,2022-09-16,21:30,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Grêmio,gremio,RS,Ramon Abatti Abel,2,0,2,Vitoria Mandante
+296,2022,B,30,2022-09-13,19:00,Germano Kruger,Ponta Grossa,,Operário,operario,PR,Guarani,guarani,SP,Dyorgines Jose Padovani de Andrade,0,1,8,Vitoria Visitante
+297,2022,B,30,2022-09-16,19:00,São Januário,Rio de Janeiro,,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,RJ,Náutico,nautico,PE,Braulio da Silva Machado,4,1,5,Vitoria Mandante
+298,2022,B,30,2022-09-17,19:00,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Criciúma,criciuma,SC,Ivan da Silva Guimarães Junior,1,1,2,Empate
+299,2022,B,30,2022-09-16,21:30,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Londrina,londrina,PR,Caio Max Augusto Vieira,1,1,2,Empate
+300,2022,B,30,2022-09-17,11:00,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Csa,csa,AL,Leandro Pedro Vuaden,1,0,1,Vitoria Mandante
+301,2022,B,31,2022-09-20,21:30,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Novorizontino,novorizontino,SP,Diego Pombo Lopez,2,0,2,Vitoria Mandante
+302,2022,B,31,2022-09-26,20:00,Rei Pelé,Maceio,,Csa,csa,AL,Tombense,tombense,MG,Maguielson Lima Barbosa,2,0,2,Vitoria Mandante
+303,2022,B,31,2022-09-23,19:00,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Sampaio Corrêa,sampaio_correa,MA,Dyorgines Jose Padovani de Andrade,1,3,4,Vitoria Visitante
+304,2022,B,31,2022-09-25,18:30,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Chapecoense,chapecoense,SC,Rafael Rodrigo Klein,2,0,2,Vitoria Mandante
+305,2022,B,31,2022-09-24,11:00,Novelli Junior,Itu,,Ituano,ituano,SP,Brusque,brusque,SC,Caio Max Augusto Vieira,2,0,2,Vitoria Mandante
+306,2022,B,31,2022-09-23,21:30,Jacy Scaff,Londrina,,Londrina,londrina,PR,Ponte Preta,ponte_preta,SP,Jefferson Ferreira de Moraes,0,2,2,Vitoria Visitante
+307,2022,B,31,2022-09-20,19:00,Arena do Grêmio,Porto Alegre,,Grêmio,gremio,RS,Sport,sport,PE,Luiz Flavio de Oliveira,3,0,3,Vitoria Mandante
+308,2022,B,31,2022-09-24,18:15,Octávio Mangabeira,Salvador,,Bahia,bahia,BA,Operário,operario,PR,Marcelo de Lima Henrique,2,2,4,Empate
+309,2022,B,31,2022-09-21,21:00,Magalhães Pinto,Belo Horizonte,,Cruzeiro Saf,cruzeiro_saf,MG,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,RJ,Flavio Rodrigues de Souza,3,0,3,Vitoria Mandante
+310,2022,B,31,2022-09-22,21:30,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Crb,crb,AL,Wagner do Nascimento Magalhaes,1,0,7,Vitoria Mandante
+311,2022,B,32,2022-09-28,19:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Cruzeiro Saf,cruzeiro_saf,MG,Ramon Abatti Abel,1,4,5,Vitoria Visitante
+312,2022,B,32,2022-09-30,19:00,Rei Pelé,Maceio,,Csa,csa,AL,Guarani,guarani,SP,Jean Pierre Goncalves Lima,1,2,3,Vitoria Visitante
+313,2022,B,32,2022-09-28,21:45,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Náutico,nautico,PE,Anderson Daronco,2,1,3,Vitoria Mandante
+314,2022,B,32,2022-10-01,11:00,Augusto Bauer,Brusque,,Brusque,brusque,SC,Criciúma,criciuma,SC,Leandro Pedro Vuaden,0,2,2,Vitoria Visitante
+315,2022,B,32,2022-10-01,18:30,Novelli Junior,Itu,,Ituano,ituano,SP,Crb,crb,AL,Andre Luiz de Freitas Castro,1,0,1,Vitoria Mandante
+316,2022,B,32,2022-09-30,19:00,Germano Kruger,Ponta Grossa,,Operário,operario,PR,Vila Nova,vila_nova,GO,Bruno Arleu de Araujo,1,1,2,Empate
+317,2022,B,32,2022-09-29,21:30,São Januário,Rio de Janeiro,,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,RJ,Londrina,londrina,PR,Wilton Pereira Sampaio,1,1,2,Empate
+318,2022,B,32,2022-09-30,19:00,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Grêmio,gremio,RS,Rafael Traci,2,1,3,Vitoria Mandante
+319,2022,B,32,2022-09-29,19:00,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Novorizontino,novorizontino,SP,Jose Mendonca da Silva Junior,2,0,2,Vitoria Mandante
+320,2022,B,32,2022-09-30,21:30,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Bahia,bahia,BA,Paulo Cesar Zanovelli da Silva,3,1,4,Vitoria Mandante
+321,2022,B,33,2022-10-03,20:00,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Londrina,londrina,PR,Dyorgines Jose Padovani de Andrade,1,0,6,Vitoria Mandante
+322,2022,B,33,2022-10-04,19:00,Rei Pelé,Maceio,,Crb,crb,AL,Chapecoense,chapecoense,SC,Diego Pombo Lopez,2,1,3,Vitoria Mandante
+323,2022,B,33,2022-10-04,21:30,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Tombense,tombense,MG,Alisson Sidnei Furtado,4,3,7,Vitoria Mandante
+324,2022,B,33,2022-10-04,19:00,Augusto Bauer,Brusque,,Brusque,brusque,SC,Sport,sport,PE,Raphael Claus,0,1,1,Vitoria Visitante
+325,2022,B,33,2022-10-04,21:30,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Bahia,bahia,BA,Felipe Fernandes de Lima,1,1,9,Empate
+326,2022,B,33,2022-10-04,19:00,Germano Kruger,Ponta Grossa,,Operário,operario,PR,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,RJ,Leandro Pedro Vuaden,2,3,5,Vitoria Visitante
+327,2022,B,33,2022-10-04,19:00,Arena do Grêmio,Porto Alegre,,Grêmio,gremio,RS,Csa,csa,AL,Caio Max Augusto Vieira,2,0,2,Vitoria Mandante
+328,2022,B,33,2022-10-03,20:00,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Ponte Preta,ponte_preta,SP,Savio Pereira Sampaio,2,1,3,Vitoria Mandante
+329,2022,B,33,2022-10-05,21:30,Magalhães Pinto,Belo Horizonte,,Cruzeiro Saf,cruzeiro_saf,MG,Ituano,ituano,SP,Marielson Alves Silva,1,1,6,Empate
+330,2022,B,33,2022-10-04,19:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Criciúma,criciuma,SC,Jean Pierre Goncalves Lima,1,0,1,Vitoria Mandante
+331,2022,B,34,2022-10-08,19:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Vila Nova,vila_nova,GO,Felipe Fernandes de Lima,1,1,2,Empate
+332,2022,B,34,2022-10-07,21:30,Rei Pelé,Maceio,,Csa,csa,AL,Sampaio Corrêa,sampaio_correa,MA,Dyorgines Jose Padovani de Andrade,0,0,0,Empate
+333,2022,B,34,2022-10-09,16:00,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Cruzeiro Saf,cruzeiro_saf,MG,Savio Pereira Sampaio,3,1,4,Vitoria Mandante
+334,2022,B,34,2022-10-07,19:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Náutico,nautico,PE,Diego Pombo Lopez,2,1,3,Vitoria Mandante
+335,2022,B,34,2022-10-08,18:30,Novelli Junior,Itu,,Ituano,ituano,SP,Guarani,guarani,SP,Vinicius Goncalves Dias Araujo,2,1,3,Vitoria Mandante
+336,2022,B,34,2022-10-08,16:30,Jacy Scaff,Londrina,,Londrina,londrina,PR,Grêmio,gremio,RS,Wilton Pereira Sampaio,1,1,2,Empate
+337,2022,B,34,2022-10-08,18:30,São Januário,Rio de Janeiro,,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,RJ,Novorizontino,novorizontino,SP,Caio Max Augusto Vieira,3,0,3,Vitoria Mandante
+338,2022,B,34,2022-10-08,16:00,Octávio Mangabeira,Salvador,,Bahia,bahia,BA,Brusque,brusque,SC,Andre Luiz de Freitas Castro,1,0,1,Vitoria Mandante
+339,2022,B,34,2022-10-08,18:30,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Crb,crb,AL,Rodolpho Toski Marques,1,2,3,Vitoria Visitante
+340,2022,B,34,2022-10-08,11:00,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Operário,operario,PR,Wagner do Nascimento Magalhaes,1,1,10,Empate
+341,2022,B,35,2022-10-11,19:00,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Crb,crb,AL,Rodrigo Jose Pereira de Lima,1,0,1,Vitoria Mandante
+342,2022,B,35,2022-10-14,19:00,Rei Pelé,Maceio,,Csa,csa,AL,Londrina,londrina,PR,Paulo Cesar Zanovelli da Silva,1,0,1,Vitoria Mandante
+343,2022,B,35,2022-10-16,16:00,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,RJ,Raphael Claus,1,1,7,Empate
+344,2022,B,35,2022-10-15,19:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Ituano,ituano,SP,Andre Luiz de Freitas Castro,3,0,3,Vitoria Mandante
+345,2022,B,35,2022-10-14,21:30,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Náutico,nautico,PE,Wagner do Nascimento Magalhaes,6,0,6,Vitoria Mandante
+346,2022,B,35,2022-10-13,21:30,Germano Kruger,Ponta Grossa,,Operário,operario,PR,Brusque,brusque,SC,Caio Max Augusto Vieira,0,0,0,Empate
+347,2022,B,35,2022-10-16,16:00,Arena do Grêmio,Porto Alegre,,Grêmio,gremio,RS,Bahia,bahia,BA,Luiz Flavio de Oliveira,1,1,2,Empate
+348,2022,B,35,2022-10-11,21:30,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Chapecoense,chapecoense,SC,Anderson Daronco,2,1,3,Vitoria Mandante
+349,2022,B,35,2022-10-15,16:30,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Ponte Preta,ponte_preta,SP,Rafael Rodrigo Klein,0,0,0,Empate
+350,2022,B,35,2022-10-14,20:30,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Cruzeiro Saf,cruzeiro_saf,MG,Leandro Pedro Vuaden,1,0,1,Vitoria Mandante
+351,2022,B,36,2022-10-20,21:30,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Csa,csa,AL,Diego Pombo Lopez,0,2,2,Vitoria Visitante
+352,2022,B,36,2022-10-21,21:30,Rei Pelé,Maceio,,Crb,crb,AL,Operário,operario,PR,Savio Pereira Sampaio,2,1,3,Vitoria Mandante
+353,2022,B,36,2022-10-23,16:00,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Grêmio,gremio,RS,Jefferson Ferreira de Moraes,0,3,3,Vitoria Visitante
+354,2022,B,36,2022-10-18,19:00,Augusto Bauer,Brusque,,Brusque,brusque,SC,Novorizontino,novorizontino,SP,Leandro Pedro Vuaden,2,2,4,Empate
+355,2022,B,36,2022-10-22,16:30,Novelli Junior,Itu,,Ituano,ituano,SP,Sampaio Corrêa,sampaio_correa,MA,Rafael Rodrigo Klein,1,0,1,Vitoria Mandante
+356,2022,B,36,2022-10-22,16:30,Jacy Scaff,Londrina,,Londrina,londrina,PR,Sport,sport,PE,Leandro Pedro Vuaden,2,1,3,Vitoria Mandante
+357,2022,B,36,2022-10-22,16:30,São Januário,Rio de Janeiro,,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,RJ,Criciúma,criciuma,SC,Wilton Pereira Sampaio,2,1,3,Vitoria Mandante
+358,2022,B,36,2022-10-22,16:30,Octávio Mangabeira,Salvador,,Bahia,bahia,BA,Vila Nova,vila_nova,GO,Jose Mendonca da Silva Junior,1,1,2,Empate
+359,2022,B,36,2022-10-18,21:30,Magalhães Pinto,Belo Horizonte,,Cruzeiro Saf,cruzeiro_saf,MG,Guarani,guarani,SP,Wagner do Nascimento Magalhaes,0,1,15,Vitoria Visitante
+360,2022,B,36,2022-10-21,19:15,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Tombense,tombense,MG,Marcelo de Lima Henrique,3,2,5,Vitoria Mandante
+361,2022,B,37,2022-10-28,21:30,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Criciúma,criciuma,SC,Maguielson Lima Barbosa,1,1,2,Empate
+362,2022,B,37,2022-10-25,21:30,Rei Pelé,Maceio,,Csa,csa,AL,Vila Nova,vila_nova,GO,Felipe Fernandes de Lima,1,0,1,Vitoria Mandante
+363,2022,B,37,2022-10-28,19:00,Arena Pernambuco Governador Carlos Wilson Campos,São Lourenço da Mata,,Sport,sport,PE,Operário,operario,PR,Caio Max Augusto Vieira,5,1,6,Vitoria Mandante
+364,2022,B,37,2022-10-25,19:00,Augusto Bauer,Brusque,,Brusque,brusque,SC,Crb,crb,AL,Paulo Henrique Schleich Vollkopf,0,0,0,Empate
+365,2022,B,37,2022-10-27,19:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Cruzeiro Saf,cruzeiro_saf,MG,Marcelo de Lima Henrique,1,4,5,Vitoria Visitante
+366,2022,B,37,2022-10-28,19:00,Jacy Scaff,Londrina,,Londrina,londrina,PR,Ituano,ituano,SP,Braulio da Silva Machado,0,2,2,Vitoria Visitante
+367,2022,B,37,2022-10-27,21:45,São Januário,Rio de Janeiro,,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,RJ,Sampaio Corrêa,sampaio_correa,MA,Jean Pierre Goncalves Lima,2,3,5,Vitoria Visitante
+368,2022,B,37,2022-10-28,19:00,Octávio Mangabeira,Salvador,,Bahia,bahia,BA,Guarani,guarani,SP,Wilton Pereira Sampaio,1,1,2,Empate
+369,2022,B,37,2022-10-28,19:00,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Grêmio,gremio,RS,Paulo Roberto Alves Junior,2,2,4,Empate
+370,2022,B,37,2022-10-29,19:00,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Náutico,nautico,PE,Jose Mendonca da Silva Junior,1,0,1,Vitoria Mandante
+371,2022,B,38,2022-11-06,16:00,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Chapecoense,chapecoense,SC,Leo Simão Holanda,1,0,6,Vitoria Mandante
+372,2022,B,38,2022-11-06,18:30,Rei Pelé,Maceio,,Crb,crb,AL,Bahia,bahia,BA,Ramon Abatti Abel,1,2,3,Vitoria Visitante
+373,2022,B,38,2022-11-04,21:30,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Ponte Preta,ponte_preta,SP,Roger Goulart,0,1,1,Vitoria Visitante
+374,2022,B,38,2022-11-05,16:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Tombense,tombense,MG,Joao Vitor Gobi,2,0,2,Vitoria Mandante
+375,2022,B,38,2022-11-06,18:30,Novelli Junior,Itu,,Ituano,ituano,SP,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,RJ,Wilton Pereira Sampaio,0,1,1,Vitoria Visitante
+376,2022,B,38,2022-11-06,18:30,Germano Kruger,Ponta Grossa,,Operário,operario,PR,Novorizontino,novorizontino,SP,Paulo Cesar Zanovelli da Silva,0,3,3,Vitoria Visitante
+377,2022,B,38,2022-11-03,20:00,Arena do Grêmio,Porto Alegre,,Grêmio,gremio,RS,Brusque,brusque,SC,Rodrigo Jose Pereira de Lima,3,0,3,Vitoria Mandante
+378,2022,B,38,2022-11-05,18:00,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Londrina,londrina,PR,Felipe da Silva Goncalves Paludo,2,1,3,Vitoria Mandante
+379,2022,B,38,2022-11-06,18:30,Magalhães Pinto,Belo Horizonte,,Cruzeiro Saf,cruzeiro_saf,MG,Csa,csa,AL,Jean Pierre Goncalves Lima,3,2,5,Vitoria Mandante
+380,2022,B,38,2022-11-06,18:30,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Sport,sport,PE,Paulo Roberto Alves Junior,0,0,11,Empate
+88,2023,B,0,,,,,,,,,,,,,0,0,1,Empate
+140,2023,B,0,,,,,,,,,,,,,1,0,14,Vitoria Mandante
+163,2023,B,0,,,,,,,,,,,,,0,0,2,Empate
+1,2023,B,1,2023-04-14,19:00,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Avaí,avai,SC,Emerson Ricardo de Almeida Andrade,4,1,5,Vitoria Mandante
+2,2023,B,1,2023-04-15,16:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Novorizontino,novorizontino,SP,Leo Simão Holanda,2,1,3,Vitoria Mandante
+3,2023,B,1,2023-04-16,11:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Tombense,tombense,MG,Denis da Silva Ribeiro Serafim,2,0,2,Vitoria Mandante
+4,2023,B,1,2023-04-14,21:30,Novelli Junior,Itu,,Ituano,ituano,SP,Ceará,ceara,CE,Bruno Arleu de Araujo,1,1,2,Empate
+5,2023,B,1,2023-04-15,17:00,José Maria de Campos Maia,Mirassol,,Mirassol,mirassol,SP,Chapecoense,chapecoense,SC,Bruno Mota Correia,1,0,1,Vitoria Mandante
+6,2023,B,1,2023-04-16,18:00,Manoel Barradas,Salvador,,Vitória,vitoria,BA,Ponte Preta,ponte_preta,SP,Wagner do Nascimento Magalhaes,3,0,3,Vitoria Mandante
+7,2023,B,1,2023-04-15,17:00,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Atlético,atletico,GO,Joao Vitor Gobi,3,3,6,Empate
+8,2023,B,1,2023-04-15,18:15,Alfredo Jaconi,Caxias do Sul,,Juventude,juventude,RS,Botafogo,botafogo,SP,Yuri Elino Ferreira da Cruz,1,2,3,Vitoria Visitante
+9,2023,B,1,2023-04-16,15:30,Jacy Scaff,Londrina,,Londrina,londrina,PR,Abc,abc,RN,Flavio Rodrigues de Souza,1,0,1,Vitoria Mandante
+10,2023,B,1,2023-07-05,19:00,Rei Pelé,Maceio,,Crb,crb,AL,Sport,sport,PE,Caio Max Augusto Vieira,1,1,2,Empate
+11,2023,B,2,2023-04-21,21:30,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Criciúma,criciuma,SC,Leandro Pedro Vuaden,1,2,3,Vitoria Visitante
+12,2023,B,2,2023-04-21,16:30,Antônio Accioly,Goiania,,Atlético,atletico,GO,Crb,crb,AL,Felipe Fernandes de Lima,2,1,9,Vitoria Mandante
+13,2023,B,2,2023-04-22,16:00,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Mirassol,mirassol,SP,Maguielson Lima Barbosa,1,0,10,Vitoria Mandante
+14,2023,B,2,2023-04-21,19:00,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Sampaio Corrêa,sampaio_correa,MA,Murilo Francisco Misson Junior,1,0,1,Vitoria Mandante
+15,2023,B,2,2023-04-22,17:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Juventude,juventude,RS,Emerson Ricardo de Almeida Andrade,1,0,17,Vitoria Mandante
+16,2023,B,2,2023-06-18,18:00,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Vila Nova,vila_nova,GO,Paulo Cesar Zanovelli da Silva,1,0,1,Vitoria Mandante
+17,2023,B,2,2023-04-22,18:15,Presidente Vargas,Fortaleza,,Ceará,ceara,CE,Guarani,guarani,SP,Yuri Elino Ferreira da Cruz,0,3,3,Vitoria Visitante
+18,2023,B,2,2023-04-23,15:30,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Londrina,londrina,PR,Bruno Pereira Vasconcelos,3,0,3,Vitoria Mandante
+19,2023,B,2,2023-04-22,11:00,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Ituano,ituano,SP,Marcelo de Lima Henrique,3,0,3,Vitoria Mandante
+20,2023,B,2,2023-04-23,18:00,Maria Lamas Farache,Natal,,Abc,abc,RN,Vitória,vitoria,BA,Matheus Delgado Candançan,0,3,7,Vitoria Visitante
+21,2023,B,3,2023-04-28,21:30,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Ituano,ituano,SP,Bruno Mota Correia,1,0,1,Vitoria Mandante
+22,2023,B,3,2023-04-30,18:15,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Juventude,juventude,RS,Diego Pombo Lopez,1,0,1,Vitoria Mandante
+23,2023,B,3,2023-04-28,19:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Avaí,avai,SC,Wagner do Nascimento Magalhaes,1,0,1,Vitoria Mandante
+24,2023,B,3,2023-04-29,17:00,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Crb,crb,AL,Jose Mendonca da Silva Junior,2,0,7,Vitoria Mandante
+25,2023,B,3,2023-04-30,15:30,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Sport,sport,PE,Paulo Cesar Zanovelli da Silva,0,0,0,Empate
+26,2023,B,3,2023-04-28,19:00,Manoel Barradas,Salvador,,Vitória,vitoria,BA,Londrina,londrina,PR,Paulo Henrique Schleich Vollkopf,2,0,2,Vitoria Mandante
+27,2023,B,3,2023-04-29,16:00,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Mirassol,mirassol,SP,Jefferson Ferreira de Moraes,1,3,4,Vitoria Visitante
+28,2023,B,3,2023-04-29,17:00,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Ponte Preta,ponte_preta,SP,Leo Simão Holanda,1,1,2,Empate
+29,2023,B,3,2023-04-29,18:15,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Atlético,atletico,GO,Thiago Luis Scarascati,1,1,2,Empate
+30,2023,B,3,2023-04-30,18:00,Maria Lamas Farache,Natal,,Abc,abc,RN,Ceará,ceara,CE,Felipe Fernandes de Lima,1,2,3,Vitoria Visitante
+31,2023,B,4,2023-05-02,19:00,Médico:,Campinas,,Ponte Preta,ponte_preta,SP,Botafogo,botafogo,SP,Marielson Alves Silva,2,0,2,Vitoria Mandante
+32,2023,B,4,2023-05-02,21:30,Antônio Accioly,Goiania,,Atlético,atletico,GO,Chapecoense,chapecoense,SC,Yuri Elino Ferreira da Cruz,2,1,3,Vitoria Mandante
+33,2023,B,4,2023-05-03,21:15,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Vila Nova,vila_nova,GO,Vinicius Goncalves Dias Araujo,0,3,3,Vitoria Visitante
+34,2023,B,4,2023-05-03,19:00,Novelli Junior,Itu,,Ituano,ituano,SP,Abc,abc,RN,Maguielson Lima Barbosa,3,0,3,Vitoria Mandante
+35,2023,B,4,2023-05-03,19:00,José Maria de Campos Maia,Mirassol,,Mirassol,mirassol,SP,Novorizontino,novorizontino,SP,Lucas Paulo Torezin,0,2,2,Vitoria Visitante
+36,2023,B,4,2023-05-10,21:30,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Tombense,tombense,MG,Luiz Flavio de Oliveira,3,2,5,Vitoria Mandante
+37,2023,B,4,2023-05-10,19:00,Presidente Vargas,Fortaleza,,Ceará,ceara,CE,Vitória,vitoria,BA,Bruno Mota Correia,0,2,2,Vitoria Visitante
+38,2023,B,4,2023-05-03,19:00,Alfredo Jaconi,Caxias do Sul,,Juventude,juventude,RS,Guarani,guarani,SP,Dyorgines Jose Padovani de Andrade,1,0,1,Vitoria Mandante
+39,2023,B,4,2023-05-01,16:00,Jacy Scaff,Londrina,,Londrina,londrina,PR,Criciúma,criciuma,SC,Matheus Delgado Candançan,1,1,2,Empate
+40,2023,B,4,2023-05-02,19:00,Rei Pelé,Maceio,,Crb,crb,AL,Sampaio Corrêa,sampaio_correa,MA,Douglas Marques das Flores,0,0,0,Empate
+41,2023,B,5,2023-05-07,11:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Ceará,ceara,CE,Rafael Rodrigo Klein,0,0,0,Empate
+42,2023,B,5,2023-05-08,20:00,Antônio Accioly,Goiania,,Atlético,atletico,GO,Londrina,londrina,PR,Rodrigo Jose Pereira de Lima,2,1,3,Vitoria Mandante
+43,2023,B,5,2023-05-06,16:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Ituano,ituano,SP,Leandro Pedro Vuaden,2,1,3,Vitoria Mandante
+44,2023,B,5,2023-05-05,21:30,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Vitória,vitoria,BA,Savio Pereira Sampaio,0,3,3,Vitoria Visitante
+45,2023,B,5,2023-05-06,18:15,José Maria de Campos Maia,Mirassol,,Mirassol,mirassol,SP,Vila Nova,vila_nova,GO,Caio Max Augusto Vieira,1,1,2,Empate
+46,2023,B,5,2023-05-07,19:00,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Guarani,guarani,SP,Anderson Daronco,2,0,2,Vitoria Mandante
+47,2023,B,5,2023-05-06,18:15,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Juventude,juventude,RS,Felipe Fernandes de Lima,2,1,3,Vitoria Mandante
+48,2023,B,5,2023-05-06,20:30,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Novorizontino,novorizontino,SP,Dyorgines Jose Padovani de Andrade,1,1,2,Empate
+49,2023,B,5,2023-05-06,18:15,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Avaí,avai,SC,Edina Alves Batista,0,1,11,Vitoria Visitante
+50,2023,B,5,2023-05-06,20:30,Rei Pelé,Maceio,,Crb,crb,AL,Abc,abc,RN,Luiz Flavio de Oliveira,1,1,2,Empate
+51,2023,B,6,2023-05-13,17:00,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Sampaio Corrêa,sampaio_correa,MA,Leandro Pedro Vuaden,2,0,2,Vitoria Mandante
+52,2023,B,6,2023-05-12,19:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Criciúma,criciuma,SC,Andre Luiz Skettino Policarpo Bento,0,0,0,Empate
+53,2023,B,6,2023-05-12,21:30,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Chapecoense,chapecoense,SC,Jean Pierre Goncalves Lima,1,4,5,Vitoria Visitante
+54,2023,B,6,2023-05-14,20:30,Novelli Junior,Itu,,Ituano,ituano,SP,Sport,sport,PE,Leo Simão Holanda,1,1,2,Empate
+55,2023,B,6,2023-05-13,17:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Crb,crb,AL,Douglas Schwengber da Silva,0,1,1,Vitoria Visitante
+56,2023,B,6,2023-05-14,18:00,Manoel Barradas,Salvador,,Vitória,vitoria,BA,Atlético,atletico,GO,Joao Vitor Gobi,2,3,5,Vitoria Visitante
+57,2023,B,6,2023-05-13,18:15,Presidente Vargas,Fortaleza,,Ceará,ceara,CE,Tombense,tombense,MG,Leonardo Ferreira Lima,2,0,2,Vitoria Mandante
+58,2023,B,6,2023-05-13,16:00,Alfredo Jaconi,Caxias do Sul,,Juventude,juventude,RS,Mirassol,mirassol,SP,Fabio Augusto Santos Sa Junior,0,1,1,Vitoria Visitante
+59,2023,B,6,2023-05-14,15:30,Jacy Scaff,Londrina,,Londrina,londrina,PR,Ponte Preta,ponte_preta,SP,Denis da Silva Ribeiro Serafim,3,0,7,Vitoria Mandante
+60,2023,B,6,2023-05-14,18:00,Maria Lamas Farache,Natal,,Abc,abc,RN,Botafogo,botafogo,SP,Lucas Paulo Torezin,1,2,3,Vitoria Visitante
+61,2023,B,7,2023-05-21,18:00,Preparador Físico:,Campinas,,Ponte Preta,ponte_preta,SP,Guarani,guarani,SP,Wagner do Nascimento Magalhaes,1,1,2,Empate
+62,2023,B,7,2023-05-19,21:30,Antônio Accioly,Goiania,,Atlético,atletico,GO,Avaí,avai,SC,Vinicius Goncalves Dias Araujo,0,0,0,Empate
+63,2023,B,7,2023-05-21,15:30,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Ceará,ceara,CE,Wilton Pereira Sampaio,1,2,3,Vitoria Visitante
+64,2023,B,7,2023-05-20,17:00,Novelli Junior,Itu,,Ituano,ituano,SP,Novorizontino,novorizontino,SP,Caio Max Augusto Vieira,0,2,2,Vitoria Visitante
+65,2023,B,7,2023-05-19,19:00,José Maria de Campos Maia,Mirassol,,Mirassol,mirassol,SP,Vitória,vitoria,BA,Andre Luiz Skettino Policarpo Bento,2,0,2,Vitoria Mandante
+66,2023,B,7,2023-05-20,16:00,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Botafogo,botafogo,SP,Bruno Mota Correia,2,1,3,Vitoria Mandante
+67,2023,B,7,2023-05-20,17:00,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Abc,abc,RN,Yuri Elino Ferreira da Cruz,1,0,1,Vitoria Mandante
+68,2023,B,7,2023-05-21,11:00,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Juventude,juventude,RS,Matheus Delgado Candançan,0,2,2,Vitoria Visitante
+69,2023,B,7,2023-05-19,19:00,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Londrina,londrina,PR,Jefferson Ferreira de Moraes,0,2,2,Vitoria Visitante
+70,2023,B,7,2023-05-21,18:15,Rei Pelé,Maceio,,Crb,crb,AL,Vila Nova,vila_nova,GO,Dyorgines Jose Padovani de Andrade,0,3,3,Vitoria Visitante
+71,2023,B,8,2023-05-24,21:15,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Chapecoense,chapecoense,SC,Paulo Henrique Schleich Vollkopf,3,3,6,Empate
+72,2023,B,8,2023-05-24,19:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Ituano,ituano,SP,Lucas Paulo Torezin,1,0,1,Vitoria Mandante
+73,2023,B,8,2023-05-24,21:30,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Sport,sport,PE,Joao Vitor Gobi,1,0,1,Vitoria Mandante
+74,2023,B,8,2023-05-23,19:00,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Mirassol,mirassol,SP,Marcelo de Lima Henrique,1,0,1,Vitoria Mandante
+75,2023,B,8,2023-05-23,21:30,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Avaí,avai,SC,Marielson Alves Silva,2,0,2,Vitoria Mandante
+76,2023,B,8,2023-05-24,19:00,Manoel Barradas,Salvador,,Vitória,vitoria,BA,Crb,crb,AL,Alisson Sidnei Furtado,1,0,1,Vitoria Mandante
+77,2023,B,8,2023-05-24,21:30,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Ponte Preta,ponte_preta,SP,Bruno Pereira Vasconcelos,0,0,0,Empate
+78,2023,B,8,2023-05-24,19:00,Alfredo Jaconi,Caxias do Sul,,Juventude,juventude,RS,Atlético,atletico,GO,Paulo Cesar Zanovelli da Silva,3,0,3,Vitoria Mandante
+79,2023,B,8,2023-05-24,19:00,Jacy Scaff,Londrina,,Londrina,londrina,PR,Ceará,ceara,CE,Maguielson Lima Barbosa,1,3,4,Vitoria Visitante
+80,2023,B,8,2023-05-23,21:30,Maria Lamas Farache,Natal,,Abc,abc,RN,Tombense,tombense,MG,Michelangelo Martins de Almeida Junior,0,1,1,Vitoria Visitante
+81,2023,B,9,2023-05-28,11:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Vila Nova,vila_nova,GO,Bruno Mota Correia,1,0,1,Vitoria Mandante
+82,2023,B,9,2023-05-27,18:00,Antônio Accioly,Goiania,,Atlético,atletico,GO,Botafogo,botafogo,SP,Caio Max Augusto Vieira,1,1,2,Empate
+83,2023,B,9,2023-05-27,17:30,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Vitória,vitoria,BA,Marcelo de Lima Henrique,1,1,2,Empate
+84,2023,B,9,2023-05-27,17:00,Novelli Junior,Itu,,Ituano,ituano,SP,Londrina,londrina,PR,Paulo Cesar Zanovelli da Silva,3,1,4,Vitoria Mandante
+85,2023,B,9,2023-05-28,15:30,José Maria de Campos Maia,Mirassol,,Mirassol,mirassol,SP,Criciúma,criciuma,SC,Felipe Fernandes de Lima,1,0,1,Vitoria Mandante
+86,2023,B,9,2023-05-28,18:00,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Abc,abc,RN,Dyorgines Jose Padovani de Andrade,4,1,5,Vitoria Mandante
+87,2023,B,9,2023-05-28,15:30,Governador Plácido Aderaldo Castelo,Fortaleza,,Ceará,ceara,CE,Novorizontino,novorizontino,SP,Andre Luiz Skettino Policarpo Bento,0,3,3,Vitoria Visitante
+89,2023,B,9,2023-05-28,18:15,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Guarani,guarani,SP,Leo Simão Holanda,1,1,10,Empate
+90,2023,B,9,2023-05-27,17:00,Rei Pelé,Maceio,,Crb,crb,AL,Juventude,juventude,RS,Vinicius Goncalves Dias Araujo,1,2,3,Vitoria Visitante
+91,2023,B,10,2023-06-04,15:30,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Crb,crb,AL,Afro Rocha de Carvalho Filho,0,1,1,Vitoria Visitante
+92,2023,B,10,2023-06-03,19:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Sampaio Corrêa,sampaio_correa,MA,Leonardo Ferreira Lima,3,0,3,Vitoria Mandante
+93,2023,B,10,2023-06-02,21:30,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Atlético,atletico,GO,Rafael Rodrigo Klein,3,0,3,Vitoria Mandante
+94,2023,B,10,2023-06-02,19:00,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Tombense,tombense,MG,Diego Pombo Lopez,0,0,0,Empate
+95,2023,B,10,2023-06-03,17:00,José Maria de Campos Maia,Mirassol,,Mirassol,mirassol,SP,Ponte Preta,ponte_preta,SP,Leandro Pedro Vuaden,1,0,1,Vitoria Mandante
+96,2023,B,10,2023-06-02,21:30,Manoel Barradas,Salvador,,Vitória,vitoria,BA,Ituano,ituano,SP,Andre Luiz Skettino Policarpo Bento,3,0,3,Vitoria Mandante
+97,2023,B,10,2023-06-05,19:00,Governador Plácido Aderaldo Castelo,Fortaleza,,Ceará,ceara,CE,Chapecoense,chapecoense,SC,Paulo Henrique de Melo Salmazio,2,0,14,Vitoria Mandante
+98,2023,B,10,2023-06-03,16:00,Alfredo Jaconi,Caxias do Sul,,Juventude,juventude,RS,Avaí,avai,SC,Bruno Mota Correia,3,2,17,Vitoria Mandante
+99,2023,B,10,2023-06-04,18:00,Jacy Scaff,Londrina,,Londrina,londrina,PR,Sport,sport,PE,Thiago Luis Scarascati,1,2,3,Vitoria Visitante
+100,2023,B,10,2023-06-03,17:00,Maria Lamas Farache,Natal,,Abc,abc,RN,Novorizontino,novorizontino,SP,Alisson Sidnei Furtado,0,1,1,Vitoria Visitante
+101,2023,B,11,2023-06-06,19:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Abc,abc,RN,Leo Simão Holanda,0,0,0,Empate
+102,2023,B,11,2023-06-06,21:30,Antônio Accioly,Goiania,,Atlético,atletico,GO,Ceará,ceara,CE,Matheus Delgado Candançan,0,3,3,Vitoria Visitante
+103,2023,B,11,2023-06-08,16:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Juventude,juventude,RS,Maguielson Lima Barbosa,0,1,1,Vitoria Visitante
+104,2023,B,11,2023-06-06,21:30,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Ituano,ituano,SP,Luiz Augusto Silveira Tisne,0,2,2,Vitoria Visitante
+105,2023,B,11,2023-06-07,19:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Guarani,guarani,SP,Denis da Silva Ribeiro Serafim,1,0,1,Vitoria Mandante
+106,2023,B,11,2023-06-07,19:00,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Avaí,avai,SC,Yuri Elino Ferreira da Cruz,2,1,3,Vitoria Mandante
+107,2023,B,11,2023-06-07,19:00,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Londrina,londrina,PR,Deborah Cecilia Cruz Correia,2,0,11,Vitoria Mandante
+108,2023,B,11,2023-06-06,19:00,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Vila Nova,vila_nova,GO,Douglas Marques das Flores,0,1,11,Vitoria Visitante
+109,2023,B,11,2023-06-06,19:00,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Vitória,vitoria,BA,Lucas Paulo Torezin,1,2,9,Vitoria Visitante
+110,2023,B,11,2023-06-07,21:30,Rei Pelé,Maceio,,Crb,crb,AL,Mirassol,mirassol,SP,Marielson Alves Silva,2,0,2,Vitoria Mandante
+111,2023,B,12,2023-06-11,11:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Sport,sport,PE,Bruno Arleu de Araujo,1,1,2,Empate
+112,2023,B,12,2023-06-10,16:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Guarani,guarani,SP,Caio Max Augusto Vieira,0,0,0,Empate
+113,2023,B,12,2023-06-11,15:30,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Botafogo,botafogo,SP,Dyorgines Jose Padovani de Andrade,0,2,2,Vitoria Visitante
+114,2023,B,12,2023-06-10,17:00,Novelli Junior,Itu,,Ituano,ituano,SP,Atlético,atletico,GO,Wagner do Nascimento Magalhaes,1,1,2,Empate
+115,2023,B,12,2023-06-10,17:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Sampaio Corrêa,sampaio_correa,MA,Marcelo de Lima Henrique,1,0,1,Vitoria Mandante
+116,2023,B,12,2023-06-11,18:00,Manoel Barradas,Salvador,,Vitória,vitoria,BA,Criciúma,criciuma,SC,Flavio Rodrigues de Souza,0,1,1,Vitoria Visitante
+117,2023,B,12,2023-06-10,19:30,Governador Plácido Aderaldo Castelo,Fortaleza,,Ceará,ceara,CE,Crb,crb,AL,Luiz Flavio de Oliveira,1,3,4,Vitoria Visitante
+118,2023,B,12,2023-06-11,18:15,Alfredo Jaconi,Caxias do Sul,,Juventude,juventude,RS,Tombense,tombense,MG,Paulo Henrique Schleich Vollkopf,1,2,3,Vitoria Visitante
+119,2023,B,12,2023-06-11,11:00,Jacy Scaff,Londrina,,Londrina,londrina,PR,Mirassol,mirassol,SP,Fabio Augusto Santos Sa Junior,1,2,3,Vitoria Visitante
+120,2023,B,12,2023-06-09,21:30,Maria Lamas Farache,Natal,,Abc,abc,RN,Chapecoense,chapecoense,SC,Jonathan Antero Silva,1,1,2,Empate
+121,2023,B,13,2023-06-25,18:00,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Vitória,vitoria,BA,Bruno Arleu de Araujo,2,0,2,Vitoria Mandante
+122,2023,B,13,2023-06-23,19:00,Antônio Accioly,Goiania,,Atlético,atletico,GO,Ponte Preta,ponte_preta,SP,Diego Pombo Lopez,1,0,1,Vitoria Mandante
+123,2023,B,13,2023-06-24,16:00,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Londrina,londrina,PR,Denis da Silva Ribeiro Serafim,0,0,0,Empate
+124,2023,B,13,2023-06-24,11:00,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Vila Nova,vila_nova,GO,Felipe Fernandes de Lima,0,3,3,Vitoria Visitante
+125,2023,B,13,2023-06-25,11:00,José Maria de Campos Maia,Mirassol,,Mirassol,mirassol,SP,Abc,abc,RN,Jefferson Ferreira de Moraes,3,2,13,Vitoria Mandante
+126,2023,B,13,2023-06-22,21:30,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Juventude,juventude,RS,Matheus Delgado Candançan,3,0,7,Vitoria Mandante
+127,2023,B,13,2023-06-25,15:30,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Ceará,ceara,CE,Thiago Luis Scarascati,1,1,2,Empate
+128,2023,B,13,2023-06-24,17:00,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Criciúma,criciuma,SC,Paulo Cesar Zanovelli da Silva,1,1,2,Empate
+129,2023,B,13,2023-06-24,18:15,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Novorizontino,novorizontino,SP,Maguielson Lima Barbosa,1,2,3,Vitoria Visitante
+130,2023,B,13,2023-06-21,19:00,Rei Pelé,Maceio,,Crb,crb,AL,Ituano,ituano,SP,Yuri Elino Ferreira da Cruz,2,2,4,Empate
+131,2023,B,14,2023-06-28,21:30,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Mirassol,mirassol,SP,Lucas Paulo Torezin,2,1,11,Vitoria Mandante
+132,2023,B,14,2023-06-27,21:30,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Tombense,tombense,MG,Arthur Gomes Rabelo,1,0,1,Vitoria Mandante
+133,2023,B,14,2023-06-27,19:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Crb,crb,AL,Marcelo de Lima Henrique,2,1,3,Vitoria Mandante
+134,2023,B,14,2023-06-28,21:30,Novelli Junior,Itu,,Ituano,ituano,SP,Ponte Preta,ponte_preta,SP,Rodrigo Jose Pereira de Lima,0,1,1,Vitoria Visitante
+135,2023,B,14,2023-06-27,21:30,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Botafogo,botafogo,SP,Marielson Alves Silva,0,1,1,Vitoria Visitante
+136,2023,B,14,2023-06-28,21:30,Manoel Barradas,Salvador,,Vitória,vitoria,BA,Sampaio Corrêa,sampaio_correa,MA,Alisson Sidnei Furtado,2,1,3,Vitoria Mandante
+137,2023,B,14,2023-06-28,19:00,Governador Plácido Aderaldo Castelo,Fortaleza,,Ceará,ceara,CE,Avaí,avai,SC,Douglas Marques das Flores,0,0,6,Empate
+138,2023,B,14,2023-06-27,19:00,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Sport,sport,PE,Leonardo Ferreira Lima,1,1,2,Empate
+139,2023,B,14,2023-06-28,21:30,Jacy Scaff,Londrina,,Londrina,londrina,PR,Juventude,juventude,RS,Dyorgines Jose Padovani de Andrade,1,2,3,Vitoria Visitante
+141,2023,B,15,2023-07-02,20:30,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Novorizontino,novorizontino,SP,Felipe Fernandes de Lima,1,0,1,Vitoria Mandante
+142,2023,B,15,2023-07-01,16:00,Antônio Accioly,Goiania,,Atlético,atletico,GO,Vila Nova,vila_nova,GO,Luiz Flavio de Oliveira,1,1,2,Empate
+143,2023,B,15,2023-07-01,17:00,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Abc,abc,RN,Matheus Delgado Candançan,0,2,2,Vitoria Visitante
+144,2023,B,15,2023-07-03,20:15,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Guarani,guarani,SP,Maguielson Lima Barbosa,1,0,1,Vitoria Mandante
+145,2023,B,15,2023-07-03,18:00,José Maria de Campos Maia,Mirassol,,Mirassol,mirassol,SP,Ituano,ituano,SP,Arthur Gomes Rabelo,0,1,1,Vitoria Visitante
+146,2023,B,15,2023-07-02,18:00,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Ceará,ceara,CE,Bruno Arleu de Araujo,2,0,2,Vitoria Mandante
+147,2023,B,15,2023-07-01,17:00,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Criciúma,criciuma,SC,Paulo Henrique de Melo Salmazio,0,2,2,Vitoria Visitante
+148,2023,B,15,2023-07-02,15:30,Alfredo Jaconi,Caxias do Sul,,Juventude,juventude,RS,Vitória,vitoria,BA,Vinicius Goncalves Dias Araujo,1,0,1,Vitoria Mandante
+149,2023,B,15,2023-06-30,21:30,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Chapecoense,chapecoense,SC,Yuri Elino Ferreira da Cruz,4,2,6,Vitoria Mandante
+150,2023,B,15,2023-07-01,18:15,Rei Pelé,Maceio,,Crb,crb,AL,Londrina,londrina,PR,Leonardo Willers Lorenzatto,2,1,11,Vitoria Mandante
+151,2023,B,16,2023-07-08,11:00,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Londrina,londrina,PR,Diego Pombo Lopez,2,1,3,Vitoria Mandante
+152,2023,B,16,2023-07-10,20:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Vitória,vitoria,BA,Matheus Delgado Candançan,1,0,1,Vitoria Mandante
+153,2023,B,16,2023-07-08,17:00,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Ponte Preta,ponte_preta,SP,Jefferson Ferreira de Moraes,0,1,10,Vitoria Visitante
+154,2023,B,16,2023-07-08,17:00,Novelli Junior,Itu,,Ituano,ituano,SP,Juventude,juventude,RS,Luiz Augusto Silveira Tisne,1,1,2,Empate
+155,2023,B,16,2023-07-07,19:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Atlético,atletico,GO,Leo Simão Holanda,2,2,4,Empate
+156,2023,B,16,2023-07-09,18:00,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Mirassol,mirassol,SP,Felipe Fernandes de Lima,0,0,0,Empate
+157,2023,B,16,2023-07-07,21:30,Governador Plácido Aderaldo Castelo,Fortaleza,,Ceará,ceara,CE,Botafogo,botafogo,SP,Arthur Gomes Rabelo,3,0,3,Vitoria Mandante
+158,2023,B,16,2023-07-09,15:30,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Crb,crb,AL,Fabio Augusto Santos Sa Junior,2,1,3,Vitoria Mandante
+159,2023,B,16,2023-07-08,18:00,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Sampaio Corrêa,sampaio_correa,MA,Rodrigo Batista Raposo,0,1,8,Vitoria Visitante
+160,2023,B,16,2023-07-08,15:30,Maria Lamas Farache,Natal,,Abc,abc,RN,Criciúma,criciuma,SC,Ivan da Silva Guimaraes Junior,0,1,1,Vitoria Visitante
+161,2023,B,17,2023-07-15,17:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Tombense,tombense,MG,Marcelo de Lima Henrique,0,1,1,Vitoria Visitante
+162,2023,B,17,2023-07-14,21:30,Antônio Accioly,Goiania,,Atlético,atletico,GO,Sport,sport,PE,Joao Vitor Gobi,3,1,4,Vitoria Mandante
+164,2023,B,17,2023-08-23,21:30,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Chapecoense,chapecoense,SC,Jonathan Benkenstein Pinheiro,1,2,3,Vitoria Visitante
+165,2023,B,17,2023-07-16,15:30,José Maria de Campos Maia,Mirassol,,Mirassol,mirassol,SP,Ceará,ceara,CE,Alisson Sidnei Furtado,1,1,2,Empate
+166,2023,B,17,2023-07-16,18:00,Manoel Barradas,Salvador,,Vitória,vitoria,BA,Novorizontino,novorizontino,SP,Andre Luiz Skettino Policarpo Bento,2,1,3,Vitoria Mandante
+167,2023,B,17,2023-07-14,21:30,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Ituano,ituano,SP,Dyorgines Jose Padovani de Andrade,0,0,10,Empate
+168,2023,B,17,2023-07-15,11:00,Alfredo Jaconi,Caxias do Sul,,Juventude,juventude,RS,Abc,abc,RN,Maguielson Lima Barbosa,1,1,2,Empate
+169,2023,B,17,2023-07-15,17:00,Jacy Scaff,Londrina,,Londrina,londrina,PR,Vila Nova,vila_nova,GO,Caio Max Augusto Vieira,1,0,1,Vitoria Mandante
+170,2023,B,17,2023-08-23,19:00,Rei Pelé,Maceio,,Crb,crb,AL,Avaí,avai,SC,Luiz Flavio de Oliveira,1,1,2,Empate
+171,2023,B,18,2023-07-18,21:30,Médico:,Campinas,,Ponte Preta,ponte_preta,SP,Juventude,juventude,RS,Marielson Alves Silva,0,0,0,Empate
+172,2023,B,18,2023-07-19,19:00,Antônio Accioly,Goiania,,Atlético,atletico,GO,Mirassol,mirassol,SP,Arthur Gomes Rabelo,2,2,4,Empate
+173,2023,B,18,2023-07-19,21:30,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Sampaio Corrêa,sampaio_correa,MA,Matheus Delgado Candançan,2,0,2,Vitoria Mandante
+174,2023,B,18,2023-07-17,20:00,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Criciúma,criciuma,SC,Lucas Paulo Torezin,1,0,9,Vitoria Mandante
+175,2023,B,18,2023-07-19,19:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Londrina,londrina,PR,Paulo Henrique Schleich Vollkopf,3,0,3,Vitoria Mandante
+176,2023,B,18,2023-07-19,21:30,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Vitória,vitoria,BA,Luiz Flavio de Oliveira,1,2,3,Vitoria Visitante
+177,2023,B,18,2023-07-19,21:30,Governador Plácido Aderaldo Castelo,Fortaleza,,Ceará,ceara,CE,Vila Nova,vila_nova,GO,Wagner do Nascimento Magalhaes,1,0,1,Vitoria Mandante
+178,2023,B,18,2023-07-18,19:00,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Ituano,ituano,SP,Felipe Fernandes de Lima,1,0,1,Vitoria Mandante
+179,2023,B,18,2023-07-18,18:00,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Crb,crb,AL,Thiago Luis Scarascati,2,1,3,Vitoria Mandante
+180,2023,B,18,2023-07-19,21:30,Arena das Dunas,Natal,,Abc,abc,RN,Guarani,guarani,SP,Emerson Ricardo de Almeida Andrade,0,1,1,Vitoria Visitante
+181,2023,B,19,2023-07-23,11:00,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Atlético,atletico,GO,Leandro Pedro Vuaden,1,0,1,Vitoria Mandante
+182,2023,B,19,2023-07-22,17:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Abc,abc,RN,Yuri Elino Ferreira da Cruz,1,1,2,Empate
+183,2023,B,19,2023-07-22,17:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Novorizontino,novorizontino,SP,Diego Pombo Lopez,1,0,1,Vitoria Mandante
+184,2023,B,19,2023-07-22,18:00,Novelli Junior,Itu,,Ituano,ituano,SP,Avaí,avai,SC,Paulo Roberto Alves Junior,0,1,1,Vitoria Visitante
+185,2023,B,19,2023-07-22,15:30,José Maria de Campos Maia,Mirassol,,Mirassol,mirassol,SP,Tombense,tombense,MG,Jefferson Ferreira de Moraes,2,0,2,Vitoria Mandante
+186,2023,B,19,2023-07-24,19:00,Manoel Barradas,Salvador,,Vitória,vitoria,BA,Chapecoense,chapecoense,SC,Marcelo de Lima Henrique,1,0,1,Vitoria Mandante
+187,2023,B,19,2023-07-23,18:00,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Sport,sport,PE,Wagner do Nascimento Magalhaes,1,2,3,Vitoria Visitante
+188,2023,B,19,2023-07-23,15:30,Médico:,Caxias do Sul,,Juventude,juventude,RS,Ceará,ceara,CE,Denis da Silva Ribeiro Serafim,1,0,1,Vitoria Mandante
+189,2023,B,19,2023-07-24,19:00,Jacy Scaff,Londrina,,Londrina,londrina,PR,Botafogo,botafogo,SP,Paulo Belence Alves dos Prazeres Filho,1,2,3,Vitoria Visitante
+190,2023,B,19,2023-07-21,19:00,Rei Pelé,Maceio,,Crb,crb,AL,Ponte Preta,ponte_preta,SP,Leo Simão Holanda,1,0,1,Vitoria Mandante
+191,2023,B,20,2023-07-30,18:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Vitória,vitoria,BA,Maguielson Lima Barbosa,2,2,4,Empate
+192,2023,B,20,2023-07-29,18:00,Antônio Accioly,Goiania,,Atlético,atletico,GO,Sampaio Corrêa,sampaio_correa,MA,Felipe Fernandes de Lima,2,2,4,Empate
+193,2023,B,20,2023-07-29,17:00,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Guarani,guarani,SP,Paulo Belence Alves dos Prazeres Filho,1,2,3,Vitoria Visitante
+194,2023,B,20,2023-07-29,15:30,Francisco Palma Travassos,,,Botafogo,botafogo,SP,Juventude,juventude,RS,Davi de Oliveira Lacerda,0,0,0,Empate
+195,2023,B,20,2023-07-30,15:30,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Vila Nova,vila_nova,GO,Wagner do Nascimento Magalhaes,3,1,4,Vitoria Mandante
+196,2023,B,20,2023-07-28,21:30,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Crb,crb,AL,Anderson Daronco,2,0,2,Vitoria Mandante
+197,2023,B,20,2023-07-28,19:00,Governador Plácido Aderaldo Castelo,Fortaleza,,Ceará,ceara,CE,Ituano,ituano,SP,Arthur Gomes Rabelo,1,1,2,Empate
+198,2023,B,20,2023-07-29,11:00,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Mirassol,mirassol,SP,Leonardo Willers Lorenzatto,0,1,8,Vitoria Visitante
+199,2023,B,20,2023-07-30,11:00,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Criciúma,criciuma,SC,Savio Pereira Sampaio,2,2,4,Empate
+200,2023,B,20,2023-07-29,17:00,Arena das Dunas,Natal,,Abc,abc,RN,Londrina,londrina,PR,Jonathan Benkenstein Pinheiro,0,0,0,Empate
+201,2023,B,21,2023-08-02,21:30,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Ceará,ceara,CE,Dyorgines Jose Padovani de Andrade,0,0,6,Empate
+202,2023,B,21,2023-08-04,21:30,On\351sio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Sport,sport,PE,Luiz Flavio de Oliveira,0,1,1,Vitoria Visitante
+203,2023,B,21,2023-08-02,19:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Ponte Preta,ponte_preta,SP,Marcelo de Lima Henrique,2,1,3,Vitoria Mandante
+204,2023,B,21,2023-08-02,19:00,Novelli Junior,Itu,,Ituano,ituano,SP,Tombense,tombense,MG,Thayslane de Melo Costa,1,0,1,Vitoria Mandante
+205,2023,B,21,2023-08-01,19:00,José Maria de Campos Maia,Mirassol,,Mirassol,mirassol,SP,Avaí,avai,SC,Denis da Silva Ribeiro Serafim,2,2,4,Empate
+206,2023,B,21,2023-08-02,21:30,Manoel Barradas,Salvador,,Vitória,vitoria,BA,Abc,abc,RN,Bruno Mota Correia,2,0,2,Vitoria Mandante
+207,2023,B,21,2023-08-01,19:00,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Botafogo,botafogo,SP,Alisson Sidnei Furtado,0,0,0,Empate
+208,2023,B,21,2023-08-02,21:30,Médico:,Caxias do Sul,,Juventude,juventude,RS,Novorizontino,novorizontino,SP,Luiz Augusto Silveira Tisne,0,1,1,Vitoria Visitante
+209,2023,B,21,2023-08-02,21:30,Jacy Scaff,Londrina,,Londrina,londrina,PR,Chapecoense,chapecoense,SC,Emerson Ricardo de Almeida Andrade,1,1,2,Empate
+210,2023,B,21,2023-08-01,21:30,Rei Pelé,Maceio,,Crb,crb,AL,Atlético,atletico,GO,Leonardo Ferreira Lima,2,1,7,Vitoria Mandante
+211,2023,B,22,2023-08-06,15:30,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Chapecoense,chapecoense,SC,Paulo Cesar Zanovelli da Silva,1,0,1,Vitoria Mandante
+212,2023,B,22,2023-08-07,20:00,Antônio Accioly,Goiania,,Atlético,atletico,GO,Tombense,tombense,MG,Jonathan Benkenstein Pinheiro,4,1,5,Vitoria Mandante
+213,2023,B,22,2023-08-05,15:30,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Criciúma,criciuma,SC,Flavio Rodrigues de Souza,0,1,1,Vitoria Visitante
+214,2023,B,22,2023-08-05,17:00,Novelli Junior,Itu,,Ituano,ituano,SP,Guarani,guarani,SP,Rafael Rodrigo Klein,1,1,2,Empate
+215,2023,B,22,2023-08-04,21:30,José Maria de Campos Maia,Mirassol,,Mirassol,mirassol,SP,Sampaio Corrêa,sampaio_correa,MA,Tarcizo Pinheiro Caetano,0,0,0,Empate
+216,2023,B,22,2023-08-05,18:00,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Novorizontino,novorizontino,SP,Savio Pereira Sampaio,1,0,1,Vitoria Mandante
+217,2023,B,22,2023-08-06,18:00,Governador Plácido Aderaldo Castelo,Fortaleza,,Ceará,ceara,CE,Abc,abc,RN,Jose Mendonca da Silva Junior,1,0,1,Vitoria Mandante
+218,2023,B,22,2023-08-07,18:00,Juventude,RS,,Juventude,juventude,RS,Vila Nova,vila_nova,GO,Leo Simão Holanda,1,1,10,Empate
+219,2023,B,22,2023-08-07,20:00,Jacy Scaff,Londrina,,Londrina,londrina,PR,Vitória,vitoria,BA,Arthur Gomes Rabelo,2,0,2,Vitoria Mandante
+220,2023,B,22,2023-08-05,17:00,Rei Pelé,Maceio,,Crb,crb,AL,Botafogo,botafogo,SP,Marielson Alves Silva,0,0,0,Empate
+221,2023,B,23,2023-08-13,15:45,Assistente Técnico:,Campinas,,Guarani,guarani,SP,Juventude,juventude,RS,Marielson Alves Silva,0,1,1,Vitoria Visitante
+222,2023,B,23,2023-08-12,18:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Avaí,avai,SC,Matheus Delgado Candançan,1,1,2,Empate
+223,2023,B,23,2023-08-12,15:30,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Londrina,londrina,PR,Dyorgines Jose Padovani de Andrade,2,0,5,Vitoria Mandante
+224,2023,B,23,2023-08-12,17:00,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Ponte Preta,ponte_preta,SP,Yuri Elino Ferreira da Cruz,0,0,0,Empate
+225,2023,B,23,2023-08-11,19:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Mirassol,mirassol,SP,Marcelo de Lima Henrique,2,1,3,Vitoria Mandante
+226,2023,B,23,2023-08-13,18:00,Manoel Barradas,Salvador,,Vitória,vitoria,BA,Ceará,ceara,CE,Bruno Arleu de Araujo,1,0,11,Vitoria Mandante
+227,2023,B,23,2023-08-12,17:00,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Crb,crb,AL,Gustavo Ervino Bauermann,1,1,2,Empate
+228,2023,B,23,2023-08-13,11:00,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Atlético,atletico,GO,Douglas Marques das Flores,0,1,1,Vitoria Visitante
+229,2023,B,23,2023-08-11,21:30,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Sport,sport,PE,Braulio da Silva Machado,0,0,0,Empate
+230,2023,B,23,2023-08-14,20:00,Maria Lamas Farache,Natal,,Abc,abc,RN,Ituano,ituano,SP,Paulo Belence Alves dos Prazeres Filho,1,1,2,Empate
+231,2023,B,24,2023-08-18,21:30,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Sport,sport,PE,Wilton Pereira Sampaio,3,1,4,Vitoria Mandante
+232,2023,B,24,2023-08-17,21:30,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Mirassol,mirassol,SP,Andre Luiz Skettino Policarpo Bento,2,0,2,Vitoria Mandante
+233,2023,B,24,2023-08-19,15:30,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Tombense,tombense,MG,Rodrigo Jose Pereira de Lima,4,2,6,Vitoria Mandante
+234,2023,B,24,2023-08-19,17:00,Novelli Junior,Itu,,Ituano,ituano,SP,Criciúma,criciuma,SC,Leandro Pedro Vuaden,3,0,3,Vitoria Mandante
+235,2023,B,24,2023-08-20,15:45,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Chapecoense,chapecoense,SC,Bruno Arleu de Araujo,1,2,3,Vitoria Visitante
+236,2023,B,24,2023-08-18,19:00,Manoel Barradas,Salvador,,Vitória,vitoria,BA,Botafogo,botafogo,SP,Wagner do Nascimento Magalhaes,2,0,2,Vitoria Mandante
+237,2023,B,24,2023-08-20,18:00,Governador Plácido Aderaldo Castelo,Fortaleza,,Ceará,ceara,CE,Ponte Preta,ponte_preta,SP,Anderson Daronco,1,1,6,Empate
+238,2023,B,24,2023-08-19,18:00,Médico:,Caxias do Sul,,Juventude,juventude,RS,Sampaio Corrêa,sampaio_correa,MA,Jefferson Ferreira de Moraes,0,0,0,Empate
+239,2023,B,24,2023-08-17,19:00,Jacy Scaff,Londrina,,Londrina,londrina,PR,Atlético,atletico,GO,Diego Pombo Lopez,0,2,2,Vitoria Visitante
+240,2023,B,24,2023-08-19,17:00,Maria Lamas Farache,Natal,,Abc,abc,RN,Crb,crb,AL,Vinicius Goncalves Dias Araujo,1,2,3,Vitoria Visitante
+241,2023,B,25,2023-08-25,19:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Londrina,londrina,PR,Gustavo Ervino Bauermann,1,0,1,Vitoria Mandante
+242,2023,B,25,2023-08-27,18:00,Antônio Accioly,Goiania,,Atlético,atletico,GO,Vitória,vitoria,BA,Andre Luiz Skettino Policarpo Bento,0,0,0,Empate
+243,2023,B,25,2023-08-22,21:30,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Vila Nova,vila_nova,GO,Bruno Mota Correia,1,0,1,Vitoria Mandante
+244,2023,B,25,2023-08-28,20:00,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Abc,abc,RN,Thayslane de Melo Costa,0,0,0,Empate
+245,2023,B,25,2023-08-22,19:00,Médico:,Mirassol,,Mirassol,mirassol,SP,Juventude,juventude,RS,Denis da Silva Ribeiro Serafim,0,1,1,Vitoria Visitante
+246,2023,B,25,2023-08-25,21:30,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Ituano,ituano,SP,Felipe Fernandes de Lima,2,1,3,Vitoria Mandante
+247,2023,B,25,2023-08-26,17:00,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Guarani,guarani,SP,Arthur Gomes Rabelo,1,1,2,Empate
+248,2023,B,25,2023-08-27,15:45,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Avaí,avai,SC,Joao Vitor Gobi,0,0,0,Empate
+249,2023,B,25,2023-08-26,17:00,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Ceará,ceara,CE,Yuri Elino Ferreira da Cruz,2,2,4,Empate
+250,2023,B,25,2023-08-26,18:00,Rei Pelé,Maceio,,Crb,crb,AL,Novorizontino,novorizontino,SP,Jonathan Benkenstein Pinheiro,1,0,1,Vitoria Mandante
+251,2023,B,26,2023-09-02,18:00,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Ponte Preta,ponte_preta,SP,Edina Alves Batista,1,0,1,Vitoria Mandante
+252,2023,B,26,2023-09-03,15:45,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Crb,crb,AL,Alisson Sidnei Furtado,0,1,1,Vitoria Visitante
+253,2023,B,26,2023-09-02,15:30,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Atlético,atletico,GO,Arthur Gomes Rabelo,0,2,2,Vitoria Visitante
+254,2023,B,26,2023-09-03,18:00,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Sport,sport,PE,Rafael Rodrigo Klein,1,1,2,Empate
+255,2023,B,26,2023-08-30,19:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Ituano,ituano,SP,Luiz Flavio de Oliveira,2,0,2,Vitoria Mandante
+256,2023,B,26,2023-09-01,19:15,Manoel Barradas,Salvador,,Vitória,vitoria,BA,Mirassol,mirassol,SP,Dyorgines Jose Padovani de Andrade,0,0,0,Empate
+257,2023,B,26,2023-09-02,17:00,Governador Plácido Aderaldo Castelo,Fortaleza,,Ceará,ceara,CE,Criciúma,criciuma,SC,Jose Mendonca da Silva Junior,1,0,1,Vitoria Mandante
+258,2023,B,26,2023-08-31,21:30,Médico:,Caxias do Sul,,Juventude,juventude,RS,Chapecoense,chapecoense,SC,Maguielson Lima Barbosa,0,0,0,Empate
+259,2023,B,26,2023-09-01,21:30,Jacy Scaff,Londrina,,Londrina,londrina,PR,Tombense,tombense,MG,Davi de Oliveira Lacerda,1,1,2,Empate
+260,2023,B,26,2023-09-02,17:00,Maria Lamas Farache,Natal,,Abc,abc,RN,Sampaio Corrêa,sampaio_correa,MA,Fabio Augusto Santos Sa Junior,1,1,13,Empate
+261,2023,B,27,2023-09-09,17:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Sampaio Corrêa,sampaio_correa,MA,Caio Max Augusto Vieira,0,0,0,Empate
+262,2023,B,27,2023-09-10,15:45,Médico:,Goiania,,Atlético,atletico,GO,Juventude,juventude,RS,Joao Vitor Gobi,3,0,3,Vitoria Mandante
+263,2023,B,27,2023-09-11,20:30,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Novorizontino,novorizontino,SP,Felipe Fernandes de Lima,0,1,1,Vitoria Visitante
+264,2023,B,27,2023-09-08,18:00,Novelli Junior,Itu,,Ituano,ituano,SP,Vila Nova,vila_nova,GO,Jose Mendonca da Silva Junior,1,2,3,Vitoria Visitante
+265,2023,B,27,2023-09-09,20:30,José Maria de Campos Maia,Mirassol,,Mirassol,mirassol,SP,Botafogo,botafogo,SP,Maguielson Lima Barbosa,1,0,1,Vitoria Mandante
+266,2023,B,27,2023-09-09,20:45,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Criciúma,criciuma,SC,Flavio Rodrigues de Souza,3,3,6,Empate
+267,2023,B,27,2023-09-06,21:30,Presidente Vargas,Fortaleza,,Ceará,ceara,CE,Londrina,londrina,PR,Bruno Mota Correia,3,1,4,Vitoria Mandante
+268,2023,B,27,2023-09-05,21:30,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Guarani,guarani,SP,Denis da Silva Ribeiro Serafim,0,1,1,Vitoria Visitante
+269,2023,B,27,2023-09-07,18:30,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Abc,abc,RN,Luiz Cesar de Oliveira Magalhaes,3,0,3,Vitoria Mandante
+270,2023,B,27,2023-09-10,18:00,Rei Pelé,Maceio,,Crb,crb,AL,Vitória,vitoria,BA,Luiz Flavio de Oliveira,6,0,6,Vitoria Mandante
+271,2023,B,28,2023-09-17,15:45,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Tombense,tombense,MG,Maguielson Lima Barbosa,3,0,3,Vitoria Mandante
+272,2023,B,28,2023-09-15,19:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Ponte Preta,ponte_preta,SP,Dyorgines Jose Padovani de Andrade,1,1,2,Empate
+273,2023,B,28,2023-09-16,15:30,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Mirassol,mirassol,SP,Yuri Elino Ferreira da Cruz,1,2,3,Vitoria Visitante
+274,2023,B,28,2023-09-16,17:00,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Atlético,atletico,GO,Davi de Oliveira Lacerda,1,0,1,Vitoria Mandante
+275,2023,B,28,2023-09-18,21:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Ceará,ceara,CE,Paulo Cesar Zanovelli da Silva,3,2,5,Vitoria Mandante
+276,2023,B,28,2023-09-17,18:00,Manoel Barradas,Salvador,,Vitória,vitoria,BA,Avaí,avai,SC,Flavio Rodrigues de Souza,3,0,9,Vitoria Mandante
+277,2023,B,28,2023-09-16,17:00,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Chapecoense,chapecoense,SC,Bruno Mota Correia,2,0,2,Vitoria Mandante
+278,2023,B,28,2023-09-16,18:00,Médico:,Caxias do Sul,,Juventude,juventude,RS,Crb,crb,AL,Arthur Gomes Rabelo,3,1,4,Vitoria Mandante
+279,2023,B,28,2023-09-14,18:30,Jacy Scaff,Londrina,,Londrina,londrina,PR,Ituano,ituano,SP,Denis da Silva Ribeiro Serafim,2,2,4,Empate
+280,2023,B,28,2023-09-15,21:30,Maria Lamas Farache,Natal,,Abc,abc,RN,Sport,sport,PE,Douglas Marques das Flores,0,1,1,Vitoria Visitante
+281,2023,B,29,2023-09-22,19:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Mirassol,mirassol,SP,Bruno Mota Correia,0,3,7,Vitoria Visitante
+282,2023,B,29,2023-09-22,21:30,Antônio Accioly,Goiania,,Atlético,atletico,GO,Criciúma,criciuma,SC,Edina Alves Batista,3,1,4,Vitoria Mandante
+283,2023,B,29,2023-09-25,18:30,Médico:,Florianopolis,,Avaí,avai,SC,Juventude,juventude,RS,Dyorgines Jose Padovani de Andrade,0,2,2,Vitoria Visitante
+284,2023,B,29,2023-09-22,21:30,Novelli Junior,Itu,,Ituano,ituano,SP,Vitória,vitoria,BA,Felipe Fernandes de Lima,0,2,2,Vitoria Visitante
+285,2023,B,29,2023-09-25,21:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Abc,abc,RN,Arthur Gomes Rabelo,0,0,0,Empate
+286,2023,B,29,2023-09-23,20:45,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Londrina,londrina,PR,Savio Pereira Sampaio,4,0,4,Vitoria Mandante
+287,2023,B,29,2023-09-19,21:30,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Vila Nova,vila_nova,GO,Braulio da Silva Machado,2,1,3,Vitoria Mandante
+288,2023,B,29,2023-09-23,17:00,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Ceará,ceara,CE,Leandro Pedro Vuaden,2,0,2,Vitoria Mandante
+289,2023,B,29,2023-09-23,18:00,Soares de Azevedo,Muriae,,Tombense,tombense,MG,Botafogo,botafogo,SP,Paulo Belence Alves dos Prazeres Filho,0,0,0,Empate
+290,2023,B,29,2023-09-23,17:00,Rei Pelé,Maceio,,Crb,crb,AL,Guarani,guarani,SP,Andre Luiz Skettino Policarpo Bento,1,0,1,Vitoria Mandante
+291,2023,B,30,2023-09-30,17:00,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Novorizontino,novorizontino,SP,Edina Alves Batista,2,1,3,Vitoria Mandante
+292,2023,B,30,2023-10-01,15:45,Serra Dourada,Goiania,,Vila Nova,vila_nova,GO,Chapecoense,chapecoense,SC,Yuri Elino Ferreira da Cruz,0,0,0,Empate
+293,2023,B,30,2023-09-29,19:00,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Sport,sport,PE,Caio Max Augusto Vieira,1,3,13,Vitoria Visitante
+294,2023,B,30,2023-09-30,17:00,Novelli Junior,Itu,,Ituano,ituano,SP,Botafogo,botafogo,SP,Lucas Canetto Bellote,1,1,2,Empate
+295,2023,B,30,2023-09-28,19:00,José Maria de Campos Maia,Mirassol,,Mirassol,mirassol,SP,Crb,crb,AL,Felipe Fernandes de Lima,1,0,1,Vitoria Mandante
+296,2023,B,30,2023-09-29,21:30,Manoel Barradas,Salvador,,Vitória,vitoria,BA,Tombense,tombense,MG,Marcelo de Lima Henrique,1,0,1,Vitoria Mandante
+297,2023,B,30,2023-10-01,18:00,Governador Plácido Aderaldo Castelo,Fortaleza,,Ceará,ceara,CE,Atlético,atletico,GO,Luiz Flavio de Oliveira,0,1,1,Vitoria Visitante
+298,2023,B,30,2023-09-30,15:30,Médico:,Caxias do Sul,,Juventude,juventude,RS,Criciúma,criciuma,SC,Andre Luiz Skettino Policarpo Bento,1,0,1,Vitoria Mandante
+299,2023,B,30,2023-09-28,21:30,Jacy Scaff,Londrina,,Londrina,londrina,PR,Sampaio Corrêa,sampaio_correa,MA,Rafael Rodrigo Klein,1,0,1,Vitoria Mandante
+300,2023,B,30,2023-09-30,18:00,Maria Lamas Farache,Natal,,Abc,abc,RN,Ponte Preta,ponte_preta,SP,Davi de Oliveira Lacerda,2,0,2,Vitoria Mandante
+301,2023,B,31,2023-10-07,18:00,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Vila Nova,vila_nova,GO,Felipe Fernandes de Lima,0,0,0,Empate
+302,2023,B,31,2023-10-06,21:30,Antônio Accioly,Goiania,,Atlético,atletico,GO,Ituano,ituano,SP,Andre Luiz Skettino Policarpo Bento,1,0,1,Vitoria Mandante
+303,2023,B,31,2023-10-08,18:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Vitória,vitoria,BA,Caio Max Augusto Vieira,1,0,1,Vitoria Mandante
+304,2023,B,31,2023-10-07,17:00,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Avaí,avai,SC,Rafael Rodrigo Klein,0,1,1,Vitoria Visitante
+305,2023,B,31,2023-10-03,19:30,José Maria de Campos Maia,Mirassol,,Mirassol,mirassol,SP,Londrina,londrina,PR,Arthur Gomes Rabelo,2,0,2,Vitoria Mandante
+306,2023,B,31,2023-10-09,20:00,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Ponte Preta,ponte_preta,SP,Jose Mendonca da Silva Junior,3,3,6,Empate
+307,2023,B,31,2023-10-07,17:00,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Novorizontino,novorizontino,SP,Dyorgines Jose Padovani de Andrade,1,1,2,Empate
+308,2023,B,31,2023-10-05,19:15,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Abc,abc,RN,Maguielson Lima Barbosa,0,0,0,Empate
+309,2023,B,31,2023-10-07,15:30,Médico:,Tombos,,Tombense,tombense,MG,Juventude,juventude,RS,Alisson Sidnei Furtado,1,1,2,Empate
+310,2023,B,31,2023-10-06,21:30,Rei Pelé,Maceio,,Crb,crb,AL,Ceará,ceara,CE,Leonardo Ferreira Lima,2,0,2,Vitoria Mandante
+311,2023,B,32,2023-10-15,15:45,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Atlético,atletico,GO,Dyorgines Jose Padovani de Andrade,0,2,2,Vitoria Visitante
+312,2023,B,32,2023-10-11,21:30,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Botafogo,botafogo,SP,Arthur Gomes Rabelo,3,1,4,Vitoria Mandante
+313,2023,B,32,2023-10-13,21:30,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Chapecoense,chapecoense,SC,Ramon Abatti Abel,1,2,3,Vitoria Visitante
+314,2023,B,32,2023-10-14,17:00,Novelli Junior,Itu,,Ituano,ituano,SP,Crb,crb,AL,Jonathan Benkenstein Pinheiro,0,0,0,Empate
+315,2023,B,32,2023-10-14,17:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Tombense,tombense,MG,Yuri Elino Ferreira da Cruz,0,0,0,Empate
+316,2023,B,32,2023-10-15,18:00,Manoel Barradas,Salvador,,Vitória,vitoria,BA,Guarani,guarani,SP,Wagner do Nascimento Magalhaes,2,0,7,Vitoria Mandante
+317,2023,B,32,2023-10-14,18:30,Governador Plácido Aderaldo Castelo,Fortaleza,,Ceará,ceara,CE,Sampaio Corrêa,sampaio_correa,MA,Rafael Martins Diniz,0,0,0,Empate
+318,2023,B,32,2023-10-16,20:00,Juventude,RS,,Juventude,juventude,RS,Sport,sport,PE,Savio Pereira Sampaio,2,2,4,Empate
+319,2023,B,32,2023-10-15,18:30,Jacy Scaff,Londrina,,Londrina,londrina,PR,Avaí,avai,SC,Wilton Pereira Sampaio,1,1,2,Empate
+320,2023,B,32,2023-10-10,21:30,Maria Lamas Farache,Natal,,Abc,abc,RN,Mirassol,mirassol,SP,Rodrigo Batista Raposo,1,2,3,Vitoria Visitante
+321,2023,B,33,2023-10-23,20:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Ituano,ituano,SP,Emerson Ricardo de Almeida Andrade,0,0,0,Empate
+322,2023,B,33,2023-10-19,19:00,Antônio Accioly,Goiania,,Atlético,atletico,GO,Abc,abc,RN,Bruno Mota Correia,3,1,4,Vitoria Mandante
+323,2023,B,33,2023-10-22,18:00,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Ceará,ceara,CE,Jonathan Benkenstein Pinheiro,1,0,1,Vitoria Mandante
+324,2023,B,33,2023-10-21,17:00,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Novorizontino,novorizontino,SP,Vinicius Goncalves Dias Araujo,2,0,2,Vitoria Mandante
+325,2023,B,33,2023-10-20,21:30,José Maria de Campos Maia,Mirassol,,Mirassol,mirassol,SP,Guarani,guarani,SP,Joao Vitor Gobi,0,0,0,Empate
+326,2023,B,33,2023-10-22,18:00,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Chapecoense,chapecoense,SC,Wagner do Nascimento Magalhaes,1,2,3,Vitoria Visitante
+327,2023,B,33,2023-10-20,19:00,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Vitória,vitoria,BA,Savio Pereira Sampaio,0,1,1,Vitoria Visitante
+328,2023,B,33,2023-10-21,18:00,Médico:,Caxias do Sul,,Juventude,juventude,RS,Londrina,londrina,PR,Paulo Henrique Schleich Vollkopf,2,2,4,Empate
+329,2023,B,33,2023-10-19,19:00,Antônio Guimarães de Almeida,Tombos,,Tombense,tombense,MG,Vila Nova,vila_nova,GO,Maguielson Lima Barbosa,2,1,3,Vitoria Mandante
+330,2023,B,33,2023-10-21,17:00,Rei Pelé,Maceio,,Crb,crb,AL,Criciúma,criciuma,SC,Felipe Fernandes de Lima,0,1,1,Vitoria Visitante
+331,2023,B,34,2023-10-27,21:30,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Botafogo,botafogo,SP,Maguielson Lima Barbosa,0,1,1,Vitoria Visitante
+332,2023,B,34,2023-10-28,19:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Atlético,atletico,GO,Paulo Cesar Zanovelli da Silva,2,1,10,Vitoria Mandante
+333,2023,B,34,2023-10-28,15:30,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Sampaio Corrêa,sampaio_correa,MA,Bruno Mota Correia,3,0,3,Vitoria Mandante
+334,2023,B,34,2023-10-28,15:30,Novelli Junior,Itu,,Ituano,ituano,SP,Mirassol,mirassol,SP,Vinicius Goncalves Dias Araujo,0,0,0,Empate
+335,2023,B,34,2023-10-27,21:30,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Ponte Preta,ponte_preta,SP,Joao Vitor Gobi,2,0,2,Vitoria Mandante
+336,2023,B,34,2023-10-29,19:00,Médico:,Salvador,,Vitória,vitoria,BA,Juventude,juventude,RS,Felipe Fernandes de Lima,0,0,0,Empate
+337,2023,B,34,2023-10-27,19:00,Governador Plácido Aderaldo Castelo,Fortaleza,,Ceará,ceara,CE,Sport,sport,PE,Yuri Elino Ferreira da Cruz,2,1,14,Vitoria Mandante
+338,2023,B,34,2023-10-30,20:00,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Tombense,tombense,MG,Denis da Silva Ribeiro Serafim,1,2,3,Vitoria Visitante
+339,2023,B,34,2023-10-29,18:30,Jacy Scaff,Londrina,,Londrina,londrina,PR,Crb,crb,AL,Ivan da Silva Guimaraes Junior,1,1,2,Empate
+340,2023,B,34,2023-10-26,19:00,Maria Lamas Farache,Natal,,Abc,abc,RN,Avaí,avai,SC,Luciano da Silva Miranda Filho,1,1,2,Empate
+341,2023,B,35,2023-11-04,17:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Avaí,avai,SC,Jefferson Ferreira de Moraes,0,1,1,Vitoria Visitante
+342,2023,B,35,2023-11-01,20:00,Antônio Accioly,Goiania,,Atlético,atletico,GO,Novorizontino,novorizontino,SP,Felipe Fernandes de Lima,2,2,4,Empate
+343,2023,B,35,2023-11-07,21:30,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Abc,abc,RN,Arthur Gomes Rabelo,1,0,1,Vitoria Mandante
+344,2023,B,35,2023-11-04,17:00,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Ceará,ceara,CE,Paulo Belence Alves dos Prazeres Filho,2,2,4,Empate
+345,2023,B,35,2023-11-03,19:00,José Maria de Campos Maia,Mirassol,,Mirassol,mirassol,SP,Sport,sport,PE,Caio Max Augusto Vieira,3,0,3,Vitoria Mandante
+346,2023,B,35,2023-11-05,18:00,Manoel Barradas,Salvador,,Vitória,vitoria,BA,Vila Nova,vila_nova,GO,Marcelo de Lima Henrique,1,1,2,Empate
+347,2023,B,35,2023-11-04,19:30,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Tombense,tombense,MG,Emerson Ricardo de Almeida Andrade,1,2,3,Vitoria Visitante
+348,2023,B,35,2023-11-03,21:30,Médico:,Caxias do Sul,,Juventude,juventude,RS,Ituano,ituano,SP,Dyorgines Jose Padovani de Andrade,2,1,3,Vitoria Mandante
+349,2023,B,35,2023-11-03,21:30,Jacy Scaff,Londrina,,Londrina,londrina,PR,Guarani,guarani,SP,Denis da Silva Ribeiro Serafim,0,0,5,Empate
+350,2023,B,35,2023-11-07,19:00,Rei Pelé,Maceio,,Crb,crb,AL,Chapecoense,chapecoense,SC,Jonathan Benkenstein Pinheiro,3,2,5,Vitoria Mandante
+351,2023,B,36,2023-11-14,19:00,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Criciúma,criciuma,SC,Andre Luiz Skettino Policarpo Bento,1,1,2,Empate
+352,2023,B,36,2023-11-10,19:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Londrina,londrina,PR,Yuri Elino Ferreira da Cruz,4,1,5,Vitoria Mandante
+353,2023,B,36,2023-11-11,17:00,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Crb,crb,AL,Paulo Henrique Schleich Vollkopf,1,1,2,Empate
+354,2023,B,36,2023-11-11,15:30,Novelli Junior,Itu,,Ituano,ituano,SP,Sampaio Corrêa,sampaio_correa,MA,Leandro Pedro Vuaden,2,1,3,Vitoria Mandante
+355,2023,B,36,2023-11-12,18:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Vitória,vitoria,BA,Alisson Sidnei Furtado,1,2,3,Vitoria Visitante
+356,2023,B,36,2023-11-10,21:30,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Atlético,atletico,GO,Wagner do Nascimento Magalhaes,0,0,0,Empate
+357,2023,B,36,2023-11-12,15:45,Presidente Vargas,Fortaleza,,Ceará,ceara,CE,Mirassol,mirassol,SP,Felipe Fernandes de Lima,2,0,2,Vitoria Mandante
+358,2023,B,36,2023-11-11,17:00,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Botafogo,botafogo,SP,Jefferson Ferreira de Moraes,2,0,2,Vitoria Mandante
+359,2023,B,36,2023-11-11,18:00,Antônio Guimarães de Almeida,Tombos,,Tombense,tombense,MG,Ponte Preta,ponte_preta,SP,Dyorgines Jose Padovani de Andrade,0,1,1,Vitoria Visitante
+360,2023,B,36,2023-11-14,21:30,Médico:,Natal,,Abc,abc,RN,Juventude,juventude,RS,Bruno Mota Correia,0,0,0,Empate
+361,2023,B,37,2023-11-19,15:45,Brinco de Ouro da Princesa,Campinas,,Guarani,guarani,SP,Abc,abc,RN,Felipe Fernandes de Lima,1,4,5,Vitoria Visitante
+362,2023,B,37,2023-11-18,17:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Ceará,ceara,CE,Jose Mendonca da Silva Junior,3,1,4,Vitoria Mandante
+363,2023,B,37,2023-11-18,17:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Botafogo,botafogo,SP,Yuri Elino Ferreira da Cruz,3,0,3,Vitoria Mandante
+364,2023,B,37,2023-11-17,19:00,Novelli Junior,Itu,,Ituano,ituano,SP,Chapecoense,chapecoense,SC,Anderson Daronco,0,0,0,Empate
+365,2023,B,37,2023-11-18,17:00,José Maria de Campos Maia,Mirassol,,Mirassol,mirassol,SP,Atlético,atletico,GO,Marcelo de Lima Henrique,4,1,5,Vitoria Mandante
+366,2023,B,37,2023-11-18,17:00,Manoel Barradas,Salvador,,Vitória,vitoria,BA,Sport,sport,PE,Paulo Cesar Zanovelli da Silva,1,0,1,Vitoria Mandante
+367,2023,B,37,2023-11-20,20:00,Governador João Castelo,Sao Luis,,Sampaio Corrêa,sampaio_correa,MA,Avaí,avai,SC,Wilton Pereira Sampaio,4,0,4,Vitoria Mandante
+368,2023,B,37,2023-11-18,17:00,Médico:,Caxias do Sul,,Juventude,juventude,RS,Ponte Preta,ponte_preta,SP,Wagner do Nascimento Magalhaes,0,0,0,Empate
+369,2023,B,37,2023-11-17,21:30,Jacy Scaff,Londrina,,Londrina,londrina,PR,Novorizontino,novorizontino,SP,Andre Luiz Skettino Policarpo Bento,0,1,1,Vitoria Visitante
+370,2023,B,37,2023-11-19,18:00,Rei Pelé,Maceio,,Crb,crb,AL,Tombense,tombense,MG,Rafael Rodrigo Klein,2,0,2,Vitoria Mandante
+371,2023,B,38,2023-11-25,17:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Crb,crb,AL,Leandro Pedro Vuaden,3,0,3,Vitoria Mandante
+372,2023,B,38,2023-11-25,17:00,Antônio Accioly,Goiania,,Atlético,atletico,GO,Guarani,guarani,SP,Jose Mendonca da Silva Junior,3,0,3,Vitoria Mandante
+373,2023,B,38,2023-11-25,17:00,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Ituano,ituano,SP,Fabio Augusto Santos Sa Junior,0,0,0,Empate
+374,2023,B,38,2023-11-25,17:00,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Londrina,londrina,PR,Paulo Belence Alves dos Prazeres Filho,0,1,1,Vitoria Visitante
+375,2023,B,38,2023-11-25,17:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Novorizontino,novorizontino,SP,Criciúma,criciuma,SC,Denis da Silva Ribeiro Serafim,2,0,2,Vitoria Mandante
+376,2023,B,38,2023-11-25,17:00,Adelmar da Costa Carvalho,Recife,,Sport,sport,PE,Sampaio Corrêa,sampaio_correa,MA,Dyorgines Jose Padovani de Andrade,3,2,5,Vitoria Mandante
+377,2023,B,38,2023-11-25,17:00,Médico:,Fortaleza,,Ceará,ceara,CE,Juventude,juventude,RS,Caio Max Augusto Vieira,1,3,14,Vitoria Visitante
+378,2023,B,38,2023-11-25,17:00,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Vitória,vitoria,BA,Rafael Rodrigo Klein,3,1,13,Vitoria Mandante
+379,2023,B,38,2023-11-25,17:00,Antônio Guimarães de Almeida,Tombos,,Tombense,tombense,MG,Mirassol,mirassol,SP,Wagner do Nascimento Magalhaes,0,1,1,Vitoria Visitante
+380,2023,B,38,2023-11-25,17:00,Maria Lamas Farache,Natal,,Abc,abc,RN,Vila Nova,vila_nova,GO,Yuri Elino Ferreira da Cruz,2,3,5,Vitoria Visitante

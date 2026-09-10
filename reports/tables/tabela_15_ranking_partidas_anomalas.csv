@@ -1,0 +1,51 @@
+partida_id,temporada,serie,rodada,data,clube_mandante,clube_visitante,total_cartoes,cartoes_1t,prop_cartoes_1t,cartoes_30m,penaltis_1t,match_anomaly_score,percentil_anomalia,prioridade_triagem
+7998,2022,A,36,2022-11-05,Bragantino,America-MG,8,8,1.0,3,2,68.07,100.0,Alta Prioridade de Escrutínio
+8082,2023,A,6,2023-05-14,Corinthians,Sao Paulo,6,6,1.0,4,1,63.58,99.98,Média Prioridade
+331,2022,B,34,2022-10-08,Ponte Preta,Vila Nova,16,10,0.625,11,0,61.38,99.95,Média Prioridade
+331,2023,B,34,2023-10-27,Guarani,Botafogo,16,10,0.625,11,0,61.38,99.95,Média Prioridade
+7110,2020,A,23,2020-11-28,Santos,Sport,6,6,1.0,4,1,61.37,99.91,Média Prioridade
+146,2023,B,15,2023-07-02,Sport,Ceará,12,6,0.5,11,1,58.47,99.88,Média Prioridade
+146,2022,B,0,,,,12,6,0.5,11,1,58.47,99.88,Média Prioridade
+81,2022,B,9,2022-05-24,Ponte Preta,Chapecoense,12,8,0.6666666666666666,7,1,58.29,99.84,Média Prioridade
+81,2023,B,9,2023-05-28,Ponte Preta,Vila Nova,12,8,0.6666666666666666,7,1,58.29,99.84,Média Prioridade
+8345,2023,A,32,2023-11-22,Fluminense,Sao Paulo,11,7,0.6363636363636364,7,0,58.0,99.8,Média Prioridade
+134,2023,B,14,2023-06-28,Ituano,Ponte Preta,11,7,0.6363636363636364,7,1,56.52,99.77,Média Prioridade
+134,2022,B,14,2022-06-25,Criciúma,Vila Nova,11,7,0.6363636363636364,7,1,56.52,99.77,Média Prioridade
+164,2022,B,17,2022-07-09,Criciúma,Vasco da Gama,16,8,0.5,8,2,54.29,99.73,Média Prioridade
+164,2023,B,17,2023-08-23,Botafogo,Chapecoense,16,8,0.5,8,2,54.29,99.73,Média Prioridade
+135,2023,B,14,2023-06-27,Novorizontino,Botafogo,16,8,0.5,11,0,54.0,99.68,Média Prioridade
+135,2022,B,14,2022-07-05,Ituano,Cruzeiro Saf,16,8,0.5,11,0,54.0,99.68,Média Prioridade
+27,2023,B,3,2023-04-29,Sampaio Corrêa,Mirassol,16,8,0.5,10,0,53.78,99.64,Média Prioridade
+27,2022,B,3,2022-04-21,Grêmio,Guarani,16,8,0.5,10,0,53.78,99.64,Média Prioridade
+361,2023,B,37,2023-11-19,Guarani,Abc,12,3,0.25,9,1,53.21,99.59,Média Prioridade
+361,2022,B,37,2022-10-28,Ponte Preta,Criciúma,12,3,0.25,9,1,53.21,99.59,Média Prioridade
+7792,2022,A,15,2022-07-03,Atletico-GO,Sao Paulo,12,7,0.5833333333333334,4,2,53.0,99.56,Média Prioridade
+7686,2022,A,5,2022-05-07,Atletico-MG,America-MG,9,5,0.5555555555555556,5,1,52.97,99.54,Média Prioridade
+165,2023,B,17,2023-07-16,Mirassol,Ceará,12,2,0.16666666666666666,9,1,52.76,99.51,Média Prioridade
+165,2022,B,17,2022-07-06,Novorizontino,Brusque,12,2,0.16666666666666666,9,1,52.76,99.51,Média Prioridade
+5933,2017,A,19,2017-08-06,Bahia,Sao Paulo,6,6,1.0,3,1,52.72,99.47,Média Prioridade
+375,2023,B,38,2023-11-25,Novorizontino,Criciúma,9,6,0.6666666666666666,6,1,52.63,99.43,Média Prioridade
+375,2022,B,38,2022-11-06,Ituano,Vasco da Gama S.a.f.,9,6,0.6666666666666666,6,1,52.63,99.43,Média Prioridade
+6109,2017,A,37,2017-11-26,Ponte Preta,Vitoria,10,6,0.6,6,1,52.63,99.43,Média Prioridade
+177,2023,B,18,2023-07-19,Ceará,Vila Nova,13,9,0.6923076923076923,5,2,52.62,99.37,Média Prioridade
+177,2022,B,18,2022-07-16,Grêmio,Tombense,13,9,0.6923076923076923,5,2,52.62,99.37,Média Prioridade
+40,2023,B,4,2023-05-02,Crb,Sampaio Corrêa,16,2,0.125,9,1,51.88,99.33,Média Prioridade
+40,2022,B,4,2022-04-26,Vila Nova,Tombense,16,2,0.125,9,1,51.88,99.33,Média Prioridade
+353,2022,B,36,2022-10-23,Náutico,Grêmio,13,5,0.38461538461538464,8,1,51.45,99.27,Média Prioridade
+30,2022,B,3,2022-04-22,Chapecoense,Vasco da Gama,13,5,0.38461538461538464,8,1,51.45,99.27,Média Prioridade
+353,2023,B,36,2023-11-11,Avaí,Crb,13,5,0.38461538461538464,8,1,51.45,99.27,Média Prioridade
+30,2023,B,3,2023-04-30,Abc,Ceará,13,5,0.38461538461538464,8,1,51.45,99.27,Média Prioridade
+145,2023,B,15,2023-07-03,Mirassol,Ituano,15,7,0.4666666666666667,12,0,51.26,99.2,Média Prioridade
+145,2022,B,15,2022-06-29,Novorizontino,Vasco da Gama,15,7,0.4666666666666667,12,0,51.26,99.2,Média Prioridade
+256,2022,B,26,2022-08-27,Operário,Csa,14,7,0.5,12,0,51.25,99.16,Média Prioridade
+256,2023,B,26,2023-09-01,Vitória,Mirassol,14,7,0.5,12,0,51.25,99.16,Média Prioridade
+63,2022,B,7,2022-05-15,Náutico,Cruzeiro Saf,13,8,0.6153846153846154,6,1,51.23,99.11,Média Prioridade
+63,2023,B,7,2023-05-21,Criciúma,Ceará,13,8,0.6153846153846154,6,1,51.23,99.11,Média Prioridade
+228,2022,B,23,2022-08-09,Sampaio Corrêa,Bahia,10,1,0.1,8,1,50.43,99.07,Média Prioridade
+228,2023,B,23,2023-08-13,Chapecoense,Atlético,10,1,0.1,8,1,50.43,99.07,Média Prioridade
+28,2022,B,3,2022-04-23,Sampaio Corrêa,Brusque,14,7,0.5,7,1,49.95,99.02,Típico / Baixa Prioridade
+28,2023,B,3,2023-04-29,Chapecoense,Ponte Preta,14,7,0.5,7,1,49.95,99.02,Típico / Baixa Prioridade
+233,2022,B,24,2022-08-13,Sport,Csa,7,7,1.0,0,1,49.92,98.98,Típico / Baixa Prioridade
+233,2023,B,24,2023-08-19,Avaí,Tombense,7,7,1.0,0,1,49.92,98.98,Típico / Baixa Prioridade
+91,2022,B,10,2022-06-02,Guarani,Vila Nova,14,7,0.5,9,0,49.73,98.94,Típico / Baixa Prioridade
+91,2023,B,10,2023-06-04,Guarani,Crb,14,7,0.5,9,0,49.73,98.94,Típico / Baixa Prioridade

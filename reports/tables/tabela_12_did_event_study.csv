@@ -1,0 +1,22 @@
+variavel_dependente,dep_var_code,event_var,event_label,event_time,coeficiente,std_err,ci_95_inferior,ci_95_superior,p_valor
+Cartões Totais,cartoes_totais,event_m3,e <= -3 (3+ anos antes),-3,-0.2079,0.1067,-0.417,0.0013,0.0514
+Cartões Totais,cartoes_totais,event_m2,e = -2 (2 anos antes),-2,0.0142,0.0742,-0.1311,0.1596,0.84789
+Cartões Totais,cartoes_totais,event_p0,e = 0 (Ano de Adoção),0,0.1332,0.0617,0.0122,0.2542,0.03101
+Cartões Totais,cartoes_totais,event_p1,e = +1 (1 ano após),1,0.3134,0.0829,0.1509,0.4758,0.00016
+Cartões Totais,cartoes_totais,event_p2,e = +2 (2 anos após),2,0.3192,0.1143,0.0952,0.5432,0.00522
+Cartões Totais,cartoes_totais,event_p3,e = +3 (3 anos após),3,0.2392,0.1167,0.0105,0.4679,0.04041
+Cartões Totais,cartoes_totais,event_p4,e >= +4 (4+ anos após),4,0.2088,0.1366,-0.0588,0.4765,0.12622
+Taxa Conversão (Cartão/Falta),taxa_conversao,event_m3,e <= -3 (3+ anos antes),-3,-0.0017,0.0066,-0.0146,0.0112,0.79427
+Taxa Conversão (Cartão/Falta),taxa_conversao,event_m2,e = -2 (2 anos antes),-2,0.003,0.0048,-0.0064,0.0123,0.53642
+Taxa Conversão (Cartão/Falta),taxa_conversao,event_p0,e = 0 (Ano de Adoção),0,0.0098,0.0052,-0.0003,0.0199,0.05831
+Taxa Conversão (Cartão/Falta),taxa_conversao,event_p1,e = +1 (1 ano após),1,0.0102,0.005,0.0003,0.02,0.04326
+Taxa Conversão (Cartão/Falta),taxa_conversao,event_p2,e = +2 (2 anos após),2,0.0173,0.0073,0.0031,0.0315,0.01721
+Taxa Conversão (Cartão/Falta),taxa_conversao,event_p3,e = +3 (3 anos após),3,0.0013,0.0072,-0.0128,0.0154,0.85604
+Taxa Conversão (Cartão/Falta),taxa_conversao,event_p4,e >= +4 (4+ anos após),4,-0.004,0.0102,-0.0239,0.0159,0.69546
+Faltas Cometidas,faltas,event_m3,e <= -3 (3+ anos antes),-3,-0.4493,0.3782,-1.1906,0.2921,0.2349
+Faltas Cometidas,faltas,event_m2,e = -2 (2 anos antes),-2,-0.1993,0.3546,-0.8942,0.4957,0.57416
+Faltas Cometidas,faltas,event_p0,e = 0 (Ano de Adoção),0,0.0414,0.3038,-0.554,0.6367,0.89171
+Faltas Cometidas,faltas,event_p1,e = +1 (1 ano após),1,1.113,0.4285,0.2731,1.9529,0.00939
+Faltas Cometidas,faltas,event_p2,e = +2 (2 anos após),2,0.5289,0.4403,-0.3341,1.3919,0.22967
+Faltas Cometidas,faltas,event_p3,e = +3 (3 anos após),3,1.1301,0.5146,0.1215,2.1386,0.02808
+Faltas Cometidas,faltas,event_p4,e >= +4 (4+ anos após),4,1.7405,0.6625,0.4421,3.0389,0.0086

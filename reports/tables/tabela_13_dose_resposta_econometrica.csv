@@ -1,0 +1,5 @@
+variavel_dependente,dep_var_code,n_partidas,r2,media_categoria_nenhuma,coef_dose_parcial,std_err_dose_parcial,p_val_dose_parcial,coef_dose_total,std_err_dose_total,p_val_dose_total,diferenca_total_vs_parcial
+Cartões Totais da Partida,cartoes_totais,3799,0.2114,2.2197,0.1525,0.1424,0.28438,0.2268,0.1417,0.10949,0.0743
+Taxa de Conversão,taxa_conversao,3772,0.1976,0.1527,-0.001,0.0107,0.92765,0.0025,0.0106,0.8154,0.0035
+Proporção Cartões 1T,prop_cartoes_1t,3799,0.0816,0.3085,0.0044,0.0315,0.8887,0.024,0.0324,0.4598,0.0195
+Probabilidade de Pênalti no Jogo,penalti_na_partida,3799,0.0067,0.1842,0.0303,0.0392,0.43907,0.0491,0.0405,0.22501,0.0188

@@ -15,8 +15,8 @@
     "estatisticas": {
       "linhas": 17570,
       "colunas": 16,
-      "csv_bytes": 1064281,
-      "parquet_bytes": 151946
+      "csv_bytes": 1067721,
+      "parquet_bytes": 155380
     },
     "gols": {
       "linhas": 9861,

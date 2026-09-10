@@ -1,0 +1,2671 @@
+{
+  "competicao": "Campeonato Brasileiro Série B",
+  "ano": 2022,
+  "serie": "B",
+  "created_at": "2026-09-10T11:42:23.415108",
+  "files": {
+    "2421se.pdf": {
+      "partida_num": 1,
+      "size_bytes": 44010,
+      "sha256": "1382e65a69229405b1ad2be01357c150f2111fa0d2e257cde3de1c5c3f012325",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/2421se.pdf",
+      "downloaded_at": "2026-09-10T11:42:23.791277"
+    },
+    "2422se.pdf": {
+      "partida_num": 2,
+      "size_bytes": 44013,
+      "sha256": "7f751aa298952c450d2ac8207169309e1fa1e956851e5240c9ec14067ed3185e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/2422se.pdf",
+      "downloaded_at": "2026-09-10T11:42:24.207074"
+    },
+    "2423se.pdf": {
+      "partida_num": 3,
+      "size_bytes": 44134,
+      "sha256": "48c803d8bcb55c8f7016f26c9d60cd7daa52d52d334c978842f2bf346cee335e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/2423se.pdf",
+      "downloaded_at": "2026-09-10T11:42:24.651206"
+    },
+    "2424se.pdf": {
+      "partida_num": 4,
+      "size_bytes": 44754,
+      "sha256": "be962e8f687b3254017e5e492a7f318440cc45470b0cba03748116ea46d56b9a",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/2424se.pdf",
+      "downloaded_at": "2026-09-10T11:42:25.098785"
+    },
+    "2425se.pdf": {
+      "partida_num": 5,
+      "size_bytes": 45195,
+      "sha256": "1361ff191e696631d80df96b9dab604f219a13095eac87ad2898f2eebed74bcc",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/2425se.pdf",
+      "downloaded_at": "2026-09-10T11:42:25.533154"
+    },
+    "2426se.pdf": {
+      "partida_num": 6,
+      "size_bytes": 44347,
+      "sha256": "4da74cc55ac5b74d4d37dbe596475693630aa6270dc364fdaf6f21aedb27d527",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/2426se.pdf",
+      "downloaded_at": "2026-09-10T11:42:25.968773"
+    },
+    "2427se.pdf": {
+      "partida_num": 7,
+      "size_bytes": 44483,
+      "sha256": "36e4c4cb4cd778536e3d1a1375eebdff6685cc145e0b76aca90ee94091392a6b",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/2427se.pdf",
+      "downloaded_at": "2026-09-10T11:42:26.434157"
+    },
+    "2428se.pdf": {
+      "partida_num": 8,
+      "size_bytes": 44261,
+      "sha256": "c772a71015cdb2e381f8a0f8a4de19e179b3615b0aa61d6d740a0f8d02f60412",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/2428se.pdf",
+      "downloaded_at": "2026-09-10T11:42:26.865880"
+    },
+    "2429se.pdf": {
+      "partida_num": 9,
+      "size_bytes": 44044,
+      "sha256": "5d0fbf5bff6da5e0188a07a5f74d19bbfc4b1fc53575fcff06080b6fd2484aac",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/2429se.pdf",
+      "downloaded_at": "2026-09-10T11:42:27.370409"
+    },
+    "24210se.pdf": {
+      "partida_num": 10,
+      "size_bytes": 43710,
+      "sha256": "c9711f8d992bcccd3c70a70f1aeffd1154f98f6916cdff5974297ee6e0406f22",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24210se.pdf",
+      "downloaded_at": "2026-09-10T11:42:27.800698"
+    },
+    "24211se.pdf": {
+      "partida_num": 11,
+      "size_bytes": 44016,
+      "sha256": "c73d808a8dd9d17be947219b8f6a1920fb639d01432053e4bbad7bf61fdedd6f",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24211se.pdf",
+      "downloaded_at": "2026-09-10T11:42:28.235541"
+    },
+    "24212se.pdf": {
+      "partida_num": 12,
+      "size_bytes": 44220,
+      "sha256": "176cf8279ad837aba4580922b6f0be10831963c5a1bf65158bb79500cb95839e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24212se.pdf",
+      "downloaded_at": "2026-09-10T11:42:28.672863"
+    },
+    "24213se.pdf": {
+      "partida_num": 13,
+      "size_bytes": 45070,
+      "sha256": "7828869d8309e2c316b977a59fb48992ec57d0723e7e5de492b8e5460e5a7713",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24213se.pdf",
+      "downloaded_at": "2026-09-10T11:42:29.117600"
+    },
+    "24214se.pdf": {
+      "partida_num": 14,
+      "size_bytes": 43822,
+      "sha256": "b50c28557963b42625bcced47fbd7653205b0a9ab8fcec076cde94b30e161a8c",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24214se.pdf",
+      "downloaded_at": "2026-09-10T11:42:29.588675"
+    },
+    "24215se.pdf": {
+      "partida_num": 15,
+      "size_bytes": 43815,
+      "sha256": "b5eaeee5dc29ffe3dd2f22bd2182d8fb4caec595a631d185f3bf4115bee36ead",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24215se.pdf",
+      "downloaded_at": "2026-09-10T11:42:30.002881"
+    },
+    "24216se.pdf": {
+      "partida_num": 16,
+      "size_bytes": 44406,
+      "sha256": "6f160f6e27735c5969adcb8e43df24858793008785a51bef425b484e5b7c5e51",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24216se.pdf",
+      "downloaded_at": "2026-09-10T11:42:30.417594"
+    },
+    "24217se.pdf": {
+      "partida_num": 17,
+      "size_bytes": 43723,
+      "sha256": "fa01243e0b969e6e83d87e12cfa140d3ea16b01bfd288b0e9388ae0a79e8b3d6",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24217se.pdf",
+      "downloaded_at": "2026-09-10T11:42:30.880054"
+    },
+    "24218se.pdf": {
+      "partida_num": 18,
+      "size_bytes": 44185,
+      "sha256": "46812266c27e84bd44d28ce2fef9297343e53394e5e3216e41e04b35fb7c2b61",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24218se.pdf",
+      "downloaded_at": "2026-09-10T11:42:31.288871"
+    },
+    "24219se.pdf": {
+      "partida_num": 19,
+      "size_bytes": 43387,
+      "sha256": "bee5d31830304ecdc153d2d95ee5a55041a40a04f6406c4f62ae779271d96b5c",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24219se.pdf",
+      "downloaded_at": "2026-09-10T11:42:31.699720"
+    },
+    "24220se.pdf": {
+      "partida_num": 20,
+      "size_bytes": 43521,
+      "sha256": "12984f3efc17c8fee0fa16cb5bf2bdd42c23e28d7b310b3d5b9b0e9d0c9bf891",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24220se.pdf",
+      "downloaded_at": "2026-09-10T11:42:32.144978"
+    },
+    "24221se.pdf": {
+      "partida_num": 21,
+      "size_bytes": 44411,
+      "sha256": "6322feb305af549a6caeb392b3b52b51997fc0e671588c5bd26e7b344e1a4852",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24221se.pdf",
+      "downloaded_at": "2026-09-10T11:58:28.188512"
+    },
+    "24222se.pdf": {
+      "partida_num": 22,
+      "size_bytes": 44489,
+      "sha256": "1531fb750d662409f720eb72417f673e1db7851bf1c9668b7489cd9fba7a64bb",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24222se.pdf",
+      "downloaded_at": "2026-09-10T11:58:28.606081"
+    },
+    "24223se.pdf": {
+      "partida_num": 23,
+      "size_bytes": 44004,
+      "sha256": "08b6f758dcc8025075a1c642bf89b929b73022c46b5891ef84479fe4ba8ea556",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24223se.pdf",
+      "downloaded_at": "2026-09-10T11:58:28.969041"
+    },
+    "24224se.pdf": {
+      "partida_num": 24,
+      "size_bytes": 43775,
+      "sha256": "37a57cfb1f5cfbb1048402f7a0e0f032041f68ee309043b0f61558f2eb13ed81",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24224se.pdf",
+      "downloaded_at": "2026-09-10T11:58:29.342289"
+    },
+    "24225se.pdf": {
+      "partida_num": 25,
+      "size_bytes": 44525,
+      "sha256": "9e26c102fc4966cb3cebefe9783834148fcdf0a5ea75b5d083d288730f582265",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24225se.pdf",
+      "downloaded_at": "2026-09-10T11:58:29.771743"
+    },
+    "24226se.pdf": {
+      "partida_num": 26,
+      "size_bytes": 43823,
+      "sha256": "0554a2b4231734fc45e77648c2b22e91b26636bb1800a9196447f9c80c349fe2",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24226se.pdf",
+      "downloaded_at": "2026-09-10T11:58:30.188998"
+    },
+    "24227se.pdf": {
+      "partida_num": 27,
+      "size_bytes": 45105,
+      "sha256": "dbbab9be2acef303a08b223a673abf992856baae0cd0eb698e592b6637705cf5",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24227se.pdf",
+      "downloaded_at": "2026-09-10T11:58:30.567284"
+    },
+    "24228se.pdf": {
+      "partida_num": 28,
+      "size_bytes": 44083,
+      "sha256": "4fe88b77c361ea1690b6ad205cda4dd9dd0c02246c5108dea11b90f51eb9204b",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24228se.pdf",
+      "downloaded_at": "2026-09-10T11:58:31.005733"
+    },
+    "24229se.pdf": {
+      "partida_num": 29,
+      "size_bytes": 44113,
+      "sha256": "7f9f2ba929da445f6ddcfeab0d8642796f0ca7810b59650978c8e30b7d060ae4",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24229se.pdf",
+      "downloaded_at": "2026-09-10T11:58:31.426939"
+    },
+    "24230se.pdf": {
+      "partida_num": 30,
+      "size_bytes": 43233,
+      "sha256": "c0e6b5cbe56cac9e179190c1dcad1540437d6b25c92cfb7e719a109a171621a0",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24230se.pdf",
+      "downloaded_at": "2026-09-10T11:58:31.815517"
+    },
+    "24231se.pdf": {
+      "partida_num": 31,
+      "size_bytes": 45338,
+      "sha256": "070e6e99e68c3a0cc8dd6595eab4dd3474b47c393877bd22f0b4e9f6182c18fa",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24231se.pdf",
+      "downloaded_at": "2026-09-10T11:58:32.178928"
+    },
+    "24232se.pdf": {
+      "partida_num": 32,
+      "size_bytes": 45164,
+      "sha256": "a37e11c5c8ee5a6c2bf60e99b9dbadc2925364065c826c8cd4554d59702e049a",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24232se.pdf",
+      "downloaded_at": "2026-09-10T11:58:32.595951"
+    },
+    "24233se.pdf": {
+      "partida_num": 33,
+      "size_bytes": 43636,
+      "sha256": "c3cd4bb74cc63aa544d457ce0de39c77fcbf9943666416d290d05dd5c8b1120f",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24233se.pdf",
+      "downloaded_at": "2026-09-10T11:58:32.997992"
+    },
+    "24234se.pdf": {
+      "partida_num": 34,
+      "size_bytes": 44367,
+      "sha256": "8d6f4b0c2d97fe8498adc2594da413f963121d381847dff31da8f048ac24f26e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24234se.pdf",
+      "downloaded_at": "2026-09-10T11:58:33.414680"
+    },
+    "24235se.pdf": {
+      "partida_num": 35,
+      "size_bytes": 44629,
+      "sha256": "c0793286275efc93dd15639d5356e00555c055f5cd864162e5dd7026f905733a",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24235se.pdf",
+      "downloaded_at": "2026-09-10T11:58:33.821061"
+    },
+    "24236se.pdf": {
+      "partida_num": 36,
+      "size_bytes": 43785,
+      "sha256": "c44d92ce8c5a138cbe8de7be6c32e719f9ebe857eb4b17d47dde760964306fda",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24236se.pdf",
+      "downloaded_at": "2026-09-10T11:58:34.251861"
+    },
+    "24237se.pdf": {
+      "partida_num": 37,
+      "size_bytes": 44728,
+      "sha256": "7a5550c1df4f74370c84cb4dbde75be4589e1d7c539cf761ed422b9f7887fcf7",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24237se.pdf",
+      "downloaded_at": "2026-09-10T11:58:34.686572"
+    },
+    "24238se.pdf": {
+      "partida_num": 38,
+      "size_bytes": 43330,
+      "sha256": "03522ec560ac8fdb28e90439e89eeadcaffad1e608e49696667c7ee670995105",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24238se.pdf",
+      "downloaded_at": "2026-09-10T11:58:35.063513"
+    },
+    "24239se.pdf": {
+      "partida_num": 39,
+      "size_bytes": 44454,
+      "sha256": "62fce5c0d7e3931ed8f7c153d9c1cca3d4df10d5d6252dcab8ec44ebaa6a7040",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24239se.pdf",
+      "downloaded_at": "2026-09-10T11:58:35.439518"
+    },
+    "24240se.pdf": {
+      "partida_num": 40,
+      "size_bytes": 44223,
+      "sha256": "66ba00865b1fa951423fd458528d9fccdde10eab72ea15dfc619aa2083a3282d",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24240se.pdf",
+      "downloaded_at": "2026-09-10T11:58:35.821420"
+    },
+    "24241se.pdf": {
+      "partida_num": 41,
+      "size_bytes": 43970,
+      "sha256": "6687c0f8d5c4726b1bd70a2ea7b76358cf816db84e51e226f6ced6b1d46e4cb9",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24241se.pdf",
+      "downloaded_at": "2026-09-10T11:58:36.203600"
+    },
+    "24242se.pdf": {
+      "partida_num": 42,
+      "size_bytes": 44365,
+      "sha256": "9e3a7e8025f1142f08496f02f907c1d6b713237a6615000f1ff26cfda274572b",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24242se.pdf",
+      "downloaded_at": "2026-09-10T11:58:36.626379"
+    },
+    "24243se.pdf": {
+      "partida_num": 43,
+      "size_bytes": 44691,
+      "sha256": "d4f2828a872b3661848fa8518f269a5665ed6c78abf9c6e25b5f9bd4bad7228a",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24243se.pdf",
+      "downloaded_at": "2026-09-10T11:58:37.058708"
+    },
+    "24244se.pdf": {
+      "partida_num": 44,
+      "size_bytes": 45092,
+      "sha256": "a969cf3e6d4c7b397d110f0e08a8e90299fd6b0010869c9d514c175c6afb9c0e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24244se.pdf",
+      "downloaded_at": "2026-09-10T11:58:37.499122"
+    },
+    "24245se.pdf": {
+      "partida_num": 45,
+      "size_bytes": 44728,
+      "sha256": "f25532018e90c7a36ecd5bf9bef4c5231fb609239560ed0be6ae15443d6d22c0",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24245se.pdf",
+      "downloaded_at": "2026-09-10T11:58:37.904861"
+    },
+    "24246se.pdf": {
+      "partida_num": 46,
+      "size_bytes": 45120,
+      "sha256": "32518723f1076189cdc9c3109a812da0f911fb07ff2004d7503d655546078caf",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24246se.pdf",
+      "downloaded_at": "2026-09-10T11:58:38.364803"
+    },
+    "24247se.pdf": {
+      "partida_num": 47,
+      "size_bytes": 44295,
+      "sha256": "ab3ec2af676a7754764171d07ce59f594793d6771b7284aa9a112f7e0cee3fb0",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24247se.pdf",
+      "downloaded_at": "2026-09-10T11:58:38.756894"
+    },
+    "24248se.pdf": {
+      "partida_num": 48,
+      "size_bytes": 45694,
+      "sha256": "5e24e4abc808a52e6c00221045c848188b0a2cf9cf43024e45f6da2d5e85b64a",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24248se.pdf",
+      "downloaded_at": "2026-09-10T11:58:39.128332"
+    },
+    "24249se.pdf": {
+      "partida_num": 49,
+      "size_bytes": 45006,
+      "sha256": "af4c6f2dc97ae878fa7ea2f3d340a3cc96d623d810dfe0a41807f599004d724b",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24249se.pdf",
+      "downloaded_at": "2026-09-10T11:58:39.510181"
+    },
+    "24250se.pdf": {
+      "partida_num": 50,
+      "size_bytes": 44465,
+      "sha256": "8de1936c0f128035d94cddd967ab8ba35dbfd0c3368d7f29cf5e39e4b108cad1",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24250se.pdf",
+      "downloaded_at": "2026-09-10T11:58:39.955847"
+    },
+    "24251se.pdf": {
+      "partida_num": 51,
+      "size_bytes": 44582,
+      "sha256": "95caee5a22cd7ec346a0820ebf49a3a48cb093f8202450ea5a3de7254ba89906",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24251se.pdf",
+      "downloaded_at": "2026-09-10T11:58:40.392980"
+    },
+    "24252se.pdf": {
+      "partida_num": 52,
+      "size_bytes": 44102,
+      "sha256": "28fb8d49629782553c4b434bcfde5199bdb1898f00869a9d8ff3605487d961e1",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24252se.pdf",
+      "downloaded_at": "2026-09-10T11:58:40.782600"
+    },
+    "24253se.pdf": {
+      "partida_num": 53,
+      "size_bytes": 43869,
+      "sha256": "d6c47c9e81de5a84cf56d94a6d2118b1fe880a4d4afd27a2394d99382bcd605d",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24253se.pdf",
+      "downloaded_at": "2026-09-10T11:58:41.185096"
+    },
+    "24254se.pdf": {
+      "partida_num": 54,
+      "size_bytes": 43582,
+      "sha256": "64a5ac7b2d86df9bd2994f16a288dc638fb295d60976087debf0995b6e03e7a3",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24254se.pdf",
+      "downloaded_at": "2026-09-10T11:58:42.472710"
+    },
+    "24255se.pdf": {
+      "partida_num": 55,
+      "size_bytes": 43607,
+      "sha256": "855488a6ff9d12ea0f0445075370ce378ebce7d6ebbda7699aa3861b021f86fa",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24255se.pdf",
+      "downloaded_at": "2026-09-10T11:58:42.914853"
+    },
+    "24256se.pdf": {
+      "partida_num": 56,
+      "size_bytes": 43885,
+      "sha256": "7ac0bc5ac7683c6afba69f659bcb46ff9f6f549418c4707ea8eb2e760cf5937d",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24256se.pdf",
+      "downloaded_at": "2026-09-10T11:58:43.323667"
+    },
+    "24257se.pdf": {
+      "partida_num": 57,
+      "size_bytes": 44790,
+      "sha256": "51308af83f56160a85cdca86187053edc9c58e4aa4106d9d19e7cfd5ae9035b7",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24257se.pdf",
+      "downloaded_at": "2026-09-10T11:58:43.717485"
+    },
+    "24258se.pdf": {
+      "partida_num": 58,
+      "size_bytes": 44290,
+      "sha256": "2611673d236d056ea9827dc8a9f19c9b39769a9f9f5a6fb9a48fd63a7b447502",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24258se.pdf",
+      "downloaded_at": "2026-09-10T11:58:44.134106"
+    },
+    "24259se.pdf": {
+      "partida_num": 59,
+      "size_bytes": 44217,
+      "sha256": "44f01e933d452b1fc12fb9ffc9134cbdfa182a7522915e20a2ae39414e9a902e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24259se.pdf",
+      "downloaded_at": "2026-09-10T11:58:44.545250"
+    },
+    "24260se.pdf": {
+      "partida_num": 60,
+      "size_bytes": 44707,
+      "sha256": "9d2f3761677db9ba4e1efb2232713915eeeedb4f895400718f5b1badb49a8ebe",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24260se.pdf",
+      "downloaded_at": "2026-09-10T11:58:44.905531"
+    },
+    "24261se.pdf": {
+      "partida_num": 61,
+      "size_bytes": 44831,
+      "sha256": "e3d6f0bc1d32a3f6ef15c00c41e690c69fa9e343d11a26a8fc7e6b33ca35ccb5",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24261se.pdf",
+      "downloaded_at": "2026-09-10T11:58:45.292815"
+    },
+    "24262se.pdf": {
+      "partida_num": 62,
+      "size_bytes": 44134,
+      "sha256": "a6cc740979d36cc063738dff5cc61fe6a964baac3858f91d78ac0d7cbad6771e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24262se.pdf",
+      "downloaded_at": "2026-09-10T11:58:45.687478"
+    },
+    "24263se.pdf": {
+      "partida_num": 63,
+      "size_bytes": 44072,
+      "sha256": "7c7e456cf25b92eef5f4138755a8547d8008d051a235c408fb4d38f47a4d212a",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24263se.pdf",
+      "downloaded_at": "2026-09-10T11:58:46.053412"
+    },
+    "24264se.pdf": {
+      "partida_num": 64,
+      "size_bytes": 44321,
+      "sha256": "8404a4a93d5c855b0475ea5f6bad9ff93d744d220cc9afe821b65df2e445b381",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24264se.pdf",
+      "downloaded_at": "2026-09-10T11:58:46.446270"
+    },
+    "24265se.pdf": {
+      "partida_num": 65,
+      "size_bytes": 44192,
+      "sha256": "9bf2dffe9337f3401cdc916ccc7d13ec7fde789cf886643e29430f1ce4ad743e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24265se.pdf",
+      "downloaded_at": "2026-09-10T11:58:46.867654"
+    },
+    "24266se.pdf": {
+      "partida_num": 66,
+      "size_bytes": 44286,
+      "sha256": "30b9c60ed08644c1401fe0630039b5704f85a708addf39645fe2d20c1cbf2bf7",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24266se.pdf",
+      "downloaded_at": "2026-09-10T11:58:47.287055"
+    },
+    "24267se.pdf": {
+      "partida_num": 67,
+      "size_bytes": 44568,
+      "sha256": "fa84c99ef2dbc9962fd1539d652a1748d5a0e9b55757113376e43fa85064545e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24267se.pdf",
+      "downloaded_at": "2026-09-10T11:58:47.672357"
+    },
+    "24268se.pdf": {
+      "partida_num": 68,
+      "size_bytes": 43855,
+      "sha256": "b2dca2eee8c371d47b178ef9ac2ca397eb16e618e555570b4983edb1b245a4d9",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24268se.pdf",
+      "downloaded_at": "2026-09-10T11:58:48.060264"
+    },
+    "24269se.pdf": {
+      "partida_num": 69,
+      "size_bytes": 43843,
+      "sha256": "fb2f694197836095f5df40fa5e41e2d5cefcf41b1347fff2250d34eebc602d7d",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24269se.pdf",
+      "downloaded_at": "2026-09-10T11:58:48.473823"
+    },
+    "24270se.pdf": {
+      "partida_num": 70,
+      "size_bytes": 43381,
+      "sha256": "9107cc331c09c9b41dc46516d4bcf8da354f9638909ba0bf71dc48b141b00aea",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24270se.pdf",
+      "downloaded_at": "2026-09-10T11:58:48.855418"
+    },
+    "24271se.pdf": {
+      "partida_num": 71,
+      "size_bytes": 44780,
+      "sha256": "95e76df27edbc155cee859382f7a7831ded382b3220bdfe4bfce6f4fbacfd8ba",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24271se.pdf",
+      "downloaded_at": "2026-09-10T11:58:49.265621"
+    },
+    "24272se.pdf": {
+      "partida_num": 72,
+      "size_bytes": 43958,
+      "sha256": "c66ff29ca3cad3aa18ad6a800673d2472c75d8992191f1d5ef3496b958f65111",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24272se.pdf",
+      "downloaded_at": "2026-09-10T11:58:49.674202"
+    },
+    "24273se.pdf": {
+      "partida_num": 73,
+      "size_bytes": 44874,
+      "sha256": "002e7b46a62dbd5f07945123ad2fc9ae877eb50bad4a15556d5781768d38653a",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24273se.pdf",
+      "downloaded_at": "2026-09-10T11:58:50.043959"
+    },
+    "24274se.pdf": {
+      "partida_num": 74,
+      "size_bytes": 44392,
+      "sha256": "f5b815248aabbae086322c6d2463cecfdc2f47d50578005b217975bb1166a627",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24274se.pdf",
+      "downloaded_at": "2026-09-10T11:58:50.457766"
+    },
+    "24275se.pdf": {
+      "partida_num": 75,
+      "size_bytes": 44293,
+      "sha256": "64f7dd675efbc27536357e5cbd8b9edab5c2a184aedf88a44e910bfb7ce9d60e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24275se.pdf",
+      "downloaded_at": "2026-09-10T11:58:50.840051"
+    },
+    "24276se.pdf": {
+      "partida_num": 76,
+      "size_bytes": 46490,
+      "sha256": "ff3f81faa345d9f33010e93ccbae098436e934ede54683a621ae05f7c37c57f1",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24276se.pdf",
+      "downloaded_at": "2026-09-10T11:58:51.205561"
+    },
+    "24277se.pdf": {
+      "partida_num": 77,
+      "size_bytes": 43833,
+      "sha256": "5dd9da366d2a504270a687f8dc9f285e920933b7dbe82cd32566e046a7fa019e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24277se.pdf",
+      "downloaded_at": "2026-09-10T11:58:51.576167"
+    },
+    "24278se.pdf": {
+      "partida_num": 78,
+      "size_bytes": 44335,
+      "sha256": "4d379c92eb0034b32a3d47460a6e9eb991112fe44dd7385330bd23e6fff9131f",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24278se.pdf",
+      "downloaded_at": "2026-09-10T11:58:51.999526"
+    },
+    "24279se.pdf": {
+      "partida_num": 79,
+      "size_bytes": 44263,
+      "sha256": "e1ab425a5d728feecb1218e4eb07a61289247640497b8b016e75ecab177c8abb",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24279se.pdf",
+      "downloaded_at": "2026-09-10T11:58:52.725699"
+    },
+    "24280se.pdf": {
+      "partida_num": 80,
+      "size_bytes": 44135,
+      "sha256": "3c06639ddf20f1895ed1adcfa81c1aada2c3afc4f7c32e9d50c0226e10b014b7",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24280se.pdf",
+      "downloaded_at": "2026-09-10T11:58:53.109289"
+    },
+    "24281se.pdf": {
+      "partida_num": 81,
+      "size_bytes": 43816,
+      "sha256": "d97a82d2f1a41ff4de174fa6de33de21bb27d8a31ec21bf16c259cdfc93ad1dd",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24281se.pdf",
+      "downloaded_at": "2026-09-10T11:58:53.511228"
+    },
+    "24282se.pdf": {
+      "partida_num": 82,
+      "size_bytes": 44555,
+      "sha256": "65895a3067d4b495b34466f465fa5396e422f6f0550395ee769a660d3dcfc4c9",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24282se.pdf",
+      "downloaded_at": "2026-09-10T11:58:53.972049"
+    },
+    "24283se.pdf": {
+      "partida_num": 83,
+      "size_bytes": 44244,
+      "sha256": "f5691dfc66cfe6f72c1ab560e71647170d9b71b872cb5fb77b2f55579a636c8e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24283se.pdf",
+      "downloaded_at": "2026-09-10T11:58:54.373650"
+    },
+    "24284se.pdf": {
+      "partida_num": 84,
+      "size_bytes": 45052,
+      "sha256": "b2631521643fffe9007f0baffda2516e2ab292788582fe44598c25149a925ca6",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24284se.pdf",
+      "downloaded_at": "2026-09-10T11:58:54.810361"
+    },
+    "24285se.pdf": {
+      "partida_num": 85,
+      "size_bytes": 44119,
+      "sha256": "2d6f11b7eb095ba1e3ba8d4dbce6944704e18c838c385ee8a0b9942d3dd37348",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24285se.pdf",
+      "downloaded_at": "2026-09-10T11:58:55.191307"
+    },
+    "24286se.pdf": {
+      "partida_num": 86,
+      "size_bytes": 44632,
+      "sha256": "8fbd54c7d3572fba1c23a74099d909ad6bb6deebca0d62e4e0cd51da08bafa38",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24286se.pdf",
+      "downloaded_at": "2026-09-10T11:58:55.648343"
+    },
+    "24287se.pdf": {
+      "partida_num": 87,
+      "size_bytes": 44187,
+      "sha256": "277f9b9516f04de1f8af07f5ec6f7aeffcc6253681701479d170eb9a2f62dd2a",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24287se.pdf",
+      "downloaded_at": "2026-09-10T11:58:56.016361"
+    },
+    "24288se.pdf": {
+      "partida_num": 88,
+      "size_bytes": 43460,
+      "sha256": "7ff234c9e27ebef1dd31a1e2008acb8aca6a4ee7857df20bc5dbe727a5a9e516",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24288se.pdf",
+      "downloaded_at": "2026-09-10T11:58:56.402021"
+    },
+    "24289se.pdf": {
+      "partida_num": 89,
+      "size_bytes": 44086,
+      "sha256": "b82496f233eacf8026caac99c269cf6523f6cf53d2ad76bd443375014a2ef614",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24289se.pdf",
+      "downloaded_at": "2026-09-10T11:58:56.785525"
+    },
+    "24290se.pdf": {
+      "partida_num": 90,
+      "size_bytes": 43560,
+      "sha256": "ed398ee65b20b9aeb4250d245b885020133711b92fe29b1d79cecbc85efe2a76",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24290se.pdf",
+      "downloaded_at": "2026-09-10T11:58:57.181024"
+    },
+    "24291se.pdf": {
+      "partida_num": 91,
+      "size_bytes": 44902,
+      "sha256": "b39c69071ffb59e5278d6d4804fc3c425da1f5d200843c4cc91b2abda72072b5",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24291se.pdf",
+      "downloaded_at": "2026-09-10T11:58:57.570267"
+    },
+    "24292se.pdf": {
+      "partida_num": 92,
+      "size_bytes": 43904,
+      "sha256": "db40a2dbc96dc613e4765c2b09bbe938b247d27eb3aa9c2578c02cea3c4ef344",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24292se.pdf",
+      "downloaded_at": "2026-09-10T11:58:57.940989"
+    },
+    "24293se.pdf": {
+      "partida_num": 93,
+      "size_bytes": 45473,
+      "sha256": "fa8d8bd5780984cd7117a5f93c3d0335149122946ead67dc0a2283936d66fec3",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24293se.pdf",
+      "downloaded_at": "2026-09-10T11:58:58.351576"
+    },
+    "24294se.pdf": {
+      "partida_num": 94,
+      "size_bytes": 44454,
+      "sha256": "f0a6f9315f801b00f4985140d7b8e0b9676c48ba7f578bd1e7897558e16cd3a8",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24294se.pdf",
+      "downloaded_at": "2026-09-10T11:58:58.729107"
+    },
+    "24295se.pdf": {
+      "partida_num": 95,
+      "size_bytes": 43791,
+      "sha256": "30512119a5bdb3761d2077e1c16af33aeb7968a5a0cefca37a88b7a062aaff93",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24295se.pdf",
+      "downloaded_at": "2026-09-10T11:58:59.129557"
+    },
+    "24296se.pdf": {
+      "partida_num": 96,
+      "size_bytes": 44574,
+      "sha256": "343eadaf7f13fce478b8f518929828a49eec1a2721097d9e35296bbc4eec4b7f",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24296se.pdf",
+      "downloaded_at": "2026-09-10T11:58:59.546212"
+    },
+    "24297se.pdf": {
+      "partida_num": 97,
+      "size_bytes": 44742,
+      "sha256": "7c4fc214ccb78b3d1f726dbbea02d5d124e640514638c37ebea5bf6de355add0",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24297se.pdf",
+      "downloaded_at": "2026-09-10T11:58:59.945941"
+    },
+    "24298se.pdf": {
+      "partida_num": 98,
+      "size_bytes": 44987,
+      "sha256": "ce8a4d8fbdeb73f9dc84306bad42010779ae83e9d2a58a9333e59c2b10024ea1",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24298se.pdf",
+      "downloaded_at": "2026-09-10T11:59:00.357142"
+    },
+    "24299se.pdf": {
+      "partida_num": 99,
+      "size_bytes": 43980,
+      "sha256": "86dca021a9c753ea07deb3c1eeaedb16cd92c6037dfb0770a729b2bae913b7aa",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/24299se.pdf",
+      "downloaded_at": "2026-09-10T11:59:00.760224"
+    },
+    "242100se.pdf": {
+      "partida_num": 100,
+      "size_bytes": 44272,
+      "sha256": "737a3ec16ced42a7ece7ab4253ad909709da64d61e3439c12d3a6d98c294dc0f",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242100se.pdf",
+      "downloaded_at": "2026-09-10T11:59:01.158636"
+    },
+    "242106se.pdf": {
+      "partida_num": 106,
+      "size_bytes": 45162,
+      "sha256": "08806526e33fd713287cac370df011e609e45c857d780b030331c2bb4baa39d0",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242106se.pdf",
+      "downloaded_at": "2026-09-10T11:59:39.206698"
+    },
+    "242104se.pdf": {
+      "partida_num": 104,
+      "size_bytes": 44320,
+      "sha256": "416d2609c65a09163c14446468819ecadbaa6fc972b13d67cf9beaac927cae2f",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242104se.pdf",
+      "downloaded_at": "2026-09-10T11:59:39.212074"
+    },
+    "242101se.pdf": {
+      "partida_num": 101,
+      "size_bytes": 44469,
+      "sha256": "aff31b89a0ab4a4d661dcb61f0ee4ea8439f182c6eea35d50689300de20759ae",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242101se.pdf",
+      "downloaded_at": "2026-09-10T11:59:39.214347"
+    },
+    "242103se.pdf": {
+      "partida_num": 103,
+      "size_bytes": 45148,
+      "sha256": "684b12e0ea6bfd5d3d755cbf1ae38895d38e69882d04d2635871ef87b3bbb2c6",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242103se.pdf",
+      "downloaded_at": "2026-09-10T11:59:39.216700"
+    },
+    "242105se.pdf": {
+      "partida_num": 105,
+      "size_bytes": 44208,
+      "sha256": "a0f998c7f7eec1a72021b08ce1d081a6b306e8374d6ba6b20635c03e896817a4",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242105se.pdf",
+      "downloaded_at": "2026-09-10T11:59:39.220264"
+    },
+    "242102se.pdf": {
+      "partida_num": 102,
+      "size_bytes": 44565,
+      "sha256": "858b13bfcd1646dd7883100e7ac1fcb72c264fb9721b291a4a392637d1eb1ae2",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242102se.pdf",
+      "downloaded_at": "2026-09-10T11:59:39.270783"
+    },
+    "242109se.pdf": {
+      "partida_num": 109,
+      "size_bytes": 44335,
+      "sha256": "76a1f2562addb94f2abae5f45e5b19fcb9310c75344b6f58be2807b5fe3f10ec",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242109se.pdf",
+      "downloaded_at": "2026-09-10T11:59:39.552711"
+    },
+    "242111se.pdf": {
+      "partida_num": 111,
+      "size_bytes": 45951,
+      "sha256": "03b3dd0823a3fd29478d7fca193a3aea30621d3eac25d8ff23c9aeffd2dbe127",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242111se.pdf",
+      "downloaded_at": "2026-09-10T11:59:39.561050"
+    },
+    "242108se.pdf": {
+      "partida_num": 108,
+      "size_bytes": 45400,
+      "sha256": "89d58f6c631ca78fe35610425e6d2c919279130e1303e23a9da97834d62b40f6",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242108se.pdf",
+      "downloaded_at": "2026-09-10T11:59:39.663213"
+    },
+    "242110se.pdf": {
+      "partida_num": 110,
+      "size_bytes": 45017,
+      "sha256": "e40218774a4e111fdded626aae013af1703ed29eb94e72d083366b98d334cf6d",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242110se.pdf",
+      "downloaded_at": "2026-09-10T11:59:39.669742"
+    },
+    "242112se.pdf": {
+      "partida_num": 112,
+      "size_bytes": 43769,
+      "sha256": "3f8a91599b8d0c914879f2ca79df9a2e147a36d0837ad7fcae8d72999bd07000",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242112se.pdf",
+      "downloaded_at": "2026-09-10T11:59:39.670898"
+    },
+    "242107se.pdf": {
+      "partida_num": 107,
+      "size_bytes": 45056,
+      "sha256": "b601bf9296fe4340ce5fd974aadb600166e50453fca16124bf64e1edbab1730a",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242107se.pdf",
+      "downloaded_at": "2026-09-10T11:59:39.674704"
+    },
+    "242114se.pdf": {
+      "partida_num": 114,
+      "size_bytes": 44788,
+      "sha256": "212fdc768d28e82f04896f94ef8dddb154fd5ac056ac475a8fdf45dcf8f72b23",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242114se.pdf",
+      "downloaded_at": "2026-09-10T11:59:39.950747"
+    },
+    "242113se.pdf": {
+      "partida_num": 113,
+      "size_bytes": 44677,
+      "sha256": "02b3f425aa1de6b00dafc540958199bacfc1ddfba1c6398e8067670bfd697270",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242113se.pdf",
+      "downloaded_at": "2026-09-10T11:59:39.971910"
+    },
+    "242118se.pdf": {
+      "partida_num": 118,
+      "size_bytes": 44536,
+      "sha256": "d42be03d99c2e6022f6d9db3292224fc33bbc1cea5d365b0f511f471242de3b2",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242118se.pdf",
+      "downloaded_at": "2026-09-10T11:59:40.005038"
+    },
+    "242116se.pdf": {
+      "partida_num": 116,
+      "size_bytes": 43758,
+      "sha256": "ff92171c857753cfd86b17eefc6378d9a7fda3f09fe325278f692ed05fa97ec1",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242116se.pdf",
+      "downloaded_at": "2026-09-10T11:59:40.036566"
+    },
+    "242115se.pdf": {
+      "partida_num": 115,
+      "size_bytes": 43609,
+      "sha256": "f426b5e172f6e2dc0782a7c40dad267d343c0cf980590d70e60e64eee0dca936",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242115se.pdf",
+      "downloaded_at": "2026-09-10T11:59:40.041652"
+    },
+    "242117se.pdf": {
+      "partida_num": 117,
+      "size_bytes": 44125,
+      "sha256": "ce0b370c8598916b4e506e06a5667f4b412d329dbcff61e418fd95a393fc1e2c",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242117se.pdf",
+      "downloaded_at": "2026-09-10T11:59:40.044837"
+    },
+    "242119se.pdf": {
+      "partida_num": 119,
+      "size_bytes": 43590,
+      "sha256": "d8aa6a964fb0b5ad92874152ce35c8109539b852cbdfd5b4008f6d0f4af852b8",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242119se.pdf",
+      "downloaded_at": "2026-09-10T11:59:40.271326"
+    },
+    "242120se.pdf": {
+      "partida_num": 120,
+      "size_bytes": 44772,
+      "sha256": "91f7d712f04c1db8a8ce22781ba87a2ba1673898ec0dd080b215c23aa7e92ae5",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242120se.pdf",
+      "downloaded_at": "2026-09-10T11:59:40.320488"
+    },
+    "242122se.pdf": {
+      "partida_num": 122,
+      "size_bytes": 45990,
+      "sha256": "43cceca9e8b7bff5c98efb0a6c783a01213a8a52aabfd327bd41c97f5c3a5490",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242122se.pdf",
+      "downloaded_at": "2026-09-10T11:59:40.354550"
+    },
+    "242121se.pdf": {
+      "partida_num": 121,
+      "size_bytes": 43072,
+      "sha256": "f73d0eb271481035ffc1f29b75bc4449d442fa3cae321fa05681a97651519887",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242121se.pdf",
+      "downloaded_at": "2026-09-10T11:59:40.355943"
+    },
+    "242123se.pdf": {
+      "partida_num": 123,
+      "size_bytes": 44450,
+      "sha256": "599e799bb79adc16f49e3ddcffa88f77aed5809a4e5868a943322cacbe877c5c",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242123se.pdf",
+      "downloaded_at": "2026-09-10T11:59:40.392704"
+    },
+    "242124se.pdf": {
+      "partida_num": 124,
+      "size_bytes": 44415,
+      "sha256": "56877f9d8a3cf008611b49f461cc9eee5313f39deb7e483b78024a80943f66a5",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242124se.pdf",
+      "downloaded_at": "2026-09-10T11:59:40.395249"
+    },
+    "242125se.pdf": {
+      "partida_num": 125,
+      "size_bytes": 48591,
+      "sha256": "195e7c43ca6042dbfa5f3ed5d9febc73b0a7445e3a52d549be99541353814763",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242125se.pdf",
+      "downloaded_at": "2026-09-10T11:59:40.591417"
+    },
+    "242126se.pdf": {
+      "partida_num": 126,
+      "size_bytes": 44859,
+      "sha256": "f39d0871736e74b923cc0cde1778f7c8a60794385bd63d7cabfddc428d5e624d",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242126se.pdf",
+      "downloaded_at": "2026-09-10T11:59:40.663120"
+    },
+    "242127se.pdf": {
+      "partida_num": 127,
+      "size_bytes": 43802,
+      "sha256": "9d78ed8c92b428091ba84c161f20625efbb781741162319be29a3616a5a9cd1f",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242127se.pdf",
+      "downloaded_at": "2026-09-10T11:59:40.692033"
+    },
+    "242128se.pdf": {
+      "partida_num": 128,
+      "size_bytes": 45372,
+      "sha256": "22de73ac365a53d515f1efac5cad571e815207ea0316472c5077e1057a0a0e16",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242128se.pdf",
+      "downloaded_at": "2026-09-10T11:59:40.700880"
+    },
+    "242130se.pdf": {
+      "partida_num": 130,
+      "size_bytes": 44210,
+      "sha256": "856e1cb34f9cef80ad9374058cadc454dfc44af297b873dbd72436534b2d66a6",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242130se.pdf",
+      "downloaded_at": "2026-09-10T11:59:40.706122"
+    },
+    "242129se.pdf": {
+      "partida_num": 129,
+      "size_bytes": 32477,
+      "sha256": "a435d7d34c5d1fba47fd8ad5afb56263f3c8c8e06bb9dc9487573192b0a3662b",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242129se.pdf",
+      "downloaded_at": "2026-09-10T11:59:40.716177"
+    },
+    "242131se.pdf": {
+      "partida_num": 131,
+      "size_bytes": 43123,
+      "sha256": "43ab63e1e4889c1c9847864d0f195d9aba5a7e093e1fff96b44256b1e1c483fe",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242131se.pdf",
+      "downloaded_at": "2026-09-10T11:59:40.968239"
+    },
+    "242132se.pdf": {
+      "partida_num": 132,
+      "size_bytes": 44229,
+      "sha256": "9dbc1f5c023e37e18f03396c06beefe4f4e8277b18f052ee26f9e21bf136ab40",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242132se.pdf",
+      "downloaded_at": "2026-09-10T11:59:40.999600"
+    },
+    "242133se.pdf": {
+      "partida_num": 133,
+      "size_bytes": 44087,
+      "sha256": "3032c69f6781b7a0e84b63a31bcf6525d19695dc40590232086e759214ac5a84",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242133se.pdf",
+      "downloaded_at": "2026-09-10T11:59:41.008500"
+    },
+    "242134se.pdf": {
+      "partida_num": 134,
+      "size_bytes": 44798,
+      "sha256": "fae8daa0ac5dcd3fa64f2307fa83a30d41dfaa2d188b71d1daf1606db8c4795f",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242134se.pdf",
+      "downloaded_at": "2026-09-10T11:59:41.009211"
+    },
+    "242136se.pdf": {
+      "partida_num": 136,
+      "size_bytes": 44100,
+      "sha256": "0048249aa6af3701a10b7b642ae2f3caf22ba206c3db5984852ac96ff63461b0",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242136se.pdf",
+      "downloaded_at": "2026-09-10T11:59:41.057816"
+    },
+    "242135se.pdf": {
+      "partida_num": 135,
+      "size_bytes": 45274,
+      "sha256": "56085f77c34a7b6510488aa2916bf6d62352cb06a58f6fa85787e11c29df6a53",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242135se.pdf",
+      "downloaded_at": "2026-09-10T11:59:41.059693"
+    },
+    "242137se.pdf": {
+      "partida_num": 137,
+      "size_bytes": 44470,
+      "sha256": "69b2d0dd481c395fc46047b54f0bed1c18e8fb2ff2c67457bf9a05d0aa19df3b",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242137se.pdf",
+      "downloaded_at": "2026-09-10T11:59:41.310621"
+    },
+    "242139se.pdf": {
+      "partida_num": 139,
+      "size_bytes": 45544,
+      "sha256": "7496085cc153619a1181226f32f334baa6a730fb77de9adc9233403af5d2a50e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242139se.pdf",
+      "downloaded_at": "2026-09-10T11:59:41.316009"
+    },
+    "242140se.pdf": {
+      "partida_num": 140,
+      "size_bytes": 44216,
+      "sha256": "f38dac1d3ddcd6630be37948171e12b3f9204b48ec3ee02fefb9abef3a6d0d82",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242140se.pdf",
+      "downloaded_at": "2026-09-10T11:59:41.354880"
+    },
+    "242138se.pdf": {
+      "partida_num": 138,
+      "size_bytes": 44332,
+      "sha256": "668a5379d4e72266aa3a411aba4b319b90458f058fd7756641dae963f515f737",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242138se.pdf",
+      "downloaded_at": "2026-09-10T11:59:41.358107"
+    },
+    "242142se.pdf": {
+      "partida_num": 142,
+      "size_bytes": 44602,
+      "sha256": "4aa372d28435d6de79e4948cabb06e50563389de494035e63da530cbc3d44b53",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242142se.pdf",
+      "downloaded_at": "2026-09-10T11:59:41.395900"
+    },
+    "242143se.pdf": {
+      "partida_num": 143,
+      "size_bytes": 44883,
+      "sha256": "e9401524a51e5ea53cfe70854bd59877fe20e2fb8cf41d2696748680c8957396",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242143se.pdf",
+      "downloaded_at": "2026-09-10T11:59:41.639912"
+    },
+    "242144se.pdf": {
+      "partida_num": 144,
+      "size_bytes": 44539,
+      "sha256": "931f53fb1d539d7bd62d79c22279b6c460078894e637b71eef9686a7fe9ad1c8",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242144se.pdf",
+      "downloaded_at": "2026-09-10T11:59:41.654381"
+    },
+    "242146se.pdf": {
+      "partida_num": 146,
+      "size_bytes": 45119,
+      "sha256": "949e0475fe124766ae37cc646268e4482dd0a2766f1c8470618fabccf7700f2c",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242146se.pdf",
+      "downloaded_at": "2026-09-10T11:59:41.679614"
+    },
+    "242145se.pdf": {
+      "partida_num": 145,
+      "size_bytes": 45173,
+      "sha256": "8f300873a0a2b0759b77f11f8826ff8c5995e6b448e97b6eb02ed2d0667dc143",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242145se.pdf",
+      "downloaded_at": "2026-09-10T11:59:41.692938"
+    },
+    "242147se.pdf": {
+      "partida_num": 147,
+      "size_bytes": 43788,
+      "sha256": "de9962e4638446f1448bd0871618bbefc895242078a18691f19d3713fb586b8e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242147se.pdf",
+      "downloaded_at": "2026-09-10T11:59:41.751016"
+    },
+    "242149se.pdf": {
+      "partida_num": 149,
+      "size_bytes": 44185,
+      "sha256": "c4376110e5c0a4fe4a291c33914e8b7d4a03e26213042db87b77b27632bcfeaf",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242149se.pdf",
+      "downloaded_at": "2026-09-10T11:59:41.962411"
+    },
+    "242148se.pdf": {
+      "partida_num": 148,
+      "size_bytes": 43526,
+      "sha256": "59ca633dc9cbb7e69b84f8a7ca807a750a86776123b8cb0177eaa9d2b4ecdfec",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242148se.pdf",
+      "downloaded_at": "2026-09-10T11:59:41.984901"
+    },
+    "242150se.pdf": {
+      "partida_num": 150,
+      "size_bytes": 44056,
+      "sha256": "7089e68019f8412e180ea1c2e4406876ae589eba049c14cd66bb8ceb5f1b9316",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242150se.pdf",
+      "downloaded_at": "2026-09-10T11:59:42.022782"
+    },
+    "242151se.pdf": {
+      "partida_num": 151,
+      "size_bytes": 43802,
+      "sha256": "8c1cb01e500d02c14bc4036d9240d09131800a77de924b9acc5b12778cafbb17",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242151se.pdf",
+      "downloaded_at": "2026-09-10T11:59:42.031690"
+    },
+    "242152se.pdf": {
+      "partida_num": 152,
+      "size_bytes": 44143,
+      "sha256": "0b46267eea3a61d5e5b16751a7928be7b10067e1b5534bfcb7b593e7f42a4c47",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242152se.pdf",
+      "downloaded_at": "2026-09-10T11:59:42.057550"
+    },
+    "242153se.pdf": {
+      "partida_num": 153,
+      "size_bytes": 44710,
+      "sha256": "86f33166b4350c6a2ea407614afb5e78f12aae90c10d23ea7c8675c763196fc2",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242153se.pdf",
+      "downloaded_at": "2026-09-10T11:59:42.271603"
+    },
+    "242141se.pdf": {
+      "partida_num": 141,
+      "size_bytes": 44936,
+      "sha256": "ff03598bfd13a39f5840134dc0d3d55b21088f2ee5473a686a83fc8df4ac29ca",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242141se.pdf",
+      "downloaded_at": "2026-09-10T11:59:42.317759"
+    },
+    "242154se.pdf": {
+      "partida_num": 154,
+      "size_bytes": 43623,
+      "sha256": "6fcb194ef52e6d9b1b7dea2a630e367eeb72b1c5b128cbe19abc23d16ffa982d",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242154se.pdf",
+      "downloaded_at": "2026-09-10T11:59:42.320900"
+    },
+    "242155se.pdf": {
+      "partida_num": 155,
+      "size_bytes": 44185,
+      "sha256": "29914579fd042c74bcd2b37d7d15285bdd85b4558d13dcbb48bdbd1e9a68a59c",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242155se.pdf",
+      "downloaded_at": "2026-09-10T11:59:42.354837"
+    },
+    "242156se.pdf": {
+      "partida_num": 156,
+      "size_bytes": 43389,
+      "sha256": "9e0cac67a76d053d9bb18eefe770ce084944cb553568c319d388e7f57239f038",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242156se.pdf",
+      "downloaded_at": "2026-09-10T11:59:42.368339"
+    },
+    "242157se.pdf": {
+      "partida_num": 157,
+      "size_bytes": 44303,
+      "sha256": "b1950d50a2bf1dbb3623d5951a747b249cfe3f155f3298eee5e5705e81eb478e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242157se.pdf",
+      "downloaded_at": "2026-09-10T11:59:42.416390"
+    },
+    "242158se.pdf": {
+      "partida_num": 158,
+      "size_bytes": 43374,
+      "sha256": "e57da03d9b455a78564d9c2516d9d6893222ab70b9fa738551e8245a1f7e2ad7",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242158se.pdf",
+      "downloaded_at": "2026-09-10T11:59:42.584432"
+    },
+    "242160se.pdf": {
+      "partida_num": 160,
+      "size_bytes": 44230,
+      "sha256": "ae50b12f5208fc2cd154a7a5d7cc900610509b630cfa04558b368fd9f3304363",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242160se.pdf",
+      "downloaded_at": "2026-09-10T11:59:42.658325"
+    },
+    "242161se.pdf": {
+      "partida_num": 161,
+      "size_bytes": 43561,
+      "sha256": "d6796df87b64b3b2c7eabdde704113b918bf4345f2d361555443c31894ad4e3b",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242161se.pdf",
+      "downloaded_at": "2026-09-10T11:59:42.681453"
+    },
+    "242159se.pdf": {
+      "partida_num": 159,
+      "size_bytes": 43707,
+      "sha256": "a9e0b8087a9ae989b6327e19e6e8bb294bc8eb727af10a24280bdd7ab9e7a93e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242159se.pdf",
+      "downloaded_at": "2026-09-10T11:59:42.688804"
+    },
+    "242162se.pdf": {
+      "partida_num": 162,
+      "size_bytes": 44027,
+      "sha256": "985bc1f217d1a2d7f8bcef6900e394051f0d25931280388804557597e66f6e1d",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242162se.pdf",
+      "downloaded_at": "2026-09-10T11:59:42.715167"
+    },
+    "242163se.pdf": {
+      "partida_num": 163,
+      "size_bytes": 44424,
+      "sha256": "988b3dddda0ebc6eca9117a40773280a6321a14741c44ac334462da2343d4700",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242163se.pdf",
+      "downloaded_at": "2026-09-10T11:59:42.762595"
+    },
+    "242164se.pdf": {
+      "partida_num": 164,
+      "size_bytes": 44650,
+      "sha256": "60d369c5c6e4256f17cb6e539ee15bdbea35f3e946c738387540bfd303ba0a35",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242164se.pdf",
+      "downloaded_at": "2026-09-10T11:59:42.932386"
+    },
+    "242166se.pdf": {
+      "partida_num": 166,
+      "size_bytes": 44899,
+      "sha256": "e1050db8f56ed0e64961ae3bc94a7d3c21b289d5a68ec03ada27a8d73af6ab0e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242166se.pdf",
+      "downloaded_at": "2026-09-10T11:59:43.025533"
+    },
+    "242165se.pdf": {
+      "partida_num": 165,
+      "size_bytes": 43461,
+      "sha256": "d5d90435cc651c8ebbb13d4cd8f071d387d15708ca4131c3832a90cc39e3a57a",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242165se.pdf",
+      "downloaded_at": "2026-09-10T11:59:43.029319"
+    },
+    "242167se.pdf": {
+      "partida_num": 167,
+      "size_bytes": 44535,
+      "sha256": "805aa44b9015c840cff8d7e635331da1ab539f29ae9cb9b0f799e323994c0733",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242167se.pdf",
+      "downloaded_at": "2026-09-10T11:59:43.038729"
+    },
+    "242168se.pdf": {
+      "partida_num": 168,
+      "size_bytes": 43502,
+      "sha256": "0f316592c79f14584dc2877d553e84e27a321399113b4fab4507ce54fd1ebce8",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242168se.pdf",
+      "downloaded_at": "2026-09-10T11:59:43.044936"
+    },
+    "242169se.pdf": {
+      "partida_num": 169,
+      "size_bytes": 43414,
+      "sha256": "543267813611a238db6c80d0056b7c87ea76bd1ee1ecb58fd2842f77790c75ed",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242169se.pdf",
+      "downloaded_at": "2026-09-10T11:59:43.115055"
+    },
+    "242170se.pdf": {
+      "partida_num": 170,
+      "size_bytes": 44291,
+      "sha256": "c433490d1777b96daf628f5c9ffe1178174557f2917bf64b6282a9e3ec4d0896",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242170se.pdf",
+      "downloaded_at": "2026-09-10T11:59:43.270479"
+    },
+    "242171se.pdf": {
+      "partida_num": 171,
+      "size_bytes": 43616,
+      "sha256": "ce85b5a2d8d21c8333c91cdaa79844ccd2b9150a9cf6301ede2935dbde5f0654",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242171se.pdf",
+      "downloaded_at": "2026-09-10T11:59:43.351405"
+    },
+    "242172se.pdf": {
+      "partida_num": 172,
+      "size_bytes": 44155,
+      "sha256": "e9b561d3b5ad275b6a0125c1fd140797e6772905f63343ed92c6349bb1473d36",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242172se.pdf",
+      "downloaded_at": "2026-09-10T11:59:43.369638"
+    },
+    "242174se.pdf": {
+      "partida_num": 174,
+      "size_bytes": 45317,
+      "sha256": "e6f7fdff0a6000331651de80b690b8d9bd7a1469ee93c7e5fa646f7b43f2e078",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242174se.pdf",
+      "downloaded_at": "2026-09-10T11:59:43.383184"
+    },
+    "242173se.pdf": {
+      "partida_num": 173,
+      "size_bytes": 43552,
+      "sha256": "b1ed0fd180fa77f2b3e2d683a456b79593744439733d727ba5b3e193c2e0f1b8",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242173se.pdf",
+      "downloaded_at": "2026-09-10T11:59:43.404979"
+    },
+    "242175se.pdf": {
+      "partida_num": 175,
+      "size_bytes": 43478,
+      "sha256": "6557643dbc2a01dca8f880cd255845ed993e0631fa65224e59d1ea1ae2f85487",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242175se.pdf",
+      "downloaded_at": "2026-09-10T11:59:43.452903"
+    },
+    "242176se.pdf": {
+      "partida_num": 176,
+      "size_bytes": 43865,
+      "sha256": "997a73510ffc494bcb0f89b0cab70a0b4e5573f36b0f1641a41f3f7cacd138b2",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242176se.pdf",
+      "downloaded_at": "2026-09-10T11:59:43.617871"
+    },
+    "242178se.pdf": {
+      "partida_num": 178,
+      "size_bytes": 44767,
+      "sha256": "76e2591909a537e0cda8b8417bc69ad612a05134c7895c47135029ae38117a1a",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242178se.pdf",
+      "downloaded_at": "2026-09-10T11:59:43.695431"
+    },
+    "242179se.pdf": {
+      "partida_num": 179,
+      "size_bytes": 45077,
+      "sha256": "43afa8a89667550919d12c960851018c46cc4196d07e5889358cc2475660e2ed",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242179se.pdf",
+      "downloaded_at": "2026-09-10T11:59:43.716756"
+    },
+    "242180se.pdf": {
+      "partida_num": 180,
+      "size_bytes": 43999,
+      "sha256": "45d3b6367a5c8fb3a5928190ea0ee13ce905ecfd4e87368133ebab3d8e64f022",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242180se.pdf",
+      "downloaded_at": "2026-09-10T11:59:43.722961"
+    },
+    "242177se.pdf": {
+      "partida_num": 177,
+      "size_bytes": 43629,
+      "sha256": "f18a10ed95ff5436d929de95e32fd94488508d72d59fea30b773e94cd11ba804",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242177se.pdf",
+      "downloaded_at": "2026-09-10T11:59:43.735651"
+    },
+    "242181se.pdf": {
+      "partida_num": 181,
+      "size_bytes": 44664,
+      "sha256": "86c1323a521ce60f1bf7fef180c3fe0a76cdebc37f75f20bad7263e3b949b580",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242181se.pdf",
+      "downloaded_at": "2026-09-10T11:59:43.767097"
+    },
+    "242182se.pdf": {
+      "partida_num": 182,
+      "size_bytes": 45261,
+      "sha256": "74171171ae7ce85b3a3ff6789fd69c5719613692ff0ca9e3875a78120943babc",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242182se.pdf",
+      "downloaded_at": "2026-09-10T11:59:43.954459"
+    },
+    "242183se.pdf": {
+      "partida_num": 183,
+      "size_bytes": 44053,
+      "sha256": "1c9719211fc641a9fc31779494f40a18ea7ba9b3357fc7f8c3c5ba7e518d99aa",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242183se.pdf",
+      "downloaded_at": "2026-09-10T11:59:44.022059"
+    },
+    "242184se.pdf": {
+      "partida_num": 184,
+      "size_bytes": 43748,
+      "sha256": "44ed19997ea0debbb7c89f4a9e57d7b22964b0c37acb7fd38aa3d3a70508e17b",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242184se.pdf",
+      "downloaded_at": "2026-09-10T11:59:44.070523"
+    },
+    "242186se.pdf": {
+      "partida_num": 186,
+      "size_bytes": 43654,
+      "sha256": "64e79bf546dd83afefe3d56c256f4d1ee31befc5aa72fce34dbb019a52fb72f0",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242186se.pdf",
+      "downloaded_at": "2026-09-10T11:59:44.078859"
+    },
+    "242185se.pdf": {
+      "partida_num": 185,
+      "size_bytes": 44648,
+      "sha256": "11bbafc7f763ed0122614d7b3eeb19a9c916c020793245d68b1eb3f985ee4701",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242185se.pdf",
+      "downloaded_at": "2026-09-10T11:59:44.083604"
+    },
+    "242187se.pdf": {
+      "partida_num": 187,
+      "size_bytes": 44729,
+      "sha256": "b991bdc3dbaa8e37d9962f3477d07f62e8b0135aa90b9f9012f618d792e044d1",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242187se.pdf",
+      "downloaded_at": "2026-09-10T11:59:44.121568"
+    },
+    "242188se.pdf": {
+      "partida_num": 188,
+      "size_bytes": 44372,
+      "sha256": "d5f5b484116fffb0cdb0fa20cb77f6b063d7f48d983c69c762be72203291cca7",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242188se.pdf",
+      "downloaded_at": "2026-09-10T11:59:44.268494"
+    },
+    "242189se.pdf": {
+      "partida_num": 189,
+      "size_bytes": 43744,
+      "sha256": "d07b19ec97e3793c99c49aefec3e57066574669b61d421b73f361dcf2c79f3e6",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242189se.pdf",
+      "downloaded_at": "2026-09-10T11:59:44.333189"
+    },
+    "242192se.pdf": {
+      "partida_num": 192,
+      "size_bytes": 45178,
+      "sha256": "181a07b564b3d1d27ef4345ddd63ed7a893a6e0075fc8c1da6b3236da0513bc0",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242192se.pdf",
+      "downloaded_at": "2026-09-10T11:59:44.394291"
+    },
+    "242191se.pdf": {
+      "partida_num": 191,
+      "size_bytes": 43974,
+      "sha256": "331a477b26d8f66673cf472671db063774e771e220ace80bc1176852d8bc2734",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242191se.pdf",
+      "downloaded_at": "2026-09-10T11:59:44.405760"
+    },
+    "242190se.pdf": {
+      "partida_num": 190,
+      "size_bytes": 43528,
+      "sha256": "df8dd189173c9b8a3b906237786e1804348f3bb15b289dc9fe0a384403f2bfb9",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242190se.pdf",
+      "downloaded_at": "2026-09-10T11:59:44.431675"
+    },
+    "242193se.pdf": {
+      "partida_num": 193,
+      "size_bytes": 44253,
+      "sha256": "9b1f71d923b7f91ff2a925f30a40cfe489d260d447cc9412f80e4128e9c6dcec",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242193se.pdf",
+      "downloaded_at": "2026-09-10T11:59:44.459181"
+    },
+    "242194se.pdf": {
+      "partida_num": 194,
+      "size_bytes": 44652,
+      "sha256": "300479d3c94c3f4d8104810714352f8e755070320453390b35cbb335e11f6d67",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242194se.pdf",
+      "downloaded_at": "2026-09-10T11:59:44.604464"
+    },
+    "242195se.pdf": {
+      "partida_num": 195,
+      "size_bytes": 44298,
+      "sha256": "710bfe6071a9a41252dfb34e22e4d3743a6852259a1b7c5a7ea96f4e0336da5d",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242195se.pdf",
+      "downloaded_at": "2026-09-10T11:59:44.635617"
+    },
+    "242196se.pdf": {
+      "partida_num": 196,
+      "size_bytes": 43733,
+      "sha256": "3392e4f2fdb9c14626eeb135ce4b468123d43c9cc186e0509c7de4a448d48e17",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242196se.pdf",
+      "downloaded_at": "2026-09-10T11:59:44.724941"
+    },
+    "242198se.pdf": {
+      "partida_num": 198,
+      "size_bytes": 44349,
+      "sha256": "2cbf816b0722de852eb1f97f96757b1133d613d96f47a72bc958062c4f7e6843",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242198se.pdf",
+      "downloaded_at": "2026-09-10T11:59:44.747717"
+    },
+    "242197se.pdf": {
+      "partida_num": 197,
+      "size_bytes": 45051,
+      "sha256": "32bcbf2f7df4ab5e8666e6e06ad8d6694fb0bcbeefa3b36b64930f23e915c5b2",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242197se.pdf",
+      "downloaded_at": "2026-09-10T11:59:44.757132"
+    },
+    "242199se.pdf": {
+      "partida_num": 199,
+      "size_bytes": 44498,
+      "sha256": "20d571c63c082a55803787b00bb7b12ba13527b8f5ea3dd05b83cd37204696e8",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242199se.pdf",
+      "downloaded_at": "2026-09-10T11:59:44.778898"
+    },
+    "242200se.pdf": {
+      "partida_num": 200,
+      "size_bytes": 43836,
+      "sha256": "1f57af56ace7bbed8f1693ba3b5f2e184de792a0e72b1e260408d452451af366",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242200se.pdf",
+      "downloaded_at": "2026-09-10T11:59:44.946077"
+    },
+    "242201se.pdf": {
+      "partida_num": 201,
+      "size_bytes": 45180,
+      "sha256": "4f918545f86a6d537931e838c6457ca2e9aa9d17662fbef370c9f588c248c8ad",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242201se.pdf",
+      "downloaded_at": "2026-09-10T11:59:44.980700"
+    },
+    "242203se.pdf": {
+      "partida_num": 203,
+      "size_bytes": 44531,
+      "sha256": "9f8a8691872e1d250e04387bb3e8475a90972f531ad20628b25276ed19ecec7e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242203se.pdf",
+      "downloaded_at": "2026-09-10T11:59:45.087736"
+    },
+    "242205se.pdf": {
+      "partida_num": 205,
+      "size_bytes": 45064,
+      "sha256": "101c58780396987227e0ed4286c886d5d019402e4941310bcbab58bb48dae9ef",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242205se.pdf",
+      "downloaded_at": "2026-09-10T11:59:45.091783"
+    },
+    "242204se.pdf": {
+      "partida_num": 204,
+      "size_bytes": 44088,
+      "sha256": "0a5f1bf41ff8a15d2411febd05866a251922a99e6610b213f187a4dbad589523",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242204se.pdf",
+      "downloaded_at": "2026-09-10T11:59:45.120066"
+    },
+    "242202se.pdf": {
+      "partida_num": 202,
+      "size_bytes": 45297,
+      "sha256": "bb83abf35d4087fc5c6e7b0d500cad9724e1bd0e142757c1b3792948e4dbe139",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242202se.pdf",
+      "downloaded_at": "2026-09-10T11:59:45.122707"
+    },
+    "242206se.pdf": {
+      "partida_num": 206,
+      "size_bytes": 43872,
+      "sha256": "f48a370f57687eff4f8593e4f2c05b6013fb2822b301a5809540452f8a32b7e1",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242206se.pdf",
+      "downloaded_at": "2026-09-10T11:59:45.259590"
+    },
+    "242207se.pdf": {
+      "partida_num": 207,
+      "size_bytes": 44826,
+      "sha256": "0080bb8f280b9f4f132b76742795afbc02ecf54aaffc264dfb2395a4b0748fbe",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242207se.pdf",
+      "downloaded_at": "2026-09-10T11:59:45.290960"
+    },
+    "242209se.pdf": {
+      "partida_num": 209,
+      "size_bytes": 43818,
+      "sha256": "4ad23b356f46798819bd76f7967ad355d7cc9cb16ec78eab9ef7f8877aa2ca1f",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242209se.pdf",
+      "downloaded_at": "2026-09-10T11:59:45.427756"
+    },
+    "242210se.pdf": {
+      "partida_num": 210,
+      "size_bytes": 44018,
+      "sha256": "9b72ded1fec7affc223ba6d811d921f70ec3a356c9f62f9b99d9fab2bbf8102e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242210se.pdf",
+      "downloaded_at": "2026-09-10T11:59:45.436425"
+    },
+    "242211se.pdf": {
+      "partida_num": 211,
+      "size_bytes": 44603,
+      "sha256": "ce13b3631101724ee74bccb020fa8da80d8289b52984f26853cecc8479605072",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242211se.pdf",
+      "downloaded_at": "2026-09-10T11:59:45.459434"
+    },
+    "242212se.pdf": {
+      "partida_num": 212,
+      "size_bytes": 44715,
+      "sha256": "52c5a37eaeb3585c92fc55239bec7c8fb040ad8bfedf464cadc4f0e2cc44c46d",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242212se.pdf",
+      "downloaded_at": "2026-09-10T11:59:45.575514"
+    },
+    "242213se.pdf": {
+      "partida_num": 213,
+      "size_bytes": 44308,
+      "sha256": "ddfdcd0f5a640616a2ab3cdca5ece9be1a042993e8721f829f1801d3acc3a552",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242213se.pdf",
+      "downloaded_at": "2026-09-10T11:59:45.593423"
+    },
+    "242215se.pdf": {
+      "partida_num": 215,
+      "size_bytes": 44054,
+      "sha256": "0db0ed8cd5e50eafa5f1cfc605cbf11292267bfeefc12d343630a56e78948237",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242215se.pdf",
+      "downloaded_at": "2026-09-10T11:59:45.753822"
+    },
+    "242216se.pdf": {
+      "partida_num": 216,
+      "size_bytes": 43754,
+      "sha256": "dd52f7aba514338cedb4c61f5fb7522e70b517de0848d8a6ca0920386b02c520",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242216se.pdf",
+      "downloaded_at": "2026-09-10T11:59:45.766275"
+    },
+    "242214se.pdf": {
+      "partida_num": 214,
+      "size_bytes": 45387,
+      "sha256": "d1c752c2480ba98d25d8d92005df00e5b100ae396a98d85112415a0ed88b5c4f",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242214se.pdf",
+      "downloaded_at": "2026-09-10T11:59:45.770150"
+    },
+    "242217se.pdf": {
+      "partida_num": 217,
+      "size_bytes": 45736,
+      "sha256": "a04a1dc9b6c2e26e79bc29d5a5b1b49165e83e1c5a6eee290d4d245aa3b82d75",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242217se.pdf",
+      "downloaded_at": "2026-09-10T11:59:45.938930"
+    },
+    "242218se.pdf": {
+      "partida_num": 218,
+      "size_bytes": 43415,
+      "sha256": "7741593d90de73c784fb2f50abefed2c2222324438965f0b1673f81d0b42cdb1",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242218se.pdf",
+      "downloaded_at": "2026-09-10T11:59:45.944973"
+    },
+    "242220se.pdf": {
+      "partida_num": 220,
+      "size_bytes": 44428,
+      "sha256": "3bc249c30cb2084a16b2f2e7c8d29ce67b2f6bb6e8a9376c88f60740782ca557",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242220se.pdf",
+      "downloaded_at": "2026-09-10T11:59:46.139737"
+    },
+    "242221se.pdf": {
+      "partida_num": 221,
+      "size_bytes": 44910,
+      "sha256": "9832b0e65ffc8a75c33aa9b4ef9d49986137a623a168f7986e1ee7884c193731",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242221se.pdf",
+      "downloaded_at": "2026-09-10T11:59:46.140825"
+    },
+    "242222se.pdf": {
+      "partida_num": 222,
+      "size_bytes": 44908,
+      "sha256": "5e9f1501f31354743d4d44d83831de87057d45f4f7f800e6a59363b8adde913b",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242222se.pdf",
+      "downloaded_at": "2026-09-10T11:59:46.252396"
+    },
+    "242223se.pdf": {
+      "partida_num": 223,
+      "size_bytes": 44654,
+      "sha256": "36348407a42e4691b7710a3a555384e00067c366bc1969a814f62b75ce5ed416",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242223se.pdf",
+      "downloaded_at": "2026-09-10T11:59:46.257532"
+    },
+    "242208se.pdf": {
+      "partida_num": 208,
+      "size_bytes": 43415,
+      "sha256": "7c3a56d0cdb2dd5077f8ed5b668fe325b1c1977b7fcbd4cd880baf39730814a2",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242208se.pdf",
+      "downloaded_at": "2026-09-10T11:59:46.354838"
+    },
+    "242224se.pdf": {
+      "partida_num": 224,
+      "size_bytes": 43573,
+      "sha256": "6ae6b10e0bdb8606373daa5b14b57966451351e1bc7ef3319dda5fb0fd6721ce",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242224se.pdf",
+      "downloaded_at": "2026-09-10T11:59:46.473933"
+    },
+    "242225se.pdf": {
+      "partida_num": 225,
+      "size_bytes": 44403,
+      "sha256": "b8f1d5e4084a785b0f50a8b466501a667452c1d2794e1095fcd9e04639cadeea",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242225se.pdf",
+      "downloaded_at": "2026-09-10T11:59:46.477558"
+    },
+    "242227se.pdf": {
+      "partida_num": 227,
+      "size_bytes": 44599,
+      "sha256": "df4226a2cc21d9aa2e8898e04dfb3750eff49041fba263249a6c3b3de230302b",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242227se.pdf",
+      "downloaded_at": "2026-09-10T11:59:46.649095"
+    },
+    "242226se.pdf": {
+      "partida_num": 226,
+      "size_bytes": 44252,
+      "sha256": "2ea99fd01bfc4e5db1b24622ea3c0969064236d29c24496daa540cf7714706e9",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242226se.pdf",
+      "downloaded_at": "2026-09-10T11:59:46.657509"
+    },
+    "242228se.pdf": {
+      "partida_num": 228,
+      "size_bytes": 44212,
+      "sha256": "f1c36c0b283e1186cc0492c723ef8c53ec6dddc3312c00ba063523e555a4aa21",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242228se.pdf",
+      "downloaded_at": "2026-09-10T11:59:46.735729"
+    },
+    "242230se.pdf": {
+      "partida_num": 230,
+      "size_bytes": 44317,
+      "sha256": "7db57e46d4375db2371f81392a859770124b1a95b5534a1cb28e6a0f7960c462",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242230se.pdf",
+      "downloaded_at": "2026-09-10T11:59:46.819934"
+    },
+    "242229se.pdf": {
+      "partida_num": 229,
+      "size_bytes": 43571,
+      "sha256": "3142eac30cbef9a839b0b7438c31b5bc34b4b81569ff79b5af11577e5e5e6ff7",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242229se.pdf",
+      "downloaded_at": "2026-09-10T11:59:46.852888"
+    },
+    "242219se.pdf": {
+      "partida_num": 219,
+      "size_bytes": 44077,
+      "sha256": "b564509ceebb94c6ae1c00f14010ca1cc1d4f295bb1a798a2ea16a64d20cd5ba",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242219se.pdf",
+      "downloaded_at": "2026-09-10T11:59:46.908793"
+    },
+    "242231se.pdf": {
+      "partida_num": 231,
+      "size_bytes": 43564,
+      "sha256": "78f51a78f2fb66f69b1c023169e4e3e554e5f36ef4ad14a07779d3427170a903",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242231se.pdf",
+      "downloaded_at": "2026-09-10T11:59:46.969203"
+    },
+    "242232se.pdf": {
+      "partida_num": 232,
+      "size_bytes": 44723,
+      "sha256": "653a641fdb16dea13e05a8b15e277dbaf19ef5c0c98a33e12f8a2e4e6f988e5a",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242232se.pdf",
+      "downloaded_at": "2026-09-10T11:59:46.973088"
+    },
+    "242233se.pdf": {
+      "partida_num": 233,
+      "size_bytes": 44788,
+      "sha256": "35ab6630688f68d5c53aac169f39424dcbd487729b87790951948dc636f030c6",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242233se.pdf",
+      "downloaded_at": "2026-09-10T11:59:47.099940"
+    },
+    "242234se.pdf": {
+      "partida_num": 234,
+      "size_bytes": 44440,
+      "sha256": "a5145f0c804b577e514e87af60dbfe9550e31e6521aa937513a90c86a0acbd43",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242234se.pdf",
+      "downloaded_at": "2026-09-10T11:59:47.157210"
+    },
+    "242235se.pdf": {
+      "partida_num": 235,
+      "size_bytes": 44342,
+      "sha256": "744149aa70c423a8809e471f7ee6a28c7e4b75ecb8bee75206ff13d284e49a5c",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242235se.pdf",
+      "downloaded_at": "2026-09-10T11:59:47.190325"
+    },
+    "242236se.pdf": {
+      "partida_num": 236,
+      "size_bytes": 43914,
+      "sha256": "38c454e56c987a4692d501c1a5cf1dafda6b7a51e0596775f9dfcd1c9e2e6260",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242236se.pdf",
+      "downloaded_at": "2026-09-10T11:59:47.213639"
+    },
+    "242238se.pdf": {
+      "partida_num": 238,
+      "size_bytes": 44624,
+      "sha256": "580a1b4742a3fb5e219dbedaa556546752c45af09cf557233f32c4a56fedb17c",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242238se.pdf",
+      "downloaded_at": "2026-09-10T11:59:47.316501"
+    },
+    "242237se.pdf": {
+      "partida_num": 237,
+      "size_bytes": 45322,
+      "sha256": "e5f2fe1407416a5e20b62da1f321cd7f32b9e61bbecd4d3328344853ff3abf0e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242237se.pdf",
+      "downloaded_at": "2026-09-10T11:59:47.353529"
+    },
+    "242239se.pdf": {
+      "partida_num": 239,
+      "size_bytes": 44092,
+      "sha256": "319c3c2fe48226ca616c96b0ffe8b6ac4ac7a0edac8145daf8c0223182d0b9cd",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242239se.pdf",
+      "downloaded_at": "2026-09-10T11:59:47.447226"
+    },
+    "242240se.pdf": {
+      "partida_num": 240,
+      "size_bytes": 43716,
+      "sha256": "4b7a713e34ab4e8160a1baae3a9ac1558396dba94a9a1c9d93395e1fdd5e6848",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242240se.pdf",
+      "downloaded_at": "2026-09-10T11:59:47.483213"
+    },
+    "242242se.pdf": {
+      "partida_num": 242,
+      "size_bytes": 44000,
+      "sha256": "ebb546e3af9e453cdaffd165e56bec0b0d0e735c45354b583bbac7ce74346c94",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242242se.pdf",
+      "downloaded_at": "2026-09-10T11:59:47.516719"
+    },
+    "242241se.pdf": {
+      "partida_num": 241,
+      "size_bytes": 44688,
+      "sha256": "8349b27e91fc53cae8cbec760a0cd14ad3e6ab7f8d7c92752d1125d4e0ef50ed",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242241se.pdf",
+      "downloaded_at": "2026-09-10T11:59:47.528723"
+    },
+    "242243se.pdf": {
+      "partida_num": 243,
+      "size_bytes": 44800,
+      "sha256": "db7dbd6950e04005651e51fd3470fb15300f444062804a70a177c0d5bcb960c5",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242243se.pdf",
+      "downloaded_at": "2026-09-10T11:59:47.654979"
+    },
+    "242244se.pdf": {
+      "partida_num": 244,
+      "size_bytes": 44181,
+      "sha256": "80e032b2372c2bc2a16e3c65b49253219cebdda94208b5f547de0fd847dc13e4",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242244se.pdf",
+      "downloaded_at": "2026-09-10T11:59:47.661067"
+    },
+    "242245se.pdf": {
+      "partida_num": 245,
+      "size_bytes": 44196,
+      "sha256": "a0d3b90a07719f4e083ad231a82c98ed638b8ea0ff7398f48e0a3ba182fcb0b1",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242245se.pdf",
+      "downloaded_at": "2026-09-10T11:59:47.773563"
+    },
+    "242247se.pdf": {
+      "partida_num": 247,
+      "size_bytes": 45430,
+      "sha256": "6c75fca33e9e404ba46a435cc4080a91f996ff706687a26424f0ac36799bfb4e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242247se.pdf",
+      "downloaded_at": "2026-09-10T11:59:47.834940"
+    },
+    "242246se.pdf": {
+      "partida_num": 246,
+      "size_bytes": 43051,
+      "sha256": "f8e2a5d916f336b5f9d3f06881627e7e5ee313217ef6ab650d27d983b6a880d3",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242246se.pdf",
+      "downloaded_at": "2026-09-10T11:59:47.840636"
+    },
+    "242248se.pdf": {
+      "partida_num": 248,
+      "size_bytes": 44584,
+      "sha256": "e01052fd50130c2293ecc8dab4d19100ab3c2c9e92ca3c32d628b141916f0a7d",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242248se.pdf",
+      "downloaded_at": "2026-09-10T11:59:47.887800"
+    },
+    "242249se.pdf": {
+      "partida_num": 249,
+      "size_bytes": 44234,
+      "sha256": "f5faa08c731a647a88f3189cfc32d9f4c83a38ffecab9dcff9f391c15876b6cc",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242249se.pdf",
+      "downloaded_at": "2026-09-10T11:59:47.990166"
+    },
+    "242250se.pdf": {
+      "partida_num": 250,
+      "size_bytes": 43779,
+      "sha256": "677a661fc047b920aa8d3ee97c51436fd569e32cceea796f9d3e765cb64737bd",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242250se.pdf",
+      "downloaded_at": "2026-09-10T11:59:48.000995"
+    },
+    "242251se.pdf": {
+      "partida_num": 251,
+      "size_bytes": 44479,
+      "sha256": "5bc12b8c31497650ee768d9d43a56fcd5d08eb6afee53763d82975bf01418609",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242251se.pdf",
+      "downloaded_at": "2026-09-10T11:59:48.132497"
+    },
+    "242252se.pdf": {
+      "partida_num": 252,
+      "size_bytes": 44388,
+      "sha256": "859eca9ddbbd3b2223bb8dcef53efe4baf39a8f08c5ee4570ca481669a97378a",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242252se.pdf",
+      "downloaded_at": "2026-09-10T11:59:48.163362"
+    },
+    "242254se.pdf": {
+      "partida_num": 254,
+      "size_bytes": 44603,
+      "sha256": "4dd0c4dd2304c2d88785d346e7c2759d2c0adb15cb3d9d0ed3ed63a9dc2eea79",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242254se.pdf",
+      "downloaded_at": "2026-09-10T11:59:48.212442"
+    },
+    "242255se.pdf": {
+      "partida_num": 255,
+      "size_bytes": 45779,
+      "sha256": "b2bdb7db150ba1fec40ec0f9ba5b8640c6d4b60029568bb363f9706a4d620d88",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242255se.pdf",
+      "downloaded_at": "2026-09-10T11:59:48.334542"
+    },
+    "242256se.pdf": {
+      "partida_num": 256,
+      "size_bytes": 43947,
+      "sha256": "3567cf934ecc4df33789f31ff675bdab13f28792acb554f5562fdaeaf32ca94c",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242256se.pdf",
+      "downloaded_at": "2026-09-10T11:59:48.335013"
+    },
+    "242257se.pdf": {
+      "partida_num": 257,
+      "size_bytes": 43673,
+      "sha256": "e18a3fd87b043a0101b3c4084374b602219d4165ba1468c99e64f272ea8ae311",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242257se.pdf",
+      "downloaded_at": "2026-09-10T11:59:48.475849"
+    },
+    "242258se.pdf": {
+      "partida_num": 258,
+      "size_bytes": 44249,
+      "sha256": "af7671d5cc7401f5457a82425a27e43530d025b61b0711235b6f644f91672b0b",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242258se.pdf",
+      "downloaded_at": "2026-09-10T11:59:48.500034"
+    },
+    "242259se.pdf": {
+      "partida_num": 259,
+      "size_bytes": 44466,
+      "sha256": "a280925db4ee7d48154e26f8ed67f8dc26a08fda7e2779f5015514e0b42a31ae",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242259se.pdf",
+      "downloaded_at": "2026-09-10T11:59:48.532584"
+    },
+    "242261se.pdf": {
+      "partida_num": 261,
+      "size_bytes": 44747,
+      "sha256": "6dc62f363f30f14d2a0d12dba74cbd706b7ff8afca03b73c345f56ef81bc6352",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242261se.pdf",
+      "downloaded_at": "2026-09-10T11:59:48.645331"
+    },
+    "242260se.pdf": {
+      "partida_num": 260,
+      "size_bytes": 43144,
+      "sha256": "822e2dddd7dee1db73d604840ff92894be82f76b694a5899c23e9db32878898e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242260se.pdf",
+      "downloaded_at": "2026-09-10T11:59:48.650981"
+    },
+    "242262se.pdf": {
+      "partida_num": 262,
+      "size_bytes": 44812,
+      "sha256": "13e9d2067116a59e68aea732e2edd61e483ad7654de6bd60588e4d4bf3290c0a",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242262se.pdf",
+      "downloaded_at": "2026-09-10T11:59:48.809387"
+    },
+    "242263se.pdf": {
+      "partida_num": 263,
+      "size_bytes": 44642,
+      "sha256": "c860b2929bd87b916b41bf45c592f2c078a76e17e67b16c61f27d067f7bbb14a",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242263se.pdf",
+      "downloaded_at": "2026-09-10T11:59:48.840312"
+    },
+    "242264se.pdf": {
+      "partida_num": 264,
+      "size_bytes": 44170,
+      "sha256": "963b5aad59b5bdf04a2a2e71095d514f9bb50c388de6bf4a8297b8636b8a145a",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242264se.pdf",
+      "downloaded_at": "2026-09-10T11:59:48.855008"
+    },
+    "242266se.pdf": {
+      "partida_num": 266,
+      "size_bytes": 44082,
+      "sha256": "44285f3564848f913f821542b0838769fc67efc0b9c963c8ed45371ca75de93e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242266se.pdf",
+      "downloaded_at": "2026-09-10T11:59:48.960776"
+    },
+    "242253se.pdf": {
+      "partida_num": 253,
+      "size_bytes": 45606,
+      "sha256": "3496c74a0570fde707a80ce79d6f908b71920d479d8c1a648c288387c26a4f27",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242253se.pdf",
+      "downloaded_at": "2026-09-10T11:59:48.970124"
+    },
+    "242265se.pdf": {
+      "partida_num": 265,
+      "size_bytes": 43544,
+      "sha256": "6a1afc2c206ad75d63bcdb3feaba1d5c5af3f2ae717e9ed42b7ac7a3671c689b",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242265se.pdf",
+      "downloaded_at": "2026-09-10T11:59:48.991066"
+    },
+    "242267se.pdf": {
+      "partida_num": 267,
+      "size_bytes": 44159,
+      "sha256": "8953b6f97a9179334f0e351433bcb6129127f09f86a4525e67a56f4041797d13",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242267se.pdf",
+      "downloaded_at": "2026-09-10T11:59:49.132351"
+    },
+    "242268se.pdf": {
+      "partida_num": 268,
+      "size_bytes": 44722,
+      "sha256": "fb7fba4d25c404b32dab85de3eda17c6fded7c8fe41142ee95d5d7b50ff27a2c",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242268se.pdf",
+      "downloaded_at": "2026-09-10T11:59:49.177267"
+    },
+    "242269se.pdf": {
+      "partida_num": 269,
+      "size_bytes": 43802,
+      "sha256": "e1993cb02af3966dad521f2f030a29e9cab1aad9146e89a18938d8471ba02e84",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242269se.pdf",
+      "downloaded_at": "2026-09-10T11:59:49.216180"
+    },
+    "242272se.pdf": {
+      "partida_num": 272,
+      "size_bytes": 44510,
+      "sha256": "f00c2bd34e2a32879eac1d310ba78333cdcd490cc549c790482ced4f99c534b2",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242272se.pdf",
+      "downloaded_at": "2026-09-10T11:59:49.304824"
+    },
+    "242270se.pdf": {
+      "partida_num": 270,
+      "size_bytes": 44509,
+      "sha256": "ebcfbe5830d72e705f3a657fd05faa4581edc2e045366afd04bbf056c40d2d45",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242270se.pdf",
+      "downloaded_at": "2026-09-10T11:59:49.305430"
+    },
+    "242271se.pdf": {
+      "partida_num": 271,
+      "size_bytes": 44720,
+      "sha256": "051b5de19dd64d6ab4bf33d2c8802be8363b3da567f146f2276e6acfd1bb897e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242271se.pdf",
+      "downloaded_at": "2026-09-10T11:59:49.337421"
+    },
+    "242273se.pdf": {
+      "partida_num": 273,
+      "size_bytes": 43837,
+      "sha256": "ee8c060068c66db4cda25664f2d61353b1a2770e1855c20db98da6279fb4aaba",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242273se.pdf",
+      "downloaded_at": "2026-09-10T11:59:49.442592"
+    },
+    "242274se.pdf": {
+      "partida_num": 274,
+      "size_bytes": 44472,
+      "sha256": "f108305d30a934364d0f60374433b2756bec388dea6d7df4a51a78db2946d3fb",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242274se.pdf",
+      "downloaded_at": "2026-09-10T11:59:49.485881"
+    },
+    "242275se.pdf": {
+      "partida_num": 275,
+      "size_bytes": 44229,
+      "sha256": "58cde812661b83f7a219ac58e23c1374303c7d6f4d0ebd493d86ae957ff26a37",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242275se.pdf",
+      "downloaded_at": "2026-09-10T11:59:49.533578"
+    },
+    "242276se.pdf": {
+      "partida_num": 276,
+      "size_bytes": 44968,
+      "sha256": "f781783a44ff41b057f1998f529456912a502db1c748d05fffdfe077f99d746f",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242276se.pdf",
+      "downloaded_at": "2026-09-10T11:59:49.641481"
+    },
+    "242277se.pdf": {
+      "partida_num": 277,
+      "size_bytes": 43184,
+      "sha256": "b7792d0278ae21e3638e09f78d4111d0ce3d805e70d070104a7ee9b727fac839",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242277se.pdf",
+      "downloaded_at": "2026-09-10T11:59:49.655083"
+    },
+    "242278se.pdf": {
+      "partida_num": 278,
+      "size_bytes": 44262,
+      "sha256": "1f344c575c0ea456a0bd0b24edbae723dbea0b15e64b3ae2a84f05287b687a3c",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242278se.pdf",
+      "downloaded_at": "2026-09-10T11:59:49.672040"
+    },
+    "242279se.pdf": {
+      "partida_num": 279,
+      "size_bytes": 44825,
+      "sha256": "7bf07302731c7ff76d17b07cae188209eb83187c246d9148ba6f4172aef57d4c",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242279se.pdf",
+      "downloaded_at": "2026-09-10T11:59:49.850226"
+    },
+    "242281se.pdf": {
+      "partida_num": 281,
+      "size_bytes": 44730,
+      "sha256": "2ab9ccda1c0d50ae1f0686872cc3849f90a1f0a84362b81d86b0fe400a9ac4b8",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242281se.pdf",
+      "downloaded_at": "2026-09-10T11:59:49.883930"
+    },
+    "242282se.pdf": {
+      "partida_num": 282,
+      "size_bytes": 45288,
+      "sha256": "1dd200e742d2aa2d545a8f1faf8ebd3341d3652899ac329c66e862573a9fa3ac",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242282se.pdf",
+      "downloaded_at": "2026-09-10T11:59:49.973033"
+    },
+    "242280se.pdf": {
+      "partida_num": 280,
+      "size_bytes": 44394,
+      "sha256": "fd465d561385fb6f35a23a553518e2198e51c7b56d86047402469156f03d6eaa",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242280se.pdf",
+      "downloaded_at": "2026-09-10T11:59:49.985848"
+    },
+    "242283se.pdf": {
+      "partida_num": 283,
+      "size_bytes": 44683,
+      "sha256": "5125bcb17a0c304549aaaf7d394a11e4697552206252757dd8615038ce359587",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242283se.pdf",
+      "downloaded_at": "2026-09-10T11:59:49.995784"
+    },
+    "242284se.pdf": {
+      "partida_num": 284,
+      "size_bytes": 43370,
+      "sha256": "4b6a33bec59ea08bed8afb33eb48a5893d6ef804b44d7cba9a88cd2d69645b19",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242284se.pdf",
+      "downloaded_at": "2026-09-10T11:59:50.022041"
+    },
+    "242285se.pdf": {
+      "partida_num": 285,
+      "size_bytes": 44348,
+      "sha256": "b166b227adcd48eb2957a6506434986a5cb0b421f51fc8ad4d040c76f70fdf64",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242285se.pdf",
+      "downloaded_at": "2026-09-10T11:59:50.157773"
+    },
+    "242286se.pdf": {
+      "partida_num": 286,
+      "size_bytes": 44520,
+      "sha256": "ea17e5bdadfe0fb8cdaaf97b5182d066f1e80432f7a6eac012e2cae167f1a3b7",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242286se.pdf",
+      "downloaded_at": "2026-09-10T11:59:50.227644"
+    },
+    "242287se.pdf": {
+      "partida_num": 287,
+      "size_bytes": 44794,
+      "sha256": "ce4c469f6e1a8255263dc7e77b6339475dc8af27238853bd503bbde45341b3bc",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242287se.pdf",
+      "downloaded_at": "2026-09-10T11:59:50.282590"
+    },
+    "242288se.pdf": {
+      "partida_num": 288,
+      "size_bytes": 44516,
+      "sha256": "7eebeb0a02a8969d85034821986fb60740e03c3dd7da8e872b75d1da4c437937",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242288se.pdf",
+      "downloaded_at": "2026-09-10T11:59:50.317975"
+    },
+    "242290se.pdf": {
+      "partida_num": 290,
+      "size_bytes": 44390,
+      "sha256": "8299e48dd6811762e64e56c79d7a79c3d85a158fc036722e7b91c60306381741",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242290se.pdf",
+      "downloaded_at": "2026-09-10T11:59:50.383499"
+    },
+    "242289se.pdf": {
+      "partida_num": 289,
+      "size_bytes": 44680,
+      "sha256": "5bff272ffe738c0f0a564989318be15577fb8ddabf957955421c7c12e75639dc",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242289se.pdf",
+      "downloaded_at": "2026-09-10T11:59:50.393458"
+    },
+    "242291se.pdf": {
+      "partida_num": 291,
+      "size_bytes": 43957,
+      "sha256": "5d88f3258f314d97219c0594866c358a0938d3d6ff1ee51373b40cf9644c7bd9",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242291se.pdf",
+      "downloaded_at": "2026-09-10T11:59:50.489405"
+    },
+    "242293se.pdf": {
+      "partida_num": 293,
+      "size_bytes": 43836,
+      "sha256": "c017c94e0af56622223aa5c578029b2029dd2685f623f78a9a19da66a8e74b8f",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242293se.pdf",
+      "downloaded_at": "2026-09-10T11:59:50.585612"
+    },
+    "242292se.pdf": {
+      "partida_num": 292,
+      "size_bytes": 44256,
+      "sha256": "4d8364a68731f2249c69e2f668e39bd09c23a321450dd5b242c483fa8d42af6f",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242292se.pdf",
+      "downloaded_at": "2026-09-10T11:59:50.609436"
+    },
+    "242295se.pdf": {
+      "partida_num": 295,
+      "size_bytes": 44509,
+      "sha256": "64d59e6a24dd4d77d1447b12b17e32f8369ed99ed91088c43921b160f7a7b0e1",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242295se.pdf",
+      "downloaded_at": "2026-09-10T11:59:50.730681"
+    },
+    "242296se.pdf": {
+      "partida_num": 296,
+      "size_bytes": 45994,
+      "sha256": "cd367dc6e8824ff6f36cb42023f3e56f7d1ea4ed019f0f46be3b6e8945b5e7ec",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242296se.pdf",
+      "downloaded_at": "2026-09-10T11:59:50.740733"
+    },
+    "242297se.pdf": {
+      "partida_num": 297,
+      "size_bytes": 45458,
+      "sha256": "d0bf6110e0e6c2cddfe70063bd9128332e03bdd19d7bd47be000bcac9e671df6",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242297se.pdf",
+      "downloaded_at": "2026-09-10T11:59:50.799098"
+    },
+    "242298se.pdf": {
+      "partida_num": 298,
+      "size_bytes": 43921,
+      "sha256": "fe9c5d160ef48f1fa2e098fd653223803c98e3fc107f7231a6c1e24ed4bc035d",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242298se.pdf",
+      "downloaded_at": "2026-09-10T11:59:50.933967"
+    },
+    "242299se.pdf": {
+      "partida_num": 299,
+      "size_bytes": 43977,
+      "sha256": "6740da3ddd551dfe7379286f93d22000aa6dffbb915ef2beb9dbe5cde923e266",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242299se.pdf",
+      "downloaded_at": "2026-09-10T11:59:50.970205"
+    },
+    "242300se.pdf": {
+      "partida_num": 300,
+      "size_bytes": 43560,
+      "sha256": "8a81cdbdc29aaf4a24b83284f342fe649b183a3f9679e2d62b3e6cbc5ad9db43",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242300se.pdf",
+      "downloaded_at": "2026-09-10T11:59:51.078673"
+    },
+    "242301se.pdf": {
+      "partida_num": 301,
+      "size_bytes": 44462,
+      "sha256": "83d34f20e01aa4ed82951d4052cd4681f059bd8a17a1168c9bab8ea93a96c9e3",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242301se.pdf",
+      "downloaded_at": "2026-09-10T11:59:51.101248"
+    },
+    "242294se.pdf": {
+      "partida_num": 294,
+      "size_bytes": 44238,
+      "sha256": "33f0e5137f7e81ce2d19f39782e1a7f0f7a1c7d90c14312f4937fa28e849a0d8",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242294se.pdf",
+      "downloaded_at": "2026-09-10T11:59:51.111551"
+    },
+    "242302se.pdf": {
+      "partida_num": 302,
+      "size_bytes": 43621,
+      "sha256": "cb48652df7eaebfdcdb5b6150df16b14ea35723a74043a7e9f03e0e938f65a1a",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242302se.pdf",
+      "downloaded_at": "2026-09-10T11:59:51.113204"
+    },
+    "242303se.pdf": {
+      "partida_num": 303,
+      "size_bytes": 44721,
+      "sha256": "18f01067763b54b0bd17fb1d260c02422de43b5f091140ad5cd5e35eed8bdda8",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242303se.pdf",
+      "downloaded_at": "2026-09-10T11:59:51.257536"
+    },
+    "242304se.pdf": {
+      "partida_num": 304,
+      "size_bytes": 44022,
+      "sha256": "5de63a76e79f8e19d0e76c61d932df04bd5ef0cfd1faa47d1099408399153436",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242304se.pdf",
+      "downloaded_at": "2026-09-10T11:59:51.314524"
+    },
+    "242305se.pdf": {
+      "partida_num": 305,
+      "size_bytes": 44261,
+      "sha256": "99e1f6f242c5291ec6b94378e25205142164ceaa1cd96d5acda9469a21f08533",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242305se.pdf",
+      "downloaded_at": "2026-09-10T11:59:51.412746"
+    },
+    "242306se.pdf": {
+      "partida_num": 306,
+      "size_bytes": 45249,
+      "sha256": "21d648189a5662ecbf6db02947a4307a6d789d08dc6beb02ecf01bc48ffda23c",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242306se.pdf",
+      "downloaded_at": "2026-09-10T11:59:51.430567"
+    },
+    "242307se.pdf": {
+      "partida_num": 307,
+      "size_bytes": 44600,
+      "sha256": "c388b94b49278f69ef885ad2e28326b27780b7f7863dcc952d324dbd6c4b3dc6",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242307se.pdf",
+      "downloaded_at": "2026-09-10T11:59:51.431275"
+    },
+    "242308se.pdf": {
+      "partida_num": 308,
+      "size_bytes": 44084,
+      "sha256": "2b7e679649453d36201d30da4d3d9c3eeb91c4d00d51f6e80c2b30015670bf1b",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242308se.pdf",
+      "downloaded_at": "2026-09-10T11:59:51.433343"
+    },
+    "242309se.pdf": {
+      "partida_num": 309,
+      "size_bytes": 44380,
+      "sha256": "6187614b6a514e2cb060657c5a0af1d4ae7c269c2abd47d5f2159b22121f68c2",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242309se.pdf",
+      "downloaded_at": "2026-09-10T11:59:51.593275"
+    },
+    "242310se.pdf": {
+      "partida_num": 310,
+      "size_bytes": 45169,
+      "sha256": "9f2b91ac9707c62676fb6c8bbf6d2f30b2013b1bf109164a38b31cb3dd7e6c30",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242310se.pdf",
+      "downloaded_at": "2026-09-10T11:59:51.624086"
+    },
+    "242311se.pdf": {
+      "partida_num": 311,
+      "size_bytes": 44874,
+      "sha256": "9a7c1d99aca8e2fa723f3ae26cce2234364205386b0a6d7631046fee7fbbac4b",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242311se.pdf",
+      "downloaded_at": "2026-09-10T11:59:51.727422"
+    },
+    "242314se.pdf": {
+      "partida_num": 314,
+      "size_bytes": 43854,
+      "sha256": "3ab4b242ae7c5fc94f1083eb7a67fbde9500a1800762fc53585a9b7e0f7623e4",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242314se.pdf",
+      "downloaded_at": "2026-09-10T11:59:51.739649"
+    },
+    "242313se.pdf": {
+      "partida_num": 313,
+      "size_bytes": 44048,
+      "sha256": "d82251d85b0027bd57216960e8eb6cc8a5eed1f2ac19ea6a9c2d83e68014388c",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242313se.pdf",
+      "downloaded_at": "2026-09-10T11:59:51.746688"
+    },
+    "242312se.pdf": {
+      "partida_num": 312,
+      "size_bytes": 44045,
+      "sha256": "fe7e4415da3e298ae8d1fea23efd737b3b5f54897200173f4dd8dd09f14e1e37",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242312se.pdf",
+      "downloaded_at": "2026-09-10T11:59:51.767318"
+    },
+    "242315se.pdf": {
+      "partida_num": 315,
+      "size_bytes": 43510,
+      "sha256": "0890f41de09299ee0d09d6a3b871c51dcfe17dbffe92f696cc99114d3fdac402",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242315se.pdf",
+      "downloaded_at": "2026-09-10T11:59:51.905940"
+    },
+    "242316se.pdf": {
+      "partida_num": 316,
+      "size_bytes": 44224,
+      "sha256": "83ef8b3399bd5c26a6127a4cc0bc7febdfc618fc71897b1677704700188be92e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242316se.pdf",
+      "downloaded_at": "2026-09-10T11:59:51.968134"
+    },
+    "242317se.pdf": {
+      "partida_num": 317,
+      "size_bytes": 44416,
+      "sha256": "18adf94cb59843f010a69d23c435b19b94175834db10dfa455e103bb2644a408",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242317se.pdf",
+      "downloaded_at": "2026-09-10T11:59:52.037822"
+    },
+    "242318se.pdf": {
+      "partida_num": 318,
+      "size_bytes": 44283,
+      "sha256": "418077424a2ff783cc4abff77f521589b6a342cfbf37de9ec9b3b72912e1d518",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242318se.pdf",
+      "downloaded_at": "2026-09-10T11:59:52.051921"
+    },
+    "242319se.pdf": {
+      "partida_num": 319,
+      "size_bytes": 44146,
+      "sha256": "2887702857a5b3a1f95aaeb6a5a735b46898f2daee2d3a5f60679b9495345f82",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242319se.pdf",
+      "downloaded_at": "2026-09-10T11:59:52.054412"
+    },
+    "242320se.pdf": {
+      "partida_num": 320,
+      "size_bytes": 45452,
+      "sha256": "d8354ab17e31888731ebe11477f3ca93f03744187fb4f9842f213ab108604cdf",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242320se.pdf",
+      "downloaded_at": "2026-09-10T11:59:52.106977"
+    },
+    "242321se.pdf": {
+      "partida_num": 321,
+      "size_bytes": 44746,
+      "sha256": "8bf763a5c86bae484b7b5ffbb2183c1c48bcd9d069df9dbe5021cd42d11c6ffc",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242321se.pdf",
+      "downloaded_at": "2026-09-10T11:59:52.249629"
+    },
+    "242322se.pdf": {
+      "partida_num": 322,
+      "size_bytes": 45344,
+      "sha256": "47e05b64d2993c19cb3ff1c1e0a630ca9c1af56901c52050e337ae834c1e617d",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242322se.pdf",
+      "downloaded_at": "2026-09-10T11:59:52.280316"
+    },
+    "242325se.pdf": {
+      "partida_num": 325,
+      "size_bytes": 44883,
+      "sha256": "53df948e86954bf42dbfe479c1152981cb4c045a21869cbdca1f2a5a85990e47",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242325se.pdf",
+      "downloaded_at": "2026-09-10T11:59:52.394700"
+    },
+    "242323se.pdf": {
+      "partida_num": 323,
+      "size_bytes": 45145,
+      "sha256": "5d0e4438c0fa137a7343de1ed48ceae5006426ec7b70dc6ca4c54e42abaee01e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242323se.pdf",
+      "downloaded_at": "2026-09-10T11:59:52.423845"
+    },
+    "242326se.pdf": {
+      "partida_num": 326,
+      "size_bytes": 44407,
+      "sha256": "11c88802d3b818feea6e64b451ae17be262f00d9075cf102bb0b09533844d516",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242326se.pdf",
+      "downloaded_at": "2026-09-10T11:59:52.459760"
+    },
+    "242327se.pdf": {
+      "partida_num": 327,
+      "size_bytes": 43913,
+      "sha256": "aa55b944cda9c6b1344ebfb241af0acef139a2f48c6fd7b9255d4ba1272da71a",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242327se.pdf",
+      "downloaded_at": "2026-09-10T11:59:52.570216"
+    },
+    "242328se.pdf": {
+      "partida_num": 328,
+      "size_bytes": 43718,
+      "sha256": "b66ce72dd5e1dc8dd7af98427cb906ce4382c1101a9400d56fd83281cb6fb957",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242328se.pdf",
+      "downloaded_at": "2026-09-10T11:59:52.610202"
+    },
+    "242329se.pdf": {
+      "partida_num": 329,
+      "size_bytes": 44664,
+      "sha256": "34247c20120668f3b9c9c4ffe13f37db2bf94c01c255d3a1089900b0f0fef558",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242329se.pdf",
+      "downloaded_at": "2026-09-10T11:59:52.731532"
+    },
+    "242331se.pdf": {
+      "partida_num": 331,
+      "size_bytes": 44943,
+      "sha256": "d16d8eb2e529c35ef92f1a5d70ea2a7bf39cf6f688c8804c272631574b4f4a2e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242331se.pdf",
+      "downloaded_at": "2026-09-10T11:59:52.790936"
+    },
+    "242330se.pdf": {
+      "partida_num": 330,
+      "size_bytes": 44259,
+      "sha256": "f9be9516da145b4a4d3a2680130856892f6f5c4de9687f3fe7b365c628385f4f",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242330se.pdf",
+      "downloaded_at": "2026-09-10T11:59:52.805911"
+    },
+    "242324se.pdf": {
+      "partida_num": 324,
+      "size_bytes": 44344,
+      "sha256": "bb51dc155c1f9b9718065612faa5ee4f8dc20e3da14329ff61349b5f45774516",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242324se.pdf",
+      "downloaded_at": "2026-09-10T11:59:52.896734"
+    },
+    "242333se.pdf": {
+      "partida_num": 333,
+      "size_bytes": 44106,
+      "sha256": "5c40cc51ba36125c040a8f810589998e460c03c7d77b0675fc61c70694de9ed2",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242333se.pdf",
+      "downloaded_at": "2026-09-10T11:59:52.954071"
+    },
+    "242332se.pdf": {
+      "partida_num": 332,
+      "size_bytes": 44366,
+      "sha256": "1a4d04169332f0e47f85ff2172ebedbfd6259bbd6fa55c43a51cfe2e330da3d8",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242332se.pdf",
+      "downloaded_at": "2026-09-10T11:59:52.978036"
+    },
+    "242334se.pdf": {
+      "partida_num": 334,
+      "size_bytes": 44428,
+      "sha256": "33a99cd901e36298987fb4b00dc0334ae824b9cc7375b41f8a29d948451977b5",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242334se.pdf",
+      "downloaded_at": "2026-09-10T11:59:53.073913"
+    },
+    "242336se.pdf": {
+      "partida_num": 336,
+      "size_bytes": 44650,
+      "sha256": "9ae20c8ce95836ed21b5c005feb3825ea79ec83196faf6f205f461627cb63189",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242336se.pdf",
+      "downloaded_at": "2026-09-10T11:59:53.161732"
+    },
+    "242335se.pdf": {
+      "partida_num": 335,
+      "size_bytes": 43867,
+      "sha256": "ce87c7ee1e869239b7f0d5febb57e9de7a3bd8a9d22169fbaf2f6a69830553a4",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242335se.pdf",
+      "downloaded_at": "2026-09-10T11:59:53.172718"
+    },
+    "242337se.pdf": {
+      "partida_num": 337,
+      "size_bytes": 44766,
+      "sha256": "d4c31edff94cba5874fe29479b2d556b71bdb54836f38271d8a56ef079b5557b",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242337se.pdf",
+      "downloaded_at": "2026-09-10T11:59:53.264093"
+    },
+    "242338se.pdf": {
+      "partida_num": 338,
+      "size_bytes": 43758,
+      "sha256": "5984ce88abb6043283e4e211425db6c51116b7e80b709faff765c8f7855878fa",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242338se.pdf",
+      "downloaded_at": "2026-09-10T11:59:53.289682"
+    },
+    "242339se.pdf": {
+      "partida_num": 339,
+      "size_bytes": 43644,
+      "sha256": "976259d7dff5997e69149d1dba0bb55c9a716d85da5b3d7fd170aebd77676e05",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242339se.pdf",
+      "downloaded_at": "2026-09-10T11:59:53.378679"
+    },
+    "242340se.pdf": {
+      "partida_num": 340,
+      "size_bytes": 45582,
+      "sha256": "6c2c43ef13ffec30d46ad91a31a93b171fccc02adbd46eed5594c5c5950be89a",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242340se.pdf",
+      "downloaded_at": "2026-09-10T11:59:53.432038"
+    },
+    "242341se.pdf": {
+      "partida_num": 341,
+      "size_bytes": 44658,
+      "sha256": "83c62cf0ef7534feaa42538c5d611b8e10e1665de3e2677b93d8bbbe9545dd83",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242341se.pdf",
+      "downloaded_at": "2026-09-10T11:59:53.509841"
+    },
+    "242342se.pdf": {
+      "partida_num": 342,
+      "size_bytes": 44376,
+      "sha256": "27bcb1535d21dc7e021e41da6dcc20ec5044f86349e3a888bc1094c8bff6a231",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242342se.pdf",
+      "downloaded_at": "2026-09-10T11:59:53.516773"
+    },
+    "242344se.pdf": {
+      "partida_num": 344,
+      "size_bytes": 43859,
+      "sha256": "2d41ff9a898b4a90867d20ad5bb2d973371e67e34d3a59668aac866ce800d894",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242344se.pdf",
+      "downloaded_at": "2026-09-10T11:59:53.629486"
+    },
+    "242346se.pdf": {
+      "partida_num": 346,
+      "size_bytes": 43559,
+      "sha256": "4ee2badafa148478c9fc000e1960c65d07cef9a801d61d850703cefface45788",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242346se.pdf",
+      "downloaded_at": "2026-09-10T11:59:53.736920"
+    },
+    "242345se.pdf": {
+      "partida_num": 345,
+      "size_bytes": 44787,
+      "sha256": "f38d6220e94d16d8b9f4887fe501d7c415df360640394c866db574a7ab11dff4",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242345se.pdf",
+      "downloaded_at": "2026-09-10T11:59:53.744458"
+    },
+    "242347se.pdf": {
+      "partida_num": 347,
+      "size_bytes": 44494,
+      "sha256": "c75dd246fee1e9d318c0d931f51045751b52ea682475195509109382a0412e3e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242347se.pdf",
+      "downloaded_at": "2026-09-10T11:59:53.865024"
+    },
+    "242348se.pdf": {
+      "partida_num": 348,
+      "size_bytes": 44004,
+      "sha256": "8ed55f2db349fc7a427546d7d56f04449e29b3ab2ef7240f015054d372ba49a4",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242348se.pdf",
+      "downloaded_at": "2026-09-10T11:59:53.877655"
+    },
+    "242349se.pdf": {
+      "partida_num": 349,
+      "size_bytes": 43448,
+      "sha256": "35f7252e65f86c53bd2508048a95d9f524295de0b51e188de775b5c036a64a7e",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242349se.pdf",
+      "downloaded_at": "2026-09-10T11:59:53.988556"
+    },
+    "242343se.pdf": {
+      "partida_num": 343,
+      "size_bytes": 2678803,
+      "sha256": "2a846403adc5b3d4a5cb7aaa13bdf755f29490123d82e2a11b54597e0309ce72",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242343se.pdf",
+      "downloaded_at": "2026-09-10T11:59:54.001512"
+    },
+    "242350se.pdf": {
+      "partida_num": 350,
+      "size_bytes": 43791,
+      "sha256": "5babd31f11907d4a0aa43cfda1a63693fd8219e6507fcc445f1f48f26214de32",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242350se.pdf",
+      "downloaded_at": "2026-09-10T11:59:54.093529"
+    },
+    "242351se.pdf": {
+      "partida_num": 351,
+      "size_bytes": 44929,
+      "sha256": "d150e026f62e81da1bf64cc1ae8684940f8bfe63f771988671f8705734def934",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242351se.pdf",
+      "downloaded_at": "2026-09-10T11:59:54.108956"
+    },
+    "242352se.pdf": {
+      "partida_num": 352,
+      "size_bytes": 44343,
+      "sha256": "33166ed30c199651ed74cc7bd413ca54bd4ec8e7504678470b44ef63a48d9964",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242352se.pdf",
+      "downloaded_at": "2026-09-10T11:59:54.173297"
+    },
+    "242353se.pdf": {
+      "partida_num": 353,
+      "size_bytes": 44635,
+      "sha256": "6e401b6525f6af061166d7885501b58ec3d10da9b6112c9b602c19fcad31f436",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242353se.pdf",
+      "downloaded_at": "2026-09-10T11:59:54.226113"
+    },
+    "242354se.pdf": {
+      "partida_num": 354,
+      "size_bytes": 44198,
+      "sha256": "c7768e0b7e07c436bd3e98f796d051d70de338302f9ba910e50a030803b1a911",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242354se.pdf",
+      "downloaded_at": "2026-09-10T11:59:54.297697"
+    },
+    "242355se.pdf": {
+      "partida_num": 355,
+      "size_bytes": 43882,
+      "sha256": "ecdd11402d3cb081f9e6b547d31fd3342975d870b7707798df5673449d3bad66",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242355se.pdf",
+      "downloaded_at": "2026-09-10T11:59:54.349343"
+    },
+    "242357se.pdf": {
+      "partida_num": 357,
+      "size_bytes": 45045,
+      "sha256": "597438cb93e36c28a788aa29f8ab821b77f56aa56615342953831c9f4f49c6a7",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242357se.pdf",
+      "downloaded_at": "2026-09-10T11:59:54.418730"
+    },
+    "242356se.pdf": {
+      "partida_num": 356,
+      "size_bytes": 43846,
+      "sha256": "036e637dda3d519d40465c03b6a57eea64edab57bb80173d456aefa73f27bd9d",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242356se.pdf",
+      "downloaded_at": "2026-09-10T11:59:54.425319"
+    },
+    "242358se.pdf": {
+      "partida_num": 358,
+      "size_bytes": 44788,
+      "sha256": "aeebfac6252161cb6342d7a8affb98f7f2eeecd0423a654f2aaf4d35d6699707",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242358se.pdf",
+      "downloaded_at": "2026-09-10T11:59:54.542074"
+    },
+    "242359se.pdf": {
+      "partida_num": 359,
+      "size_bytes": 48481,
+      "sha256": "c3de794ca0dbd9d903fd4dfdc126f2d9e267cae19cbd5ea2e562ba9552bded36",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242359se.pdf",
+      "downloaded_at": "2026-09-10T11:59:54.566274"
+    },
+    "242360se.pdf": {
+      "partida_num": 360,
+      "size_bytes": 44718,
+      "sha256": "6b4d34c4c782e2458ad5b375aacf2aba432b13eae7a43b7ca6c86c17fb538558",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242360se.pdf",
+      "downloaded_at": "2026-09-10T11:59:54.603285"
+    },
+    "242361se.pdf": {
+      "partida_num": 361,
+      "size_bytes": 44120,
+      "sha256": "90e6d76a950d73603e0c6f7a6c44727ec37bb6138c2750f6cc40682a3ca03af6",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242361se.pdf",
+      "downloaded_at": "2026-09-10T11:59:54.685169"
+    },
+    "242363se.pdf": {
+      "partida_num": 363,
+      "size_bytes": 44644,
+      "sha256": "de8108501fb1a41196eb91c6a5bf76db9319b13a17ee0b082d0953ccc743712b",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242363se.pdf",
+      "downloaded_at": "2026-09-10T11:59:54.773290"
+    },
+    "242362se.pdf": {
+      "partida_num": 362,
+      "size_bytes": 43773,
+      "sha256": "eb4c96f8a90bb485d38a2b3a8babda68f76c1a365df80766bca979f0911df52c",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242362se.pdf",
+      "downloaded_at": "2026-09-10T11:59:54.773639"
+    },
+    "242364se.pdf": {
+      "partida_num": 364,
+      "size_bytes": 43745,
+      "sha256": "434e9396c655aa1bcd72c0207e539b2f9a8d8522985ecd309442c32788c4ae22",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242364se.pdf",
+      "downloaded_at": "2026-09-10T11:59:54.920093"
+    },
+    "242365se.pdf": {
+      "partida_num": 365,
+      "size_bytes": 44396,
+      "sha256": "446e0aaedb584f42b3fd4d7c582c08c1273a368de3f3b8e5e834586f1b67b369",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242365se.pdf",
+      "downloaded_at": "2026-09-10T11:59:54.922615"
+    },
+    "242366se.pdf": {
+      "partida_num": 366,
+      "size_bytes": 44456,
+      "sha256": "462b7c3b4d262ac2da32e74477cca0b84943526406768923d7d943396391ecc6",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242366se.pdf",
+      "downloaded_at": "2026-09-10T11:59:54.936814"
+    },
+    "242367se.pdf": {
+      "partida_num": 367,
+      "size_bytes": 45219,
+      "sha256": "41745cd72c5c4c2e3f1e3b4a3d422d388c9b853da773d890ef7d167e4a60f7a9",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242367se.pdf",
+      "downloaded_at": "2026-09-10T11:59:55.016470"
+    },
+    "242369se.pdf": {
+      "partida_num": 369,
+      "size_bytes": 44681,
+      "sha256": "9ace125f93504aaf2d5217a950f13ad5ac63f9b5bab556e652ec9b8f08308f20",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242369se.pdf",
+      "downloaded_at": "2026-09-10T11:59:55.078613"
+    },
+    "242368se.pdf": {
+      "partida_num": 368,
+      "size_bytes": 44030,
+      "sha256": "6d28bdfe62b5d1b27ee18380b36dd1d9b57071593d4405561c24fb36f0d0be3b",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242368se.pdf",
+      "downloaded_at": "2026-09-10T11:59:55.169297"
+    },
+    "242370se.pdf": {
+      "partida_num": 370,
+      "size_bytes": 44246,
+      "sha256": "70af393093fb8a5622bf0d9216d2ebb68f423f7fb1fbaf332abaac88005e0960",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242370se.pdf",
+      "downloaded_at": "2026-09-10T11:59:55.226461"
+    },
+    "242371se.pdf": {
+      "partida_num": 371,
+      "size_bytes": 44527,
+      "sha256": "c458a7b9ebf73ba83b0888591ca7eb3279afcbc83ab7e386847ed9bddfa5980f",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242371se.pdf",
+      "downloaded_at": "2026-09-10T11:59:55.255268"
+    },
+    "242372se.pdf": {
+      "partida_num": 372,
+      "size_bytes": 45278,
+      "sha256": "5b89d53f3802d893387c88303234e48cf5bdc6087ac81ae1dcf8783f7caebe22",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242372se.pdf",
+      "downloaded_at": "2026-09-10T11:59:55.282621"
+    },
+    "242373se.pdf": {
+      "partida_num": 373,
+      "size_bytes": 43926,
+      "sha256": "8c830614acac000db6586947ddd731388fb0a1c6040110bb427b893f6a82b903",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242373se.pdf",
+      "downloaded_at": "2026-09-10T11:59:55.318496"
+    },
+    "242374se.pdf": {
+      "partida_num": 374,
+      "size_bytes": 44091,
+      "sha256": "bf319897b7cc055be41f48be27824aeee8fc0b485e66ddda73a200042075e685",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242374se.pdf",
+      "downloaded_at": "2026-09-10T11:59:55.422004"
+    },
+    "242375se.pdf": {
+      "partida_num": 375,
+      "size_bytes": 45017,
+      "sha256": "77493bbf9f8c97660318e8a070b108b3ebce0eff48858df1265b04961bdd2e36",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242375se.pdf",
+      "downloaded_at": "2026-09-10T11:59:55.472564"
+    },
+    "242376se.pdf": {
+      "partida_num": 376,
+      "size_bytes": 43934,
+      "sha256": "3ff3ba0949a1f63bbea9eea98f90b35eed9804dc1fc7b7d9d4c9e6cd2ebb7b29",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242376se.pdf",
+      "downloaded_at": "2026-09-10T11:59:55.535067"
+    },
+    "242377se.pdf": {
+      "partida_num": 377,
+      "size_bytes": 43979,
+      "sha256": "4f7ee39a2225986245e907666ac8a1c399a99cf1106e4793627a829fbaa0a819",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242377se.pdf",
+      "downloaded_at": "2026-09-10T11:59:55.561043"
+    },
+    "242378se.pdf": {
+      "partida_num": 378,
+      "size_bytes": 43989,
+      "sha256": "503580f85c8c6181498ef71133a709284e822d6f72196c8ae37f93c6a2ca0ce8",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242378se.pdf",
+      "downloaded_at": "2026-09-10T11:59:55.620106"
+    },
+    "242379se.pdf": {
+      "partida_num": 379,
+      "size_bytes": 45338,
+      "sha256": "8606150477f76e08b0f00d138333250d3c277275e0f3136c509ecb1f58fd5a56",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242379se.pdf",
+      "downloaded_at": "2026-09-10T11:59:55.656301"
+    },
+    "242380se.pdf": {
+      "partida_num": 380,
+      "size_bytes": 47529,
+      "sha256": "35d587b7c98b3eb0a88689ae578b6790ce6a12654ff3a7352448f6120ff62dac",
+      "url": "https://conteudo.cbf.com.br/sumulas/2022/242380se.pdf",
+      "downloaded_at": "2026-09-10T11:59:55.783915"
+    }
+  },
+  "total_sucesso": 280,
+  "total_falhas": 0,
+  "updated_at": "2026-09-10T11:59:55.785505"
+}

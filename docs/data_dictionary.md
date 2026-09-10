@@ -186,3 +186,117 @@ Os datasets da Série A foram normalizados a partir dos dados brutos do Adão Du
   * `algum_patrocinado_bet` (`bool`): `True` se ao menos um dos times tem patrocinador de aposta.
   * `categoria_exposicao_partida` (`string`): `Nenhuma`, `Parcial (1 clube)`, `Total (2 clubes)`.
 
+---
+
+## 8. Datasets Processados da Série B (`data/processed/serie_b/`)
+
+Gerados a partir do parsing direto das Súmulas Eletrônicas da CBF (`conteudo.cbf.com.br/sumulas/{ano}/242{partida}se.pdf`).
+
+### 8.1 Dataset: `partidas` (`data/processed/serie_b/partidas.parquet` e `.csv`)
+* **Descrição:** Registros consolidados de partidas disputadas na Série B do Campeonato Brasileiro extraídos das súmulas oficiais.
+* **Granularidade:** 1 linha por partida.
+* **Campos:** `partida_id`, `temporada`, `serie` ("B"), `rodada`, `data` (ISO 8601), `horario`, `estadio`, `cidade`, `uf_estadio`, `clube_mandante`, `clube_mandante_slug`, `mandante_uf`, `clube_visitante`, `clube_visitante_slug`, `visitante_uf`, `arbitro`, `gols_mandante`, `gols_visitante`, `total_gols`, `resultado`.
+
+### 8.2 Dataset: `cartoes` (`data/processed/serie_b/cartoes.parquet` e `.csv`)
+* **Descrição:** Advertências disciplinares detalhadas, contendo pela primeira vez o texto literal do motivo da infração redigido pelo árbitro.
+* **Granularidade:** 1 linha por cartão aplicado.
+* **Campos Principais:**
+  * `partida_id` (`int64`): Número da partida.
+  * `temporada` (`int64`): Ano da edição.
+  * `serie` (`string`): "B".
+  * `clube` / `clube_slug` (`string`): Equipe punida.
+  * `cartao` (`string`): `Amarelo` ou `Vermelho`.
+  * `atleta` / `atleta_slug` (`string`): Nome do jogador punido.
+  * `num_camisa` (`string`): Camisa do atleta ou comissão técnica.
+  * `minuto_nominal` / `minuto_continuo` (`int64`): Minuto do cartão.
+  * `periodo` (`string`): `1T` ou `2T`.
+  * `motivo_completo` (`string`): Texto oficial transcrito da súmula.
+  * `categoria_infracao` (`string`): Classificação temática da infração (`falta_temeraria`, `reclamacao`, `cera_retardar`, `conduta_antidesportiva`, `mao_intencional`, `outro`).
+
+### 8.3 Dataset: `gols` (`data/processed/serie_b/gols.parquet` e `.csv`)
+* **Descrição:** Gols das partidas da Série B com minutagem e tipo de lance.
+* **Campos:** `partida_id`, `temporada`, `serie`, `rodada`, `clube`, `clube_slug`, `atleta`, `atleta_slug`, `minuto_nominal`, `minuto_continuo`, `acrescimo`, `periodo`, `tipo_de_gol` (`Normal`, `Penalty`, `Gol Contra`, `Falta`).
+
+---
+
+## 9. Dataset de Integridade: Casos Investigados da Operação Penalidade Máxima
+
+* **Localização:** `data/processed/integrity/casos_penalidade_maxima.parquet` (e `.csv`).
+* **Volume:** 14 casos investigados e judicializados (Série A e Série B, 2022).
+* **Finalidade Metodológica:** Constitui o *ground truth* (base de verdade de campo) com eventos ilícitos confessados e sentenciados pelo STJD / MP-GO, permitindo calibrar modelos de triagem de anomalias e contrastar padrões comportamentais com a população geral.
+* **Chave Primária:** `caso_id`.
+
+| Campo | Tipo | Nulos | Descrição | Regras e Valores Válidos |
+| :--- | :--- | :---: | :--- | :--- |
+| `caso_id` | `string` | Não | Identificador único do caso catalogado | Ex.: `PM-001`, `PM-002` |
+| `operacao` | `string` | Não | Nome oficial da investigação | "Operação Penalidade Máxima" |
+| `temporada` | `int64` | Não | Edição do campeonato brasileiro | 2022 |
+| `serie` | `string` | Não | Divisão em que ocorreu o evento | `A` ou `B` |
+| `rodada` | `int64` | Não | Rodada da partida investigada | 1 a 38 |
+| `data` | `string` | Não | Data da partida no formato ISO 8601 | `YYYY-MM-DD` |
+| `confronto` | `string` | Não | Descrição textual da partida | Ex.: "Juventude vs Fortaleza" |
+| `clube_mandante` | `string` | Não | Clube mandante | Ex.: "Juventude" |
+| `clube_visitante` | `string` | Não | Clube visitante | Ex.: "Fortaleza" |
+| `clube_atleta` | `string` | Não | Clube defendido pelo atleta aliciado | Ex.: "Juventude", "Santos" |
+| `atleta` | `string` | Não | Nome do atleta denunciado/investigado | Ex.: "Gabriel Tota", "Paulo Miranda" |
+| `atleta_slug` | `string` | Não | Slug canônico do atleta | Ex.: `gabriel_tota`, `paulo_miranda` |
+| `posicao` | `string` | Não | Posição tática em campo | `Zagueiro`, `Meio-campo`, `Lateral-direito`, `Lateral-esquerdo` |
+| `evento_alvo` | `string` | Não | Evento encomendado pela quadrilha | `cartao_amarelo`, `penalti_cometido`, `cartao_vermelho` |
+| `minuto_alvo` | `string` | Não | Janela temporal encomendada | `1T` ou `qualquer` |
+| `mercado_aposta` | `string` | Não | Mercado explorado nas casas de apostas | Ex.: "Cartao Amarelo no 1T", "Cometer Penalti no 1T" |
+| `executado_com_sucesso` | `bool` | Não | Se o atleta executou a conduta acordada | `True` ou `False` |
+| `evento_ocorreu` | `bool` | Não | Se a infração/punição de fato aconteceu | `True` ou `False` |
+| `minuto_real` | `float64` | Sim | Minuto contínuo em que o evento ocorreu | Ex.: 38.0, 45.0 (nulo se não ocorreu) |
+| `detalhes` | `string` | Não | Resumo factual da conduta e lances | Descrição textual da súmula e autos |
+| `situacao_stjd` | `string` | Não | Situação jurídica no tribunal desportivo | Suspensão, Eliminação, Multa |
+| `fonte_documental` | `string` | Não | Autos do processo e acórdãos oficiais | Autos MP-GO / Acórdãos STJD |
+
+---
+
+## 10. Dataset de Modelagem: Painel Clube x Partida
+
+* **Localização:** `data/processed/panel/painel_clube_partida.parquet` (e `.csv`).
+* **Volume:** 7.598 observações de equipe-jogo (Série A, 2015 a 2024, cobrindo 3.799 partidas disputadas).
+* **Granularidade:** 1 linha por clube em cada partida disputada (2 linhas por jogo: mandante e visitante).
+* **Finalidade Metodológica:** Base analítica estruturada para regressões de efeitos fixos bidirecionais (TWFE), modelos de diferença-em-diferenças (DiD) e estudos de eventos com adoção escalonada.
+* **Chave Composta:** `partida_id` + `clube_slug`.
+
+| Campo | Tipo | Nulos | Descrição | Regras e Valores Válidos |
+| :--- | :--- | :---: | :--- | :--- |
+| `partida_id` | `int64` | Não | ID único da partida | FK para `partidas` |
+| `temporada` | `int64` | Não | Edição do campeonato | 2015 a 2024 |
+| `rodada` | `int64` | Não | Rodada da competição | 1 a 38 |
+| `data` | `string` | Não | Data da partida no padrão ISO 8601 | `YYYY-MM-DD` |
+| `clube` / `clube_slug` | `string` | Não | Nome e slug canônico do clube observado | Ex.: `flamengo`, `palmeiras` |
+| `clube_uf` | `string` | Não | Estado da federação do clube | Ex.: `RJ`, `SP` |
+| `adversario_slug` | `string` | Não | Slug da equipe adversária no confronto | Ex.: `corinthians` |
+| `is_mandante` | `int64` | Não | Dummy indicativa de mando de campo | 1 se mandante, 0 se visitante |
+| `mesma_uf` | `int64` | Não | Dummy de clássico regional | 1 se mandante e visitante são da mesma UF |
+| `gols_pro` / `gols_contra` | `int64` | Não | Gols marcados e sofridos pelo clube | $\ge 0$ |
+| `saldo_gols` | `int64` | Não | Diferença de gols da equipe no jogo | `gols_pro - gols_contra` |
+| `vitoria` / `derrota` / `empate` | `int64` | Não | Dummies binárias de desfecho da partida | 1 ou 0 |
+| `tem_patrocinio_bet` | `bool` | Não | Clube possui patrocínio ativo de apostas | `True` ou `False` |
+| `tipo_patrocinio_bet` | `string` | Não | Propriedade no uniforme | `master`, `mangas`, `secundario`, `nenhum` |
+| `marca_bet` | `string` | Não | Nome da marca parceira | Ex.: `Betano`, `Pixbet` |
+| `bet_exposure_clube` | `float64` | Não | Exposição contratual estrita do clube | Escala $[0.0, 1.0]$ |
+| `bet_exposure_total` | `float64` | Não | Exposição combinada com ambiente macro | Escala $[0.0, 1.0]$ |
+| `exposure_adversario` | `float64` | Não | Exposição total da equipe adversária | Escala $[0.0, 1.0]$ |
+| `categoria_exposicao_partida` | `string` | Não | Grau de exposição do confronto | `Nenhuma`, `Parcial (1 clube)`, `Total (2 clubes)` |
+| `era_var` | `int64` | Não | Presença do árbitro de vídeo | 1 para temporadas $\ge 2019$, 0 antes |
+| `pos_2018` | `int64` | Não | Pós-marco legal da Lei 13.756/2018 | 1 para temporadas $\ge 2019$, 0 antes |
+| `rodada_final` | `int64` | Não | Reta decisiva do campeonato | 1 se $\text{rodada} \ge 31$, 0 antes |
+| `did_tratado` | `int64` | Não | Indicador de adoção de bet pós-2018 | 1 se adotou em algum momento, 0 se nunca adotou |
+| `did_interacao` | `int64` | Não | Termo de interação DiD canônico | `did_tratado * pos_2018` |
+| `faltas` | `int64` | Não | Faltas cometidas pelo clube | $\ge 0$ |
+| `cartao_amarelo` / `cartao_vermelho` | `int64` | Não | Contagem de cartões por tipo | $\ge 0$ |
+| `cartoes_totais` | `int64` | Não | Soma de amarelos e vermelhos do clube | `cartao_amarelo + cartao_vermelho` |
+| `cartoes_1t` / `cartoes_2t` | `int64` | Não | Cartões recebidos por tempo de jogo | $\ge 0$ |
+| `taxa_conversao` | `float64` | Sim | Cartões totais por falta cometida | `cartoes_totais / faltas` (nulo se faltas = 0) |
+| `prop_cartoes_1t` | `float64` | Não | Proporção de cartões no 1º tempo | `cartoes_1t / max(cartoes_totais, 1)` |
+| `gols_penalty_marcados` | `int64` | Não | Gols de pênalti convertidos pelo clube | $\ge 0$ |
+| `gols_penalty_sofridos` | `int64` | Não | Gols de pênalti convertidos pelo adversário | $\ge 0$ |
+| `penalti_na_partida` | `int64` | Não | Houve pênalti convertido no confronto | 1 ou 0 |
+| `scouts_validos` | `bool` | Não | Confiabilidade dos dados de faltas | `True` para 99,95% das observações |
+
+
+

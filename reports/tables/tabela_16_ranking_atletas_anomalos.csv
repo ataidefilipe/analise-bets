@@ -1,0 +1,51 @@
+temporada,serie,clube_slug,atleta,total_cartoes,cartoes_1t,prop_cartoes_1t,minuto_medio_nominal,p_val_binom_1t,athlete_anomaly_score,percentil_atleta,classificacao_atleta
+2024,A,fluminense,Diogo Barbosa,6,6,1.0,33.8,0.0018382656249999992,81.03,100.0,Extrema Anomalia Temporal
+2022,A,coritiba,Valdemir de Oliveira Soares,6,6,1.0,34.5,0.0018382656249999992,80.82,99.97,Extrema Anomalia Temporal
+2017,A,vasco,Paulo Marcos de Jesus Ribeiro,5,5,1.0,16.6,0.005252187499999998,78.49,99.94,Alta Concentração Precoce
+2023,A,fluminense,Marlon,5,5,1.0,27.6,0.005252187499999998,77.21,99.92,Alta Concentração Precoce
+2016,A,figueirense,Dudu,5,5,1.0,31.4,0.005252187499999998,76.07,99.89,Alta Concentração Precoce
+2018,A,parana,Jorge González,5,5,1.0,33.0,0.005252187499999998,75.59,99.86,Alta Concentração Precoce
+2022,A,botafogo_rj,Kanu,5,5,1.0,33.8,0.005252187499999998,75.35,99.83,Alta Concentração Precoce
+2017,A,cruzeiro,Henrique Pacheco Lima,8,7,0.875,29.5,0.0035708309765624985,74.98,99.8,Alta Concentração Precoce
+2023,A,palmeiras,Raphael Cavalcante Veiga,5,5,1.0,36.2,0.005252187499999998,74.63,99.78,Alta Concentração Precoce
+2022,A,goias,Diego,4,4,1.0,23.0,0.015006249999999995,72.79,99.74,Alta Concentração Precoce
+2022,B,gremio,Pedro Tonon Geromel,4,4,1.0,18.2,0.015006249999999995,72.79,99.74,Alta Concentração Precoce
+2021,A,palmeiras,Marcos Rocha,4,4,1.0,23.8,0.015006249999999995,72.65,99.69,Alta Concentração Precoce
+2022,A,fluminense,Nino,4,4,1.0,24.8,0.015006249999999995,72.35,99.67,Alta Concentração Precoce
+2021,A,palmeiras,Gabriel Menino,4,4,1.0,25.2,0.015006249999999995,72.23,99.64,Alta Concentração Precoce
+2022,B,criciuma,Marcelo Hermes,4,4,1.0,25.8,0.015006249999999995,72.05,99.61,Alta Concentração Precoce
+2018,A,athletico_pr,Guilherme Milhomem Gusmão,4,4,1.0,26.0,0.015006249999999995,71.99,99.58,Alta Concentração Precoce
+2018,A,vitoria,Aderlan Santos,4,4,1.0,27.2,0.015006249999999995,71.63,99.55,Alta Concentração Precoce
+2015,A,flamengo,Jonas Gomes de Sousa,8,7,0.875,41.0,0.0035708309765624985,71.53,99.53,Alta Concentração Precoce
+2024,A,botafogo_rj,Gregore,8,7,0.875,41.2,0.0035708309765624985,71.47,99.5,Alta Concentração Precoce
+2017,A,coritiba,Thiago Carleto,4,4,1.0,29.5,0.015006249999999995,70.94,99.47,Alta Concentração Precoce
+2024,A,corinthians,Fagner,4,4,1.0,29.8,0.015006249999999995,70.85,99.43,Alta Concentração Precoce
+2015,A,chapecoense,Ananias Elói Castro Monteiro,4,4,1.0,29.8,0.015006249999999995,70.85,99.43,Alta Concentração Precoce
+2023,A,america_mg,Emmanuel Martínez,4,4,1.0,30.2,0.015006249999999995,70.73,99.39,Alta Concentração Precoce
+2018,A,ceara,Edinho,4,4,1.0,30.5,0.015006249999999995,70.64,99.36,Alta Concentração Precoce
+2018,A,parana,Junior,4,4,1.0,30.8,0.015006249999999995,70.55,99.33,Alta Concentração Precoce
+2023,B,crb,Lucas Eduardo Lima da Silva,4,4,1.0,31.8,0.015006249999999995,70.25,99.3,Alta Concentração Precoce
+2022,B,crb,Welington Pereira Rodrigues,4,4,1.0,32.5,0.015006249999999995,70.04,99.27,Alta Concentração Precoce
+2020,A,flamengo,Gabriel Barbosa,4,4,1.0,33.5,0.015006249999999995,69.74,99.25,Alta Concentração Precoce
+2020,A,vasco,Léo Matos,10,8,0.8,35.3,0.004821265211328123,69.36,99.22,Alta Concentração Precoce
+2024,A,gremio,Pedro Geromel,4,4,1.0,34.8,0.015006249999999995,69.35,99.19,Alta Concentração Precoce
+2017,A,atletico_mg,Adílson Warken,7,6,0.8571,29.9,0.009007501562499996,69.3,99.16,Alta Concentração Precoce
+2023,A,goias,Willian,7,6,0.8571,30.9,0.009007501562499996,69.0,99.14,Alta Concentração Precoce
+2015,A,sao_paulo,Matheus Reis,4,4,1.0,36.0,0.015006249999999995,68.99,99.11,Alta Concentração Precoce
+2015,A,coritiba,Leandro Silva,10,8,0.8,37.7,0.004821265211328123,68.64,99.08,Alta Concentração Precoce
+2022,A,sao_paulo,Diego Henrique Costa Barbosa,7,6,0.8571,32.9,0.009007501562499996,68.4,99.05,Alta Concentração Precoce
+2017,A,gremio,Michel Ferreira dos Santos,7,6,0.8571,36.7,0.009007501562499996,67.26,99.02,Alta Concentração Precoce
+2024,A,bragantino,Eric dos Santos Rodrigues,4,4,1.0,42.0,0.015006249999999995,67.19,99.0,Alta Concentração Precoce
+2017,A,vasco,Rafael Marques Pinto,3,3,1.0,23.3,0.04287499999999999,67.1,98.9,Alta Concentração Precoce
+2020,A,vasco,Jadson,3,3,1.0,21.3,0.04287499999999999,67.1,98.9,Alta Concentração Precoce
+2022,A,bragantino,Raul,3,3,1.0,22.0,0.04287499999999999,67.1,98.9,Alta Concentração Precoce
+2023,A,athletico_pr,Arturo Vidal,3,3,1.0,23.3,0.04287499999999999,67.1,98.9,Alta Concentração Precoce
+2023,A,cruzeiro,Arthur Gomes,3,3,1.0,17.3,0.04287499999999999,67.1,98.9,Alta Concentração Precoce
+2023,A,corinthians,João Victor Andrade Caetano,3,3,1.0,22.7,0.04287499999999999,67.1,98.9,Alta Concentração Precoce
+2015,A,vasco,Anderson Salles,3,3,1.0,23.7,0.04287499999999999,66.99,98.79,Alta Concentração Precoce
+2020,A,corinthians,Ángelo Araos,3,3,1.0,23.7,0.04287499999999999,66.99,98.79,Alta Concentração Precoce
+2022,A,corinthians,Du Queiroz,4,4,1.0,43.0,0.015006249999999995,66.89,98.75,Alta Concentração Precoce
+2022,B,novorizontino,Diego Fabian Torres,3,3,1.0,24.3,0.04287499999999999,66.81,98.72,Alta Concentração Precoce
+2024,A,atletico_go,Gonzalo Freitas,7,6,0.8571,38.4,0.009007501562499996,66.75,98.69,Alta Concentração Precoce
+2023,B,ponte_preta,Andre Felipe Ribeiro de Souza,3,3,1.0,24.7,0.04287499999999999,66.69,98.63,Alta Concentração Precoce
+2024,A,internacional,Agustín Rogel,3,3,1.0,24.7,0.04287499999999999,66.69,98.63,Alta Concentração Precoce

@@ -1,0 +1,22 @@
+{
+  "fonte_primaria": "Ministerio Publico de Goias (MP-GO) - Operacao Penalidade Maxima I e II",
+  "created_at": "2026-09-10T12:02:24.352114",
+  "total_casos": 14,
+  "temporadas": [
+    2022
+  ],
+  "series": [
+    "A",
+    "B"
+  ],
+  "files": {
+    "casos_penalidade_maxima.csv": {
+      "size_bytes": 4695,
+      "sha256": "13540a2cefa867c23ed2047f26c51e7ef1a1b394f772b1ec6394571829b3115b"
+    },
+    "casos_penalidade_maxima.parquet": {
+      "size_bytes": 15458,
+      "sha256": "f8aee4c0250e2c42a106d2c0083786583580998a4db1a99dbedd04ab626cc4cb"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+variavel_dependente,dep_var_code,n_obs,r2,r2_adj,coef_bet_exposure,std_err_bet_exposure,t_stat_bet_exposure,p_val_bet_exposure,coef_is_mandante,p_val_is_mandante,coef_saldo_gols,p_val_saldo_gols,coef_exposure_adversario,p_val_exposure_adversario
+Cartões Totais,cartoes_totais,7598,0.2408,0.236,0.2665,0.0978,2.7253,0.00642,-0.2178,0.0,-0.032,0.02157,-0.0357,0.65097
+Cartões Amarelos,cartao_amarelo,7598,0.2309,0.2261,0.2598,0.0975,2.6644,0.00771,-0.1994,0.0,-0.0081,0.54769,-0.0267,0.70863
+Cartões Vermelhos,cartao_vermelho,7598,0.0333,0.0273,0.0067,0.0229,0.2912,0.77091,-0.0184,0.04976,-0.024,0.0,-0.009,0.69439
+Taxa Conversão (Cartão/Falta),taxa_conversao,7544,0.2311,0.2263,0.0126,0.0068,1.8626,0.06251,-0.0125,0.0,-0.0055,0.0,-0.0119,0.10348
+Proporção Cartões 1T,prop_cartoes_1t,7598,0.0992,0.0936,-0.0129,0.0241,-0.5365,0.5916,-0.0264,0.00085,-0.0099,0.0005,-0.0083,0.72881
+Faltas Cometidas,faltas,7544,0.0895,0.0838,0.5003,0.5569,0.8984,0.36898,-0.1964,0.08505,0.2793,0.0,0.4532,0.05834
+Gols de Pênalti Marcados,gols_penalty_marcados,7598,0.0373,0.0313,0.0175,0.0222,0.7879,0.43073,0.01,0.16496,0.0361,0.0,-0.0167,0.33318
