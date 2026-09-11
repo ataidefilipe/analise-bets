@@ -285,3 +285,35 @@ Em estrito alinhamento com os padrões de ciência aberta e reprodutibilidade, t
 * **Tabelas Analíticas Completas:** [`reports/tables/`](file:///d:/Python%20Projetos/analise-bets/reports/tables/) (Tabelas 01 a 17 em formato CSV).
 * **Figuras em Alta Resolução:** [`reports/figures/`](file:///d:/Python%20Projetos/analise-bets/reports/figures/) (Gráficos analíticos e mapas de distribuição).
 * **Suíte de Testes Automatizados:** [`tests/`](file:///d:/Python%20Projetos/analise-bets/tests/) (39 testes unitários aprovados com 100% de sucesso via `pytest`).
+
+---
+
+## 9. Fundamentação Teórica e Referências Bibliográficas
+
+A fundamentação teórica integral, com fichamento analítico dos 6 eixos conceituais e conexão com os achados empíricos deste estudo, encontra-se documentada em [`docs/revisao_bibliografica.md`](file:///d:/Python%20Projetos/analise-bets/docs/revisao_bibliografica.md).
+
+### Principais Obras e Estudos de Referência:
+1. **Econometria Forense e Anomalias:**
+   * DUGGAN, M.; LEVITT, S. D. Winning isn't everything: corruption in sumo wrestling. *American Economic Review*, v. 92, n. 5, p. 1594-1605, 2002.
+   * WOLFERS, J. Point shaving: corruption in NCAA basketball. *American Economic Review*, v. 96, n. 2, p. 279-283, 2006.
+   * PRESTON, I.; SZYMANSKI, S. Cheating in contests. *Oxford Review of Economic Policy*, v. 19, n. 4, p. 612-624, 2003.
+2. **Micro-Apostas e Spot-Fixing:**
+   * CARPENTER, K. Match-fixing — the biggest threat to sport in the 21st century?. *International Sports Law Review*, v. 2, p. 13-24, 2012.
+   * FORREST, D. The threat to football from match-fixing. *Trends in Organized Crime*, v. 15, n. 2-3, p. 99-116, 2012.
+   * HILL, D. A good match to fix: the new face of football corruption. *Global Crime*, v. 11, n. 2, p. 173-184, 2010.
+3. **Patrocínio e Economia do Esporte:**
+   * LOPEZ-GONZALEZ, H.; GRIFFITHS, M. D. Catering, escorting and promoting: latent modes of sports sponsorship by gambling operators. *International Review for the Sociology of Sport*, v. 53, n. 8, p. 903-921, 2018.
+   * BUNING, R. J.; PALMER, C. The normalization of sports wagering among college students and young adults. *Journal of Gambling Studies*, v. 36, n. 3, p. 855-870, 2020.
+   * SZYMANSKI, S. The economic design of sporting contests. *Journal of Economic Literature*, v. 41, n. 4, p. 1137-1187, 2003.
+4. **Comportamento Arbitral:**
+   * GARICANO, L.; PALACIOS-HUERTA, I.; PRENDERGAST, C. Favoritism under social pressure. *Journal of Labor Economics*, v. 23, n. 2, p. 235-263, 2005.
+   * BURAIMO, B.; FORREST, D.; SIMMONS, R. The 12th man? Refereeing bias in English and German soccer. *Journal of the Royal Statistical Society: Series A*, v. 173, n. 2, p. 431-449, 2010.
+5. **Relatórios Globais e Governança:**
+   * UNODC — UNITED NATIONS OFFICE ON DRUGS AND CRIME. *Global Report on Corruption in Sport*. Viena: Nações Unidas, 2021.
+   * CONSELHO DA EUROPA. *Convenção sobre a Manipulação de Competições Desportivas (Convenção de Macolin)*. ETS nº 215, 2014.
+   * SPORTRADAR INTEGRITY SERVICES. *Betting Corruption and Match-Fixing Annual Report 2023*. St. Gallen: Sportradar, 2024.
+6. **Inferência Causal e Painel:**
+   * CALLAWAY, B.; SANT'ANNA, P. H. C. Difference-in-differences with multiple time periods. *Journal of Econometrics*, v. 225, n. 2, p. 200-230, 2021.
+   * GOODMAN-BACON, A. Difference-in-differences with variation in treatment timing. *Journal of Econometrics*, v. 225, n. 2, p. 254-277, 2021.
+   * CAMERON, A. C.; MILLER, D. L. A practitioner’s guide to cluster-robust inference. *Journal of Human Resources*, v. 50, n. 2, p. 317-372, 2015.
+

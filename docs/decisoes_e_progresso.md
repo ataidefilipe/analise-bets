@@ -213,6 +213,7 @@ Classificadas conforme a taxonomia da Seção 17 do `.agent.md`:
 * **Q5 (Sistema de Triagem e Anomaly Scoring de Integridade):** **[CONCLUÍDO NA FASE 8]** Desenvolvimento dos índices de partida e atleta, validação empírica contra os 14 casos da Operação Penalidade Máxima com 100% de sensibilidade, tabelas 15, 16 e 17, e 3 figuras de alta resolução.
 * **Q6 (Cadernos Executáveis e Reprodutibilidade):** **[CONCLUÍDO NA FASE 9]** Criação e validação automatizada de 4 cadernos Jupyter em `notebooks/` cobrindo ETL, EDA, Econometria Causal e Anomaly Scoring, validados por 39 testes unitários (100% passing).
 * **Q7 (White Paper Acadêmico e Relatório Final):** **[CONCLUÍDO NA FASE 10]** Elaboração da síntese acadêmica unificada em `reports/white_paper_impacto_bets_futebol_brasileiro.md`, integrando arcabouço regulatório, inferência causal, triagem de integridade e recomendações para Ministério da Fazenda, CBF e STJD.
+* **Q8 (Fundamentação Teórica e Revisão Bibliográfica):** **[CONCLUÍDO NA FASE 11]** Sistematização de 20+ obras e artigos seminais em `docs/revisao_bibliografica.md` abrangendo Econometria Forense (Duggan & Levitt, Wolfers), Micro-Apostas e Spot-Fixing (Carpenter, Forrest, Hill), Economia e Patrocínio (Lopez-Gonzalez, Buning, Szymanski), Comportamento Arbitral (Garicano, Buraimo), Governança Global (UNODC, Macolin, Sportradar, IBIA) e Inferência Causal (Callaway & Sant'Anna, Goodman-Bacon, Cameron & Miller), integrando referências formais ao White Paper.
 
 ---
 
@@ -220,13 +221,15 @@ Classificadas conforme a taxonomia da Seção 17 do `.agent.md`:
 
 > [!TIP]
 > **PROJETO CONCLUÍDO COM 100% DE SUCESSO E REPRODUTIBILIDADE CIENTÍFICA INTEGRAL:**
-> * **10 Fases Concluídas:** Desde a auditoria de dados brutos até o White Paper acadêmico final;
+> * **11 Fases Concluídas:** Desde a auditoria de dados brutos até a Fundamentação Teórica e White Paper acadêmico final;
 > * **39 Testes Automatizados:** Suíte `pytest` executando com 100% de aprovação;
 > * **17 Tabelas Analíticas:** Estruturadas em `reports/tables/`;
 > * **15+ Figuras em Alta Resolução:** Disponíveis em `reports/figures/`;
 > * **4 Cadernos Jupyter Executáveis:** Disponíveis em `notebooks/`;
 > * **7 Relatórios Técnicos Temáticos:** Em `reports/analysis/`;
-> * **1 White Paper Unificado:** Em `reports/white_paper_impacto_bets_futebol_brasileiro.md`.
+> * **1 White Paper Unificado:** Em `reports/white_paper_impacto_bets_futebol_brasileiro.md`;
+> * **1 Documento de Revisão Bibliográfica:** Em `docs/revisao_bibliografica.md`.
+
 
 
 

@@ -10,7 +10,7 @@
 
 Em conformidade com a Seção 29 do [`README.md`](file:///d:/Python%20Projetos/analise-bets/README.md) e as seções 4, 5 e 16 do [`.agent.md`](file:///d:/Python%20Projetos/analise-bets/.agent.md), nenhum dado é incorporado às bases analíticas processadas sem o registro explícito de sua origem primária, método de extração, período de cobertura, nível de confiabilidade e processo de auditoria.
 
-O projeto opera com **quatro pilares de dados**:
+O projeto opera com **cinco pilares documentais e de dados**:
 
 ```text
 ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -25,7 +25,13 @@ O projeto opera com **quatro pilares de dados**:
 │ • Google Trends Brasil        │ • Ministério da Fazenda (SPA / SIGAP)       │
 │   (2015–2025)                 │ • Autos Judiciais (Op. Penalidade Máxima)   │
 │                               │ • Alertas de Integridade (IBIA / Sportradar)│
-└───────────────────────────────┴─────────────────────────────────────────────┘
+├───────────────────────────────┴─────────────────────────────────────────────┤
+│ 5. LITERATURA CIENTÍFICA & FUNDAMENTAÇÃO TEÓRICA                            │
+│ • Econometria Forense (AER / JLE): Duggan & Levitt (2002), Wolfers (2006)   │
+│ • Micro-Apostas & Spot-Fixing: Carpenter (2012), Forrest (2012), Hill (2010)│
+│ • Governança Global: ONU/UNODC (2021), Convenção de Macolin (2014)          │
+│ • Inferência Causal: Callaway & Sant'Anna (2021), Goodman-Bacon (2021)      │
+└─────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -144,3 +150,18 @@ A presença das marcas segue estritamente a cronologia legal do Brasil:
 | **Patrocínios Clubes** | IBOPE Repucom / Balanços | 2015–2024 | **Alto** (200 registros auditados)| Cálculo do `BET_EXPOSURE` (MVP 2) |
 | **Interesse Público** | Google Trends Brasil | 2015–2025 | **Alto** (Normalizado [0, 100]) | Efeito macro e transbordamento |
 | **Volume de Apostas** | Sigiloso (Operadoras) | Não público | **Fora do Caminho Crítico** | Substituído por proxies públicas |
+| **Literatura & Integridade** | Artigos Peer-Reviewed / ONU / Macolin | 2002–2024 | **Científica / Tratados** | Fundamentação teórica e causal (`docs/revisao_bibliografica.md`) |
+
+---
+
+## 6. Literatura Científica e Documentos Institucionais de Referência
+
+A fundamentação teórica completa, catalogação de artigos e matriz de vinculação aos módulos do projeto encontram-se sistematizados em [`docs/revisao_bibliografica.md`](file:///d:/Python%20Projetos/analise-bets/docs/revisao_bibliografica.md).
+
+* **Econometria Forense:** Duggan & Levitt (2002, AER), Wolfers (2006, AER), Preston & Szymanski (2003).
+* **Micro-Apostas & Spot-Fixing:** Carpenter (2012), Forrest (2012), Hill (2010), Haberfeld & Sheehan (2013).
+* **Economia do Esporte & Patrocínio:** Lopez-Gonzalez & Griffiths (2018), Buning & Palmer (2020), Szymanski (2003).
+* **Comportamento Arbitral:** Garicano et al. (2005, JLE), Buraimo et al. (2010, JRSS), Pettersson-Lidbom & Priks (2010).
+* **Governança & Tratados Internacionais:** UNODC/IOC (2021), Convenção de Macolin (Conselho da Europa, 2014), Sportradar (2023, 2024), IBIA (2024).
+* **Inferência Causal:** Callaway & Sant'Anna (2021), Goodman-Bacon (2021), Cameron & Miller (2015).
+
