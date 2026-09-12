@@ -58,3 +58,20 @@ def test_ground_truth_penalidade_maxima():
     assert "Penalidade Máxima" in content
     assert "Gabriel Tota" in content or "Paulo Miranda" in content or "Nino Paraíba" in content
     assert "100%" in content or "sensibilidade" in content.lower()
+
+
+def test_non_technical_pedagogical_content():
+    content = HTML_PATH.read_text(encoding="utf-8")
+    
+    # Verificar a existência dos blocos pedagógicos
+    assert "Dicionário Express do Leitor Não Técnico" in content
+    assert "how-to-read-box" in content
+    assert "formula-box" in content
+    assert "guide-box" in content
+    
+    # Verificar analogias fundamentais para leigos
+    assert "termômetro do acaso" in content.lower()
+    assert "moeda viciada" in content.lower()
+    assert "raio-x" in content.lower() or "scanner" in content.lower()
+    assert "como ler" in content.lower() or "como interpretar" in content.lower()
+

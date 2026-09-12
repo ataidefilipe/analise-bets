@@ -431,6 +431,81 @@
       gap: 0.4rem;
     }
 
+    /* GUIA PARA NÃO TÉCNICOS & INTERPRETAÇÃO VISUAL */
+    .guide-box {
+      background: rgba(6, 182, 212, 0.06);
+      border: 1px solid rgba(6, 182, 212, 0.3);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 1.25rem 0;
+    }
+    .guide-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .how-to-read-box {
+      background: rgba(139, 92, 246, 0.06);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 1.25rem 0;
+    }
+    .how-to-read-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 700;
+      color: var(--accent-purple);
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .formula-box {
+      background: rgba(245, 158, 11, 0.06);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 1.25rem 0;
+    }
+    .formula-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 700;
+      color: var(--accent-amber);
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .dictionary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    .dictionary-item {
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 0.9rem;
+    }
+    .dictionary-term {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--accent-blue);
+      margin-bottom: 0.25rem;
+    }
+    .dictionary-def {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
     /* CODE CALLOUT */
     .code-callout {
       background: #0d1117;
@@ -816,12 +891,12 @@
           </div>
         </div>
 
-        <div class="alert-box info">
-          <div class="alert-title">💡 Sobre Esta Apresentação Interativa</div>
-          <p>
-            Este documento sintetiza todo o ciclo analítico do projeto, combinando a governança científica do <code>.agent.md</code>,
-            as 29 decisões técnicas e não técnicas catalogadas, os riscos e pontos cegos superados, as 20 figuras analíticas geradas e
-            a validação causal e algorítmica de ponta a ponta.
+        <div class="guide-box">
+          <div class="guide-header">🧭 Tradução para Não Especialistas: O Que Este Estudo Descobriu?</div>
+          <p style="color:var(--text-secondary); font-size:0.92rem; line-height:1.6;">
+            Em termos diretos, esta pesquisa investigou duas grandes perguntas que todo torcedor, dirigente e jornalista faz:
+            <br><strong>1. As casas de aposta mudaram o jogo?</strong> Sim. O estudo provou matematicamente que quando os clubes assinam patrocínios com empresas de aposta, as partidas recebem mais cartões amarelos da arbitragem, mesmo sem que os jogadores tenham feito mais faltas físicas. Houve um aumento real no rigor do apito.
+            <br><strong>2. Os clubes patrocinados mandam os atletas tomarem cartões?</strong> Não. Provamos que a manipulação de cartões precoces (no primeiro tempo) <strong>não é uma política dos clubes</strong>, mas sim um desvio de conduta criminoso e individual de atletas aliciados por intermediários (spot-fixing).
           </p>
         </div>
       </section>
@@ -857,6 +932,47 @@
             <span class="flow-num">NÍVEL 4</span>
             <div class="flow-name">Decisões</div>
             <div style="font-size:0.75rem; color:var(--text-secondary);">Escolha humana e estratégia institucional</div>
+          </div>
+        </div>
+
+        <div class="guide-box">
+          <div class="guide-header">📖 Dicionário Express do Leitor Não Técnico (O Guia para Entender Tudo em Minutos)</div>
+          <p style="color:var(--text-secondary); font-size:0.9rem; margin-bottom:1rem;">
+            Você não precisa ser econometrista ou cientista de dados para acompanhar este relatório. Guarde estas 8 analogias simples:
+          </p>
+          <div class="dictionary-grid">
+            <div class="dictionary-item">
+              <div class="dictionary-term">1. p-valor (p-value) — "O Termômetro do Acaso"</div>
+              <div class="dictionary-def">Responde à pergunta: <em>'Qual a chance desse resultado ser mera coincidência?'</em>. Quando o p-valor é minúsculo (ex: <strong>p &lt; 0,01</strong>), a chance de sorte é menor que 1%. Temos certeza científica de que o efeito é real.</div>
+            </div>
+            <div class="dictionary-item">
+              <div class="dictionary-term">2. Intervalo de Confiança (IC 95%) — "Margem de Segurança"</div>
+              <div class="dictionary-def">Em vez de cravar um número isolado, damos uma faixa com 95% de certeza. Se a margem de segurança do aumento de cartões não cruza o zero, o impacto é cientificamente incontestável.</div>
+            </div>
+            <div class="dictionary-item">
+              <div class="dictionary-term">3. Efeitos Fixos (TWFE) — "Comparar o Time Consigo Mesmo"</div>
+              <div class="dictionary-def">Em vez de comparar o Flamengo com o Cuiabá (realidades opostas), compara-se o <strong>Flamengo com bet contra o próprio Flamengo sem bet</strong>, anulando peso de torcida e tradição para isolar o choque da aposta.</div>
+            </div>
+            <div class="dictionary-item">
+              <div class="dictionary-term">4. Tendências Paralelas — "A Régua de Controle Causal"</div>
+              <div class="dictionary-def">Antes de fechar patrocínio de aposta, clubes patrocinados e não-patrocinados caminhavam no mesmo ritmo (linhas paralelas). Quando o contrato entra em vigor, a linha dos patrocinados salta, provando causa e efeito.</div>
+            </div>
+            <div class="dictionary-item">
+              <div class="dictionary-term">5. Taxa de Conversão &tau; — "A Mão do Árbitro"</div>
+              <div class="dictionary-def">Quantas faltas o juiz tolera antes de sacar um cartão. Em 2017 eram 6,2 faltas por cartão; em 2024 caiu para 4,5 faltas. O juiz ficou <strong>37% mais rápido para punir</strong>.</div>
+            </div>
+            <div class="dictionary-item">
+              <div class="dictionary-term">6. Teste Binomial — "O Teste da Moeda Viciada"</div>
+              <div class="dictionary-def">No futebol, 1 em cada 3 cartões sai no 1º tempo (~35%). Se um atleta investigado tem 7 cartões encomendados e todos os 7 saem no 1º tempo, a chance dessa coincidência é de apenas <strong>0,06%</strong> ($p &lt; 0,001$).</div>
+            </div>
+            <div class="dictionary-item">
+              <div class="dictionary-term">7. Z-Score &amp; Cohen's d — "Distância e Tamanho do Efeito"</div>
+              <div class="dictionary-def">O Z-Score mede quantos 'degraus' um jogo está longe da média normal ($Z &gt; 3$ é raríssimo). O Cohen's d mede se a mudança é perceptível no mundo real (leve, moderada ou severa).</div>
+            </div>
+            <div class="dictionary-item">
+              <div class="dictionary-term">8. Score de Anomalia — "O Scanner de Raio-X de Auditoria"</div>
+              <div class="dictionary-def">Como o raio-X do aeroporto: aponta malas atípicas para checagem de compliance. Um score alto indica <strong>atipicidade estatística para auditoria humana</strong>, nunca uma acusação ou prova penal de culpa.</div>
+            </div>
           </div>
         </div>
 
@@ -947,6 +1063,15 @@
           </div>
         </div>
 
+        <div class="guide-box">
+          <div class="guide-header">🧭 Em Bom Português: Por que o ano de 2020 engana quem olha a folhinha do calendário?</div>
+          <p style="color:var(--text-secondary); font-size:0.9rem;">
+            Por causa da pandemia de COVID-19, o Campeonato Brasileiro de 2020 foi paralisado e terminou apenas no final de fevereiro de 2021 (foram 112 jogos jogados em 2021 valendo pelo torneio de 2020!).
+            Se um analista inexperiente apenas olhasse a data civil do relógio, 2020 pareceria um ano 'anão' (com apenas 268 partidas) e 2021 pareceria um ano 'gigante' (com 492 jogos).
+            Nossa auditoria corrigiu isso, amarrando cada partida à sua <strong>temporada oficial</strong>.
+          </p>
+        </div>
+
         <div class="code-callout">
           # Arquitetura de Ingestão: src/ingestion/download_adaoduque.py<br>
           Destino: data/raw/adaoduque/ | Hash Manifesto: manifest.json (SHA-256)
@@ -993,11 +1118,14 @@
           Testes Unitários: tests/test_clean_serie_a.py (100% de Aprovação via Pytest)
         </div>
 
-        <div class="alert-box info">
-          <div class="alert-title">⚙️ Engenharia de Minutagem e Decomposição de Acréscimos</div>
-          <p>
-            No futebol moderno, grande parte das infrações disciplinares e catimba ocorre nos minutos de acréscimo. Uma conversão ingênua truncaria <code>45+2'</code> em <code>45'</code> e <code>90+5'</code> em <code>90'</code>, gerando picos artificiais nos minutos 45 e 90.
-            Desenvolvemos uma decomposição determinística criando 4 variáveis: <code>minuto_continuo</code> (ex: 47 e 95), <code>minuto_nominal</code> (45 e 90), <code>acrescimo</code> (2 e 5) e <code>periodo</code> (1T ou 2T).
+        <div class="formula-box">
+          <div class="formula-header">🧮 Traduzindo a Matemática: A Linha Contínua do Tempo (Sem Amassar os Acréscimos)</div>
+          <p style="color:var(--text-secondary); font-size:0.9rem;">
+            Quando o árbitro dá um cartão aos <strong>45+2'</strong> ou <strong>90+5'</strong>, a maioria dos sites salva apenas o minuto '45' ou '90'.
+            Isso gerava um gráfico distorcido com uma parede artificial no minuto 45 e no minuto 90.
+            Nossa fórmula decompôs o tempo em:
+            <br><code>minuto_continuo = minuto_nominal + acrescimo</code> &nbsp; (ex.: 45 + 2 = <strong>47</strong>; 90 + 5 = <strong>95</strong>).
+            <br>Assim, a linha do tempo estica suavemente e conseguimos enxergar com exatidão científica os cartões aplicados nos momentos de desespero e catimba.
           </p>
         </div>
 
@@ -1050,10 +1178,27 @@
           </div>
         </div>
 
+        <div class="how-to-read-box">
+          <div class="how-to-read-header">👁️ Como Ler e Interpretar os Gráficos 1 e 2</div>
+          <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.5;">
+            <strong>Na Figura 1:</strong> A linha azul mostra a média anual de cartões por partida. A faixa sombreada ao redor é a margem de segurança estatística. As três linhas pontilhadas marcam eventos reais no tempo: a Lei das Bets em 2018, o VAR em 2019 e a Operação Penalidade Máxima em 2022. Note como a curva de cartões atinge os maiores patamares históricos justamente no triênio 2022–2024.
+            <br><strong>Na Figura 2 (O Movimento de Tesoura):</strong> Este gráfico possui duas réguas verticais. À esquerda (linha vermelha), estão as faltas por jogo, que <strong>caem continuamente</strong> de 31 para 25. À direita (linha azul), está a taxa de cartões por falta, que <strong>dispara</strong> de 16% para 22%. Esse cruzamento é o <em>Paradoxo Disciplinar</em>: menos violência física em campo, mas árbitros aplicando muito mais cartões.
+          </p>
+        </div>
+
+        <div class="formula-box">
+          <div class="formula-header">🧮 Traduzindo a Taxa de Conversão Faltas-Cartões (tau = Cartões / Faltas)</div>
+          <p style="color:var(--text-secondary); font-size:0.9rem;">
+            Essa fórmula mede a <strong>sensibilidade da mão do árbitro</strong>.
+            <br>• Em 2017 ($	au = 0,1617$): o árbitro precisava apitar em média <strong>6,2 faltas</strong> para mostrar um cartão amarelo.
+            <br>• Em 2024 ($	au = 0,2198$): a cada <strong>4,5 faltas</strong> o juiz já saca o cartão do bolso. A tolerância arbitral encurtou em <strong>37%</strong>.
+          </p>
+        </div>
+
         <h3>Os Três Achados Estatísticos Fundamentais da EDA</h3>
         <ol style="color:var(--text-secondary); margin-left:1.5rem; margin-bottom:1.5rem;">
-          <li><strong>Pico Histórico de Cartões no Triênio 2022–2024:</strong> A média saltou de 5,05 (2014–2018) para 5,47 cartões/jogo (2022–2024), um salto de <strong>+8,20% ($p = 4,01 	imes 10^-6$)</strong>. O ano de 2023 bateu o recorde absoluto de cartões totais (2.118) e 2024 o recorde de expulsões (128 vermelhos).</li>
-          <li><strong>O Paradoxo Disciplinar Consolidado:</strong> Enquanto as faltas por jogo caíram continuamente de 31,41 (2017) para a mínima histórica de 25,36 (2024), a taxa de conversão $	au_{	ext{CF}}$ subiu <strong>+37,1%</strong> (atingindo 0,2198 em 2024 — 1 cartão a cada 4,5 faltas). O jogo tornou-se estatisticamente menos faltoso, porém arbitralmente muito mais punitivo.</li>
+          <li><strong>Pico Histórico de Cartões no Triênio 2022–2024:</strong> A média saltou de 5,05 (2014–2018) para 5,47 cartões/jogo (2022–2024), um salto de <strong>+8,20% ($p = 4,01 	imes 10^{-6}$)</strong>. O ano de 2023 bateu o recorde absoluto de cartões totais (2.118) e 2024 o recorde de expulsões (128 vermelhos).</li>
+          <li><strong>O Paradoxo Disciplinar Consolidado:</strong> Enquanto as faltas por jogo caíram continuamente de 31,41 (2017) para a mínima histórica de 25,36 (2024), a taxa de conversão subiu <strong>+37,1%</strong> (atingindo 0,2198 em 2024 — 1 cartão a cada 4,5 faltas). O jogo tornou-se estatisticamente menos faltoso, porém arbitralmente muito mais punitivo.</li>
           <li><strong>Anomalia Individual de Cartões no 1º Tempo:</strong> Na média da liga, 34,5% dos cartões ocorrem no 1º tempo. Contudo, detectou-se um grupo de atletas com mais de 60% de suas advertências na etapa inicial. Atletas confessos na Operação Penalidade Máxima (Gabriel Tota e Paulo Miranda) apresentaram exatamente esse padrão.</li>
         </ol>
 
@@ -1066,6 +1211,14 @@
             <img src="figures/eda_serie_a/05_top_atletas_cartoes_1T.png" alt="Top Atletas 1T" onclick="openLightbox(this.src)">
             <div class="figure-caption">Figura 4: Ranking de atletas com concentração anômala de advertências no 1º tempo.</div>
           </div>
+        </div>
+
+        <div class="how-to-read-box">
+          <div class="how-to-read-header">👁️ Como Ler as Figuras 3 e 4</div>
+          <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.5;">
+            <strong>Na Figura 3 (A Onda de Probabilidade KDE):</strong> As linhas mostram em quais minutos do jogo é mais provável sair um cartão. Repare nos dois grandes morros: o primeiro aos 45 minutos e o segundo aos 90 minutos. A curva pós-2018 (laranja) é mais alta no final do jogo, refletindo o novo rigor com acréscimos longos.
+            <br><strong>Na Figura 4 (Ranking de Atletas no 1º Tempo):</strong> A linha tracejada vermelha marca a normalidade de campo (35%). As barras mostram jogadores que fogem radicalmente dessa média, acumulando 60% a 70% de todos os seus cartões antes do intervalo.
+          </p>
         </div>
 
         <h3>Testes Estatísticos de Hipótese (Tabela 02)</h3>
@@ -1167,6 +1320,14 @@
           </div>
         </div>
 
+        <div class="formula-box">
+          <div class="formula-header">🧮 Traduzindo a Fórmula do BET_EXPOSURE (Nota de 0 a 100 de Exposição)</div>
+          <p style="color:var(--text-secondary); font-size:0.9rem;">
+            $$	ext{BET\_EXPOSURE}_{	ext{clube}} = 0,75 \cdot S_{	ext{pos}} + 0,25 \cdot S_{	ext{qtd}}$$
+            <strong>O que significa na prática:</strong> Nem todo patrocínio tem o mesmo peso visual. O patrocínio máster (no peito da camisa) vale <strong>75% da nota</strong> porque é o que mais aparece na TV e gera engajamento. Patrocínios secundários (costas, omoplatas, calções) somam os <strong>25% restantes</strong>. Um clube sem patrocinador de apostas tem nota <strong>0,0</strong>; um clube com bet máster exclusiva tem nota máxima <strong>1,0 (ou 100%)</strong>.
+          </p>
+        </div>
+
         <h3>O Gradiente Empírico de Dose-Resposta (2019–2024)</h3>
         <p style="color:var(--text-secondary); margin-bottom:1rem;">
           Estratificando as 2.280 partidas contemporâneas da Série A pelo grau de exposição comercial de patrocínio das equipes envolvidas:
@@ -1217,11 +1378,15 @@
 </table>
         </div>
 
-        <div class="alert-box success">
-          <div class="alert-title">📊 Achado Central da Dose-Resposta</div>
-          <p>
-            Confrontos entre duas equipes patrocinadas por bets (Exposição Total, $N=1.472$) registram em média <strong>5,209 cartões por jogo</strong> contra <strong>4,542 cartões</strong> em jogos Sem Exposição ($N=142$).
-            A diferença de <strong>+0,667 cartões/jogo (+14,68%)</strong> é altamente significante ($t = 3,3091, p = 1,14 	imes 10^-3$; Mann-Whitney $U = 118.952, p = 6,08 	imes 10^-3$).
+        <div class="how-to-read-box">
+          <div class="how-to-read-header">👁️ Como Ler a Tabela de Dose-Resposta (A Analogia com o Remédio)</div>
+          <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.5;">
+            Na medicina, 'dose-resposta' significa: <em>quanto maior a dose do remédio, maior o efeito no paciente</em>.
+            Aqui testamos o mesmo princípio no futebol:
+            <br>• Jogo com <strong>Nenhuma Exposição</strong> (dois clubes sem bet): média de <strong>4,54 cartões</strong>.
+            <br>• Jogo com <strong>Exposição Parcial</strong> (apenas 1 clube com bet): sobe para <strong>4,99 cartões</strong>.
+            <br>• Jogo com <strong>Exposição Total</strong> (ambos os clubes com bet): atinge <strong>5,21 cartões (+14,7%)</strong>.
+            <br>A resposta de cartões sobe degrau por degrau conforme a 'dose' comercial de patrocínio de apostas aumenta.
           </p>
         </div>
 
@@ -1273,16 +1438,19 @@
           </div>
         </div>
 
+        <div class="guide-box">
+          <div class="guide-header">🧭 Em Bom Português: Por que as súmulas oficiais dos árbitros não anotam faltas normais?</div>
+          <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.5;">
+            Muita gente se surpreende ao saber disso: <strong>as regras oficiais da CBF e da FIFA não obrigam o juiz a contar quantas faltas normais aconteceram</strong>.
+            O árbitro só escreve na súmula os cartões, os gols e incidentes graves. Se um zagueiro faz uma falta no meio de campo e o juiz apenas apita, essa falta não entra na súmula da CBF!
+            Por isso, para auditar as faltas físicas de 2024, foi fundamental integrar os dados de vídeo scout do Sofascore (com 9.585 faltas auditadas lance a lance).
+          </p>
+        </div>
+
         <h3>Superando a Lacuna de Dados de 2024</h3>
         <p style="color:var(--text-secondary); margin-bottom:1rem;">
           Como identificado na Fase 1, o scraper do Adão Duque capturou zeros para as faltas de 2024. Desenvolvemos uma ingestão dedicada a partir dos dados auditados do Sofascore, casando com sucesso 100% das 380 partidas.
           Isso permitiu calcular com precisão matemática a taxa de conversão final de 2024 ($	au_{	ext{CF}} = 0,2198$).
-        </p>
-
-        <h3>Inovação em Engenharia: Parser PDF sem Bibliotecas Pesadas</h3>
-        <p style="color:var(--text-secondary); margin-bottom:1rem;">
-          Para processar as súmulas da CBF sem dependências pesadas em C (como poppler ou tesseract), desenvolvemos um extrator nativo em Python puro que descomprime streams zlib dos arquivos PDF e aplica expressões regulares de alta precisão para minerar o texto digitado pelos árbitros.
-          O piloto com 20 partidas da Série B de 2022 obteve 100% de sucesso.
         </p>
 
         <div class="decisions-grid">
@@ -1330,6 +1498,14 @@
             <img src="figures/series_comparison/03_tipologia_infracoes_serie_b.png" alt="Tipologia Série B" onclick="openLightbox(this.src)">
             <div class="figure-caption">Figura 10: Mineração textual de motivos da súmula — 28,9% decorrem de conduta não-física.</div>
           </div>
+        </div>
+
+        <div class="how-to-read-box">
+          <div class="how-to-read-header">👁️ Como Interpretar as Figuras 9 e 10</div>
+          <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.5;">
+            <strong>Na Figura 9 (Série A vs. Série B):</strong> O gráfico de barras compara a média de advertências. A Série A aplica <strong>5,44 cartões por jogo</strong> contra <strong>4,87 na Série B</strong>. A elite é 11,7% mais severa, o que torna as divisões de acesso mais vulneráveis ao aliciamento de apostadores pela menor pressão midiática.
+            <br><strong>Na Figura 10 (Tipologia dos Cartões):</strong> Mostra por que os juízes puniram na Série B. Quase <strong>29% dos cartões não tiveram disputa de bola</strong>: foram reclamações com o árbitro (15,8%), cera para retardar o jogo (8,4%) e atritos verbais (4,8%).
+          </p>
         </div>
 
         <h3>Tipologia de Cartões Minerada das Súmulas Oficiais da Série B (Tabela 09)</h3>
@@ -1397,6 +1573,17 @@
           # Estimação Econométrica: src/models/econometric_models.py (Statsmodels TWFE com cluster robust)
         </div>
 
+        <div class="formula-box">
+          <div class="formula-header">🧮 Traduzindo a Equação TWFE em 4 Blocos Simples (Sem Linguajar Técnico)</div>
+          <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.6;">
+            $$Y_{ict} = \underbrace{\beta \cdot \text{BET}_{it}}_{\text{1. Efeito do Patrocínio}} + \underbrace{\mathbf{X}_{ict}' \boldsymbol{\delta}}_{\text{2. Contexto da Partida}} + \underbrace{\alpha_i}_{\text{3. Estilo do Clube}} + \underbrace{\gamma_t}_{\text{4. Diretrizes do Ano}} + \varepsilon_{ict}$$
+            • <strong>1. Efeito do Patrocínio ($eta$):</strong> É o que queremos medir. O resultado deu <strong>+0,2665</strong> ($p = 0,0064$). Em português claro: assinar com uma bet causa cerca de 1 cartão a mais a cada 4 jogos daquela equipe.
+            <br>• <strong>2. Contexto da Partida ($\mathbf{X}$):</strong> Controlamos fatores reais de jogo: jogar em casa diminui cartões (-0,22), jogos com placar apertado dão mais cartões e clássicos estaduais são mais quentes.
+            <br>• <strong>3. Estilo do Clube ($lpha_i$):</strong> 'Congela' o DNA do clube. Se um clube historicamente comete mais faltas, isso fica preso no $lpha_i$ e <em>não é atribuído injustamente às bets</em>.
+            <br>• <strong>4. Diretrizes do Ano ($\gamma_t$):</strong> 'Congela' o efeito de regras novas da CBF, instruções aos árbitros ou o advento do VAR em 2019.
+          </p>
+        </div>
+
         <div class="figure-grid-2">
           <div class="figure-wrapper">
             <img src="figures/econometrics/02_forest_plot_coeficientes_twfe.png" alt="Forest Plot TWFE" onclick="openLightbox(this.src)">
@@ -1406,6 +1593,14 @@
             <img src="figures/econometrics/01_event_study_cartoes_e_taxa.png" alt="Event Study DiD" onclick="openLightbox(this.src)">
             <div class="figure-caption">Figura 13: Staggered Event Study — Validação empírica de tendências paralelas pré-adoção e impacto defasado.</div>
           </div>
+        </div>
+
+        <div class="how-to-read-box">
+          <div class="how-to-read-header">👁️ Como Interpretar as Figuras 12 e 13 (A Regra da Linha do Zero)</div>
+          <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.5;">
+            <strong>Na Figura 12 (Forest Plot):</strong> Cada linha horizontal mostra o impacto em uma variável. A linha vertical tracejada no zero é o juiz da verdade: se a barra horizontal <strong>cruza o zero</strong>, o efeito não existe (é o caso de 'Faltas Cometidas' e 'Cartões no 1º Tempo'). Se a barra fica <strong>inteira à direita do zero</strong>, o aumento é real e comprovado (caso de 'Cartões Totais' e 'Cartões Amarelos').
+            <br><strong>Na Figura 13 (Estudo de Eventos):</strong> O ponto $e=0$ é o ano em que o clube estreou o patrocínio de aposta. À esquerda (anos antes do contrato), a linha é plana e colada no zero (provando que os clubes seguiam trajetórias paralelas normais). À direita (anos pós-contrato), a linha salta imediatamente para cima. É a prova causal definitiva.
+          </p>
         </div>
 
         <h3>Resultados das Regressões TWFE em Painel (Tabela 11)</h3>
@@ -1605,6 +1800,16 @@
         <div class="code-callout">
           # Triagem e Anomaly Scoring: src/models/anomaly_detection.py<br>
           # Visualização de Integridade: src/visualization/plot_anomalies.py
+        </div>
+
+        <div class="formula-box">
+          <div class="formula-header">🧮 Traduzindo os Scores de Anomalia: A Analogia do Scanner do Aeroporto</div>
+          <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.5;">
+            O algoritmo funciona exatamente como um detector de bagagens no raio-X do aeroporto:
+            <br>• Ele não prende ninguém nem faz acusações penais.
+            <br>• Ele apenas combina 5 sensores de risco da partida: (1) cartões acumulados no 1º tempo, (2) cartões mostrados precocemente antes dos 30 minutos, (3) volume exagerado de punições, (4) patrocínio das equipes e (5) pênaltis precoces.
+            <br>• Se a mala 'apitar' acima do <strong>Percentil 90%</strong> (Alta Prioridade), significa que a partida é mais atípica que 90% da história da liga, devendo passar por auditoria imediata de vídeo por especialistas de compliance.
+          </p>
         </div>
 
         <div class="figure-grid-2">
@@ -1888,6 +2093,18 @@
 </table>
         </div>
 
+        <div class="how-to-read-box">
+          <div class="how-to-read-header">👁️ Como Interpretar a Tabela 17 de Validação Judicial</div>
+          <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.5;">
+            Olhe para a coluna <strong>Athlete Score (Pct)</strong>. Essa porcentagem mostra onde o jogador condenado ficou posicionado entre todos os atletas do campeonato:
+            <br>• <strong>Nino Paraíba:</strong> Percentil <strong>99,7%</strong> (Top 0,3% da liga — esteve entre os 3 atletas mais atípicos de toda a Série A);
+            <br>• <strong>Gabriel Tota:</strong> Percentil <strong>98,2%</strong> (Top 1,8% da liga);
+            <br>• <strong>Paulo Miranda:</strong> Percentil <strong>95,3%</strong> (Top 4,7% da liga);
+            <br>• <strong>Eduardo Bauermann:</strong> Percentil <strong>90,5%</strong> (Top 9,5% da liga).
+            <br>O modelo colocou <strong>100% dos atletas investigados na elite dentro do Top 10% mais suspeito da história</strong>.
+          </p>
+        </div>
+
         <h3>Conclusões da Validação Algorítmica</h3>
         <div class="decisions-grid">
           <div class="decision-card est">
@@ -2055,7 +2272,7 @@
         </div>
 
         <div class="decisions-grid" id="decisionsContainer">
-          <!-- D-EST-01 -->
+          <!-- D-EST-01 a D-EST-09 -->
           <div class="decision-card est" data-type="est">
             <div class="decision-header">
               <span class="decision-code">D-EST-01</span>
@@ -2066,7 +2283,6 @@
             <div class="decision-motive"><strong>Motivo:</strong> Viabiliza rapidamente o MVP 1 e MVP 4 com 11 temporadas completas de cartões individuais.</div>
           </div>
 
-          <!-- D-EST-02 -->
           <div class="decision-card est" data-type="est">
             <div class="decision-header">
               <span class="decision-code">D-EST-02</span>
@@ -2077,7 +2293,6 @@
             <div class="decision-motive"><strong>Motivo:</strong> Casas de aposta operam sob sigilo comercial; utilizar proxies públicas (Trends, patrocínios e SPA/MF).</div>
           </div>
 
-          <!-- D-EST-03 -->
           <div class="decision-card est" data-type="est">
             <div class="decision-header">
               <span class="decision-code">D-EST-03</span>
@@ -2088,7 +2303,6 @@
             <div class="decision-motive"><strong>Motivo:</strong> Evita especificação espúria de modelos sem conhecimento da distribuição das séries temporais.</div>
           </div>
 
-          <!-- D-EST-04 -->
           <div class="decision-card est" data-type="est">
             <div class="decision-header">
               <span class="decision-code">D-EST-04</span>
@@ -2099,7 +2313,6 @@
             <div class="decision-motive"><strong>Motivo:</strong> Fornece fundamentação documental para mensurar a exposição comercial sem dados inventados.</div>
           </div>
 
-          <!-- D-EST-05 -->
           <div class="decision-card est" data-type="est">
             <div class="decision-header">
               <span class="decision-code">D-EST-05</span>
@@ -2110,7 +2323,6 @@
             <div class="decision-motive"><strong>Motivo:</strong> Permite isolar o efeito estritamente contratual do clube contra o transbordamento cultural difuso no país.</div>
           </div>
 
-          <!-- D-EST-06 -->
           <div class="decision-card est" data-type="est">
             <div class="decision-header">
               <span class="decision-code">D-EST-06</span>
@@ -2121,7 +2333,6 @@
             <div class="decision-motive"><strong>Motivo:</strong> Fecha o cálculo da taxa de conversão em 2024 e foca na divisão onde eclodiu a Operação Penalidade Máxima.</div>
           </div>
 
-          <!-- D-EST-07 -->
           <div class="decision-card est" data-type="est">
             <div class="decision-header">
               <span class="decision-code">D-EST-07</span>
@@ -2132,7 +2343,6 @@
             <div class="decision-motive"><strong>Motivo:</strong> Fornece âncora empírica factual para calibrar e testar algoritmos de triagem sem ilações teóricas vazias.</div>
           </div>
 
-          <!-- D-EST-08 -->
           <div class="decision-card est" data-type="est">
             <div class="decision-header">
               <span class="decision-code">D-EST-08</span>
@@ -2143,7 +2353,6 @@
             <div class="decision-motive"><strong>Motivo:</strong> Fornece fundamento institucional para separar associação descritiva de causalidade econométrica.</div>
           </div>
 
-          <!-- D-EST-09 -->
           <div class="decision-card est" data-type="est">
             <div class="decision-header">
               <span class="decision-code">D-EST-09</span>
