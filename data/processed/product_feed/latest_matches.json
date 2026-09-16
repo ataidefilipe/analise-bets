@@ -1,0 +1,5224 @@
+{
+  "gerado_em": "2026-09-16T19:18:00.652326",
+  "series": {
+    "Série A": {
+      "temporada": 2026,
+      "total_partidas_recentes": 30,
+      "partidas": [
+        {
+          "partida_id": 269,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 27,
+          "data": "2026-09-14",
+          "horario": "20:00",
+          "mandante": "Bahia",
+          "visitante": "Remo",
+          "gols_mandante": 2,
+          "gols_visitante": 1,
+          "resultado": "Vitoria Mandante",
+          "vencedor": "Bahia",
+          "estadio": "Octávio Mangabeira",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 20,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Jean Lucas de Souza Oliveira",
+              "clube": "Bahia",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 90,
+              "acrescimo": 1,
+              "periodo": "2T",
+              "atleta": "Luciano Batista da Silva Junior",
+              "clube": "Bahia",
+              "tipo": "Penalty"
+            },
+            {
+              "minuto": 90,
+              "acrescimo": 6,
+              "periodo": "2T",
+              "atleta": "Vitor Frezarin Bueno",
+              "clube": "Remo",
+              "tipo": "Penalty"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 7,
+              "periodo": "1T",
+              "atleta": "Nicolas Brian Acevedo Tabarez",
+              "clube": "Bahia",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 24,
+              "periodo": "2T",
+              "atleta": "Matheus Felipe Santos Nascimento",
+              "clube": "Remo",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Cristian Gonzalo Olivera Ibarra",
+              "clube": "Bahia",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 265,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 27,
+          "data": "2026-09-13",
+          "horario": "16:00",
+          "mandante": "Mirassol",
+          "visitante": "Vitória",
+          "gols_mandante": 2,
+          "gols_visitante": 2,
+          "resultado": "Empate",
+          "vencedor": "-",
+          "estadio": "José Maria de Campos Maia",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 2,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Carlos Rene de Sousa Ferreira",
+              "clube": "Vitória",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 12,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Carlos Rene de Sousa Ferreira",
+              "clube": "Vitória",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 22,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Bruno Santos de Oliveira",
+              "clube": "Mirassol",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 45,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Edson Guilherme Mendes dos Santos",
+              "clube": "Mirassol",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 18,
+              "periodo": "1T",
+              "atleta": "Emanuel Britez",
+              "clube": "Vitória",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 28,
+              "periodo": "1T",
+              "atleta": "Alesson dos Santos Batista",
+              "clube": "Mirassol",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 44,
+              "periodo": "1T",
+              "atleta": "Caique de Jesus Goncalves",
+              "clube": "Vitória",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 11,
+              "periodo": "2T",
+              "atleta": "Wallisson Luiz Alves Maximo",
+              "clube": "Mirassol",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 18,
+              "periodo": "2T",
+              "atleta": "Willian Estefani Machado",
+              "clube": "Mirassol",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 43,
+              "periodo": "2T",
+              "atleta": "Mario Sergio Santos Costa",
+              "clube": "Vitória",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Mateus da Silva Duarte",
+              "clube": "Vitória",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Edson Guilherme Mendes dos Santos",
+              "clube": "Mirassol",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Edenilson Santos Nascimento Filho",
+              "clube": "Vitória",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Fernando Jose Marques Maciel",
+              "clube": "Mirassol",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 261,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 27,
+          "data": "2026-09-13",
+          "horario": "17:30",
+          "mandante": "Flamengo",
+          "visitante": "Corinthians",
+          "gols_mandante": 2,
+          "gols_visitante": 1,
+          "resultado": "Vitoria Mandante",
+          "vencedor": "Flamengo",
+          "estadio": "Jornalista Mário Filho",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 2,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Lucas Tolentino Coelho de Lima",
+              "clube": "Flamengo",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 32,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Guilherme William Silva Inacio",
+              "clube": "Corinthians",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 43,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Bruno Henrique Pinto",
+              "clube": "Flamengo",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 37,
+              "periodo": "1T",
+              "atleta": "Charles Rigon Matos",
+              "clube": "Corinthians",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 4,
+              "periodo": "2T",
+              "atleta": "Lucas Tolentino Coelho de Lima",
+              "clube": "Flamengo",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 33,
+              "periodo": "2T",
+              "atleta": "Samuel Dias Lino",
+              "clube": "Flamengo",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 41,
+              "periodo": "2T",
+              "atleta": "Breno de Souza Bidon",
+              "clube": "Corinthians",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Erick Antonio Pulgar Farfan",
+              "clube": "Flamengo",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Rodrigo Garro",
+              "clube": "Corinthians",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Jorge Luiz Frello Filho",
+              "clube": "Flamengo",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 270,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 27,
+          "data": "2026-09-12",
+          "horario": "17:00",
+          "mandante": "Chapecoense",
+          "visitante": "Internacional",
+          "gols_mandante": 1,
+          "gols_visitante": 2,
+          "resultado": "Vitoria Visitante",
+          "vencedor": "Internacional",
+          "estadio": "Índio Condá",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 26,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Bruno Henrique Corsini",
+              "clube": "Internacional",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 45,
+              "acrescimo": 1,
+              "periodo": "1T",
+              "atleta": "Mauricio Garcez de Jesus",
+              "clube": "Chapecoense",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 21,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Johan Stiven Carbonero Balanta",
+              "clube": "Internacional",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 42,
+              "periodo": "1T",
+              "atleta": "Johan Stiven Carbonero Balanta",
+              "clube": "Internacional",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 44,
+              "periodo": "1T",
+              "atleta": "Rafael dos Santos Lacerda",
+              "clube": "Chapecoense",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 45,
+              "periodo": "1T",
+              "atleta": "Paulo Cesar Pezzolano Suarez",
+              "clube": "Internacional",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 45,
+              "periodo": "1T",
+              "atleta": "Marcio Antonio de Sousa Junior",
+              "clube": "Chapecoense",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 3,
+              "periodo": "2T",
+              "atleta": "Eduardo Vinicius Domachowski",
+              "clube": "Chapecoense",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 18,
+              "periodo": "2T",
+              "atleta": "Camilo Reijers de Oliveira",
+              "clube": "Chapecoense",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 28,
+              "periodo": "2T",
+              "atleta": "João Victor Alves de Morais Francisco",
+              "clube": "Internacional",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 29,
+              "periodo": "2T",
+              "atleta": "Bolasie Yala",
+              "clube": "Chapecoense",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 32,
+              "periodo": "2T",
+              "atleta": "Bruno Gomes da Silva Clevelario",
+              "clube": "Internacional",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 45,
+              "periodo": "2T",
+              "atleta": "Fernando Augusto Pereira Bueno Junior",
+              "clube": "Chapecoense",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 45,
+              "periodo": "2T",
+              "atleta": "Joao Paulo Silveira dos Santos",
+              "clube": "Chapecoense",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 45,
+              "periodo": "2T",
+              "atleta": "Rodrigo Roman Villagra",
+              "clube": "Internacional",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 267,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 27,
+          "data": "2026-09-12",
+          "horario": "16:00",
+          "mandante": "Grêmio",
+          "visitante": "Vasco da Gama Saf",
+          "gols_mandante": 1,
+          "gols_visitante": 2,
+          "resultado": "Vitoria Visitante",
+          "vencedor": "Vasco da Gama Saf",
+          "estadio": "Arena do Grêmio",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 39,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Mathias Adalberto Villasanti Rolon",
+              "clube": "Grêmio",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 30,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Thiago Henrique Santos Mendes",
+              "clube": "Vasco da Gama Saf",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 33,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "FACUNDO COLIDIO",
+              "clube": "Vasco da Gama Saf",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 7,
+              "periodo": "1T",
+              "atleta": "Pedro Gabriel Crisostomo Pinheiro",
+              "clube": "Grêmio",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 25,
+              "periodo": "1T",
+              "atleta": "Danilo das Neves Pinheiro",
+              "clube": "Vasco da Gama Saf",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 31,
+              "periodo": "1T",
+              "atleta": "Wallace Gomes da Silva dos Santos",
+              "clube": "Grêmio",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 45,
+              "periodo": "1T",
+              "atleta": "Luis Eduardo Soares da Silva",
+              "clube": "Vasco da Gama Saf",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 6,
+              "periodo": "2T",
+              "atleta": "Robert Renan Alves Barbosa",
+              "clube": "Vasco da Gama Saf",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 12,
+              "periodo": "2T",
+              "atleta": "Diego Caito Barcellos Oliveira dos Santos",
+              "clube": "Grêmio",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 266,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 27,
+          "data": "2026-09-12",
+          "horario": "16:00",
+          "mandante": "Atlético Mineiro",
+          "visitante": "Fluminense",
+          "gols_mandante": 3,
+          "gols_visitante": 1,
+          "resultado": "Vitoria Mandante",
+          "vencedor": "Atlético Mineiro",
+          "estadio": "ARENA MRV",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 15,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Reinier Jesus Carvalho",
+              "clube": "Atlético Mineiro",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 18,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Tomas Esteban Cuello",
+              "clube": "Atlético Mineiro",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 35,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Vitor Fernandes Chaves Teixeira",
+              "clube": "Atlético Mineiro",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 45,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Rodrigo Castillo",
+              "clube": "Fluminense",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 18,
+              "periodo": "1T",
+              "atleta": "Alan Steven Franco Palma",
+              "clube": "Atlético Mineiro",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 6,
+              "periodo": "2T",
+              "atleta": "Otavio Henrique Passos Santos",
+              "clube": "Fluminense",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 22,
+              "periodo": "2T",
+              "atleta": "Rodrigo Castillo",
+              "clube": "Fluminense",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 264,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 27,
+          "data": "2026-09-12",
+          "horario": "18:30",
+          "mandante": "Palmeiras",
+          "visitante": "São Paulo",
+          "gols_mandante": 2,
+          "gols_visitante": 0,
+          "resultado": "Vitoria Mandante",
+          "vencedor": "Palmeiras",
+          "estadio": "Nubank Parque",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 45,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Murilo Cerqueira Paim",
+              "clube": "Palmeiras",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 4,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Vitor Hugo Roque Ferreira",
+              "clube": "Palmeiras",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 11,
+              "periodo": "1T",
+              "atleta": "Pablo Gonçalves Maia Fortunato",
+              "clube": "São Paulo",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 39,
+              "periodo": "1T",
+              "atleta": "Luis Osorio Messias de Oliveira - São Paulo/SP",
+              "clube": "Cartão Vermelho Direto",
+              "cartao": "Vermelho",
+              "motivo": null
+            },
+            {
+              "minuto": 45,
+              "periodo": "1T",
+              "atleta": "Gustavo Raul Gomez Portillo",
+              "clube": "Palmeiras",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 45,
+              "periodo": "1T",
+              "atleta": "Agustin Giay",
+              "clube": "Palmeiras",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 30,
+              "periodo": "2T",
+              "atleta": "Murilo Cerqueira Paim",
+              "clube": "Palmeiras",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 40,
+              "periodo": "2T",
+              "atleta": "Larson Torna Ferreira dos Santos",
+              "clube": "Palmeiras",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 263,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 27,
+          "data": "2026-09-12",
+          "horario": "21:00",
+          "mandante": "Santos FC",
+          "visitante": "Cruzeiro",
+          "gols_mandante": 2,
+          "gols_visitante": 1,
+          "resultado": "Vitoria Mandante",
+          "vencedor": "Santos FC",
+          "estadio": "Urbano Caldeira",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 28,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Benjamin Rollheiser",
+              "clube": "Santos FC",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 32,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Fabricio Bruno Soares de Faria",
+              "clube": "Cruzeiro",
+              "tipo": "Gol Contra"
+            },
+            {
+              "minuto": 45,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Matheus Fellipe Costa Pereira",
+              "clube": "Cruzeiro",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 45,
+              "periodo": "1T",
+              "atleta": "Kaio Jorge Pinto Ramos",
+              "clube": "Cruzeiro",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 19,
+              "periodo": "2T",
+              "atleta": "Everton Sousa Soares",
+              "clube": "Santos FC",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 33,
+              "periodo": "2T",
+              "atleta": "Ronielson da Silva Barbosa",
+              "clube": "Santos FC",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 37,
+              "periodo": "2T",
+              "atleta": "Gabriel Nascimento Resende Brazao",
+              "clube": "Santos FC",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Fabricio Bruno Soares de Faria",
+              "clube": "Cruzeiro",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 262,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 27,
+          "data": "2026-09-12",
+          "horario": "20:30",
+          "mandante": "Botafogo",
+          "visitante": "Red Bull Bragantino",
+          "gols_mandante": 1,
+          "gols_visitante": 1,
+          "resultado": "Empate",
+          "vencedor": "-",
+          "estadio": "Nilton Santos",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 29,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Lucas Gabriel Nunes Monzon",
+              "clube": "Botafogo",
+              "tipo": "Gol Contra"
+            },
+            {
+              "minuto": 10,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Victor Alexander da Silva",
+              "clube": "Botafogo",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 43,
+              "periodo": "1T",
+              "atleta": "Wallace Yan de Souza Barreto - Red Bull Bragantino/SP",
+              "clube": "Cartão Vermelho Direto",
+              "cartao": "Vermelho",
+              "motivo": null
+            },
+            {
+              "minuto": 19,
+              "periodo": "2T",
+              "atleta": "Lucas Gabriel Nunes Monzon",
+              "clube": "Botafogo",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 23,
+              "periodo": "2T",
+              "atleta": "Jose Kadir Barria Rose",
+              "clube": "Botafogo",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 24,
+              "periodo": "2T",
+              "atleta": "Nahuel Adolfo Ferraresi Hernandez",
+              "clube": "Botafogo",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 27,
+              "periodo": "2T",
+              "atleta": "Tiago Luis Volpi",
+              "clube": "Red Bull Bragantino",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 31,
+              "periodo": "2T",
+              "atleta": "Luis Antonio da Rocha Junior",
+              "clube": "Red Bull Bragantino",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 268,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 27,
+          "data": "2026-09-11",
+          "horario": "21:00",
+          "mandante": "Coritiba SAF",
+          "visitante": "Athletico Paranaense",
+          "gols_mandante": 3,
+          "gols_visitante": 3,
+          "resultado": "Empate",
+          "vencedor": "-",
+          "estadio": "Major Antônio Couto Pereira",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 13,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Luiz Gustavo Dias",
+              "clube": "Athletico Paranaense",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 29,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Arthur dos Santos Barbosa Dias",
+              "clube": "Athletico Paranaense",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 45,
+              "acrescimo": 1,
+              "periodo": "1T",
+              "atleta": "Tiago Coser",
+              "clube": "Coritiba SAF",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 17,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Kevin Estiben Viveros Rodallega",
+              "clube": "Athletico Paranaense",
+              "tipo": "Penalty"
+            },
+            {
+              "minuto": 90,
+              "acrescimo": 1,
+              "periodo": "2T",
+              "atleta": "Rodrigo Modesto da Silva Moledo",
+              "clube": "Coritiba SAF",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 90,
+              "acrescimo": 6,
+              "periodo": "2T",
+              "atleta": "Rodrigo Modesto da Silva Moledo",
+              "clube": "Coritiba SAF",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 27,
+              "periodo": "1T",
+              "atleta": "Joaquin Lavega Colzada",
+              "clube": "Coritiba SAF",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 33,
+              "periodo": "1T",
+              "atleta": "Kevin Estiben Viveros Rodallega",
+              "clube": "Athletico Paranaense",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 41,
+              "periodo": "1T",
+              "atleta": "João Victor Machado Cruz",
+              "clube": "Athletico Paranaense",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 45,
+              "periodo": "1T",
+              "atleta": "Breno Henrique Vasconcelos Lopes - Coritiba SAF/PR",
+              "clube": "Cartão Vermelho Direto",
+              "cartao": "Vermelho",
+              "motivo": null
+            },
+            {
+              "minuto": 45,
+              "periodo": "1T",
+              "atleta": "Joao Vitor Silva Dantas de Oliveira",
+              "clube": "Athletico Paranaense",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 45,
+              "periodo": "1T",
+              "atleta": "Joao Pedro Chermont Crema",
+              "clube": "Coritiba SAF",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 45,
+              "periodo": "1T",
+              "atleta": "Pedro Rocha Neves",
+              "clube": "Coritiba SAF",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Luiz Gustavo Dias",
+              "clube": "Athletico Paranaense",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 259,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 26,
+          "data": "2026-09-07",
+          "horario": "20:00",
+          "mandante": "Vitória",
+          "visitante": "Grêmio",
+          "gols_mandante": 1,
+          "gols_visitante": 0,
+          "resultado": "Vitoria Mandante",
+          "vencedor": "Vitória",
+          "estadio": "Manoel Barradas",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 18,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Carlos Rene de Sousa Ferreira",
+              "clube": "Vitória",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 35,
+              "periodo": "1T",
+              "atleta": "Pedro Gabriel Crisostomo Pinheiro",
+              "clube": "Grêmio",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 37,
+              "periodo": "1T",
+              "atleta": "Cristian David Pavon",
+              "clube": "Grêmio",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 3,
+              "periodo": "2T",
+              "atleta": "Erick de Arruda Serafim",
+              "clube": "Vitória",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 3,
+              "periodo": "2T",
+              "atleta": "Caio Fernando de Oliveira",
+              "clube": "Grêmio",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 9,
+              "periodo": "2T",
+              "atleta": "Caique de Jesus Goncalves",
+              "clube": "Vitória",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 14,
+              "periodo": "2T",
+              "atleta": "Erick Carlos Noriega Loret de Mola",
+              "clube": "Grêmio",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 33,
+              "periodo": "2T",
+              "atleta": "Gustavo Martins de Souza Santos",
+              "clube": "Grêmio",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 260,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 26,
+          "data": "2026-09-06",
+          "horario": "16:00",
+          "mandante": "Remo",
+          "visitante": "Flamengo",
+          "gols_mandante": 0,
+          "gols_visitante": 1,
+          "resultado": "Vitoria Visitante",
+          "vencedor": "Flamengo",
+          "estadio": "Olímpico do Pará",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 19,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Samuel Dias Lino",
+              "clube": "Flamengo",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 38,
+              "periodo": "1T",
+              "atleta": "Antonio Javier Galeano Ferreira",
+              "clube": "Remo",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 40,
+              "periodo": "1T",
+              "atleta": "Giorgian Daniel de Arrascaeta Benedetti",
+              "clube": "Flamengo",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 2,
+              "periodo": "2T",
+              "atleta": "Jorge Andres Carrascal Guardo",
+              "clube": "Flamengo",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 30,
+              "periodo": "2T",
+              "atleta": "Marcelo Rodrigues Souza",
+              "clube": "Remo",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 258,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 26,
+          "data": "2026-09-06",
+          "horario": "11:00",
+          "mandante": "Coritiba SAF",
+          "visitante": "Mirassol",
+          "gols_mandante": 1,
+          "gols_visitante": 2,
+          "resultado": "Vitoria Visitante",
+          "vencedor": "Mirassol",
+          "estadio": "Major Antônio Couto Pereira",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 15,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Pedro Rocha Neves",
+              "clube": "Coritiba SAF",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 18,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Gustavo Henric da Silva",
+              "clube": "Mirassol",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 38,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Bruno Santos de Oliveira",
+              "clube": "Mirassol",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 26,
+              "periodo": "1T",
+              "atleta": "Daniel Fortunato Borges",
+              "clube": "Mirassol",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 26,
+              "periodo": "1T",
+              "atleta": "Denilson Alves Borges",
+              "clube": "Mirassol",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 33,
+              "periodo": "1T",
+              "atleta": "João Victor Carroll Santana",
+              "clube": "Mirassol",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 33,
+              "periodo": "1T",
+              "atleta": "Thiago dos Santos",
+              "clube": "Coritiba SAF",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 17,
+              "periodo": "2T",
+              "atleta": "Joao Pedro Chermont Crema",
+              "clube": "Coritiba SAF",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 45,
+              "periodo": "2T",
+              "atleta": "Shaylon Kallyson Cardozo",
+              "clube": "Mirassol",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 257,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 26,
+          "data": "2026-09-06",
+          "horario": "16:00",
+          "mandante": "Internacional",
+          "visitante": "Santos FC",
+          "gols_mandante": 2,
+          "gols_visitante": 3,
+          "resultado": "Vitoria Visitante",
+          "vencedor": "Santos FC",
+          "estadio": "José Pinheiro Borda",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 7,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Gabriel Barbosa Almeida",
+              "clube": "Santos FC",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 28,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Gabriel Barbosa Almeida",
+              "clube": "Santos FC",
+              "tipo": "Penalty"
+            },
+            {
+              "minuto": 38,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Christian Gabriel Oliva Gimenez",
+              "clube": "Santos FC",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 3,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Braian Nahuel Aguirre",
+              "clube": "Internacional",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 45,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Bruno Henrique Corsini",
+              "clube": "Internacional",
+              "tipo": "Penalty"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 5,
+              "periodo": "1T",
+              "atleta": "Benjamin Rollheiser",
+              "clube": "Santos FC",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 27,
+              "periodo": "1T",
+              "atleta": "Matheus Bahia Santos - Internacional/RS",
+              "clube": "Cartão Vermelho Direto",
+              "cartao": "Vermelho",
+              "motivo": null
+            },
+            {
+              "minuto": 13,
+              "periodo": "2T",
+              "atleta": "Gabriel Barbosa Almeida",
+              "clube": "Santos FC",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 19,
+              "periodo": "2T",
+              "atleta": "Ronaldo da Silva Souza Guerrero",
+              "clube": "Internacional",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 24,
+              "periodo": "2T",
+              "atleta": "Gustavo Henrique Pereira",
+              "clube": "Santos FC",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 24,
+              "periodo": "2T",
+              "atleta": "Gonzalo Daniel Escobar",
+              "clube": "Santos FC",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 24,
+              "periodo": "2T",
+              "atleta": "Vitor Hugo Naum dos Santos",
+              "clube": "Internacional",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 24,
+              "periodo": "2T",
+              "atleta": "Paulo Lucas Santos de Paula",
+              "clube": "Internacional",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 32,
+              "periodo": "2T",
+              "atleta": "Braian Nahuel Aguirre",
+              "clube": "Internacional",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 256,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 26,
+          "data": "2026-09-06",
+          "horario": "16:00",
+          "mandante": "Cruzeiro",
+          "visitante": "Athletico Paranaense",
+          "gols_mandante": 3,
+          "gols_visitante": 1,
+          "resultado": "Vitoria Mandante",
+          "vencedor": "Cruzeiro",
+          "estadio": "Magalhães Pinto",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 29,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Matheus Fellipe Costa Pereira",
+              "clube": "Cruzeiro",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 45,
+              "acrescimo": 1,
+              "periodo": "1T",
+              "atleta": "João Victor Machado Cruz",
+              "clube": "Athletico Paranaense",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 25,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Lucas Daniel Romero",
+              "clube": "Cruzeiro",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 36,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Kaio Jorge Pinto Ramos",
+              "clube": "Cruzeiro",
+              "tipo": "Penalty"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 32,
+              "periodo": "1T",
+              "atleta": "GABRIEL HERNAN ROJAS",
+              "clube": "Cruzeiro",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 16,
+              "periodo": "2T",
+              "atleta": "Juan Felipe Aguirre Tabares",
+              "clube": "Athletico Paranaense",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 18,
+              "periodo": "2T",
+              "atleta": "Fabricio Bruno Soares de Faria",
+              "clube": "Cruzeiro",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 35,
+              "periodo": "2T",
+              "atleta": "Mycael Pontes Moreira",
+              "clube": "Athletico Paranaense",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 254,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 26,
+          "data": "2026-09-06",
+          "horario": "19:30",
+          "mandante": "Corinthians",
+          "visitante": "Chapecoense",
+          "gols_mandante": 1,
+          "gols_visitante": 2,
+          "resultado": "Vitoria Visitante",
+          "vencedor": "Chapecoense",
+          "estadio": "Arena Corinthians",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 2,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Matheus Lima Beltrao Oliveira",
+              "clube": "Corinthians",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 40,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Marcio Antonio de Sousa Junior",
+              "clube": "Chapecoense",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 31,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Marcio Antonio de Sousa Junior",
+              "clube": "Chapecoense",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 1,
+              "periodo": "1T",
+              "atleta": "Yago Felipe da Costa Rocha",
+              "clube": "Chapecoense",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 45,
+              "periodo": "1T",
+              "atleta": "Tulio Eduardo Silva de Oliveira",
+              "clube": "Chapecoense",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 12,
+              "periodo": "2T",
+              "atleta": "Giovanni Augusto Oliveira Cardoso",
+              "clube": "Chapecoense",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 27,
+              "periodo": "2T",
+              "atleta": "Kauan Faria Gomes",
+              "clube": "Chapecoense",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 252,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 26,
+          "data": "2026-09-06",
+          "horario": "18:30",
+          "mandante": "Botafogo",
+          "visitante": "Palmeiras",
+          "gols_mandante": 0,
+          "gols_visitante": 0,
+          "resultado": "Empate",
+          "vencedor": "-",
+          "estadio": "Nilton Santos",
+          "arbitro": "",
+          "gols": [],
+          "cartoes": [
+            {
+              "minuto": 18,
+              "periodo": "1T",
+              "atleta": "Alexander Nahuel Barboza Ullua",
+              "clube": "Palmeiras",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 20,
+              "periodo": "1T",
+              "atleta": "Arthur Mendonça Cabral",
+              "clube": "Botafogo",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 25,
+              "periodo": "1T",
+              "atleta": "Fernando Marcal de Oliveira",
+              "clube": "Botafogo",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 31,
+              "periodo": "2T",
+              "atleta": "Alvaro Montoro",
+              "clube": "Botafogo",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 32,
+              "periodo": "2T",
+              "atleta": "Marlon Rodrigues Freitas",
+              "clube": "Palmeiras",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Alexander Nahuel Barboza Ullua - Palmeiras/SP",
+              "clube": "2º Cartão Amarelo",
+              "cartao": "Vermelho",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 255,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 26,
+          "data": "2026-09-05",
+          "horario": "16:00",
+          "mandante": "Red Bull Bragantino",
+          "visitante": "Bahia",
+          "gols_mandante": 2,
+          "gols_visitante": 3,
+          "resultado": "Vitoria Visitante",
+          "vencedor": "Bahia",
+          "estadio": "Arbitragem",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 14,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Lucas Henrique Barbosa",
+              "clube": "Red Bull Bragantino",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 33,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Luciano Batista da Silva Junior",
+              "clube": "Bahia",
+              "tipo": "Penalty"
+            },
+            {
+              "minuto": 38,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Alejo Veliz",
+              "clube": "Bahia",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 45,
+              "acrescimo": 1,
+              "periodo": "1T",
+              "atleta": "Santiago Martin Ramos Mingo",
+              "clube": "Bahia",
+              "tipo": "Gol Contra"
+            },
+            {
+              "minuto": 4,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Erick Luis Conrado Carvalho",
+              "clube": "Bahia",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 42,
+              "periodo": "1T",
+              "atleta": "Fernando dos Santos Pedro",
+              "clube": "Red Bull Bragantino",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 5,
+              "periodo": "2T",
+              "atleta": "Erick Luis Conrado Carvalho",
+              "clube": "Bahia",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 16,
+              "periodo": "2T",
+              "atleta": "Luciano Batista da Silva Junior",
+              "clube": "Bahia",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 44,
+              "periodo": "2T",
+              "atleta": "Charles Alexandre Patrice Francis Hembert",
+              "clube": "Bahia",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 253,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 26,
+          "data": "2026-09-05",
+          "horario": "18:30",
+          "mandante": "São Paulo",
+          "visitante": "Atlético Mineiro",
+          "gols_mandante": 2,
+          "gols_visitante": 0,
+          "resultado": "Vitoria Mandante",
+          "vencedor": "São Paulo",
+          "estadio": "Cícero Pompeu de Toledo",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 21,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Luciano da Rocha Neves",
+              "clube": "São Paulo",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 23,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Iago Amaral Borduchi",
+              "clube": "São Paulo",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Djhordney Ferreira",
+              "clube": "São Paulo",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Tomas Esteban Cuello",
+              "clube": "Atlético Mineiro",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 251,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 26,
+          "data": "2026-09-05",
+          "horario": "21:00",
+          "mandante": "Fluminense",
+          "visitante": "Vasco da Gama Saf",
+          "gols_mandante": 1,
+          "gols_visitante": 0,
+          "resultado": "Vitoria Mandante",
+          "vencedor": "Fluminense",
+          "estadio": "Jornalista Mário Filho",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 15,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Luciano Federico Acosta",
+              "clube": "Fluminense",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 9,
+              "periodo": "1T",
+              "atleta": "Carlos Andres Gomez Hinestroza",
+              "clube": "Vasco da Gama Saf",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 21,
+              "periodo": "1T",
+              "atleta": "Juan Pablo Freytes",
+              "clube": "Fluminense",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 21,
+              "periodo": "1T",
+              "atleta": "Daniel Cerantola Fuzato",
+              "clube": "Vasco da Gama Saf",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 41,
+              "periodo": "1T",
+              "atleta": "Paulo Henrique de Oliveira Alves",
+              "clube": "Vasco da Gama Saf",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 41,
+              "periodo": "1T",
+              "atleta": "Igor Cotrim Menezes - Fluminense/RJ",
+              "clube": "Cartão Vermelho Direto",
+              "cartao": "Vermelho",
+              "motivo": null
+            },
+            {
+              "minuto": 45,
+              "periodo": "1T",
+              "atleta": "Ignacio da Silva Oliveira",
+              "clube": "Fluminense",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 45,
+              "periodo": "1T",
+              "atleta": "Givanildo Vieira de Sousa",
+              "clube": "Fluminense",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 8,
+              "periodo": "2T",
+              "atleta": "FACUNDO COLIDIO",
+              "clube": "Vasco da Gama Saf",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 31,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 4,
+          "data": "2026-09-02",
+          "horario": "19:30",
+          "mandante": "Flamengo",
+          "visitante": "Mirassol",
+          "gols_mandante": 2,
+          "gols_visitante": 0,
+          "resultado": "Vitoria Mandante",
+          "vencedor": "Flamengo",
+          "estadio": "Jornalista Mário Filho",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 14,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Jorge Andres Carrascal Guardo",
+              "clube": "Flamengo",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 42,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Lucas Tolentino Coelho de Lima",
+              "clube": "Flamengo",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 16,
+              "periodo": "2T",
+              "atleta": "Rafael Silva Guanaes",
+              "clube": "Mirassol",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 20,
+              "periodo": "2T",
+              "atleta": "João Victor Carroll Santana",
+              "clube": "Mirassol",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 36,
+              "periodo": "2T",
+              "atleta": "Denilson Alves Borges",
+              "clube": "Mirassol",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 250,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 25,
+          "data": "2026-08-31",
+          "horario": "20:00",
+          "mandante": "Remo",
+          "visitante": "Coritiba SAF",
+          "gols_mandante": 2,
+          "gols_visitante": 3,
+          "resultado": "Vitoria Visitante",
+          "vencedor": "Coritiba SAF",
+          "estadio": "Olímpico do Pará",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 2,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "José Welison da Silva",
+              "clube": "Remo",
+              "tipo": "Gol Contra"
+            },
+            {
+              "minuto": 15,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Jose Ricardo Araujo Fernandes",
+              "clube": "Remo",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 19,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Glaybson Yago Souza Lisboa",
+              "clube": "Remo",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 31,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Fabio Augusto Luciano da Silva",
+              "clube": "Coritiba SAF",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 90,
+              "acrescimo": 2,
+              "periodo": "2T",
+              "atleta": "Pedro Rocha Neves",
+              "clube": "Coritiba SAF",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 10,
+              "periodo": "2T",
+              "atleta": "Tiago Coser",
+              "clube": "Coritiba SAF",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 20,
+              "periodo": "2T",
+              "atleta": "Gabriel Pereira Taliari",
+              "clube": "Remo",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 32,
+              "periodo": "2T",
+              "atleta": "José Welison da Silva",
+              "clube": "Remo",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Marllon Goncalves Jeronimo Borges",
+              "clube": "Remo",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 249,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 25,
+          "data": "2026-08-30",
+          "horario": "19:30",
+          "mandante": "Bahia",
+          "visitante": "Internacional",
+          "gols_mandante": 3,
+          "gols_visitante": 2,
+          "resultado": "Vitoria Mandante",
+          "vencedor": "Bahia",
+          "estadio": "Octávio Mangabeira",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 15,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Alan Patrick Lourenço",
+              "clube": "Internacional",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 22,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Erick da Costa Farias",
+              "clube": "Bahia",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 42,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Erick da Costa Farias",
+              "clube": "Bahia",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 45,
+              "acrescimo": 3,
+              "periodo": "1T",
+              "atleta": "Erick Luis Conrado Carvalho",
+              "clube": "Bahia",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 7,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Vitor Hugo Naum dos Santos",
+              "clube": "Internacional",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 18,
+              "periodo": "1T",
+              "atleta": "Paulo Cesar Pezzolano Suarez",
+              "clube": "Internacional",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 39,
+              "periodo": "1T",
+              "atleta": "Alexandro Ezequiel Bernabei",
+              "clube": "Internacional",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 39,
+              "periodo": "1T",
+              "atleta": "Cristian Gonzalo Olivera Ibarra",
+              "clube": "Bahia",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 8,
+              "periodo": "2T",
+              "atleta": "Guillermo Alfonso Maripan Loayza",
+              "clube": "Internacional",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 20,
+              "periodo": "2T",
+              "atleta": "Roman Agustin Gomez",
+              "clube": "Bahia",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 26,
+              "periodo": "2T",
+              "atleta": "Michel Daryl Araujo Villar",
+              "clube": "Bahia",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "David de Duarte Macedo",
+              "clube": "Bahia",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 248,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 25,
+          "data": "2026-08-30",
+          "horario": "11:00",
+          "mandante": "Athletico Paranaense",
+          "visitante": "Fluminense",
+          "gols_mandante": 3,
+          "gols_visitante": 3,
+          "resultado": "Empate",
+          "vencedor": "-",
+          "estadio": "Arbitragem",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 34,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Leonardo Caetano Silva",
+              "clube": "Athletico Paranaense",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 37,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Givanildo Vieira de Sousa",
+              "clube": "Fluminense",
+              "tipo": "Falta"
+            },
+            {
+              "minuto": 3,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Gaston Americo Benavidez",
+              "clube": "Athletico Paranaense",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 19,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Agustin Canobbio Graviz",
+              "clube": "Fluminense",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 33,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Ignacio da Silva Oliveira",
+              "clube": "Fluminense",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 90,
+              "acrescimo": 5,
+              "periodo": "2T",
+              "atleta": "Kevin Estiben Viveros Rodallega",
+              "clube": "Athletico Paranaense",
+              "tipo": "Penalty"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 3,
+              "periodo": "2T",
+              "atleta": "Gaston Americo Benavidez",
+              "clube": "Athletico Paranaense",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 45,
+              "periodo": "1T",
+              "atleta": "Paulo Henrique Chagas de Lima",
+              "clube": "Fluminense",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 29,
+              "periodo": "2T",
+              "atleta": "Gustavo Nonato Santana",
+              "clube": "Fluminense",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 34,
+              "periodo": "2T",
+              "atleta": "Kevin Estiben Viveros Rodallega",
+              "clube": "Athletico Paranaense",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Ricardo Frederico Rodrigues Antunes",
+              "clube": "Fluminense",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 247,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 25,
+          "data": "2026-08-30",
+          "horario": "18:30",
+          "mandante": "Grêmio",
+          "visitante": "Chapecoense",
+          "gols_mandante": 3,
+          "gols_visitante": 1,
+          "resultado": "Vitoria Mandante",
+          "vencedor": "Grêmio",
+          "estadio": "Arena do Grêmio",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 15,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Mauricio Garcez de Jesus",
+              "clube": "Chapecoense",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 17,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Gustavo Martins de Souza Santos",
+              "clube": "Grêmio",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 27,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Cristian David Pavon",
+              "clube": "Grêmio",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 10,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Gustavo Martins de Souza Santos",
+              "clube": "Grêmio",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 39,
+              "periodo": "1T",
+              "atleta": "Marlon Rodrigues Xavier",
+              "clube": "Grêmio",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 43,
+              "periodo": "1T",
+              "atleta": "Walter Kannemann",
+              "clube": "Grêmio",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 9,
+              "periodo": "2T",
+              "atleta": "Eduardo Vinicius Domachowski",
+              "clube": "Chapecoense",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 25,
+              "periodo": "2T",
+              "atleta": "Bruno de Jesus Pacheco",
+              "clube": "Chapecoense",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Mateus Cardoso Lemos Martins",
+              "clube": "Grêmio",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 245,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 25,
+          "data": "2026-08-30",
+          "horario": "18:30",
+          "mandante": "Mirassol",
+          "visitante": "Palmeiras",
+          "gols_mandante": 1,
+          "gols_visitante": 1,
+          "resultado": "Empate",
+          "vencedor": "-",
+          "estadio": "José Maria de Campos Maia",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 5,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Carlos Eduardo de Oliveira Alves",
+              "clube": "Mirassol",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 29,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Mauricio Magalhaes Prado",
+              "clube": "Palmeiras",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 26,
+              "periodo": "1T",
+              "atleta": "Abel Fernando Moreira Ferreira",
+              "clube": "Palmeiras",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 39,
+              "periodo": "2T",
+              "atleta": "Denilson Alves Borges",
+              "clube": "Mirassol",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Antonio Francisco Moura Neto",
+              "clube": "Mirassol",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Arthur Gabriel Santana Marcolino",
+              "clube": "Palmeiras",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Arthur Gabriel Santana Marcolino - Palmeiras/SP",
+              "clube": "2º Cartão Amarelo",
+              "cartao": "Vermelho",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 244,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 25,
+          "data": "2026-08-30",
+          "horario": "16:00",
+          "mandante": "Corinthians",
+          "visitante": "Santos FC",
+          "gols_mandante": 0,
+          "gols_visitante": 1,
+          "resultado": "Vitoria Visitante",
+          "vencedor": "Santos FC",
+          "estadio": "Arena Corinthians",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 32,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Christian Gabriel Oliva Gimenez",
+              "clube": "Santos FC",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 9,
+              "periodo": "1T",
+              "atleta": "Alvaro Martin Barreal",
+              "clube": "Santos FC",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 18,
+              "periodo": "1T",
+              "atleta": "Willian Souza Arao da Silva",
+              "clube": "Santos FC",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 31,
+              "periodo": "1T",
+              "atleta": "Gabriel Armando de Abreu",
+              "clube": "Corinthians",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 45,
+              "periodo": "1T",
+              "atleta": "Rodrigo Garro",
+              "clube": "Corinthians",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 45,
+              "periodo": "1T",
+              "atleta": "Lucas Verissimo da Silva",
+              "clube": "Santos FC",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 45,
+              "periodo": "1T",
+              "atleta": "Raniele Almeida Melo",
+              "clube": "Corinthians",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 241,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 25,
+          "data": "2026-08-30",
+          "horario": "16:00",
+          "mandante": "Flamengo",
+          "visitante": "Botafogo",
+          "gols_mandante": 3,
+          "gols_visitante": 0,
+          "resultado": "Vitoria Mandante",
+          "vencedor": "Flamengo",
+          "estadio": "Jornalista Mário Filho",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 12,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Samuel Dias Lino",
+              "clube": "Flamengo",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 40,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Samuel Dias Lino",
+              "clube": "Flamengo",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 44,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Jorge Andres Carrascal Guardo",
+              "clube": "Flamengo",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 37,
+              "periodo": "2T",
+              "atleta": "Fernando Marcal de Oliveira",
+              "clube": "Botafogo",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 44,
+              "periodo": "2T",
+              "atleta": "Gabriel Pereira Justino",
+              "clube": "Botafogo",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 246,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 25,
+          "data": "2026-08-29",
+          "horario": "18:30",
+          "mandante": "Atlético Mineiro",
+          "visitante": "Vitória",
+          "gols_mandante": 2,
+          "gols_visitante": 1,
+          "resultado": "Vitoria Mandante",
+          "vencedor": "Atlético Mineiro",
+          "estadio": "ARENA MRV",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 25,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Thiago Nicolas Borbas Silva",
+              "clube": "Atlético Mineiro",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 18,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Reinier Jesus Carvalho",
+              "clube": "Atlético Mineiro",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 42,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Erick de Arruda Serafim",
+              "clube": "Vitória",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 34,
+              "periodo": "1T",
+              "atleta": "Diego Tarzia",
+              "clube": "Vitória",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 43,
+              "periodo": "1T",
+              "atleta": "Angelo Smit Preciado Quiñonez",
+              "clube": "Atlético Mineiro",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 14,
+              "periodo": "2T",
+              "atleta": "Mamady Cissé",
+              "clube": "Atlético Mineiro",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        },
+        {
+          "partida_id": 243,
+          "temporada": 2026,
+          "serie": "A",
+          "rodada": 25,
+          "data": "2026-08-29",
+          "horario": "20:00",
+          "mandante": "São Paulo",
+          "visitante": "Red Bull Bragantino",
+          "gols_mandante": 2,
+          "gols_visitante": 1,
+          "resultado": "Vitoria Mandante",
+          "vencedor": "São Paulo",
+          "estadio": "Cícero Pompeu de Toledo",
+          "arbitro": "",
+          "gols": [
+            {
+              "minuto": 13,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Luciano da Rocha Neves",
+              "clube": "São Paulo",
+              "tipo": "Penalty"
+            },
+            {
+              "minuto": 45,
+              "acrescimo": 4,
+              "periodo": "1T",
+              "atleta": "Gustavo Domingos Santana",
+              "clube": "São Paulo",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 45,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Fernando dos Santos Pedro",
+              "clube": "Red Bull Bragantino",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 13,
+              "periodo": "1T",
+              "atleta": "Isidro Miguel Pitta Saldivar",
+              "clube": "Red Bull Bragantino",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 44,
+              "periodo": "1T",
+              "atleta": "Ariel Agustín Sant'anna Quintero",
+              "clube": "Red Bull Bragantino",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 38,
+              "periodo": "2T",
+              "atleta": "Daniel de Oliveira Sertanejo",
+              "clube": "São Paulo",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 38,
+              "periodo": "2T",
+              "atleta": "Andre Oliveira Silva",
+              "clube": "São Paulo",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 40,
+              "periodo": "2T",
+              "atleta": "Henry David Mosquera Sanchez",
+              "clube": "Red Bull Bragantino",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Luis Antonio da Rocha Junior",
+              "clube": "Red Bull Bragantino",
+              "cartao": "Amarelo",
+              "motivo": null
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Jonathan Calleri",
+              "clube": "São Paulo",
+              "cartao": "Amarelo",
+              "motivo": null
+            }
+          ]
+        }
+      ]
+    },
+    "Série B": {
+      "temporada": 2026,
+      "total_partidas_recentes": 30,
+      "partidas": [
+        {
+          "partida_id": 279,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 28,
+          "data": "2026-09-15",
+          "horario": "21:00",
+          "mandante": "CRB",
+          "visitante": "Sport Recife",
+          "gols_mandante": 2,
+          "gols_visitante": 1,
+          "resultado": "Vitoria Mandante",
+          "vencedor": null,
+          "estadio": "R",
+          "arbitro": "Davi De Oliveira Lacerda",
+          "gols": [
+            {
+              "minuto": 15,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Crystopher Ribeiro Oliveira",
+              "clube": "CRB",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 43,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Diogo Hereda da Silva",
+              "clube": "CRB",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 90,
+              "acrescimo": 1,
+              "periodo": "2T",
+              "atleta": "Patrick de Paula Carreiro",
+              "clube": "Sport Recife",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 6,
+              "periodo": "1T",
+              "atleta": "Matheus Simonete Bressanelli",
+              "clube": "CRB",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 30,
+              "periodo": "1T",
+              "atleta": "Daniel Sampaio Simoes",
+              "clube": "CRB",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 30,
+              "periodo": "1T",
+              "atleta": "Carlos Maria de Pena Bonino",
+              "clube": "Sport Recife",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 8,
+              "periodo": "2T",
+              "atleta": "Crystopher Ribeiro Oliveira",
+              "clube": "CRB",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 38,
+              "periodo": "2T",
+              "atleta": "Geovane da Silva de Souza Montanari",
+              "clube": "CRB",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 40,
+              "periodo": "2T",
+              "atleta": "Fernando Pereira do Nascimento",
+              "clube": "Sport Recife",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            }
+          ]
+        },
+        {
+          "partida_id": 278,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 28,
+          "data": "2026-09-15",
+          "horario": "19:30",
+          "mandante": "Náutico",
+          "visitante": "Operário",
+          "gols_mandante": 3,
+          "gols_visitante": 3,
+          "resultado": "Empate",
+          "vencedor": null,
+          "estadio": "Eládio de Barros Carvalho",
+          "arbitro": "Matheus De Moraes Silva",
+          "gols": [
+            {
+              "minuto": 1,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Vinicius Santos Silva",
+              "clube": "Náutico",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 45,
+              "acrescimo": 1,
+              "periodo": "1T",
+              "atleta": "Vinicius Diniz Dall Antonia",
+              "clube": "Operário",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 37,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Jean Carlos Vicente",
+              "clube": "Náutico",
+              "tipo": "Penalty"
+            },
+            {
+              "minuto": 42,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Daniel Ferreira dos Santos Filho",
+              "clube": "Náutico",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 90,
+              "acrescimo": 3,
+              "periodo": "2T",
+              "atleta": "Gabriel Boschilia",
+              "clube": "Operário",
+              "tipo": "Falta"
+            },
+            {
+              "minuto": 90,
+              "acrescimo": 4,
+              "periodo": "2T",
+              "atleta": "Jose Abad Cuenu Rodriguez",
+              "clube": "Operário",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 28,
+              "periodo": "1T",
+              "atleta": "Gabriel Boschilia",
+              "clube": "Operário",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 11,
+              "periodo": "2T",
+              "atleta": "Samuel Felix Rodrigues",
+              "clube": "Náutico",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 35,
+              "periodo": "2T",
+              "atleta": "Aylon Darwin Tavella",
+              "clube": "Operário",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 45,
+              "periodo": "2T",
+              "atleta": "Vinicius Diniz Dall Antonia",
+              "clube": "Operário",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Onitlasi Junior de Moraes Rodrigues",
+              "clube": "Operário",
+              "cartao": "Amarelo",
+              "motivo": "conduta_antidesportiva"
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Patricio Leonardo Nunez",
+              "clube": "Náutico",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Helio Cezar Pinto dos Anjos - Náutico/PE",
+              "clube": "Cartão Vermelho Direto",
+              "cartao": "Vermelho",
+              "motivo": "reclamacao"
+            }
+          ]
+        },
+        {
+          "partida_id": 274,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 28,
+          "data": "2026-09-15",
+          "horario": "19:30",
+          "mandante": "Londrina SAF",
+          "visitante": "Ponte Preta",
+          "gols_mandante": 6,
+          "gols_visitante": 0,
+          "resultado": "Vitoria Mandante",
+          "vencedor": null,
+          "estadio": "Vitorino Gonçalves Dias",
+          "arbitro": "Deborah Cecilia Cruz Correia",
+          "gols": [
+            {
+              "minuto": 23,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Herbert Mateus Almeida de Oliveira",
+              "clube": "Londrina SAF",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 42,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Guilherme Maciel Dantas",
+              "clube": "Londrina SAF",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 44,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Igor Ruan Sousa dos Santos",
+              "clube": "Londrina SAF",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 13,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Herbert Mateus Almeida de Oliveira",
+              "clube": "Londrina SAF",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 35,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Victor Hugo de Faria Mota",
+              "clube": "Londrina SAF",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 39,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Joao Vitor de Souza Martins",
+              "clube": "Londrina SAF",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 21,
+              "periodo": "1T",
+              "atleta": "Andre da Silva Lima",
+              "clube": "Ponte Preta",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 29,
+              "periodo": "1T",
+              "atleta": "Kauê Leonardo de Souza Prado",
+              "clube": "Londrina SAF",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 18,
+              "periodo": "2T",
+              "atleta": "Caio Cesar Rodrigues Souza",
+              "clube": "Londrina SAF",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            }
+          ]
+        },
+        {
+          "partida_id": 277,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 28,
+          "data": "2026-09-14",
+          "horario": "21:30",
+          "mandante": "Avaí",
+          "visitante": "Vila Nova",
+          "gols_mandante": 1,
+          "gols_visitante": 1,
+          "resultado": "Empate",
+          "vencedor": null,
+          "estadio": "Aderbal Ramos da Silva",
+          "arbitro": "Daiane Muniz",
+          "gols": [
+            {
+              "minuto": 29,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Andre Luis da Costa Alfredo",
+              "clube": "Vila Nova",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 38,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Daniel dos Santos Penha",
+              "clube": "Avaí",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 11,
+              "periodo": "1T",
+              "atleta": "Willian Prado Camargo",
+              "clube": "Vila Nova",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 8,
+              "periodo": "2T",
+              "atleta": "Douglas da Silva Teixeira",
+              "clube": "Avaí",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            }
+          ]
+        },
+        {
+          "partida_id": 273,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 28,
+          "data": "2026-09-14",
+          "horario": "19:30",
+          "mandante": "América",
+          "visitante": "São Bernardo SAF",
+          "gols_mandante": 0,
+          "gols_visitante": 2,
+          "resultado": "Vitoria Visitante",
+          "vencedor": null,
+          "estadio": "Raimundo Sampaio",
+          "arbitro": "Jonathan Benkenstein Pinheiro",
+          "gols": [
+            {
+              "minuto": 34,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Fabricio Daniel de Souza",
+              "clube": "São Bernardo SAF",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 42,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Pedro Vitor Ferreira da Silva",
+              "clube": "São Bernardo SAF",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 7,
+              "periodo": "2T",
+              "atleta": "Gustavo Bonatto Barreto",
+              "clube": "América",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 8,
+              "periodo": "2T",
+              "atleta": "Lucas Eduardo Lima da Silva",
+              "clube": "São Bernardo SAF",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 21,
+              "periodo": "2T",
+              "atleta": "Helder Gomes Maciel",
+              "clube": "São Bernardo SAF",
+              "cartao": "Amarelo",
+              "motivo": "reclamacao"
+            },
+            {
+              "minuto": 39,
+              "periodo": "2T",
+              "atleta": "Jorge Andres Roa Jimenez",
+              "clube": "América",
+              "cartao": "Amarelo",
+              "motivo": "reclamacao"
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Fabricio Daniel de Souza",
+              "clube": "São Bernardo SAF",
+              "cartao": "Amarelo",
+              "motivo": "reclamacao"
+            }
+          ]
+        },
+        {
+          "partida_id": 271,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 28,
+          "data": "2026-09-14",
+          "horario": "19:30",
+          "mandante": "Botafogo",
+          "visitante": "Goiás",
+          "gols_mandante": 1,
+          "gols_visitante": 3,
+          "resultado": "Vitoria Visitante",
+          "vencedor": null,
+          "estadio": "Santa Cruz",
+          "arbitro": "Alex Gomes Stefano",
+          "gols": [
+            {
+              "minuto": 17,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Hygor Cleber Garcia Silva",
+              "clube": "Botafogo",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 27,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Jean Carlos Alves Ferreira",
+              "clube": "Goiás",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 5,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Tadeu Antonio Ferreira",
+              "clube": "Goiás",
+              "tipo": "Penalty"
+            },
+            {
+              "minuto": 10,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Carlos Eduardo de Sousa Leopoldino",
+              "clube": "Goiás",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 42,
+              "periodo": "1T",
+              "atleta": "Lucas Rodrigues Moreira Costa",
+              "clube": "Goiás",
+              "cartao": "Amarelo",
+              "motivo": "reclamacao"
+            },
+            {
+              "minuto": 26,
+              "periodo": "2T",
+              "atleta": "Luiz Filipe da Rosa Machado",
+              "clube": "Goiás",
+              "cartao": "Amarelo",
+              "motivo": "reclamacao"
+            },
+            {
+              "minuto": 26,
+              "periodo": "2T",
+              "atleta": "Wesley Pinheiro Santos",
+              "clube": "Botafogo",
+              "cartao": "Amarelo",
+              "motivo": "conduta_antidesportiva"
+            },
+            {
+              "minuto": 27,
+              "periodo": "2T",
+              "atleta": "Gabriel de Souza Inocencio",
+              "clube": "Botafogo",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 38,
+              "periodo": "2T",
+              "atleta": "Adilson dos Anjos Oliveira",
+              "clube": "Goiás",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 43,
+              "periodo": "2T",
+              "atleta": "Marco Antonio de Freitas Batistussi",
+              "clube": "Botafogo",
+              "cartao": "Amarelo",
+              "motivo": "conduta_antidesportiva"
+            },
+            {
+              "minuto": 44,
+              "periodo": "2T",
+              "atleta": "Jonathan Francisco Lemos",
+              "clube": "Botafogo",
+              "cartao": "Amarelo",
+              "motivo": "cera_retardar"
+            }
+          ]
+        },
+        {
+          "partida_id": 280,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 28,
+          "data": "2026-09-13",
+          "horario": "18:00",
+          "mandante": "Juventude",
+          "visitante": "Athletic SAF",
+          "gols_mandante": 0,
+          "gols_visitante": 2,
+          "resultado": "Vitoria Visitante",
+          "vencedor": null,
+          "estadio": "Alfredo Jaconi",
+          "arbitro": "Savio Pereira Sampaio",
+          "gols": [
+            {
+              "minuto": 24,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "WILINTON APONZA CARABALI",
+              "clube": "Athletic SAF",
+              "tipo": "Penalty"
+            },
+            {
+              "minuto": 90,
+              "acrescimo": 7,
+              "periodo": "2T",
+              "atleta": "Kauan Gabriel Cordeiro Lindes",
+              "clube": "Athletic SAF",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 5,
+              "periodo": "1T",
+              "atleta": "Marcos Paulo Lima Batista Silva",
+              "clube": "Juventude",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 19,
+              "periodo": "2T",
+              "atleta": "WILINTON APONZA CARABALI",
+              "clube": "Athletic SAF",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 26,
+              "periodo": "2T",
+              "atleta": "Luan Martins Goncalves",
+              "clube": "Juventude",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 30,
+              "periodo": "2T",
+              "atleta": "Fabio de Lima Costa",
+              "clube": "Juventude",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 44,
+              "periodo": "2T",
+              "atleta": "João Miguel da Costa Pereira",
+              "clube": "Athletic SAF",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Jose Roberto Lucini",
+              "clube": "Athletic SAF",
+              "cartao": "Amarelo",
+              "motivo": "reclamacao"
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Alexandre Rodrigues de Souza",
+              "clube": "Athletic SAF",
+              "cartao": "Amarelo",
+              "motivo": "reclamacao"
+            }
+          ]
+        },
+        {
+          "partida_id": 276,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 28,
+          "data": "2026-09-13",
+          "horario": "16:00",
+          "mandante": "Atlético Goianiense Saf",
+          "visitante": "Criciúma",
+          "gols_mandante": 4,
+          "gols_visitante": 0,
+          "resultado": "Vitoria Mandante",
+          "vencedor": null,
+          "estadio": "Antônio Accioly",
+          "arbitro": "Edina Alves Batista",
+          "gols": [
+            {
+              "minuto": 40,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Gustavo Coutinho Silva Lopes",
+              "clube": "Atlético Goianiense Saf",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 45,
+              "acrescimo": 6,
+              "periodo": "1T",
+              "atleta": "Gustavo Coutinho Silva Lopes",
+              "clube": "Atlético Goianiense Saf",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 11,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Gustavo Maia da Silva",
+              "clube": "Atlético Goianiense Saf",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 16,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Gustavo Coutinho Silva Lopes",
+              "clube": "Atlético Goianiense Saf",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 18,
+              "periodo": "1T",
+              "atleta": "Yuri Jonathan Vitor Coelho",
+              "clube": "Criciúma",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 35,
+              "periodo": "1T",
+              "atleta": "Daniel Nascimento Peixoto dos Santos",
+              "clube": "Atlético Goianiense Saf",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 39,
+              "periodo": "1T",
+              "atleta": "Diego Goncalves",
+              "clube": "Criciúma",
+              "cartao": "Amarelo",
+              "motivo": "conduta_antidesportiva"
+            },
+            {
+              "minuto": 5,
+              "periodo": "2T",
+              "atleta": "Wagner da Silva Souza",
+              "clube": "Criciúma",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 6,
+              "periodo": "2T",
+              "atleta": "Henrique Freitas Alves",
+              "clube": "Atlético Goianiense Saf",
+              "cartao": "Amarelo",
+              "motivo": "conduta_antidesportiva"
+            },
+            {
+              "minuto": 15,
+              "periodo": "2T",
+              "atleta": "Cristiano Claudinei Nogueira",
+              "clube": "Atlético Goianiense Saf",
+              "cartao": "Amarelo",
+              "motivo": "conduta_antidesportiva"
+            }
+          ]
+        },
+        {
+          "partida_id": 275,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 28,
+          "data": "2026-09-13",
+          "horario": "18:30",
+          "mandante": "Fortaleza SAF",
+          "visitante": "Ceará",
+          "gols_mandante": 1,
+          "gols_visitante": 1,
+          "resultado": "Empate",
+          "vencedor": null,
+          "estadio": "Governador Plácido Aderaldo Castelo",
+          "arbitro": "Marcelo de Lima Henrique",
+          "gols": [
+            {
+              "minuto": 30,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Vitor Samuel Ferreira Arantes",
+              "clube": "Fortaleza SAF",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 42,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Melquisedeque Costa de Oliveira",
+              "clube": "Ceará",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 20,
+              "periodo": "1T",
+              "atleta": "Vinicius Nelson de Souza Zanocelo",
+              "clube": "Ceará",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 20,
+              "periodo": "1T",
+              "atleta": "Rodrigo Oliveira dos Santos",
+              "clube": "Fortaleza SAF",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 34,
+              "periodo": "1T",
+              "atleta": "Pierre Wagner Oliveira dos Santos",
+              "clube": "Fortaleza SAF",
+              "cartao": "Amarelo",
+              "motivo": "reclamacao"
+            },
+            {
+              "minuto": 22,
+              "periodo": "2T",
+              "atleta": "Rian Bonfim de Santana",
+              "clube": "Ceará",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            }
+          ]
+        },
+        {
+          "partida_id": 272,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 28,
+          "data": "2026-09-13",
+          "horario": "18:30",
+          "mandante": "Gremio Novorizontino",
+          "visitante": "Cuiabá",
+          "gols_mandante": 1,
+          "gols_visitante": 1,
+          "resultado": "Empate",
+          "vencedor": null,
+          "estadio": "Dr. Jorge Ismael de Biasi",
+          "arbitro": "Braulio da Silva Machado",
+          "gols": [
+            {
+              "minuto": 19,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Vitor Mendes Alves",
+              "clube": "Cuiabá",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 36,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Romulo Azevedo Simao",
+              "clube": "Gremio Novorizontino - Saf",
+              "tipo": "Penalty"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 35,
+              "periodo": "1T",
+              "atleta": "Raul Lô Gonçalves",
+              "clube": "Cuiabá",
+              "cartao": "Amarelo",
+              "motivo": "reclamacao"
+            },
+            {
+              "minuto": 43,
+              "periodo": "2T",
+              "atleta": "Luiz Otavio Alves Marcolino",
+              "clube": "Cuiabá",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Joao Othavio Basso",
+              "clube": "Cuiabá",
+              "cartao": "Amarelo",
+              "motivo": "conduta_antidesportiva"
+            }
+          ]
+        },
+        {
+          "partida_id": 270,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 27,
+          "data": "2026-09-10",
+          "horario": "19:30",
+          "mandante": "Vila Nova",
+          "visitante": "Goiás",
+          "gols_mandante": 2,
+          "gols_visitante": 0,
+          "resultado": "Vitoria Mandante",
+          "vencedor": null,
+          "estadio": "Onésio Brasileiro Alvarenga",
+          "arbitro": "Anderson Daronco",
+          "gols": [
+            {
+              "minuto": 23,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Hayner William Monjardim Cordeiro",
+              "clube": "Vila Nova",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 31,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Andre Luis da Costa Alfredo",
+              "clube": "Vila Nova",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 10,
+              "periodo": "1T",
+              "atleta": "Lucas Ribeiro dos Santos",
+              "clube": "Goiás",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 14,
+              "periodo": "1T",
+              "atleta": "Joao Pedro Vieira",
+              "clube": "Vila Nova",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 20,
+              "periodo": "1T",
+              "atleta": "Luís Fellipe Campos Doria",
+              "clube": "Goiás",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 35,
+              "periodo": "1T",
+              "atleta": "Hayner William Monjardim Cordeiro",
+              "clube": "Vila Nova",
+              "cartao": "Amarelo",
+              "motivo": "reclamacao"
+            },
+            {
+              "minuto": 44,
+              "periodo": "1T",
+              "atleta": "Douglas Mendes Moreira",
+              "clube": "Vila Nova",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 45,
+              "periodo": "1T",
+              "atleta": "Eduardo dos Santos",
+              "clube": "Vila Nova",
+              "cartao": "Amarelo",
+              "motivo": "reclamacao"
+            },
+            {
+              "minuto": 31,
+              "periodo": "2T",
+              "atleta": "Andre Luis da Costa Alfredo",
+              "clube": "Vila Nova",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            }
+          ]
+        },
+        {
+          "partida_id": 268,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 27,
+          "data": "2026-09-10",
+          "horario": "21:30",
+          "mandante": "Sport Recife",
+          "visitante": "Ponte Preta",
+          "gols_mandante": 2,
+          "gols_visitante": 0,
+          "resultado": "Vitoria Mandante",
+          "vencedor": null,
+          "estadio": "Adelmar da Costa Carvalho",
+          "arbitro": "Raimundo Rodrigues De Oliveira Junior",
+          "gols": [
+            {
+              "minuto": 25,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Diego Monteiro Leao",
+              "clube": "Ponte Preta",
+              "tipo": "Gol Contra"
+            },
+            {
+              "minuto": 35,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Chrystian Amaral Barletta de Almeida",
+              "clube": "Sport Recife",
+              "tipo": "Penalty"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 23,
+              "periodo": "1T",
+              "atleta": "Matheus Souza Santos",
+              "clube": "Ponte Preta",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 27,
+              "periodo": "1T",
+              "atleta": "Lucas de Souza Cunha",
+              "clube": "Ponte Preta",
+              "cartao": "Amarelo",
+              "motivo": "reclamacao"
+            },
+            {
+              "minuto": 11,
+              "periodo": "2T",
+              "atleta": "Edson Lucas Pereira",
+              "clube": "Sport Recife",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 38,
+              "periodo": "2T",
+              "atleta": "Willian Osmar de Oliveira Silva",
+              "clube": "Sport Recife",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            }
+          ]
+        },
+        {
+          "partida_id": 262,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 27,
+          "data": "2026-09-10",
+          "horario": "19:30",
+          "mandante": "São Bernardo SAF",
+          "visitante": "Londrina SAF",
+          "gols_mandante": 1,
+          "gols_visitante": 2,
+          "resultado": "Vitoria Visitante",
+          "vencedor": null,
+          "estadio": "1º de Maio",
+          "arbitro": "Leonardo Willers Lorenzatto",
+          "gols": [
+            {
+              "minuto": 9,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Caio Cesar Rodrigues Souza",
+              "clube": "Londrina SAF",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 42,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Guilherme Seefeldt Krolow",
+              "clube": "São Bernardo SAF",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 30,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Tarik Michel Kedes Boschetti",
+              "clube": "Londrina SAF",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 1,
+              "periodo": "2T",
+              "atleta": "Igor Ruan Sousa dos Santos",
+              "clube": "Londrina SAF",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 20,
+              "periodo": "2T",
+              "atleta": "Caio Cesar Rodrigues Souza",
+              "clube": "Londrina SAF",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 44,
+              "periodo": "2T",
+              "atleta": "Leonardo Rodrigues Lima",
+              "clube": "São Bernardo SAF",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            }
+          ]
+        },
+        {
+          "partida_id": 266,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 27,
+          "data": "2026-09-09",
+          "horario": "21:30",
+          "mandante": "Atlético Goianiense Saf",
+          "visitante": "Ceará",
+          "gols_mandante": 2,
+          "gols_visitante": 1,
+          "resultado": "Vitoria Mandante",
+          "vencedor": null,
+          "estadio": "Antônio Accioly",
+          "arbitro": "Gustavo Ervino Bauermann",
+          "gols": [
+            {
+              "minuto": 6,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Guilherme Costa Marques",
+              "clube": "Atlético Goianiense Saf",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 12,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Geovany dos Santos Soares",
+              "clube": "Atlético Goianiense Saf",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 38,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Melquisedeque Costa de Oliveira",
+              "clube": "Ceará",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 21,
+              "periodo": "1T",
+              "atleta": "João Pedro Sousa Silva",
+              "clube": "Atlético Goianiense Saf",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 37,
+              "periodo": "1T",
+              "atleta": "Bryan Borges Mascarenhas",
+              "clube": "Ceará",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 6,
+              "periodo": "2T",
+              "atleta": "Jose Domingos de Moraes Neto - Atlético Goianiense Saf/GO",
+              "clube": "Cartão Vermelho Direto",
+              "cartao": "Vermelho",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 8,
+              "periodo": "2T",
+              "atleta": "Eduardo Ferreira Abdo Pacheco",
+              "clube": "Atlético Goianiense Saf",
+              "cartao": "Amarelo",
+              "motivo": "reclamacao"
+            },
+            {
+              "minuto": 15,
+              "periodo": "2T",
+              "atleta": "Vinicius Goes Barbosa de Souza",
+              "clube": "Ceará",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 43,
+              "periodo": "2T",
+              "atleta": "Luiz Otavio da Silva Santos",
+              "clube": "Ceará",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            }
+          ]
+        },
+        {
+          "partida_id": 265,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 27,
+          "data": "2026-09-09",
+          "horario": "19:30",
+          "mandante": "Fortaleza SAF",
+          "visitante": "Avaí",
+          "gols_mandante": 1,
+          "gols_visitante": 0,
+          "resultado": "Vitoria Mandante",
+          "vencedor": null,
+          "estadio": "Governador Plácido Aderaldo Castelo",
+          "arbitro": "Yuri Elino Ferreira da Cruz",
+          "gols": [
+            {
+              "minuto": 21,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Mailton dos Santos de Sa",
+              "clube": "Fortaleza SAF",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 41,
+              "periodo": "1T",
+              "atleta": "Gabriel Frederico Cipriano",
+              "clube": "Avaí",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 37,
+              "periodo": "2T",
+              "atleta": "João Vitor Cardoso de Souza",
+              "clube": "Avaí",
+              "cartao": "Amarelo",
+              "motivo": "conduta_antidesportiva"
+            }
+          ]
+        },
+        {
+          "partida_id": 264,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 27,
+          "data": "2026-09-09",
+          "horario": "20:30",
+          "mandante": "Operário",
+          "visitante": "CRB",
+          "gols_mandante": 3,
+          "gols_visitante": 0,
+          "resultado": "Vitoria Mandante",
+          "vencedor": null,
+          "estadio": "R",
+          "arbitro": "Arthur Gomes Rabelo",
+          "gols": [
+            {
+              "minuto": 39,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Onitlasi Junior de Moraes Rodrigues",
+              "clube": "Operário",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 45,
+              "acrescimo": 9,
+              "periodo": "1T",
+              "atleta": "Vinicius Diniz Dall Antonia",
+              "clube": "Operário",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 18,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Caio Henrique da Silva Dantas",
+              "clube": "Operário",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 10,
+              "periodo": "1T",
+              "atleta": "Lucas Lovat - CRB/AL",
+              "clube": "Cartão Vermelho Direto",
+              "cartao": "Vermelho",
+              "motivo": "reclamacao"
+            },
+            {
+              "minuto": 14,
+              "periodo": "1T",
+              "atleta": "Fabio Henrique Matias",
+              "clube": "CRB",
+              "cartao": "Amarelo",
+              "motivo": "reclamacao"
+            },
+            {
+              "minuto": 36,
+              "periodo": "1T",
+              "atleta": "Antonio Mikael Rodrigues Brito",
+              "clube": "Operário",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 22,
+              "periodo": "2T",
+              "atleta": "Matheus Trindade Gonçalves",
+              "clube": "Operário",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 39,
+              "periodo": "2T",
+              "atleta": "Jose Abad Cuenu Rodriguez",
+              "clube": "Operário",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            }
+          ]
+        },
+        {
+          "partida_id": 263,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 27,
+          "data": "2026-09-09",
+          "horario": "20:30",
+          "mandante": "América",
+          "visitante": "Náutico",
+          "gols_mandante": 2,
+          "gols_visitante": 1,
+          "resultado": "Vitoria Mandante",
+          "vencedor": null,
+          "estadio": "Raimundo Sampaio",
+          "arbitro": "Kleber Ariel Goncalves Silva",
+          "gols": [
+            {
+              "minuto": 15,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Willian Gomes de Siqueira",
+              "clube": "América",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 25,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Tobias Ostchega",
+              "clube": "América",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 43,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Geremias Ribeiro Junior",
+              "clube": "Náutico",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 18,
+              "periodo": "1T",
+              "atleta": "Arnaldo Manoel de Almeida",
+              "clube": "Náutico",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 14,
+              "periodo": "2T",
+              "atleta": "Muriel Gustavo Becker",
+              "clube": "Náutico",
+              "cartao": "Amarelo",
+              "motivo": "cera_retardar"
+            },
+            {
+              "minuto": 24,
+              "periodo": "2T",
+              "atleta": "Thomaz Lucena da Silva",
+              "clube": "Náutico",
+              "cartao": "Amarelo",
+              "motivo": "reclamacao"
+            },
+            {
+              "minuto": 29,
+              "periodo": "2T",
+              "atleta": "Paulo Victor Ferreira de Jesus",
+              "clube": "América",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Guilherme Augusto Coelho de Oliveira",
+              "clube": "América",
+              "cartao": "Amarelo",
+              "motivo": "reclamacao"
+            }
+          ]
+        },
+        {
+          "partida_id": 261,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 27,
+          "data": "2026-09-09",
+          "horario": "19:30",
+          "mandante": "Botafogo",
+          "visitante": "Gremio Novorizontino",
+          "gols_mandante": 1,
+          "gols_visitante": 3,
+          "resultado": "Vitoria Visitante",
+          "vencedor": null,
+          "estadio": "Santa Cruz",
+          "arbitro": "Julio Cesar Pfleger",
+          "gols": [
+            {
+              "minuto": 20,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Romulo Azevedo Simao",
+              "clube": "Gremio Novorizontino - Saf",
+              "tipo": "Penalty"
+            },
+            {
+              "minuto": 30,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Felipe Vieira Augusto",
+              "clube": "Botafogo",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 10,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Robson dos Santos Fernandes",
+              "clube": "Gremio Novorizontino - Saf",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 27,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Matheus Henrique Bianqui",
+              "clube": "Gremio Novorizontino - Saf",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 11,
+              "periodo": "1T",
+              "atleta": "Felipe Vieira Augusto",
+              "clube": "Botafogo",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 32,
+              "periodo": "1T",
+              "atleta": "Maykon Kesley de Jesus Ramalho",
+              "clube": "Gremio Novorizontino - Saf",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 33,
+              "periodo": "1T",
+              "atleta": "Marco Aurelio Tedeschi dos Santos",
+              "clube": "Botafogo",
+              "cartao": "Amarelo",
+              "motivo": "reclamacao"
+            },
+            {
+              "minuto": 45,
+              "periodo": "1T",
+              "atleta": "Leandro Isaac Maciel",
+              "clube": "Botafogo",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 2,
+              "periodo": "2T",
+              "atleta": "Gabriel de Souza Inocencio",
+              "clube": "Botafogo",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 2,
+              "periodo": "2T",
+              "atleta": "Nicolas Mores da Cruz",
+              "clube": "Gremio Novorizontino - Saf",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Rafael Gustavo Meneghel Gava",
+              "clube": "Botafogo",
+              "cartao": "Amarelo",
+              "motivo": "cera_retardar"
+            }
+          ]
+        },
+        {
+          "partida_id": 269,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 27,
+          "data": "2026-09-08",
+          "horario": "20:30",
+          "mandante": "Cuiabá",
+          "visitante": "Athletic SAF",
+          "gols_mandante": 3,
+          "gols_visitante": 0,
+          "resultado": "Vitoria Mandante",
+          "vencedor": null,
+          "estadio": "Arena Pantanal",
+          "arbitro": "Bruno Pereira Vasconcelos",
+          "gols": [
+            {
+              "minuto": 36,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Fabio Roberto Gomes Netto",
+              "clube": "Cuiabá",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 17,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Lorenzo Silva Martins",
+              "clube": "Cuiabá",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 23,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Jean Dias da Costa",
+              "clube": "Cuiabá",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 39,
+              "periodo": "2T",
+              "atleta": "Igor Inocencio de Oliveira",
+              "clube": "Cuiabá",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            }
+          ]
+        },
+        {
+          "partida_id": 267,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 27,
+          "data": "2026-09-08",
+          "horario": "21:00",
+          "mandante": "Criciúma",
+          "visitante": "Juventude",
+          "gols_mandante": 0,
+          "gols_visitante": 2,
+          "resultado": "Vitoria Visitante",
+          "vencedor": null,
+          "estadio": "Heriberto Hulse",
+          "arbitro": "Fernando Antonio Mendes de Salles Nascimento Filho",
+          "gols": [
+            {
+              "minuto": 19,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Alan Kardec de Souza Pereira Junior",
+              "clube": "Juventude",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 31,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Marcos Paulo Lima Batista Silva",
+              "clube": "Juventude",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 30,
+              "periodo": "1T",
+              "atleta": "Luiz Gustavo da Silva Machado Duarte",
+              "clube": "Juventude",
+              "cartao": "Amarelo",
+              "motivo": "conduta_antidesportiva"
+            },
+            {
+              "minuto": 9,
+              "periodo": "2T",
+              "atleta": "Ronald dos Santos Lopes",
+              "clube": "Criciúma",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 16,
+              "periodo": "2T",
+              "atleta": "Alisson Pelegrini Safira",
+              "clube": "Juventude",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 16,
+              "periodo": "2T",
+              "atleta": "Luciano Castan da Silva",
+              "clube": "Criciúma",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 31,
+              "periodo": "2T",
+              "atleta": "Christian Chagas Tarouco",
+              "clube": "Juventude",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 35,
+              "periodo": "2T",
+              "atleta": "Aderlan de Lima Silva",
+              "clube": "Juventude",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 40,
+              "periodo": "2T",
+              "atleta": "Diego de Almeida Favarin",
+              "clube": "Juventude",
+              "cartao": "Amarelo",
+              "motivo": "reclamacao"
+            },
+            {
+              "minuto": 43,
+              "periodo": "2T",
+              "atleta": "Wadson Victor Nunes Damasceno",
+              "clube": "Juventude",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Fellipe Mateus de Sena Araujo",
+              "clube": "Criciúma",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            }
+          ]
+        },
+        {
+          "partida_id": 254,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 26,
+          "data": "2026-09-06",
+          "horario": "11:00",
+          "mandante": "Londrina SAF",
+          "visitante": "Operário",
+          "gols_mandante": 1,
+          "gols_visitante": 2,
+          "resultado": "Vitoria Visitante",
+          "vencedor": null,
+          "estadio": "Vitorino Gonçalves Dias",
+          "arbitro": "Bruno Arleu de Araujo",
+          "gols": [
+            {
+              "minuto": 4,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Hildeberto Jose Morgado Pereira",
+              "clube": "Operário",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 33,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Gilberto Oliveira Souza Junior",
+              "clube": "Londrina SAF",
+              "tipo": "Penalty"
+            },
+            {
+              "minuto": 90,
+              "acrescimo": 1,
+              "periodo": "2T",
+              "atleta": "Gabriel Boschilia",
+              "clube": "Operário",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 22,
+              "periodo": "1T",
+              "atleta": "Gilberto Oliveira Souza Junior",
+              "clube": "Londrina SAF",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 22,
+              "periodo": "1T",
+              "atleta": "Magno Jose da Silva",
+              "clube": "Operário",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 22,
+              "periodo": "1T",
+              "atleta": "Hildeberto Jose Morgado Pereira",
+              "clube": "Operário",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 28,
+              "periodo": "1T",
+              "atleta": "Vinicius Diniz Dall Antonia",
+              "clube": "Operário",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 39,
+              "periodo": "1T",
+              "atleta": "Kevyn Lucas Ramos da Costa",
+              "clube": "Londrina SAF",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 1,
+              "periodo": "2T",
+              "atleta": "Guilherme Strass Miatto - Londrina SAF/PR",
+              "clube": "Cartão Vermelho Direto",
+              "cartao": "Vermelho",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 13,
+              "periodo": "2T",
+              "atleta": "Joao Vitor Coni de Andrade",
+              "clube": "Londrina SAF",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 18,
+              "periodo": "2T",
+              "atleta": "Joseph Mauricio de Oliveira Figueredo",
+              "clube": "Operário",
+              "cartao": "Amarelo",
+              "motivo": "cera_retardar"
+            },
+            {
+              "minuto": 23,
+              "periodo": "2T",
+              "atleta": "Thalis Henrique Cantanhede",
+              "clube": "Londrina SAF",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 38,
+              "periodo": "2T",
+              "atleta": "Guilherme Maciel Dantas",
+              "clube": "Londrina SAF",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 39,
+              "periodo": "2T",
+              "atleta": "Gabriel Boschilia",
+              "clube": "Operário",
+              "cartao": "Amarelo",
+              "motivo": "conduta_antidesportiva"
+            },
+            {
+              "minuto": 41,
+              "periodo": "2T",
+              "atleta": "Aylon Darwin Tavella",
+              "clube": "Operário",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            }
+          ]
+        },
+        {
+          "partida_id": 251,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 26,
+          "data": "2026-09-06",
+          "horario": "18:30",
+          "mandante": "Ponte Preta",
+          "visitante": "São Bernardo SAF",
+          "gols_mandante": 0,
+          "gols_visitante": 2,
+          "resultado": "Vitoria Visitante",
+          "vencedor": null,
+          "estadio": "Moisés Lucarelli",
+          "arbitro": "Edina Alves Batista",
+          "gols": [
+            {
+              "minuto": 45,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Rodrigo Ferreira da Silva",
+              "clube": "São Bernardo SAF",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 33,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Mario Sergio Valerio",
+              "clube": "São Bernardo SAF",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 20,
+              "periodo": "2T",
+              "atleta": "Jemerson de Jesus Nascimento",
+              "clube": "São Bernardo SAF",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 20,
+              "periodo": "2T",
+              "atleta": "Sergio Stevan Palacios Zapata",
+              "clube": "Ponte Preta",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 30,
+              "periodo": "2T",
+              "atleta": "Sergio Stevan Palacios Zapata - Ponte Preta/SP",
+              "clube": "2º Cartão Amarelo",
+              "cartao": "Vermelho",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 34,
+              "periodo": "2T",
+              "atleta": "David da Hora da Conceicao",
+              "clube": "Ponte Preta",
+              "cartao": "Amarelo",
+              "motivo": "reclamacao"
+            },
+            {
+              "minuto": 39,
+              "periodo": "2T",
+              "atleta": "Rodrigo Ferreira da Silva",
+              "clube": "São Bernardo SAF",
+              "cartao": "Amarelo",
+              "motivo": "reclamacao"
+            }
+          ]
+        },
+        {
+          "partida_id": 260,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 26,
+          "data": "2026-09-05",
+          "horario": "18:00",
+          "mandante": "Juventude",
+          "visitante": "Atlético Goianiense Saf",
+          "gols_mandante": 2,
+          "gols_visitante": 2,
+          "resultado": "Empate",
+          "vencedor": null,
+          "estadio": "Alfredo Jaconi",
+          "arbitro": "Ramon Abatti Abel",
+          "gols": [
+            {
+              "minuto": 17,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Gustavo Coutinho Silva Lopes",
+              "clube": "Atlético Goianiense Saf",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 35,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Alisson Pelegrini Safira",
+              "clube": "Juventude",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 44,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Luiz Gustavo da Silva Machado Duarte",
+              "clube": "Juventude",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 42,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "João Pedro Sousa Silva",
+              "clube": "Atlético Goianiense Saf",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 9,
+              "periodo": "1T",
+              "atleta": "Warley Leandro da Silva",
+              "clube": "Atlético Goianiense Saf",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 5,
+              "periodo": "2T",
+              "atleta": "Leandro Vilela Sales Teixeira",
+              "clube": "Atlético Goianiense Saf",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 20,
+              "periodo": "2T",
+              "atleta": "Aderlan de Lima Silva",
+              "clube": "Juventude",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 32,
+              "periodo": "2T",
+              "atleta": "Gebson Gomes dos Santos",
+              "clube": "Atlético Goianiense Saf",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 33,
+              "periodo": "2T",
+              "atleta": "Rodrigo Eduardo da Silva",
+              "clube": "Juventude",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 44,
+              "periodo": "2T",
+              "atleta": "João Pedro Sousa Silva",
+              "clube": "Atlético Goianiense Saf",
+              "cartao": "Amarelo",
+              "motivo": "conduta_antidesportiva"
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Marrony da Silva Liberato Silveira",
+              "clube": "Atlético Goianiense Saf",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 90,
+              "periodo": "2T",
+              "atleta": "Marcos Paulo Lima Batista Silva",
+              "clube": "Juventude",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            }
+          ]
+        },
+        {
+          "partida_id": 256,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 26,
+          "data": "2026-09-05",
+          "horario": "16:00",
+          "mandante": "Goiás",
+          "visitante": "Fortaleza SAF",
+          "gols_mandante": 0,
+          "gols_visitante": 1,
+          "resultado": "Vitoria Visitante",
+          "vencedor": null,
+          "estadio": "Hailé Pinheiro",
+          "arbitro": "Raphael Claus",
+          "gols": [
+            {
+              "minuto": 44,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Vitor Samuel Ferreira Arantes",
+              "clube": "Fortaleza SAF",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 12,
+              "periodo": "1T",
+              "atleta": "Luiz Felipe do Nascimento dos Santos - Goiás/GO",
+              "clube": "Cartão Vermelho Direto",
+              "cartao": "Vermelho",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 39,
+              "periodo": "1T",
+              "atleta": "Mauricio Junior Lima Rodrigues",
+              "clube": "Fortaleza SAF",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 42,
+              "periodo": "1T",
+              "atleta": "Tomas Cardona",
+              "clube": "Fortaleza SAF",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 3,
+              "periodo": "2T",
+              "atleta": "Luís Fellipe Campos Doria",
+              "clube": "Goiás",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 5,
+              "periodo": "2T",
+              "atleta": "Rodrigo Henrique Santos de Souza",
+              "clube": "Fortaleza SAF",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 32,
+              "periodo": "2T",
+              "atleta": "Pedro Henrique Konzen Medina da Silva",
+              "clube": "Fortaleza SAF",
+              "cartao": "Amarelo",
+              "motivo": "cera_retardar"
+            },
+            {
+              "minuto": 44,
+              "periodo": "2T",
+              "atleta": "Marcos Vinicius da Silva Santos",
+              "clube": "Goiás",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 45,
+              "periodo": "2T",
+              "atleta": "Lucas Rodrigues Moreira Costa",
+              "clube": "Goiás",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            }
+          ]
+        },
+        {
+          "partida_id": 255,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 26,
+          "data": "2026-09-05",
+          "horario": "18:30",
+          "mandante": "Ceará",
+          "visitante": "Sport Recife",
+          "gols_mandante": 2,
+          "gols_visitante": 1,
+          "resultado": "Vitoria Mandante",
+          "vencedor": null,
+          "estadio": "Governador Plácido Aderaldo Castelo",
+          "arbitro": "Flavio Rodrigues de Souza",
+          "gols": [
+            {
+              "minuto": 28,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Luiz Otavio da Silva Santos",
+              "clube": "Ceará",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 43,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Melquisedeque Costa de Oliveira",
+              "clube": "Ceará",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 90,
+              "acrescimo": 5,
+              "periodo": "2T",
+              "atleta": "Marlon Douglas de Sales Silva",
+              "clube": "Sport Recife",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 39,
+              "periodo": "1T",
+              "atleta": "Michael Nicolas Ferreira Berrondo",
+              "clube": "Ceará",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 40,
+              "periodo": "2T",
+              "atleta": "Enzo Valentim Lodovico",
+              "clube": "Ceará",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            }
+          ]
+        },
+        {
+          "partida_id": 252,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 26,
+          "data": "2026-09-05",
+          "horario": "16:00",
+          "mandante": "Gremio Novorizontino",
+          "visitante": "Avaí",
+          "gols_mandante": 3,
+          "gols_visitante": 1,
+          "resultado": "Vitoria Mandante",
+          "vencedor": null,
+          "estadio": "Dr. Jorge Ismael de Biasi",
+          "arbitro": "Wilton Pereira Sampaio",
+          "gols": [
+            {
+              "minuto": 8,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Madson Ferreira dos Santos",
+              "clube": "Gremio Novorizontino - Saf",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 24,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Allyson Aires dos Santos",
+              "clube": "Avaí",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 38,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Robson dos Santos Fernandes",
+              "clube": "Gremio Novorizontino - Saf",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 45,
+              "acrescimo": 6,
+              "periodo": "1T",
+              "atleta": "Romulo Azevedo Simao",
+              "clube": "Gremio Novorizontino - Saf",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 32,
+              "periodo": "1T",
+              "atleta": "Douglas da Silva Teixeira",
+              "clube": "Avaí",
+              "cartao": "Amarelo",
+              "motivo": "mao_intencional"
+            },
+            {
+              "minuto": 1,
+              "periodo": "2T",
+              "atleta": "Patrick Marcos de Sousa Freitas",
+              "clube": "Gremio Novorizontino - Saf",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 15,
+              "periodo": "2T",
+              "atleta": "Francisco Reidiney Duarte Gomes",
+              "clube": "Gremio Novorizontino - Saf",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            }
+          ]
+        },
+        {
+          "partida_id": 259,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 26,
+          "data": "2026-09-04",
+          "horario": "21:30",
+          "mandante": "CRB",
+          "visitante": "América",
+          "gols_mandante": 3,
+          "gols_visitante": 1,
+          "resultado": "Vitoria Mandante",
+          "vencedor": null,
+          "estadio": "R",
+          "arbitro": "Marianna Nanni Batalha",
+          "gols": [
+            {
+              "minuto": 17,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Crystopher Ribeiro Oliveira",
+              "clube": "CRB",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 7,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Mikael Filipe Viana de Sousa",
+              "clube": "CRB",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 23,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Kevin Peterson dos Santos Silva",
+              "clube": "CRB",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 35,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Willian Gomes de Siqueira",
+              "clube": "América",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 45,
+              "periodo": "1T",
+              "atleta": "Gustavo Bonatto Barreto",
+              "clube": "América",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 8,
+              "periodo": "2T",
+              "atleta": "Reverson Valuarth Paiva Silva",
+              "clube": "CRB",
+              "cartao": "Amarelo",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 30,
+              "periodo": "2T",
+              "atleta": "Otavio Gonçalves de Oliveira",
+              "clube": "América",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 33,
+              "periodo": "2T",
+              "atleta": "Tobias Ostchega",
+              "clube": "América",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            }
+          ]
+        },
+        {
+          "partida_id": 257,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 26,
+          "data": "2026-09-04",
+          "horario": "19:30",
+          "mandante": "Criciúma",
+          "visitante": "Cuiabá",
+          "gols_mandante": 2,
+          "gols_visitante": 0,
+          "resultado": "Vitoria Mandante",
+          "vencedor": null,
+          "estadio": "Heriberto Hulse",
+          "arbitro": "Matheus Delgado Candançan",
+          "gols": [
+            {
+              "minuto": 18,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Willean Bernardo Willemen",
+              "clube": "Criciúma",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 8,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Joao Othavio Basso",
+              "clube": "Cuiabá",
+              "tipo": "Gol Contra"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 28,
+              "periodo": "1T",
+              "atleta": "Bruno Fabiano Alves",
+              "clube": "Criciúma",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 35,
+              "periodo": "2T",
+              "atleta": "Eduardo Jacinto de Biasi",
+              "clube": "Criciúma",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            }
+          ]
+        },
+        {
+          "partida_id": 253,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 26,
+          "data": "2026-09-04",
+          "horario": "20:30",
+          "mandante": "Athletic SAF",
+          "visitante": "Vila Nova",
+          "gols_mandante": 5,
+          "gols_visitante": 0,
+          "resultado": "Vitoria Mandante",
+          "vencedor": null,
+          "estadio": "Arbitragem",
+          "arbitro": "Rafael Rodrigo Klein",
+          "gols": [
+            {
+              "minuto": 19,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Yago Santos de Andrade",
+              "clube": "Athletic SAF",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 39,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Carlos Moises de Lima",
+              "clube": "Athletic SAF",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 45,
+              "acrescimo": 0,
+              "periodo": "1T",
+              "atleta": "Dixon Jair Vera Rodriguez",
+              "clube": "Athletic SAF",
+              "tipo": "Normal"
+            },
+            {
+              "minuto": 28,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "WILINTON APONZA CARABALI",
+              "clube": "Athletic SAF",
+              "tipo": "Penalty"
+            },
+            {
+              "minuto": 45,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Otavio Bruno dos Santos",
+              "clube": "Athletic SAF",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 32,
+              "periodo": "1T",
+              "atleta": "Andre Luis da Costa Alfredo",
+              "clube": "Vila Nova",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 38,
+              "periodo": "1T",
+              "atleta": "Nathan Camargo dos Santos",
+              "clube": "Vila Nova",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 42,
+              "periodo": "1T",
+              "atleta": "Alexsandro de Souza",
+              "clube": "Athletic SAF",
+              "cartao": "Amarelo",
+              "motivo": "reclamacao"
+            },
+            {
+              "minuto": 18,
+              "periodo": "2T",
+              "atleta": "Dixon Jair Vera Rodriguez",
+              "clube": "Athletic SAF",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 26,
+              "periodo": "2T",
+              "atleta": "Tiago Pagnussat - Vila Nova/GO",
+              "clube": "Cartão Vermelho Direto",
+              "cartao": "Vermelho",
+              "motivo": "outro"
+            },
+            {
+              "minuto": 30,
+              "periodo": "2T",
+              "atleta": "Marcelo Henrique Laborao dos Santos",
+              "clube": "Athletic SAF",
+              "cartao": "Amarelo",
+              "motivo": "reclamacao"
+            },
+            {
+              "minuto": 42,
+              "periodo": "2T",
+              "atleta": "WILINTON APONZA CARABALI",
+              "clube": "Athletic SAF",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            }
+          ]
+        },
+        {
+          "partida_id": 258,
+          "temporada": 2026,
+          "serie": "B",
+          "rodada": 26,
+          "data": "2026-09-03",
+          "horario": "20:00",
+          "mandante": "Náutico",
+          "visitante": "Botafogo",
+          "gols_mandante": 1,
+          "gols_visitante": 0,
+          "resultado": "Vitoria Mandante",
+          "vencedor": null,
+          "estadio": "Eládio de Barros Carvalho",
+          "arbitro": "Thaillan Azevedo Gomes",
+          "gols": [
+            {
+              "minuto": 31,
+              "acrescimo": 0,
+              "periodo": "2T",
+              "atleta": "Luiz Claudio Bezerra Alves",
+              "clube": "Náutico",
+              "tipo": "Normal"
+            }
+          ],
+          "cartoes": [
+            {
+              "minuto": 13,
+              "periodo": "2T",
+              "atleta": "Claudio Aparecido Tencati",
+              "clube": "Botafogo",
+              "cartao": "Amarelo",
+              "motivo": "reclamacao"
+            },
+            {
+              "minuto": 24,
+              "periodo": "2T",
+              "atleta": "Arnaldo Manoel de Almeida",
+              "clube": "Náutico",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 29,
+              "periodo": "2T",
+              "atleta": "Patrick de Carvalho Brey",
+              "clube": "Botafogo",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            },
+            {
+              "minuto": 45,
+              "periodo": "2T",
+              "atleta": "Kaua Almeida da Costa",
+              "clube": "Náutico",
+              "cartao": "Amarelo",
+              "motivo": "falta_temeraria"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

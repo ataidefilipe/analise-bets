@@ -759,3 +759,277 @@ partida_id,temporada,serie,rodada,data,horario,estadio,cidade,uf_estadio,clube_m
 378,2023,B,38,2023-11-25,17:00,Índio Condá,Chapeco,,Chapecoense,chapecoense,SC,Vitória,vitoria,BA,Rafael Rodrigo Klein,3,1,13,Vitoria Mandante
 379,2023,B,38,2023-11-25,17:00,Antônio Guimarães de Almeida,Tombos,,Tombense,tombense,MG,Mirassol,mirassol,SP,Wagner do Nascimento Magalhaes,0,1,1,Vitoria Visitante
 380,2023,B,38,2023-11-25,17:00,Maria Lamas Farache,Natal,,Abc,abc,RN,Vila Nova,vila_nova,GO,Yuri Elino Ferreira da Cruz,2,3,5,Vitoria Visitante
+1,2024,B,1,2024-04-22,21:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Guarani,guarani,SP,Wallas Martins Lopes,2,0,2,Vitoria Mandante
+2,2024,B,1,2024-04-21,18:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Coritiba S.a.f.,coritiba_s_a_f,PR,Emerson Ricardo de Almeida Andrade,1,1,2,Empate
+3,2024,B,1,2024-04-19,19:00,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,America Saf,america_saf,MG,Gustavo Ervino Bauermann,1,1,2,Empate
+4,2024,B,1,2024-04-19,19:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Gremio Novorizontino,gremio_novorizontino,Saf,Crb,crb,AL,Dyorgines Jose Padovani de Andrade,2,1,3,Vitoria Mandante
+5,2024,B,1,2024-04-20,16:30,Urbano Caldeira,Santos,,Santos,santos,SP,Paysandu,paysandu,PA,Lucas Guimaraes Rechatiko Horn,2,0,2,Vitoria Mandante
+167,2026,B,0,,,,,,,,,,,,,0,2,2,Vitoria Visitante
+214,2026,B,0,,,,,,,,,,,,,0,3,3,Vitoria Visitante
+1,2026,B,1,2026-03-21,19:15,Assistente Técnico:,Ribeirao Preto,,Botafogo,botafogo,SP,Fortaleza,fortaleza,CE,Felipe Fernandes de Lima,4,0,4,Vitoria Mandante
+2,2026,B,1,2026-03-22,20:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Gremio Novorizontino,gremio_novorizontino,Saf,Londrina SAF,londrina_saf,PR,Jodis Nascimento de Souza,1,3,4,Vitoria Visitante
+3,2026,B,1,2026-03-22,18:00,Arbitragem,Sao Joao del Rei,,Athletic Club,athletic_club,MG,Ponte Preta,ponte_preta,SP,Fernando Antonio Mendes de Salles Nascimento Filho,2,1,3,Vitoria Mandante
+4,2026,B,1,2026-03-21,18:15,Germano Kruger,Ponta Grossa,,Operário,operario,PR,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Lucas Canetto Bellote,1,0,1,Vitoria Mandante
+5,2026,B,1,2026-03-21,18:00,Governador Plácido Aderaldo Castelo,Fortaleza,,Ceará,ceara,CE,Sao Bernardo,sao_bernardo,SP,Lucas Guimaraes Rechatiko Horn,1,1,2,Empate
+6,2026,B,1,2026-03-22,18:00,Hailé Pinheiro,Goiania,,Goiás,goias,GO,América,america,MG,Marcelo de Lima Henrique,3,1,4,Vitoria Mandante
+7,2026,B,1,2026-03-22,16:00,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Juventude,juventude,RS,Kleber Ariel Goncalves Silva,2,0,2,Vitoria Mandante
+8,2026,B,1,2026-03-22,16:00,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Criciúma,criciuma,SC,Andre Luiz Skettino Policarpo Bento,0,1,1,Vitoria Visitante
+9,2026,B,1,2026-03-21,20:30,Arena Pantanal,Cuiaba,,Cuiabá Saf,cuiaba_saf,MT,Sport Recife,sport_recife,PE,Maguielson Lima Barbosa,0,0,0,Empate
+10,2026,B,1,2026-03-21,17:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Crb,crb,AL,Bruno Pereira Vasconcelos,2,2,4,Empate
+11,2026,B,2,2026-04-01,21:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Ceará,ceara,CE,Kleber Ariel Goncalves Silva,1,1,2,Empate
+12,2026,B,2,2026-04-02,19:00,1º de Maio,Sao Bernardo do Campo,,Sao Bernardo,sao_bernardo,SP,Operário,operario,PR,Leo Simao Holanda,1,2,3,Vitoria Visitante
+13,2026,B,2,2026-04-01,18:00,ARENA MRV,Belo Horizonte,,América,america,MG,Botafogo,botafogo,SP,Diego da Costa Cidral,1,2,3,Vitoria Visitante
+14,2026,B,2,2026-04-01,19:00,Vitorino Gonçalves Dias,Londrina,,Londrina SAF,londrina_saf,PR,Goiás,goias,GO,Pierry Dias dos Santos,2,2,4,Empate
+15,2026,B,2,2026-03-31,19:00,Assistente Técnico:,Fortaleza,,Fortaleza,fortaleza,CE,Cuiabá Saf,cuiaba_saf,MT,Andre Luiz Skettino Policarpo Bento,0,0,0,Empate
+16,2026,B,2,2026-04-01,19:00,Antônio Accioly,Goiania,,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Náutico,nautico,PE,Lucas Guimaraes Rechatiko Horn,1,2,3,Vitoria Visitante
+17,2026,B,2,2026-04-01,21:30,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Athletic Club,athletic_club,MG,Bruno Pereira Vasconcelos,1,1,2,Empate
+18,2026,B,2,2026-04-01,19:00,Adelmar da Costa Carvalho,Recife,,Sport Recife,sport_recife,PE,Vila Nova,vila_nova,GO,Jose Mendonca da Silva Junior,1,1,2,Empate
+19,2026,B,2,2026-04-01,21:30,Rei Pelé,Maceio,,Crb,crb,AL,Avaí,avai,SC,Afro Rocha De Carvalho Filho,0,1,1,Vitoria Visitante
+20,2026,B,2,2026-03-31,18:30,Alfredo Jaconi,Caxias do Sul,,Juventude,juventude,RS,Gremio Novorizontino,gremio_novorizontino,Saf,Paulo Henrique Schleich Vollkopf,0,0,0,Empate
+21,2026,B,3,2026-04-05,20:30,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Sao Bernardo,sao_bernardo,SP,Marcelo de Lima Henrique,1,2,3,Vitoria Visitante
+22,2026,B,3,2026-04-05,18:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Gremio Novorizontino,gremio_novorizontino,Saf,Crb,crb,AL,Lucas Paulo Torezin,1,1,2,Empate
+23,2026,B,3,2026-04-05,20:00,Arbitragem,Sao Joao del Rei,,Athletic Club,athletic_club,MG,América,america,MG,Davi De Oliveira Lacerda,1,1,2,Empate
+24,2026,B,3,2026-04-04,20:30,Vitorino Gonçalves Dias,Londrina,,Londrina SAF,londrina_saf,PR,Sport Recife,sport_recife,PE,Braulio da Silva Machado,1,2,3,Vitoria Visitante
+25,2026,B,3,2026-04-04,16:00,Assistente Técnico:,Fortaleza,,Fortaleza SAF,fortaleza_saf,CE,Juventude,juventude,RS,Raphael Claus,2,1,3,Vitoria Mandante
+26,2026,B,3,2026-04-06,21:00,Hailé Pinheiro,Goiania,,Goiás,goias,GO,Criciúma,criciuma,SC,Alex Gomes Stefano,1,0,1,Vitoria Mandante
+27,2026,B,3,2026-04-05,16:00,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Operário,operario,PR,Denis da Silva Ribeiro Serafim,0,0,0,Empate
+28,2026,B,3,2026-04-04,18:00,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Ponte Preta,ponte_preta,SP,Paulo Cesar Zanovelli da Silva,1,0,1,Vitoria Mandante
+29,2026,B,3,2026-04-04,18:00,Arena Pantanal,Cuiaba,,Cuiabá Saf,cuiaba_saf,MT,Ceará,ceara,CE,Afro Rocha De Carvalho Filho,0,2,2,Vitoria Visitante
+30,2026,B,3,2026-04-04,20:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Ramon Abatti Abel,2,1,3,Vitoria Mandante
+31,2026,B,4,2026-04-11,18:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Vila Nova,vila_nova,GO,Afro Rocha De Carvalho Filho,0,1,1,Vitoria Visitante
+32,2026,B,4,2026-04-12,18:00,Assistente Técnico:,Sao Bernardo do Campo,,Sao Bernardo,sao_bernardo,SP,Fortaleza SAF,fortaleza_saf,CE,Yuri Elino Ferreira da Cruz,0,1,1,Vitoria Visitante
+33,2026,B,4,2026-04-12,18:00,Raimundo Sampaio,Belo Horizonte,,América,america,MG,Gremio Novorizontino,gremio_novorizontino,Saf,Braulio da Silva Machado,0,3,3,Vitoria Visitante
+34,2026,B,4,2026-04-12,18:00,Germano Kruger,Ponta Grossa,,Operário,operario,PR,Cuiabá Saf,cuiaba_saf,MT,Thaillan Azevedo Gomes,0,0,0,Empate
+35,2026,B,4,2026-04-11,20:30,Governador Plácido Aderaldo Castelo,Fortaleza,,Ceará,ceara,CE,Náutico,nautico,PE,Wilton Pereira Sampaio,1,0,1,Vitoria Mandante
+36,2026,B,4,2026-04-12,20:30,Antônio Accioly,Goiania,,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Londrina SAF,londrina_saf,PR,Joao Vitor Gobi,2,1,3,Vitoria Mandante
+37,2026,B,4,2026-04-10,20:30,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Botafogo,botafogo,SP,Lucas Guimaraes Rechatiko Horn,1,0,1,Vitoria Mandante
+38,2026,B,4,2026-04-11,18:00,Adelmar da Costa Carvalho,Recife,,Sport Recife,sport_recife,PE,Avaí,avai,SC,Lucas Paulo Torezin,2,2,4,Empate
+39,2026,B,4,2026-04-12,20:00,Rei Pelé,Maceio,,Crb,crb,AL,Athletic Club,athletic_club,MG,Alex Gomes Stefano,2,3,5,Vitoria Visitante
+40,2026,B,4,2026-04-11,16:00,Alfredo Jaconi,Caxias do Sul,,Juventude,juventude,RS,Goiás,goias,GO,Lucas Casagrande,2,0,2,Vitoria Mandante
+41,2026,B,5,2026-04-19,16:00,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Arthur Gomes Rabelo,1,1,2,Empate
+42,2026,B,5,2026-04-19,20:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Gremio Novorizontino,gremio_novorizontino,Saf,Athletic Club,athletic_club,MG,Jefferson Ferreira de Moraes,2,1,3,Vitoria Mandante
+43,2026,B,5,2026-04-18,18:00,Raimundo Sampaio,Belo Horizonte,,América,america,MG,Sport Recife,sport_recife,PE,Gustavo Ervino Bauermann,0,0,0,Empate
+44,2026,B,5,2026-04-19,16:00,Vitorino Gonçalves Dias,Londrina,,Londrina SAF,londrina_saf,PR,Ceará,ceara,CE,Paulo Henrique Schleich Vollkopf,0,0,0,Empate
+45,2026,B,5,2026-04-19,20:00,Presidente Vargas,Fortaleza,,Fortaleza SAF,fortaleza_saf,CE,Criciúma,criciuma,SC,Lucas Casagrande,3,2,5,Vitoria Mandante
+46,2026,B,5,2026-04-19,18:00,Hailé Pinheiro,Goiania,,Goiás,goias,GO,Cuiabá Saf,cuiaba_saf,MT,Bruno Mota Correia,0,2,2,Vitoria Visitante
+47,2026,B,5,2026-04-18,20:30,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Ponte Preta,ponte_preta,SP,Marcelo de Lima Henrique,1,2,3,Vitoria Visitante
+48,2026,B,5,2026-04-18,18:00,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Sao Bernardo,sao_bernardo,SP,Alisson Sidnei Furtado,0,3,3,Vitoria Visitante
+49,2026,B,5,2026-04-18,20:45,Rei Pelé,Maceio,,Crb,crb,AL,Juventude,juventude,RS,Andre Luiz Skettino Policarpo Bento,0,1,1,Vitoria Visitante
+50,2026,B,5,2026-04-18,18:30,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Operário,operario,PR,Jodis Nascimento de Souza,2,1,3,Vitoria Mandante
+51,2026,B,6,2026-04-24,20:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,América,america,MG,Lucas Casagrande,1,0,1,Vitoria Mandante
+52,2026,B,6,2026-04-26,16:00,1º de Maio,Sao Bernardo do Campo,,Sao Bernardo,sao_bernardo,SP,Goiás,goias,GO,Bruno Pereira Vasconcelos,1,0,1,Vitoria Mandante
+53,2026,B,6,2026-04-27,19:00,Arbitragem,Sao Joao del Rei,,Athletic SAF,athletic_saf,MG,Náutico,nautico,PE,Lucas Paulo Torezin,0,1,1,Vitoria Visitante
+54,2026,B,6,2026-04-26,18:00,Assistente Técnico:,Ponta Grossa,,Operário,operario,PR,Fortaleza SAF,fortaleza_saf,CE,Jefferson Ferreira de Moraes,0,0,0,Empate
+55,2026,B,6,2026-04-26,18:00,Governador Plácido Aderaldo Castelo,Fortaleza,,Ceará,ceara,CE,Vila Nova,vila_nova,GO,Yuri Elino Ferreira da Cruz,3,3,6,Empate
+56,2026,B,6,2026-04-26,20:30,Antônio Accioly,Goiania,,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Avaí,avai,SC,Afro Rocha De Carvalho Filho,2,1,3,Vitoria Mandante
+57,2026,B,6,2026-04-26,20:30,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Crb,crb,AL,Lucas Canetto Bellote,3,1,4,Vitoria Mandante
+58,2026,B,6,2026-04-25,20:30,Adelmar da Costa Carvalho,Recife,,Sport Recife,sport_recife,PE,Gremio Novorizontino,gremio_novorizontino,Saf,Lucas Guimaraes Rechatiko Horn,1,0,1,Vitoria Mandante
+59,2026,B,6,2026-04-22,21:30,Arena Pantanal,Cuiaba,,Cuiabá Saf,cuiaba_saf,MT,Botafogo,botafogo,SP,Andre Luiz Skettino Policarpo Bento,1,1,2,Empate
+60,2026,B,6,2026-04-25,21:00,Alfredo Jaconi,Caxias do Sul,,Juventude,juventude,RS,Londrina SAF,londrina_saf,PR,Gustavo Ervino Bauermann,1,0,1,Vitoria Mandante
+61,2026,B,7,2026-05-02,16:00,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Náutico,nautico,PE,Ramon Abatti Abel,1,1,2,Empate
+62,2026,B,7,2026-05-03,16:00,1º de Maio,Sao Bernardo do Campo,,Sao Bernardo,sao_bernardo,SP,Ponte Preta,ponte_preta,SP,Fabiano Monteiro dos Santos,3,0,3,Vitoria Mandante
+63,2026,B,7,2026-05-03,20:30,Raimundo Sampaio,Belo Horizonte,,América,america,MG,Crb,crb,AL,Alisson Sidnei Furtado,1,2,3,Vitoria Visitante
+64,2026,B,7,2026-05-03,16:00,Germano Kruger,Ponta Grossa,,Operário,operario,PR,Londrina SAF,londrina_saf,PR,Anderson Daronco,3,0,3,Vitoria Mandante
+65,2026,B,7,2026-05-02,20:30,Assistente Técnico:,Fortaleza,,Fortaleza SAF,fortaleza_saf,CE,Goiás,goias,GO,Andre Luiz Skettino Policarpo Bento,4,1,5,Vitoria Mandante
+66,2026,B,7,2026-05-03,18:30,Antônio Accioly,Goiania,,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Juventude,juventude,RS,Jose Mendonca da Silva Junior,0,0,0,Empate
+67,2026,B,7,2026-05-03,20:30,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Gremio Novorizontino,gremio_novorizontino,Saf,Wagner do Nascimento Magalhaes,3,3,6,Empate
+68,2026,B,7,2026-05-03,18:00,Adelmar da Costa Carvalho,Recife,,Sport Recife,sport_recife,PE,Ceará,ceara,CE,Braulio da Silva Machado,2,0,2,Vitoria Mandante
+72,2026,B,8,2026-05-10,19:30,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Gremio Novorizontino,gremio_novorizontino,Saf,Botafogo,botafogo,SP,Lucas Canetto Bellote,1,0,1,Vitoria Mandante
+75,2026,B,8,2026-05-09,19:00,Governador Plácido Aderaldo Castelo,Fortaleza,,Ceará,ceara,CE,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Fernando Antonio Mendes de Salles Nascimento Filho,0,1,1,Vitoria Visitante
+76,2026,B,8,2026-05-09,16:00,Hailé Pinheiro,Goiania,,Goiás,goias,GO,Vila Nova,vila_nova,GO,Flavio Rodrigues de Souza,1,0,1,Vitoria Mandante
+77,2026,B,8,2026-05-10,18:30,Assistente Técnico:,Florianopolis,,Avaí,avai,SC,Fortaleza SAF,fortaleza_saf,CE,Paulo Cesar Zanovelli da Silva,0,0,0,Empate
+83,2026,B,9,2026-05-17,16:00,Arbitragem,Sao Joao del Rei,,Athletic SAF,athletic_saf,MG,Juventude,juventude,RS,Joao Vitor Gobi,1,1,2,Empate
+85,2026,B,9,2026-05-17,18:30,Governador Plácido Aderaldo Castelo,Fortaleza,,Ceará,ceara,CE,Fortaleza SAF,fortaleza_saf,CE,Rodrigo Jose Pereira de Lima,2,1,3,Vitoria Mandante
+86,2026,B,9,2026-05-16,18:30,Hailé Pinheiro,Goiania,,Goiás,goias,GO,Botafogo,botafogo,SP,Denis da Silva Ribeiro Serafim,1,0,1,Vitoria Mandante
+87,2026,B,9,2026-05-17,18:30,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Leo Simao Holanda,1,1,2,Empate
+88,2026,B,9,2026-05-17,20:30,Adelmar da Costa Carvalho,Recife,,Sport Recife,sport_recife,PE,Crb,crb,AL,Edina Alves Batista,1,2,3,Vitoria Visitante
+89,2026,B,9,2026-05-16,20:30,Arena Pantanal,Cuiaba,,Cuiabá,cuiaba,MT,Gremio Novorizontino,gremio_novorizontino,Saf,Bruno Pereira Vasconcelos,0,0,0,Empate
+90,2026,B,9,2026-05-17,18:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Avaí,avai,SC,Andre Luiz Skettino Policarpo Bento,2,0,2,Vitoria Mandante
+91,2026,B,10,2026-05-25,19:00,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Athletic SAF,athletic_saf,MG,Bruno Pereira Vasconcelos,1,2,3,Vitoria Visitante
+92,2026,B,10,2026-05-23,16:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Gremio Novorizontino,gremio_novorizontino,Saf,Ceará,ceara,CE,Jonathan Benkenstein Pinheiro,2,1,3,Vitoria Mandante
+93,2026,B,10,2026-05-24,18:30,Raimundo Sampaio,Belo Horizonte,,América,america,MG,Vila Nova,vila_nova,GO,Matheus Delgado Candançan,1,2,3,Vitoria Visitante
+94,2026,B,10,2026-05-24,20:30,Germano Kruger,Ponta Grossa,,Operário,operario,PR,Criciúma,criciuma,SC,Alex Gomes Stefano,1,1,2,Empate
+95,2026,B,10,2026-05-23,18:30,Fortaleza SAF,CE,,Fortaleza SAF,fortaleza_saf,CE,Londrina SAF,londrina_saf,PR,Braulio da Silva Machado,3,0,3,Vitoria Mandante
+96,2026,B,10,2026-05-24,16:00,Antônio Accioly,Goiania,,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Sao Bernardo,sao_bernardo,SP,Paulo Cesar Zanovelli da Silva,0,1,1,Vitoria Visitante
+97,2026,B,10,2026-05-24,19:00,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Goiás,goias,GO,Joao Vitor Gobi,0,2,2,Vitoria Visitante
+98,2026,B,10,2026-05-22,19:00,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Cuiabá,cuiaba,MT,Edina Alves Batista,1,0,1,Vitoria Mandante
+99,2026,B,10,2026-05-24,16:30,Rei Pelé,Maceio,,Crb,crb,AL,Ponte Preta,ponte_preta,SP,Wagner do Nascimento Magalhaes,4,2,6,Vitoria Mandante
+100,2026,B,10,2026-05-23,20:30,Alfredo Jaconi,Caxias do Sul,,Juventude,juventude,RS,Sport Recife,sport_recife,PE,Lucas Paulo Torezin,0,1,1,Vitoria Visitante
+101,2026,B,11,2026-06-01,19:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Botafogo,botafogo,SP,Edina Alves Batista,0,0,0,Empate
+102,2026,B,11,2026-05-31,11:00,1º de Maio,Sao Bernardo do Campo,,Sao Bernardo,sao_bernardo,SP,Gremio Novorizontino,gremio_novorizontino,Saf,Joao Vitor Gobi,1,1,2,Empate
+103,2026,B,11,2026-05-30,18:00,Assistente Técnico:,Sao Joao del Rei,,Athletic SAF,athletic_saf,MG,Fortaleza SAF,fortaleza_saf,CE,Wagner do Nascimento Magalhaes,1,0,1,Vitoria Mandante
+104,2026,B,11,2026-05-31,11:00,Vitorino Gonçalves Dias,Londrina,,Londrina SAF,londrina_saf,PR,Vila Nova,vila_nova,GO,Bruno Pereira Vasconcelos,0,1,1,Vitoria Visitante
+105,2026,B,11,2026-05-31,16:00,Governador Plácido Aderaldo Castelo,Fortaleza,,Ceará,ceara,CE,Operário,operario,PR,Gustavo Ervino Bauermann,1,2,3,Vitoria Visitante
+106,2026,B,11,2026-05-30,16:00,Antônio Accioly,Goiania,,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Goiás,goias,GO,Bruno Arleu de Araujo,1,1,2,Empate
+107,2026,B,11,2026-05-30,16:00,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Criciúma,criciuma,SC,Rodrigo Jose Pereira de Lima,1,2,3,Vitoria Visitante
+108,2026,B,11,2026-05-30,20:30,Adelmar da Costa Carvalho,Recife,,Sport Recife,sport_recife,PE,Náutico,nautico,PE,Braulio da Silva Machado,2,0,2,Vitoria Mandante
+109,2026,B,11,2026-05-31,20:30,Arena Pantanal,Cuiaba,,Cuiabá,cuiaba,MT,Crb,crb,AL,Andre Luiz Skettino Policarpo Bento,2,0,2,Vitoria Mandante
+110,2026,B,11,2026-05-29,21:00,Alfredo Jaconi,Caxias do Sul,,Juventude,juventude,RS,América,america,MG,Savio Pereira Sampaio,3,0,3,Vitoria Mandante
+111,2026,B,12,2026-06-09,19:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Cuiabá,cuiaba,MT,Marcelo de Lima Henrique,1,2,3,Vitoria Visitante
+112,2026,B,12,2026-06-10,21:00,Adelmar da Costa Carvalho,Recife,,Sport Recife,sport_recife,PE,Athletic SAF,athletic_saf,MG,Afro Rocha De Carvalho Filho,1,1,2,Empate
+113,2026,B,12,2026-06-08,20:00,Raimundo Sampaio,Belo Horizonte,,América,america,MG,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Lucas Canetto Bellote,1,2,3,Vitoria Visitante
+114,2026,B,12,2026-06-05,20:00,Major Antônio Couto Pereira,Curitiba,,Operário,operario,PR,Juventude,juventude,RS,Yuri Elino Ferreira da Cruz,2,1,3,Vitoria Mandante
+115,2026,B,12,2026-06-10,20:00,Presidente Vargas,Fortaleza,,Ceará,ceara,CE,Avaí,avai,SC,Jonathan Benkenstein Pinheiro,2,1,3,Vitoria Mandante
+116,2026,B,12,2026-06-10,20:00,Hailé Pinheiro,Goiania,,Goiás,goias,GO,Gremio Novorizontino,gremio_novorizontino,Saf,Braulio da Silva Machado,0,4,4,Vitoria Visitante
+117,2026,B,12,2026-06-06,11:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Londrina SAF,londrina_saf,PR,Paulo Henrique Schleich Vollkopf,1,0,1,Vitoria Mandante
+118,2026,B,12,2026-06-09,19:00,Cartão Vermelho Direto,Recife,,Náutico,nautico,PE,Fortaleza SAF,fortaleza_saf,CE,Lucas Casagrande,0,1,1,Vitoria Visitante
+119,2026,B,12,2026-06-07,16:00,Rei Pelé,Maceio,,Crb,crb,AL,Sao Bernardo,sao_bernardo,SP,Jefferson Ferreira de Moraes,2,3,5,Vitoria Visitante
+120,2026,B,12,2026-06-08,20:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Botafogo,botafogo,SP,Maguielson Lima Barbosa,1,0,1,Vitoria Mandante
+121,2026,B,13,2026-06-14,19:00,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Operário,operario,PR,Jefferson Ferreira de Moraes,2,1,3,Vitoria Mandante
+122,2026,B,13,2026-06-14,11:00,1º de Maio,Sao Bernardo do Campo,,Sao Bernardo,sao_bernardo,SP,Sport Recife,sport_recife,PE,Andre Luiz Skettino Policarpo Bento,0,0,0,Empate
+123,2026,B,13,2026-06-14,16:00,Arbitragem,Sao Joao del Rei,,Athletic SAF,athletic_saf,MG,Goiás,goias,GO,Alisson Sidnei Furtado,1,1,2,Empate
+124,2026,B,13,2026-06-15,21:00,Vitorino Gonçalves Dias,Londrina,,Londrina SAF,londrina_saf,PR,Avaí,avai,SC,Savio Pereira Sampaio,3,2,5,Vitoria Mandante
+125,2026,B,13,2026-06-16,20:00,Governador Plácido Aderaldo Castelo,Fortaleza,,Fortaleza SAF,fortaleza_saf,CE,América,america,MG,Alex Gomes Stefano,0,3,3,Vitoria Visitante
+126,2026,B,13,2026-06-12,19:00,Antônio Accioly,Goiania,,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Crb,crb,AL,Paulo Henrique Schleich Vollkopf,3,3,6,Empate
+127,2026,B,13,2026-06-15,21:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Ceará,ceara,CE,Joao Vitor Gobi,1,1,2,Empate
+128,2026,B,13,2026-06-14,19:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Gremio Novorizontino,gremio_novorizontino,Saf,Náutico,nautico,PE,Gustavo Ervino Bauermann,2,2,4,Empate
+129,2026,B,13,2026-06-14,17:00,Arena Pantanal,Cuiaba,,Cuiabá,cuiaba,MT,Vila Nova,vila_nova,GO,Denis da Silva Ribeiro Serafim,1,0,1,Vitoria Mandante
+130,2026,B,13,2026-06-14,11:00,Alfredo Jaconi,Caxias do Sul,,Juventude,juventude,RS,Ponte Preta,ponte_preta,SP,Kleber Ariel Goncalves Silva,3,0,3,Vitoria Mandante
+131,2026,B,14,2026-06-22,20:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Gremio Novorizontino,gremio_novorizontino,Saf,Maguielson Lima Barbosa,0,2,2,Vitoria Visitante
+132,2026,B,14,2026-06-21,17:00,1º de Maio,Sao Bernardo do Campo,,Sao Bernardo,sao_bernardo,SP,Juventude,juventude,RS,Davi De Oliveira Lacerda,0,1,1,Vitoria Visitante
+133,2026,B,14,2026-06-23,20:00,Raimundo Sampaio,Belo Horizonte,,América,america,MG,Criciúma,criciuma,SC,Edina Alves Batista,0,1,1,Vitoria Visitante
+134,2026,B,14,2026-06-20,11:00,Vitorino Gonçalves Dias,Londrina,,Londrina SAF,londrina_saf,PR,Athletic SAF,athletic_saf,MG,Charly Wendy Straub Deretti,2,0,2,Vitoria Mandante
+135,2026,B,14,2026-06-20,19:00,Presidente Vargas,Fortaleza,,Ceará,ceara,CE,Botafogo,botafogo,SP,Afro Rocha De Carvalho Filho,0,1,1,Vitoria Visitante
+136,2026,B,14,2026-06-21,18:30,Hailé Pinheiro,Goiania,,Goiás,goias,GO,Operário,operario,PR,Bruno Pereira Vasconcelos,0,3,3,Vitoria Visitante
+137,2026,B,14,2026-06-21,11:00,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Cuiabá,cuiaba,MT,Yuri Elino Ferreira da Cruz,1,0,1,Vitoria Mandante
+138,2026,B,14,2026-06-18,21:00,Adelmar da Costa Carvalho,Recife,,Sport Recife,sport_recife,PE,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Rafael Rodrigo Klein,1,1,2,Empate
+139,2026,B,14,2026-06-21,16:00,Assistente Técnico:,Maceio,,Crb,crb,AL,Fortaleza SAF,fortaleza_saf,CE,Bruno Arleu de Araujo,1,1,2,Empate
+140,2026,B,14,2026-06-20,19:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Náutico,nautico,PE,Anderson Daronco,4,3,7,Vitoria Mandante
+141,2026,B,15,2026-06-30,20:00,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Crb,crb,AL,Paulo Cesar Zanovelli da Silva,0,1,1,Vitoria Visitante
+142,2026,B,15,2026-06-26,19:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Gremio Novorizontino,gremio_novorizontino,Saf,Vila Nova,vila_nova,GO,Lucas Paulo Torezin,2,1,3,Vitoria Mandante
+143,2026,B,15,2026-06-28,16:00,Arbitragem,Sao Joao del Rei,,Athletic SAF,athletic_saf,MG,Avaí,avai,SC,Daiane Muniz,1,0,1,Vitoria Mandante
+144,2026,B,15,2026-06-27,11:00,Germano Kruger,Ponta Grossa,,Operário,operario,PR,América,america,MG,Jonathan Benkenstein Pinheiro,1,0,1,Vitoria Mandante
+145,2026,B,15,2026-06-28,18:30,Assistente Técnico:,Fortaleza,,Fortaleza SAF,fortaleza_saf,CE,Sport Recife,sport_recife,PE,Anderson Daronco,2,1,3,Vitoria Mandante
+146,2026,B,15,2026-06-28,16:00,Antônio Accioly,Goiania,,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Ponte Preta,ponte_preta,SP,Braulio da Silva Machado,2,0,2,Vitoria Mandante
+147,2026,B,15,2026-06-27,16:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,São Bernardo SAF,sao_bernardo_saf,SP,Bruno Arleu de Araujo,1,0,1,Vitoria Mandante
+148,2026,B,15,2026-06-28,18:30,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Goiás,goias,GO,Edina Alves Batista,0,1,1,Vitoria Visitante
+149,2026,B,15,2026-06-25,20:30,Arena Pantanal,Cuiaba,,Cuiabá,cuiaba,MT,Londrina SAF,londrina_saf,PR,Matheus Delgado Candançan,2,2,4,Empate
+150,2026,B,15,2026-06-28,16:00,Alfredo Jaconi,Caxias do Sul,,Juventude,juventude,RS,Ceará,ceara,CE,Lucas Casagrande,2,0,2,Vitoria Mandante
+151,2026,B,16,2026-07-06,19:00,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Avaí,avai,SC,Jodis Nascimento de Souza,3,1,4,Vitoria Mandante
+152,2026,B,16,2026-07-04,16:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Gremio Novorizontino,gremio_novorizontino,Saf,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Afro Rocha De Carvalho Filho,3,0,3,Vitoria Mandante
+153,2026,B,16,2026-07-07,20:00,Arbitragem,Sao Joao del Rei,,Athletic SAF,athletic_saf,MG,Operário,operario,PR,Joao Vitor Gobi,0,1,1,Vitoria Visitante
+154,2026,B,16,2026-07-04,16:00,Vitorino Gonçalves Dias,Londrina,,Londrina SAF,londrina_saf,PR,Crb,crb,AL,Arthur Gomes Rabelo,5,0,5,Vitoria Mandante
+155,2026,B,16,2026-07-02,21:00,Assistente Técnico:,Fortaleza,,Fortaleza SAF,fortaleza_saf,CE,Ponte Preta,ponte_preta,SP,Felipe Fernandes de Lima,2,0,2,Vitoria Mandante
+156,2026,B,16,2026-07-04,20:00,Hailé Pinheiro,Goiania,,Goiás,goias,GO,Ceará,ceara,CE,Paulo Henrique Schleich Vollkopf,2,0,2,Vitoria Mandante
+157,2026,B,16,2026-07-04,16:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Sport Recife,sport_recife,PE,Bruno Pereira Vasconcelos,1,0,1,Vitoria Mandante
+158,2026,B,16,2026-07-05,20:30,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Juventude,juventude,RS,Luiz Augusto Silveira Tisne,0,0,0,Empate
+159,2026,B,16,2026-07-02,20:00,Arena Pantanal,Cuiaba,,Cuiabá,cuiaba,MT,América,america,MG,Flavio Rodrigues de Souza,1,0,1,Vitoria Mandante
+160,2026,B,16,2026-07-06,19:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,São Bernardo SAF,sao_bernardo_saf,SP,Yuri Elino Ferreira da Cruz,2,1,3,Vitoria Mandante
+161,2026,B,17,2026-07-08,20:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Criciúma,criciuma,SC,Wiomar Santana de Oliveira,1,2,3,Vitoria Visitante
+162,2026,B,17,2026-07-12,16:00,1º de Maio,Sao Bernardo do Campo,,São Bernardo SAF,sao_bernardo_saf,SP,Cuiabá,cuiaba,MT,Bruno Pereira Vasconcelos,2,2,4,Empate
+163,2026,B,17,2026-07-13,19:00,Raimundo Sampaio,Belo Horizonte,,América,america,MG,Londrina SAF,londrina_saf,PR,Paulo Henrique Schleich Vollkopf,1,1,2,Empate
+164,2026,B,17,2026-07-12,11:00,Germano Kruger,Ponta Grossa,,Operário,operario,PR,Gremio Novorizontino,gremio_novorizontino,Saf,Yuri Elino Ferreira da Cruz,2,1,3,Vitoria Mandante
+165,2026,B,17,2026-07-13,20:30,Presidente Vargas,Fortaleza,,Ceará,ceara,CE,Athletic SAF,athletic_saf,MG,Jose Mendonca da Silva Junior,0,0,0,Empate
+166,2026,B,17,2026-07-12,18:00,Assistente Técnico:,Goiania,,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Fortaleza SAF,fortaleza_saf,CE,Lucas Canetto Bellote,1,0,1,Vitoria Mandante
+168,2026,B,17,2026-07-10,20:00,Adelmar da Costa Carvalho,Recife,,Sport Recife,sport_recife,PE,Botafogo,botafogo,SP,Maguielson Lima Barbosa,3,3,6,Empate
+169,2026,B,17,2026-07-12,19:00,Rei Pelé,Maceio,,Crb,crb,AL,Goiás,goias,GO,Afro Rocha De Carvalho Filho,2,2,4,Empate
+170,2026,B,17,2026-07-10,19:00,Alfredo Jaconi,Caxias do Sul,,Juventude,juventude,RS,Vila Nova,vila_nova,GO,Andre Luiz Skettino Policarpo Bento,1,0,1,Vitoria Mandante
+171,2026,B,18,2026-07-18,16:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Goiás,goias,GO,Charly Wendy Straub Deretti,1,2,3,Vitoria Visitante
+172,2026,B,18,2026-07-17,19:00,1º de Maio,Sao Bernardo do Campo,,São Bernardo SAF,sao_bernardo_saf,SP,Avaí,avai,SC,Lucas Guimaraes Rechatiko Horn,1,1,2,Empate
+173,2026,B,18,2026-07-17,19:00,Raimundo Sampaio,Belo Horizonte,,América,america,MG,Ceará,ceara,CE,Fernando Antonio Mendes de Salles Nascimento Filho,1,1,2,Empate
+174,2026,B,18,2026-07-17,21:00,Vitorino Gonçalves Dias,Londrina,,Londrina SAF,londrina_saf,PR,Botafogo,botafogo,SP,Wagner do Nascimento Magalhaes,0,0,0,Empate
+175,2026,B,18,2026-07-17,21:00,Assistente Técnico:,Fortaleza,,Fortaleza SAF,fortaleza_saf,CE,Gremio Novorizontino,gremio_novorizontino,Saf,Savio Pereira Sampaio,1,0,1,Vitoria Mandante
+176,2026,B,18,2026-07-18,18:00,Antônio Accioly,Goiania,,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Athletic SAF,athletic_saf,MG,Edina Alves Batista,0,0,0,Empate
+177,2026,B,18,2026-07-18,16:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Vila Nova,vila_nova,GO,Felipe Fernandes de Lima,2,0,2,Vitoria Mandante
+178,2026,B,18,2026-07-18,16:00,Adelmar da Costa Carvalho,Recife,,Sport Recife,sport_recife,PE,Operário,operario,PR,Daiane Muniz,2,2,4,Empate
+179,2026,B,18,2026-07-16,20:00,Rei Pelé,Maceio,,Crb,crb,AL,Náutico,nautico,PE,Lucas Paulo Torezin,2,1,3,Vitoria Mandante
+180,2026,B,18,2026-07-17,19:00,Alfredo Jaconi,Caxias do Sul,,Juventude,juventude,RS,Cuiabá,cuiaba,MT,Gustavo Ervino Bauermann,2,0,2,Vitoria Mandante
+181,2026,B,19,2026-07-23,21:30,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Juventude,juventude,RS,Jose Mendonca da Silva Junior,4,2,6,Vitoria Mandante
+182,2026,B,19,2026-07-21,19:30,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Gremio Novorizontino,gremio_novorizontino,Saf,Criciúma,criciuma,SC,Andre Luiz Skettino Policarpo Bento,0,1,1,Vitoria Visitante
+183,2026,B,19,2026-07-23,19:30,Arbitragem,Sao Joao del Rei,,Athletic SAF,athletic_saf,MG,São Bernardo SAF,sao_bernardo_saf,SP,Leonardo Willers Lorenzatto,2,1,3,Vitoria Mandante
+184,2026,B,19,2026-07-22,19:30,Germano Kruger,Ponta Grossa,,Operário,operario,PR,Ponte Preta,ponte_preta,SP,Bruno Pereira Vasconcelos,3,2,5,Vitoria Mandante
+185,2026,B,19,2026-07-22,19:30,Presidente Vargas,Fortaleza,,Ceará,ceara,CE,Crb,crb,AL,Paulo Henrique Schleich Vollkopf,0,1,1,Vitoria Visitante
+186,2026,B,19,2026-07-22,20:30,Hailé Pinheiro,Goiania,,Goiás,goias,GO,Sport Recife,sport_recife,PE,Ramon Abatti Abel,1,1,2,Empate
+187,2026,B,19,2026-07-21,19:30,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,América,america,MG,Jefferson Ferreira de Moraes,2,1,3,Vitoria Mandante
+188,2026,B,19,2026-07-22,21:30,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Londrina SAF,londrina_saf,PR,Bruno Mota Correia,2,1,3,Vitoria Mandante
+189,2026,B,19,2026-07-23,20:30,Arena Pantanal,Cuiaba,,Cuiabá,cuiaba,MT,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Joao Vitor Gobi,0,1,1,Vitoria Visitante
+190,2026,B,19,2026-07-21,21:35,Assistente Técnico:,Goiania,,Vila Nova,vila_nova,GO,Fortaleza SAF,fortaleza_saf,CE,Daiane Muniz,2,1,3,Vitoria Mandante
+191,2026,B,20,2026-07-28,19:30,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Athletic SAF,athletic_saf,MG,Gustavo Ervino Bauermann,1,1,2,Empate
+192,2026,B,20,2026-07-26,16:00,1º de Maio,Sao Bernardo do Campo,,São Bernardo SAF,sao_bernardo_saf,SP,Ceará,ceara,CE,Savio Pereira Sampaio,3,4,7,Vitoria Visitante
+193,2026,B,20,2026-07-26,18:30,Raimundo Sampaio,Belo Horizonte,,América,america,MG,Goiás,goias,GO,Braulio da Silva Machado,1,0,1,Vitoria Mandante
+194,2026,B,20,2026-07-26,18:30,Vitorino Gonçalves Dias,Londrina,,Londrina SAF,londrina_saf,PR,Gremio Novorizontino,gremio_novorizontino,Saf,Thaillan Azevedo Gomes,1,4,5,Vitoria Visitante
+195,2026,B,20,2026-07-28,21:35,Governador Plácido Aderaldo Castelo,Fortaleza,,Fortaleza SAF,fortaleza_saf,CE,Botafogo,botafogo,SP,Charly Wendy Straub Deretti,1,0,1,Vitoria Mandante
+196,2026,B,20,2026-07-27,19:30,Antônio Accioly,Goiania,,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Operário,operario,PR,Afro Rocha De Carvalho Filho,3,1,4,Vitoria Mandante
+197,2026,B,20,2026-07-26,16:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Náutico,nautico,PE,Yuri Elino Ferreira da Cruz,0,0,0,Empate
+198,2026,B,20,2026-07-27,19:30,Adelmar da Costa Carvalho,Recife,,Sport Recife,sport_recife,PE,Cuiabá,cuiaba,MT,Lucas Canetto Bellote,1,1,2,Empate
+199,2026,B,20,2026-07-27,19:30,Rei Pelé,Maceio,,Crb,crb,AL,Vila Nova,vila_nova,GO,Jonathan Benkenstein Pinheiro,2,0,2,Vitoria Mandante
+200,2026,B,20,2026-07-28,19:30,Alfredo Jaconi,Caxias do Sul,,Juventude,juventude,RS,Avaí,avai,SC,Lucas Casagrande,1,0,1,Vitoria Mandante
+201,2026,B,21,2026-08-08,18:30,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,América,america,MG,Kleber Ariel Goncalves Silva,2,1,3,Vitoria Mandante
+202,2026,B,21,2026-08-09,16:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Gremio Novorizontino,gremio_novorizontino,Saf,Juventude,juventude,RS,Charly Wendy Straub Deretti,0,1,1,Vitoria Visitante
+203,2026,B,21,2026-08-09,11:00,Arbitragem,Sao Joao del Rei,,Athletic SAF,athletic_saf,MG,Criciúma,criciuma,SC,Daiane Muniz,2,0,2,Vitoria Mandante
+204,2026,B,21,2026-08-07,19:30,Germano Kruger,Ponta Grossa,,Operário,operario,PR,São Bernardo SAF,sao_bernardo_saf,SP,Luiz Augusto Silveira Tisne,1,3,4,Vitoria Visitante
+205,2026,B,21,2026-08-07,20:30,Governador Plácido Aderaldo Castelo,Fortaleza,,Ceará,ceara,CE,Ponte Preta,ponte_preta,SP,Paulo Cesar Zanovelli da Silva,2,0,2,Vitoria Mandante
+206,2026,B,21,2026-08-10,19:30,Hailé Pinheiro,Goiania,,Goiás,goias,GO,Londrina SAF,londrina_saf,PR,Lucas Canetto Bellote,1,0,1,Vitoria Mandante
+207,2026,B,21,2026-08-11,19:30,R,Florianopolis,,Avaí,avai,SC,CRB,crb,AL,Alex Gomes Stefano,0,1,1,Vitoria Visitante
+208,2026,B,21,2026-08-09,16:00,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Wagner do Nascimento Magalhaes,1,1,2,Empate
+209,2026,B,21,2026-08-09,18:00,Arena Pantanal,Cuiaba,,Cuiabá,cuiaba,MT,Fortaleza SAF,fortaleza_saf,CE,Lucas Paulo Torezin,1,1,2,Empate
+210,2026,B,21,2026-08-08,16:00,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Sport Recife,sport_recife,PE,Afro Rocha De Carvalho Filho,0,1,1,Vitoria Visitante
+211,2026,B,22,2026-08-14,19:30,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Náutico,nautico,PE,Julio Cesar Pfleger,1,1,2,Empate
+212,2026,B,22,2026-08-14,19:30,1º de Maio,Sao Bernardo do Campo,,São Bernardo SAF,sao_bernardo_saf,SP,Botafogo,botafogo,SP,Raimundo Rodrigues De Oliveira Junior,0,1,1,Vitoria Visitante
+213,2026,B,22,2026-08-16,18:30,Raimundo Sampaio,Belo Horizonte,,América,america,MG,Athletic SAF,athletic_saf,MG,Wagner do Nascimento Magalhaes,1,3,4,Vitoria Visitante
+215,2026,B,22,2026-08-15,16:00,Governador Plácido Aderaldo Castelo,Fortaleza,,Ceará,ceara,CE,Cuiabá,cuiaba,MT,Lucas Guimaraes Rechatiko Horn,1,3,4,Vitoria Visitante
+216,2026,B,22,2026-08-15,16:00,Antônio Accioly,Goiania,,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Vila Nova,vila_nova,GO,Matheus Delgado Candançan,0,2,2,Vitoria Visitante
+217,2026,B,22,2026-08-15,16:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Goiás,goias,GO,Lucas Paulo Torezin,1,0,1,Vitoria Mandante
+218,2026,B,22,2026-08-14,20:30,Adelmar da Costa Carvalho,Recife,,Sport Recife,sport_recife,PE,Londrina SAF,londrina_saf,PR,Flavio Rodrigues de Souza,2,1,3,Vitoria Mandante
+219,2026,B,22,2026-08-16,18:30,R,Maceio,,CRB,crb,AL,Gremio Novorizontino,gremio_novorizontino,Saf,Leonardo Willers Lorenzatto,0,0,0,Empate
+220,2026,B,22,2026-08-15,18:30,Alfredo Jaconi,Caxias do Sul,,Juventude,juventude,RS,Fortaleza SAF,fortaleza_saf,CE,Savio Pereira Sampaio,0,0,0,Empate
+221,2026,B,23,2026-08-19,21:30,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Criciúma,criciuma,SC,Felipe Fernandes de Lima,1,1,2,Empate
+222,2026,B,23,2026-08-20,20:30,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Gremio Novorizontino,gremio_novorizontino,Saf,América,america,MG,Braulio da Silva Machado,3,0,3,Vitoria Mandante
+223,2026,B,23,2026-08-20,19:30,R,Sao Joao del Rei,,Athletic SAF,athletic_saf,MG,CRB,crb,AL,Gustavo Ervino Bauermann,0,2,2,Vitoria Visitante
+224,2026,B,23,2026-08-18,19:30,Vitorino Gonçalves Dias,Londrina,,Londrina SAF,londrina_saf,PR,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Yuri Elino Ferreira da Cruz,0,0,0,Empate
+225,2026,B,23,2026-08-19,19:30,Governador Plácido Aderaldo Castelo,Fortaleza,,Fortaleza SAF,fortaleza_saf,CE,São Bernardo SAF,sao_bernardo_saf,SP,Fernando Antonio Mendes de Salles Nascimento Filho,1,1,2,Empate
+226,2026,B,23,2026-08-18,21:35,Hailé Pinheiro,Goiania,,Goiás,goias,GO,Juventude,juventude,RS,Andre Luiz Skettino Policarpo Bento,0,1,1,Vitoria Visitante
+227,2026,B,23,2026-08-19,19:30,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Sport Recife,sport_recife,PE,Joao Vitor Gobi,2,1,3,Vitoria Mandante
+228,2026,B,23,2026-08-18,21:30,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Ceará,ceara,CE,Afro Rocha De Carvalho Filho,1,0,1,Vitoria Mandante
+229,2026,B,23,2026-08-19,20:30,Arena Pantanal,Cuiaba,,Cuiabá,cuiaba,MT,Operário,operario,PR,Bruno Pereira Vasconcelos,1,0,1,Vitoria Mandante
+230,2026,B,23,2026-08-19,20:30,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Ponte Preta,ponte_preta,SP,Maguielson Lima Barbosa,6,0,6,Vitoria Mandante
+231,2026,B,24,2026-08-23,16:00,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,Avaí,avai,SC,Fernando Antonio Mendes de Salles Nascimento Filho,0,2,2,Vitoria Visitante
+232,2026,B,24,2026-08-23,16:00,1º de Maio,Sao Bernardo do Campo,,São Bernardo SAF,sao_bernardo_saf,SP,Náutico,nautico,PE,Franciel dos Santos Martins,1,1,2,Empate
+233,2026,B,24,2026-08-24,19:30,Arbitragem,Sao Joao del Rei,,Athletic SAF,athletic_saf,MG,Gremio Novorizontino,gremio_novorizontino,Saf,Savio Pereira Sampaio,1,4,5,Vitoria Visitante
+234,2026,B,24,2026-08-23,18:00,Germano Kruger,Ponta Grossa,,Operário,operario,PR,Vila Nova,vila_nova,GO,Lucas Guimaraes Rechatiko Horn,0,0,0,Empate
+235,2026,B,24,2026-08-22,18:00,Governador Plácido Aderaldo Castelo,Fortaleza,,Ceará,ceara,CE,Londrina SAF,londrina_saf,PR,Jonathan Benkenstein Pinheiro,2,1,3,Vitoria Mandante
+236,2026,B,24,2026-08-25,19:30,Antônio Accioly,Goiania,,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Botafogo,botafogo,SP,Wagner do Nascimento Magalhaes,3,0,3,Vitoria Mandante
+237,2026,B,24,2026-08-23,18:30,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Fortaleza SAF,fortaleza_saf,CE,Alex Gomes Stefano,0,2,2,Vitoria Visitante
+238,2026,B,24,2026-08-24,19:30,Adelmar da Costa Carvalho,Recife,,Sport Recife,sport_recife,PE,América,america,MG,Denis da Silva Ribeiro Serafim,3,0,3,Vitoria Mandante
+239,2026,B,24,2026-08-22,18:30,Arena Pantanal,Cuiaba,,Cuiabá,cuiaba,MT,Goiás,goias,GO,Paulo Cesar Zanovelli da Silva,1,1,2,Empate
+240,2026,B,24,2026-08-25,19:30,R,Caxias do Sul,,Juventude,juventude,RS,CRB,crb,AL,Daiane Muniz,2,1,3,Vitoria Mandante
+241,2026,B,25,2026-08-29,18:30,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Cuiabá,cuiaba,MT,Pierry Dias dos Santos,1,2,3,Vitoria Visitante
+242,2026,B,25,2026-08-28,20:30,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Gremio Novorizontino,gremio_novorizontino,Saf,Sport Recife,sport_recife,PE,Maguielson Lima Barbosa,2,1,3,Vitoria Mandante
+243,2026,B,25,2026-08-30,16:00,Raimundo Sampaio,Belo Horizonte,,América,america,MG,Ponte Preta,ponte_preta,SP,Bruno Pereira Vasconcelos,2,0,2,Vitoria Mandante
+244,2026,B,25,2026-09-01,19:30,Vitorino Gonçalves Dias,Londrina,,Londrina SAF,londrina_saf,PR,Juventude,juventude,RS,Arthur Gomes Rabelo,0,0,0,Empate
+245,2026,B,25,2026-08-31,19:30,Governador Plácido Aderaldo Castelo,Fortaleza,,Fortaleza SAF,fortaleza_saf,CE,Operário,operario,PR,Jefferson Ferreira de Moraes,1,1,2,Empate
+246,2026,B,25,2026-08-28,19:30,Hailé Pinheiro,Goiania,,Goiás,goias,GO,São Bernardo SAF,sao_bernardo_saf,SP,Jonathan Benkenstein Pinheiro,2,1,3,Vitoria Mandante
+247,2026,B,25,2026-08-30,16:00,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Lucas Canetto Bellote,0,1,1,Vitoria Visitante
+248,2026,B,25,2026-08-28,20:30,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Athletic SAF,athletic_saf,MG,Yuri Elino Ferreira da Cruz,2,1,3,Vitoria Mandante
+249,2026,B,25,2026-08-30,18:00,R,Maceio,,CRB,crb,AL,Criciúma,criciuma,SC,Raimundo Rodrigues De Oliveira Junior,2,1,3,Vitoria Mandante
+250,2026,B,25,2026-08-30,18:30,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Ceará,ceara,CE,Leonardo Willers Lorenzatto,2,0,2,Vitoria Mandante
+251,2026,B,26,2026-09-06,18:30,Moisés Lucarelli,Campinas,,Ponte Preta,ponte_preta,SP,São Bernardo SAF,sao_bernardo_saf,SP,Edina Alves Batista,0,2,2,Vitoria Visitante
+252,2026,B,26,2026-09-05,16:00,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Gremio Novorizontino,gremio_novorizontino,Saf,Avaí,avai,SC,Wilton Pereira Sampaio,3,1,4,Vitoria Mandante
+253,2026,B,26,2026-09-04,20:30,Arbitragem,Sao Joao del Rei,,Athletic SAF,athletic_saf,MG,Vila Nova,vila_nova,GO,Rafael Rodrigo Klein,5,0,5,Vitoria Mandante
+254,2026,B,26,2026-09-06,11:00,Vitorino Gonçalves Dias,Londrina,,Londrina SAF,londrina_saf,PR,Operário,operario,PR,Bruno Arleu de Araujo,1,2,3,Vitoria Visitante
+255,2026,B,26,2026-09-05,18:30,Governador Plácido Aderaldo Castelo,Fortaleza,,Ceará,ceara,CE,Sport Recife,sport_recife,PE,Flavio Rodrigues de Souza,2,1,3,Vitoria Mandante
+256,2026,B,26,2026-09-05,16:00,Hailé Pinheiro,Goiania,,Goiás,goias,GO,Fortaleza SAF,fortaleza_saf,CE,Raphael Claus,0,1,1,Vitoria Visitante
+257,2026,B,26,2026-09-04,19:30,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Cuiabá,cuiaba,MT,Matheus Delgado Candançan,2,0,2,Vitoria Mandante
+258,2026,B,26,2026-09-03,20:00,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Botafogo,botafogo,SP,Thaillan Azevedo Gomes,1,0,1,Vitoria Mandante
+259,2026,B,26,2026-09-04,21:30,R,Maceio,,CRB,crb,AL,América,america,MG,Marianna Nanni Batalha,3,1,4,Vitoria Mandante
+260,2026,B,26,2026-09-05,18:00,Alfredo Jaconi,Caxias do Sul,,Juventude,juventude,RS,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Ramon Abatti Abel,2,2,4,Empate
+261,2026,B,27,2026-09-09,19:30,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Gremio Novorizontino,gremio_novorizontino,Saf,Julio Cesar Pfleger,1,3,4,Vitoria Visitante
+262,2026,B,27,2026-09-10,19:30,1º de Maio,Sao Bernardo do Campo,,São Bernardo SAF,sao_bernardo_saf,SP,Londrina SAF,londrina_saf,PR,Leonardo Willers Lorenzatto,1,2,3,Vitoria Visitante
+263,2026,B,27,2026-09-09,20:30,Raimundo Sampaio,Belo Horizonte,,América,america,MG,Náutico,nautico,PE,Kleber Ariel Goncalves Silva,2,1,3,Vitoria Mandante
+264,2026,B,27,2026-09-09,20:30,R,Ponta Grossa,,Operário,operario,PR,CRB,crb,AL,Arthur Gomes Rabelo,3,0,3,Vitoria Mandante
+265,2026,B,27,2026-09-09,19:30,Governador Plácido Aderaldo Castelo,Fortaleza,,Fortaleza SAF,fortaleza_saf,CE,Avaí,avai,SC,Yuri Elino Ferreira da Cruz,1,0,1,Vitoria Mandante
+266,2026,B,27,2026-09-09,21:30,Antônio Accioly,Goiania,,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Ceará,ceara,CE,Gustavo Ervino Bauermann,2,1,3,Vitoria Mandante
+267,2026,B,27,2026-09-08,21:00,Heriberto Hulse,Criciuma,,Criciúma,criciuma,SC,Juventude,juventude,RS,Fernando Antonio Mendes de Salles Nascimento Filho,0,2,2,Vitoria Visitante
+268,2026,B,27,2026-09-10,21:30,Adelmar da Costa Carvalho,Recife,,Sport Recife,sport_recife,PE,Ponte Preta,ponte_preta,SP,Raimundo Rodrigues De Oliveira Junior,2,0,2,Vitoria Mandante
+269,2026,B,27,2026-09-08,20:30,Arena Pantanal,Cuiaba,,Cuiabá,cuiaba,MT,Athletic SAF,athletic_saf,MG,Bruno Pereira Vasconcelos,3,0,3,Vitoria Mandante
+270,2026,B,27,2026-09-10,19:30,Onésio Brasileiro Alvarenga,Goiania,,Vila Nova,vila_nova,GO,Goiás,goias,GO,Anderson Daronco,2,0,2,Vitoria Mandante
+271,2026,B,28,2026-09-14,19:30,Santa Cruz,Ribeirao Preto,,Botafogo,botafogo,SP,Goiás,goias,GO,Alex Gomes Stefano,1,3,4,Vitoria Visitante
+272,2026,B,28,2026-09-13,18:30,Dr. Jorge Ismael de Biasi,Novo Horizonte,,Gremio Novorizontino,gremio_novorizontino,Saf,Cuiabá,cuiaba,MT,Braulio da Silva Machado,1,1,2,Empate
+273,2026,B,28,2026-09-14,19:30,Raimundo Sampaio,Belo Horizonte,,América,america,MG,São Bernardo SAF,sao_bernardo_saf,SP,Jonathan Benkenstein Pinheiro,0,2,2,Vitoria Visitante
+274,2026,B,28,2026-09-15,19:30,Vitorino Gonçalves Dias,Londrina,,Londrina SAF,londrina_saf,PR,Ponte Preta,ponte_preta,SP,Deborah Cecilia Cruz Correia,6,0,6,Vitoria Mandante
+275,2026,B,28,2026-09-13,18:30,Governador Plácido Aderaldo Castelo,Fortaleza,,Fortaleza SAF,fortaleza_saf,CE,Ceará,ceara,CE,Marcelo de Lima Henrique,1,1,2,Empate
+276,2026,B,28,2026-09-13,16:00,Antônio Accioly,Goiania,,Atlético Goianiense Saf,atletico_goianiense_saf,GO,Criciúma,criciuma,SC,Edina Alves Batista,4,0,4,Vitoria Mandante
+277,2026,B,28,2026-09-14,21:30,Aderbal Ramos da Silva,Florianopolis,,Avaí,avai,SC,Vila Nova,vila_nova,GO,Daiane Muniz,1,1,2,Empate
+278,2026,B,28,2026-09-15,19:30,Eládio de Barros Carvalho,Recife,,Náutico,nautico,PE,Operário,operario,PR,Matheus De Moraes Silva,3,3,6,Empate
+279,2026,B,28,2026-09-15,21:00,R,Maceio,,CRB,crb,AL,Sport Recife,sport_recife,PE,Davi De Oliveira Lacerda,2,1,3,Vitoria Mandante
+280,2026,B,28,2026-09-13,18:00,Alfredo Jaconi,Caxias do Sul,,Juventude,juventude,RS,Athletic SAF,athletic_saf,MG,Savio Pereira Sampaio,0,2,2,Vitoria Visitante

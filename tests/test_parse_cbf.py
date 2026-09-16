@@ -59,13 +59,13 @@ def test_processed_serie_b_datasets():
     df_c = pd.read_parquet(PROCESSED_DIR / "cartoes.parquet")
     df_g = pd.read_parquet(PROCESSED_DIR / "gols.parquet")
 
-    assert len(df_p) == 760, f"Esperado 760 partidas da Série B (2022-2023), obtido {len(df_p)}"
+    assert len(df_p) >= 760, f"Esperado >= 760 partidas da Série B, obtido {len(df_p)}"
     assert len(df_c) >= 3500, f"Esperado >= 3500 cartões, obtido {len(df_c)}"
     assert len(df_g) >= 2000, f"Esperado >= 2000 gols, obtido {len(df_g)}"
     assert "categoria_infracao" in df_c.columns
     assert set(df_c["cartao"].unique()).issubset({"Amarelo", "Vermelho"})
     assert set(df_c["periodo"].unique()).issubset({"1T", "2T"})
-    assert set(df_p["temporada"].unique()) == {2022, 2023}
+    assert {2022, 2023}.issubset(set(df_p["temporada"].unique()))
 
 def test_integrity_dataset():
     proc_cases = Path("data/processed/integrity/casos_penalidade_maxima.parquet")

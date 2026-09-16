@@ -1,28 +1,42 @@
 {
+  "last_updated": "2026-09-16T19:17:00.407160",
+  "temporadas": [
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2026
+  ],
   "datasets": {
     "partidas": {
-      "linhas": 8785,
-      "colunas": 22,
-      "csv_bytes": 1294320,
-      "parquet_bytes": 182772
+      "linhas": 9051,
+      "colunas": 22
     },
     "cartoes": {
-      "linhas": 20953,
-      "colunas": 14,
-      "csv_bytes": 2076167,
-      "parquet_bytes": 277879
-    },
-    "estatisticas": {
-      "linhas": 17570,
-      "colunas": 16,
-      "csv_bytes": 1067721,
-      "parquet_bytes": 155380
+      "linhas": 22323,
+      "colunas": 14
     },
     "gols": {
-      "linhas": 9861,
-      "colunas": 12,
-      "csv_bytes": 840359,
-      "parquet_bytes": 140380
+      "linhas": 10555,
+      "colunas": 12
     }
   }
 }
