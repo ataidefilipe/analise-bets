@@ -282,9 +282,11 @@ Em estrito alinhamento com os padrões de ciência aberta e reprodutibilidade, t
   * [`02_analise_exploratoria_e_paradoxo_disciplinar.ipynb`](file:///d:/Python%20Projetos/analise-bets/notebooks/02_analise_exploratoria_e_paradoxo_disciplinar.ipynb): O Paradoxo Disciplinar e quebra estrutural;
   * [`03_modelagem_econometrica_painel_did.ipynb`](file:///d:/Python%20Projetos/analise-bets/notebooks/03_modelagem_econometrica_painel_did.ipynb): Painel TWFE, Staggered Event Study e regressão interdivisões;
   * [`04_sistema_triagem_anomalias_integridade.ipynb`](file:///d:/Python%20Projetos/analise-bets/notebooks/04_sistema_triagem_anomalias_integridade.ipynb): Algoritmos de Anomaly Scoring e validação ground-truth.
-* **Tabelas Analíticas Completas:** [`reports/tables/`](file:///d:/Python%20Projetos/analise-bets/reports/tables/) (Tabelas 01 a 17 em formato CSV).
+* **Modelos de Machine Learning e Classificação de Integridade:**
+  * [`src/models/integrity_classifier.py`](file:///d:/Python%20Projetos/analise-bets/src/models/integrity_classifier.py): Classificadores Isolation Forest e Bagging PU-Learning para partidas e atletas, serializados em [`data/processed/integrity/models/`](file:///d:/Python%20Projetos/analise-bets/data/processed/integrity/models/).
+* **Tabelas Analíticas Completas:** [`reports/tables/`](file:///d:/Python%20Projetos/analise-bets/reports/tables/) (Tabelas 01 a 20 em formato CSV, incluindo auditoria ML e rankings Top 50).
 * **Figuras em Alta Resolução:** [`reports/figures/`](file:///d:/Python%20Projetos/analise-bets/reports/figures/) (Gráficos analíticos e mapas de distribuição).
-* **Suíte de Testes Automatizados:** [`tests/`](file:///d:/Python%20Projetos/analise-bets/tests/) (39 testes unitários aprovados com 100% de sucesso via `pytest`).
+* **Suíte de Testes Automatizados:** [`tests/`](file:///d:/Python%20Projetos/analise-bets/tests/) (50 testes unitários aprovados com 100% de sucesso via `pytest`).
 
 ---
 

@@ -1,0 +1,51 @@
+temporada,serie,clube_slug,atleta,total_cartoes,cartoes_1t,prop_cartoes_1t,minuto_medio_nominal,iforest_outlier,prob_suspeicao_ml,classificacao_ml,athlete_anomaly_score
+2022,B,tombense,Paulo de Souza Junior,8,5,0.625,22.9,1,0.9285,Classe 2: Extrema Anomalia / Alto Risco,50.93
+2022,B,ponte_preta,Igor Marques Paciencia Cardoso,5,3,0.6,20.6,0,0.9017,Classe 2: Extrema Anomalia / Alto Risco,45.86
+2022,B,vasco_da_gama,Juan Sebastian Quintero Fletcher,5,3,0.6,20.0,0,0.8918,Classe 2: Extrema Anomalia / Alto Risco,45.86
+2022,B,londrina,Joao Paulo da Silva,5,3,0.6,18.8,0,0.8808,Classe 2: Extrema Anomalia / Alto Risco,45.86
+2022,B,novorizontino,Jhony Douglas Santiago,8,5,0.625,25.6,0,0.8721,Classe 2: Extrema Anomalia / Alto Risco,50.25
+2023,B,abc,Simao Verza Bertelli,5,3,0.6,24.8,0,0.8704,Classe 2: Extrema Anomalia / Alto Risco,45.42
+2022,B,sampaio_correa,Mateus da Silva Duarte,7,3,0.4286,25.0,0,0.8701,Classe 2: Extrema Anomalia / Alto Risco,36.48
+2022,A,atletico_go,Gabriel Baralhas,12,9,0.75,42.3,1,0.8683,Classe 2: Extrema Anomalia / Alto Risco,64.94
+2022,B,criciuma,Cristovam Roberto Ribeiro da Silva,7,3,0.4286,23.6,0,0.8674,Classe 2: Extrema Anomalia / Alto Risco,36.9
+2023,B,vila_nova,Cristiano Claudinei Nogueira,4,2,0.5,21.0,0,0.8657,Classe 2: Extrema Anomalia / Alto Risco,39.49
+2023,B,sampaio_correa,Jose Gervasio dos Santos Neto,7,3,0.4286,20.9,0,0.8655,Classe 2: Extrema Anomalia / Alto Risco,36.98
+2023,B,abc,Nathan Melo Silva,7,3,0.4286,23.4,0,0.8653,Classe 2: Extrema Anomalia / Alto Risco,36.96
+2023,B,ponte_preta,Felipe Amaral Casarin Damasceno,7,4,0.5714,23.9,0,0.8632,Classe 2: Extrema Anomalia / Alto Risco,45.71
+2022,B,tombense,Jose Ricardo Araujo Fernandes,7,4,0.5714,24.4,0,0.8623,Classe 2: Extrema Anomalia / Alto Risco,45.56
+2022,A,fluminense,Nino,4,4,1.0,24.8,1,0.8599,Classe 2: Extrema Anomalia / Alto Risco,72.35
+2022,B,sampaio_correa,Anderson Wanderllan de Moraes Rodrigues,3,2,0.6667,22.0,0,0.8584,Classe 2: Extrema Anomalia / Alto Risco,46.88
+2023,B,criciuma,Walisson Moreira Farias Maia,8,4,0.5,24.5,0,0.8582,Classe 2: Extrema Anomalia / Alto Risco,41.3
+2017,A,ponte_preta,Fernando Paixão da Silva,7,5,0.7143,42.1,0,0.8576,Classe 2: Extrema Anomalia / Alto Risco,51.48
+2022,B,sport,Luciano Batista da Silva Junior,3,2,0.6667,21.7,0,0.8546,Classe 2: Extrema Anomalia / Alto Risco,46.88
+2015,A,fluminense,Douglas Augusto Soares Gomes,3,2,0.6667,21.7,0,0.8546,Classe 2: Extrema Anomalia / Alto Risco,46.88
+2022,A,goias,Diego,4,4,1.0,23.0,1,0.854,Classe 2: Extrema Anomalia / Alto Risco,72.79
+2021,A,palmeiras,Patrick de Paula,9,6,0.6667,42.4,0,0.851,Classe 2: Extrema Anomalia / Alto Risco,50.17
+2023,A,fluminense,Nino,7,5,0.7143,44.3,0,0.8503,Classe 2: Extrema Anomalia / Alto Risco,50.82
+2022,B,tombense,Everton Galdino Moreira,6,3,0.5,20.0,0,0.8495,Classe 2: Extrema Anomalia / Alto Risco,40.65
+2023,A,america_mg,Éder,7,5,0.7143,41.7,0,0.8488,Classe 2: Extrema Anomalia / Alto Risco,51.6
+2022,B,criciuma,Hygor Cleber Garcia Silva,4,2,0.5,38.0,0,0.8487,Classe 2: Extrema Anomalia / Alto Risco,35.09
+2022,B,novorizontino,Douglas Baggio de Oliveira Costa,4,2,0.5,22.5,0,0.8477,Classe 2: Extrema Anomalia / Alto Risco,39.49
+2023,B,ceara,Willian Marlon Ferreira Moraes,6,3,0.5,24.3,0,0.8476,Classe 2: Extrema Anomalia / Alto Risco,40.36
+2022,A,cuiaba,Joaquim Henrique Pereira Silva,4,2,0.5,38.5,0,0.8461,Classe 2: Extrema Anomalia / Alto Risco,34.94
+2019,A,athletico_pr,Léo Pereira,7,5,0.7143,42.0,0,0.8452,Classe 2: Extrema Anomalia / Alto Risco,51.51
+2022,B,sampaio_correa,Eloir Silva Moreira,4,2,0.5,22.8,0,0.845,Classe 2: Extrema Anomalia / Alto Risco,39.49
+2023,B,abc,Romario Guilherme dos Santos,5,0,0.0,18.4,1,0.8446,Classe 2: Extrema Anomalia / Alto Risco,20.0
+2022,B,operario,Ricardo Ribeiro de Lima,4,2,0.5,23.2,0,0.8446,Classe 2: Extrema Anomalia / Alto Risco,39.49
+2018,A,chapecoense,Rafael Thyere de Albuquerque Marques,7,5,0.7143,41.1,0,0.8445,Classe 2: Extrema Anomalia / Alto Risco,51.78
+2022,B,sport,Fabio Augusto Schirmann,3,2,0.6667,23.7,0,0.8444,Classe 2: Extrema Anomalia / Alto Risco,46.77
+2023,B,novorizontino,Douglas Baggio de Oliveira Costa,4,2,0.5,21.8,0,0.8443,Classe 2: Extrema Anomalia / Alto Risco,39.49
+2023,B,tombense,Paulo de Souza Junior,4,1,0.25,38.5,0,0.8438,Classe 2: Extrema Anomalia / Alto Risco,24.02
+2022,B,chapecoense,Marcelo de Freitas Costa,4,2,0.5,25.0,0,0.8435,Classe 2: Extrema Anomalia / Alto Risco,38.99
+2022,B,brusque,Jeferson Silva dos Santos,3,2,0.6667,20.3,0,0.8433,Classe 2: Extrema Anomalia / Alto Risco,46.88
+2017,A,gremio,Jael,3,2,0.6667,24.7,0,0.8415,Classe 2: Extrema Anomalia / Alto Risco,46.47
+2022,B,chapecoense,Gildson Pablo de Oliveira Silva,4,3,0.75,21.8,0,0.8415,Classe 2: Extrema Anomalia / Alto Risco,53.72
+2023,B,tombense,Matheus Henrique Frizzo,7,5,0.7143,26.1,1,0.8409,Classe 2: Extrema Anomalia / Alto Risco,56.28
+2015,A,atletico_mg,Leonardo Silva,8,5,0.625,42.8,0,0.8404,Classe 2: Extrema Anomalia / Alto Risco,45.09
+2018,A,cruzeiro,Marcelo Hermes,4,2,0.5,37.8,0,0.8403,Classe 2: Extrema Anomalia / Alto Risco,35.15
+2022,B,vila_nova,Rafael Victor Silva Santos,3,2,0.6667,24.3,0,0.8389,Classe 2: Extrema Anomalia / Alto Risco,46.59
+2022,B,novorizontino,Felipe Albuquerque Felippi,3,2,0.6667,24.3,0,0.8389,Classe 2: Extrema Anomalia / Alto Risco,46.59
+2023,A,fluminense,Felipe Melo,10,7,0.7,41.6,0,0.8379,Classe 2: Extrema Anomalia / Alto Risco,55.33
+2023,B,londrina,Rodrigo Alves de Holanda Santos,5,3,0.6,17.2,0,0.8375,Classe 2: Extrema Anomalia / Alto Risco,45.86
+2023,B,abc,Ramon Vinicius dos Santos,7,3,0.4286,38.4,0,0.8354,Classe 2: Extrema Anomalia / Alto Risco,32.46
+2022,B,operario,Giovanni Fernando Cofreste Pavani,4,2,0.5,20.2,0,0.8354,Classe 2: Extrema Anomalia / Alto Risco,39.49

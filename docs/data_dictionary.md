@@ -298,5 +298,50 @@ Gerados a partir do parsing direto das Súmulas Eletrônicas da CBF (`conteudo.c
 | `penalti_na_partida` | `int64` | Não | Houve pênalti convertido no confronto | 1 ou 0 |
 | `scouts_validos` | `bool` | Não | Confiabilidade dos dados de faltas | `True` para 99,95% das observações |
 
+---
+
+## 11. Datasets de Machine Learning: Partidas e Atletas Classificados (Fase 12)
+
+### 11.1 Dataset: `partidas_ml_classified.parquet`
+* **Localização:** `data/processed/integrity/partidas_ml_classified.parquet`.
+* **Volume:** 4.559 partidas (Série A 2015–2024 e Série B 2022–2023).
+* **Granularidade:** 1 linha por partida disputada.
+* **Finalidade:** Alimentar o sistema de triagem com predições de Machine Learning não-supervisionado e semi-supervisionado.
+
+| Campo | Tipo | Nulos | Descrição | Regras e Valores Válidos |
+| :--- | :--- | :---: | :--- | :--- |
+| `partida_id` | `int64` | Não | ID único da partida | FK para `partidas` |
+| `temporada` | `int64` | Não | Edição do campeonato | 2015 a 2024 |
+| `serie` | `string` | Não | Divisão da competição | `A` ou `B` |
+| `iforest_anomaly_score` | `float64` | Não | Score do Isolation Forest normalizado | Escala $[0.0, 100.0]$ |
+| `iforest_outlier` | `int64` | Não | Indicador binário de anomalia geométrica | 1 se anômalo (Top 3%), 0 se normal |
+| `prob_suspeicao_ml` | `float64` | Não | Probabilidade calibrada de suspeição (PU-Learning) | Intervalo $[0.0, 1.0]$ |
+| `score_suspeicao_ml` | `float64` | Não | Score percentual de suspeição | `prob_suspeicao_ml * 100.0` |
+| `classificacao_ml` | `string` | Não | Tier operacional de decisão | `Classe 0: Basal`, `Classe 1: Monitoramento`, `Classe 2: Alto Risco` |
+| `ranking_ml` | `int64` | Não | Posição no ranking decrescente de suspeição | 1 a 4.559 |
+
+### 11.2 Dataset: `atletas_ml_classified.parquet`
+* **Localização:** `data/processed/integrity/atletas_ml_classified.parquet`.
+* **Volume:** 3.586 registros de atleta $\times$ temporada (atletas com $\ge 3$ cartões recebidos).
+* **Granularidade:** 1 linha por atleta em cada temporada/divisão.
+
+| Campo | Tipo | Nulos | Descrição | Regras e Valores Válidos |
+| :--- | :--- | :---: | :--- | :--- |
+| `temporada` | `int64` | Não | Edição da competição | 2015 a 2024 |
+| `serie` | `string` | Não | Divisão disputada | `A` ou `B` |
+| `atleta` / `atleta_slug` | `string` | Não | Nome e slug canônico do atleta | Identificador padronizado |
+| `clube_slug` | `string` | Não | Slug do clube defendido na temporada | Ex.: `juventude`, `santos` |
+| `total_cartoes` | `int64` | Não | Total de cartões recebidos na edição | $\ge 3$ |
+| `cartoes_1t` | `int64` | Não | Cartões recebidos no 1º tempo | $\ge 0$ |
+| `prop_cartoes_1t` | `float64` | Não | Proporção de cartões no 1º tempo | `cartoes_1t / total_cartoes` |
+| `minuto_medio_nominal` | `float64` | Não | Minuto médio de recebimento dos cartões | Escala $[1.0, 90.0]$ |
+| `iforest_anomaly_score` | `float64` | Não | Score do Isolation Forest normalizado | Escala $[0.0, 100.0]$ |
+| `iforest_outlier` | `int64` | Não | Indicador binário de anomalia | 1 se anômalo (Top 3%), 0 se normal |
+| `prob_suspeicao_ml` | `float64` | Não | Probabilidade calibrada de suspeição | Intervalo $[0.0, 1.0]$ |
+| `score_suspeicao_ml` | `float64` | Não | Score percentual de suspeição | `prob_suspeicao_ml * 100.0` |
+| `classificacao_ml` | `string` | Não | Tier operacional de decisão | `Classe 0: Basal`, `Classe 1: Monitoramento`, `Classe 2: Extrema Anomalia` |
+| `ranking_ml` | `int64` | Não | Posição no ranking decrescente de suspeição | 1 a 3.586 |
+
+
 
 

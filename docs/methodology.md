@@ -208,5 +208,39 @@ Os thresholds de alerta foram calibrados empiricamente na distribuição histór
 ### 7.5 Governança Ética e Presunção de Inocência
 A metodologia estabelece formalmente que scores elevados representam **anomalias estatísticas sob escrutínio probabilístico**, e **não prova penal de manipulação de resultados**. Fatores desportivos legítimos (estratégia tática agressiva, arbitragem rígida, faltas de contenção) podem gerar scores atípicos, devendo o sistema ser empregado como ferramenta de triagem para auditoria humana por federações e unidades de integridade.
 
+---
+
+## 8. Modelo de Classificação de Integridade e Suspeição por Machine Learning (Fase 12)
+
+### 8.1 Motivação e Abordagem Híbrida
+A Fase 12 expandiu a triagem de integridade para além das heurísticas probabilísticas univariadas, formulando um classificador de Machine Learning capaz de operar sob o desafio do **extremo desbalanceamento de classes** (apenas 14 casos confirmados no *ground truth* judicial em mais de 4.500 partidas) e o problema de instâncias não-rotuladas (*Positive-Unlabeled Learning*).
+
+### 8.2 Componente 1: Isolation Forest Multidimensional
+Para capturar anomalias estruturais multivariadas sem viés de supervisão humana, emprega-se o algoritmo `IsolationForest` no nível da partida e do atleta:
+* **Espaço de Features (Partida):** Proporção de cartões no 1º tempo (`prop_cartoes_1t`), cartões precoces até 30' (`prop_cartoes_30m`), volume total de cartões (`total_cartoes`), $z$-score de volume na temporada (`z_cartoes`), cartões por cera/reclamação (`cartoes_reclamacao_cera`), pênaltis no 1ºT (`penaltis_1t`), exposição comercial a apostas (`exposure_total_partida`), e transformações log-binomiais (`score_tempo`, `score_precoce`).
+* **Espaço de Features (Atleta):** `prop_cartoes_1t`, `cartoes_30m`, `minuto_medio_nominal`, `total_cartoes`, `score_atleta_tempo`, `score_atleta_taxa` e `score_atleta_minuto`.
+* **Calibração de Contaminação:** Fixada em $\alpha = 0{,}03$ (3% da cauda mais extrema da distribuição).
+* **Score de Decisão Normalizado:**
+  $$S_{\text{IForest}} = \frac{-d(\mathbf{x}) - \min(-d)}{\max(-d) - \min(-d)} \cdot 100 \in [0, 100]$$
+
+### 8.3 Componente 2: Bagging PU-Learning (Positive and Unlabeled Learning)
+Para estimar a probabilidade a posteriori calibrada de suspeição sem tratar partidas não-investigadas como garantidamente negativas:
+1. Conjunto positivo ($P$): partidas e atletas com casos confirmados e executados da Operação Penalidade Máxima ($y=1$).
+2. Conjunto não-rotulado ($U$): todo o restante da base histórica ($y=0$ provisório).
+3. **Bagging PU Ensemble:** Treina um comitê de $B = 50$ estimadores base (`RandomForestClassifier` com pesos balanceados), onde cada estimador recebe todos os positivos e uma subamostra aleatória balanceada de não-rotulados ($|U_{\text{sub}}| = 4 \cdot |P|$).
+4. **Probabilidade Calibrada de Suspeição:**
+   $$\hat{P}(\text{Suspeito} = 1 \mid \mathbf{x}) = \frac{1}{B} \sum_{b=1}^{B} p_b(\mathbf{x}) \in [0, 1]$$
+
+### 8.4 Tiers Operacionais de Decisão
+As predições do Isolation Forest e da probabilidade PU são combinadas na seguinte matriz de decisão:
+* **Classe 2 (Alto Risco / Alerta Investigativo):** $\hat{P} \ge 0{,}60$ OU ($\text{Outlier}_{\text{IF}} = 1$ E $\hat{P} \ge 0{,}45$);
+* **Classe 1 (Monitoramento / Risco Moderado):** $\hat{P} \ge 0{,}35$ OU $\text{Outlier}_{\text{IF}} = 1$;
+* **Classe 0 (Basal / Conforme):** Casos típicos em ambas as dimensões.
+
+### 8.5 Desempenho e Validação Empírica
+* **Sensibilidade no Ground Truth (Tabela 18):** $100\%$ de captura dos 14 casos reais (14/14) no tier de Alto Risco.
+* **Probabilidade Média de Suspeição:** $80{,}4\%$ nas partidas investigadas e $84{,}8\%$ nos atletas confessos/condenados.
+* **Distribuição Populacional:** O modelo classifica apenas $8{,}93\%$ das partidas históricas no tier de Alto Risco, garantindo foco operacional e controle de falsos alarmes para unidades de auditoria desportiva.
+
 
 
