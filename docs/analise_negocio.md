@@ -58,6 +58,12 @@ As conclusões centrais desta análise:
 4. **O produto não é "detecção de fraude" — é "priorização de escrutínio".** A diferença não é
    retórica: ela determina qual métrica é reportada, o que é prometido ao cliente e qual é a
    exposição jurídica assumida (§9).
+   > **Revisão de 2026-09-16 (F1-04).** Medida a carga de alerta, a premissa não se sustenta no
+   > nível da partida: nenhum limiar captura mais casos conhecidos do que sortear a mesma
+   > quantidade de partidas ($p \ge 0{,}25$ em toda a curva). Um priorizador é avaliado por
+   > precisão no topo da lista, e o topo da lista não contém os casos conhecidos. O
+   > posicionamento vigente é **instrumento de medição de atipicidade disciplinar**, e a unidade
+   > de análise com sinal é o atleta. Ver o relatório 07, seções 3.7 e 3.8.
 
 5. **Três lacunas técnicas bloqueiam qualquer venda ou demonstração** e estão endereçadas na
    Fase 1 do backlog: precisão indeterminada, validação in-sample e circularidade metodológica
@@ -311,6 +317,13 @@ alerta é a métrica do cliente; sensibilidade é a métrica do paper.**
 de fila de auditoria"**, avaliado por precisão@k no topo da lista e não por precisão global.
 Tecnicamente mais honesto e comercialmente mais forte.
 → [F1-04](../tasks/backlog/F1-04-precisao-e-volume-de-alerta.md)
+
+> **Resultado da F1-04 (2026-09-16).** A medição refutou a hipótese de reposicionamento. No nível
+> da partida a captura não se distingue de sorteio em nenhum limiar; nos tiers Top 1% e Top 5% é
+> zero. No nível do atleta há sinal ($p = 0{,}019$), mas só ao sinalizar 40% da base. O produto
+> passa a ser descrito como **instrumento de medição de atipicidade disciplinar** — o que ele
+> comprovadamente faz — e o roteiro de produto muda: a escalação por partida (F2-04) e o escore
+> pré-jogo por atleta (F3-01) deixam de ser incrementos e viram pré-requisitos.
 
 ### 9.2 Validação dentro da amostra
 

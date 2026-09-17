@@ -236,6 +236,28 @@ casos, a atribuição do cartão) não reconciliam com os registros de súmula: 
 tem o evento confirmado na base. O rótulo positivo é, portanto, definido nos níveis agregados de
 partida e de atleta-temporada, e não por evento individual.
 
+**Carga operacional e ganho sobre o acaso (Tabela 21).** A sensibilidade sozinha não decide uso:
+importa quantos alertas ela custa, e se a triagem encontra mais casos do que sortear a mesma
+quantidade de registros. Sem falsos positivos rotulados — uma partida sinalizada e nunca
+investigada não é um negativo confirmado —, a precisão absoluta não é estimável; o entregável é a
+carga de alerta, a precisão@k sobre o ground truth disponível e um teste hipergeométrico contra
+a seleção aleatória.
+
+| Nível | Melhor ponto da curva | Captura | Ganho sobre o acaso | p-valor |
+| :--- | :--- | :---: | :---: | :---: |
+| Partida | P85 — 1,5 alerta/rodada | 3/13 | 1,54× | 0,309 |
+| Atleta | P60 — 40% da base sinalizada | 6/7 | 2,14× | **0,019** |
+
+Nos tiers de Extrema Anomalia (Top 1%) e Alta Prioridade (Top 5%) a captura é **zero** nos dois
+níveis. No nível da partida nenhum limiar atinge significância; no nível do atleta há sinal, mas
+apenas ao custo de sinalizar 40% da base.
+
+**Interpretação.** O desencontro é de unidade de análise: o `MATCH_ANOMALY_SCORE` mede distorção
+coletiva da partida, e os incidentes conhecidos são atos individuais. É o mesmo achado da
+econometria deste trabalho, que estima efeito nulo da exposição sobre a proporção coletiva de
+cartões no 1º tempo. O instrumento com evidência de sinal é o de atleta, e a sua faixa útil
+depende de dados ainda não disponíveis (escalação por partida e escore pré-jogo).
+
 ### 7.5 Governança Ética e Presunção de Inocência
 A metodologia estabelece formalmente que scores elevados representam **anomalias estatísticas sob escrutínio probabilístico**, e **não prova penal de manipulação de resultados**. Fatores desportivos legítimos (estratégia tática agressiva, arbitragem rígida, faltas de contenção) podem gerar scores atípicos, devendo o sistema ser empregado como ferramenta de triagem para auditoria humana por federações e unidades de integridade.
 

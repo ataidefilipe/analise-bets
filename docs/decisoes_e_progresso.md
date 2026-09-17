@@ -181,6 +181,14 @@ Classificadas conforme a taxonomia da Seção 17 do `.agent.md`:
   * *Decisão:* Avaliar o `BaggingPUClassifier` por leave-one-out agrupado por entidade (não por incidente, para não vazar entre PM-006 e PM-007, que são o mesmo atleta) e por separação entre divisões, reportando intervalo de Wilson.
   * *Motivo:* Com 14 positivos usados no treino e na avaliação, a sensibilidade in-sample não carrega informação.
   * *Impacto:* Revela que a captura no tier de Alto Risco cai de 100% para 0% no nível do atleta. O componente de ML, como treinado, não sustenta afirmação de eficácia; o escore estatístico fechado, que não usa rótulo, sustenta.
+* **D-ANA-18: Avaliar a triagem por ganho sobre seleção aleatória, não por sensibilidade (F1-04):**
+  * *Decisão:* Reportar, para cada limiar, a carga de alerta e o p-valor de um teste hipergeométrico contra sortear a mesma quantidade de registros. Não reportar precisão absoluta.
+  * *Motivo:* Sem falsos positivos rotulados, precisão absoluta não é estimável — uma partida sinalizada e nunca investigada não é um negativo confirmado. E sensibilidade sem carga de alerta não distingue triagem de sorteio.
+  * *Impacto:* Revela que no nível da partida **nenhum limiar produz ganho distinguível do acaso** (p ≥ 0,25 em toda a curva) e que a captura nos tiers Top 1% e Top 5% é zero nos dois níveis.
+* **D-NEG-01: Posicionar o produto como instrumento de medição de atipicidade, não como detector ou priorizador (F1-04):**
+  * *Decisão:* Descrever o sistema pelo que ele comprovadamente faz — medir atipicidade disciplinar com fórmula publicada, reproduzível e calibrada em 22.850 cartões — e não como detector ou priorizador de manipulação, até que exista evidência de ganho sobre o acaso.
+  * *Motivo:* Um priorizador é avaliado por precisão no topo da lista, e o topo da lista não contém os casos conhecidos. Afirmar capacidade de priorização não sobrevive à primeira diligência técnica de um comprador.
+  * *Impacto:* Redireciona o roteiro de produto: a unidade de análise com sinal é o atleta, o que torna a escalação por partida (F2-04) e o escore pré-jogo (F3-01) pré-requisitos, e não incrementos.
 
 ### 2.3 Decisões Técnicas (Decididas pelo Agente)
 * **D-TEC-01: Governança do Diretório de Dados Brutos:**
@@ -254,7 +262,11 @@ Classificadas conforme a taxonomia da Seção 17 do `.agent.md`:
 14. **Achado retificado — o caso "Nino Paraíba" era um homônimo:**
     * O percentil de 99,67% historicamente atribuído a Nino Paraíba (Ceará) pertence, na verdade, a **Nino (Fluminense)**, atleta sem qualquer relação com a operação. O registro real de Nino Paraíba em 2022 está no **percentil 34,5%**.
     * A causa é o casamento por correspondência parcial de nome (`str.contains` do primeiro token) seguido do primeiro registro encontrado. A correção do resolvedor de identidade é o primeiro item da tarefa F1-03.
-15. **Desempenho do Modelo de Machine Learning de Integridade (Fase 12):**
+15. **Ausência de ganho demonstrável sobre a seleção aleatória (F1-04):**
+    * No nível da partida, **nenhum limiar** da curva de carga operacional captura mais casos do que sortear a mesma quantidade de partidas (p ≥ 0,25 em todos os cortes). Nos tiers de Extrema Anomalia e Alta Prioridade a captura é zero.
+    * No nível do atleta há sinal estatístico (6 de 7 capturados, ganho de 2,14×, p = 0,019), mas apenas ao sinalizar 40% de toda a base — cerca de 120 atletas por temporada e divisão.
+    * O desencontro é de unidade de análise: o índice de partida mede distorção coletiva, e os incidentes são atos individuais. Coerente com o achado econométrico de efeito nulo da exposição sobre a proporção coletiva de cartões no 1º tempo.
+16. **Desempenho do Modelo de Machine Learning de Integridade (Fase 12):**
     * O modelo híbrido (`IsolationForest` + `BaggingPUClassifier`) atinge **100% de sensibilidade in-sample**, mas **não generaliza**: sob leave-one-out agrupado por entidade, a captura no tier de Alto Risco cai para **5/14 no nível da partida (IC 95%: 16,3%–61,2%)** e para **0/7 no nível do atleta (IC 95%: 0%–35,4%)**.
     * Sob separação por série — treinar na Série B e avaliar na Série A —, captura 1 de 9 partidas (11,1%). O que sustenta o sistema é o escore estatístico fechado, que não depende de rótulo.
     * A probabilidade média calibrada de suspeição foi de **80,4%** para as partidas investigadas e **84,8%** para os atletas investigados.

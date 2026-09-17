@@ -4,8 +4,8 @@
 **Fase:** Fase 8 — Sistema de Triagem, Anomaly Scoring e Validação Ground-Truth  
 **Data:** 2026-09-10 · **Revisado em:** 2026-09-16 (tarefas F1-01 e F1-02)  
 **Autor:** Agente Antigravity (Advanced Agentic Coding)  
-**Status:** Fórmula reconciliada, ground truth reancorado e validação fora da amostra
-concluída (tarefas F1-01, F1-02 e F1-03).  
+**Status:** Fase 1 concluída (F1-01 a F1-04): fórmula reconciliada, ground truth reancorado,
+validação fora da amostra e carga operacional medidas.  
 
 ---
 
@@ -29,17 +29,26 @@ A modelagem harmonizou **4.559 partidas** (Série A 2015–2024 e Série B 2022�
    Paraíba está em 34,50%. Oito das dez identidades estavam incorretas (seção 3.3).
 4. **Os eventos individuais do ground truth não reconciliam com as súmulas.** De 14 casos,
    apenas 1 tem o evento confirmado na base (seção 3.4).
-5. **O índice deixou de embutir exposição comercial a apostas.** O subscore $S_{\text{bet}}$
+5. **Não há ganho demonstrável sobre a seleção aleatória.** No nível da partida, nenhum limiar
+   captura mais casos do que sortear a mesma quantidade de partidas ao acaso ($p \ge 0{,}25$ em
+   toda a curva); nos tiers de Extrema Anomalia e Alta Prioridade a captura é zero. No nível do
+   atleta há sinal ($p = 0{,}019$), mas só ao custo de sinalizar 40% da base (seção 3.7).
+6. **O desencontro é de unidade de análise.** O índice de partida mede distorção coletiva; os
+   incidentes são atos individuais. É o mesmo achado da econometria do projeto, que encontrou
+   efeito nulo da exposição sobre a proporção coletiva de cartões no 1º tempo. O caminho com
+   evidência é o nível do atleta, que depende da escalação por partida (F2-04) e do escore
+   pré-jogo (F3-01).
+7. **O índice deixou de embutir exposição comercial a apostas.** O subscore $S_{\text{bet}}$
    foi removido por circularidade metodológica e por indefensabilidade operacional; a variável
    permanece como contexto de estratificação (seção 2.1).
-6. **A carga de alerta passou a ser um parâmetro, não um acidente.** Com tiers por percentil
+8. **A carga de alerta passou a ser um parâmetro, não um acidente.** Com tiers por percentil
    empírico, o sistema sinaliza 458 partidas (10,05% da base) contra 12 (0,26%) da
    configuração anterior. A calibração do corte por persona é objeto da tarefa F1-04.
-7. **Casos de fraude frustrada.** Nos incidentes em que a manipulação foi combinada mas não se
+9. **Casos de fraude frustrada.** Nos incidentes em que a manipulação foi combinada mas não se
    consumou em campo (Romário, que não foi escalado; Bauermann, que não executou o combinado
    contra o Avaí), o índice de partida permanece basal — o sistema não gera sinal quando o
    evento acordado não ocorre nos 90 minutos.
-8. **Governança ética e presunção de inocência.** Conforme as diretrizes institucionais do
+10. **Governança ética e presunção de inocência.** Conforme as diretrizes institucionais do
    projeto (`.agent.md`), escores elevados refletem **anomalias estatísticas sob escrutínio
    probabilístico**, e **nunca prova de fraude**. A denominação de manipulação é restrita a
    casos judicializados com condenação transitada em julgado.
@@ -182,7 +191,7 @@ atleta-temporada.
 
 ---
 
-## 3. Reconciliação, Ancoragem do Ground Truth e Validação (F1-01 / F1-02 / F1-03)
+## 3. Reconciliação, Ancoragem, Validação e Carga Operacional (F1-01 a F1-04)
 
 Esta seção registra o que mudou na revisão de setembro de 2026 e por quê. Todos os artefatos
 citados adiante foram regenerados a partir do código corrigido.
@@ -353,6 +362,155 @@ topo da lista, não por sensibilidade (tarefa F1-04).
 
 ---
 
+### 3.7 Precisão, carga de alerta e curva operacional (F1-04)
+
+Até aqui o sistema foi avaliado por sensibilidade. Falta a pergunta que a persona faz antes de
+comprar: **quantos alertas isso custa?**
+
+#### Limitação que atravessa toda esta seção
+
+Não existem falsos positivos rotulados. O ground truth cobre uma operação, uma temporada e 13
+partidas em 4.559: uma partida sinalizada e nunca investigada **não é** um negativo confirmado.
+Por isso a precisão absoluta não é estimável, e não será inventado um denominador. O que se pode
+medir com honestidade é a **carga de alerta**, a **precisão@k sobre o ground truth disponível**
+e o **ganho sobre sortear a mesma quantidade de registros ao acaso**.
+
+#### Tabela 21 — Carga de alerta por tier
+
+| Nível | Tier | Sinalizados | % da base | Alertas por rodada / temporada | Casos conhecidos no tier | Alertas por caso conhecido |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| partida | Extrema Anomalia (Top 1%) | 44 | 0,97% | 0,10 | 0/13 | — |
+| partida | Alta Prioridade de Escrutínio (Top 5%) | 185 | 4,06% | 0,40 | 0/13 | — |
+| partida | Média Prioridade (Top 10%) | 229 | 5,02% | 0,50 | 1/13 | 229,0 |
+| partida | Típico / Baixa Prioridade | 4101 | 89,95% | 8,95 | 12/13 | 341,8 |
+| atleta | Extrema Anomalia Temporal (Top 1%) | 36 | 1,00% | 3,00 | 0/7 | — |
+| atleta | Alta Concentração Precoce (Top 5%) | 144 | 4,02% | 12,00 | 0/7 | — |
+| atleta | Média Concentração (Top 10%) | 179 | 4,99% | 14,92 | 1/7 | 179,0 |
+| atleta | Padrão Basal Normal | 3227 | 89,99% | 268,92 | 6/7 | 537,8 |
+| partida | TOTAL SINALIZADO (todos os tiers) | 458 | 10,05% | 1,00 | 1/13 | 458,0 |
+| atleta | TOTAL SINALIZADO (todos os tiers) | 359 | 10,01% | 29,92 | 1/7 | 359,0 |
+
+Doze dos treze casos conhecidos estão no tier basal. Nenhum caso aparece nos tiers de Extrema
+Anomalia ou Alta Prioridade, nos dois níveis.
+
+#### Precisão@k por rodada
+
+Restrita às 9 rodadas que contêm ao menos um caso do ground truth. Uma rodada tem 10 partidas,
+então **k = 10 equivale a inspecionar a rodada inteira** e o recall de 100% não informa nada. O
+teto aritmético da precisão@k é `positivos_na_rodada / k`, reportado ao lado.
+
+| k | Rodadas | Partidas inspecionadas | Capturados | Precisão@k | Teto possível | Recall@k | Ganho sobre o acaso |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 1.0 | 9.0 | 9.0 | 1.0/13.0 | 11,1% | 100,0% | 7,7% | 0,77 |
+| 3.0 | 9.0 | 27.0 | 4.0/13.0 | 14,8% | 48,1% | 30,8% | 1,03 |
+| 5.0 | 9.0 | 45.0 | 4.0/13.0 | 8,9% | 28,9% | 30,8% | 0,62 |
+| 10.0 | 9.0 | 90.0 | 13.0/13.0 | 14,4% | 14,4% | 100,0% | 1,00 |
+
+#### Curva de carga operacional — nível partida
+
+| Corte | Score mínimo | Sinalizados | % da base | Alertas/rodada | Capturados | Sensibilidade | Ganho sobre o acaso | p-valor |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| P100 | 45,93 | 5.0 | 0,11% | 0,01 | 0.0/13.0 | 0,0% | 0,00 | 1,000 |
+| P100 | 33,50 | 24.0 | 0,53% | 0,05 | 0.0/13.0 | 0,0% | 0,00 | 1,000 |
+| P99 | 30,16 | 44.0 | 0,97% | 0,10 | 0.0/13.0 | 0,0% | 0,00 | 1,000 |
+| P98 | 25,92 | 91.0 | 2,00% | 0,20 | 0.0/13.0 | 0,0% | 0,00 | 1,000 |
+| P97 | 23,44 | 137.0 | 3,01% | 0,30 | 0.0/13.0 | 0,0% | 0,00 | 1,000 |
+| P96 | 21,83 | 183.0 | 4,01% | 0,40 | 0.0/13.0 | 0,0% | 0,00 | 1,000 |
+| P95 | 20,94 | 229.0 | 5,02% | 0,50 | 0.0/13.0 | 0,0% | 0,00 | 1,000 |
+| P92 | 18,76 | 343.0 | 7,52% | 0,75 | 0.0/13.0 | 0,0% | 0,00 | 1,000 |
+| P90 | 16,60 | 458.0 | 10,05% | 1,00 | 1.0/13.0 | 7,7% | 0,77 | 0,748 |
+| P85 | 14,19 | 685.0 | 15,03% | 1,50 | 3.0/13.0 | 23,1% | 1,54 | 0,309 |
+| P80 | 12,20 | 914.0 | 20,05% | 2,00 | 4.0/13.0 | 30,8% | 1,53 | 0,254 |
+| P75 | 10,64 | 1141.0 | 25,03% | 2,49 | 4.0/13.0 | 30,8% | 1,23 | 0,417 |
+| P70 | 9,34 | 1369.0 | 30,03% | 2,99 | 4.0/13.0 | 30,8% | 1,02 | 0,581 |
+| P60 | 7,26 | 1824.0 | 40,01% | 3,98 | 4.0/13.0 | 30,8% | 0,77 | 0,832 |
+| P50 | 5,40 | 2280.0 | 50,01% | 4,98 | 5.0/13.0 | 38,5% | 0,77 | 0,867 |
+
+#### Curva de carga operacional — nível atleta-temporada
+
+| Corte | Score mínimo | Sinalizados | % da base | Alertas/temporada | Capturados | Sensibilidade | Ganho sobre o acaso | p-valor |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| P100 | 76,27 | 4.0 | 0,11% | 0,30 | 0.0/7.0 | 0,0% | 0,00 | 1,000 |
+| P100 | 71,16 | 19.0 | 0,53% | 1,60 | 0.0/7.0 | 0,0% | 0,00 | 1,000 |
+| P99 | 66,97 | 36.0 | 1,00% | 3,00 | 0.0/7.0 | 0,0% | 0,00 | 1,000 |
+| P98 | 63,98 | 72.0 | 2,01% | 6,00 | 0.0/7.0 | 0,0% | 0,00 | 1,000 |
+| P97 | 57,82 | 108.0 | 3,01% | 9,00 | 0.0/7.0 | 0,0% | 0,00 | 1,000 |
+| P96 | 52,31 | 144.0 | 4,02% | 12,00 | 0.0/7.0 | 0,0% | 0,00 | 1,000 |
+| P95 | 49,33 | 180.0 | 5,02% | 15,00 | 0.0/7.0 | 0,0% | 0,00 | 1,000 |
+| P92 | 44,80 | 270.0 | 7,53% | 22,50 | 0.0/7.0 | 0,0% | 0,00 | 1,000 |
+| P90 | 41,95 | 359.0 | 10,01% | 29,90 | 1.0/7.0 | 14,3% | 1,43 | 0,522 |
+| P85 | 38,97 | 539.0 | 15,03% | 44,90 | 1.0/7.0 | 14,3% | 0,95 | 0,681 |
+| P80 | 35,85 | 718.0 | 20,02% | 59,80 | 1.0/7.0 | 14,3% | 0,71 | 0,791 |
+| P75 | 31,97 | 898.0 | 25,04% | 74,80 | 2.0/7.0 | 28,6% | 1,14 | 0,556 |
+| P70 | 29,99 | 1075.0 | 29,98% | 89,60 | 3.0/7.0 | 42,9% | 1,43 | 0,352 |
+| P60 | 24,76 | 1436.0 | 40,04% | 119,70 | 6.0/7.0 | 85,7% | 2,14 | 0,019 |
+| P50 | 21,55 | 1794.0 | 50,03% | 149,50 | 6.0/7.0 | 85,7% | 1,71 | 0,062 |
+
+O p-valor é o de um teste hipergeométrico: a probabilidade de capturar ao menos aquele número de
+casos sorteando a mesma quantidade de registros ao acaso.
+
+![Curva de carga operacional](../figures/integrity/04_curva_carga_operacional.png)
+
+#### O achado central: não há ganho demonstrável sobre a seleção aleatória
+
+**No nível da partida, nenhum limiar produz ganho estatisticamente distinguível do acaso.** O
+melhor ponto da curva (P85, 1,5 alerta por rodada) captura 3 de 13 casos com ganho de 1,54×, a
+um p-valor de 0,31. Nos tiers operacionalmente atraentes — Top 1% e Top 5% — a captura é **zero**.
+
+**No nível do atleta há sinal, mas fora da faixa útil.** O único ponto com p < 0,05 é o corte no
+percentil 60: captura 6 dos 7 atletas, ganho de 2,14×, p = 0,019 — ao custo de sinalizar **40% de
+todos os atletas da base**, cerca de 120 por temporada e divisão. Não é uma fila de auditoria;
+é a lista telefônica.
+
+#### Por que isso é coerente com o resto do trabalho
+
+O resultado não é um acidente de calibração: é um **desencontro entre o instrumento e o
+fenômeno**. O `MATCH_ANOMALY_SCORE` mede distorção coletiva da partida — concentração temporal,
+precocidade, volume. Os incidentes da Operação Penalidade Máxima são atos individuais: um cartão
+amarelo de um atleta, um pênalti cometido por um zagueiro. Um cartão combinado em uma partida
+com mais 4 cartões legítimos não move a distribuição da partida.
+
+A própria econometria deste projeto já havia registrado isso: a exposição a apostas tem efeito
+**nulo** sobre a proporção coletiva de cartões no 1º tempo ($\beta = -0{,}0129$, $p = 0{,}5916$).
+A manipulação por micro-apostas não é comportamento de clube, é conduta individual — e por isso
+a unidade de análise que pode funcionar é o **atleta**, não a partida.
+
+### 3.8 Reposicionamento: nem detector, nem priorizador — instrumento de medição
+
+A tarefa F1-04 previa reposicionar o sistema de "detecção de fraude" para "priorização de
+escrutínio". O reposicionamento é necessário, mas **não é suficiente**: um priorizador é avaliado
+por precisão no topo da lista, e o topo da lista não contém os casos conhecidos.
+
+O que os dados sustentam afirmar hoje:
+
+1. **O sistema mede atipicidade disciplinar com rigor estatístico.** Os subscores são testes
+   binomiais calibrados na distribuição basal de 22.850 cartões, com fórmula publicada,
+   reproduzível e testada. Isso é verdadeiro e verificável, e independe do ground truth.
+2. **O sistema não demonstra capacidade de priorizar os casos conhecidos de manipulação.** Nem
+   no topo da lista, nem em nenhum limiar testado, no nível da partida.
+3. **O caminho com evidência é o nível do atleta**, que mostra sinal ainda que fora da faixa
+   operacional, e que depende de dados que o projeto ainda não tem: a escalação por partida
+   (tarefa F2-04) e o escore pré-jogo por atleta (F3-01).
+
+**Recomendação de posicionamento.** Descrever o produto como *instrumento de medição de
+atipicidade disciplinar* — que é o que ele comprovadamente faz — e não como detector ou
+priorizador de manipulação, até que exista evidência de ganho sobre o acaso. Afirmar capacidade
+de priorização hoje não sobrevive à primeira diligência técnica de um comprador.
+
+#### Limiar por persona, sob a ressalva acima
+
+Os limiares abaixo são o corte mais permissivo que cabe na capacidade declarada de cada persona.
+As capacidades são **premissas**, a serem confirmadas nas entrevistas da tarefa F5-01, e a
+sensibilidade esperada carrega toda a ressalva desta seção.
+
+| Persona | Capacidade (por rodada) | Corte | Alertas/rodada | Casos capturados | Sensibilidade |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Analista de federação / STJD | 3 | P70 | 2,99 | 4/13 | 30,8% |
+| Compliance de clube | 1 | P90 | 1,00 | 1/13 | 7,7% |
+| Integrity de operadora | 10 | P50 | 4,98 | 5/13 | 38,5% |
+
+---
+
 ## 4. Análise dos Rankings de Triagem (Tabelas 15 e 16)
 
 ### 4.1 Top 5 partidas sinalizadas (Tabela 15)
@@ -392,7 +550,8 @@ O pipeline gerou três gráficos de alta resolução armazenados em `reports/fig
 
 1. **`01_distribuicao_anomaly_scores.png`:** Histogramas e curvas de densidade (KDE) demonstrando as distribuições de cauda longa do `MATCH_ANOMALY_SCORE` e `ATHLETE_ANOMALY_SCORE`, com a marcação visual dos limiares de corte percentílicos.
 2. **`02_dispersao_tempo_vs_volume.png`:** Gráfico de dispersão cruzando a anomalia temporal ($S_{\text{tempo}}$) com a precocidade ($S_{\text{precoce}}$) e o volume de cartões, destacando os confrontos reais investigados na Operação Penalidade Máxima.
-3. **`03_validacao_sensibilidade_ground_truth.png`:** Diagrama de sensibilidade que mapeia os percentis individuais e status de detecção dos 14 casos reais investigados, cujos percentis individuais estão sujeitos à ressalva da seção 3.4.
+3. **`04_curva_carga_operacional.png`:** Curvas de carga operacional nos dois níveis, contra a referência de seleção aleatória, com os limiares por persona marcados. É a figura que sustenta a seção 3.7.
+4. **`03_validacao_sensibilidade_ground_truth.png`:** Diagrama de sensibilidade que mapeia os percentis individuais e status de detecção dos 14 casos reais investigados, cujos percentis individuais estão sujeitos à ressalva da seção 3.4.
 
 ---
 
@@ -443,6 +602,7 @@ Recomenda-se que federações (CBF) e entidades de integridade utilizem o sistem
 * **Auditoria de Reconciliação (F1-01 / F1-02):** [`src/analysis/comparacao_reconciliacao_score.py`](file:///d:/Python%20Projetos/analise-bets/src/analysis/comparacao_reconciliacao_score.py)
 * **Resolvedor de Identidade do Ground Truth (F1-03):** [`src/models/ground_truth_resolver.py`](file:///d:/Python%20Projetos/analise-bets/src/models/ground_truth_resolver.py)
 * **Validação Fora da Amostra (F1-03):** [`src/models/validacao_out_of_sample.py`](file:///d:/Python%20Projetos/analise-bets/src/models/validacao_out_of_sample.py)
+* **Precisão e Carga de Alerta (F1-04):** [`src/analysis/precisao_e_carga_alerta.py`](file:///d:/Python%20Projetos/analise-bets/src/analysis/precisao_e_carga_alerta.py)
 * **Tabelas Geradas:**
   * [`reports/tables/tabela_15_ranking_partidas_anomalas.csv`](file:///d:/Python%20Projetos/analise-bets/reports/tables/tabela_15_ranking_partidas_anomalas.csv)
   * [`reports/tables/tabela_16_ranking_atletas_anomalos.csv`](file:///d:/Python%20Projetos/analise-bets/reports/tables/tabela_16_ranking_atletas_anomalos.csv)
@@ -454,6 +614,10 @@ Recomenda-se que federações (CBF) e entidades de integridade utilizem o sistem
   * `reports/tables/auditoria_ground_truth_partidas.csv` / `_atletas.csv` / `_eventos.csv` (ancoragem)
   * `reports/tables/tabela_22_validacao_out_of_sample.csv` (sensibilidade por protocolo)
   * `reports/tables/tabela_22b_validacao_out_of_sample_detalhe.csv` (resultado por dobra)
+  * `reports/tables/tabela_21_precisao_e_carga_de_alerta.csv` (carga por tier)
+  * `reports/tables/tabela_21b_precisao_at_k.csv` (precisão@k por rodada)
+  * `reports/tables/tabela_21c_curva_carga_operacional.csv` / `_21e_..._atleta.csv` (curvas)
+  * `reports/tables/tabela_21d_limiar_por_persona.csv` (limiar recomendado)
 * **Datasets Resultantes:**
   * `data/processed/integrity/partidas_anomaly_scored.parquet` (4.559 partidas)
   * `data/processed/integrity/atletas_anomaly_scored.parquet` (3.586 atleta-temporadas)

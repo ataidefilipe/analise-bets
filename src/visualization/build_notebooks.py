@@ -468,7 +468,7 @@ def create_notebook_04():
 Este caderno reproduz o sistema algorítmico de triagem estatística de integridade esportiva:
 1. **Scoring Composto de Partida (`MATCH_ANOMALY_SCORE`):** Ponderação de 5 subdimensões (tempo no 1º tempo, precocidade $\le 30'$, z-score de volume, patrocínio de apostas e pênaltis no 1º tempo);
 2. **Scoring Composto de Atleta (`ATHLETE_ANOMALY_SCORE`):** Ponderação de 3 subdimensões individuais (teste binomial de cauda, proporção percentual no 1º tempo e minutagem média);
-3. **Aferição contra o Ground-Truth da Operação Penalidade Máxima:** Sensibilidade de **35,7% (5 de 14 incidentes sinalizados)** pelos escores estatísticos fechados. O classificador de ML, avaliado fora da amostra, não generaliza (Tabela 22);
+3. **Aferição contra o Ground-Truth da Operação Penalidade Máxima:** Sensibilidade de **35,7% (5 de 14 incidentes sinalizados)**, captura que **não se distingue de seleção aleatória** no nível da partida (Tabela 21). O classificador de ML, avaliado fora da amostra, não generaliza (Tabela 22);
 4. **Governança Ética e Presunção de Inocência:** Conformidade rigorosa com o `.agent.md` — scores estatísticos representam desvios de linha de base para triagem humana, e não prova penal de fraude.
 """))
 

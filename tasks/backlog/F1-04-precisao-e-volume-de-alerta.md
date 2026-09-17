@@ -4,7 +4,7 @@
 **Responsável sugerido:** Lacê Rene
 **Tamanho:** M
 **Depende de:** F1-03
-**Status:** Backlog
+**Status:** Concluído (2026-09-16)
 
 ---
 
@@ -44,20 +44,20 @@ honesto e comercialmente mais forte.
 
 ## Definition of Done
 
-- [ ] Tabela 21 (`reports/tables/tabela_21_precisao_e_carga_de_alerta.csv`) contendo, por
+- [x] Tabela 21 (`reports/tables/tabela_21_precisao_e_carga_de_alerta.csv`) contendo, por
       tier de prioridade e por nível (partida e atleta):
       número absoluto de sinalizados, percentual da base, alertas por rodada, alertas por
       caso conhecido do ground truth.
-- [ ] Precisão@k calculada para k = 1, 3, 5 e 10 por rodada, nos casos em que há ground
+- [x] Precisão@k calculada para k = 1, 3, 5 e 10 por rodada, nos casos em que há ground
       truth disponível na rodada.
-- [ ] Declaração explícita, no relatório 07, da **limitação de precisão**: o ground truth
+- [x] Declaração explícita, no relatório 07, da **limitação de precisão**: o ground truth
       cobre uma operação, uma temporada, e não permite estimar falsos positivos reais.
-- [ ] Reposicionamento textual do sistema no relatório 07 e no white paper: de "detecção"
+- [x] Reposicionamento textual do sistema no relatório 07 e no white paper: de "detecção"
       para "priorização de escrutínio", com a justificativa métrica.
-- [ ] Figura nova mostrando o trade-off sensibilidade × volume de alerta conforme o limiar
+- [x] Figura nova mostrando o trade-off sensibilidade × volume de alerta conforme o limiar
       de corte varia (curva de carga operacional).
-- [ ] Recomendação de limiar operacional por persona, derivada da curva.
-- [ ] Suíte `pytest` passando.
+- [x] Recomendação de limiar operacional por persona, derivada da curva.
+- [x] Suíte `pytest` passando.
 
 ## Riscos e observações
 

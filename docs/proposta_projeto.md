@@ -93,7 +93,7 @@ O repositório do projeto organiza dados brutos e tratados com rastreabilidade a
 * **O Paradoxo Disciplinar:** Queda física das faltas em $-19,3\%$ (31,4 $\to$ 25,4 faltas/jogo) acompanhada por uma elevação de $+37,1\%$ na taxa de conversão em cartões (recorde de 0,220 cartões por falta em 2024).
 * **Efeito Causal Identificado:** Clubes com exposição máster a bets recebem em média $+0,2665$ cartões a mais por jogo ($p = 0,00642$), com tendências paralelas validadas nos períodos pré-tratamento ($p > 0,10$).
 * **Ausência de Viés Institucional nos Cartões Precoces:** O coeficiente sobre cartões no 1º tempo é estatisticamente nulo ($\beta = -0,0129, p = 0,5916$), demonstrando que a manipulação precoce é uma ação individual e não uma estratégia tática do clube.
-* **Triagem com Eficácia Declarada:** O algoritmo de *Anomaly Scoring* sinaliza 5 dos 14 casos reais da Operação Penalidade Máxima (35,7%) nos tiers prioritários, marcando 10,05% da base. O componente de machine learning, avaliado fora da amostra, não generaliza. O sistema se posiciona como priorizador de fila de auditoria, e não como detector de fraude — ver o relatório técnico 07, seções 3.3 a 3.6.
+* **Instrumento de Medição de Atipicidade Disciplinar:** O algoritmo de *Anomaly Scoring* mede desvio disciplinar com testes binomiais calibrados em 22.850 cartões, com fórmula publicada e reproduzível. Contra o ground truth da Operação Penalidade Máxima, sinaliza 5 dos 14 casos ao marcar 10,05% da base — captura que **não se distingue de seleção aleatória** no nível da partida. O sistema **não** é apresentado como detector nem como priorizador de manipulação; a unidade de análise com sinal é o atleta. Ver o relatório técnico 07, seções 3.3 a 3.8.
 
 ---
 

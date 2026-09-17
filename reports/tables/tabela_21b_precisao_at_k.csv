@@ -1,0 +1,5 @@
+k,rodadas_avaliadas,partidas_inspecionadas,positivos_na_amostra,positivos_capturados,precisao_at_k,precisao_maxima_possivel,recall_at_k,ganho_sobre_aleatorio
+1,9,9,13,1,0.1111,1.0,0.0769,0.77
+3,9,27,13,4,0.1481,0.4815,0.3077,1.03
+5,9,45,13,4,0.0889,0.2889,0.3077,0.62
+10,9,90,13,13,0.1444,0.1444,1.0,1.0
