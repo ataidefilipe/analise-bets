@@ -1,0 +1,15 @@
+caso_id,serie,temporada,rodada_ground_truth,rodada_utilizada,confronto,partida_id,status_partida
+PM-001,B,2022,38,38,Vila Nova x Sport,380,resolvido
+PM-002,B,2022,38,38,Criciuma x Tombense,374,resolvido
+PM-003,B,2022,38,38,Sampaio Correa x Londrina,378,resolvido
+PM-004,B,2022,38,38,Sampaio Correa x Londrina,378,resolvido
+PM-005,B,2022,23,31,Nautico x Sampaio Correa,303,resolvido_corrigido
+PM-006,A,2022,25,25,Juventude x Avai,7886,resolvido
+PM-007,A,2022,26,26,Palmeiras x Juventude,7900,resolvido
+PM-008,A,2022,27,27,Juventude x Fortaleza,7912,resolvido
+PM-009,A,2022,28,28,Fluminense x Juventude,7920,resolvido
+PM-010,A,2022,36,36,Santos x Avai,7996,resolvido
+PM-011,A,2022,37,37,Botafogo x Santos,8014,resolvido
+PM-012,A,2022,32,32,Ceara x Cuiaba,7958,resolvido
+PM-013,A,2022,36,36,Goias x Juventude,7999,resolvido
+PM-014,A,2022,36,36,Cuiaba x Palmeiras,8004,resolvido

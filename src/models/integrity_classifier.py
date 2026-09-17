@@ -16,6 +16,8 @@ import pandas as pd
 from sklearn.ensemble import IsolationForest, RandomForestClassifier
 from sklearn.preprocessing import RobustScaler
 
+from src.models.ground_truth_resolver import resolver_partidas, resolver_atletas
+
 DATA_PARTIDAS = os.path.join("data", "processed", "integrity", "partidas_anomaly_scored.parquet")
 DATA_ATLETAS = os.path.join("data", "processed", "integrity", "atletas_anomaly_scored.parquet")
 DATA_PM = os.path.join("data", "processed", "integrity", "casos_penalidade_maxima.parquet")
@@ -104,9 +106,13 @@ class BaggingPUClassifier:
 
 def train_match_classifiers(df_matches: pd.DataFrame, df_pm: pd.DataFrame):
     """Treina o Isolation Forest e o classificador PU no nível da partida."""
+    # NOTA (F1-02): `exposure_total_partida` foi retirada do espaço de features. Estimar a
+    # associação entre exposição a bets e cartões pela econometria e, ao mesmo tempo, usar a
+    # mesma exposição como preditor de suspeição faz o modelo confirmar a hipótese por
+    # construção. A coluna segue na base como contexto e variável de estratificação.
     feature_cols = [
         "prop_cartoes_1t", "prop_cartoes_30m", "total_cartoes", "z_cartoes",
-        "cartoes_reclamacao_cera", "penaltis_1t", "exposure_total_partida",
+        "cartoes_reclamacao_cera", "penaltis_1t",
         "score_tempo", "score_precoce"
     ]
 
@@ -129,23 +135,16 @@ def train_match_classifiers(df_matches: pd.DataFrame, df_pm: pd.DataFrame):
     df_matches["iforest_anomaly_score"] = norm_scores
     df_matches["iforest_outlier"] = (iforest.predict(X) == -1).astype(int)
 
-    # 2. Mapeamento de Ground Truth para PU Learning
-    pm_matches_ids = set()
-    for _, row in df_pm.iterrows():
-        s = row["serie"]
-        t = row["temporada"]
-        rod = row["rodada"]
-        mand_slug = row["clube_mandante"].lower().replace(" ", "_").replace("-", "_")
-        m = df_matches[
-            (df_matches["serie"] == s) &
-            (df_matches["temporada"] == t) &
-            (df_matches["rodada"] == rod) &
-            (df_matches["clube_mandante_slug"].str.contains(mand_slug[:5], case=False, na=False))
-        ]
-        if len(m) > 0:
-            pm_matches_ids.add(m.iloc[0]["partida_id"])
-
-    y_pu = df_matches["partida_id"].isin(pm_matches_ids).astype(int).values
+    # 2. Mapeamento de Ground Truth para PU Learning, via resolvedor explícito (F1-03).
+    # A chave inclui a temporada: a `partida_id` da Série B reinicia a cada ano.
+    resolucao = resolver_partidas(df_matches, df_pm)
+    chaves_positivas = {
+        (r["serie"], r["temporada"], r["partida_id"])
+        for _, r in resolucao.iterrows() if pd.notna(r["partida_id"])
+    }
+    y_pu = df_matches.apply(
+        lambda r: int((r["serie"], r["temporada"], r["partida_id"]) in chaves_positivas), axis=1
+    ).values
     print(f"     Casos positivos de partidas mapeados no treino PU: {y_pu.sum()}")
 
     print("     Treinando Classificador Semi-Supervisionado (Bagging PU Learning)...")
@@ -171,10 +170,10 @@ def train_match_classifiers(df_matches: pd.DataFrame, df_pm: pd.DataFrame):
     return iforest, pu_clf, df_matches, feature_cols
 
 
-def train_athlete_classifiers(df_athletes: pd.DataFrame, df_pm: pd.DataFrame):
+def train_athlete_classifiers(df_athletes: pd.DataFrame, df_pm: pd.DataFrame, df_cards: pd.DataFrame):
     """Treina o Isolation Forest e o classificador PU no nível do atleta."""
     feature_cols = [
-        "prop_cartoes_1t", "cartoes_30m", "minuto_medio_nominal",
+        "prop_cartoes_1t", "cartoes_30m", "minuto_medio_partida",
         "total_cartoes", "score_atleta_tempo", "score_atleta_taxa", "score_atleta_minuto"
     ]
 
@@ -194,25 +193,18 @@ def train_athlete_classifiers(df_athletes: pd.DataFrame, df_pm: pd.DataFrame):
     df_athletes["iforest_anomaly_score"] = ((raw_scores - min_s) / (max_s - min_s) * 100.0).round(2)
     df_athletes["iforest_outlier"] = (iforest_ath.predict(X) == -1).astype(int)
 
-    # Mapeamento de Atletas do Ground Truth
-    alias_map = {
-        "mateusinho": "mateus_da_silva_duarte",
-        "moraes_jr": "moraes",
-        "moraes": "moraes",
+    # Mapeamento de Atletas do Ground Truth, via resolvedor explícito (F1-03).
+    # Só entram como positivos os atletas efetivamente resolvidos na base pontuada; os demais
+    # (não resolvidos ou abaixo do mínimo de cartões) ficam de fora — rotular o atleta errado
+    # é pior do que não rotular.
+    resolucao = resolver_atletas(df_cards, df_athletes, df_pm)
+    resolvidos = resolucao[resolucao["status_atleta"] == "resolvido"]
+    chaves_positivas = {
+        (r["serie"], r["temporada"], r["atleta_slug_base"]) for _, r in resolvidos.iterrows()
     }
-    pm_athletes_slugs = set()
-    for _, row in df_pm.iterrows():
-        raw_slug = row["atleta_slug"]
-        search_slug = alias_map.get(raw_slug, raw_slug)
-        t = row["temporada"]
-        ath = df_athletes[
-            (df_athletes["temporada"] == t) &
-            (df_athletes["atleta_slug"].str.contains(search_slug.split("_")[0], case=False, na=False))
-        ]
-        if len(ath) > 0:
-            pm_athletes_slugs.add(ath.iloc[0]["atleta_slug"])
-
-    y_pu = df_athletes["atleta_slug"].isin(pm_athletes_slugs).astype(int).values
+    y_pu = df_athletes.apply(
+        lambda r: int((r["serie"], r["temporada"], r["atleta_slug"]) in chaves_positivas), axis=1
+    ).values
     print(f"     Atletas positivos únicos mapeados no treino PU: {y_pu.sum()}")
 
     print("     Treinando Classificador PU para Atletas...")
@@ -237,75 +229,61 @@ def train_athlete_classifiers(df_athletes: pd.DataFrame, df_pm: pd.DataFrame):
     return iforest_ath, pu_ath, df_athletes, feature_cols
 
 
-def evaluate_ground_truth_ml(df_matches: pd.DataFrame, df_athletes: pd.DataFrame, df_pm: pd.DataFrame) -> pd.DataFrame:
-    """Cruza as predições do novo modelo de Machine Learning contra os 14 casos reais da PM."""
-    alias_map = {
-        "mateusinho": "mateus_da_silva_duarte",
-        "moraes_jr": "moraes",
-        "moraes": "moraes",
-    }
+def evaluate_ground_truth_ml(df_matches: pd.DataFrame, df_athletes: pd.DataFrame,
+                             df_pm: pd.DataFrame, df_cards: pd.DataFrame) -> pd.DataFrame:
+    """
+    Cruza as predições do modelo de ML contra os 14 casos da Operação Penalidade Máxima,
+    usando o resolvedor de identidade explícito (F1-03).
+
+    Atenção: esta é uma métrica **in-sample** — os mesmos casos compõem o rótulo positivo do
+    treino PU. A estimativa fora da amostra está em `src/models/validacao_out_of_sample.py`.
+    """
+    res_partidas = resolver_partidas(df_matches, df_pm).set_index("caso_id")
+    res_atletas = resolver_atletas(df_cards, df_athletes, df_pm).set_index("atleta_slug_ground_truth")
 
     results = []
-
     for _, row in df_pm.iterrows():
-        s = row["serie"]
-        t = row["temporada"]
-        rod = row["rodada"]
-        mand_slug = row["clube_mandante"].lower().replace(" ", "_").replace("-", "_")
+        rp = res_partidas.loc[row["caso_id"]]
+        m_score_orig = m_prob_ml = np.nan
+        m_class_ml = "Partida não resolvida"
+        if pd.notna(rp["partida_id"]):
+            alvo = df_matches[(df_matches["serie"] == row["serie"]) &
+                              (df_matches["temporada"] == row["temporada"]) &
+                              (df_matches["partida_id"] == rp["partida_id"])]
+            if len(alvo) > 0:
+                m_score_orig = float(alvo.iloc[0]["match_anomaly_score"])
+                m_prob_ml = float(alvo.iloc[0]["prob_suspeicao_ml"])
+                m_class_ml = str(alvo.iloc[0]["classificacao_ml"])
 
-        # Partida
-        m = df_matches[
-            (df_matches["serie"] == s) &
-            (df_matches["temporada"] == t) &
-            (df_matches["rodada"] == rod) &
-            (df_matches["clube_mandante_slug"].str.contains(mand_slug[:5], case=False, na=False))
-        ]
+        ra = res_atletas.loc[row["atleta_slug"]]
+        a_score_orig = a_prob_ml = np.nan
+        a_class_ml = f"Atleta não avaliável ({ra['status_atleta']})"
+        if ra["status_atleta"] == "resolvido":
+            alvo = df_athletes[(df_athletes["serie"] == ra["serie"]) &
+                               (df_athletes["temporada"] == ra["temporada"]) &
+                               (df_athletes["atleta_slug"] == ra["atleta_slug_base"])]
+            if len(alvo) > 0:
+                a_score_orig = float(alvo.iloc[0]["athlete_anomaly_score"])
+                a_prob_ml = float(alvo.iloc[0]["prob_suspeicao_ml"])
+                a_class_ml = str(alvo.iloc[0]["classificacao_ml"])
 
-        if len(m) > 0:
-            m_row = m.iloc[0]
-            m_score_orig = float(m_row["match_anomaly_score"])
-            m_score_ml = float(m_row["score_suspeicao_ml"])
-            m_prob_ml = float(m_row["prob_suspeicao_ml"])
-            m_iforest = int(m_row["iforest_outlier"])
-            m_class_ml = str(m_row["classificacao_ml"])
-        else:
-            m_score_orig, m_score_ml, m_prob_ml, m_iforest, m_class_ml = np.nan, np.nan, np.nan, np.nan, "Nao Mapeada"
-
-        # Atleta
-        raw_slug = row["atleta_slug"]
-        search_slug = alias_map.get(raw_slug, raw_slug)
-        ath = df_athletes[
-            (df_athletes["temporada"] == t) &
-            (df_athletes["atleta_slug"].str.contains(search_slug.split("_")[0], case=False, na=False))
-        ]
-
-        if len(ath) > 0:
-            ath_row = ath.iloc[0]
-            a_score_orig = float(ath_row["athlete_anomaly_score"])
-            a_score_ml = float(ath_row["score_suspeicao_ml"])
-            a_prob_ml = float(ath_row["prob_suspeicao_ml"])
-            a_iforest = int(ath_row["iforest_outlier"])
-            a_class_ml = str(ath_row["classificacao_ml"])
-        else:
-            a_score_orig, a_score_ml, a_prob_ml, a_iforest, a_class_ml = np.nan, np.nan, np.nan, np.nan, "Nao Mapeado"
-
-        # Determinar status combinado ML
-        if "Alto Risco" in m_class_ml or "Extrema Anomalia" in a_class_ml or (a_prob_ml >= 0.50):
+        if "Alto Risco" in m_class_ml or "Extrema Anomalia" in a_class_ml:
             status_ml = "Detectado (Alto Risco / Alerta Investigativo)"
-        elif "Monitoramento" in m_class_ml or "Monitoramento" in a_class_ml or (m_iforest == 1 or a_iforest == 1):
+        elif "Monitoramento" in m_class_ml or "Monitoramento" in a_class_ml:
             status_ml = "Detectado (Risco Moderado / Triagem ML)"
         else:
-            status_ml = "Não Detectado / Baixa Prioridade"
+            status_ml = "Basal / Não sinalizado"
 
         results.append({
             "caso_id": row["caso_id"],
-            "temporada": t,
-            "serie": s,
-            "rodada": rod,
+            "temporada": row["temporada"],
+            "serie": row["serie"],
+            "rodada": rp["rodada_utilizada"],
             "confronto": row["confronto"],
             "atleta": row["atleta"],
             "evento_alvo": row["evento_alvo"],
             "evento_ocorreu": row["evento_ocorreu"],
+            "status_atleta": ra["status_atleta"],
             "score_partida_heuristico": m_score_orig,
             "prob_partida_ml": m_prob_ml,
             "classe_partida_ml": m_class_ml,
@@ -329,9 +307,12 @@ def run_integrity_classifier_pipeline():
     os.makedirs(INTEGRITY_DIR, exist_ok=True)
 
     print("\n--- 1. Carregando Dados Consolidados ---")
+    from src.models.anomaly_detection import load_unified_data
+
     df_matches = pd.read_parquet(DATA_PARTIDAS)
     df_athletes = pd.read_parquet(DATA_ATLETAS)
     df_pm = pd.read_parquet(DATA_PM)
+    _, df_cards, _ = load_unified_data()
 
     print(f"     Partidas: {len(df_matches)} | Atletas: {len(df_athletes)} | Casos Ground Truth: {len(df_pm)}")
 
@@ -339,7 +320,7 @@ def run_integrity_classifier_pipeline():
     iforest_match, pu_match, df_matches_scored, match_features = train_match_classifiers(df_matches, df_pm)
 
     print("\n--- 3. Treinando Classificadores para Atletas ---")
-    iforest_ath, pu_ath, df_athletes_scored, ath_features = train_athlete_classifiers(df_athletes, df_pm)
+    iforest_ath, pu_ath, df_athletes_scored, ath_features = train_athlete_classifiers(df_athletes, df_pm, df_cards)
 
     print("\n--- 4. Salvando Modelos Serializados (.joblib) ---")
     joblib.dump(iforest_match, os.path.join(MODELS_DIR, "match_isolation_forest.joblib"), compress=3)
@@ -354,7 +335,7 @@ def run_integrity_classifier_pipeline():
     print("     [OK] Datasets com features e predições ML salvos em:", INTEGRITY_DIR)
 
     print("\n--- 6. Avaliando Sensibilidade contra a Operação Penalidade Máxima ---")
-    df_eval_ml = evaluate_ground_truth_ml(df_matches_scored, df_athletes_scored, df_pm)
+    df_eval_ml = evaluate_ground_truth_ml(df_matches_scored, df_athletes_scored, df_pm, df_cards)
     t18_path = os.path.join(TABLES_DIR, "tabela_18_classificador_integridade_resultados.csv")
     df_eval_ml.to_csv(t18_path, index=False, encoding="utf-8")
     print("     [OK] Tabela 18 salva:", t18_path)
@@ -379,7 +360,7 @@ def run_integrity_classifier_pipeline():
     top_athletes = df_athletes_scored.sort_values("prob_suspeicao_ml", ascending=False).head(50)
     top_athletes_export = top_athletes[[
         "temporada", "serie", "clube_slug", "atleta", "total_cartoes", "cartoes_1t",
-        "prop_cartoes_1t", "minuto_medio_nominal", "iforest_outlier",
+        "prop_cartoes_1t", "minuto_medio_partida", "iforest_outlier",
         "prob_suspeicao_ml", "classificacao_ml", "athlete_anomaly_score"
     ]]
     t20_path = os.path.join(TABLES_DIR, "tabela_20_classificacao_atletas_ml.csv")

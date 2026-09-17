@@ -170,40 +170,71 @@ $$H_0: \beta_{e \le -3} = \beta_{e = -2} = 0$$
 A Fase 8 estruturou um framework algorítmico de detecção de anomalias disciplinares para servir como camada de conformidade (*compliance*) e triagem preliminar (*screening*) de integridade esportiva. O sistema processa súmulas oficiais da CBF e avalia simultaneamente a dimensão do confronto coletivo e o histórico disciplinar longitudinal dos atletas.
 
 ### 7.2 Formulação do Match Anomaly Score (`MATCH_ANOMALY_SCORE`)
+
+> **Revisão de 2026-09-16 (tarefas F1-01 / F1-02).** A especificação canônica vive nas
+> constantes do topo de `src/models/anomaly_detection.py` e é fixada por teste automatizado.
+> O subscore de exposição comercial ($S_{\text{bet}}$) foi **removido** do índice; a
+> justificativa está na seção 2.1 do relatório técnico 07.
+
 Para cada partida $i \in \{1, \dots, 4.559\}$, calcula-se uma pontuação ponderada $[0, 100]$:
-$$\text{MATCH\_ANOMALY\_SCORE} = 0{,}30 \cdot S_{\text{tempo}} + 0{,}25 \cdot S_{\text{precoce}} + 0{,}20 \cdot S_{\text{volume}} + 0{,}15 \cdot S_{\text{bet}} + 0{,}10 \cdot S_{\text{penalti}}$$
+$$\text{MATCH\_ANOMALY\_SCORE} = 0{,}39 \cdot S_{\text{tempo}} + 0{,}28 \cdot S_{\text{precoce}} + 0{,}22 \cdot S_{\text{volume}} + 0{,}11 \cdot S_{\text{penalti}}$$
 
 Onde:
-1. **$S_{\text{tempo}}$ (Concentração no 1º Tempo):** Teste de cauda binomial com probabilidade basal da liga $p_0 = 0{,}354$:
-   $$S_{\text{tempo}} = \min\left(100, -20 \cdot \log_{10}(P(X \ge k \mid n, p_0 = 0{,}354))\right) \quad \text{se } k/n > 0{,}354 \text{ senão } 0{,}0$$
-2. **$S_{\text{precoce}}$ (Cartões até 30 Minutos):** Teste de cauda binomial com probabilidade basal $p_0 = 0{,}198$:
-   $$S_{\text{precoce}} = \min\left(100, -20 \cdot \log_{10}(P(X \ge k \mid n, p_0 = 0{,}198))\right) \quad \text{se } k/n > 0{,}198 \text{ senão } 0{,}0$$
-3. **$S_{\text{volume}}$ (Z-Score de Cartões Totais):**
-   $$S_{\text{volume}} = \text{clip}\left(\frac{\text{Cartões} - \mu_{\text{liga}}}{\sigma_{\text{liga}}} \cdot 25{,}0, 0{,}0, 100{,}0\right)$$
-4. **$S_{\text{bet}}$ (Intensidade Comercial das Equipes):**
-   $$S_{\text{bet}} = \frac{\text{Exposure}_{\text{mandante}} + \text{Exposure}_{\text{visitante}}}{2} \cdot 100$$
-5. **$S_{\text{penalti}}$ (Penalidades no 1º Tempo):**
+1. **$S_{\text{tempo}}$ (Concentração no 1º Tempo):** Teste de cauda binomial com probabilidade basal estimada na própria base, $p_0 = 0{,}353$:
+   $$S_{\text{tempo}} = \text{clip}\left(-25 \cdot \log_{10}(P(X \ge k \mid n, p_0)), 0, 100\right)$$
+2. **$S_{\text{precoce}}$ (Cartões até 30 Minutos de jogo corrido):** Teste de cauda binomial com $p_0 = 0{,}156$:
+   $$S_{\text{precoce}} = \text{clip}\left(-25 \cdot \log_{10}(P(X \ge k \mid n, p_0)), 0, 100\right)$$
+3. **$S_{\text{volume}}$ (Z-Score de Cartões Totais dentro de temporada e série):**
+   $$S_{\text{volume}} = \text{clip}\left(25{,}0 \cdot \frac{\text{Cartões} - \mu_{\text{temporada, série}}}{\sigma_{\text{temporada, série}}}, 0{,}0, 100{,}0\right)$$
+4. **$S_{\text{penalti}}$ (Penalidades no 1º Tempo):**
    $$S_{\text{penalti}} = \begin{cases} 80{,}0, & \ge 2 \text{ pênaltis no 1ºT} \\ 40{,}0, & 1 \text{ pênalti no 1ºT} \\ 0{,}0, & 0 \text{ pênaltis no 1ºT} \end{cases}$$
+
+A variável `exposure_total_partida` permanece na base como covariável de contexto e
+estratificação, sem participar de nenhum escore.
 
 ### 7.3 Formulação do Athlete Anomaly Score (`ATHLETE_ANOMALY_SCORE`)
 Para cada atleta-temporada com $\ge 3$ cartões recebidos:
 $$\text{ATHLETE\_ANOMALY\_SCORE} = 0{,}50 \cdot S_{\text{atleta\_tempo}} + 0{,}30 \cdot S_{\text{atleta\_taxa}} + 0{,}20 \cdot S_{\text{atleta\_minuto}}$$
 
 Onde:
-* $S_{\text{atleta\_tempo}} = \min(100, -25 \cdot \log_{10}(p_{\text{binom}}))$;
+* $S_{\text{atleta\_tempo}} = \text{clip}(-25 \cdot \log_{10}(p_{\text{binom}}), 0, 100)$, com $p_0 = 0{,}353$;
 * $S_{\text{atleta\_taxa}} = \text{prop\_cartoes\_1t} \cdot 100$;
-* $S_{\text{atleta\_minuto}} = \text{clip}((90{,}0 - \overline{\text{Minuto}}) \cdot 1{,}5, 0{,}0, 100{,}0)$.
+* $S_{\text{atleta\_minuto}} = \text{clip}((90{,}0 - \overline{\text{Minuto}}) \cdot 1{,}5, 0{,}0, 100{,}0)$, sobre o minuto de jogo corrido.
 
 ### 7.4 Calibração Empírica por Percentis e Validação Ground-Truth
-Os thresholds de alerta foram calibrados empiricamente na distribuição histórica:
-* **Alta Prioridade de Escrutínio:** Top 10% da liga (Percentil $\ge 90\%$);
-* **Média Prioridade de Escrutínio:** Top 25% da liga (Percentil $\ge 75\%$);
-* **Linha de Base / Típico:** Abaixo do Percentil 75%.
+Os tiers de alerta são definidos pelo percentil empírico da própria distribuição, o que torna a
+carga operacional um parâmetro explícito:
+* **Extrema Anomalia:** Top 1% (Percentil $\ge 99\%$);
+* **Alta Prioridade de Escrutínio:** Top 5% (Percentil $\ge 95\%$);
+* **Média Prioridade:** Top 10% (Percentil $\ge 90\%$);
+* **Típico / Baixa Prioridade:** abaixo do Percentil 90%.
 
-**Sensibilidade Empírica no Ground Truth (Operação Penalidade Máxima):**
-* $100\%$ dos 14 casos reais investigados e condenados foram classificados em *Alta* ou *Média Prioridade*;
-* $100\%$ dos atletas confessos/condenados da Série A (8/8 registros) foram posicionados no **Top 10% (Percentil $\ge 90\%$)** da distribuição histórica;
-* Nino Paraíba (Percentil 99,7%), Gabriel Tota (Percentil 98,2%), Paulo Miranda (Percentil 95,3%), Moraes Jr (Percentil 93,3%), Igor Cariús (Percentil 92,4%), Eduardo Bauermann (Percentil 90,5%).
+**Ancoragem do ground truth.** O cruzamento entre os 14 casos e a base é feito pelo mapa de
+identidade explícito de `src/models/ground_truth_resolver.py`, com evidência e grau de confiança
+por associação. Situação: 14 de 14 partidas resolvidas (1 com correção de rodada), 7 de 10
+atletas resolvidos, 1 abaixo do mínimo de 3 cartões e 2 sem correspondente defensável.
+
+**Sensibilidade dos escores estatísticos (fórmulas fechadas, não treinadas no ground truth):**
+* **5 dos 14 casos (35,7%)** sinalizados em faixa prioritária de triagem;
+* Dois dos nove não sinalizados são fraudes que não se consumaram em campo.
+
+**Sensibilidade do classificador de ML (Tabela 22).** A distinção é essencial: apenas o
+`BaggingPUClassifier` é treinado nos rótulos. Sob leave-one-out agrupado por entidade:
+
+| Nível | Critério | In-sample | Leave-one-out | IC 95% (Wilson) |
+| :--- | :--- | :---: | :---: | :---: |
+| Partida | Classe 2 (Alto Risco) | 12/14 (85,7%) | **5/14 (35,7%)** | 16,3% – 61,2% |
+| Partida | Classe 1 ou 2 | 14/14 (100%) | **10/14 (71,4%)** | 45,4% – 88,3% |
+| Atleta | Classe 2 (Alto Risco) | 7/7 (100%) | **0/7 (0,0%)** | 0,0% – 35,4% |
+| Atleta | Classe 1 ou 2 | 7/7 (100%) | **3/7 (42,9%)** | 15,8% – 75,0% |
+
+Sob separação por série — treinar na Série B e avaliar na Série A, o cenário mais próximo do uso
+real — a captura no tier de Alto Risco é de 1 em 9 partidas (11,1%).
+
+**Limitação de fonte.** Os metadados por incidente do ground truth (rodada, minuto e, em alguns
+casos, a atribuição do cartão) não reconciliam com os registros de súmula: de 14 casos, apenas 1
+tem o evento confirmado na base. O rótulo positivo é, portanto, definido nos níveis agregados de
+partida e de atleta-temporada, e não por evento individual.
 
 ### 7.5 Governança Ética e Presunção de Inocência
 A metodologia estabelece formalmente que scores elevados representam **anomalias estatísticas sob escrutínio probabilístico**, e **não prova penal de manipulação de resultados**. Fatores desportivos legítimos (estratégia tática agressiva, arbitragem rígida, faltas de contenção) podem gerar scores atípicos, devendo o sistema ser empregado como ferramenta de triagem para auditoria humana por federações e unidades de integridade.
@@ -217,8 +248,8 @@ A Fase 12 expandiu a triagem de integridade para além das heurísticas probabil
 
 ### 8.2 Componente 1: Isolation Forest Multidimensional
 Para capturar anomalias estruturais multivariadas sem viés de supervisão humana, emprega-se o algoritmo `IsolationForest` no nível da partida e do atleta:
-* **Espaço de Features (Partida):** Proporção de cartões no 1º tempo (`prop_cartoes_1t`), cartões precoces até 30' (`prop_cartoes_30m`), volume total de cartões (`total_cartoes`), $z$-score de volume na temporada (`z_cartoes`), cartões por cera/reclamação (`cartoes_reclamacao_cera`), pênaltis no 1ºT (`penaltis_1t`), exposição comercial a apostas (`exposure_total_partida`), e transformações log-binomiais (`score_tempo`, `score_precoce`).
-* **Espaço de Features (Atleta):** `prop_cartoes_1t`, `cartoes_30m`, `minuto_medio_nominal`, `total_cartoes`, `score_atleta_tempo`, `score_atleta_taxa` e `score_atleta_minuto`.
+* **Espaço de Features (Partida):** Proporção de cartões no 1º tempo (`prop_cartoes_1t`), cartões precoces até 30' (`prop_cartoes_30m`), volume total de cartões (`total_cartoes`), $z$-score de volume na temporada (`z_cartoes`), cartões por cera/reclamação (`cartoes_reclamacao_cera`), pênaltis no 1ºT (`penaltis_1t`) e transformações log-binomiais (`score_tempo`, `score_precoce`).
+* **Espaço de Features (Atleta):** `prop_cartoes_1t`, `cartoes_30m`, `minuto_medio_partida`, `total_cartoes`, `score_atleta_tempo`, `score_atleta_taxa` e `score_atleta_minuto`.
 * **Calibração de Contaminação:** Fixada em $\alpha = 0{,}03$ (3% da cauda mais extrema da distribuição).
 * **Score de Decisão Normalizado:**
   $$S_{\text{IForest}} = \frac{-d(\mathbf{x}) - \min(-d)}{\max(-d) - \min(-d)} \cdot 100 \in [0, 100]$$
@@ -238,7 +269,7 @@ As predições do Isolation Forest e da probabilidade PU são combinadas na segu
 * **Classe 0 (Basal / Conforme):** Casos típicos em ambas as dimensões.
 
 ### 8.5 Desempenho e Validação Empírica
-* **Sensibilidade no Ground Truth (Tabela 18):** $100\%$ de captura dos 14 casos reais (14/14) no tier de Alto Risco.
+* **Sensibilidade no Ground Truth (Tabela 18):** métrica **in-sample** — os mesmos casos compõem o rótulo positivo do treino PU. A estimativa fora da amostra está na Tabela 22 e cai para 5/14 (partida) e 0/7 (atleta) no tier de Alto Risco.
 * **Probabilidade Média de Suspeição:** $80{,}4\%$ nas partidas investigadas e $84{,}8\%$ nos atletas confessos/condenados.
 * **Distribuição Populacional:** O modelo classifica apenas $8{,}93\%$ das partidas históricas no tier de Alto Risco, garantindo foco operacional e controle de falsos alarmes para unidades de auditoria desportiva.
 

@@ -1,0 +1,64 @@
+protocolo,nivel,cenario,grupo_avaliado,indice,positivos_no_treino,prob_suspeicao,percentil_prob,iforest_outlier,classe,cenario_agregado
+in_sample,partida,todos_os_positivos,PM-001,4178,13,0.7774,99.47,0,Classe 2,todos_os_positivos
+in_sample,partida,todos_os_positivos,PM-002,4172,13,0.7861,99.65,0,Classe 2,todos_os_positivos
+in_sample,partida,todos_os_positivos,PM-003,4176,13,0.6612,89.23,0,Classe 2,todos_os_positivos
+in_sample,partida,todos_os_positivos,PM-004,4176,13,0.6612,89.23,0,Classe 2,todos_os_positivos
+in_sample,partida,todos_os_positivos,PM-005,4101,13,0.7324,98.35,0,Classe 2,todos_os_positivos
+in_sample,partida,todos_os_positivos,PM-006,2899,13,0.7623,99.17,0,Classe 2,todos_os_positivos
+in_sample,partida,todos_os_positivos,PM-007,2913,13,0.7231,98.11,0,Classe 2,todos_os_positivos
+in_sample,partida,todos_os_positivos,PM-008,2924,13,0.5721,84.56,0,Classe 1,todos_os_positivos
+in_sample,partida,todos_os_positivos,PM-009,2933,13,0.6938,95.44,0,Classe 2,todos_os_positivos
+in_sample,partida,todos_os_positivos,PM-010,3010,13,0.7404,98.57,0,Classe 2,todos_os_positivos
+in_sample,partida,todos_os_positivos,PM-011,3028,13,0.5698,84.34,0,Classe 1,todos_os_positivos
+in_sample,partida,todos_os_positivos,PM-012,2971,13,0.8653,100.0,0,Classe 2,todos_os_positivos
+in_sample,partida,todos_os_positivos,PM-013,3012,13,0.8618,99.98,0,Classe 2,todos_os_positivos
+in_sample,partida,todos_os_positivos,PM-014,3017,13,0.7151,97.72,0,Classe 2,todos_os_positivos
+in_sample,atleta,todos_os_positivos,Joseph,1137,7,0.8011,98.52,0,Classe 2,todos_os_positivos
+in_sample,atleta,todos_os_positivos,Mateusinho,1166,7,0.816,99.27,0,Classe 2,todos_os_positivos
+in_sample,atleta,todos_os_positivos,Ygor Catatau,1343,7,0.8252,99.69,0,Classe 2,todos_os_positivos
+in_sample,atleta,todos_os_positivos,Paulo Miranda,358,7,0.8437,99.94,0,Classe 2,todos_os_positivos
+in_sample,atleta,todos_os_positivos,Eduardo Bauermann,932,7,0.8373,99.92,0,Classe 2,todos_os_positivos
+in_sample,atleta,todos_os_positivos,Nino Paraiba,2349,7,0.8475,100.0,0,Classe 2,todos_os_positivos
+in_sample,atleta,todos_os_positivos,Moraes Jr,888,7,0.8348,99.86,0,Classe 2,todos_os_positivos
+leave_one_out,partida,PM-001,PM-001,4178,12,0.6198,86.14,0,Classe 2,todas_as_dobras
+leave_one_out,partida,PM-002,PM-002,4172,12,0.597,85.98,0,Classe 1,todas_as_dobras
+leave_one_out,partida,PM-003,PM-003,4176,13,0.6612,89.23,0,Classe 2,todas_as_dobras
+leave_one_out,partida,PM-004,PM-004,4176,13,0.6612,89.23,0,Classe 2,todas_as_dobras
+leave_one_out,partida,PM-005,PM-005,4101,12,0.0906,10.55,0,Classe 0,todas_as_dobras
+leave_one_out,partida,PM-006,PM-006,2899,12,0.3146,39.44,0,Classe 0,todas_as_dobras
+leave_one_out,partida,PM-007,PM-007,2913,12,0.6225,88.44,0,Classe 2,todas_as_dobras
+leave_one_out,partida,PM-008,PM-008,2924,12,0.2622,35.62,0,Classe 0,todas_as_dobras
+leave_one_out,partida,PM-009,PM-009,2933,12,0.5761,83.86,0,Classe 1,todas_as_dobras
+leave_one_out,partida,PM-010,PM-010,3010,12,0.5386,79.71,0,Classe 1,todas_as_dobras
+leave_one_out,partida,PM-011,PM-011,3028,12,0.2541,31.41,0,Classe 0,todas_as_dobras
+leave_one_out,partida,PM-012,PM-012,2971,12,0.6944,89.95,0,Classe 2,todas_as_dobras
+leave_one_out,partida,PM-013,PM-013,3012,12,0.4927,77.74,0,Classe 1,todas_as_dobras
+leave_one_out,partida,PM-014,PM-014,3017,12,0.4537,74.16,0,Classe 1,todas_as_dobras
+leave_one_out,atleta,Joseph,Joseph,1137,6,0.4417,71.28,0,Classe 1,todas_as_dobras
+leave_one_out,atleta,Mateusinho,Mateusinho,1166,6,0.376,57.0,0,Classe 1,todas_as_dobras
+leave_one_out,atleta,Ygor Catatau,Ygor Catatau,1343,6,0.2028,38.51,0,Classe 0,todas_as_dobras
+leave_one_out,atleta,Paulo Miranda,Paulo Miranda,358,6,0.127,25.79,0,Classe 0,todas_as_dobras
+leave_one_out,atleta,Eduardo Bauermann,Eduardo Bauermann,932,6,0.3113,50.95,0,Classe 0,todas_as_dobras
+leave_one_out,atleta,Nino Paraiba,Nino Paraiba,2349,6,0.0171,28.69,0,Classe 0,todas_as_dobras
+leave_one_out,atleta,Moraes Jr,Moraes Jr,888,6,0.5845,81.99,0,Classe 1,todas_as_dobras
+separacao_por_serie,partida,treina_em_B_avalia_em_A,PM-006,2899,4,0.0432,1.91,0,Classe 0,treina_em_B_avalia_em_A
+separacao_por_serie,partida,treina_em_B_avalia_em_A,PM-007,2913,4,0.4605,86.49,0,Classe 1,treina_em_B_avalia_em_A
+separacao_por_serie,partida,treina_em_B_avalia_em_A,PM-008,2924,4,0.0671,9.74,0,Classe 0,treina_em_B_avalia_em_A
+separacao_por_serie,partida,treina_em_B_avalia_em_A,PM-009,2933,4,0.4556,85.41,0,Classe 1,treina_em_B_avalia_em_A
+separacao_por_serie,partida,treina_em_B_avalia_em_A,PM-010,3010,4,0.6096,93.05,0,Classe 2,treina_em_B_avalia_em_A
+separacao_por_serie,partida,treina_em_B_avalia_em_A,PM-011,3028,4,0.0714,11.8,0,Classe 0,treina_em_B_avalia_em_A
+separacao_por_serie,partida,treina_em_B_avalia_em_A,PM-012,2971,4,0.0511,3.62,0,Classe 0,treina_em_B_avalia_em_A
+separacao_por_serie,partida,treina_em_B_avalia_em_A,PM-013,3012,4,0.1068,23.73,0,Classe 0,treina_em_B_avalia_em_A
+separacao_por_serie,partida,treina_em_B_avalia_em_A,PM-014,3017,4,0.2552,61.64,0,Classe 0,treina_em_B_avalia_em_A
+separacao_por_serie,partida,treina_em_A_avalia_em_B,PM-001,4178,9,0.5242,78.0,0,Classe 1,treina_em_A_avalia_em_B
+separacao_por_serie,partida,treina_em_A_avalia_em_B,PM-002,4172,9,0.4701,75.26,0,Classe 1,treina_em_A_avalia_em_B
+separacao_por_serie,partida,treina_em_A_avalia_em_B,PM-003,4176,9,0.4567,71.51,0,Classe 1,treina_em_A_avalia_em_B
+separacao_por_serie,partida,treina_em_A_avalia_em_B,PM-004,4176,9,0.4567,71.51,0,Classe 1,treina_em_A_avalia_em_B
+separacao_por_serie,partida,treina_em_A_avalia_em_B,PM-005,4101,9,0.1085,8.82,0,Classe 0,treina_em_A_avalia_em_B
+separacao_por_serie,atleta,treina_em_B_avalia_em_A,Paulo Miranda,358,3,0.1363,50.59,0,Classe 0,treina_em_B_avalia_em_A
+separacao_por_serie,atleta,treina_em_B_avalia_em_A,Eduardo Bauermann,932,3,0.3064,71.61,0,Classe 0,treina_em_B_avalia_em_A
+separacao_por_serie,atleta,treina_em_B_avalia_em_A,Nino Paraiba,2349,3,0.0481,30.4,0,Classe 0,treina_em_B_avalia_em_A
+separacao_por_serie,atleta,treina_em_B_avalia_em_A,Moraes Jr,888,3,0.7564,94.9,0,Classe 2,treina_em_B_avalia_em_A
+separacao_por_serie,atleta,treina_em_A_avalia_em_B,Joseph,1137,4,0.5712,86.59,0,Classe 1,treina_em_A_avalia_em_B
+separacao_por_serie,atleta,treina_em_A_avalia_em_B,Mateusinho,1166,4,0.3232,61.43,0,Classe 0,treina_em_A_avalia_em_B
+separacao_por_serie,atleta,treina_em_A_avalia_em_B,Ygor Catatau,1343,4,0.2671,51.98,0,Classe 0,treina_em_A_avalia_em_B

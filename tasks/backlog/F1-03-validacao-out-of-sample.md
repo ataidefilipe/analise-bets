@@ -4,7 +4,7 @@
 **Responsável sugerido:** Lacê Rene
 **Tamanho:** M
 **Depende de:** F1-01, F1-02
-**Status:** Backlog
+**Status:** Concluído (2026-09-16)
 
 ---
 
@@ -51,16 +51,16 @@ com sua sensibilidade original preservada. Essa distinção deve ficar explícit
 
 ## Definition of Done
 
-- [ ] Protocolo leave-one-out implementado para os 14 positivos, nos dois níveis (partida e
+- [x] Protocolo leave-one-out implementado para os 14 positivos, nos dois níveis (partida e
       atleta).
-- [ ] Protocolo de separação por série implementado como validação complementar.
-- [ ] Sensibilidade out-of-sample reportada em tabela nova, lado a lado com a in-sample.
-- [ ] Distinção explícita, no código e no relatório, entre os escores estatísticos fechados
+- [x] Protocolo de separação por série implementado como validação complementar.
+- [x] Sensibilidade out-of-sample reportada em tabela nova, lado a lado com a in-sample.
+- [x] Distinção explícita, no código e no relatório, entre os escores estatísticos fechados
       (não treinados no ground truth) e o classificador de ML (treinado).
-- [ ] `reports/analysis/07_*.md` e `docs/decisoes_e_progresso.md` atualizados com os números
+- [x] `reports/analysis/07_*.md` e `docs/decisoes_e_progresso.md` atualizados com os números
       reais; a afirmação "100% de sensibilidade" qualificada ou substituída.
-- [ ] Testes unitários cobrindo o novo protocolo em `tests/test_integrity_classifier.py`.
-- [ ] Suíte `pytest` passando.
+- [x] Testes unitários cobrindo o novo protocolo em `tests/test_integrity_classifier.py`.
+- [x] Suíte `pytest` passando.
 
 ## Riscos e observações
 
@@ -70,3 +70,34 @@ com sua sensibilidade original preservada. Essa distinção deve ficar explícit
   diligência técnica.
 * Com N = 14, qualquer estimativa terá intervalo de confiança largo. Reportar o intervalo,
   não só o ponto.
+
+---
+
+## Achados da execução das F1-01 / F1-02 (2026-09-16)
+
+A auditoria de reconciliação revelou um problema **anterior** ao de validação out-of-sample, e
+que precisa ser resolvido antes dela: **o cruzamento entre o ground truth e a base de atletas
+associa atletas errados.**
+
+O casamento é feito por `str.contains` do primeiro token do slug, seguido de `.iloc[0]`, sem
+filtro de série ou de clube (`anomaly_detection.py::evaluate_ground_truth_sensitivity` e
+`integrity_classifier.py::train_athlete_classifiers`). Evidências levantadas:
+
+* O percentil de **99,67%** historicamente atribuído a **Nino Paraíba (Ceará)** pertence a
+  **Nino (Fluminense)**. O registro real de Nino Paraíba em 2022 está no percentil **34,5%**.
+* **Paulo Miranda (Juventude, Série A)** foi casado com *Paulo de Souza Junior* (Tombense,
+  Série B); **Moraes Jr (Goiás)** com *Anderson Wanderllan de Moraes Rodrigues* (Sampaio
+  Corrêa); **Eduardo Bauermann** com *Luiz Eduardo Barros Cavalcanti*; **Igor Cariús** com
+  *Igor Marques Paciência Cardoso*; **Gabriel Tota** com *Gabriel Baralhas*.
+* **Quatro dos dez atletas** do ground truth (Gabriel Tota, Eduardo Bauermann, Igor Cariús e
+  Ygor Catatau) **não constam** da base de atletas pontuados, por não atingirem o mínimo de 3
+  cartões na temporada. Eles não têm escore — receberam o de homônimos parciais.
+
+Consequência para esta tarefa: o item de maior valor não é mais o protocolo leave-one-out, e
+sim **construir um resolvedor de identidade explícito** (mapa `caso_id -> (temporada, série,
+clube, atleta_slug)` com teste de exatidão dos 14 casos) e decidir o que fazer com os atletas
+que não atingem o mínimo de 3 cartões — provavelmente baixar o mínimo ou pontuá-los à parte.
+Só depois disso faz sentido medir sensibilidade dentro ou fora da amostra.
+
+O teste `tests/test_anomaly_detection.py::test_ground_truth_sensitivity_serie_a` está marcado
+com `@pytest.mark.skip` apontando para esta tarefa, e deve ser reescrito aqui.

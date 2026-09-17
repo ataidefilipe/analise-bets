@@ -1,0 +1,17 @@
+protocolo,nivel,cenario,criterio,capturados,avaliados,sensibilidade,ic95_inferior,ic95_superior,percentil_mediano_da_prob
+in_sample,partida,todos_os_positivos,Classe 2 (Alto Risco),12,14,0.8571,0.6006,0.9599,98.23
+in_sample,partida,todos_os_positivos,Classe 1 ou 2 (sinalizado),14,14,1.0,0.7847,1.0,98.23
+in_sample,atleta,todos_os_positivos,Classe 2 (Alto Risco),7,7,1.0,0.6457,1.0,99.86
+in_sample,atleta,todos_os_positivos,Classe 1 ou 2 (sinalizado),7,7,1.0,0.6457,1.0,99.86
+leave_one_out,partida,todas_as_dobras,Classe 2 (Alto Risco),5,14,0.3571,0.1634,0.6124,81.78
+leave_one_out,partida,todas_as_dobras,Classe 1 ou 2 (sinalizado),10,14,0.7143,0.4535,0.8828,81.78
+leave_one_out,atleta,todas_as_dobras,Classe 2 (Alto Risco),0,7,0.0,0.0,0.3543,50.95
+leave_one_out,atleta,todas_as_dobras,Classe 1 ou 2 (sinalizado),3,7,0.4286,0.1582,0.7495,50.95
+separacao_por_serie,partida,treina_em_B_avalia_em_A,Classe 2 (Alto Risco),1,9,0.1111,0.0199,0.435,23.73
+separacao_por_serie,partida,treina_em_B_avalia_em_A,Classe 1 ou 2 (sinalizado),3,9,0.3333,0.1206,0.6458,23.73
+separacao_por_serie,partida,treina_em_A_avalia_em_B,Classe 2 (Alto Risco),0,5,0.0,0.0,0.4345,71.51
+separacao_por_serie,partida,treina_em_A_avalia_em_B,Classe 1 ou 2 (sinalizado),4,5,0.8,0.3755,0.9638,71.51
+separacao_por_serie,atleta,treina_em_B_avalia_em_A,Classe 2 (Alto Risco),1,4,0.25,0.0456,0.6994,61.1
+separacao_por_serie,atleta,treina_em_B_avalia_em_A,Classe 1 ou 2 (sinalizado),1,4,0.25,0.0456,0.6994,61.1
+separacao_por_serie,atleta,treina_em_A_avalia_em_B,Classe 2 (Alto Risco),0,3,0.0,0.0,0.5615,61.43
+separacao_por_serie,atleta,treina_em_A_avalia_em_B,Classe 1 ou 2 (sinalizado),1,3,0.3333,0.0615,0.7923,61.43

@@ -1,0 +1,15 @@
+caso_id,atleta,evento_alvo,minuto_ground_truth,evento_ocorreu,minuto_na_base,status_evento,observacao
+PM-001,Romario,cometer_penalti_1t,,False,,nao_verificavel,Penalti cometido nao gera registro de cartao na sumula.
+PM-002,Joseph,cometer_penalti_1t,23.0,True,,nao_verificavel,Penalti cometido nao gera registro de cartao na sumula.
+PM-003,Mateusinho,cometer_penalti_1t,19.0,True,,nao_verificavel,Penalti cometido nao gera registro de cartao na sumula.
+PM-004,Ygor Catatau,cometer_penalti_1t,19.0,True,,nao_verificavel,Penalti cometido nao gera registro de cartao na sumula.
+PM-005,Mateusinho,cartao_amarelo_1t,31.0,True,,ausente,O atleta nao recebeu cartao nesta partida segundo a base.
+PM-006,Paulo Miranda,cartao_amarelo_1t,47.0,True,,ausente,O atleta nao recebeu cartao nesta partida segundo a base.
+PM-007,Paulo Miranda,cartao_amarelo_1t,38.0,True,,ausente,O atleta nao recebeu cartao nesta partida segundo a base.
+PM-008,Gabriel Tota,cartao_amarelo_1t,38.0,True,,ausente,O atleta nao recebeu cartao nesta partida segundo a base.
+PM-009,Gabriel Tota,cartao_amarelo_1t,39.0,True,,ausente,O atleta nao recebeu cartao nesta partida segundo a base.
+PM-010,Eduardo Bauermann,cartao_amarelo,,False,,nao_aplicavel,O evento combinado nao se consumou em campo.
+PM-011,Eduardo Bauermann,cartao_vermelho,95.0,True,93.0,confirmado,"Cartoes do atleta na partida: [31.0, 93.0]."
+PM-012,Nino Paraiba,cartao_amarelo,45.0,True,55.0,divergencia_de_minuto,Cartoes do atleta na partida: [55.0].
+PM-013,Moraes Jr,cartao_amarelo_1t,31.0,True,5.0,divergencia_de_minuto,Cartoes do atleta na partida: [5.0].
+PM-014,Igor Carius,cartao_amarelo_1t,46.0,True,,nao_verificavel,Partida ou atleta nao resolvido.

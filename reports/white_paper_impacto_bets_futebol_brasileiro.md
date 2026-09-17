@@ -20,13 +20,13 @@ Este estudo apresenta a primeira investigação econométrica e causal exaustiva
 3. **Validação de Tendências Paralelas no Estudo de Eventos:** O modelo de Estudo de Eventos com Adoção Escalonada (*Staggered Event Study*) confirmou que os coeficientes pré-tratamento ($e \le -2$) são conjuntamente indistinguíveis de zero ($F = 0,366, p = 0,6961$ para taxa de conversão; $F = 2,430, p = 0,1037$ para cartões totais), validando a hipótese de tendências paralelas e atribuindo caráter causal à quebra observada após a assinatura dos contratos ($e \ge 0$).
 4. **Ausência de Viés Coletivo no 1º Tempo:** O coeficiente de exposição a apostas sobre a proporção de cartões no 1º tempo é nulo ($\beta = -0,0129, p = 0,5916$). Isso atesta econometricamente que **a manipulação de cartões precoces não é uma prática institucional dos clubes patrocinados**, mas sim uma anomalia comportamental de aliciamento individual e criminoso de atletas.
 5. **Heterogeneidade Interdivisões:** Disputar a Série B reduz as advertências em **$-0,2835$ cartões por equipe/jogo** ($p = 0,03696$) em relação à Série A, evidenciando menor severidade disciplinar média na divisão de acesso.
-6. **Sistema de Triagem com 100% de Sensibilidade Empírica:** Foi formulado um algoritmo matemático de detecção de anomalias (`MATCH_ANOMALY_SCORE` e `ATHLETE_ANOMALY_SCORE`). Testado contra o *ground truth* judicial da Operação Penalidade Máxima, o sistema capturou **100% (14 de 14)** dos incidentes nos tiers prioritários de triagem, posicionando **100% dos atletas investigados na Série A no Top 10% mais anômalo de toda a distribuição histórica da competição (Percentil $\ge 90\%$)**.
+6. **Sistema de Triagem para Priorização de Escrutínio:** Foi formulado um algoritmo matemático de detecção de anomalias disciplinares (`MATCH_ANOMALY_SCORE` e `ATHLETE_ANOMALY_SCORE`). Aferido contra o *ground truth* judicial da Operação Penalidade Máxima, o sistema sinaliza **5 dos 14 incidentes (35,7%)** em faixa prioritária de triagem, ao custo de 458 partidas sinalizadas em 4.559. O componente de machine learning, avaliado fora da amostra, não generaliza. O instrumento se posiciona, portanto, como **priorizador de fila de auditoria**, e não como detector de fraude.
 
 ---
 
 ## Abstract (English)
 
-The legalization of fixed-odds sports betting in Brazil through Federal Law 13,756/2018 triggered a dramatic transformation in professional football. Between 2019 and 2024, bookmakers evolved from virtually zero presence to complete commercial hegemony, sponsoring 18 out of 20 Série A clubs by 2024. Concurrently, Brazilian football faced major match-fixing scandals investigated under *Operação Penalidade Máxima*. This study provides the first comprehensive econometric and causal evaluation of the impact of betting expansion on referee discipline and integrity risks. Utilizing a panel of 7,598 club-match observations (2015–2024) alongside 760 official match sheets from Série B, we estimate Two-Way Fixed Effects (TWFE) and Staggered Event Study models. We document a "Disciplinary Paradox": fouls per match declined by 19.3% while the foul-to-card conversion rate increased by 37.1%. Econometric estimates prove a positive and statistically significant causal effect of club betting exposure on cards ($\beta = +0.2665, p = 0.00642$), with parallel trends fully validated ($p > 0.10$). Crucially, betting exposure exhibits a null effect on first-half card share ($\beta = -0.0129, p = 0.5916$), proving that early-card manipulation is not an institutional club behavior but an idiosyncratic athlete-level crime. Finally, we develop an Anomaly Scoring screening algorithm that achieves 100% detection sensitivity on convicted cases, placing all convicted top-flight players within the top 10% most anomalous historical distribution. We conclude with governance recommendations for sports confederations and regulatory authorities.
+The legalization of fixed-odds sports betting in Brazil through Federal Law 13,756/2018 triggered a dramatic transformation in professional football. Between 2019 and 2024, bookmakers evolved from virtually zero presence to complete commercial hegemony, sponsoring 18 out of 20 Série A clubs by 2024. Concurrently, Brazilian football faced major match-fixing scandals investigated under *Operação Penalidade Máxima*. This study provides the first comprehensive econometric and causal evaluation of the impact of betting expansion on referee discipline and integrity risks. Utilizing a panel of 7,598 club-match observations (2015–2024) alongside 760 official match sheets from Série B, we estimate Two-Way Fixed Effects (TWFE) and Staggered Event Study models. We document a "Disciplinary Paradox": fouls per match declined by 19.3% while the foul-to-card conversion rate increased by 37.1%. Econometric estimates prove a positive and statistically significant causal effect of club betting exposure on cards ($\beta = +0.2665, p = 0.00642$), with parallel trends fully validated ($p > 0.10$). Crucially, betting exposure exhibits a null effect on first-half card share ($\beta = -0.0129, p = 0.5916$), proving that early-card manipulation is not an institutional club behavior but an idiosyncratic athlete-level crime. Finally, we develop an Anomaly Scoring screening algorithm that flags 5 of the 14 convicted incidents (35.7% sensitivity) while marking 10.05% of all matches; out-of-sample evaluation shows the machine-learning component does not generalise, positioning the tool as an audit-queue prioritiser rather than a fraud detector. We conclude with governance recommendations for sports confederations and regulatory authorities.
 
 ---
 
@@ -199,46 +199,91 @@ Explorando a heterogeneidade no ano de adoção do primeiro contrato de aposta p
 
 ## 5. Sistema de Triagem e Anomaly Scoring de Integridade Esportiva
 
+> **Nota de revisão (2026-09-16).** Esta seção foi atualizada pelas tarefas F1-01 e F1-02 do
+> backlog de transição: a fórmula publicada foi reconciliada com a implementada, três defeitos
+> de harmonização da base foram corrigidos e os artefatos foram regenerados. Os números de
+> sensibilidade **caíram** em relação à versão anterior deste documento. A aferição ao nível do
+> atleta está suspensa até a conclusão da tarefa F1-03 — ver a seção 5.3.
+
 ### 5.1 Arquitetura dos Algoritmos de Triagem
 Com base no *ground truth* empírico da Operação Penalidade Máxima, concebemos um sistema dual de detecção estatística de desvios disciplinares normalizado na escala $[0, 100]$.
 
 #### A. Score Composto de Partida (`MATCH_ANOMALY_SCORE`)
-$$\text{MATCH\_ANOMALY\_SCORE} = 0{,}30 \cdot S_{\text{tempo}} + 0{,}25 \cdot S_{\text{precoce}} + 0{,}20 \cdot S_{\text{volume}} + 0{,}15 \cdot S_{\text{bet}} + 0{,}10 \cdot S_{\text{penalti}}$$
-1. $S_{\text{tempo}}$: Teste binomial de cauda para concentração no 1º tempo ($p_0 = 0{,}354$):
-   $$S_{\text{tempo}} = \min\left(100, -20 \cdot \log_{10}(P(X \ge k \mid n, p_0 = 0{,}354))\right)$$
-2. $S_{\text{precoce}}$: Teste binomial para cartões aplicados até os 30 minutos ($p_0 = 0{,}198$);
-3. $S_{\text{volume}}$: Z-score de cartões totais em relação à média histórica ($\mu = 5{,}23, \sigma = 2{,}15$);
-4. $S_{\text{bet}}$: Intensidade comercial média das duas equipes no confronto $[0, 100]$;
-5. $S_{\text{penalti}}$: Pênaltis no 1º tempo (40 pts para 1 pênalti, 80 pts para $\ge 2$ pênaltis).
+$$\text{MATCH\_ANOMALY\_SCORE} = 0{,}39 \cdot S_{\text{tempo}} + 0{,}28 \cdot S_{\text{precoce}} + 0{,}22 \cdot S_{\text{volume}} + 0{,}11 \cdot S_{\text{penalti}}$$
+1. $S_{\text{tempo}}$: Teste binomial de cauda para concentração no 1º tempo ($p_0 = 0{,}353$):
+   $$S_{\text{tempo}} = \text{clip}\left(-25 \cdot \log_{10}(P(X \ge k \mid n, p_0)), 0, 100\right)$$
+2. $S_{\text{precoce}}$: Teste binomial para cartões aplicados até os 30 minutos de jogo corrido ($p_0 = 0{,}156$);
+3. $S_{\text{volume}}$: Z-score de cartões totais dentro de cada temporada e divisão, multiplicado por 25;
+4. $S_{\text{penalti}}$: Pênaltis no 1º tempo (40 pts para 1 pênalti, 80 pts para $\ge 2$ pênaltis).
+
+O índice **não contém** componente de exposição comercial a casas de apostas. O subscore
+$S_{\text{bet}}$, presente na versão anterior com peso 0,15, foi removido por dois motivos
+independentes: usar a exposição como preditor de suspeição, sendo ela a variável cujo efeito a
+econometria deste mesmo trabalho procura estimar, torna o achado circular; e um índice que
+eleva o escore de um clube por causa do patrocinador da camisa é inutilizável como instrumento
+de compliance. A variável permanece na base como covariável de contexto.
 
 #### B. Score Composto de Atleta (`ATHLETE_ANOMALY_SCORE`)
 Para atletas com $\ge 3$ cartões na temporada:
 $$\text{ATHLETE\_ANOMALY\_SCORE} = 0{,}50 \cdot S_{\text{atleta\_tempo}} + 0{,}30 \cdot S_{\text{atleta\_taxa}} + 0{,}20 \cdot S_{\text{atleta\_minuto}}$$
-Onde $S_{\text{atleta\_taxa}}$ é a fração de advertências no 1º tempo e $S_{\text{atleta\_minuto}} = \text{clip}((90 - \overline{\text{Minuto}}) \cdot 1{,}5, 0, 100)$.
+Onde $S_{\text{atleta\_taxa}}$ é a fração de advertências no 1º tempo e $S_{\text{atleta\_minuto}} = \text{clip}((90 - \overline{\text{Minuto}}) \cdot 1{,}5, 0, 100)$, sobre o minuto de jogo corrido.
+
+#### C. Tiers de triagem
+A prioridade de escrutínio é definida pelo percentil empírico da distribuição: Top 1% (Extrema
+Anomalia), Top 5% (Alta Prioridade) e Top 10% (Média Prioridade). O sistema sinaliza 458 das
+4.559 partidas (10,05%).
 
 ### 5.2 Validação Empírica no Ground Truth (Tabela 17)
 
-| Caso ID | Temporada | Série | Rodada | Confronto | Atleta | Evento Alvo | Ocorreu em Campo | Minuto | Match Score (Pct) | Athlete Score (Pct) | Status da Triagem |
-| :---: | :---: | :---: | :---: | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :--- |
-| **PM-001** | 2022 | B | 38 | Vila Nova x Sport | Romário | Pênalti 1ºT | Não | — | 25,95 (76,6%) | 23,27 (51,3%) | Detectado (Média Prio / P75) |
-| **PM-002** | 2022 | B | 38 | Criciúma x Tombense | Joseph | Pênalti 1ºT | Sim | 23' | 24,51 (72,6%) | 35,93 (78,5%) | Detectado (Média Prio / P75) |
-| **PM-003** | 2022 | B | 38 | Sampaio Corrêa x Londrina | Mateusinho | Pênalti 1ºT | Sim | 19' | 13,86 (29,0%) | 36,48 (78,9%) | Detectado (Média Prio / P75) |
-| **PM-004** | 2022 | B | 38 | Sampaio Corrêa x Londrina | Ygor Catatau | Pênalti 1ºT | Sim | 19' | 13,86 (29,0%) | 35,09 (77,8%) | Detectado (Média Prio / P75) |
-| **PM-005** | 2022 | B | 23 | Náutico x Sampaio Corrêa | Mateusinho | Amarelo 1ºT | Sim | 31' | 15,82 (37,8%) | 36,48 (78,9%) | Detectado (Média Prio / P75) |
-| **PM-006** | 2022 | A | 25 | Juventude x Avaí | Paulo Miranda | Amarelo 1ºT | Sim | 47' | 29,45 (84,5%) | 50,93 (**95,3%**) | **Detectado (Alta Prio / Top 10%)** |
-| **PM-007** | 2022 | A | 26 | Palmeiras x Juventude | Paulo Miranda | Amarelo 1ºT | Sim | 38' | 13,07 (24,9%) | 50,93 (**95,3%**) | **Detectado (Alta Prio / Top 10%)** |
-| **PM-008** | 2022 | A | 27 | Juventude x Fortaleza | Gabriel Tota | Amarelo 1ºT | Sim | 38' | 19,56 (54,8%) | 64,94 (**98,2%**) | **Detectado (Alta Prio / Top 10%)** |
-| **PM-009** | 2022 | A | 28 | Fluminense x Juventude | Gabriel Tota | Amarelo 1ºT | Sim | 39' | 13,70 (28,2%) | 64,94 (**98,2%**) | **Detectado (Alta Prio / Top 10%)** |
-| **PM-010** | 2022 | A | 36 | Santos x Avaí | Eduardo Bauermann | Amarelo | Não | — | 25,22 (75,0%) | 44,19 (**90,5%**) | **Detectado (Alta Prio / Top 10%)** |
-| **PM-011** | 2022 | A | 37 | Botafogo x Santos | Eduardo Bauermann | Vermelho | Sim | 95' | 21,62 (62,7%) | 44,19 (**90,5%**) | **Detectado (Alta Prio / Top 10%)** |
-| **PM-012** | 2022 | A | 32 | Ceará x Cuiabá | Nino Paraíba | Amarelo | Sim | 45' | 26,84 (79,0%) | 72,35 (**99,7%**) | **Detectado (Alta Prio / Top 10%)** |
-| **PM-013** | 2022 | A | 36 | Goiás x Juventude | Moraes Jr | Amarelo 1ºT | Sim | 31' | 32,77 (89,3%) | 46,88 (**93,3%**) | **Detectado (Alta Prio / Top 10%)** |
-| **PM-014** | 2022 | A | 36 | Cuiabá x Palmeiras | Igor Cariús | Amarelo 1ºT | Sim | 46' | 9,03 (9,6%) | 45,86 (**92,4%**) | **Detectado (Alta Prio / Top 10%)** |
+| Caso ID | Temporada | Série | Rodada | Confronto | Atleta | Evento Alvo | Ocorreu em Campo | Match Score (Pct) | Athlete Score (Pct) | Status da Triagem |
+| :---: | :---: | :---: | :---: | :--- | :--- | :--- | :---: | :---: | :---: | :--- |
+| **PM-001** | 2022 | B | 38 | Vila Nova x Sport | Romario | cometer_penalti_1t | Não | 0,00 (8,41%) | 16,35 (31,29%) | Não Ocorreu em Campo (Fraude Frustrada) |
+| **PM-002** | 2022 | B | 38 | Criciuma x Tombense | Joseph | cometer_penalti_1t | Sim | 1,34 (24,02%) | 29,09 (68,25%) | Prioridade Moderada |
+| **PM-003** | 2022 | B | 38 | Sampaio Correa x Londrina | Mateusinho | cometer_penalti_1t | Sim | 0,00 (8,41%) | 28,69 (67,47%) | Prioridade Moderada |
+| **PM-004** | 2022 | B | 38 | Sampaio Correa x Londrina | Ygor Catatau | cometer_penalti_1t | Sim | 0,00 (8,41%) | 31,49 (73,81%) | Prioridade Moderada |
+| **PM-005** | 2022 | B | 23 | Nautico x Sampaio Correa | Mateusinho | cartao_amarelo_1t | Sim | 0,00 (8,41%) | 28,69 (67,47%) | Prioridade Moderada |
+| **PM-006** | 2022 | A | 25 | Juventude x Avai | Paulo Miranda | cartao_amarelo_1t | Sim | 15,39 (87,90%) | 45,81 (93,17%) | Detectado (Alta Prioridade / Top 10%) |
+| **PM-007** | 2022 | A | 26 | Palmeiras x Juventude | Paulo Miranda | cartao_amarelo_1t | Sim | 1,34 (24,02%) | 45,81 (93,17%) | Detectado (Alta Prioridade / Top 10%) |
+| **PM-008** | 2022 | A | 27 | Juventude x Fortaleza | Gabriel Tota | cartao_amarelo_1t | Sim | 4,03 (40,26%) | 64,35 (98,13%) | Detectado (Alta Prioridade / Top 10%) |
+| **PM-009** | 2022 | A | 28 | Fluminense x Juventude | Gabriel Tota | cartao_amarelo_1t | Sim | 0,00 (8,41%) | 64,35 (98,13%) | Detectado (Alta Prioridade / Top 10%) |
+| **PM-010** | 2022 | A | 36 | Santos x Avai | Eduardo Bauermann | cartao_amarelo | Não | 4,40 (44,25%) | 39,61 (86,32%) | Detectado (Média Prioridade / Top 25%) |
+| **PM-011** | 2022 | A | 37 | Botafogo x Santos | Eduardo Bauermann | cartao_vermelho | Sim | 6,01 (53,97%) | 39,61 (86,32%) | Detectado (Média Prioridade / Top 25%) |
+| **PM-012** | 2022 | A | 32 | Ceara x Cuiaba | Nino Paraiba | cartao_amarelo | Sim | 15,33 (87,69%) | 72,17 (99,67%) | Detectado (Alta Prioridade / Top 10%) |
+| **PM-013** | 2022 | A | 36 | Goias x Juventude | Moraes Jr | cartao_amarelo_1t | Sim | 18,13 (92,06%) | 42,70 (90,60%) | Detectado (Alta Prioridade / Top 10%) |
+| **PM-014** | 2022 | A | 36 | Cuiaba x Palmeiras | Igor Carius | cartao_amarelo_1t | Sim | 2,30 (29,03%) | 41,17 (89,26%) | Detectado (Média Prioridade / Top 25%) |
 
-### 5.3 Desempenho do Algoritmo e Casos de "Fraude Frustrada"
-1. **Sensibilidade Global de 100%:** O algoritmo sinalizou **14 de 14 incidentes reais (100%)** nas faixas de escrutínio;
-2. **Convergência no Top 10% da Série A:** Todos os 8 registros de atletas investigados na elite nacional foram posicionados no **Top 10% mais atípico da liga (Percentil $\ge 90\%$)**, liderados por Nino Paraíba (Percentil 99,67%), Gabriel Tota (Percentil 98,16%) e Paulo Miranda (Percentil 95,29%);
-3. **A Matemática da Fraude Frustrada:** Nos casos onde o evento foi combinado pelos apostadores mas **não se concretizou em campo** (Romário no Vila Nova, que foi barrado pelo treinador Allan Aal; e Eduardo Bauermann contra o Avaí, que não executou a falta combinada), o algoritmo de partida preservou índices basais, comprovando que o modelo **não gera alarmes arbitrais falsos** na ausência de distorção física nos 90 minutos.
+### 5.3 Desempenho do Algoritmo, Limitações e Casos de "Fraude Frustrada"
+
+1. **Sensibilidade global de 35,7%.** Os escores estatísticos sinalizam **5 dos 14 incidentes
+   reais** em faixa prioritária de triagem — dois dos nove restantes são fraudes que não se
+   consumaram em campo. A versão anterior deste documento reportava 100% (14/14); o número era
+   inflado por defeitos de harmonização da base e por um casamento de identidade defeituoso.
+   O classificador de machine learning, avaliado fora da amostra, **não generaliza**: a captura
+   no tier de Alto Risco cai de 100% para 0 de 7 no nível do atleta e de 12 para 5 de 14 no
+   nível da partida.
+2. **A detecção da Série B era um artefato de escala de minuto.** As súmulas da CBF registram o
+   minuto **dentro de cada tempo**, e não em escala de jogo: um cartão aos 20' do 2º tempo era
+   lido como minuto 20. Como o subscore de minutagem premia advertências precoces, todos os
+   atletas da Série B tinham escore inflado. Corrigida a escala, os três atletas confessos da
+   Fase 1 da operação caem do quartil superior para a faixa de 67% a 74% da distribuição.
+3. **O casamento de identidade do ground truth foi refeito.** A versão anterior cruzava os
+   casos por correspondência parcial de nome, sem filtro de série ou clube, e associava atletas
+   errados em 8 dos 10 registros: o percentil de 99,7% atribuído a **Nino Paraíba (Ceará)**
+   pertence a **Nino (Fluminense)**, atleta sem relação com a operação — o registro real de Nino
+   Paraíba está no percentil 34,5%. O cruzamento passou a usar um mapa explícito com evidência e
+   grau de confiança por associação, em que casos sem correspondente defensável ficam
+   declaradamente não resolvidos.
+4. **Os eventos individuais do ground truth não reconciliam com as súmulas.** De 14 casos,
+   apenas 1 tem o evento confirmado na base; 2 divergem no minuto e 5 não aparecem. O rótulo
+   positivo é, por isso, definido nos níveis agregados de partida e de atleta-temporada. A
+   reconstituição dos incidentes a partir dos autos do MP-GO fica como pendência documental.
+5. **A matemática da fraude frustrada.** Nos casos em que o evento foi combinado pelos
+   apostadores mas **não se concretizou em campo** (Romário no Vila Nova, barrado pelo
+   treinador; e Eduardo Bauermann contra o Avaí, que não executou o combinado), o índice de
+   partida permanece basal — o sistema não gera sinal na ausência de distorção nos 90 minutos.
+6. **O que o sistema é.** Com 458 partidas sinalizadas para 14 incidentes conhecidos, o
+   instrumento não é um detector de fraude: é um **priorizador de fila de escrutínio**. A
+   quantificação da precisão e da carga de alerta por rodada é objeto da tarefa F1-04.
 
 ---
 

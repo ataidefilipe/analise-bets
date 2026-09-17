@@ -951,7 +951,7 @@ def generate_html():
             <div class="kpi-card">
               <span class="kpi-label">Sensibilidade Ground Truth</span>
               <span class="kpi-value">100%</span>
-              <span class="kpi-subtext">14/14 Casos da Penalidade Máxima</span>
+              <span class="kpi-subtext">5/14 Casos da Penalidade Máxima</span>
             </div>
           </div>
         </div>
@@ -1576,7 +1576,7 @@ def generate_html():
         <div class="slide-header">
           <span class="slide-badge">Fase 8</span>
           <h2 class="slide-title">Sistema de Triagem e Anomaly Scoring de Integridade Esportiva</h2>
-          <p class="slide-subtitle">Arquitetura dual de triagem, teste binomial e validação com 100% de sensibilidade.</p>
+          <p class="slide-subtitle">Arquitetura dual de triagem, teste binomial e aferição contra o ground truth judicial.</p>
         </div>
 
         <div class="code-callout">
@@ -1623,7 +1623,7 @@ def generate_html():
             <br>• <strong>Gabriel Tota:</strong> Percentil <strong>98,2%</strong> (Top 1,8% da liga);
             <br>• <strong>Paulo Miranda:</strong> Percentil <strong>95,3%</strong> (Top 4,7% da liga);
             <br>• <strong>Eduardo Bauermann:</strong> Percentil <strong>90,5%</strong> (Top 9,5% da liga).
-            <br>O modelo colocou <strong>100% dos atletas investigados na elite dentro do Top 10% mais suspeito da história</strong>.
+            <br>Os escores estatísticos sinalizam <strong>5 dos 14 incidentes conhecidos</strong>, ao custo de 458 partidas marcadas em 4.559.
           </p>
         </div>
 
@@ -1635,7 +1635,7 @@ def generate_html():
               <span class="decision-tag tag-est">Sensibilidade Total</span>
             </div>
             <div class="decision-title">100% de Sensibilidade nos Tiers Prioritários</div>
-            <div class="decision-body">Todos os 14 incidentes judiciais reais foram capturados em <em>Alta Prioridade</em> (Top 10%) ou <em>Média Prioridade</em> (Top 25%). <strong>100% dos atletas investigados na Série A figuram no Top 10% mais anômalo de toda a história da liga</strong>.</div>
+            <div class="decision-body">Cinco dos 14 incidentes judiciais são sinalizados em faixa prioritária. Avaliado fora da amostra, o classificador de ML <strong>não generaliza</strong>: a captura no tier de Alto Risco cai de 100% para 0 de 7 no nível do atleta.</div>
           </div>
 
           <div class="decision-card ana">
@@ -2013,7 +2013,7 @@ def generate_html():
             </div>
             <div class="decision-title">Limiares por Percentis Empíricos e Governança Ética</div>
             <div class="decision-body">Definir alertas com base nos percentis empíricos da distribuição (Top 10% e Top 25%), com presunção irrestrita de inocência.</div>
-            <div class="decision-motive"><strong>Motivo:</strong> Atinge 100% de sensibilidade no ground truth da Penalidade Máxima sem imputação indevida a atletas legítimos.</div>
+            <div class="decision-motive"><strong>Motivo:</strong> Calibra o alerta pela distribuição observada, e não por limiar absoluto arbitrário, sem imputação indevida a atletas legítimos.</div>
           </div>
 
           <!-- D-TEC-01 a D-TEC-07 -->
@@ -2178,7 +2178,7 @@ def generate_html():
           </div>
           <div class="checklist-item">
             <input type="checkbox" checked disabled>
-            <div><strong>Ground Truth:</strong> Validação algorítmica contra os 14 casos reais transitados em julgado da Operação Penalidade Máxima (100% de sensibilidade).</div>
+            <div><strong>Ground Truth:</strong> Aferição algorítmica contra os 14 casos reais transitados em julgado da Operação Penalidade Máxima (sensibilidade de 35,7%, medida fora da amostra).</div>
           </div>
           <div class="checklist-item">
             <input type="checkbox" checked disabled>
@@ -2195,7 +2195,7 @@ def generate_html():
           <p>
             O projeto cumpriu integralmente todos os critérios de rigor científico, governança ética e reprodutibilidade exigidos pelo <code>.agent.md</code>.
             As evidências demonstram que as apostas esportivas causaram uma transformação profunda na sensibilidade arbitral do futebol brasileiro, enquanto
-            os casos de manipulação por micro-apostas constituem desvios criminosos individuais que podem ser rastreados com 100% de sensibilidade por algoritmos de triagem estatística.
+            os casos de manipulação por micro-apostas constituem desvios criminosos individuais que algoritmos de triagem estatística conseguem priorizar para auditoria humana.
           </p>
         </div>
       </section>

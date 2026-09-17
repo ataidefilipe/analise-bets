@@ -181,7 +181,7 @@ Os datasets da Série A foram normalizados a partir dos dados brutos do Adão Du
   * `exposure_clube_mandante` / `exposure_clube_visitante` (`float64`): Índices contratuais $[0.0, 1.0]$.
   * `exposure_total_mandante` / `exposure_total_visitante` (`float64`): Índices totais $[0.0, 1.0]$.
   * `exposure_clube_partida` (`float64`): Média simples entre mandante e visitante $[0.0, 1.0]$.
-  * `exposure_total_partida` (`float64`): Média simples do índice total $[0.0, 1.0]$.
+  * `exposure_total_partida` (`float64`): Média simples do índice total $[0.0, 1.0]$. **Contexto, não componente:** por decisão da tarefa F1-02, não participa de nenhum escore de suspeição nem do espaço de features do classificador.
   * `ambos_patrocinados_bet` (`bool`): `True` se ambos os times têm patrocinador de aposta.
   * `algum_patrocinado_bet` (`bool`): `True` se ao menos um dos times tem patrocinador de aposta.
   * `categoria_exposicao_partida` (`string`): `Nenhuma`, `Parcial (1 clube)`, `Total (2 clubes)`.
@@ -334,7 +334,7 @@ Gerados a partir do parsing direto das Súmulas Eletrônicas da CBF (`conteudo.c
 | `total_cartoes` | `int64` | Não | Total de cartões recebidos na edição | $\ge 3$ |
 | `cartoes_1t` | `int64` | Não | Cartões recebidos no 1º tempo | $\ge 0$ |
 | `prop_cartoes_1t` | `float64` | Não | Proporção de cartões no 1º tempo | `cartoes_1t / total_cartoes` |
-| `minuto_medio_nominal` | `float64` | Não | Minuto médio de recebimento dos cartões | Escala $[1.0, 90.0]$ |
+| `minuto_medio_partida` | `float64` | Não | Minuto médio de recebimento dos cartões, em minuto de jogo corrido (harmonizado entre Séries A e B) | Escala $[1.0, 105.0]$ |
 | `iforest_anomaly_score` | `float64` | Não | Score do Isolation Forest normalizado | Escala $[0.0, 100.0]$ |
 | `iforest_outlier` | `int64` | Não | Indicador binário de anomalia | 1 se anômalo (Top 3%), 0 se normal |
 | `prob_suspeicao_ml` | `float64` | Não | Probabilidade calibrada de suspeição | Intervalo $[0.0, 1.0]$ |

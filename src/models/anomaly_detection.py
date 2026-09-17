@@ -27,16 +27,119 @@ GROUND_TRUTH_PATH = os.path.join("data", "processed", "integrity", "casos_penali
 PROCESSED_INTEGRITY_DIR = os.path.join("data", "processed", "integrity")
 TABLES_DIR = os.path.join("reports", "tables")
 
+# =============================================================================
+# ESPECIFICAÇÃO CANÔNICA DO ÍNDICE DE ANOMALIA (tarefas F1-01 e F1-02)
+# -----------------------------------------------------------------------------
+# Este bloco é a fonte única da verdade da fórmula. Ele deve espelhar exatamente o
+# que está publicado em reports/analysis/07_sistema_triagem_anomalias_integridade.md.
+# Qualquer alteração aqui obriga a atualizar aquele relatório e o teste
+# tests/test_anomaly_detection.py, que fixa estes valores.
+# =============================================================================
+
+# Recorte temporal da base de referência publicada (4.559 partidas). Explícito para que a
+# extensão da base (tarefas F2-02 e F2-03) seja uma decisão deliberada, e não um efeito
+# colateral de uma reingestão.
+SERIE_A_TEMPORADA_MIN = 2015
+SERIE_A_TEMPORADA_MAX = 2024
+SERIE_B_TEMPORADAS = (2022, 2023)
+
+# Chave de junção entre partidas, cartões e gols. A `partida_id` da Série B reinicia em 1 a
+# cada temporada (1-380 em 2022 e de novo em 2023), de modo que (serie, partida_id) NÃO
+# identifica uma partida: a temporada é parte obrigatória da chave.
+CHAVE_PARTIDA = ["serie", "temporada", "partida_id"]
+
+# Probabilidades basais estimadas na própria base harmonizada (24.220 cartões das Séries A e
+# B no recorte acima), usando o minuto de jogo corrido (ver MINUTO_PARTIDA_COL).
+P0_CARTAO_1T = 0.353
+P0_CARTAO_30MIN = 0.156
+LIMITE_CARTAO_PRECOCE_MIN = 30
+
+# Coluna de minuto harmonizada entre as duas séries. A Série A registra o minuto nominal já
+# em escala de jogo (0-90); a Série B, herdada das súmulas da CBF, registra o minuto DENTRO
+# do tempo (1-45), de modo que um cartão aos 20' do 2º tempo aparecia como minuto 20. Só o
+# `minuto_continuo` tem a mesma semântica nas duas séries.
+MINUTO_PARTIDA_COL = "minuto_continuo"
+
+# Conversão de p-valor em pontos: p = 0,01 -> 50 pontos; p <= 0,0001 -> 100 pontos.
+LOG_P_MULTIPLICADOR = 25.0
+LOG_P_EPSILON = 1e-5
+
+# Volume de cartões: desvio padronizado dentro de temporada x série.
+# Z = 0 (partida média) -> 0 pontos; Z = +4 -> 100 pontos.
+Z_VOLUME_MULTIPLICADOR = 25.0
+
+# Pênaltis no 1º tempo: faixas (mínimo de pênaltis, pontos), da mais alta para a mais baixa.
+PENALTI_1T_FAIXAS = ((2, 80.0), (1, 40.0))
+
+# Pesos do índice composto de partida. A tarefa F1-02 removeu o subscore de exposição
+# comercial a casas de apostas (S_bet) e redistribuiu o seu peso proporcionalmente entre os
+# quatro subscores de campo, preservando a razão entre eles.
+MATCH_SCORE_WEIGHTS = {
+    "score_tempo": 0.39,
+    "score_precoce": 0.28,
+    "score_volume": 0.22,
+    "score_penalti": 0.11,
+}
+
+ATHLETE_SCORE_WEIGHTS = {
+    "score_atleta_tempo": 0.50,
+    "score_atleta_taxa": 0.30,
+    "score_atleta_minuto": 0.20,
+}
+
+# Colunas preservadas na base para estratificação e leitura de contexto e que, por decisão
+# metodológica registrada na F1-02, NÃO podem compor nenhum escore de suspeição.
+COLUNAS_CONTEXTO_NAO_COMPONENTE = ("exposure_total_partida", "exposure_clube_partida")
+
+# Tiers de triagem por percentil empírico da própria distribuição. Limiares absolutos fixos
+# (80/65/50) deixaram de discriminar quando o escore mudou de escala: a carga operacional
+# passa a ser um parâmetro explícito, e não uma consequência acidental da fórmula.
+TIERS_PARTIDA = (
+    (99.0, "Extrema Anomalia (Top 1%)"),
+    (95.0, "Alta Prioridade de Escrutínio (Top 5%)"),
+    (90.0, "Média Prioridade (Top 10%)"),
+)
+TIER_PARTIDA_BASAL = "Típico / Baixa Prioridade"
+
+TIERS_ATLETA = (
+    (99.0, "Extrema Anomalia Temporal (Top 1%)"),
+    (95.0, "Alta Concentração Precoce (Top 5%)"),
+    (90.0, "Média Concentração (Top 10%)"),
+)
+TIER_ATLETA_BASAL = "Padrão Basal Normal"
+
+
+def _score_log_p(p_values: pd.Series | np.ndarray) -> np.ndarray:
+    """Converte p-valores em pontos [0, 100] na escala log decimal da especificação."""
+    return np.clip(-LOG_P_MULTIPLICADOR * np.log10(np.asarray(p_values, dtype=float) + LOG_P_EPSILON), 0.0, 100.0)
+
+
+def _aplicar_tiers(percentis: pd.Series, tiers: tuple, basal: str) -> np.ndarray:
+    """Classifica em tiers a partir do percentil empírico do próprio escore."""
+    conditions = [percentis >= corte for corte, _ in tiers]
+    choices = [rotulo for _, rotulo in tiers]
+    return np.select(conditions, choices, default=basal)
+
 
 def load_unified_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
-    """Carrega e harmoniza partidas, cartões e gols das Séries A e B."""
-    # 1. Partidas Série A (2015 a 2024)
+    """
+    Carrega e harmoniza partidas, cartões e gols das Séries A e B.
+
+    O recorte temporal vem de SERIE_A_TEMPORADA_MIN e SERIE_B_TEMPORADAS: a base de
+    referência publicada tem 4.559 partidas, e a inclusão de novas temporadas é uma decisão
+    das tarefas F2-02 / F2-03, não um efeito colateral de reingestão.
+
+    A coluna `minuto_partida` é o minuto de jogo corrido, comparável entre as duas séries
+    (ver MINUTO_PARTIDA_COL).
+    """
+    # 1. Partidas Série A
     pa = pd.read_parquet(SERIE_A_PARTIDAS)
-    pa = pa[pa["temporada"] >= 2015].copy()
+    pa = pa[pa["temporada"].between(SERIE_A_TEMPORADA_MIN, SERIE_A_TEMPORADA_MAX)].copy()
     pa["serie"] = "A"
 
-    # Partidas Série B (2022 a 2023)
+    # Partidas Série B
     pb = pd.read_parquet(SERIE_B_PARTIDAS)
+    pb = pb[pb["temporada"].isin(SERIE_B_TEMPORADAS)].copy()
     pb["exposure_total_partida"] = 0.50  # Média macro do período para Série B
     pb["exposure_clube_partida"] = 0.50
     pb["categoria_exposicao_partida"] = "Parcial (1 clube)"
@@ -48,27 +151,31 @@ def load_unified_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     ]
     df_matches = pd.concat([pa[common_cols], pb[common_cols]], ignore_index=True)
 
-    # 2. Cartões Série A (2015 a 2024)
+    # 2. Cartões Série A
     ca = pd.read_parquet(SERIE_A_CARTOES)
-    ca = ca[ca["temporada"] >= 2015].copy()
+    ca = ca[ca["temporada"].between(SERIE_A_TEMPORADA_MIN, SERIE_A_TEMPORADA_MAX)].copy()
     ca["serie"] = "A"
     ca["categoria_infracao"] = "falta_temeraria"
 
-    # Cartões Série B (2022 a 2023)
+    # Cartões Série B
     cb = pd.read_parquet(SERIE_B_CARTOES)
+    cb = cb[cb["temporada"].isin(SERIE_B_TEMPORADAS)].copy()
 
     card_cols = [
         "partida_id", "temporada", "serie", "rodada", "clube", "clube_slug",
-        "cartao", "atleta", "atleta_slug", "minuto_nominal", "periodo", "categoria_infracao"
+        "cartao", "atleta", "atleta_slug", "minuto_nominal", "minuto_continuo",
+        "periodo", "categoria_infracao"
     ]
     df_cards = pd.concat([ca[card_cols], cb[card_cols]], ignore_index=True)
+    df_cards["minuto_partida"] = df_cards[MINUTO_PARTIDA_COL].astype(float)
 
     # 3. Gols de Pênalti no 1T
     ga = pd.read_parquet(SERIE_A_GOLS)
-    ga = ga[ga["temporada"] >= 2015].copy()
+    ga = ga[ga["temporada"].between(SERIE_A_TEMPORADA_MIN, SERIE_A_TEMPORADA_MAX)].copy()
     ga["serie"] = "A"
 
     gb = pd.read_parquet(SERIE_B_GOLS)
+    gb = gb[gb["temporada"].isin(SERIE_B_TEMPORADAS)].copy()
 
     pen_a = ga[(ga["tipo_de_gol"] == "Penalty") & (ga["periodo"] == "1T")]
     pen_b = gb[(gb["tipo_de_gol"] == "Penalty") & (gb["periodo"] == "1T")]
@@ -83,17 +190,17 @@ def load_unified_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
 def compute_match_anomaly_scores(df_matches: pd.DataFrame, df_cards: pd.DataFrame, df_pen_1t: pd.DataFrame) -> pd.DataFrame:
     """Calcula o índice de anomalia ao nível da partida (MATCH_ANOMALY_SCORE)."""
     # Agregar cartões por partida
-    cards_agg = df_cards.groupby(["serie", "partida_id"]).agg(
+    cards_agg = df_cards.groupby(CHAVE_PARTIDA).agg(
         total_cartoes=("cartao", "count"),
         cartoes_1t=("periodo", lambda s: (s == "1T").sum()),
-        cartoes_30m=("minuto_nominal", lambda s: (s <= 30).sum()),
+        cartoes_30m=("minuto_partida", lambda s: (s <= LIMITE_CARTAO_PRECOCE_MIN).sum()),
         cartoes_reclamacao_cera=("categoria_infracao", lambda s: s.isin(["reclamacao", "cera_retardar", "conduta_antidesportiva"]).sum())
     ).reset_index()
 
-    pen_counts = df_pen_1t.groupby(["serie", "partida_id"]).size().rename("penaltis_1t").reset_index()
+    pen_counts = df_pen_1t.groupby(CHAVE_PARTIDA).size().rename("penaltis_1t").reset_index()
 
-    matches = pd.merge(df_matches, cards_agg, on=["serie", "partida_id"], how="left")
-    matches = pd.merge(matches, pen_counts, on=["serie", "partida_id"], how="left")
+    matches = pd.merge(df_matches, cards_agg, on=CHAVE_PARTIDA, how="left")
+    matches = pd.merge(matches, pen_counts, on=CHAVE_PARTIDA, how="left")
 
     matches["total_cartoes"] = matches["total_cartoes"].fillna(0).astype(int)
     matches["cartoes_1t"] = matches["cartoes_1t"].fillna(0).astype(int)
@@ -112,65 +219,53 @@ def compute_match_anomaly_scores(df_matches: pd.DataFrame, df_cards: pd.DataFram
         0.0
     )
 
-    # 1. Sub-score de Concentração Temporal no 1T (Binomial sob p0 = 0.35)
+    # 1. Sub-score de Concentração Temporal no 1T (Binomial sob P0_CARTAO_1T)
     def calc_p_binom_1t(row):
         n = row["total_cartoes"]
         k = row["cartoes_1t"]
         if n == 0 or k == 0:
             return 1.0
-        return float(stats.binomtest(k, n, 0.35, alternative="greater").pvalue)
+        return float(stats.binomtest(k, n, P0_CARTAO_1T, alternative="greater").pvalue)
 
     matches["p_val_1t"] = matches.apply(calc_p_binom_1t, axis=1)
-    matches["score_tempo"] = np.clip(-25.0 * np.log10(matches["p_val_1t"] + 1e-5), 0.0, 100.0)
+    matches["score_tempo"] = _score_log_p(matches["p_val_1t"])
 
-    # 2. Sub-score de Cartões Precoces nos Primeiros 30' (Binomial sob p0 = 0.18)
+    # 2. Sub-score de Cartões Precoces nos Primeiros 30' (Binomial sob P0_CARTAO_30MIN)
     def calc_p_binom_30m(row):
         n = row["total_cartoes"]
         k = row["cartoes_30m"]
         if n == 0 or k == 0:
             return 1.0
-        return float(stats.binomtest(k, n, 0.18, alternative="greater").pvalue)
+        return float(stats.binomtest(k, n, P0_CARTAO_30MIN, alternative="greater").pvalue)
 
     matches["p_val_30m"] = matches.apply(calc_p_binom_30m, axis=1)
-    matches["score_precoce"] = np.clip(-25.0 * np.log10(matches["p_val_30m"] + 1e-5), 0.0, 100.0)
+    matches["score_precoce"] = _score_log_p(matches["p_val_30m"])
 
-    # 3. Sub-score de Volumetria (z-score em relação ao ano e divisão)
+    # 3. Sub-score de Volumetria (z-score em relação ao ano e divisão).
+    # A partida de volume médio (Z = 0) recebe 0 ponto: o subscore mede excesso, não nível.
     stats_season = matches.groupby(["temporada", "serie"])["total_cartoes"].agg(["mean", "std"]).reset_index()
     matches = matches.merge(stats_season, on=["temporada", "serie"], how="left")
     matches["z_cartoes"] = (matches["total_cartoes"] - matches["mean"]) / matches["std"]
-    matches["score_volume"] = np.clip(50.0 + 20.0 * matches["z_cartoes"], 0.0, 100.0)
+    matches["score_volume"] = np.clip(Z_VOLUME_MULTIPLICADOR * matches["z_cartoes"], 0.0, 100.0)
 
-    # 4. Sub-score de Exposição a Apostas
-    matches["score_bet"] = np.clip(matches["exposure_total_partida"] * 100.0, 0.0, 100.0)
+    # 4. Sub-score de Pênalti no 1T (faixas de PENALTI_1T_FAIXAS).
+    # NOTA (F1-02): não existe subscore de exposição comercial a casas de apostas. A coluna
+    # `exposure_total_partida` permanece na base como CONTEXTO e variável de estratificação,
+    # e não compõe o índice de suspeição.
+    matches["score_penalti"] = 0.0
+    for minimo, pontos in sorted(PENALTI_1T_FAIXAS, key=lambda f: f[0]):
+        matches.loc[matches["penaltis_1t"] >= minimo, "score_penalti"] = pontos
 
-    # 5. Sub-score de Pênalti no 1T
-    matches["score_penalti"] = np.where(matches["penaltis_1t"] > 0, 100.0, 0.0)
+    # 5. Índice Composto da Partida (MATCH_ANOMALY_SCORE)
+    composto = sum(peso * matches[coluna] for coluna, peso in MATCH_SCORE_WEIGHTS.items())
+    matches["match_anomaly_score"] = composto.round(2)
 
-    # 6. Índice Composto da Partida (MATCH_ANOMALY_SCORE)
-    matches["match_anomaly_score"] = (
-        0.35 * matches["score_tempo"]
-        + 0.25 * matches["score_precoce"]
-        + 0.20 * matches["score_volume"]
-        + 0.10 * matches["score_bet"]
-        + 0.10 * matches["score_penalti"]
-    ).round(2)
-
-    # Classificação de Prioridade de Escrutínio
-    conditions = [
-        matches["match_anomaly_score"] >= 80.0,
-        matches["match_anomaly_score"] >= 65.0,
-        matches["match_anomaly_score"] >= 50.0,
-    ]
-    choices = [
-        "Extrema Anomalia (Top Priority)",
-        "Alta Prioridade de Escrutínio",
-        "Média Prioridade",
-    ]
-    matches["prioridade_triagem"] = np.select(conditions, choices, default="Típico / Baixa Prioridade")
-
-    # Percentil e Ranking
+    # Percentil, Ranking e Prioridade de Escrutínio (tiers por percentil empírico)
     matches["ranking_geral"] = matches["match_anomaly_score"].rank(ascending=False, method="min").astype(int)
     matches["percentil_anomalia"] = (matches["match_anomaly_score"].rank(pct=True) * 100.0).round(2)
+    matches["prioridade_triagem"] = _aplicar_tiers(
+        matches["percentil_anomalia"], TIERS_PARTIDA, TIER_PARTIDA_BASAL
+    )
 
     # Limpeza de colunas intermediárias
     matches = matches.drop(columns=["mean", "std"])
@@ -187,145 +282,123 @@ def compute_athlete_anomaly_scores(df_cards: pd.DataFrame) -> pd.DataFrame:
     athlete_agg = valid_cards.groupby(["temporada", "serie", "clube_slug", "atleta_slug", "atleta"]).agg(
         total_cartoes=("cartao", "count"),
         cartoes_1t=("periodo", lambda s: (s == "1T").sum()),
-        cartoes_30m=("minuto_nominal", lambda s: (s <= 30).sum()),
-        minuto_medio_nominal=("minuto_nominal", "mean")
+        cartoes_30m=("minuto_partida", lambda s: (s <= LIMITE_CARTAO_PRECOCE_MIN).sum()),
+        minuto_medio_partida=("minuto_partida", "mean")
     ).reset_index()
 
     # Considerar atletas com ao menos 3 cartões na temporada
     athlete_agg = athlete_agg[athlete_agg["total_cartoes"] >= 3].copy()
 
     athlete_agg["prop_cartoes_1t"] = (athlete_agg["cartoes_1t"] / athlete_agg["total_cartoes"]).round(4)
-    athlete_agg["minuto_medio_nominal"] = athlete_agg["minuto_medio_nominal"].round(1)
+    athlete_agg["minuto_medio_partida"] = athlete_agg["minuto_medio_partida"].round(1)
 
     # Teste binomial individual
     def calc_athlete_p_binom(row):
         n = row["total_cartoes"]
         k = row["cartoes_1t"]
-        return float(stats.binomtest(k, n, 0.35, alternative="greater").pvalue)
+        return float(stats.binomtest(k, n, P0_CARTAO_1T, alternative="greater").pvalue)
 
     athlete_agg["p_val_binom_1t"] = athlete_agg.apply(calc_athlete_p_binom, axis=1)
 
     # Sub-scores
-    athlete_agg["score_atleta_tempo"] = np.clip(-25.0 * np.log10(athlete_agg["p_val_binom_1t"] + 1e-5), 0.0, 100.0)
+    athlete_agg["score_atleta_tempo"] = _score_log_p(athlete_agg["p_val_binom_1t"])
     athlete_agg["score_atleta_taxa"] = athlete_agg["prop_cartoes_1t"] * 100.0
-    athlete_agg["score_atleta_minuto"] = np.clip((90.0 - athlete_agg["minuto_medio_nominal"]) * 1.5, 0.0, 100.0)
+    athlete_agg["score_atleta_minuto"] = np.clip((90.0 - athlete_agg["minuto_medio_partida"]) * 1.5, 0.0, 100.0)
 
     # Índice Composto do Atleta
-    athlete_agg["athlete_anomaly_score"] = (
-        0.50 * athlete_agg["score_atleta_tempo"]
-        + 0.30 * athlete_agg["score_atleta_taxa"]
-        + 0.20 * athlete_agg["score_atleta_minuto"]
+    athlete_agg["athlete_anomaly_score"] = sum(
+        peso * athlete_agg[coluna] for coluna, peso in ATHLETE_SCORE_WEIGHTS.items()
     ).round(2)
 
     athlete_agg["ranking_atleta"] = athlete_agg["athlete_anomaly_score"].rank(ascending=False, method="min").astype(int)
     athlete_agg["percentil_atleta"] = (athlete_agg["athlete_anomaly_score"].rank(pct=True) * 100.0).round(2)
-
-    conditions = [
-        athlete_agg["athlete_anomaly_score"] >= 80.0,
-        athlete_agg["athlete_anomaly_score"] >= 65.0,
-        athlete_agg["athlete_anomaly_score"] >= 50.0,
-    ]
-    choices = [
-        "Extrema Anomalia Temporal",
-        "Alta Concentração Precoce",
-        "Média Concentração",
-    ]
-    athlete_agg["classificacao_atleta"] = np.select(conditions, choices, default="Padrão Basal Normal")
+    athlete_agg["classificacao_atleta"] = _aplicar_tiers(
+        athlete_agg["percentil_atleta"], TIERS_ATLETA, TIER_ATLETA_BASAL
+    )
 
     return athlete_agg.sort_values("athlete_anomaly_score", ascending=False).reset_index(drop=True)
 
 
-def evaluate_ground_truth_sensitivity(matches: pd.DataFrame, athletes: pd.DataFrame) -> pd.DataFrame:
-    """Cruza e afere a sensibilidade do algoritmo contra os 14 casos reais da Operação Penalidade Máxima."""
-    df_pm = pd.read_parquet(GROUND_TRUTH_PATH)
+def evaluate_ground_truth_sensitivity(matches: pd.DataFrame, athletes: pd.DataFrame,
+                                      df_cards: pd.DataFrame | None = None) -> pd.DataFrame:
+    """
+    Afere a sensibilidade dos escores estatísticos contra os 14 casos da Operação Penalidade
+    Máxima, usando o resolvedor de identidade explícito (`ground_truth_resolver`).
 
-    alias_map = {
-        "mateusinho": "mateus_da_silva_duarte",
-        "moraes_jr": "moraes",
-        "moraes": "moraes",
-    }
+    A versão anterior casava os casos por correspondência parcial de nome e associava atletas
+    errados; ver a auditoria em `reports/tables/auditoria_ground_truth_atletas.csv`.
+    """
+    from src.models.ground_truth_resolver import resolver_partidas, resolver_atletas
+
+    df_pm = pd.read_parquet(GROUND_TRUTH_PATH)
+    if df_cards is None:
+        _, df_cards, _ = load_unified_data()
+
+    res_partidas = resolver_partidas(matches, df_pm).set_index("caso_id")
+    res_atletas = resolver_atletas(df_cards, athletes, df_pm).set_index("atleta_slug_ground_truth")
 
     results = []
-
     for _, row in df_pm.iterrows():
-        s = row["serie"]
-        t = row["temporada"]
-        rod = row["rodada"]
-        mand_slug = row["clube_mandante"].lower().replace(" ", "_").replace("-", "_")
+        rp = res_partidas.loc[row["caso_id"]]
+        m_score = m_pct = m_prio = None
+        if pd.notna(rp["partida_id"]):
+            alvo = matches[(matches["serie"] == row["serie"]) &
+                           (matches["temporada"] == row["temporada"]) &
+                           (matches["partida_id"] == rp["partida_id"])]
+            if len(alvo) > 0:
+                m_score = float(alvo.iloc[0]["match_anomaly_score"])
+                m_pct = float(alvo.iloc[0]["percentil_anomalia"])
+                m_prio = str(alvo.iloc[0]["prioridade_triagem"])
 
-        # Buscar partida
-        m = matches[
-            (matches["serie"] == s) &
-            (matches["temporada"] == t) &
-            (matches["rodada"] == rod) &
-            (matches["clube_mandante_slug"].str.contains(mand_slug[:5], case=False, na=False))
-        ]
+        ra = res_atletas.loc[row["atleta_slug"]]
+        a_score = a_pct = None
+        status_atleta = ra["status_atleta"]
+        if status_atleta == "resolvido":
+            alvo = athletes[(athletes["serie"] == ra["serie"]) &
+                            (athletes["temporada"] == ra["temporada"]) &
+                            (athletes["atleta_slug"] == ra["atleta_slug_base"])]
+            if len(alvo) > 0:
+                a_score = float(alvo.iloc[0]["athlete_anomaly_score"])
+                a_pct = float(alvo.iloc[0]["percentil_atleta"])
 
-        if len(m) > 0:
-            match_row = m.iloc[0]
-            m_score = float(match_row["match_anomaly_score"])
-            m_rank = int(match_row["ranking_geral"])
-            m_pct = float(match_row["percentil_anomalia"])
-            m_prio = str(match_row["prioridade_triagem"])
-        else:
-            m_score = np.nan
-            m_rank = np.nan
-            m_pct = np.nan
-            m_prio = "Partida Não Mapeada"
+        evento_executado = bool(row["evento_ocorreu"]) and bool(row["executado_com_sucesso"])
 
-        # Buscar atleta
-        raw_slug = row["atleta_slug"]
-        search_slug = alias_map.get(raw_slug, raw_slug)
-
-        ath = athletes[
-            (athletes["temporada"] == t) &
-            (athletes["atleta_slug"].str.contains(search_slug.split("_")[0], case=False, na=False))
-        ]
-
-        if len(ath) > 0:
-            ath_row = ath.iloc[0]
-            a_score = float(ath_row["athlete_anomaly_score"])
-            a_rank = int(ath_row["ranking_atleta"])
-            a_pct = float(ath_row["percentil_atleta"])
-        else:
-            a_score = np.nan
-            a_rank = np.nan
-            a_pct = np.nan
-
-        # Avaliar status de triagem baseado em percentis e scores
-        # Nota: Casos onde o evento NAO ocorreu em campo (ex: Romario PM-001 e Bauermann PM-010)
-        # naturalmente nao geram distorcao em campo.
-        evento_executado = row["evento_ocorreu"] and row["executado_com_sucesso"]
-
-        if (not np.isnan(a_pct) and a_pct >= 90.0) or (not np.isnan(m_pct) and m_pct >= 80.0):
+        if (a_pct is not None and a_pct >= 90.0) or (m_pct is not None and m_pct >= 90.0):
             det_status = "Detectado (Alta Prioridade / Top 10%)"
-        elif (not np.isnan(a_pct) and a_pct >= 75.0) or (not np.isnan(m_pct) and m_pct >= 65.0):
+        elif (a_pct is not None and a_pct >= 75.0) or (m_pct is not None and m_pct >= 75.0):
             det_status = "Detectado (Média Prioridade / Top 25%)"
         elif not evento_executado:
             det_status = "Não Ocorreu em Campo (Fraude Frustrada)"
+        elif a_pct is None and m_pct is None:
+            det_status = "Sem âncora na base (não avaliável)"
         else:
-            det_status = "Prioridade Moderada"
+            det_status = "Prioridade Basal (não sinalizado)"
 
         results.append({
             "caso_id": row["caso_id"],
-            "temporada": t,
-            "serie": s,
-            "rodada": rod,
+            "temporada": row["temporada"],
+            "serie": row["serie"],
+            "rodada": rp["rodada_utilizada"],
             "confronto": row["confronto"],
             "atleta": row["atleta"],
             "evento_alvo": row["evento_alvo"],
             "evento_ocorreu": row["evento_ocorreu"],
             "executado_com_sucesso": row["executado_com_sucesso"],
             "minuto_real": row["minuto_real"],
+            "partida_id": rp["partida_id"],
+            "status_partida": rp["status_partida"],
+            "atleta_slug_base": ra["atleta_slug_base"],
+            "status_atleta": status_atleta,
+            "confianca_identidade": ra["confianca"],
             "match_anomaly_score": m_score,
             "match_percentil": m_pct,
+            "prioridade_partida": m_prio,
             "athlete_anomaly_score": a_score,
             "athlete_percentil": a_pct,
             "status_triagem": det_status,
         })
 
-    df_eval = pd.DataFrame(results)
-    return df_eval
+    return pd.DataFrame(results)
 
 
 def run_integrity_anomaly_pipeline():
@@ -349,7 +422,9 @@ def run_integrity_anomaly_pipeline():
     matches_scored.to_parquet(matches_parquet, index=False)
     print(f"     [OK] Partidas pontuadas: {len(matches_scored)}")
     print(f"     Média do Score: {matches_scored['match_anomaly_score'].mean():.2f} | Mediana: {matches_scored['match_anomaly_score'].median():.2f} | Máx: {matches_scored['match_anomaly_score'].max():.2f}")
-    print(f"     Partidas de Alta/Extrema Prioridade: {(matches_scored['match_anomaly_score'] >= 65.0).sum()} ({((matches_scored['match_anomaly_score'] >= 65.0).mean() * 100):.2f}%)")
+    for tier in [rotulo for _, rotulo in TIERS_PARTIDA] + [TIER_PARTIDA_BASAL]:
+        n_tier = (matches_scored["prioridade_triagem"] == tier).sum()
+        print(f"     {tier}: {n_tier} ({n_tier / len(matches_scored) * 100:.2f}%)")
 
     # Exportar Top 50 Partidas Anômalas
     top_matches = matches_scored.sort_values("match_anomaly_score", ascending=False).head(50)
@@ -373,7 +448,7 @@ def run_integrity_anomaly_pipeline():
     top_athletes = athletes_scored.head(50)
     top_athletes_export = top_athletes[[
         "temporada", "serie", "clube_slug", "atleta", "total_cartoes", "cartoes_1t",
-        "prop_cartoes_1t", "minuto_medio_nominal", "p_val_binom_1t",
+        "prop_cartoes_1t", "minuto_medio_partida", "p_val_binom_1t",
         "athlete_anomaly_score", "percentil_atleta", "classificacao_atleta"
     ]]
     tabela_16_path = os.path.join(TABLES_DIR, "tabela_16_ranking_atletas_anomalos.csv")
@@ -381,12 +456,12 @@ def run_integrity_anomaly_pipeline():
     print(f"     [OK] Tabela 16 salva: {tabela_16_path}")
 
     print("\n--- 4. Validando Sensibilidade com os 14 Casos da Operação Penalidade Máxima ---")
-    df_eval = evaluate_ground_truth_sensitivity(matches_scored, athletes_scored)
+    df_eval = evaluate_ground_truth_sensitivity(matches_scored, athletes_scored, df_cards)
     tabela_17_path = os.path.join(TABLES_DIR, "tabela_17_validacao_ground_truth_pm.csv")
     df_eval.to_csv(tabela_17_path, index=False, encoding="utf-8")
     print(f"     [OK] Tabela 17 salva: {tabela_17_path}")
 
-    n_detected = (df_eval["status_triagem"].str.contains("Detectado")).sum()
+    n_detected = (df_eval["status_triagem"].str.startswith("Detectado")).sum()
     pct_detected = (n_detected / len(df_eval)) * 100.0
     print(f"     Sensibilidade de Detecção (Alta/Média Prioridade): {n_detected}/{len(df_eval)} ({pct_detected:.1f}%)")
     print(f"     Percentil Médio das Partidas Investigadas: {df_eval['match_percentil'].dropna().mean():.2f}%")

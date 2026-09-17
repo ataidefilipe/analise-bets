@@ -66,7 +66,7 @@
   * **Heterogeneidade Interdivisões:** Modelagem de 3.040 observações da Série A e B (2022–2023), demonstrando que a Série B aplica $-0,2835$ cartões por equipe-jogo ($p = 0,0370$) frente à Série A.
 * **Fase 8 Concluída (Sistema de Triagem e Anomaly Scoring de Integridade):**
   * Desenvolvimento dos índices `MATCH_ANOMALY_SCORE` e `ATHLETE_ANOMALY_SCORE` ([`src/models/anomaly_detection.py`](file:///d:/Python%20Projetos/analise-bets/src/models/anomaly_detection.py)).
-  * Validação empírica de 100% de sensibilidade no ground truth da Operação Penalidade Máxima.
+  * Validação contra o ground truth da Operação Penalidade Máxima. **Revisado em 2026-09-16 (F1-01/F1-02/F1-03):** a sensibilidade dos escores estatísticos é de 5/14 (35,7%); o número anterior de 100% dependia de defeitos de harmonização da base e de um casamento de identidade que associava atletas errados (ver relatório 07, seções 3.3 a 3.6).
   * Exportação das Tabelas 15, 16 e 17 em `reports/tables/`.
   * Suíte de testes ampliada para 31 testes unitários com 100% de aprovação no `pytest`.
 * **Fase 9 Concluída (Cadernos Executáveis e Reprodutibilidade):**
@@ -78,7 +78,7 @@
   * Sistematização teórica em `docs/revisao_bibliografica.md` cobrindo 20+ obras e referências acadêmicas.
 * **Fase 12 Concluída (Modelo de Classificação de Integridade por Machine Learning):**
   * Implementação de pipeline de ML em [`src/models/integrity_classifier.py`](file:///d:/Python%20Projetos/analise-bets/src/models/integrity_classifier.py) com **Isolation Forest Multidimensional** e **Bagging PU-Learning** (50 estimators) para partidas e atletas.
-  * Validação contra os 14 casos da Penalidade Máxima com **100% de captura (14/14)** no tier prioritário (`Classe 2: Alto Risco / Alerta Investigativo`).
+  * Validação contra os 14 casos da Penalidade Máxima com **100% de captura (14/14)** no tier prioritário (`Classe 2: Alto Risco / Alerta Investigativo`) — métrica **in-sample**: os mesmos 14 casos formam o rótulo positivo do treino PU. Estimativa fora da amostra é objeto da tarefa F1-03.
   * Serialização dos modelos em `data/processed/integrity/models/` (`.joblib`) com persistência portável.
   * Geração das Tabelas 18, 19 e 20 em `reports/tables/` e datasets enriquecidos `.parquet`.
   * Suíte de testes automatizada expandida para **50 testes unitários com 100% de aprovação** no `pytest` (`tests/test_integrity_classifier.py`).
@@ -153,10 +153,34 @@ Classificadas conforme a taxonomia da Seção 17 do `.agent.md`:
   * *Impacto:* Valida rigorosamente a hipótese de tendências paralelas e captura a dinâmica de defasagem do efeito causal ao longo dos anos de contrato.
 * **D-ANA-13: Calibração de Limiares de Alerta por Percentis Empíricos e Governança Ética:**
   * *Decisão:* Estabelecer os thresholds de triagem com base nos percentis empíricos da distribuição acumulada de partidas e atletas: *Alta Prioridade* (Top 10% / Percentil $\ge 90\%$) e *Média Prioridade* (Top 25% / Percentil $\ge 75\%$). Registrar em conformidade com o `.agent.md` que pontuações elevadas constituem anomalias estatísticas sob escrutínio de compliance, e nunca prova penal de fraude (presunção de inocência irrestrita).
-  * *Impacto:* Atinge 100% de sensibilidade no ground truth histórico da Operação Penalidade Máxima sem imputação indevida a atletas legítimos.
+  * *Impacto:* Calibra o alerta pela distribuição observada, e não por limiar absoluto arbitrário. **Revisado pela D-TEC-09:** os cortes passaram a Top 1% / Top 5% / Top 10%.
 * **D-ANA-14: Classificador Híbrido com PU-Learning para Superar Desbalanceamento Extremo (Fase 12):**
   * *Decisão:* Não utilizar classificadores supervisionados ingênuos com rótulos binários fixos (devido ao risco severo de sobreajuste com apenas 14 positivos). Empregar uma arquitetura híbrida com `IsolationForest` multidimensional e ensemble de `BaggingPUClassifier` com subamostragem balanceada no conjunto não-rotulado.
   * *Impacto:* Permite estimar probabilidades de suspeição calibradas $P(\text{Suspeito} \mid X) \in [0, 1]$ sem assumir que partidas não investigadas são negativas garantidas.
+* **D-TEC-08: Chave de junção, janela temporal e minuto de jogo declarados explicitamente (F1-01):**
+  * *Decisão:* Adotar `(serie, temporada, partida_id)` como chave de junção entre partidas, cartões e gols; declarar a janela temporal da base em constantes (`SERIE_A_TEMPORADA_MIN/MAX`, `SERIE_B_TEMPORADAS`); e usar o `minuto_continuo` como minuto de jogo nas duas divisões.
+  * *Motivo:* A `partida_id` da Série B reinicia a cada temporada, de modo que a chave anterior somava os cartões de 2022 e 2023 na mesma partida. A Série B registra o minuto dentro do tempo, e não em escala de jogo, o que fazia 47,8% dos seus cartões contarem como "até os 30 minutos" contra 15,4% da Série A. O filtro sem teto na Série A deixou a sincronização de 2026 entrar silenciosamente na distribuição de referência.
+  * *Impacto:* Os três defeitos passam a ser cobertos por testes de regressão. O volume médio de cartões da Série B cai de 9,7 para 5,0 por partida, alinhando-se à Série A.
+* **D-ANA-15: Remoção do subscore de exposição comercial do índice de suspeição (F1-02):**
+  * *Decisão:* Retirar `S_bet` do `MATCH_ANOMALY_SCORE` e `exposure_total_partida` do espaço de features do classificador de ML, redistribuindo o peso proporcionalmente entre os subscores de campo. A variável permanece na base como contexto e estratificação.
+  * *Motivo:* (i) circularidade — a mesma exposição que a econometria usa para *estimar* o efeito não pode ser *preditor* de suspeição, sob pena de o achado virar aritmética; (ii) indefensabilidade operacional — nenhum clube contrata, e nenhuma federação instaura procedimento com base em, um índice que penaliza o patrocinador da camisa.
+  * *Impacto:* O índice passa a medir exclusivamente comportamento em campo. Os pesos vigentes são 0,39 / 0,28 / 0,22 / 0,11.
+* **D-TEC-09: Tiers de triagem por percentil empírico em vez de limiar absoluto (F1-01):**
+  * *Decisão:* Definir a prioridade de escrutínio por percentil da própria distribuição (Top 1% / Top 5% / Top 10%), e não por corte fixo de escore (80 / 65 / 50).
+  * *Motivo:* Com limiar absoluto, a configuração anterior classificava 12 de 4.559 partidas fora do tier basal — e nenhuma das partidas do ground truth entre elas. A carga de alerta era um efeito acidental da escala do escore.
+  * *Impacto:* A carga operacional vira parâmetro explícito (458 partidas, 10,05% da base), pronta para calibração por persona na tarefa F1-04.
+* **D-TEC-10: Resolvedor de identidade explícito para o ground truth (F1-03):**
+  * *Decisão:* Substituir a correspondência parcial de nome por um mapa explícito em `src/models/ground_truth_resolver.py`, em que cada associação declara a evidência que a sustenta e o seu grau de confiança, e em que casos sem correspondente defensável ficam marcados como `nao_resolvido`.
+  * *Motivo:* A heurística anterior (`str.contains` do primeiro token, seguido do primeiro registro) associava atletas errados em 8 dos 10 casos: o percentil de 99,67% publicado como sendo de Nino Paraíba (Ceará) pertence a Nino (Fluminense).
+  * *Impacto:* 14 de 14 partidas resolvidas (1 com correção de rodada), 7 de 10 atletas resolvidos. Dez testes de regressão fixam a resolução.
+* **D-ANA-16: Rótulo positivo definido em nível agregado, não por evento (F1-03):**
+  * *Decisão:* Tratar o ground truth como rótulo de *partida* e de *atleta-temporada*, e não de evento individual.
+  * *Motivo:* A verificação de evento mostrou que os metadados por incidente (rodada, minuto, atribuição do cartão) não reconciliam com as súmulas: de 14 casos, apenas 1 tem o evento confirmado na base, 2 divergem no minuto e 5 estão ausentes. A reconstituição a partir dos autos originais do MP-GO fica como pendência de fonte documental.
+  * *Impacto:* As métricas passam a ser defensáveis no nível em que os dados sustentam, sem simular precisão que a fonte não tem.
+* **D-ANA-17: Validação fora da amostra com leave-one-out agrupado e separação por série (F1-03):**
+  * *Decisão:* Avaliar o `BaggingPUClassifier` por leave-one-out agrupado por entidade (não por incidente, para não vazar entre PM-006 e PM-007, que são o mesmo atleta) e por separação entre divisões, reportando intervalo de Wilson.
+  * *Motivo:* Com 14 positivos usados no treino e na avaliação, a sensibilidade in-sample não carrega informação.
+  * *Impacto:* Revela que a captura no tier de Alto Risco cai de 100% para 0% no nível do atleta. O componente de ML, como treinado, não sustenta afirmação de eficácia; o escore estatístico fechado, que não usa rótulo, sustenta.
 
 ### 2.3 Decisões Técnicas (Decididas pelo Agente)
 * **D-TEC-01: Governança do Diretório de Dados Brutos:**
@@ -222,15 +246,17 @@ Classificadas conforme a taxonomia da Seção 17 do `.agent.md`:
     * A proporção de cartões no 1º tempo apresenta coeficiente nulo com a exposição a apostas ($\beta = -0,0129, p = 0,5916$). Isso atesta que os clubes patrocinados não instruem jogadores a tomar cartões no 1º tempo; os casos reais investigados na Operação Penalidade Máxima são anomalias pontuais decorrentes de aliciamento individual.
 11. **Heterogeneidade Interdivisões na Regressão Conjunta (Séries A e B 2022–2023):**
     * Disputar a Série B reduz os cartões em **-0,2835 por equipe-jogo** frente à Série A ($p = 0,03696$), após controlar por ano, mando de campo, saldo de gols e rodada.
-12. **Sensibilidade de 100% no Ground Truth da Operação Penalidade Máxima:**
-    * O algoritmo de triagem identificou **100% (14 de 14)** dos incidentes judiciais reais mapeados em *Alta Prioridade* ou *Média Prioridade*.
-    * **100% (8 de 8)** dos registros de atletas confessos/condenados na Série A (Nino Paraíba, Gabriel Tota, Paulo Miranda, Moraes Jr, Igor Cariús, Eduardo Bauermann) foram classificados no **Top 10% (Percentil $\ge 90\%$)** da distribuição histórica.
+12. **Sensibilidade no Ground Truth da Operação Penalidade Máxima (revisado em 2026-09-16):**
+    * Com a fórmula reconciliada, a base corrigida e as identidades resolvidas, os escores estatísticos sinalizam **5 dos 14 incidentes (35,7%)** em faixa prioritária de triagem. Dois dos nove não sinalizados são fraudes que não se consumaram em campo.
+    * O resultado anterior (14/14) era inflado por três defeitos de harmonização e por um casamento de identidade que associava atletas errados em 8 dos 10 casos.
 13. **Comportamento do Algoritmo em Casos de Fraude Frustrada:**
     * Nos incidentes onde a fraude foi combinada mas não se consumou em campo (Romário/Vila Nova que não jogou, e Bauermann/Santos que não cometeu o amarelo), as partidas preservaram percentis normais de campo, atestando a robustez do algoritmo contra falsos alarmes arbitrais.
-14. **Identificação Longitudinal do Caso Nino Paraíba:**
-    * Nino Paraíba liderou o ranking histórico de atipicidade individual em duas temporadas: 2020 (Percentil 100,0%, Anomaly Score 77,32) e 2022 (Percentil 99,67%, Anomaly Score 72,35), com 70% a 85% dos seus cartões concentrados no 1º tempo.
+14. **Achado retificado — o caso "Nino Paraíba" era um homônimo:**
+    * O percentil de 99,67% historicamente atribuído a Nino Paraíba (Ceará) pertence, na verdade, a **Nino (Fluminense)**, atleta sem qualquer relação com a operação. O registro real de Nino Paraíba em 2022 está no **percentil 34,5%**.
+    * A causa é o casamento por correspondência parcial de nome (`str.contains` do primeiro token) seguido do primeiro registro encontrado. A correção do resolvedor de identidade é o primeiro item da tarefa F1-03.
 15. **Desempenho do Modelo de Machine Learning de Integridade (Fase 12):**
-    * O modelo híbrido (`IsolationForest` + `BaggingPUClassifier`) atingiu **100% de sensibilidade no ground truth (14/14 casos)**, classificando todos os incidentes reais da Penalidade Máxima no tier prioritário (`Classe 2: Alto Risco / Alerta Investigativo`).
+    * O modelo híbrido (`IsolationForest` + `BaggingPUClassifier`) atinge **100% de sensibilidade in-sample**, mas **não generaliza**: sob leave-one-out agrupado por entidade, a captura no tier de Alto Risco cai para **5/14 no nível da partida (IC 95%: 16,3%–61,2%)** e para **0/7 no nível do atleta (IC 95%: 0%–35,4%)**.
+    * Sob separação por série — treinar na Série B e avaliar na Série A —, captura 1 de 9 partidas (11,1%). O que sustenta o sistema é o escore estatístico fechado, que não depende de rótulo.
     * A probabilidade média calibrada de suspeição foi de **80,4%** para as partidas investigadas e **84,8%** para os atletas investigados.
     * Apenas **8,93%** das partidas da Série A e B foram categorizadas no tier de Alto Risco, garantindo precisão investigativa e minimizando a sobrecarga operacional para unidades de compliance.
 
@@ -242,7 +268,7 @@ Classificadas conforme a taxonomia da Seção 17 do `.agent.md`:
 * **Q2 (Pipeline de Súmulas CBF Série B):** **[CONCLUÍDO NA FASE 6]** Download multithread de 760 súmulas oficiais de 2022 e 2023, com parsing nativo e estruturação relacional em `data/processed/serie_b/`.
 * **Q3 (Patrocínios de Bets):** **[CONCLUÍDO NO MVP 2]** Matriz histórica de 200 registros clube $\times$ temporada e índice `BET_EXPOSURE` consolidados.
 * **Q4 (Modelagem Econométrica Causal):** **[CONCLUÍDO NA FASE 7]** Estimação de painel TWFE (7.598 obs), Staggered Event Study com tendências paralelas e regressão interdivisões.
-* **Q5 (Sistema de Triagem e Anomaly Scoring de Integridade):** **[CONCLUÍDO NA FASE 8]** Desenvolvimento dos índices de partida e atleta, validação empírica contra os 14 casos da Operação Penalidade Máxima com 100% de sensibilidade, tabelas 15, 16 e 17, e 3 figuras de alta resolução.
+* **Q5 (Sistema de Triagem e Anomaly Scoring de Integridade):** **[CONCLUÍDO NA FASE 8]** Desenvolvimento dos índices de partida e atleta, validação empírica contra os 14 casos da Operação Penalidade Máxima, tabelas 15, 16 e 17, e 3 figuras de alta resolução. **Fórmula reconciliada e artefatos regenerados em 2026-09-16 (F1-01/F1-02).**
 * **Q6 (Cadernos Executáveis e Reprodutibilidade):** **[CONCLUÍDO NA FASE 9]** Criação e validação automatizada de 4 cadernos Jupyter em `notebooks/` cobrindo ETL, EDA, Econometria Causal e Anomaly Scoring, validados por 39 testes unitários (100% passing).
 * **Q7 (White Paper Acadêmico e Relatório Final):** **[CONCLUÍDO NA FASE 10]** Elaboração da síntese acadêmica unificada em `reports/white_paper_impacto_bets_futebol_brasileiro.md`, integrando arcabouço regulatório, inferência causal, triagem de integridade e recomendações para Ministério da Fazenda, CBF e STJD.
 * **Q8 (Fundamentação Teórica e Revisão Bibliográfica):** **[CONCLUÍDO NA FASE 11]** Sistematização de 20+ obras e artigos seminais em `docs/revisao_bibliografica.md` abrangendo Econometria Forense, Spot-Fixing e Inferência Causal.

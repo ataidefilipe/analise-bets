@@ -4,7 +4,7 @@
 **Responsável sugerido:** Rebeka Lemos
 **Tamanho:** P
 **Depende de:** —
-**Status:** Backlog
+**Status:** Concluído (2026-09-16)
 
 ---
 
@@ -49,17 +49,17 @@ evitar duas regerações consecutivas das tabelas.
 
 ## Definition of Done
 
-- [ ] Decidido e registrado qual é a especificação correta (código ou relatório), com
+- [x] Decidido e registrado qual é a especificação correta (código ou relatório), com
       justificativa metodológica de uma linha por componente divergente.
-- [ ] `src/models/anomaly_detection.py` e `reports/analysis/07_sistema_triagem_anomalias_integridade.md`
+- [x] `src/models/anomaly_detection.py` e `reports/analysis/07_sistema_triagem_anomalias_integridade.md`
       expressam a mesma fórmula, incluindo `S_volume` e `S_penalti`.
-- [ ] Tabelas 15, 16 e 17 regeradas a partir do código corrigido.
-- [ ] Figuras em `reports/figures/integrity/` regeradas.
-- [ ] Números citados em `docs/decisoes_e_progresso.md` e no white paper conferidos contra
+- [x] Tabelas 15, 16 e 17 regeradas a partir do código corrigido.
+- [x] Figuras em `reports/figures/integrity/` regeradas.
+- [x] Números citados em `docs/decisoes_e_progresso.md` e no white paper conferidos contra
       as tabelas novas e corrigidos onde divergirem.
-- [ ] Teste unitário em `tests/test_anomaly_detection.py` que fixa os pesos e falha se a
+- [x] Teste unitário em `tests/test_anomaly_detection.py` que fixa os pesos e falha se a
       soma dos coeficientes ≠ 1,0 ou se algum peso for alterado sem atualização do teste.
-- [ ] Suíte `pytest` passando integralmente.
+- [x] Suíte `pytest` passando integralmente.
 
 ## Riscos e observações
 

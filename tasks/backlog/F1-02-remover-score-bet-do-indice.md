@@ -4,7 +4,7 @@
 **Responsável sugerido:** Filipe Ataíde
 **Tamanho:** P
 **Depende de:** —
-**Status:** Backlog
+**Status:** Concluído (2026-09-16)
 
 ---
 
@@ -48,17 +48,17 @@ indica que o componente não é necessário para a sensibilidade do sistema.
 
 ## Definition of Done
 
-- [ ] `score_bet` removido do cálculo de `match_anomaly_score`; pesos redistribuídos e
+- [x] `score_bet` removido do cálculo de `match_anomaly_score`; pesos redistribuídos e
       somando 1,0.
-- [ ] `exposure_total_partida` preservada como coluna nas bases e nos relatórios de saída,
+- [x] `exposure_total_partida` preservada como coluna nas bases e nos relatórios de saída,
       sinalizada como **contexto, não componente**.
-- [ ] Relatório 07 atualizado: fórmula nova e parágrafo explicando por que a exposição foi
+- [x] Relatório 07 atualizado: fórmula nova e parágrafo explicando por que a exposição foi
       retirada do escore (a justificativa é um argumento de produto, vale documentar).
-- [ ] Comparação antes/depois registrada: quantas partidas mudam de tier de prioridade, e se
+- [x] Comparação antes/depois registrada: quantas partidas mudam de tier de prioridade, e se
       algum dos 14 casos de ground truth muda de classificação.
-- [ ] Tabelas 15–17 e figuras de integridade regeradas.
-- [ ] Teste unitário garantindo que `exposure` não participa do escore composto.
-- [ ] Suíte `pytest` passando.
+- [x] Tabelas 15–17 e figuras de integridade regeradas.
+- [x] Teste unitário garantindo que `exposure` não participa do escore composto.
+- [x] Suíte `pytest` passando.
 
 ## Riscos e observações
 

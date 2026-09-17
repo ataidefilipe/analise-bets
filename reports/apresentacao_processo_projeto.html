@@ -886,7 +886,7 @@
             <div class="kpi-card">
               <span class="kpi-label">Sensibilidade Ground Truth</span>
               <span class="kpi-value">100%</span>
-              <span class="kpi-subtext">14/14 Casos da Penalidade Máxima</span>
+              <span class="kpi-subtext">5/14 Casos da Penalidade Máxima</span>
             </div>
           </div>
         </div>
@@ -1794,7 +1794,7 @@
         <div class="slide-header">
           <span class="slide-badge">Fase 8</span>
           <h2 class="slide-title">Sistema de Triagem e Anomaly Scoring de Integridade Esportiva</h2>
-          <p class="slide-subtitle">Arquitetura dual de triagem, teste binomial e validação com 100% de sensibilidade.</p>
+          <p class="slide-subtitle">Arquitetura dual de triagem, teste binomial e aferição contra o ground truth judicial.</p>
         </div>
 
         <div class="code-callout">
@@ -1843,8 +1843,14 @@
       <th>evento_ocorreu</th>
       <th>executado_com_sucesso</th>
       <th>minuto_real</th>
+      <th>partida_id</th>
+      <th>status_partida</th>
+      <th>atleta_slug_base</th>
+      <th>status_atleta</th>
+      <th>confianca_identidade</th>
       <th>match_anomaly_score</th>
       <th>match_percentil</th>
+      <th>prioridade_partida</th>
       <th>athlete_anomaly_score</th>
       <th>athlete_percentil</th>
       <th>status_triagem</th>
@@ -1862,11 +1868,17 @@
       <td>False</td>
       <td>False</td>
       <td>NaN</td>
-      <td>25.95</td>
-      <td>76.60</td>
-      <td>23.27</td>
-      <td>51.32</td>
-      <td>Detectado (Média Prioridade / Top 25%)</td>
+      <td>380</td>
+      <td>resolvido</td>
+      <td>NaN</td>
+      <td>nao_resolvido</td>
+      <td>nao_resolvido</td>
+      <td>0.00</td>
+      <td>8.41</td>
+      <td>Típico / Baixa Prioridade</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Não Ocorreu em Campo (Fraude Frustrada)</td>
     </tr>
     <tr>
       <td>PM-002</td>
@@ -1879,11 +1891,17 @@
       <td>True</td>
       <td>True</td>
       <td>23.0</td>
-      <td>24.51</td>
-      <td>72.59</td>
-      <td>35.93</td>
-      <td>78.51</td>
-      <td>Detectado (Média Prioridade / Top 25%)</td>
+      <td>374</td>
+      <td>resolvido</td>
+      <td>joseph_mauricio_de_oliveira_figueiredo</td>
+      <td>resolvido</td>
+      <td>alta</td>
+      <td>1.34</td>
+      <td>24.02</td>
+      <td>Típico / Baixa Prioridade</td>
+      <td>29.09</td>
+      <td>68.25</td>
+      <td>Prioridade Basal (não sinalizado)</td>
     </tr>
     <tr>
       <td>PM-003</td>
@@ -1896,11 +1914,17 @@
       <td>True</td>
       <td>True</td>
       <td>19.0</td>
-      <td>13.86</td>
-      <td>29.01</td>
-      <td>36.48</td>
-      <td>78.89</td>
-      <td>Detectado (Média Prioridade / Top 25%)</td>
+      <td>378</td>
+      <td>resolvido</td>
+      <td>mateus_da_silva_duarte</td>
+      <td>resolvido</td>
+      <td>alta</td>
+      <td>0.00</td>
+      <td>8.41</td>
+      <td>Típico / Baixa Prioridade</td>
+      <td>28.69</td>
+      <td>67.47</td>
+      <td>Prioridade Basal (não sinalizado)</td>
     </tr>
     <tr>
       <td>PM-004</td>
@@ -1913,27 +1937,39 @@
       <td>True</td>
       <td>True</td>
       <td>19.0</td>
-      <td>13.86</td>
-      <td>29.01</td>
-      <td>35.09</td>
-      <td>77.75</td>
-      <td>Detectado (Média Prioridade / Top 25%)</td>
+      <td>378</td>
+      <td>resolvido</td>
+      <td>ygor_de_oliveira_ferreira</td>
+      <td>resolvido</td>
+      <td>media</td>
+      <td>0.00</td>
+      <td>8.41</td>
+      <td>Típico / Baixa Prioridade</td>
+      <td>25.90</td>
+      <td>62.58</td>
+      <td>Prioridade Basal (não sinalizado)</td>
     </tr>
     <tr>
       <td>PM-005</td>
       <td>2022</td>
       <td>B</td>
-      <td>23</td>
+      <td>31</td>
       <td>Nautico x Sampaio Correa</td>
       <td>Mateusinho</td>
       <td>cartao_amarelo_1t</td>
       <td>True</td>
       <td>True</td>
       <td>31.0</td>
-      <td>15.82</td>
-      <td>37.80</td>
-      <td>36.48</td>
-      <td>78.89</td>
+      <td>303</td>
+      <td>resolvido_corrigido</td>
+      <td>mateus_da_silva_duarte</td>
+      <td>resolvido</td>
+      <td>alta</td>
+      <td>12.44</td>
+      <td>80.82</td>
+      <td>Típico / Baixa Prioridade</td>
+      <td>28.69</td>
+      <td>67.47</td>
       <td>Detectado (Média Prioridade / Top 25%)</td>
     </tr>
     <tr>
@@ -1947,10 +1983,16 @@
       <td>True</td>
       <td>True</td>
       <td>47.0</td>
-      <td>29.45</td>
-      <td>84.51</td>
-      <td>50.93</td>
-      <td>95.29</td>
+      <td>7886</td>
+      <td>resolvido</td>
+      <td>paulo_miranda</td>
+      <td>resolvido</td>
+      <td>alta</td>
+      <td>15.39</td>
+      <td>87.90</td>
+      <td>Típico / Baixa Prioridade</td>
+      <td>42.01</td>
+      <td>90.04</td>
       <td>Detectado (Alta Prioridade / Top 10%)</td>
     </tr>
     <tr>
@@ -1964,10 +2006,16 @@
       <td>True</td>
       <td>True</td>
       <td>38.0</td>
-      <td>13.07</td>
-      <td>24.87</td>
-      <td>50.93</td>
-      <td>95.29</td>
+      <td>7900</td>
+      <td>resolvido</td>
+      <td>paulo_miranda</td>
+      <td>resolvido</td>
+      <td>alta</td>
+      <td>1.34</td>
+      <td>24.02</td>
+      <td>Típico / Baixa Prioridade</td>
+      <td>42.01</td>
+      <td>90.04</td>
       <td>Detectado (Alta Prioridade / Top 10%)</td>
     </tr>
     <tr>
@@ -1981,11 +2029,17 @@
       <td>True</td>
       <td>True</td>
       <td>38.0</td>
-      <td>19.56</td>
-      <td>54.81</td>
-      <td>64.94</td>
-      <td>98.16</td>
-      <td>Detectado (Alta Prioridade / Top 10%)</td>
+      <td>7912</td>
+      <td>resolvido</td>
+      <td>gabriel_tota</td>
+      <td>abaixo_do_minimo_de_cartoes</td>
+      <td>alta</td>
+      <td>4.03</td>
+      <td>40.26</td>
+      <td>Típico / Baixa Prioridade</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Prioridade Basal (não sinalizado)</td>
     </tr>
     <tr>
       <td>PM-009</td>
@@ -1998,11 +2052,17 @@
       <td>True</td>
       <td>True</td>
       <td>39.0</td>
-      <td>13.70</td>
-      <td>28.16</td>
-      <td>64.94</td>
-      <td>98.16</td>
-      <td>Detectado (Alta Prioridade / Top 10%)</td>
+      <td>7920</td>
+      <td>resolvido</td>
+      <td>gabriel_tota</td>
+      <td>abaixo_do_minimo_de_cartoes</td>
+      <td>alta</td>
+      <td>0.00</td>
+      <td>8.41</td>
+      <td>Típico / Baixa Prioridade</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Prioridade Basal (não sinalizado)</td>
     </tr>
     <tr>
       <td>PM-010</td>
@@ -2015,11 +2075,17 @@
       <td>False</td>
       <td>False</td>
       <td>NaN</td>
-      <td>25.22</td>
-      <td>75.01</td>
-      <td>44.19</td>
-      <td>90.46</td>
-      <td>Detectado (Alta Prioridade / Top 10%)</td>
+      <td>7996</td>
+      <td>resolvido</td>
+      <td>eduardo</td>
+      <td>resolvido</td>
+      <td>alta</td>
+      <td>4.40</td>
+      <td>44.25</td>
+      <td>Típico / Baixa Prioridade</td>
+      <td>31.58</td>
+      <td>74.05</td>
+      <td>Não Ocorreu em Campo (Fraude Frustrada)</td>
     </tr>
     <tr>
       <td>PM-011</td>
@@ -2032,11 +2098,17 @@
       <td>True</td>
       <td>True</td>
       <td>95.0</td>
-      <td>21.62</td>
-      <td>62.69</td>
-      <td>44.19</td>
-      <td>90.46</td>
-      <td>Detectado (Alta Prioridade / Top 10%)</td>
+      <td>8014</td>
+      <td>resolvido</td>
+      <td>eduardo</td>
+      <td>resolvido</td>
+      <td>alta</td>
+      <td>6.01</td>
+      <td>53.97</td>
+      <td>Típico / Baixa Prioridade</td>
+      <td>31.58</td>
+      <td>74.05</td>
+      <td>Prioridade Basal (não sinalizado)</td>
     </tr>
     <tr>
       <td>PM-012</td>
@@ -2049,11 +2121,17 @@
       <td>True</td>
       <td>True</td>
       <td>45.0</td>
-      <td>26.84</td>
-      <td>79.01</td>
-      <td>72.35</td>
-      <td>99.67</td>
-      <td>Detectado (Alta Prioridade / Top 10%)</td>
+      <td>7958</td>
+      <td>resolvido</td>
+      <td>nino_paraiba</td>
+      <td>resolvido</td>
+      <td>alta</td>
+      <td>15.33</td>
+      <td>87.69</td>
+      <td>Típico / Baixa Prioridade</td>
+      <td>17.12</td>
+      <td>34.50</td>
+      <td>Detectado (Média Prioridade / Top 25%)</td>
     </tr>
     <tr>
       <td>PM-013</td>
@@ -2066,10 +2144,16 @@
       <td>True</td>
       <td>True</td>
       <td>31.0</td>
-      <td>32.77</td>
-      <td>89.25</td>
-      <td>46.88</td>
-      <td>93.29</td>
+      <td>7999</td>
+      <td>resolvido</td>
+      <td>onitlasi_junior_de_moraes_rodrigues</td>
+      <td>resolvido</td>
+      <td>media</td>
+      <td>18.13</td>
+      <td>92.06</td>
+      <td>Média Prioridade (Top 10%)</td>
+      <td>32.03</td>
+      <td>75.24</td>
       <td>Detectado (Alta Prioridade / Top 10%)</td>
     </tr>
     <tr>
@@ -2083,11 +2167,17 @@
       <td>True</td>
       <td>True</td>
       <td>46.0</td>
-      <td>9.03</td>
-      <td>9.59</td>
-      <td>45.86</td>
-      <td>92.37</td>
-      <td>Detectado (Alta Prioridade / Top 10%)</td>
+      <td>8004</td>
+      <td>resolvido</td>
+      <td>NaN</td>
+      <td>nao_resolvido</td>
+      <td>nao_resolvido</td>
+      <td>2.30</td>
+      <td>29.03</td>
+      <td>Típico / Baixa Prioridade</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Prioridade Basal (não sinalizado)</td>
     </tr>
   </tbody>
 </table>
@@ -2101,7 +2191,7 @@
             <br>• <strong>Gabriel Tota:</strong> Percentil <strong>98,2%</strong> (Top 1,8% da liga);
             <br>• <strong>Paulo Miranda:</strong> Percentil <strong>95,3%</strong> (Top 4,7% da liga);
             <br>• <strong>Eduardo Bauermann:</strong> Percentil <strong>90,5%</strong> (Top 9,5% da liga).
-            <br>O modelo colocou <strong>100% dos atletas investigados na elite dentro do Top 10% mais suspeito da história</strong>.
+            <br>Os escores estatísticos sinalizam <strong>5 dos 14 incidentes conhecidos</strong>, ao custo de 458 partidas marcadas em 4.559.
           </p>
         </div>
 
@@ -2113,7 +2203,7 @@
               <span class="decision-tag tag-est">Sensibilidade Total</span>
             </div>
             <div class="decision-title">100% de Sensibilidade nos Tiers Prioritários</div>
-            <div class="decision-body">Todos os 14 incidentes judiciais reais foram capturados em <em>Alta Prioridade</em> (Top 10%) ou <em>Média Prioridade</em> (Top 25%). <strong>100% dos atletas investigados na Série A figuram no Top 10% mais anômalo de toda a história da liga</strong>.</div>
+            <div class="decision-body">Cinco dos 14 incidentes judiciais são sinalizados em faixa prioritária. Avaliado fora da amostra, o classificador de ML <strong>não generaliza</strong>: a captura no tier de Alto Risco cai de 100% para 0 de 7 no nível do atleta.</div>
           </div>
 
           <div class="decision-card ana">
@@ -2491,7 +2581,7 @@
             </div>
             <div class="decision-title">Limiares por Percentis Empíricos e Governança Ética</div>
             <div class="decision-body">Definir alertas com base nos percentis empíricos da distribuição (Top 10% e Top 25%), com presunção irrestrita de inocência.</div>
-            <div class="decision-motive"><strong>Motivo:</strong> Atinge 100% de sensibilidade no ground truth da Penalidade Máxima sem imputação indevida a atletas legítimos.</div>
+            <div class="decision-motive"><strong>Motivo:</strong> Calibra o alerta pela distribuição observada, e não por limiar absoluto arbitrário, sem imputação indevida a atletas legítimos.</div>
           </div>
 
           <!-- D-TEC-01 a D-TEC-07 -->
@@ -2656,7 +2746,7 @@
           </div>
           <div class="checklist-item">
             <input type="checkbox" checked disabled>
-            <div><strong>Ground Truth:</strong> Validação algorítmica contra os 14 casos reais transitados em julgado da Operação Penalidade Máxima (100% de sensibilidade).</div>
+            <div><strong>Ground Truth:</strong> Aferição algorítmica contra os 14 casos reais transitados em julgado da Operação Penalidade Máxima (sensibilidade de 35,7%, medida fora da amostra).</div>
           </div>
           <div class="checklist-item">
             <input type="checkbox" checked disabled>
@@ -2673,7 +2763,7 @@
           <p>
             O projeto cumpriu integralmente todos os critérios de rigor científico, governança ética e reprodutibilidade exigidos pelo <code>.agent.md</code>.
             As evidências demonstram que as apostas esportivas causaram uma transformação profunda na sensibilidade arbitral do futebol brasileiro, enquanto
-            os casos de manipulação por micro-apostas constituem desvios criminosos individuais que podem ser rastreados com 100% de sensibilidade por algoritmos de triagem estatística.
+            os casos de manipulação por micro-apostas constituem desvios criminosos individuais que algoritmos de triagem estatística conseguem priorizar para auditoria humana.
           </p>
         </div>
       </section>
