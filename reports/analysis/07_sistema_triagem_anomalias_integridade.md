@@ -13,16 +13,16 @@ validação fora da amostra e carga operacional medidas.
 
 Este relatório documenta a concepção, calibração matemática e validação empírica do **Sistema de Triagem e Detecção de Anomalias Disciplinares de Integridade Esportiva**. O sistema foi projetado para atuar como uma camada de conformidade (*compliance* e *integrity screening*) capaz de auditar grandes volumes de dados de súmulas eletrônicas oficiais da CBF e sinalizar partidas e atletas que apresentem desvios disciplinares estatisticamente improváveis sob o padrão basal do futebol brasileiro.
 
-A modelagem harmonizou **4.559 partidas** (Série A 2015–2024 e Série B 2022–2023) e avaliou **3.586 registros de atleta-temporada** (atletas com $\ge 3$ advertências na temporada). A sensibilidade do algoritmo é aferida contra o **Ground Truth da Operação Penalidade Máxima** (Ministério Público de Goiás / STJD, 2022), composto por 14 incidentes com condenações criminais ou desportivas transitadas em julgado. Esta aferição é **in-sample** no caso do classificador de ML e está sujeita às ressalvas da seção 3.4.
+A modelagem harmonizou **4.559 partidas** (Série A 2015–2024 e Série B 2022–2023) e avaliou **3.694 registros de atleta-temporada** (atletas com $\ge 3$ advertências na temporada). A sensibilidade do algoritmo é aferida contra o **Ground Truth da Operação Penalidade Máxima** (Ministério Público de Goiás / STJD, 2022), composto por 14 incidentes com condenações criminais ou desportivas transitadas em julgado. Esta aferição é **in-sample** no caso do classificador de ML e está sujeita às ressalvas da seção 3.4.
 
 ### Principais Conclusões e Achados de Integridade:
-1. **Sensibilidade de 35,7% dos escores estatísticos.** Com a fórmula reconciliada, a base
-   corrigida e as identidades do ground truth resolvidas, os escores sinalizam **5 dos 14
-   incidentes** em faixa prioritária. Dois dos nove não sinalizados são fraudes que não se
+1. **Sensibilidade de 42,9% dos escores estatísticos.** Com a fórmula reconciliada, a base
+   corrigida e as identidades do ground truth resolvidas, os escores sinalizam **6 dos 14
+   incidentes** em faixa prioritária. Dois dos oito não sinalizados são fraudes que não se
    consumaram em campo (seção 3.5).
 2. **A sensibilidade de 100% do classificador de ML era memorização.** Sob leave-one-out, a
-   captura no tier de Alto Risco cai de 7/7 para **0/7** no nível do atleta e de 12/14 para
-   5/14 no nível da partida. Treinado na Série B e avaliado na Série A, o modelo captura 1 de
+   captura no tier de Alto Risco cai de 7/7 para **1/7** no nível do atleta e de 12/14 para
+   6/14 no nível da partida. Treinado na Série B e avaliado na Série A, o modelo captura 1 de
    9 partidas (seção 3.6).
 3. **O casamento do ground truth associava atletas errados.** O percentil de 99,67% publicado
    como sendo de Nino Paraíba (Ceará) pertence a Nino (Fluminense); o registro real de Nino
@@ -30,9 +30,10 @@ A modelagem harmonizou **4.559 partidas** (Série A 2015–2024 e Série B 2022�
 4. **Os eventos individuais do ground truth não reconciliam com as súmulas.** De 14 casos,
    apenas 1 tem o evento confirmado na base (seção 3.4).
 5. **Não há ganho demonstrável sobre a seleção aleatória.** No nível da partida, nenhum limiar
-   captura mais casos do que sortear a mesma quantidade de partidas ao acaso ($p \ge 0{,}25$ em
-   toda a curva); nos tiers de Extrema Anomalia e Alta Prioridade a captura é zero. No nível do
-   atleta há sinal ($p = 0{,}019$), mas só ao custo de sinalizar 40% da base (seção 3.7).
+   captura mais casos do que sortear a mesma quantidade de partidas ao acaso — o melhor ponto
+   da curva fica em $p = 0{,}118$; nos tiers de Extrema Anomalia e Alta Prioridade a captura é
+   zero. No nível do atleta há sinal ($p = 0{,}019$), mas só ao custo de sinalizar 40% da base
+   (seção 3.7).
 6. **O desencontro é de unidade de análise.** O índice de partida mede distorção coletiva; os
    incidentes são atos individuais. É o mesmo achado da econometria do projeto, que encontrou
    efeito nulo da exposição sobre a proporção coletiva de cartões no 1º tempo. O caminho com
@@ -42,7 +43,7 @@ A modelagem harmonizou **4.559 partidas** (Série A 2015–2024 e Série B 2022�
    foi removido por circularidade metodológica e por indefensabilidade operacional; a variável
    permanece como contexto de estratificação (seção 2.1).
 8. **A carga de alerta passou a ser um parâmetro, não um acidente.** Com tiers por percentil
-   empírico, o sistema sinaliza 458 partidas (10,05% da base) contra 12 (0,26%) da
+   empírico, o sistema sinaliza 455 partidas (9,98% da base) contra 10 (0,22%) da
    configuração anterior. A calibração do corte por persona é objeto da tarefa F1-04.
 9. **Casos de fraude frustrada.** Nos incidentes em que a manipulação foi combinada mas não se
    consumou em campo (Romário, que não foi escalado; Bauermann, que não executou o combinado
@@ -94,7 +95,7 @@ O algoritmo de triagem foi desenvolvido em duas dimensões complementares: o **S
                                              v
               +-------------------------------------------------------------+
               | Validação Empírica: 14 Casos Operação Penalidade Máxima     |
-              | Sensibilidade dos escores estatísticos = 5/14 (35,7%)       |
+              | Sensibilidade dos escores estatísticos = 6/14 (42,9%)       |
               | Classificador de ML fora da amostra: ver secoes 3.5 e 3.6   |
               +-------------------------------------------------------------+
 ```
@@ -111,8 +112,8 @@ topo de `src/models/anomaly_detection.py` e são fixados pelo teste
 alterar a fórmula sem atualizar este relatório quebra a suíte.
 
 #### 1. Subscore de Concentração no 1º Tempo ($S_{\text{tempo}}$)
-A distribuição basal de cartões no futebol brasileiro é assimétrica: **35,3%** das advertências
-ocorrem no 1º tempo ($p_0 = 0{,}353$, estimado sobre os 22.850 cartões da própria base
+A distribuição basal de cartões no futebol brasileiro é assimétrica: **35,1%** das advertências
+ocorrem no 1º tempo ($p_0 = 0{,}351$, estimado sobre os 23.369 cartões da própria base
 harmonizada). Partidas com concentração precoce violam essa dinâmica:
 $$P(X \ge k \mid n, p_0 = 0{,}353) = \sum_{j=k}^{n} \binom{n}{j} p_0^j (1 - p_0)^{n-j}$$
 $$S_{\text{tempo}} = \text{clip}\left(-25 \cdot \log_{10}(p_{\text{tempo}}), 0, 100\right)$$
@@ -160,13 +161,13 @@ a ser definida pelo **percentil empírico da própria distribuição**:
 
 | Tier | Corte | Partidas sinalizadas | % da base |
 | :--- | :---: | :---: | :---: |
-| Extrema Anomalia (Top 1%) | Percentil $\ge$ 99 | 44 | 0,97% |
-| Alta Prioridade de Escrutínio (Top 5%) | Percentil $\ge$ 95 | 185 | 4,06% |
-| Média Prioridade (Top 10%) | Percentil $\ge$ 90 | 229 | 5,02% |
-| Típico / Baixa Prioridade | — | 4.101 | 89,95% |
+| Extrema Anomalia (Top 1%) | Percentil $\ge$ 99 | 45 | 0,99% |
+| Alta Prioridade de Escrutínio (Top 5%) | Percentil $\ge$ 95 | 184 | 4,04% |
+| Média Prioridade (Top 10%) | Percentil $\ge$ 90 | 226 | 4,96% |
+| Típico / Baixa Prioridade | — | 4.104 | 90,02% |
 
-A motivação é operacional: com limiares absolutos, a fórmula anterior classificava **12 de
-4.559 partidas** (0,26%) fora do tier basal, e nenhuma das 14 partidas do ground truth estava
+A motivação é operacional: com limiares absolutos, a fórmula anterior classificava **10 de
+4.559 partidas** (0,22%) fora do tier basal, e nenhuma das 14 partidas do ground truth estava
 entre elas. A carga de alerta era uma consequência acidental da escala do escore. Com corte
 por percentil, ela passa a ser um **parâmetro explícito**, que a tarefa F1-04 calibrará por
 persona.
@@ -186,20 +187,20 @@ Onde:
 
 O minuto usado aqui é o **minuto de jogo corrido** (`minuto_partida`), harmonizado entre as
 duas divisões — ver a seção 3.1. A classificação do atleta segue os mesmos cortes percentílicos
-da partida (Top 1% / Top 5% / Top 10%), aplicados sobre a distribuição dos 3.586 registros de
+da partida (Top 1% / Top 5% / Top 10%), aplicados sobre a distribuição dos 3.694 registros de
 atleta-temporada.
 
 ---
 
-## 3. Reconciliação, Ancoragem, Validação e Carga Operacional (F1-01 a F1-04)
+## 3. Reconciliação, Ancoragem, Validação e Carga Operacional (F1-01 a F1-04, F2-03)
 
 Esta seção registra o que mudou na revisão de setembro de 2026 e por quê. Todos os artefatos
 citados adiante foram regenerados a partir do código corrigido.
 
 ### 3.1 Defeitos de base corrigidos
 
-Três defeitos de harmonização foram identificados durante a reconciliação. Nenhum deles é um
-problema de fórmula: os três corrompiam as **entradas** do índice.
+Quatro defeitos foram identificados e corrigidos. Nenhum deles é problema de fórmula: todos
+corrompiam as **entradas** do índice.
 
 | Defeito | Diagnóstico | Efeito antes da correção |
 | :--- | :--- | :--- |
@@ -207,10 +208,15 @@ problema de fórmula: os três corrompiam as **entradas** do índice.
 | Semântica de minuto divergente | A Série A registra o minuto em escala de jogo (0–90); as súmulas da CBF (Série B) registram o minuto **dentro do tempo**, de modo que um cartão aos 20' do 2º tempo era lido como minuto 20. | 47,8% dos cartões da Série B contavam como "até os 30 minutos", contra 15,4% da Série A — um artefato de escala, não um padrão de campo. A minutagem média dos atletas da Série B era subestimada em 15 a 25 minutos. |
 | Janela temporal implícita | O filtro da Série A era `temporada >= 2015`, sem teto, enquanto a base de partidas ia até 2024. | A sincronização da temporada 2026 (commit `9b19acb`) injetou 204 registros de atleta-temporada de 2026 na distribuição de referência, sem que nada no código sinalizasse a mudança. |
 
+| Perda da seção de cartões amarelos | O parser em lote (`parse_cbf_sumulas.py`) localizava as seções da súmula sem guarda de primeira ocorrência. O token `2º Cartão Amarelo` — subtipo de expulsão, que aparece **dentro** da seção de vermelhos — sobrescrevia o índice da seção de amarelos com uma posição posterior à dos vermelhos, e o recorte `tokens[idx_amarelo:idx_vermelho]` virava vazio. | Toda partida com uma expulsão por segundo amarelo perdia **todos** os seus cartões amarelos. A Série B 2022–2023 estava sem **519 cartões** (14% do total da divisão no período), em 35 partidas de 2022 e um número equivalente em 2023. Corrigido na tarefa F2-03. |
+
 A correção consiste em usar `(serie, temporada, partida_id)` como chave, adotar o
 `minuto_continuo` como minuto de jogo nas duas séries e declarar a janela temporal em
 constantes (`SERIE_A_TEMPORADA_MIN`, `SERIE_A_TEMPORADA_MAX`, `SERIE_B_TEMPORADAS`). Os três
-casos estão cobertos por testes de regressão em `tests/test_anomaly_detection.py`.
+casos estão cobertos por testes de regressão em `tests/test_anomaly_detection.py`. A perda da
+seção de amarelos foi corrigida no parser e coberta em `tests/test_cbf_delta.py`; as súmulas da
+Série B 2022–2023 foram reprocessadas, e as probabilidades basais do índice reestimadas sobre a
+base completa ($p_0 = 0{,}351$ para o 1º tempo, contra $0{,}353$ antes).
 
 ### 3.2 Efeito da reconciliação sobre o ranking
 
@@ -220,13 +226,13 @@ reproduzíveis por `python -m src.analysis.comparacao_reconciliacao_score`.
 | Métrica | Especificação anterior | Especificação vigente |
 | :--- | :---: | :---: |
 | Partidas na base | 4.559 | 4.559 |
-| Escore médio | 18,34 | 7,13 |
-| Escore máximo | 68,07 | 56,37 |
-| Partidas fora do tier basal | 12 (0,26%) | 458 (10,05%) |
-| Correlação de Spearman entre os dois rankings | — | 0,848 |
-| Partidas que mudam de tier | — | 458 |
+| Escore médio | 18,39 | 7,21 |
+| Escore máximo | 68,07 | 56,55 |
+| Partidas fora do tier basal | 10 (0,22%) | 455 (9,98%) |
+| Correlação de Spearman entre os dois rankings | — | 0,846 |
+| Partidas que mudam de tier | — | 455 |
 
-A correlação de 0,848 indica que a ordenação relativa se preserva em boa medida: o que muda
+A correlação de 0,846 indica que a ordenação relativa se preserva em boa medida: o que muda
 substancialmente é a **escala** e, com ela, o corte operacional.
 
 ### 3.3 Ancoragem do ground truth: resolvedor de identidade (F1-03)
@@ -287,23 +293,23 @@ pendência de fonte documental.
 
 | Caso ID | Série | Confronto | Atleta | Identidade na base | Status | Percentil da partida | Score do atleta (Pct) | Status da triagem |
 | :---: | :---: | :--- | :--- | :--- | :--- | :---: | :---: | :--- |
-| **PM-001** | B | Vila Nova x Sport | Romario | `—` | nao_resolvido | 8,41% | — (—%) | Não Ocorreu em Campo (Fraude Frustrada) |
-| **PM-002** | B | Criciuma x Tombense | Joseph | `joseph_mauricio_de_oliveira_figueiredo` | resolvido | 24,02% | 29,09 (68,25%) | Prioridade Basal (não sinalizado) |
-| **PM-003** | B | Sampaio Correa x Londrina | Mateusinho | `mateus_da_silva_duarte` | resolvido | 8,41% | 28,69 (67,47%) | Prioridade Basal (não sinalizado) |
-| **PM-004** | B | Sampaio Correa x Londrina | Ygor Catatau | `ygor_de_oliveira_ferreira` | resolvido | 8,41% | 25,90 (62,58%) | Prioridade Basal (não sinalizado) |
-| **PM-005** | B | Nautico x Sampaio Correa | Mateusinho | `mateus_da_silva_duarte` | resolvido | 80,82% | 28,69 (67,47%) | Detectado (Média Prioridade / Top 25%) |
-| **PM-006** | A | Juventude x Avai | Paulo Miranda | `paulo_miranda` | resolvido | 87,90% | 42,01 (90,04%) | Detectado (Alta Prioridade / Top 10%) |
-| **PM-007** | A | Palmeiras x Juventude | Paulo Miranda | `paulo_miranda` | resolvido | 24,02% | 42,01 (90,04%) | Detectado (Alta Prioridade / Top 10%) |
-| **PM-008** | A | Juventude x Fortaleza | Gabriel Tota | `gabriel_tota` | abaixo_do_minimo_de_cartoes | 40,26% | — (—%) | Prioridade Basal (não sinalizado) |
-| **PM-009** | A | Fluminense x Juventude | Gabriel Tota | `gabriel_tota` | abaixo_do_minimo_de_cartoes | 8,41% | — (—%) | Prioridade Basal (não sinalizado) |
-| **PM-010** | A | Santos x Avai | Eduardo Bauermann | `eduardo` | resolvido | 44,25% | 31,58 (74,05%) | Não Ocorreu em Campo (Fraude Frustrada) |
-| **PM-011** | A | Botafogo x Santos | Eduardo Bauermann | `eduardo` | resolvido | 53,97% | 31,58 (74,05%) | Prioridade Basal (não sinalizado) |
-| **PM-012** | A | Ceara x Cuiaba | Nino Paraiba | `nino_paraiba` | resolvido | 87,69% | 17,12 (34,50%) | Detectado (Média Prioridade / Top 25%) |
-| **PM-013** | A | Goias x Juventude | Moraes Jr | `onitlasi_junior_de_moraes_rodrigues` | resolvido | 92,06% | 32,03 (75,24%) | Detectado (Alta Prioridade / Top 10%) |
-| **PM-014** | A | Cuiaba x Palmeiras | Igor Carius | `—` | nao_resolvido | 29,03% | — (—%) | Prioridade Basal (não sinalizado) |
+| **PM-001** | B | Vila Nova x Sport | Romario | `—` | nao_resolvido | 92,94% | — (—%) | Detectado (Alta Prioridade / Top 10%) |
+| **PM-002** | B | Criciuma x Tombense | Joseph | `joseph_mauricio_de_oliveira_figueiredo` | resolvido | 23,21% | 29,13 (68,46%) | Prioridade Basal (não sinalizado) |
+| **PM-003** | B | Sampaio Correa x Londrina | Mateusinho | `mateus_da_silva_duarte` | resolvido | 7,81% | 28,75 (67,69%) | Prioridade Basal (não sinalizado) |
+| **PM-004** | B | Sampaio Correa x Londrina | Ygor Catatau | `ygor_de_oliveira_ferreira` | resolvido | 7,81% | 25,92 (62,67%) | Prioridade Basal (não sinalizado) |
+| **PM-005** | B | Nautico x Sampaio Correa | Mateusinho | `mateus_da_silva_duarte` | resolvido | 75,51% | 28,75 (67,69%) | Detectado (Média Prioridade / Top 25%) |
+| **PM-006** | A | Juventude x Avai | Paulo Miranda | `paulo_miranda` | resolvido | 87,67% | 42,08 (90,20%) | Detectado (Alta Prioridade / Top 10%) |
+| **PM-007** | A | Palmeiras x Juventude | Paulo Miranda | `paulo_miranda` | resolvido | 23,21% | 42,08 (90,20%) | Detectado (Alta Prioridade / Top 10%) |
+| **PM-008** | A | Juventude x Fortaleza | Gabriel Tota | `gabriel_tota` | abaixo_do_minimo_de_cartoes | 39,83% | — (—%) | Prioridade Basal (não sinalizado) |
+| **PM-009** | A | Fluminense x Juventude | Gabriel Tota | `gabriel_tota` | abaixo_do_minimo_de_cartoes | 7,81% | — (—%) | Prioridade Basal (não sinalizado) |
+| **PM-010** | A | Santos x Avai | Eduardo Bauermann | `eduardo` | resolvido | 43,78% | 31,66 (74,35%) | Não Ocorreu em Campo (Fraude Frustrada) |
+| **PM-011** | A | Botafogo x Santos | Eduardo Bauermann | `eduardo` | resolvido | 53,42% | 31,66 (74,35%) | Prioridade Basal (não sinalizado) |
+| **PM-012** | A | Ceara x Cuiaba | Nino Paraiba | `nino_paraiba` | resolvido | 87,56% | 17,15 (34,89%) | Detectado (Média Prioridade / Top 25%) |
+| **PM-013** | A | Goias x Juventude | Moraes Jr | `onitlasi_junior_de_moraes_rodrigues` | resolvido | 91,95% | 32,07 (75,50%) | Detectado (Alta Prioridade / Top 10%) |
+| **PM-014** | A | Cuiaba x Palmeiras | Igor Carius | `—` | nao_resolvido | 28,65% | — (—%) | Prioridade Basal (não sinalizado) |
 
-Com as identidades corretas, os escores estatísticos sinalizam **5 dos 14 casos (35,7%)** em
-faixa prioritária. Dois dos nove não sinalizados são fraudes que não se consumaram em campo
+Com as identidades corretas, os escores estatísticos sinalizam **6 dos 14 casos (42,9%)** em
+faixa prioritária. Dois dos oito não sinalizados são fraudes que não se consumaram em campo
 (PM-001 e PM-010), em que a ausência de sinal é o comportamento desejado.
 
 O resultado anterior de 100% se sustentava em atletas que não eram os investigados. O de 64,3%,
@@ -325,13 +331,13 @@ Protocolos implementados em `src/models/validacao_out_of_sample.py`:
 | In-sample | partida | — | Classe 1 ou 2 (sinalizado) | 14/14 | **100,0%** | 78,5% – 100,0% |
 | In-sample | atleta | — | Classe 2 (Alto Risco) | 7/7 | **100,0%** | 64,6% – 100,0% |
 | In-sample | atleta | — | Classe 1 ou 2 (sinalizado) | 7/7 | **100,0%** | 64,6% – 100,0% |
-| Leave-one-out | partida | — | Classe 2 (Alto Risco) | 5/14 | **35,7%** | 16,3% – 61,2% |
-| Leave-one-out | partida | — | Classe 1 ou 2 (sinalizado) | 10/14 | **71,4%** | 45,4% – 88,3% |
-| Leave-one-out | atleta | — | Classe 2 (Alto Risco) | 0/7 | **0,0%** | 0,0% – 35,4% |
-| Leave-one-out | atleta | — | Classe 1 ou 2 (sinalizado) | 3/7 | **42,9%** | 15,8% – 75,0% |
+| Leave-one-out | partida | — | Classe 2 (Alto Risco) | 6/14 | **42,9%** | 21,4% – 67,4% |
+| Leave-one-out | partida | — | Classe 1 ou 2 (sinalizado) | 11/14 | **78,6%** | 52,4% – 92,4% |
+| Leave-one-out | atleta | — | Classe 2 (Alto Risco) | 1/7 | **14,3%** | 2,6% – 51,3% |
+| Leave-one-out | atleta | — | Classe 1 ou 2 (sinalizado) | 2/7 | **28,6%** | 8,2% – 64,1% |
 | Separação por série | partida | treina em B avalia em A | Classe 2 (Alto Risco) | 1/9 | **11,1%** | 2,0% – 43,5% |
 | Separação por série | partida | treina em B avalia em A | Classe 1 ou 2 (sinalizado) | 3/9 | **33,3%** | 12,1% – 64,6% |
-| Separação por série | partida | treina em A avalia em B | Classe 2 (Alto Risco) | 0/5 | **0,0%** | 0,0% – 43,5% |
+| Separação por série | partida | treina em A avalia em B | Classe 2 (Alto Risco) | 3/5 | **60,0%** | 23,1% – 88,2% |
 | Separação por série | partida | treina em A avalia em B | Classe 1 ou 2 (sinalizado) | 4/5 | **80,0%** | 37,5% – 96,4% |
 | Separação por série | atleta | treina em B avalia em A | Classe 2 (Alto Risco) | 1/4 | **25,0%** | 4,6% – 69,9% |
 | Separação por série | atleta | treina em B avalia em A | Classe 1 ou 2 (sinalizado) | 1/4 | **25,0%** | 4,6% – 69,9% |
@@ -379,18 +385,18 @@ e o **ganho sobre sortear a mesma quantidade de registros ao acaso**.
 
 | Nível | Tier | Sinalizados | % da base | Alertas por rodada / temporada | Casos conhecidos no tier | Alertas por caso conhecido |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| partida | Extrema Anomalia (Top 1%) | 44 | 0,97% | 0,10 | 0/13 | — |
-| partida | Alta Prioridade de Escrutínio (Top 5%) | 185 | 4,06% | 0,40 | 0/13 | — |
-| partida | Média Prioridade (Top 10%) | 229 | 5,02% | 0,50 | 1/13 | 229,0 |
-| partida | Típico / Baixa Prioridade | 4101 | 89,95% | 8,95 | 12/13 | 341,8 |
-| atleta | Extrema Anomalia Temporal (Top 1%) | 36 | 1,00% | 3,00 | 0/7 | — |
-| atleta | Alta Concentração Precoce (Top 5%) | 144 | 4,02% | 12,00 | 0/7 | — |
-| atleta | Média Concentração (Top 10%) | 179 | 4,99% | 14,92 | 1/7 | 179,0 |
-| atleta | Padrão Basal Normal | 3227 | 89,99% | 268,92 | 6/7 | 537,8 |
-| partida | TOTAL SINALIZADO (todos os tiers) | 458 | 10,05% | 1,00 | 1/13 | 458,0 |
-| atleta | TOTAL SINALIZADO (todos os tiers) | 359 | 10,01% | 29,92 | 1/7 | 359,0 |
+| partida | Extrema Anomalia (Top 1%) | 45 | 0,99% | 0,10 | 0/13 | — |
+| partida | Alta Prioridade de Escrutínio (Top 5%) | 184 | 4,04% | 0,40 | 0/13 | — |
+| partida | Média Prioridade (Top 10%) | 226 | 4,96% | 0,49 | 2/13 | 113,0 |
+| partida | Típico / Baixa Prioridade | 4104 | 90,02% | 8,96 | 11/13 | 373,1 |
+| atleta | Extrema Anomalia Temporal (Top 1%) | 38 | 1,03% | 3,17 | 0/7 | — |
+| atleta | Alta Concentração Precoce (Top 5%) | 147 | 3,98% | 12,25 | 0/7 | — |
+| atleta | Média Concentração (Top 10%) | 186 | 5,04% | 15,50 | 1/7 | 186,0 |
+| atleta | Padrão Basal Normal | 3323 | 89,96% | 276,92 | 6/7 | 553,8 |
+| partida | TOTAL SINALIZADO (todos os tiers) | 455 | 9,98% | 0,99 | 2/13 | 227,5 |
+| atleta | TOTAL SINALIZADO (todos os tiers) | 371 | 10,04% | 30,92 | 1/7 | 371,0 |
 
-Doze dos treze casos conhecidos estão no tier basal. Nenhum caso aparece nos tiers de Extrema
+Onze dos treze casos conhecidos estão no tier basal. Nenhum caso aparece nos tiers de Extrema
 Anomalia ou Alta Prioridade, nos dois níveis.
 
 #### Precisão@k por rodada
@@ -402,49 +408,49 @@ teto aritmético da precisão@k é `positivos_na_rodada / k`, reportado ao lado.
 | k | Rodadas | Partidas inspecionadas | Capturados | Precisão@k | Teto possível | Recall@k | Ganho sobre o acaso |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | 1.0 | 9.0 | 9.0 | 1.0/13.0 | 11,1% | 100,0% | 7,7% | 0,77 |
-| 3.0 | 9.0 | 27.0 | 4.0/13.0 | 14,8% | 48,1% | 30,8% | 1,03 |
-| 5.0 | 9.0 | 45.0 | 4.0/13.0 | 8,9% | 28,9% | 30,8% | 0,62 |
+| 3.0 | 9.0 | 27.0 | 5.0/13.0 | 18,5% | 48,1% | 38,5% | 1,28 |
+| 5.0 | 9.0 | 45.0 | 5.0/13.0 | 11,1% | 28,9% | 38,5% | 0,77 |
 | 10.0 | 9.0 | 90.0 | 13.0/13.0 | 14,4% | 14,4% | 100,0% | 1,00 |
 
 #### Curva de carga operacional — nível partida
 
 | Corte | Score mínimo | Sinalizados | % da base | Alertas/rodada | Capturados | Sensibilidade | Ganho sobre o acaso | p-valor |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| P100 | 45,93 | 5.0 | 0,11% | 0,01 | 0.0/13.0 | 0,0% | 0,00 | 1,000 |
-| P100 | 33,50 | 24.0 | 0,53% | 0,05 | 0.0/13.0 | 0,0% | 0,00 | 1,000 |
-| P99 | 30,16 | 44.0 | 0,97% | 0,10 | 0.0/13.0 | 0,0% | 0,00 | 1,000 |
-| P98 | 25,92 | 91.0 | 2,00% | 0,20 | 0.0/13.0 | 0,0% | 0,00 | 1,000 |
-| P97 | 23,44 | 137.0 | 3,01% | 0,30 | 0.0/13.0 | 0,0% | 0,00 | 1,000 |
-| P96 | 21,83 | 183.0 | 4,01% | 0,40 | 0.0/13.0 | 0,0% | 0,00 | 1,000 |
-| P95 | 20,94 | 229.0 | 5,02% | 0,50 | 0.0/13.0 | 0,0% | 0,00 | 1,000 |
-| P92 | 18,76 | 343.0 | 7,52% | 0,75 | 0.0/13.0 | 0,0% | 0,00 | 1,000 |
-| P90 | 16,60 | 458.0 | 10,05% | 1,00 | 1.0/13.0 | 7,7% | 0,77 | 0,748 |
-| P85 | 14,19 | 685.0 | 15,03% | 1,50 | 3.0/13.0 | 23,1% | 1,54 | 0,309 |
-| P80 | 12,20 | 914.0 | 20,05% | 2,00 | 4.0/13.0 | 30,8% | 1,53 | 0,254 |
-| P75 | 10,64 | 1141.0 | 25,03% | 2,49 | 4.0/13.0 | 30,8% | 1,23 | 0,417 |
-| P70 | 9,34 | 1369.0 | 30,03% | 2,99 | 4.0/13.0 | 30,8% | 1,02 | 0,581 |
-| P60 | 7,26 | 1824.0 | 40,01% | 3,98 | 4.0/13.0 | 30,8% | 0,77 | 0,832 |
-| P50 | 5,40 | 2280.0 | 50,01% | 4,98 | 5.0/13.0 | 38,5% | 0,77 | 0,867 |
+| P100 | 46,04 | 5.0 | 0,11% | 0,01 | 0.0/13.0 | 0,0% | 0,00 | 1,000 |
+| P100 | 33,40 | 24.0 | 0,53% | 0,05 | 0.0/13.0 | 0,0% | 0,00 | 1,000 |
+| P99 | 30,24 | 45.0 | 0,99% | 0,10 | 0.0/13.0 | 0,0% | 0,00 | 1,000 |
+| P98 | 25,99 | 90.0 | 1,97% | 0,20 | 0.0/13.0 | 0,0% | 0,00 | 1,000 |
+| P97 | 23,58 | 138.0 | 3,03% | 0,30 | 0.0/13.0 | 0,0% | 0,00 | 1,000 |
+| P96 | 21,98 | 183.0 | 4,01% | 0,40 | 0.0/13.0 | 0,0% | 0,00 | 1,000 |
+| P95 | 20,92 | 229.0 | 5,02% | 0,50 | 0.0/13.0 | 0,0% | 0,00 | 1,000 |
+| P92 | 18,94 | 343.0 | 7,52% | 0,75 | 1.0/13.0 | 7,7% | 1,02 | 0,639 |
+| P90 | 16,65 | 455.0 | 9,98% | 0,99 | 2.0/13.0 | 15,4% | 1,54 | 0,378 |
+| P85 | 14,37 | 685.0 | 15,03% | 1,50 | 4.0/13.0 | 30,8% | 2,05 | 0,118 |
+| P80 | 12,27 | 913.0 | 20,03% | 1,99 | 4.0/13.0 | 30,8% | 1,54 | 0,253 |
+| P75 | 10,83 | 1139.0 | 24,98% | 2,49 | 5.0/13.0 | 38,5% | 1,54 | 0,205 |
+| P70 | 9,43 | 1369.0 | 30,03% | 2,99 | 5.0/13.0 | 38,5% | 1,28 | 0,346 |
+| P60 | 7,38 | 1823.0 | 39,99% | 3,98 | 5.0/13.0 | 38,5% | 0,96 | 0,647 |
+| P50 | 5,51 | 2281.0 | 50,03% | 4,98 | 6.0/13.0 | 46,2% | 0,92 | 0,711 |
 
 #### Curva de carga operacional — nível atleta-temporada
 
 | Corte | Score mínimo | Sinalizados | % da base | Alertas/temporada | Capturados | Sensibilidade | Ganho sobre o acaso | p-valor |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| P100 | 76,27 | 4.0 | 0,11% | 0,30 | 0.0/7.0 | 0,0% | 0,00 | 1,000 |
-| P100 | 71,16 | 19.0 | 0,53% | 1,60 | 0.0/7.0 | 0,0% | 0,00 | 1,000 |
-| P99 | 66,97 | 36.0 | 1,00% | 3,00 | 0.0/7.0 | 0,0% | 0,00 | 1,000 |
-| P98 | 63,98 | 72.0 | 2,01% | 6,00 | 0.0/7.0 | 0,0% | 0,00 | 1,000 |
-| P97 | 57,82 | 108.0 | 3,01% | 9,00 | 0.0/7.0 | 0,0% | 0,00 | 1,000 |
-| P96 | 52,31 | 144.0 | 4,02% | 12,00 | 0.0/7.0 | 0,0% | 0,00 | 1,000 |
-| P95 | 49,33 | 180.0 | 5,02% | 15,00 | 0.0/7.0 | 0,0% | 0,00 | 1,000 |
-| P92 | 44,80 | 270.0 | 7,53% | 22,50 | 0.0/7.0 | 0,0% | 0,00 | 1,000 |
-| P90 | 41,95 | 359.0 | 10,01% | 29,90 | 1.0/7.0 | 14,3% | 1,43 | 0,522 |
-| P85 | 38,97 | 539.0 | 15,03% | 44,90 | 1.0/7.0 | 14,3% | 0,95 | 0,681 |
-| P80 | 35,85 | 718.0 | 20,02% | 59,80 | 1.0/7.0 | 14,3% | 0,71 | 0,791 |
-| P75 | 31,97 | 898.0 | 25,04% | 74,80 | 2.0/7.0 | 28,6% | 1,14 | 0,556 |
-| P70 | 29,99 | 1075.0 | 29,98% | 89,60 | 3.0/7.0 | 42,9% | 1,43 | 0,352 |
-| P60 | 24,76 | 1436.0 | 40,04% | 119,70 | 6.0/7.0 | 85,7% | 2,14 | 0,019 |
-| P50 | 21,55 | 1794.0 | 50,03% | 149,50 | 6.0/7.0 | 85,7% | 1,71 | 0,062 |
+| P100 | 77,52 | 4.0 | 0,11% | 0,30 | 0.0/7.0 | 0,0% | 0,00 | 1,000 |
+| P100 | 71,63 | 19.0 | 0,51% | 1,60 | 0.0/7.0 | 0,0% | 0,00 | 1,000 |
+| P99 | 67,25 | 38.0 | 1,03% | 3,20 | 0.0/7.0 | 0,0% | 0,00 | 1,000 |
+| P98 | 63,67 | 74.0 | 2,00% | 6,20 | 0.0/7.0 | 0,0% | 0,00 | 1,000 |
+| P97 | 56,89 | 112.0 | 3,03% | 9,30 | 0.0/7.0 | 0,0% | 0,00 | 1,000 |
+| P96 | 51,85 | 148.0 | 4,01% | 12,30 | 0.0/7.0 | 0,0% | 0,00 | 1,000 |
+| P95 | 49,14 | 185.0 | 5,01% | 15,40 | 0.0/7.0 | 0,0% | 0,00 | 1,000 |
+| P92 | 44,54 | 278.0 | 7,53% | 23,20 | 0.0/7.0 | 0,0% | 0,00 | 1,000 |
+| P90 | 41,76 | 371.0 | 10,04% | 30,90 | 1.0/7.0 | 14,3% | 1,42 | 0,524 |
+| P85 | 38,78 | 555.0 | 15,02% | 46,20 | 1.0/7.0 | 14,3% | 0,95 | 0,680 |
+| P80 | 35,37 | 739.0 | 20,01% | 61,60 | 1.0/7.0 | 14,3% | 0,71 | 0,791 |
+| P75 | 31,89 | 924.0 | 25,01% | 77,00 | 2.0/7.0 | 28,6% | 1,14 | 0,556 |
+| P70 | 29,97 | 1109.0 | 30,02% | 92,40 | 3.0/7.0 | 42,9% | 1,43 | 0,353 |
+| P60 | 24,73 | 1479.0 | 40,04% | 123,20 | 6.0/7.0 | 85,7% | 2,14 | 0,019 |
+| P50 | 21,46 | 1849.0 | 50,05% | 154,10 | 6.0/7.0 | 85,7% | 1,71 | 0,063 |
 
 O p-valor é o de um teste hipergeométrico: a probabilidade de capturar ao menos aquele número de
 casos sorteando a mesma quantidade de registros ao acaso.
@@ -454,12 +460,12 @@ casos sorteando a mesma quantidade de registros ao acaso.
 #### O achado central: não há ganho demonstrável sobre a seleção aleatória
 
 **No nível da partida, nenhum limiar produz ganho estatisticamente distinguível do acaso.** O
-melhor ponto da curva (P85, 1,5 alerta por rodada) captura 3 de 13 casos com ganho de 1,54×, a
-um p-valor de 0,31. Nos tiers operacionalmente atraentes — Top 1% e Top 5% — a captura é **zero**.
+melhor ponto da curva (P85, 1,5 alerta por rodada) captura 4 de 13 casos com ganho de 2,05×, a
+um p-valor de 0,118. Nos tiers operacionalmente atraentes — Top 1% e Top 5% — a captura é **zero**.
 
 **No nível do atleta há sinal, mas fora da faixa útil.** O único ponto com p < 0,05 é o corte no
-percentil 60: captura 6 dos 7 atletas, ganho de 2,14×, p = 0,019 — ao custo de sinalizar **40% de
-todos os atletas da base**, cerca de 120 por temporada e divisão. Não é uma fila de auditoria;
+percentil 60: captura 6 dos 7 atletas, ganho de 2,15×, p = 0,019 — ao custo de sinalizar **40% de
+todos os atletas da base**, cerca de 123 por temporada e divisão. Não é uma fila de auditoria;
 é a lista telefônica.
 
 #### Por que isso é coerente com o resto do trabalho
@@ -484,7 +490,7 @@ por precisão no topo da lista, e o topo da lista não contém os casos conhecid
 O que os dados sustentam afirmar hoje:
 
 1. **O sistema mede atipicidade disciplinar com rigor estatístico.** Os subscores são testes
-   binomiais calibrados na distribuição basal de 22.850 cartões, com fórmula publicada,
+   binomiais calibrados na distribuição basal de 23.369 cartões, com fórmula publicada,
    reproduzível e testada. Isso é verdadeiro e verificável, e independe do ground truth.
 2. **O sistema não demonstra capacidade de priorizar os casos conhecidos de manipulação.** Nem
    no topo da lista, nem em nenhum limiar testado, no nível da partida.
@@ -505,9 +511,9 @@ sensibilidade esperada carrega toda a ressalva desta seção.
 
 | Persona | Capacidade (por rodada) | Corte | Alertas/rodada | Casos capturados | Sensibilidade |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| Analista de federação / STJD | 3 | P70 | 2,99 | 4/13 | 30,8% |
-| Compliance de clube | 1 | P90 | 1,00 | 1/13 | 7,7% |
-| Integrity de operadora | 10 | P50 | 4,98 | 5/13 | 38,5% |
+| Analista de federação / STJD | 3 | P70 | 2,99 | 5/13 | 38,5% |
+| Compliance de clube | 1 | P90 | 0,99 | 2/13 | 15,4% |
+| Integrity de operadora | 10 | P50 | 4,98 | 6/13 | 46,2% |
 
 ---
 
@@ -517,11 +523,11 @@ sensibilidade esperada carrega toda a ressalva desta seção.
 
 | Ranking | Partida ID | Temporada | Série | Rodada | Confronto | Total Cartões | Cartões 1ºT | Cartões $\le 30'$ | Pênaltis 1ºT | Match Anomaly Score | Percentil | Prioridade de Triagem |
 | :---: | :---: | :---: | :---: | :---: | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| **1º** | 7998 | 2022 | A | 36 | Bragantino x America-MG | 8 | 8 | 3 | 2 | **56,37** | 100,00% | Extrema Anomalia (Top 1%) |
-| **2º** | 145 | 2022 | B | 15 | Novorizontino x Vasco da Gama | 9 | 7 | 6 | 0 | **51,52** | 99,98% | Extrema Anomalia (Top 1%) |
-| **3º** | 7110 | 2020 | A | 23 | Santos x Sport | 6 | 6 | 4 | 1 | **49,06** | 99,96% | Extrema Anomalia (Top 1%) |
-| **4º** | 8345 | 2023 | A | 32 | Fluminense x Sao Paulo | 11 | 7 | 7 | 0 | **48,48** | 99,93% | Extrema Anomalia (Top 1%) |
-| **5º** | 8082 | 2023 | A | 6 | Corinthians x Sao Paulo | 6 | 6 | 4 | 1 | **46,97** | 99,91% | Extrema Anomalia (Top 1%) |
+| **1º** | 7998 | 2022 | A | 36 | Bragantino x America-MG | 8 | 8 | 3 | 2 | **56,55** | 100,00% | Extrema Anomalia (Top 1%) |
+| **2º** | 145 | 2022 | B | 15 | Novorizontino x Vasco da Gama | 9 | 7 | 6 | 0 | **49,92** | 99,98% | Extrema Anomalia (Top 1%) |
+| **3º** | 7110 | 2020 | A | 23 | Santos x Sport | 6 | 6 | 4 | 1 | **49,21** | 99,96% | Extrema Anomalia (Top 1%) |
+| **4º** | 8345 | 2023 | A | 32 | Fluminense x Sao Paulo | 11 | 7 | 7 | 0 | **48,61** | 99,93% | Extrema Anomalia (Top 1%) |
+| **5º** | 8082 | 2023 | A | 6 | Corinthians x Sao Paulo | 6 | 6 | 4 | 1 | **47,11** | 99,91% | Extrema Anomalia (Top 1%) |
 
 O topo do ranking é ocupado por partidas em que **todos** os cartões saíram no 1º tempo ou em
 que a concentração precoce se combina a volume atípico. O primeiro colocado (Bragantino x
@@ -532,11 +538,11 @@ América-MG, 2022) reúne os três marcadores simultaneamente: 8 cartões, todos
 
 | Ranking | Atleta | Temporada | Série | Clube | Total Cartões | Cartões 1ºT | % Cartões 1ºT | Minuto Médio | Athlete Anomaly Score | Percentil | Classificação |
 | :---: | :--- | :---: | :---: | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| **1º** | Diogo Barbosa | 2024 | A | fluminense | 6 | 6 | 100,0% | 34,7' | **80,48** | 99,99% | Extrema Anomalia Temporal (Top 1%) |
-| **2º** | Valdemir de Oliveira Soares | 2022 | A | coritiba | 6 | 6 | 100,0% | 34,7' | **80,48** | 99,99% | Extrema Anomalia Temporal (Top 1%) |
-| **3º** | Paulo Marcos de Jesus Ribeiro | 2017 | A | vasco | 5 | 5 | 100,0% | 16,6' | **78,25** | 99,94% | Extrema Anomalia Temporal (Top 1%) |
-| **4º** | Marlon | 2023 | A | fluminense | 5 | 5 | 100,0% | 27,6' | **76,97** | 99,92% | Extrema Anomalia Temporal (Top 1%) |
-| **5º** | Dudu | 2016 | A | figueirense | 5 | 5 | 100,0% | 31,6' | **75,77** | 99,89% | Extrema Anomalia Temporal (Top 1%) |
+| **1º** | Diogo Barbosa | 2024 | A | fluminense | 6 | 6 | 100,0% | 34,7' | **80,66** | 99,99% | Extrema Anomalia Temporal (Top 1%) |
+| **2º** | Valdemir de Oliveira Soares | 2022 | A | coritiba | 6 | 6 | 100,0% | 34,7' | **80,66** | 99,99% | Extrema Anomalia Temporal (Top 1%) |
+| **3º** | Douglas do Espirito Santo Torres | 2022 | B | bahia | 5 | 5 | 100,0% | 19,6' | **78,41** | 99,93% | Extrema Anomalia Temporal (Top 1%) |
+| **4º** | Paulo Marcos de Jesus Ribeiro | 2017 | A | vasco | 5 | 5 | 100,0% | 16,6' | **78,41** | 99,93% | Extrema Anomalia Temporal (Top 1%) |
+| **5º** | Marlon | 2023 | A | fluminense | 5 | 5 | 100,0% | 27,6' | **77,13** | 99,89% | Extrema Anomalia Temporal (Top 1%) |
 
 Os cinco primeiros colocados têm 100% dos cartões da temporada aplicados no 1º tempo, com
 minutagem média entre 16' e 35'. Nenhum deles é investigado: o ranking mede **atipicidade

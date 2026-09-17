@@ -1,11 +1,11 @@
 nivel,tier,corte_percentil,sinalizados,pct_da_base,alertas_por_rodada,casos_conhecidos_no_tier,casos_conhecidos_totais,alertas_por_caso_conhecido,alertas_por_temporada_serie
-partida,Extrema Anomalia (Top 1%),99.0,44,0.97,0.1,0,13,,
-partida,Alta Prioridade de Escrutínio (Top 5%),95.0,185,4.06,0.4,0,13,,
-partida,Média Prioridade (Top 10%),90.0,229,5.02,0.5,1,13,229.0,
-partida,Típico / Baixa Prioridade,,4101,89.95,8.95,12,13,341.8,
-atleta,Extrema Anomalia Temporal (Top 1%),99.0,36,1.0,,0,7,,3.0
-atleta,Alta Concentração Precoce (Top 5%),95.0,144,4.02,,0,7,,12.0
-atleta,Média Concentração (Top 10%),90.0,179,4.99,,1,7,179.0,14.92
-atleta,Padrão Basal Normal,,3227,89.99,,6,7,537.8,268.92
-partida,TOTAL SINALIZADO (todos os tiers),90.0,458,10.05,1.0,1,13,458.0,
-atleta,TOTAL SINALIZADO (todos os tiers),90.0,359,10.01,,1,7,359.0,29.92
+partida,Extrema Anomalia (Top 1%),99.0,45,0.99,0.1,0,13,,
+partida,Alta Prioridade de Escrutínio (Top 5%),95.0,184,4.04,0.4,0,13,,
+partida,Média Prioridade (Top 10%),90.0,226,4.96,0.49,2,13,113.0,
+partida,Típico / Baixa Prioridade,,4104,90.02,8.96,11,13,373.1,
+atleta,Extrema Anomalia Temporal (Top 1%),99.0,38,1.03,,0,7,,3.17
+atleta,Alta Concentração Precoce (Top 5%),95.0,147,3.98,,0,7,,12.25
+atleta,Média Concentração (Top 10%),90.0,186,5.04,,1,7,186.0,15.5
+atleta,Padrão Basal Normal,,3323,89.96,,6,7,553.8,276.92
+partida,TOTAL SINALIZADO (todos os tiers),90.0,455,9.98,0.99,2,13,227.5,
+atleta,TOTAL SINALIZADO (todos os tiers),90.0,371,10.04,,1,7,371.0,30.92

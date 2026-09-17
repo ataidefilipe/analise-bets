@@ -64,7 +64,7 @@ def test_pesos_publicados_nao_mudam_sem_atualizar_o_teste():
         "score_atleta_minuto": 0.20,
     }
     assert ad.PENALTI_1T_FAIXAS == ((2, 80.0), (1, 40.0))
-    assert (ad.P0_CARTAO_1T, ad.P0_CARTAO_30MIN) == (0.353, 0.156)
+    assert (ad.P0_CARTAO_1T, ad.P0_CARTAO_30MIN) == (0.351, 0.156)
     assert (ad.LOG_P_MULTIPLICADOR, ad.Z_VOLUME_MULTIPLICADOR) == (25.0, 25.0)
 
 

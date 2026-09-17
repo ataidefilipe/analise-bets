@@ -180,7 +180,7 @@ Para cada partida $i \in \{1, \dots, 4.559\}$, calcula-se uma pontuação ponder
 $$\text{MATCH\_ANOMALY\_SCORE} = 0{,}39 \cdot S_{\text{tempo}} + 0{,}28 \cdot S_{\text{precoce}} + 0{,}22 \cdot S_{\text{volume}} + 0{,}11 \cdot S_{\text{penalti}}$$
 
 Onde:
-1. **$S_{\text{tempo}}$ (Concentração no 1º Tempo):** Teste de cauda binomial com probabilidade basal estimada na própria base, $p_0 = 0{,}353$:
+1. **$S_{\text{tempo}}$ (Concentração no 1º Tempo):** Teste de cauda binomial com probabilidade basal estimada na própria base, $p_0 = 0{,}351$:
    $$S_{\text{tempo}} = \text{clip}\left(-25 \cdot \log_{10}(P(X \ge k \mid n, p_0)), 0, 100\right)$$
 2. **$S_{\text{precoce}}$ (Cartões até 30 Minutos de jogo corrido):** Teste de cauda binomial com $p_0 = 0{,}156$:
    $$S_{\text{precoce}} = \text{clip}\left(-25 \cdot \log_{10}(P(X \ge k \mid n, p_0)), 0, 100\right)$$
@@ -197,7 +197,7 @@ Para cada atleta-temporada com $\ge 3$ cartões recebidos:
 $$\text{ATHLETE\_ANOMALY\_SCORE} = 0{,}50 \cdot S_{\text{atleta\_tempo}} + 0{,}30 \cdot S_{\text{atleta\_taxa}} + 0{,}20 \cdot S_{\text{atleta\_minuto}}$$
 
 Onde:
-* $S_{\text{atleta\_tempo}} = \text{clip}(-25 \cdot \log_{10}(p_{\text{binom}}), 0, 100)$, com $p_0 = 0{,}353$;
+* $S_{\text{atleta\_tempo}} = \text{clip}(-25 \cdot \log_{10}(p_{\text{binom}}), 0, 100)$, com $p_0 = 0{,}351$;
 * $S_{\text{atleta\_taxa}} = \text{prop\_cartoes\_1t} \cdot 100$;
 * $S_{\text{atleta\_minuto}} = \text{clip}((90{,}0 - \overline{\text{Minuto}}) \cdot 1{,}5, 0{,}0, 100{,}0)$, sobre o minuto de jogo corrido.
 
@@ -215,18 +215,18 @@ por associação. Situação: 14 de 14 partidas resolvidas (1 com correção de 
 atletas resolvidos, 1 abaixo do mínimo de 3 cartões e 2 sem correspondente defensável.
 
 **Sensibilidade dos escores estatísticos (fórmulas fechadas, não treinadas no ground truth):**
-* **5 dos 14 casos (35,7%)** sinalizados em faixa prioritária de triagem;
-* Dois dos nove não sinalizados são fraudes que não se consumaram em campo.
+* **6 dos 14 casos (42,9%)** sinalizados em faixa prioritária de triagem;
+* Dois dos oito não sinalizados são fraudes que não se consumaram em campo.
 
 **Sensibilidade do classificador de ML (Tabela 22).** A distinção é essencial: apenas o
 `BaggingPUClassifier` é treinado nos rótulos. Sob leave-one-out agrupado por entidade:
 
 | Nível | Critério | In-sample | Leave-one-out | IC 95% (Wilson) |
 | :--- | :--- | :---: | :---: | :---: |
-| Partida | Classe 2 (Alto Risco) | 12/14 (85,7%) | **5/14 (35,7%)** | 16,3% – 61,2% |
-| Partida | Classe 1 ou 2 | 14/14 (100%) | **10/14 (71,4%)** | 45,4% – 88,3% |
-| Atleta | Classe 2 (Alto Risco) | 7/7 (100%) | **0/7 (0,0%)** | 0,0% – 35,4% |
-| Atleta | Classe 1 ou 2 | 7/7 (100%) | **3/7 (42,9%)** | 15,8% – 75,0% |
+| Partida | Classe 2 (Alto Risco) | 12/14 (85,7%) | **6/14 (42,9%)** | 21,4% – 67,4% |
+| Partida | Classe 1 ou 2 | 14/14 (100%) | **11/14 (78,6%)** | 52,4% – 92,4% |
+| Atleta | Classe 2 (Alto Risco) | 7/7 (100%) | **1/7 (14,3%)** | 2,6% – 51,3% |
+| Atleta | Classe 1 ou 2 | 7/7 (100%) | **2/7 (28,6%)** | 8,2% – 64,1% |
 
 Sob separação por série — treinar na Série B e avaliar na Série A, o cenário mais próximo do uso
 real — a captura no tier de Alto Risco é de 1 em 9 partidas (11,1%).
@@ -245,11 +245,11 @@ a seleção aleatória.
 
 | Nível | Melhor ponto da curva | Captura | Ganho sobre o acaso | p-valor |
 | :--- | :--- | :---: | :---: | :---: |
-| Partida | P85 — 1,5 alerta/rodada | 3/13 | 1,54× | 0,309 |
-| Atleta | P60 — 40% da base sinalizada | 6/7 | 2,14× | **0,019** |
+| Partida | P85 — 1,5 alerta/rodada | 4/13 | 2,05× | 0,118 |
+| Atleta | P60 — 40% da base sinalizada | 6/7 | 2,15× | **0,019** |
 
 Nos tiers de Extrema Anomalia (Top 1%) e Alta Prioridade (Top 5%) a captura é **zero** nos dois
-níveis. No nível da partida nenhum limiar atinge significância; no nível do atleta há sinal, mas
+níveis. No nível da partida nenhum limiar atinge significância — o melhor ponto fica em $p = 0{,}118$; no nível do atleta há sinal, mas
 apenas ao custo de sinalizar 40% da base.
 
 **Interpretação.** O desencontro é de unidade de análise: o `MATCH_ANOMALY_SCORE` mede distorção

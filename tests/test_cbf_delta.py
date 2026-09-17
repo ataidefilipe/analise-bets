@@ -240,3 +240,46 @@ def test_base_serie_a_carrega_motivo_do_cartao():
         das_sumulas = d[d["temporada"] >= 2026]
         invalidos = das_sumulas["clube_slug"].str.startswith(("cartao_", "2o_cartao")).sum()
         assert invalidos == 0, f"{base}: {invalidos} cartões com seção da súmula como clube"
+
+
+def test_expulsao_nao_apaga_a_secao_de_cartoes_amarelos():
+    """
+    Regressão da F2-03: `parse_cbf_sumulas.py` localizava as seções da súmula sem guarda de
+    primeira ocorrência. O token `2º Cartão Amarelo` — subtipo de expulsão, que aparece dentro
+    da seção de vermelhos — sobrescrevia o índice da seção de amarelos com uma posição
+    posterior à dos vermelhos, e o recorte ficava vazio: toda partida com expulsão por segundo
+    amarelo perdia **todos** os seus cartões amarelos. Custou 519 cartões da Série B 2022–2023.
+
+    Os dois parsers do projeto precisam concordar nessa súmula.
+    """
+    from src.cleaning.parse_cbf_sumulas import parse_single_sumula
+
+    sample_pdf = Path("data/raw/cbf/sumulas_serie_b_2022/242106se.pdf")
+    if not sample_pdf.exists():
+        pytest.skip("PDF de teste 242106se.pdf não encontrado")
+
+    _, cards_batch, _ = parse_single_sumula(sample_pdf, 2022, "B")
+    _, cards_delta, _ = parse_single_cbf_pdf(sample_pdf, temporada_default=2022, serie_default="B")
+
+    amarelos_batch = [c for c in cards_batch if c["cartao"] == "Amarelo"]
+    assert amarelos_batch, "a seção de cartões amarelos foi perdida pelo parser em lote"
+
+    assert len(cards_batch) == len(cards_delta), (
+        f"os dois parsers divergem: lote={len(cards_batch)} delta={len(cards_delta)}"
+    )
+    assert len(amarelos_batch) == len([c for c in cards_delta if c["cartao"] == "Amarelo"])
+
+
+def test_base_serie_b_mantem_o_volume_reprocessado():
+    """
+    Guarda contra regressão silenciosa do volume: a Série B 2022–2023 tem 4.190 cartões após a
+    correção do parser (eram 3.671 com a seção de amarelos perdida).
+    """
+    caminho = Path("data/processed/serie_b/cartoes.parquet")
+    if not caminho.exists():
+        pytest.skip("base de cartões da Série B não encontrada")
+
+    df = pd.read_parquet(caminho)
+    volume = df[df["temporada"].isin([2022, 2023])].groupby("temporada").size()
+    assert volume.get(2022, 0) >= 1900, f"Série B 2022 com {volume.get(2022, 0)} cartões"
+    assert volume.get(2023, 0) >= 2200, f"Série B 2023 com {volume.get(2023, 0)} cartões"

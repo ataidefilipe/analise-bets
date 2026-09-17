@@ -60,7 +60,7 @@ As conclusões centrais desta análise:
    exposição jurídica assumida (§9).
    > **Revisão de 2026-09-16 (F1-04).** Medida a carga de alerta, a premissa não se sustenta no
    > nível da partida: nenhum limiar captura mais casos conhecidos do que sortear a mesma
-   > quantidade de partidas ($p \ge 0{,}25$ em toda a curva). Um priorizador é avaliado por
+   > quantidade de partidas (melhor ponto da curva em $p = 0{,}118$). Um priorizador é avaliado por
    > precisão no topo da lista, e o topo da lista não contém os casos conhecidos. O
    > posicionamento vigente é **instrumento de medição de atipicidade disciplinar**, e a unidade
    > de análise com sinal é o atleta. Ver o relatório 07, seções 3.7 e 3.8.
@@ -80,7 +80,7 @@ Levantamento do que existe no repositório em 16/09/2026, classificado por valor
 | **Pipeline delta CBF D+1** (`src/ingestion/cbf_delta_updater.py`, `src/pipeline/run_delta_pipeline.py`) | **Operacional na temporada 2026.** Última execução em 16/09/2026: 380 partidas inspecionadas, 216 súmulas novas, detecção incremental por HTTP HEAD, ETag e SHA-256, zero erros | **Muito alto** |
 | **Parser de súmulas** (`src/cleaning/parse_cbf_sumulas.py`) | Extrai minutagem exata e **motivo textual digitado pelo árbitro** | **Alto** |
 | **Feed de produto** (`src/pipeline/serve_product_feed.py`) | SQLite com índices e WAL, feeds JSON, classificação consolidada | Médio |
-| **Anomaly scoring** (partida e atleta) | 4.559 partidas e 3.586 atleta-temporadas pontuados | Médio |
+| **Anomaly scoring** (partida e atleta) | 4.559 partidas e 3.694 atleta-temporadas pontuados | Médio |
 | **Classificador ML** (IsolationForest + PU) | Treinado e serializado, mas **validado dentro da amostra** (§9.2) | Baixo hoje |
 | **Econometria TWFE e Event Study** | Concluída, tendências paralelas validadas | Acadêmico |
 | **Ground truth judicial** (14 incidentes, Operação Penalidade Máxima) | Estruturado e documentado | Alto valor narrativo, baixo poder estatístico |

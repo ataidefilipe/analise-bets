@@ -20,13 +20,13 @@ Este estudo apresenta a primeira investigação econométrica e causal exaustiva
 3. **Validação de Tendências Paralelas no Estudo de Eventos:** O modelo de Estudo de Eventos com Adoção Escalonada (*Staggered Event Study*) confirmou que os coeficientes pré-tratamento ($e \le -2$) são conjuntamente indistinguíveis de zero ($F = 0,366, p = 0,6961$ para taxa de conversão; $F = 2,430, p = 0,1037$ para cartões totais), validando a hipótese de tendências paralelas e atribuindo caráter causal à quebra observada após a assinatura dos contratos ($e \ge 0$).
 4. **Ausência de Viés Coletivo no 1º Tempo:** O coeficiente de exposição a apostas sobre a proporção de cartões no 1º tempo é nulo ($\beta = -0,0129, p = 0,5916$). Isso atesta econometricamente que **a manipulação de cartões precoces não é uma prática institucional dos clubes patrocinados**, mas sim uma anomalia comportamental de aliciamento individual e criminoso de atletas.
 5. **Heterogeneidade Interdivisões:** Disputar a Série B reduz as advertências em **$-0,2835$ cartões por equipe/jogo** ($p = 0,03696$) em relação à Série A, evidenciando menor severidade disciplinar média na divisão de acesso.
-6. **Sistema de Triagem para Priorização de Escrutínio:** Foi formulado um algoritmo matemático de detecção de anomalias disciplinares (`MATCH_ANOMALY_SCORE` e `ATHLETE_ANOMALY_SCORE`). Aferido contra o *ground truth* judicial da Operação Penalidade Máxima, o sistema sinaliza **5 dos 14 incidentes (35,7%)** ao custo de 458 partidas sinalizadas em 4.559 — captura que **não se distingue estatisticamente de sortear a mesma quantidade de partidas**. O componente de machine learning, avaliado fora da amostra, não generaliza. O trabalho entrega, portanto, um **instrumento de medição de atipicidade disciplinar** com fórmula publicada e reproduzível, e registra explicitamente que a capacidade de priorizar casos de manipulação não está demonstrada no nível da partida.
+6. **Sistema de Triagem para Priorização de Escrutínio:** Foi formulado um algoritmo matemático de detecção de anomalias disciplinares (`MATCH_ANOMALY_SCORE` e `ATHLETE_ANOMALY_SCORE`). Aferido contra o *ground truth* judicial da Operação Penalidade Máxima, o sistema sinaliza **6 dos 14 incidentes (42,9%)** ao custo de 455 partidas sinalizadas em 4.559 — captura que **não se distingue estatisticamente de sortear a mesma quantidade de partidas**. O componente de machine learning, avaliado fora da amostra, não generaliza. O trabalho entrega, portanto, um **instrumento de medição de atipicidade disciplinar** com fórmula publicada e reproduzível, e registra explicitamente que a capacidade de priorizar casos de manipulação não está demonstrada no nível da partida.
 
 ---
 
 ## Abstract (English)
 
-The legalization of fixed-odds sports betting in Brazil through Federal Law 13,756/2018 triggered a dramatic transformation in professional football. Between 2019 and 2024, bookmakers evolved from virtually zero presence to complete commercial hegemony, sponsoring 18 out of 20 Série A clubs by 2024. Concurrently, Brazilian football faced major match-fixing scandals investigated under *Operação Penalidade Máxima*. This study provides the first comprehensive econometric and causal evaluation of the impact of betting expansion on referee discipline and integrity risks. Utilizing a panel of 7,598 club-match observations (2015–2024) alongside 760 official match sheets from Série B, we estimate Two-Way Fixed Effects (TWFE) and Staggered Event Study models. We document a "Disciplinary Paradox": fouls per match declined by 19.3% while the foul-to-card conversion rate increased by 37.1%. Econometric estimates prove a positive and statistically significant causal effect of club betting exposure on cards ($\beta = +0.2665, p = 0.00642$), with parallel trends fully validated ($p > 0.10$). Crucially, betting exposure exhibits a null effect on first-half card share ($\beta = -0.0129, p = 0.5916$), proving that early-card manipulation is not an institutional club behavior but an idiosyncratic athlete-level crime. Finally, we develop an Anomaly Scoring algorithm that flags 5 of the 14 convicted incidents while marking 10.05% of all matches — a capture rate statistically indistinguishable from random selection at the match level (hypergeometric p >= 0.25 across the full operating curve). Out-of-sample evaluation further shows the machine-learning component does not generalise. We therefore present the tool as a reproducible instrument for measuring disciplinary atypicality rather than as a fraud detector, and identify the athlete, not the match, as the unit of analysis where signal is present. We conclude with governance recommendations for sports confederations and regulatory authorities.
+The legalization of fixed-odds sports betting in Brazil through Federal Law 13,756/2018 triggered a dramatic transformation in professional football. Between 2019 and 2024, bookmakers evolved from virtually zero presence to complete commercial hegemony, sponsoring 18 out of 20 Série A clubs by 2024. Concurrently, Brazilian football faced major match-fixing scandals investigated under *Operação Penalidade Máxima*. This study provides the first comprehensive econometric and causal evaluation of the impact of betting expansion on referee discipline and integrity risks. Utilizing a panel of 7,598 club-match observations (2015–2024) alongside 760 official match sheets from Série B, we estimate Two-Way Fixed Effects (TWFE) and Staggered Event Study models. We document a "Disciplinary Paradox": fouls per match declined by 19.3% while the foul-to-card conversion rate increased by 37.1%. Econometric estimates prove a positive and statistically significant causal effect of club betting exposure on cards ($\beta = +0.2665, p = 0.00642$), with parallel trends fully validated ($p > 0.10$). Crucially, betting exposure exhibits a null effect on first-half card share ($\beta = -0.0129, p = 0.5916$), proving that early-card manipulation is not an institutional club behavior but an idiosyncratic athlete-level crime. Finally, we develop an Anomaly Scoring algorithm that flags 6 of the 14 convicted incidents while marking 9.98% of all matches — a capture rate statistically indistinguishable from random selection at the match level (best point on the operating curve at hypergeometric p = 0.118). Out-of-sample evaluation further shows the machine-learning component does not generalise. We therefore present the tool as a reproducible instrument for measuring disciplinary atypicality rather than as a fraud detector, and identify the athlete, not the match, as the unit of analysis where signal is present. We conclude with governance recommendations for sports confederations and regulatory authorities.
 
 ---
 
@@ -254,12 +254,12 @@ Anomalia), Top 5% (Alta Prioridade) e Top 10% (Média Prioridade). O sistema sin
 
 ### 5.3 Desempenho do Algoritmo, Limitações e Casos de "Fraude Frustrada"
 
-1. **Sensibilidade global de 35,7%.** Os escores estatísticos sinalizam **5 dos 14 incidentes
-   reais** em faixa prioritária de triagem — dois dos nove restantes são fraudes que não se
+1. **Sensibilidade global de 42,9%.** Os escores estatísticos sinalizam **6 dos 14 incidentes
+   reais** em faixa prioritária de triagem — dois dos oito restantes são fraudes que não se
    consumaram em campo. A versão anterior deste documento reportava 100% (14/14); o número era
    inflado por defeitos de harmonização da base e por um casamento de identidade defeituoso.
    O classificador de machine learning, avaliado fora da amostra, **não generaliza**: a captura
-   no tier de Alto Risco cai de 100% para 0 de 7 no nível do atleta e de 12 para 5 de 14 no
+   no tier de Alto Risco cai de 100% para 1 de 7 no nível do atleta e de 12 para 6 de 14 no
    nível da partida.
 2. **A detecção da Série B era um artefato de escala de minuto.** As súmulas da CBF registram o
    minuto **dentro de cada tempo**, e não em escala de jogo: um cartão aos 20' do 2º tempo era
@@ -283,11 +283,11 @@ Anomalia), Top 5% (Alta Prioridade) e Top 10% (Média Prioridade). O sistema sin
    partida permanece basal — o sistema não gera sinal na ausência de distorção nos 90 minutos.
 6. **Não há ganho demonstrável sobre a seleção aleatória.** Medida a carga de alerta contra a
    captura, o índice de partida não supera, em nenhum limiar, o que se obteria sorteando a mesma
-   quantidade de partidas (p ≥ 0,25 em toda a curva); nos tiers de Extrema Anomalia e Alta
-   Prioridade a captura é zero. No nível do atleta há sinal (6 de 7 capturados, ganho de 2,14×,
-   p = 0,019), mas apenas ao sinalizar 40% da base.
+   quantidade de partidas — o melhor ponto da curva fica em p = 0,118; nos tiers de Extrema
+   Anomalia e Alta Prioridade a captura é zero. No nível do atleta há sinal (6 de 7 capturados,
+   ganho de 2,15×, p = 0,019), mas apenas ao sinalizar 40% da base.
 7. **O que o sistema é.** O instrumento mede **atipicidade disciplinar** com rigor estatístico —
-   testes binomiais calibrados em 22.850 cartões, com fórmula publicada e reproduzível. Isso é
+   testes binomiais calibrados em 23.369 cartões, com fórmula publicada e reproduzível. Isso é
    verdadeiro e verificável, e independe do ground truth. O que os dados **não** sustentam é
    descrevê-lo como detector ou priorizador de manipulação.
 8. **O desencontro é de unidade de análise.** O índice de partida mede distorção coletiva; os

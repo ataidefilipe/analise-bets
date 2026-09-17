@@ -48,9 +48,10 @@ SERIE_B_TEMPORADAS = (2022, 2023)
 # identifica uma partida: a temporada é parte obrigatória da chave.
 CHAVE_PARTIDA = ["serie", "temporada", "partida_id"]
 
-# Probabilidades basais estimadas na própria base harmonizada (24.220 cartões das Séries A e
+# Probabilidades basais estimadas na própria base harmonizada (23.369 cartões das Séries A e
 # B no recorte acima), usando o minuto de jogo corrido (ver MINUTO_PARTIDA_COL).
-P0_CARTAO_1T = 0.353
+# Reestimadas na F2-03, depois que a correção do parser recuperou 519 cartões da Série B.
+P0_CARTAO_1T = 0.351
 P0_CARTAO_30MIN = 0.156
 LIMITE_CARTAO_PRECOCE_MIN = 30
 

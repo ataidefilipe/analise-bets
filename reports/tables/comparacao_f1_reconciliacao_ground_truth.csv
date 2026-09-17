@@ -1,15 +1,15 @@
 caso_id,serie,confronto,atleta,cartoes_partida,score_anterior,percentil_anterior,tier_anterior,score_novo,percentil_novo,tier_novo,mudou_de_tier
-PM-001,B,Vila Nova x Sport,Romario,2,10.63,16.65,Típico / Baixa Prioridade,0.0,8.41,Típico / Baixa Prioridade,False
-PM-002,B,Criciuma x Tombense,Joseph,3,13.62,30.41,Típico / Baixa Prioridade,1.34,24.02,Típico / Baixa Prioridade,False
-PM-003,B,Sampaio Correa x Londrina,Mateusinho,3,12.4,23.68,Típico / Baixa Prioridade,0.0,8.41,Típico / Baixa Prioridade,False
-PM-004,B,Sampaio Correa x Londrina,Ygor Catatau,3,12.4,23.68,Típico / Baixa Prioridade,0.0,8.41,Típico / Baixa Prioridade,False
-PM-005,B,Nautico x Sampaio Correa,Mateusinho,1,8.86,10.06,Típico / Baixa Prioridade,0.0,8.41,Típico / Baixa Prioridade,False
-PM-006,A,Juventude x Avai,Paulo Miranda,12,29.45,90.68,Típico / Baixa Prioridade,15.39,87.9,Típico / Baixa Prioridade,False
-PM-007,A,Palmeiras x Juventude,Paulo Miranda,3,13.07,27.33,Típico / Baixa Prioridade,1.34,24.02,Típico / Baixa Prioridade,False
-PM-008,A,Juventude x Fortaleza,Gabriel Tota,5,19.56,61.35,Típico / Baixa Prioridade,4.03,40.26,Típico / Baixa Prioridade,False
-PM-009,A,Fluminense x Juventude,Gabriel Tota,2,13.7,31.04,Típico / Baixa Prioridade,0.0,8.41,Típico / Baixa Prioridade,False
-PM-010,A,Santos x Avai,Eduardo Bauermann,3,25.22,82.07,Típico / Baixa Prioridade,4.4,44.25,Típico / Baixa Prioridade,False
-PM-011,A,Botafogo x Santos,Eduardo Bauermann,7,21.62,69.82,Típico / Baixa Prioridade,6.01,53.97,Típico / Baixa Prioridade,False
-PM-012,A,Ceara x Cuiaba,Nino Paraiba,10,26.84,85.81,Típico / Baixa Prioridade,15.33,87.69,Típico / Baixa Prioridade,False
-PM-013,A,Goias x Juventude,Moraes Jr,10,32.77,94.6,Típico / Baixa Prioridade,18.13,92.06,Média Prioridade (Top 10%),True
-PM-014,A,Cuiaba x Palmeiras,Igor Carius,2,9.03,10.97,Típico / Baixa Prioridade,2.3,29.03,Típico / Baixa Prioridade,False
+PM-001,B,Vila Nova x Sport,Romario,11,28.97,89.93,Típico / Baixa Prioridade,19.34,92.94,Média Prioridade (Top 10%),True
+PM-002,B,Criciuma x Tombense,Joseph,3,12.56,23.69,Típico / Baixa Prioridade,1.35,23.21,Típico / Baixa Prioridade,False
+PM-003,B,Sampaio Correa x Londrina,Mateusinho,3,11.34,18.19,Típico / Baixa Prioridade,0.0,7.81,Típico / Baixa Prioridade,False
+PM-004,B,Sampaio Correa x Londrina,Ygor Catatau,3,11.34,18.19,Típico / Baixa Prioridade,0.0,7.81,Típico / Baixa Prioridade,False
+PM-005,B,Nautico x Sampaio Correa,Mateusinho,6,16.84,48.4,Típico / Baixa Prioridade,2.45,30.91,Típico / Baixa Prioridade,False
+PM-006,A,Juventude x Avai,Paulo Miranda,12,29.45,90.77,Típico / Baixa Prioridade,15.41,87.67,Típico / Baixa Prioridade,False
+PM-007,A,Palmeiras x Juventude,Paulo Miranda,3,13.07,26.79,Típico / Baixa Prioridade,1.35,23.21,Típico / Baixa Prioridade,False
+PM-008,A,Juventude x Fortaleza,Gabriel Tota,5,19.56,60.67,Típico / Baixa Prioridade,4.05,39.83,Típico / Baixa Prioridade,False
+PM-009,A,Fluminense x Juventude,Gabriel Tota,2,13.7,30.38,Típico / Baixa Prioridade,0.0,7.81,Típico / Baixa Prioridade,False
+PM-010,A,Santos x Avai,Eduardo Bauermann,3,25.22,81.98,Típico / Baixa Prioridade,4.4,43.78,Típico / Baixa Prioridade,False
+PM-011,A,Botafogo x Santos,Eduardo Bauermann,7,21.62,69.71,Típico / Baixa Prioridade,6.03,53.42,Típico / Baixa Prioridade,False
+PM-012,A,Ceara x Cuiaba,Nino Paraiba,10,26.84,85.73,Típico / Baixa Prioridade,15.38,87.56,Típico / Baixa Prioridade,False
+PM-013,A,Goias x Juventude,Moraes Jr,10,32.77,94.58,Típico / Baixa Prioridade,18.2,91.95,Média Prioridade (Top 10%),True
+PM-014,A,Cuiaba x Palmeiras,Igor Carius,2,9.03,9.89,Típico / Baixa Prioridade,2.32,28.65,Típico / Baixa Prioridade,False

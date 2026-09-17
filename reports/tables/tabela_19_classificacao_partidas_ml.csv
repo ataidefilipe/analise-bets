@@ -1,51 +1,51 @@
 partida_id,temporada,serie,rodada,data,clube_mandante,clube_visitante,total_cartoes,cartoes_1t,penaltis_1t,exposure_total_partida,iforest_outlier,prob_suspeicao_ml,classificacao_ml,match_anomaly_score
-7958,2022,A,32,2022-10-16,Ceara,Cuiaba,10,4,0,0.5187,0,0.8653,Classe 2: Alto Risco / Alerta Investigativo,15.33
-7999,2022,A,36,2022-11-05,Goias,Juventude,10,5,0,0.8562,0,0.8618,Classe 2: Alto Risco / Alerta Investigativo,18.13
-8360,2023,A,34,2023-11-12,Gremio,Corinthians,10,4,0,0.4749,0,0.8593,Classe 2: Alto Risco / Alerta Investigativo,15.34
-5026,2015,A,4,2015-05-31,Figueirense,Cruzeiro,10,4,0,0.0061,0,0.8499,Classe 2: Alto Risco / Alerta Investigativo,15.58
-5201,2015,A,22,2015-09-02,Atletico-MG,Athletico-PR,10,4,0,0.0061,0,0.8499,Classe 2: Alto Risco / Alerta Investigativo,15.58
-5008,2015,A,3,2015-05-23,Vasco,Internacional,10,4,0,0.0061,0,0.8499,Classe 2: Alto Risco / Alerta Investigativo,15.58
-5074,2015,A,9,2015-06-28,Coritiba,Cruzeiro,10,5,0,0.0061,0,0.8478,Classe 2: Alto Risco / Alerta Investigativo,18.38
-331,2022,B,34,2022-10-08,Ponte Preta,Vila Nova,10,5,0,0.5,0,0.8423,Classe 2: Alto Risco / Alerta Investigativo,21.5
-5873,2017,A,13,2017-07-13,Sport,Chapecoense,10,4,0,0.0084,0,0.8382,Classe 2: Alto Risco / Alerta Investigativo,16.76
-6122,2017,A,38,2017-12-03,Sao Paulo,Bahia,10,4,0,0.0084,0,0.8382,Classe 2: Alto Risco / Alerta Investigativo,16.76
-5403,2016,A,4,2016-05-29,Vitoria,Atletico-MG,10,4,0,0.0058,0,0.8374,Classe 2: Alto Risco / Alerta Investigativo,17.29
-5481,2016,A,12,2016-06-29,Chapecoense,Cruzeiro,10,5,0,0.0058,0,0.8343,Classe 2: Alto Risco / Alerta Investigativo,20.09
-8007,2022,A,37,2022-11-09,Coritiba,Corinthians,10,5,1,0.4962,0,0.8205,Classe 2: Alto Risco / Alerta Investigativo,22.53
-8295,2023,A,27,2023-10-19,Fluminense,Corinthians,10,5,1,0.6849,0,0.8149,Classe 2: Alto Risco / Alerta Investigativo,22.54
-322,2022,B,33,2022-10-04,Crb,Chapecoense,10,4,1,0.5,0,0.8024,Classe 2: Alto Risco / Alerta Investigativo,23.1
-187,2023,B,19,2023-07-23,Sampaio Corrêa,Sport,3,1,0,0.5,0,0.7939,Classe 2: Alto Risco / Alerta Investigativo,1.34
-304,2022,B,31,2022-09-25,Criciúma,Chapecoense,3,1,0,0.5,0,0.7861,Classe 2: Alto Risco / Alerta Investigativo,1.34
-284,2022,B,29,2022-09-08,Criciúma,Bahia,3,1,0,0.5,0,0.7861,Classe 2: Alto Risco / Alerta Investigativo,1.34
-338,2022,B,34,2022-10-08,Bahia,Brusque,3,1,0,0.5,0,0.7861,Classe 2: Alto Risco / Alerta Investigativo,1.34
-99,2022,B,10,2022-06-04,Tombense,Ituano,3,1,0,0.5,0,0.7861,Classe 2: Alto Risco / Alerta Investigativo,1.34
-374,2022,B,38,2022-11-05,Criciúma,Tombense,3,1,0,0.5,0,0.7861,Classe 2: Alto Risco / Alerta Investigativo,1.34
-257,2022,B,26,2022-08-26,Grêmio,Ituano,3,1,0,0.5,0,0.7861,Classe 2: Alto Risco / Alerta Investigativo,1.34
-152,2022,B,16,2022-07-02,Crb,Guarani,3,1,0,0.5,0,0.7861,Classe 2: Alto Risco / Alerta Investigativo,1.34
-7723,2022,A,8,2022-05-29,Fluminense,Flamengo,10,3,0,0.6462,0,0.7815,Classe 2: Alto Risco / Alerta Investigativo,13.59
-121,2022,B,13,2022-06-19,Guarani,Csa,2,0,0,0.5,0,0.7774,Classe 2: Alto Risco / Alerta Investigativo,0.0
-344,2022,B,35,2022-10-15,Criciúma,Ituano,2,0,0,0.5,0,0.7774,Classe 2: Alto Risco / Alerta Investigativo,0.0
-255,2022,B,26,2022-08-25,Novorizontino,Ponte Preta,2,0,0,0.5,0,0.7774,Classe 2: Alto Risco / Alerta Investigativo,0.0
-380,2022,B,38,2022-11-06,Vila Nova,Sport,2,0,0,0.5,0,0.7774,Classe 2: Alto Risco / Alerta Investigativo,0.0
-209,2022,B,21,2022-07-29,Tombense,Sampaio Corrêa,2,0,0,0.5,0,0.7774,Classe 2: Alto Risco / Alerta Investigativo,0.0
-8279,2023,A,26,2023-10-08,Internacional,Gremio,10,3,0,0.4749,0,0.7774,Classe 2: Alto Risco / Alerta Investigativo,13.6
-333,2022,B,34,2022-10-09,Sport,Cruzeiro Saf,2,0,0,0.5,0,0.7774,Classe 2: Alto Risco / Alerta Investigativo,0.0
-127,2022,B,13,2022-06-18,Grêmio,Sampaio Corrêa,2,0,0,0.5,0,0.7774,Classe 2: Alto Risco / Alerta Investigativo,0.0
-198,2022,B,20,2022-07-22,Sampaio Corrêa,Sport,2,0,0,0.5,0,0.7774,Classe 2: Alto Risco / Alerta Investigativo,0.0
-161,2022,B,17,2022-07-09,Guarani,Cruzeiro Saf,2,0,0,0.5,0,0.7774,Classe 2: Alto Risco / Alerta Investigativo,0.0
-356,2022,B,36,2022-10-22,Londrina,Sport,2,0,0,0.5,0,0.7774,Classe 2: Alto Risco / Alerta Investigativo,0.0
-7544,2021,A,28,2021-10-25,Atletico-GO,Gremio,10,3,0,0.5698,0,0.7641,Classe 2: Alto Risco / Alerta Investigativo,16.22
-7589,2021,A,32,2021-11-13,Internacional,Athletico-PR,10,3,0,0.2323,0,0.7641,Classe 2: Alto Risco / Alerta Investigativo,16.22
-45,2022,B,5,2022-04-29,Ituano,Bahia,10,5,0,0.5,1,0.7629,Classe 2: Alto Risco / Alerta Investigativo,21.5
-7886,2022,A,25,2022-09-03,Juventude,Avai,12,3,0,0.8562,0,0.7623,Classe 2: Alto Risco / Alerta Investigativo,15.39
-6331,2018,A,21,2018-08-26,Sao Paulo,Ceara,10,3,0,0.0174,0,0.7617,Classe 2: Alto Risco / Alerta Investigativo,15.19
-15,2023,B,2,2023-04-22,Novorizontino,Juventude,2,0,0,0.5,0,0.758,Classe 2: Alto Risco / Alerta Investigativo,0.0
-114,2023,B,12,2023-06-10,Ituano,Atlético,2,0,0,0.5,0,0.758,Classe 2: Alto Risco / Alerta Investigativo,0.0
-250,2023,B,25,2023-08-26,Crb,Novorizontino,2,0,0,0.5,0,0.758,Classe 2: Alto Risco / Alerta Investigativo,0.0
-332,2023,B,34,2023-10-28,Vila Nova,Atlético,2,0,0,0.5,0,0.758,Classe 2: Alto Risco / Alerta Investigativo,0.0
-102,2023,B,11,2023-06-06,Atlético,Ceará,2,0,0,0.5,0,0.758,Classe 2: Alto Risco / Alerta Investigativo,0.0
-116,2023,B,12,2023-06-11,Vitória,Criciúma,3,0,0,0.5,0,0.7558,Classe 2: Alto Risco / Alerta Investigativo,0.0
-147,2023,B,15,2023-07-01,Sampaio Corrêa,Criciúma,3,0,0,0.5,0,0.7558,Classe 2: Alto Risco / Alerta Investigativo,0.0
-262,2023,B,27,2023-09-10,Atlético,Juventude,3,0,0,0.5,0,0.7558,Classe 2: Alto Risco / Alerta Investigativo,0.0
-62,2023,B,7,2023-05-19,Atlético,Avaí,3,0,0,0.5,0,0.7558,Classe 2: Alto Risco / Alerta Investigativo,0.0
-5736,2016,A,37,2016-11-28,Coritiba,Vitoria,11,5,0,0.0058,0,0.7557,Classe 2: Alto Risco / Alerta Investigativo,20.89
+380,2022,B,38,2022-11-06,Vila Nova,Sport,11,3,0,0.5,1,0.9103,Classe 2: Alto Risco / Alerta Investigativo,19.34
+7958,2022,A,32,2022-10-16,Ceara,Cuiaba,10,4,0,0.5187,0,0.877,Classe 2: Alto Risco / Alerta Investigativo,15.38
+8360,2023,A,34,2023-11-12,Gremio,Corinthians,10,4,0,0.4749,0,0.8691,Classe 2: Alto Risco / Alerta Investigativo,15.38
+7999,2022,A,36,2022-11-05,Goias,Juventude,10,5,0,0.8562,0,0.8678,Classe 2: Alto Risco / Alerta Investigativo,18.2
+5201,2015,A,22,2015-09-02,Atletico-MG,Athletico-PR,10,4,0,0.0061,0,0.8601,Classe 2: Alto Risco / Alerta Investigativo,15.63
+5026,2015,A,4,2015-05-31,Figueirense,Cruzeiro,10,4,0,0.0061,0,0.8601,Classe 2: Alto Risco / Alerta Investigativo,15.63
+5008,2015,A,3,2015-05-23,Vasco,Internacional,10,4,0,0.0061,0,0.8601,Classe 2: Alto Risco / Alerta Investigativo,15.63
+5074,2015,A,9,2015-06-28,Coritiba,Cruzeiro,10,5,0,0.0061,0,0.8519,Classe 2: Alto Risco / Alerta Investigativo,18.45
+5873,2017,A,13,2017-07-13,Sport,Chapecoense,10,4,0,0.0084,0,0.8465,Classe 2: Alto Risco / Alerta Investigativo,16.81
+6122,2017,A,38,2017-12-03,Sao Paulo,Bahia,10,4,0,0.0084,0,0.8465,Classe 2: Alto Risco / Alerta Investigativo,16.81
+331,2022,B,34,2022-10-08,Ponte Preta,Vila Nova,10,5,0,0.5,0,0.8455,Classe 2: Alto Risco / Alerta Investigativo,19.78
+5403,2016,A,4,2016-05-29,Vitoria,Atletico-MG,10,4,0,0.0058,0,0.8453,Classe 2: Alto Risco / Alerta Investigativo,17.34
+255,2022,B,26,2022-08-25,Novorizontino,Ponte Preta,10,4,0,0.5,0,0.8391,Classe 2: Alto Risco / Alerta Investigativo,16.95
+311,2023,B,32,2023-10-15,Ponte Preta,Atlético,11,4,0,0.5,0,0.8389,Classe 2: Alto Risco / Alerta Investigativo,17.55
+7723,2022,A,8,2022-05-29,Fluminense,Flamengo,10,3,0,0.6462,0,0.8375,Classe 2: Alto Risco / Alerta Investigativo,13.62
+45,2022,B,5,2022-04-29,Ituano,Bahia,10,5,0,0.5,0,0.8367,Classe 2: Alto Risco / Alerta Investigativo,19.78
+5481,2016,A,12,2016-06-29,Chapecoense,Cruzeiro,10,5,0,0.0058,0,0.8352,Classe 2: Alto Risco / Alerta Investigativo,20.17
+8279,2023,A,26,2023-10-08,Internacional,Gremio,10,3,0,0.4749,0,0.8312,Classe 2: Alto Risco / Alerta Investigativo,13.63
+8007,2022,A,37,2022-11-09,Coritiba,Corinthians,10,5,1,0.4962,0,0.8261,Classe 2: Alto Risco / Alerta Investigativo,22.6
+7589,2021,A,32,2021-11-13,Internacional,Athletico-PR,10,3,0,0.2323,0,0.8221,Classe 2: Alto Risco / Alerta Investigativo,16.24
+7544,2021,A,28,2021-10-25,Atletico-GO,Gremio,10,3,0,0.5698,0,0.8221,Classe 2: Alto Risco / Alerta Investigativo,16.24
+8295,2023,A,27,2023-10-19,Fluminense,Corinthians,10,5,1,0.6849,0,0.8191,Classe 2: Alto Risco / Alerta Investigativo,22.61
+6331,2018,A,21,2018-08-26,Sao Paulo,Ceara,10,3,0,0.0174,0,0.814,Classe 2: Alto Risco / Alerta Investigativo,15.21
+7886,2022,A,25,2022-09-03,Juventude,Avai,12,3,0,0.8562,0,0.813,Classe 2: Alto Risco / Alerta Investigativo,15.41
+322,2022,B,33,2022-10-04,Crb,Chapecoense,10,4,1,0.5,0,0.8124,Classe 2: Alto Risco / Alerta Investigativo,21.35
+98,2023,B,10,2023-06-03,Juventude,Avaí,12,4,0,0.5,1,0.8098,Classe 2: Alto Risco / Alerta Investigativo,18.62
+257,2022,B,26,2022-08-26,Grêmio,Ituano,3,1,0,0.5,0,0.7979,Classe 2: Alto Risco / Alerta Investigativo,1.35
+152,2022,B,16,2022-07-02,Crb,Guarani,3,1,0,0.5,0,0.7979,Classe 2: Alto Risco / Alerta Investigativo,1.35
+284,2022,B,29,2022-09-08,Criciúma,Bahia,3,1,0,0.5,0,0.7979,Classe 2: Alto Risco / Alerta Investigativo,1.35
+268,2022,B,27,2022-08-30,Sampaio Corrêa,Cruzeiro Saf,3,1,0,0.5,0,0.7979,Classe 2: Alto Risco / Alerta Investigativo,1.35
+99,2022,B,10,2022-06-04,Tombense,Ituano,3,1,0,0.5,0,0.7979,Classe 2: Alto Risco / Alerta Investigativo,1.35
+304,2022,B,31,2022-09-25,Criciúma,Chapecoense,3,1,0,0.5,0,0.7979,Classe 2: Alto Risco / Alerta Investigativo,1.35
+374,2022,B,38,2022-11-05,Criciúma,Tombense,3,1,0,0.5,0,0.7979,Classe 2: Alto Risco / Alerta Investigativo,1.35
+338,2022,B,34,2022-10-08,Bahia,Brusque,3,1,0,0.5,0,0.7979,Classe 2: Alto Risco / Alerta Investigativo,1.35
+259,2023,B,26,2023-09-01,Londrina,Tombense,11,4,0,0.5,0,0.797,Classe 2: Alto Risco / Alerta Investigativo,15.13
+7663,2022,A,2,2022-04-17,Internacional,Fortaleza,10,3,1,0.4362,0,0.7966,Classe 2: Alto Risco / Alerta Investigativo,18.02
+5736,2016,A,37,2016-11-28,Coritiba,Vitoria,11,5,0,0.0058,0,0.791,Classe 2: Alto Risco / Alerta Investigativo,20.96
+5261,2015,A,28,2015-09-27,Flamengo,Vasco,11,3,0,0.0061,0,0.7896,Classe 2: Alto Risco / Alerta Investigativo,15.39
+8479,2024,A,8,2024-06-11,Bragantino,Atletico-MG,12,3,0,0.9114,0,0.7875,Classe 2: Alto Risco / Alerta Investigativo,16.57
+8201,2023,A,18,2023-08-06,Sao Paulo,Atletico-MG,11,3,0,0.8949,0,0.7873,Classe 2: Alto Risco / Alerta Investigativo,15.25
+5082,2015,A,10,2015-07-01,Gremio,Cruzeiro,11,4,0,0.0061,0,0.7863,Classe 2: Alto Risco / Alerta Investigativo,16.78
+5063,2015,A,8,2015-06-21,Joinville,Goias,11,4,0,0.0061,0,0.7863,Classe 2: Alto Risco / Alerta Investigativo,16.78
+5014,2015,A,3,2015-05-24,Avai,Flamengo,11,4,0,0.0061,0,0.7863,Classe 2: Alto Risco / Alerta Investigativo,16.78
+93,2022,B,10,2022-06-02,Sport,Ponte Preta,11,3,1,0.5,1,0.7844,Classe 2: Alto Risco / Alerta Investigativo,19.91
+6460,2018,A,34,2018-11-14,Palmeiras,Fluminense,12,4,0,0.0174,0,0.7795,Classe 2: Alto Risco / Alerta Investigativo,19.95
+5581,2016,A,22,2016-08-28,Fluminense,Palmeiras,12,4,0,0.0058,0,0.7795,Classe 2: Alto Risco / Alerta Investigativo,20.16
+8224,2023,A,20,2023-08-20,Santos,Gremio,12,3,0,0.6849,0,0.7792,Classe 2: Alto Risco / Alerta Investigativo,17.02
+6389,2018,A,27,2018-09-30,Palmeiras,Cruzeiro,11,3,1,0.0174,0,0.7785,Classe 2: Alto Risco / Alerta Investigativo,21.36
+253,2023,B,26,2023-09-02,Avaí,Atlético,12,4,0,0.5,0,0.7771,Classe 2: Alto Risco / Alerta Investigativo,15.23
+5060,2015,A,8,2015-06-20,Santos,Corinthians,11,3,0,0.0061,0,0.7755,Classe 2: Alto Risco / Alerta Investigativo,13.97

@@ -951,7 +951,7 @@ def generate_html():
             <div class="kpi-card">
               <span class="kpi-label">Sensibilidade Ground Truth</span>
               <span class="kpi-value">100%</span>
-              <span class="kpi-subtext">5/14 Casos da Penalidade Máxima</span>
+              <span class="kpi-subtext">6/14 Casos da Penalidade Máxima</span>
             </div>
           </div>
         </div>
@@ -1623,7 +1623,7 @@ def generate_html():
             <br>• <strong>Gabriel Tota:</strong> Percentil <strong>98,2%</strong> (Top 1,8% da liga);
             <br>• <strong>Paulo Miranda:</strong> Percentil <strong>95,3%</strong> (Top 4,7% da liga);
             <br>• <strong>Eduardo Bauermann:</strong> Percentil <strong>90,5%</strong> (Top 9,5% da liga).
-            <br>Os escores estatísticos sinalizam <strong>5 dos 14 incidentes conhecidos</strong> ao custo de 458 partidas marcadas em 4.559 — captura que <strong>não se distingue de sorteio</strong> no nível da partida.
+            <br>Os escores estatísticos sinalizam <strong>6 dos 14 incidentes conhecidos</strong> ao custo de 455 partidas marcadas em 4.559 — captura que <strong>não se distingue de sorteio</strong> no nível da partida.
           </p>
         </div>
 
@@ -1635,7 +1635,7 @@ def generate_html():
               <span class="decision-tag tag-est">Sensibilidade Total</span>
             </div>
             <div class="decision-title">100% de Sensibilidade nos Tiers Prioritários</div>
-            <div class="decision-body">Cinco dos 14 incidentes judiciais são sinalizados em faixa prioritária. Avaliado fora da amostra, o classificador de ML <strong>não generaliza</strong>: a captura no tier de Alto Risco cai de 100% para 0 de 7 no nível do atleta.</div>
+            <div class="decision-body">Seis dos 14 incidentes judiciais são sinalizados em faixa prioritária. Avaliado fora da amostra, o classificador de ML <strong>não generaliza</strong>: a captura no tier de Alto Risco cai de 100% para 1 de 7 no nível do atleta.</div>
           </div>
 
           <div class="decision-card ana">
@@ -2178,7 +2178,7 @@ def generate_html():
           </div>
           <div class="checklist-item">
             <input type="checkbox" checked disabled>
-            <div><strong>Ground Truth:</strong> Aferição contra os 14 casos transitados em julgado da Operação Penalidade Máxima. Sensibilidade de 35,7%, sem ganho estatístico sobre seleção aleatória no nível da partida (p &ge; 0,25 em toda a curva de carga).</div>
+            <div><strong>Ground Truth:</strong> Aferição contra os 14 casos transitados em julgado da Operação Penalidade Máxima. Sensibilidade de 42,9%, sem ganho estatístico sobre seleção aleatória no nível da partida (melhor ponto da curva de carga em p = 0,118).</div>
           </div>
           <div class="checklist-item">
             <input type="checkbox" checked disabled>

@@ -1,7 +1,7 @@
 metrica,anterior,novo
 partidas_na_base,4559.0,4559.0
-score_medio,18.34,7.13
-score_maximo,68.07,56.37
-partidas_tier_prioritario,12.0,458.0
-correlacao_spearman_dos_rankings,,0.8483
-partidas_que_mudam_de_tier,,458.0
+score_medio,18.39,7.21
+score_maximo,68.07,56.55
+partidas_tier_prioritario,10.0,455.0
+correlacao_spearman_dos_rankings,,0.8456
+partidas_que_mudam_de_tier,,455.0

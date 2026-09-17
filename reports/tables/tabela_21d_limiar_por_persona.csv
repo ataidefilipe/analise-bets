@@ -1,4 +1,4 @@
 persona,capacidade_por_rodada,corte_percentil_recomendado,score_minimo,alertas_por_rodada,sensibilidade_esperada,casos_capturados,racional
-Analista de federação / STJD,3.0,70.0,9.34,2.99,0.3077,4/13,"Revisão de vídeo de lances de advertência por analista, dentro da janela de uma rodada."
-Compliance de clube,1.0,90.0,16.6,1.0,0.0769,1/13,Acompanha apenas o próprio elenco; o alerta relevante é o que envolve os seus atletas.
-Integrity de operadora,10.0,50.0,5.4,4.98,0.3846,5/13,"Tratamento documental em escala, com equipe dedicada e tolerância maior a falso alarme."
+Analista de federação / STJD,3.0,70.0,9.43,2.99,0.3846,5/13,"Revisão de vídeo de lances de advertência por analista, dentro da janela de uma rodada."
+Compliance de clube,1.0,90.0,16.65,0.99,0.1538,2/13,Acompanha apenas o próprio elenco; o alerta relevante é o que envolve os seus atletas.
+Integrity de operadora,10.0,50.0,5.51,4.98,0.4615,6/13,"Tratamento documental em escala, com equipe dedicada e tolerância maior a falso alarme."

@@ -90,9 +90,9 @@ Os datasets da Série A foram normalizados a partir dos dados brutos do Adão Du
 
 > **Cobertura do motivo (tarefa F2-01).** O motivo textual é o atributo de maior valor
 > competitivo do projeto — nenhum provedor comercial o disponibiliza estruturado — e existe
-> apenas onde a fonte é a súmula oficial. Cobertura atual: 6.451 cartões (23,5% da base
-> consolidada das duas séries), sendo 1.370 da Série A 2026 e 5.081 da Série B. Nesses
-> registros, **30,2% são infrações comportamentais não-físicas** (reclamação, cera, conduta
+> apenas onde a fonte é a súmula oficial. Cobertura atual: 6.970 cartões (25,0% da base
+> consolidada das duas séries), sendo 1.370 da Série A 2026 e 5.600 da Série B. Nesses
+> registros, **30,4% são infrações comportamentais não-físicas** (reclamação, cera, conduta
 > antidesportiva, toque de mão), proporção estável entre séries e temporadas (28,9% a 31,0%).
 > A ausência do motivo em 2014–2024 da Série A **não é falha de extração**: o campo não existe
 > na fonte histórica. Detalhamento em `reports/tables/cobertura_motivo_cartao.csv`.
@@ -335,7 +335,7 @@ Gerados a partir do parsing direto das Súmulas Eletrônicas da CBF (`conteudo.c
 
 ### 11.2 Dataset: `atletas_ml_classified.parquet`
 * **Localização:** `data/processed/integrity/atletas_ml_classified.parquet`.
-* **Volume:** 3.586 registros de atleta $\times$ temporada (atletas com $\ge 3$ cartões recebidos).
+* **Volume:** 3.694 registros de atleta $\times$ temporada (atletas com $\ge 3$ cartões recebidos).
 * **Granularidade:** 1 linha por atleta em cada temporada/divisão.
 
 | Campo | Tipo | Nulos | Descrição | Regras e Valores Válidos |
@@ -353,7 +353,7 @@ Gerados a partir do parsing direto das Súmulas Eletrônicas da CBF (`conteudo.c
 | `prob_suspeicao_ml` | `float64` | Não | Probabilidade calibrada de suspeição | Intervalo $[0.0, 1.0]$ |
 | `score_suspeicao_ml` | `float64` | Não | Score percentual de suspeição | `prob_suspeicao_ml * 100.0` |
 | `classificacao_ml` | `string` | Não | Tier operacional de decisão | `Classe 0: Basal`, `Classe 1: Monitoramento`, `Classe 2: Extrema Anomalia` |
-| `ranking_ml` | `int64` | Não | Posição no ranking decrescente de suspeição | 1 a 3.586 |
+| `ranking_ml` | `int64` | Não | Posição no ranking decrescente de suspeição | 1 a 3.694 |
 
 
 

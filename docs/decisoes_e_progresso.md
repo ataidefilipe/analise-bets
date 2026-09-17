@@ -66,7 +66,7 @@
   * **Heterogeneidade Interdivisões:** Modelagem de 3.040 observações da Série A e B (2022–2023), demonstrando que a Série B aplica $-0,2835$ cartões por equipe-jogo ($p = 0,0370$) frente à Série A.
 * **Fase 8 Concluída (Sistema de Triagem e Anomaly Scoring de Integridade):**
   * Desenvolvimento dos índices `MATCH_ANOMALY_SCORE` e `ATHLETE_ANOMALY_SCORE` ([`src/models/anomaly_detection.py`](file:///d:/Python%20Projetos/analise-bets/src/models/anomaly_detection.py)).
-  * Validação contra o ground truth da Operação Penalidade Máxima. **Revisado em 2026-09-16 (F1-01/F1-02/F1-03):** a sensibilidade dos escores estatísticos é de 5/14 (35,7%); o número anterior de 100% dependia de defeitos de harmonização da base e de um casamento de identidade que associava atletas errados (ver relatório 07, seções 3.3 a 3.6).
+  * Validação contra o ground truth da Operação Penalidade Máxima. **Revisado em 2026-09-16 (F1-01/F1-02/F1-03):** a sensibilidade dos escores estatísticos é de 6/14 (42,9%); o número anterior de 100% dependia de defeitos de harmonização da base e de um casamento de identidade que associava atletas errados (ver relatório 07, seções 3.3 a 3.6).
   * Exportação das Tabelas 15, 16 e 17 em `reports/tables/`.
   * Suíte de testes ampliada para 31 testes unitários com 100% de aprovação no `pytest`.
 * **Fase 9 Concluída (Cadernos Executáveis e Reprodutibilidade):**
@@ -168,7 +168,7 @@ Classificadas conforme a taxonomia da Seção 17 do `.agent.md`:
 * **D-TEC-09: Tiers de triagem por percentil empírico em vez de limiar absoluto (F1-01):**
   * *Decisão:* Definir a prioridade de escrutínio por percentil da própria distribuição (Top 1% / Top 5% / Top 10%), e não por corte fixo de escore (80 / 65 / 50).
   * *Motivo:* Com limiar absoluto, a configuração anterior classificava 12 de 4.559 partidas fora do tier basal — e nenhuma das partidas do ground truth entre elas. A carga de alerta era um efeito acidental da escala do escore.
-  * *Impacto:* A carga operacional vira parâmetro explícito (458 partidas, 10,05% da base), pronta para calibração por persona na tarefa F1-04.
+  * *Impacto:* A carga operacional vira parâmetro explícito (455 partidas, 9,98% da base), pronta para calibração por persona na tarefa F1-04.
 * **D-TEC-10: Resolvedor de identidade explícito para o ground truth (F1-03):**
   * *Decisão:* Substituir a correspondência parcial de nome por um mapa explícito em `src/models/ground_truth_resolver.py`, em que cada associação declara a evidência que a sustenta e o seu grau de confiança, e em que casos sem correspondente defensável ficam marcados como `nao_resolvido`.
   * *Motivo:* A heurística anterior (`str.contains` do primeiro token, seguido do primeiro registro) associava atletas errados em 8 dos 10 casos: o percentil de 99,67% publicado como sendo de Nino Paraíba (Ceará) pertence a Nino (Fluminense).
@@ -180,13 +180,13 @@ Classificadas conforme a taxonomia da Seção 17 do `.agent.md`:
 * **D-ANA-17: Validação fora da amostra com leave-one-out agrupado e separação por série (F1-03):**
   * *Decisão:* Avaliar o `BaggingPUClassifier` por leave-one-out agrupado por entidade (não por incidente, para não vazar entre PM-006 e PM-007, que são o mesmo atleta) e por separação entre divisões, reportando intervalo de Wilson.
   * *Motivo:* Com 14 positivos usados no treino e na avaliação, a sensibilidade in-sample não carrega informação.
-  * *Impacto:* Revela que a captura no tier de Alto Risco cai de 100% para 0% no nível do atleta. O componente de ML, como treinado, não sustenta afirmação de eficácia; o escore estatístico fechado, que não usa rótulo, sustenta.
+  * *Impacto:* Revela que a captura no tier de Alto Risco cai de 100% para 14,3% no nível do atleta. O componente de ML, como treinado, não sustenta afirmação de eficácia; o escore estatístico fechado, que não usa rótulo, sustenta.
 * **D-ANA-18: Avaliar a triagem por ganho sobre seleção aleatória, não por sensibilidade (F1-04):**
   * *Decisão:* Reportar, para cada limiar, a carga de alerta e o p-valor de um teste hipergeométrico contra sortear a mesma quantidade de registros. Não reportar precisão absoluta.
   * *Motivo:* Sem falsos positivos rotulados, precisão absoluta não é estimável — uma partida sinalizada e nunca investigada não é um negativo confirmado. E sensibilidade sem carga de alerta não distingue triagem de sorteio.
-  * *Impacto:* Revela que no nível da partida **nenhum limiar produz ganho distinguível do acaso** (p ≥ 0,25 em toda a curva) e que a captura nos tiers Top 1% e Top 5% é zero nos dois níveis.
+  * *Impacto:* Revela que no nível da partida **nenhum limiar produz ganho distinguível do acaso** (o melhor ponto da curva fica em p = 0,118) e que a captura nos tiers Top 1% e Top 5% é zero nos dois níveis.
 * **D-NEG-01: Posicionar o produto como instrumento de medição de atipicidade, não como detector ou priorizador (F1-04):**
-  * *Decisão:* Descrever o sistema pelo que ele comprovadamente faz — medir atipicidade disciplinar com fórmula publicada, reproduzível e calibrada em 22.850 cartões — e não como detector ou priorizador de manipulação, até que exista evidência de ganho sobre o acaso.
+  * *Decisão:* Descrever o sistema pelo que ele comprovadamente faz — medir atipicidade disciplinar com fórmula publicada, reproduzível e calibrada em 23.369 cartões — e não como detector ou priorizador de manipulação, até que exista evidência de ganho sobre o acaso.
   * *Motivo:* Um priorizador é avaliado por precisão no topo da lista, e o topo da lista não contém os casos conhecidos. Afirmar capacidade de priorização não sobrevive à primeira diligência técnica de um comprador.
   * *Impacto:* Redireciona o roteiro de produto: a unidade de análise com sinal é o atleta, o que torna a escalação por partida (F2-04) e o escore pré-jogo (F3-01) pré-requisitos, e não incrementos.
 
@@ -255,7 +255,7 @@ Classificadas conforme a taxonomia da Seção 17 do `.agent.md`:
 11. **Heterogeneidade Interdivisões na Regressão Conjunta (Séries A e B 2022–2023):**
     * Disputar a Série B reduz os cartões em **-0,2835 por equipe-jogo** frente à Série A ($p = 0,03696$), após controlar por ano, mando de campo, saldo de gols e rodada.
 12. **Sensibilidade no Ground Truth da Operação Penalidade Máxima (revisado em 2026-09-16):**
-    * Com a fórmula reconciliada, a base corrigida e as identidades resolvidas, os escores estatísticos sinalizam **5 dos 14 incidentes (35,7%)** em faixa prioritária de triagem. Dois dos nove não sinalizados são fraudes que não se consumaram em campo.
+    * Com a fórmula reconciliada, a base corrigida e as identidades resolvidas, os escores estatísticos sinalizam **6 dos 14 incidentes (42,9%)** em faixa prioritária de triagem. Dois dos oito não sinalizados são fraudes que não se consumaram em campo.
     * O resultado anterior (14/14) era inflado por três defeitos de harmonização e por um casamento de identidade que associava atletas errados em 8 dos 10 casos.
 13. **Comportamento do Algoritmo em Casos de Fraude Frustrada:**
     * Nos incidentes onde a fraude foi combinada mas não se consumou em campo (Romário/Vila Nova que não jogou, e Bauermann/Santos que não cometeu o amarelo), as partidas preservaram percentis normais de campo, atestando a robustez do algoritmo contra falsos alarmes arbitrais.
@@ -263,11 +263,11 @@ Classificadas conforme a taxonomia da Seção 17 do `.agent.md`:
     * O percentil de 99,67% historicamente atribuído a Nino Paraíba (Ceará) pertence, na verdade, a **Nino (Fluminense)**, atleta sem qualquer relação com a operação. O registro real de Nino Paraíba em 2022 está no **percentil 34,5%**.
     * A causa é o casamento por correspondência parcial de nome (`str.contains` do primeiro token) seguido do primeiro registro encontrado. A correção do resolvedor de identidade é o primeiro item da tarefa F1-03.
 15. **Ausência de ganho demonstrável sobre a seleção aleatória (F1-04):**
-    * No nível da partida, **nenhum limiar** da curva de carga operacional captura mais casos do que sortear a mesma quantidade de partidas (p ≥ 0,25 em todos os cortes). Nos tiers de Extrema Anomalia e Alta Prioridade a captura é zero.
-    * No nível do atleta há sinal estatístico (6 de 7 capturados, ganho de 2,14×, p = 0,019), mas apenas ao sinalizar 40% de toda a base — cerca de 120 atletas por temporada e divisão.
+    * No nível da partida, **nenhum limiar** da curva de carga operacional captura mais casos do que sortear a mesma quantidade de partidas (melhor ponto em p = 0,118). Nos tiers de Extrema Anomalia e Alta Prioridade a captura é zero.
+    * No nível do atleta há sinal estatístico (6 de 7 capturados, ganho de 2,15×, p = 0,019), mas apenas ao sinalizar 40% de toda a base — cerca de 123 atletas por temporada e divisão.
     * O desencontro é de unidade de análise: o índice de partida mede distorção coletiva, e os incidentes são atos individuais. Coerente com o achado econométrico de efeito nulo da exposição sobre a proporção coletiva de cartões no 1º tempo.
 16. **Desempenho do Modelo de Machine Learning de Integridade (Fase 12):**
-    * O modelo híbrido (`IsolationForest` + `BaggingPUClassifier`) atinge **100% de sensibilidade in-sample**, mas **não generaliza**: sob leave-one-out agrupado por entidade, a captura no tier de Alto Risco cai para **5/14 no nível da partida (IC 95%: 16,3%–61,2%)** e para **0/7 no nível do atleta (IC 95%: 0%–35,4%)**.
+    * O modelo híbrido (`IsolationForest` + `BaggingPUClassifier`) atinge **100% de sensibilidade in-sample**, mas **não generaliza**: sob leave-one-out agrupado por entidade, a captura no tier de Alto Risco cai para **6/14 no nível da partida (IC 95%: 21,4%–67,4%)** e para **1/7 no nível do atleta (IC 95%: 2,6%–51,3%)**.
     * Sob separação por série — treinar na Série B e avaliar na Série A —, captura 1 de 9 partidas (11,1%). O que sustenta o sistema é o escore estatístico fechado, que não depende de rótulo.
     * A probabilidade média calibrada de suspeição foi de **80,4%** para as partidas investigadas e **84,8%** para os atletas investigados.
     * Apenas **8,93%** das partidas da Série A e B foram categorizadas no tier de Alto Risco, garantindo precisão investigativa e minimizando a sobrecarga operacional para unidades de compliance.

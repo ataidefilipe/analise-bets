@@ -4,7 +4,7 @@
 **Responsável sugerido:** Filipe Ataíde
 **Tamanho:** P
 **Depende de:** —
-**Status:** Backlog
+**Status:** Parcialmente concluído (2026-09-16) — pendência da F2-01 fechada; ingestão da Série B 2024 segue em aberto
 
 ---
 
@@ -81,3 +81,29 @@ Fase 1 foram gerados: o `ATHLETE_ANOMALY_SCORE` agrupa por `clube_slug`, então 
 expulso aparece hoje partido em duas linhas de atleta-temporada, e uma delas pode cair abaixo
 do mínimo de 3 cartões. Ao reprocessar, é preciso regenerar as Tabelas 15 a 22 e conferir se
 algum número da Fase 1 muda.
+
+
+---
+
+## Fechamento da pendência herdada da F2-01 (2026-09-16)
+
+Ao reprocessar a Série B 2022–2023 para corrigir a atribuição de clube nas expulsões, o
+reparse devolveu **519 cartões a mais** do que a base continha. A investigação encontrou um
+segundo defeito, maior:
+
+`parse_cbf_sumulas.py` localizava as seções da súmula **sem guarda de primeira ocorrência**. O
+token `2º Cartão Amarelo` — subtipo de expulsão, que aparece dentro da seção de vermelhos —
+sobrescrevia o índice da seção de amarelos com uma posição posterior à dos vermelhos, e o
+recorte `tokens[idx_amarelo:idx_vermelho]` virava vazio. **Toda partida com expulsão por
+segundo amarelo perdia todos os seus cartões amarelos.**
+
+Efeito: a Série B 2022–2023 estava sem 14% dos seus cartões (1.698 → 1.942 em 2022;
+1.973 → 2.248 em 2023). O parser do pipeline delta já tinha a guarda e estava correto — por
+isso as duas implementações divergiam.
+
+Corrigido, reprocessado e com toda a cadeia de artefatos regenerada. As probabilidades basais
+do índice foram reestimadas sobre a base completa. Impacto nos números da Fase 1 registrado no
+relatório 07.
+
+**Segue em aberto:** a ingestão da Série B 2024, objeto original desta tarefa (27 cartões em
+5 partidas, contra 380 partidas esperadas).

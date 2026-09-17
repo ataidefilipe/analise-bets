@@ -198,14 +198,19 @@ def parse_single_sumula(
     idx_red = -1
     idx_sub = len(tokens)
 
+    # Os marcadores precisam ser a PRIMEIRA ocorrencia de cada secao. Sem a guarda, o token
+    # "2o Cartao Amarelo" — subtipo de expulsao que aparece dentro da secao de vermelhos —
+    # sobrescrevia `idx_yellow` com um indice posterior ao de `idx_red`, e o recorte
+    # tokens[idx_yellow:idx_red] virava vazio: todos os cartoes amarelos da partida eram
+    # perdidos. O defeito custou 519 cartoes da Serie B 2022-2023 (tarefa F2-03).
     for i, t in enumerate(tokens):
-        if t == "Gols":
+        if t == "Gols" and idx_gols == -1:
             idx_gols = i
-        elif "Cart" in t and "Amarelo" in t:
+        elif "Cart" in t and "Amarelo" in t and idx_yellow == -1 and not t.startswith("2"):
             idx_yellow = i
-        elif "Cart" in t and "Vermelho" in t:
+        elif "Cart" in t and "Vermelho" in t and idx_red == -1:
             idx_red = i
-        elif "Substitui" in t:
+        elif "Substitui" in t and idx_sub == len(tokens):
             idx_sub = i
 
     time_regex = re.compile(r"^(\+|\d{1,2}:)\d{1,2}(?::\d{2})?$|^\+\d{1,2}$")
