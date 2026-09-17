@@ -4,7 +4,7 @@
 **Responsável sugerido:** Filipe Ataíde
 **Tamanho:** M
 **Depende de:** —
-**Status:** Backlog
+**Status:** Concluído (2026-09-16)
 
 ---
 
@@ -53,18 +53,18 @@ só existe para a Série B, a divisão de menor visibilidade comercial.
 
 ## Definition of Done
 
-- [ ] `data/processed/serie_a/cartoes.csv` e `.parquet` migrados com as colunas
+- [x] `data/processed/serie_a/cartoes.csv` e `.parquet` migrados com as colunas
       `motivo_completo` e `categoria_infracao`, nulas para 2003–2024.
-- [ ] `align_schema` ajustada para **unir** schemas (preservando colunas novas) em vez de
+- [x] `align_schema` ajustada para **unir** schemas (preservando colunas novas) em vez de
       truncar para o schema antigo; comportamento coberto por teste.
-- [ ] Súmulas da Série A 2026 já baixadas reprocessadas, com o motivo preenchido.
-- [ ] Taxa de preenchimento do motivo reportada por temporada e por série (quantos cartões
+- [x] Súmulas da Série A 2026 já baixadas reprocessadas, com o motivo preenchido.
+- [x] Taxa de preenchimento do motivo reportada por temporada e por série (quantos cartões
       têm motivo recuperado com sucesso).
-- [ ] `docs/data_dictionary.md` atualizado com as colunas novas e sua cobertura temporal.
-- [ ] Manifesto de processados (`manifest_processed.json`) refletindo o schema novo.
-- [ ] Teste de regressão garantindo que uma coluna presente no dado novo e ausente no
+- [x] `docs/data_dictionary.md` atualizado com as colunas novas e sua cobertura temporal.
+- [x] Manifesto de processados (`manifest_processed.json`) refletindo o schema novo.
+- [x] Teste de regressão garantindo que uma coluna presente no dado novo e ausente no
       histórico não é descartada.
-- [ ] Suíte `pytest` passando.
+- [x] Suíte `pytest` passando.
 
 ## Riscos e observações
 
@@ -74,3 +74,31 @@ só existe para a Série B, a divisão de menor visibilidade comercial.
 * A perda é retroativa apenas até onde há súmula oficial disponível. Para 2003–2024 na Série
   A, o motivo **não existe na fonte** (Kaggle) e permanecerá nulo — isso é esperado e deve
   ser documentado, não tratado como falha.
+
+
+---
+
+## Execução (2026-09-16)
+
+Além dos itens da DoD, a execução encontrou e corrigiu dois defeitos adjacentes:
+
+**1. Atribuição de clube em expulsões.** As duas seções da súmula têm layouts diferentes, e a
+própria linha de cabeçalho declara isso: a de cartões amarelos tem coluna "Equipe"; a de
+vermelhos, não — ali o clube vem embutido no nome (`Nome - Clube/UF`) e o token seguinte é o
+subtipo da expulsão. O parser lia a posição fixa nas duas, de modo que o subtipo virava o nome
+do clube. Efeito: 283 cartões com `clube_slug` igual a `cartao_vermelho_direto` ou
+`2o_cartao_amarelo`. Corrigido em `cbf_delta_processor.py` e `parse_cbf_sumulas.py`, com o
+subtipo agora preservado na coluna nova `tipo_cartao_detalhe`.
+
+**2. Teste destrutivo.** `tests/test_clean_serie_a.py::test_pipeline_execution` executava
+`run_pipeline()` gravando direto em `data/processed/serie_a/`. Rodar a suíte reconstruía a base
+a partir do Kaggle e **apagava a temporada 2026** — inclusive os motivos que esta tarefa
+acabara de recuperar. O teste passou a usar diretório temporário.
+
+## Pendência aberta
+
+Restam **101 cartões da Série B 2022–2023** com o clube atribuído a partir da seção da súmula
+(44 em 2022, 57 em 2023). Corrigi-los exige reprocessar aquelas súmulas, o que altera a base
+sobre a qual os artefatos da Fase 1 foram gerados — o agrupamento do `ATHLETE_ANOMALY_SCORE`
+usa `clube_slug`, então atletas expulsos aparecem hoje divididos em duas linhas de
+atleta-temporada. Decisão pendente, registrada na F2-03.

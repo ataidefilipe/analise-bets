@@ -65,3 +65,19 @@ globais de dados esportivos.
 * Executar a verificação retroativa antes de assumir que 2024 é o único caso. A Série A 2026
   registra 114 súmulas com HTTP 404 na última execução — confirmar se são partidas ainda não
   realizadas (esperado, temporada em curso) ou indisponibilidade real da fonte.
+
+
+---
+
+## Herdado da F2-01 (2026-09-16)
+
+O parser de súmulas atribuía a seção do documento como nome do clube nas expulsões (o clube
+vem embutido no nome do atleta na seção de vermelhos). A correção foi aplicada e as súmulas de
+2026 das duas séries foram reprocessadas, mas **restam 101 cartões da Série B 2022–2023 com o
+clube errado** — 44 em 2022 e 57 em 2023, todos vermelhos ou segundos amarelos.
+
+Reprocessar essas súmulas corrige o problema, mas altera a base sobre a qual os artefatos da
+Fase 1 foram gerados: o `ATHLETE_ANOMALY_SCORE` agrupa por `clube_slug`, então um atleta
+expulso aparece hoje partido em duas linhas de atleta-temporada, e uma delas pode cair abaixo
+do mínimo de 3 cartões. Ao reprocessar, é preciso regenerar as Tabelas 15 a 22 e conferir se
+algum número da Fase 1 muda.

@@ -68,8 +68,15 @@ def test_season_mapping_covid():
     assert len(t2021) == 380
 
 
-def test_pipeline_execution():
-    manifest = run_pipeline()
+def test_pipeline_execution(tmp_path):
+    """
+    Executa o pipeline num diretório temporário.
+
+    Antes escrevia direto em `data/processed/serie_a/`: rodar a suíte reconstruía a base a
+    partir do Kaggle e **apagava a temporada 2026**, ingerida pelo pipeline delta a partir das
+    súmulas da CBF. Um teste não pode destruir dado de produção para se verificar.
+    """
+    manifest = run_pipeline(output_dir=tmp_path)
     assert 'partidas' in manifest['datasets']
     assert 'cartoes' in manifest['datasets']
     assert 'estatisticas' in manifest['datasets']
@@ -80,7 +87,7 @@ def test_pipeline_execution():
     assert manifest['datasets']['estatisticas']['linhas'] == 17570
     assert manifest['datasets']['gols']['linhas'] == 9861
 
-    out_dir = Path('data/processed/serie_a')
+    out_dir = tmp_path
     assert (out_dir / 'partidas.parquet').exists()
     assert (out_dir / 'cartoes.parquet').exists()
     assert (out_dir / 'estatisticas.parquet').exists()

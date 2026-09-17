@@ -281,8 +281,22 @@ def parse_single_sumula(
                     periodo = sec_tokens[j + 1]
                     min_nom, acr, min_cont = parse_sumula_time(tok, periodo)
                     num_camisa = sec_tokens[j + 2] if j + 2 < len(sec_tokens) else ""
-                    atleta = sec_tokens[j + 3] if j + 3 < len(sec_tokens) else "Nao Informado"
-                    clube_raw = sec_tokens[j + 4] if j + 4 < len(sec_tokens) else ""
+                    nome_raw = sec_tokens[j + 3] if j + 3 < len(sec_tokens) else "Nao Informado"
+                    seguinte = sec_tokens[j + 4] if j + 4 < len(sec_tokens) else ""
+
+                    # As duas secoes da sumula tem layouts distintos, e a propria linha de
+                    # cabecalho declara isso: a de amarelos tem coluna "Equipe"; a de vermelhos,
+                    # nao. Nos vermelhos o clube vem embutido no nome ("Nome - Clube/UF") e o
+                    # token seguinte e o subtipo da expulsao. Ler a posicao fixa nas duas fazia o
+                    # subtipo virar nome do clube.
+                    if card_type == "Vermelho" and " - " in nome_raw:
+                        atleta, _, clube_raw = nome_raw.rpartition(" - ")
+                        atleta = atleta.strip()
+                        tipo_detalhe = seguinte.strip()
+                    else:
+                        atleta = nome_raw
+                        clube_raw = seguinte
+                        tipo_detalhe = ""
                     clube_nome = clube_raw.split("/")[0].strip()
 
                     motivo_parts = []
@@ -313,6 +327,7 @@ def parse_single_sumula(
                         "acrescimo": acr,
                         "minuto_continuo": min_cont,
                         "periodo": periodo,
+                        "tipo_cartao_detalhe": tipo_detalhe,
                         "motivo_completo": motivo_full,
                         "categoria_infracao": categorize_card_reason(motivo_full),
                     })

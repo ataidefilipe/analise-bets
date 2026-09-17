@@ -1,0 +1,17 @@
+serie,temporada,cartoes,com_motivo,pct_com_motivo,fonte,infracoes_nao_fisicas,pct_nao_fisicas
+A,2014,1774,0,0.0,Base histórica (Kaggle),0,
+A,2015,1993,0,0.0,Base histórica (Kaggle),0,
+A,2016,1827,0,0.0,Base histórica (Kaggle),0,
+A,2017,1888,0,0.0,Base histórica (Kaggle),0,
+A,2018,1954,0,0.0,Base histórica (Kaggle),0,
+A,2019,1765,0,0.0,Base histórica (Kaggle),0,
+A,2020,1777,0,0.0,Base histórica (Kaggle),0,
+A,2021,1790,0,0.0,Base histórica (Kaggle),0,
+A,2022,1971,0,0.0,Base histórica (Kaggle),0,
+A,2023,2118,0,0.0,Base histórica (Kaggle),0,
+A,2024,2096,0,0.0,Base histórica (Kaggle),0,
+A,2026,1370,1370,100.0,Súmula CBF,425,31.0
+B,2022,1698,1698,100.0,Súmula CBF,522,30.7
+B,2023,1973,1973,100.0,Súmula CBF,593,30.1
+B,2024,27,27,100.0,Súmula CBF,8,29.6
+B,2026,1383,1383,100.0,Súmula CBF,400,28.9

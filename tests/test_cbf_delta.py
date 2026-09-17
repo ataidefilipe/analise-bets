@@ -21,9 +21,11 @@ from src.ingestion.cbf_delta_updater import (
 )
 from src.cleaning.cbf_delta_processor import (
     CBFDeltaProcessor,
+    align_dataframe_types,
     categorize_card_reason,
     parse_single_cbf_pdf,
     slugify,
+    unir_schema_historico,
 )
 from src.pipeline.serve_product_feed import (
     ProductFeedServer,
@@ -151,3 +153,90 @@ def test_pipeline_audit_report():
         assert "sucesso" in data
         assert data["sucesso"] is True
         assert "duracao_segundos" in data
+
+
+# ---------------------------------------------------------------------------
+# F2-01 — União de schema, motivo do cartão e atribuição de clube em expulsões
+# ---------------------------------------------------------------------------
+
+def test_align_dataframe_types_preserva_coluna_nova():
+    """
+    Regressão da F2-01: `align_dataframe_types` truncava o dado novo para o schema do
+    histórico. Como a base da Série A veio do Kaggle, sem `motivo_completo`, o motivo textual
+    do árbitro era descartado em silêncio a cada execução do pipeline delta.
+    """
+    df_existing = pd.DataFrame({"partida_id": [1], "atleta": ["Fulano"]})
+    df_new = pd.DataFrame({
+        "partida_id": [2], "atleta": ["Beltrano"],
+        "motivo_completo": ["A1.11. Golpear um adversario"],
+        "categoria_infracao": ["falta_temeraria"],
+    })
+
+    alinhado = align_dataframe_types(df_new, df_existing)
+
+    assert "motivo_completo" in alinhado.columns, "coluna nova foi descartada"
+    assert "categoria_infracao" in alinhado.columns
+    assert alinhado["motivo_completo"].iloc[0] == "A1.11. Golpear um adversario"
+    # A ordem do histórico é preservada, com as colunas novas ao final.
+    assert list(alinhado.columns)[:2] == ["partida_id", "atleta"]
+
+
+def test_unir_schema_historico_cria_colunas_vazias():
+    df_existing = pd.DataFrame({"partida_id": [1], "atleta": ["Fulano"]})
+    unido = unir_schema_historico(df_existing, ["motivo_completo"])
+    assert "motivo_completo" in unido.columns
+    assert unido["motivo_completo"].isna().all()
+    assert len(unido) == 1
+
+
+def test_expulsao_nao_atribui_secao_da_sumula_como_clube():
+    """
+    Regressão da F2-01: a seção de cartões vermelhos da súmula não tem coluna "Equipe" — o
+    clube vem embutido no nome ("Nome - Clube/UF") e o token seguinte é o subtipo da expulsão.
+    Lendo a posição fixa das duas seções, o subtipo virava o nome do clube.
+    """
+    sample_pdf = Path("data/raw/cbf/sumulas_serie_a_2026/142100se.pdf")
+    if not sample_pdf.exists():
+        pytest.skip("PDF de teste 142100se.pdf não encontrado")
+
+    _, cards, _ = parse_single_cbf_pdf(sample_pdf, temporada_default=2026, serie_default="A")
+    vermelhos = [c for c in cards if c["cartao"] == "Vermelho"]
+    assert vermelhos, "a súmula de referência tem ao menos uma expulsão"
+
+    for c in vermelhos:
+        assert not c["clube_slug"].startswith("cartao_"), (
+            f"seção da súmula atribuída como clube: {c['clube']!r}"
+        )
+        assert not c["clube_slug"].startswith("2o_cartao"), (
+            f"seção da súmula atribuída como clube: {c['clube']!r}"
+        )
+        assert " - " not in c["atleta"], "o clube continua embutido no nome do atleta"
+        assert c["tipo_cartao_detalhe"], "subtipo da expulsão não foi capturado"
+
+
+def test_base_serie_a_carrega_motivo_do_cartao():
+    """A Série A passou a carregar o motivo; o histórico do Kaggle permanece nulo."""
+    caminho = Path("data/processed/serie_a/cartoes.parquet")
+    if not caminho.exists():
+        pytest.skip("base de cartões da Série A não encontrada")
+
+    df = pd.read_parquet(caminho)
+    for coluna in ("motivo_completo", "categoria_infracao", "tipo_cartao_detalhe"):
+        assert coluna in df.columns, f"coluna ausente após a migração: {coluna}"
+
+    das_sumulas = df[df["temporada"] >= 2026]
+    if len(das_sumulas):
+        preenchimento = das_sumulas["motivo_completo"].notna().mean()
+        assert preenchimento > 0.95, (
+            f"apenas {preenchimento:.1%} dos cartões vindos de súmula têm motivo"
+        )
+
+    # Nenhum clube pode ser uma seção da súmula, em nenhuma das duas bases.
+    for base in ("serie_a", "serie_b"):
+        p = Path("data/processed") / base / "cartoes.parquet"
+        if not p.exists():
+            continue
+        d = pd.read_parquet(p)
+        das_sumulas = d[d["temporada"] >= 2026]
+        invalidos = das_sumulas["clube_slug"].str.startswith(("cartao_", "2o_cartao")).sum()
+        assert invalidos == 0, f"{base}: {invalidos} cartões com seção da súmula como clube"

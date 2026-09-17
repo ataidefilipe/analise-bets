@@ -303,8 +303,22 @@ def parse_single_cbf_pdf(
                     periodo = sec_tokens[j + 1]
                     min_nom, acr, min_cont = parse_sumula_time(tok, periodo)
                     num_camisa = sec_tokens[j + 2] if j + 2 < len(sec_tokens) else ""
-                    atleta = sec_tokens[j + 3] if j + 3 < len(sec_tokens) else "Nao Informado"
-                    clube_raw = sec_tokens[j + 4] if j + 4 < len(sec_tokens) else ""
+                    nome_raw = sec_tokens[j + 3] if j + 3 < len(sec_tokens) else "Nao Informado"
+                    seguinte = sec_tokens[j + 4] if j + 4 < len(sec_tokens) else ""
+
+                    # As duas secoes da sumula tem layouts distintos, e a propria linha de
+                    # cabecalho declara isso: a de amarelos tem coluna "Equipe"; a de vermelhos,
+                    # nao. Nos vermelhos o clube vem embutido no nome ("Nome - Clube/UF") e o
+                    # token seguinte e o subtipo da expulsao. Ler a posicao fixa nas duas fazia o
+                    # subtipo virar nome do clube.
+                    if card_type == "Vermelho" and " - " in nome_raw:
+                        atleta, _, clube_raw = nome_raw.rpartition(" - ")
+                        atleta = atleta.strip()
+                        tipo_detalhe = seguinte.strip()
+                    else:
+                        atleta = nome_raw
+                        clube_raw = seguinte
+                        tipo_detalhe = ""
                     clube_nome = clube_raw.split("/")[0].strip()
 
                     motivo_parts = []
@@ -336,6 +350,7 @@ def parse_single_cbf_pdf(
                         "acrescimo": acr,
                         "minuto_continuo": min_cont,
                         "periodo": periodo,
+                        "tipo_cartao_detalhe": tipo_detalhe,
                         "motivo_completo": motivo_full,
                         "categoria_infracao": categorize_card_reason(motivo_full),
                     })
@@ -352,10 +367,18 @@ def parse_single_cbf_pdf(
 
 def align_dataframe_types(df_new: pd.DataFrame, df_existing: pd.DataFrame) -> pd.DataFrame:
     """
-    Alinha o schema e os dtypes de df_new para corresponder perfeitamente a df_existing,
-    convertendo tipos com segurança (ex: strings numéricas para Int64 com suporte a NaN).
+    Alinha os dtypes de df_new aos de df_existing e **une** os dois schemas.
+
+    A versão anterior truncava `df_new` para as colunas da base existente. Como a base histórica
+    da Série A veio do Kaggle, que não tem `motivo_completo` nem `categoria_infracao`, o motivo
+    textual do árbitro — o atributo de maior valor competitivo do projeto — era descartado em
+    silêncio a cada execução do pipeline delta (tarefa F2-01).
+
+    Colunas presentes só no dado novo são preservadas; colunas presentes só no histórico são
+    criadas vazias no dado novo. A ordem do histórico é mantida, com as colunas novas ao final.
     """
     target_cols = list(df_existing.columns)
+    novas_cols = [c for c in df_new.columns if c not in target_cols]
     aligned_df = df_new.copy()
 
     for col in target_cols:
@@ -368,7 +391,16 @@ def align_dataframe_types(df_new: pd.DataFrame, df_existing: pd.DataFrame) -> pd
             elif pd.api.types.is_float_dtype(target_dtype):
                 aligned_df[col] = pd.to_numeric(aligned_df[col], errors="coerce").astype(target_dtype)
 
-    return aligned_df[target_cols]
+    return aligned_df[target_cols + novas_cols]
+
+
+def unir_schema_historico(df_existing: pd.DataFrame, novas_cols: list) -> pd.DataFrame:
+    """Cria no histórico, vazias, as colunas que só existem no dado novo."""
+    df = df_existing.copy()
+    for col in novas_cols:
+        if col not in df.columns:
+            df[col] = pd.NA
+    return df
 
 
 class CBFDeltaProcessor:
@@ -428,6 +460,10 @@ class CBFDeltaProcessor:
             mask = ~((df_existing_p["temporada"] == temporada) & (df_existing_p["partida_id"].isin(partidas_upsert_ids)))
             df_p_filtered = df_existing_p[mask]
             df_new_matches_aligned = align_dataframe_types(df_new_matches, df_existing_p)
+            df_p_filtered = unir_schema_historico(
+                df_p_filtered,
+                [c for c in df_new_matches_aligned.columns if c not in df_p_filtered.columns],
+            )
             df_final_p = pd.concat([df_p_filtered, df_new_matches_aligned], ignore_index=True)
         else:
             df_final_p = df_new_matches
@@ -447,6 +483,10 @@ class CBFDeltaProcessor:
 
             if not df_new_goals.empty:
                 df_new_goals_aligned = align_dataframe_types(df_new_goals, df_existing_g)
+                df_g_filtered = unir_schema_historico(
+                    df_g_filtered,
+                    [c for c in df_new_goals_aligned.columns if c not in df_g_filtered.columns],
+                )
                 df_final_g = pd.concat([df_g_filtered, df_new_goals_aligned], ignore_index=True)
             else:
                 df_final_g = df_g_filtered
@@ -468,6 +508,10 @@ class CBFDeltaProcessor:
 
             if not df_new_cards.empty:
                 df_new_cards_aligned = align_dataframe_types(df_new_cards, df_existing_c)
+                df_c_filtered = unir_schema_historico(
+                    df_c_filtered,
+                    [c for c in df_new_cards_aligned.columns if c not in df_c_filtered.columns],
+                )
                 df_final_c = pd.concat([df_c_filtered, df_new_cards_aligned], ignore_index=True)
             else:
                 df_final_c = df_c_filtered

@@ -62,9 +62,9 @@ Os datasets da Série A foram normalizados a partir dos dados brutos do Adão Du
 ---
 
 ## 3. Dataset: `cartoes` (`cartoes.parquet` / `cartoes.csv`)
-* **Descrição:** Registro individual de cada advertência disciplinar (amarela ou vermelha) aplicada no Campeonato Brasileiro da Série A entre 2014 e 2024.
+* **Descrição:** Registro individual de cada advertência disciplinar (amarela ou vermelha) aplicada no Campeonato Brasileiro da Série A. Duas origens coexistem: a base histórica do Kaggle (2014–2024) e as súmulas oficiais da CBF (2026 em diante), estas com o motivo textual do árbitro.
 * **Granularidade:** 1 linha por cartão aplicado.
-* **Volume:** 20.953 cartões.
+* **Volume:** 22.323 cartões, dos quais 1.370 vindos de súmula oficial.
 * **Chave Estrangeira:** `partida_id` $\rightarrow$ `partidas.partida_id`.
 
 | Campo | Tipo | Nulos | Descrição | Regras e Valores Válidos |
@@ -83,6 +83,19 @@ Os datasets da Série A foram normalizados a partir dos dados brutos do Adão Du
 | `minuto_nominal` | `int64` | Não | Minuto oficial de relógio | Ex.: 45, 90 |
 | `acrescimo` | `int64` | Não | Minutos concedidos de tempo adicional | $\ge 0$ (ex.: 2 para `45+2`) |
 | `periodo` | `string` | Não | Etapa da partida em que ocorreu | `1T` ($\le 45'$) ou `2T` ($> 45'$) |
+| `serie` | `string` | Sim | Divisão de origem do registro | `A`; nulo no período histórico |
+| `tipo_cartao_detalhe` | `string` | Sim | Subtipo da expulsão, como consta da súmula | `Cartão Vermelho Direto`, `2º Cartão Amarelo`; vazio em amarelos |
+| `motivo_completo` | `string` | Sim | Texto oficial do motivo, transcrito da súmula | **Só existe onde a fonte é a súmula da CBF.** Nulo em 2014–2024, cuja origem (Kaggle) não possui o campo |
+| `categoria_infracao` | `string` | Sim | Classificação temática do motivo | `falta_temeraria`, `reclamacao`, `cera_retardar`, `conduta_antidesportiva`, `mao_intencional`, `outro`. Nulo onde não há motivo |
+
+> **Cobertura do motivo (tarefa F2-01).** O motivo textual é o atributo de maior valor
+> competitivo do projeto — nenhum provedor comercial o disponibiliza estruturado — e existe
+> apenas onde a fonte é a súmula oficial. Cobertura atual: 6.451 cartões (23,5% da base
+> consolidada das duas séries), sendo 1.370 da Série A 2026 e 5.081 da Série B. Nesses
+> registros, **30,2% são infrações comportamentais não-físicas** (reclamação, cera, conduta
+> antidesportiva, toque de mão), proporção estável entre séries e temporadas (28,9% a 31,0%).
+> A ausência do motivo em 2014–2024 da Série A **não é falha de extração**: o campo não existe
+> na fonte histórica. Detalhamento em `reports/tables/cobertura_motivo_cartao.csv`.
 
 ---
 
