@@ -1,0 +1,2 @@
+teste,fracao_de_corte,rodadas_antes_do_corte,linhas_comparadas,linhas_divergentes,aprovado
+Escores anteriores ao corte não mudam quando o futuro é corrompido,0.7,40054,40054,0,True

@@ -4,7 +4,7 @@
 **Responsável sugerido:** Filipe Ataíde
 **Tamanho:** G
 **Depende de:** F2-04, F1-04
-**Status:** Backlog
+**Status:** Concluído (2026-09-16)
 
 ---
 
@@ -61,21 +61,21 @@ externa.
 
 ## Definition of Done
 
-- [ ] Decisão de fonte de escalação registrada com justificativa.
-- [ ] Escore pré-jogo implementado em módulo próprio, com separação estrita entre features
+- [x] Decisão de fonte de escalação registrada com justificativa.
+- [x] Escore pré-jogo implementado em módulo próprio, com separação estrita entre features
       disponíveis antes do jogo e features pós-jogo (**nenhum vazamento temporal**).
-- [ ] Validação retroativa walk-forward: o modelo é calibrado apenas com dados anteriores à
+- [x] Validação retroativa walk-forward: o modelo é calibrado apenas com dados anteriores à
       rodada avaliada.
-- [ ] Poder preditivo reportado com a métrica definida na F1-04 (precisão@k por rodada),
+- [x] Poder preditivo reportado com a métrica definida na F1-04 (precisão@k por rodada),
       comparado contra uma linha de base ingênua (por exemplo, ranking por cartões
       acumulados na temporada).
-- [ ] Teste explícito de vazamento: reexecução do pipeline embaralhando a ordem temporal deve
+- [x] Teste explícito de vazamento: reexecução do pipeline embaralhando a ordem temporal deve
       degradar o desempenho.
-- [ ] Saída disponível no feed de produto, por partida e por atleta escalado.
-- [ ] Documentação da limitação interpretativa (atipicidade ≠ fraude) no código, no feed e em
+- [x] Saída disponível no feed de produto, por partida e por atleta escalado.
+- [x] Documentação da limitação interpretativa (atipicidade ≠ fraude) no código, no feed e em
       qualquer saída visível ao usuário.
-- [ ] Testes unitários do módulo novo.
-- [ ] Suíte `pytest` passando.
+- [x] Testes unitários do módulo novo.
+- [x] Suíte `pytest` passando.
 
 ## Riscos e observações
 
@@ -86,3 +86,28 @@ externa.
 * Esta é a saída com maior potencial de uso indevido para precificação de mercado. A
   restrição de granularidade por segmento de cliente é definida na F4-03 e deve estar
   concluída antes de qualquer exposição externa.
+
+
+---
+
+## Execução (2026-09-16)
+
+Resultados em `reports/analysis/08_score_pre_jogo_por_atleta.md`.
+
+**Poder preditivo.** O escore supera a linha de base ingênua em k = 3, 5 e 10, e perde em
+k = 1. Ganho de 2,4x a 2,7x sobre sortear entre os atletas relacionados. É o primeiro
+componente do projeto com poder preditivo demonstrado e medido sem vazamento.
+
+**Vazamento.** O teste previsto na tarefa — embaralhar a ordem temporal e esperar degradação —
+não discrimina: embaralhar **dá** ao modelo acesso a partidas futuras, e o desempenho sobe.
+Foi substituído por um teste determinístico de corrupção do futuro, que reprovou duas versões
+do pipeline antes de aprovar a terceira.
+
+**Contexto de partida não implementado.** Rodada, situação na tabela e clássico regional
+ficaram fora: o perfil individual já supera a linha de base, e acrescentar features sem ganho
+medido só aumentaria a superfície de vazamento. Fica como extensão, com a mesma exigência de
+validação.
+
+**Restrição de exposição.** A saída está no feed com a ressalva interpretativa acoplada ao
+dado, mas a granularidade por segmento de cliente (F4-03) precisa estar definida antes de
+qualquer exposição externa.

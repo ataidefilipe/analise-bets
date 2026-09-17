@@ -1,0 +1,9 @@
+k,criterio,rodadas_avaliadas,atletas_inspecionados,acertos,precisao_at_k,taxa_base_da_populacao,ganho_sobre_o_acaso
+1,Escore pré-jogo,178,178,12,0.0674,0.039,1.73
+1,Linha de base (cartões acumulados),178,178,11,0.0618,0.039,1.58
+3,Escore pré-jogo,178,534,57,0.1067,0.039,2.74
+3,Linha de base (cartões acumulados),178,534,39,0.073,0.039,1.87
+5,Escore pré-jogo,178,890,89,0.1,0.039,2.56
+5,Linha de base (cartões acumulados),178,890,65,0.073,0.039,1.87
+10,Escore pré-jogo,178,1780,175,0.0983,0.039,2.52
+10,Linha de base (cartões acumulados),178,1780,137,0.077,0.039,1.97

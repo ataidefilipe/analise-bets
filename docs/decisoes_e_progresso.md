@@ -189,6 +189,14 @@ Classificadas conforme a taxonomia da Seção 17 do `.agent.md`:
   * *Decisão:* Descrever o sistema pelo que ele comprovadamente faz — medir atipicidade disciplinar com fórmula publicada, reproduzível e calibrada em 23.369 cartões — e não como detector ou priorizador de manipulação, até que exista evidência de ganho sobre o acaso.
   * *Motivo:* Um priorizador é avaliado por precisão no topo da lista, e o topo da lista não contém os casos conhecidos. Afirmar capacidade de priorização não sobrevive à primeira diligência técnica de um comprador.
   * *Impacto:* Redireciona o roteiro de produto: a unidade de análise com sinal é o atleta, o que torna a escalação por partida (F2-04) e o escore pré-jogo (F3-01) pré-requisitos, e não incrementos.
+* **D-ANA-19: Escalação retroativa para validar antes de assumir dependência externa (F3-01):**
+  * *Decisão:* Adotar a opção 3 da tarefa — usar a escalação real da súmula para medir o poder preditivo do escore pré-jogo, adiando a contratação de fonte de escalação provável.
+  * *Motivo:* A dependência de terceiro só se justifica se o modelo funcionar; medir primeiro custa nada e informa a decisão. Em produção o único insumo que muda é a lista de quem entra em campo.
+  * *Impacto:* Com ganho medido de 2,4x a 2,7x sobre o acaso, a decisão de contratar provedor de escalação provável passa a ter base quantitativa.
+* **D-TEC-11: Substituir o teste de vazamento por corrupção do futuro (F3-01):**
+  * *Decisão:* Trocar o embaralhamento da ordem temporal, previsto na tarefa, por um teste determinístico que corrompe todo o alvo a partir de um corte cronológico e exige que os escores anteriores fiquem idênticos.
+  * *Motivo:* O embaralhamento não discrimina — ao destruir a cronologia, ele dá ao modelo acesso a partidas futuras, e o desempenho **sobe** em vez de cair. Um teste que passa com e sem vazamento não testa nada.
+  * *Impacto:* O teste determinístico reprovou duas versões do pipeline antes de aprovar a terceira: pegou a taxa populacional estimada sobre a base inteira e um corte temporal mal definido entre temporadas.
 
 ### 2.3 Decisões Técnicas (Decididas pelo Agente)
 * **D-TEC-01: Governança do Diretório de Dados Brutos:**

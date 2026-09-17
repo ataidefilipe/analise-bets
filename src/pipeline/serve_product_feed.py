@@ -30,6 +30,15 @@ logging.basicConfig(
 logger = logging.getLogger("ProductFeedServer")
 
 FEED_DIR = Path("data/processed/product_feed")
+
+# Ressalva que acompanha toda saída de risco, no feed e em qualquer interface derivada dele.
+# A obrigação de exibi-la vem da tarefa F3-01 e das diretrizes de governança do projeto.
+AVISO_INTERPRETATIVO = (
+    "Este escore mede ATIPICIDADE ESTATÍSTICA do perfil disciplinar do atleta, e não "
+    "probabilidade de fraude. Um atleta com estilo de falta tática precoce e um atleta "
+    "aliciado produzem assinaturas semelhantes. A finalidade é priorizar atenção humana; "
+    "não constitui acusação, indício ou prova de conduta irregular."
+)
 PROCESSED_DIR = Path("data/processed")
 
 
@@ -337,13 +346,58 @@ class ProductFeedServer:
         with open(elenco_path, "w", encoding="utf-8") as f:
             json.dump(elenco_payload, f, indent=2, ensure_ascii=False)
 
-        # 4. Exportar para SQLite com tabelas e índices otimizados
-        self._export_to_sqlite(series_data, all_standings_rows)
+        # 4. Feed de risco pré-jogo por atleta escalado (F3-01)
+        risco_path = self.feed_dir / "risco_pre_jogo.json"
+        score_file = self.processed_dir / "integrity" / "score_pre_jogo.parquet"
+        df_risco = pd.read_parquet(score_file) if score_file.exists() else pd.DataFrame()
+
+        if not df_risco.empty:
+            risco_payload: Dict[str, Any] = {
+                "gerado_em": datetime.now().isoformat(),
+                "aviso": AVISO_INTERPRETATIVO,
+                "descricao": (
+                    "Cartões no 1º tempo esperados por atleta relacionado, estimados apenas com "
+                    "informação anterior à rodada. Modo retroativo: usa a escalação da súmula "
+                    "oficial, que só existe após a partida."
+                ),
+                "partidas": [],
+            }
+            ordenado = df_risco.sort_values(
+                ["serie", "temporada", "rodada", "partida_id", "score_pre_jogo"],
+                ascending=[True, True, True, True, False],
+            )
+            for (serie, temporada, partida_id), g in ordenado.groupby(
+                    ["serie", "temporada", "partida_id"], sort=False):
+                risco_payload["partidas"].append({
+                    "serie": serie,
+                    "temporada": int(temporada),
+                    "rodada": int(g["rodada"].iloc[0]),
+                    "partida_id": int(partida_id),
+                    "atletas": [
+                        {
+                            "atleta": row["apelido"],
+                            "registro_cbf": row["registro_cbf"],
+                            "clube": row["clube_slug"],
+                            "num_camisa": int(row["num_camisa"]),
+                            "condicao": row["condicao"],
+                            "minutos_previos": int(row["minutos_previos"]),
+                            "cartoes_1t_previos": int(row["cartoes_1t_previos"]),
+                            "score_pre_jogo": float(row["score_pre_jogo"]),
+                        }
+                        for _, row in g.head(5).iterrows()
+                    ],
+                })
+            with open(risco_path, "w", encoding="utf-8") as f:
+                json.dump(risco_payload, f, indent=2, ensure_ascii=False)
+
+        # 5. Exportar para SQLite com tabelas e índices otimizados
+        self._export_to_sqlite(series_data, all_standings_rows, df_risco)
 
         feed_stats = {
             "json_classificacao": str(classificacao_path),
             "json_latest_matches": str(latest_path),
             "json_elenco_e_minutos": str(elenco_path),
+            "json_risco_pre_jogo": str(risco_path) if not df_risco.empty else None,
             "sqlite_db": str(self.db_path),
             "total_tabelas_classificacao": len(classificacao_payload["tabelas"]),
         }
@@ -353,7 +407,8 @@ class ProductFeedServer:
     def _export_to_sqlite(
         self,
         series_data: Dict[str, Dict[str, pd.DataFrame]],
-        all_standings_rows: List[Dict[str, Any]]
+        all_standings_rows: List[Dict[str, Any]],
+        df_risco: Optional[pd.DataFrame] = None,
     ) -> None:
         """
         Exporta os dados consolidados para SQLite, ativando modo WAL e criando índices.
@@ -419,6 +474,19 @@ class ProductFeedServer:
             if not df_all_m.empty:
                 df_all_m.to_sql("minutos_em_campo", conn, if_exists="replace", index=False)
                 cur.execute("CREATE INDEX IF NOT EXISTS idx_min_atleta ON minutos_em_campo(temporada, serie, atleta_slug);")
+
+            if df_risco is not None and not df_risco.empty:
+                colunas = ["serie", "temporada", "rodada", "partida_id", "clube_slug",
+                           "num_camisa", "apelido", "registro_cbf", "condicao",
+                           "minutos_previos", "cartoes_1t_previos", "taxa_1t_ajustada",
+                           "score_pre_jogo"]
+                presentes = [c for c in colunas if c in df_risco.columns]
+                df_risco[presentes].to_sql("risco_pre_jogo", conn, if_exists="replace", index=False)
+                cur.execute("CREATE INDEX IF NOT EXISTS idx_risco_partida ON risco_pre_jogo(temporada, partida_id);")
+                cur.execute("CREATE INDEX IF NOT EXISTS idx_risco_atleta ON risco_pre_jogo(registro_cbf);")
+                # A ressalva viaja junto com o dado: quem consome a tabela ve o aviso.
+                pd.DataFrame([{"chave": "aviso_interpretativo", "valor": AVISO_INTERPRETATIVO}]).to_sql(
+                    "avisos", conn, if_exists="replace", index=False)
 
             conn.commit()
             logger.info(
