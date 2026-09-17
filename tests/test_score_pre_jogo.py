@@ -160,19 +160,32 @@ def test_feed_de_risco_carrega_a_ressalva_interpretativa():
     """
     A ressalva de que o escore mede atipicidade, e não fraude, precisa acompanhar o dado em
     toda saída visível — é requisito de governança, não de estilo.
+
+    Vale para as duas camadas: a aberta, servida por padrão, e a identificada, em diretório
+    restrito. A estrutura dos dois arquivos difere desde a F4-03, que passou a segmentar o feed
+    por perfil de cliente; a ressalva, não.
     """
-    caminho = os.path.join(FEED_DIR, "risco_pre_jogo.json")
-    if not os.path.exists(caminho):
+    caminhos = [os.path.join(FEED_DIR, "risco_pre_jogo.json"),
+                os.path.join(FEED_DIR, "restrito", "risco_pre_jogo__federacao_stjd.json")]
+    existentes = [c for c in caminhos if os.path.exists(c)]
+    if not existentes:
         pytest.skip("feed de risco não gerado")
 
-    with open(caminho, encoding="utf-8") as f:
-        payload = json.load(f)
+    for caminho in existentes:
+        with open(caminho, encoding="utf-8") as f:
+            payload = json.load(f)
+        aviso = payload.get("aviso", "").lower()
+        assert "atipicidade" in aviso, f"{caminho} sem a ressalva"
+        assert "não" in aviso and "fraude" in aviso
+        assert payload["partidas"], f"{caminho} sem partidas"
 
-    aviso = payload.get("aviso", "").lower()
-    assert "atipicidade" in aviso
-    assert "não" in aviso and "fraude" in aviso
-    assert payload["partidas"], "feed sem partidas"
-    assert all("score_pre_jogo" in a for p in payload["partidas"][:5] for a in p["atletas"])
+    # Na camada identificada, cada partida traz os atletas pontuados.
+    identificado = os.path.join(FEED_DIR, "restrito", "risco_pre_jogo__federacao_stjd.json")
+    if os.path.exists(identificado):
+        with open(identificado, encoding="utf-8") as f:
+            payload = json.load(f)
+        assert all("score_pre_jogo" in atleta
+                   for p in payload["partidas"][:5] for atleta in p["atletas"])
 
 
 def test_sqlite_expoe_risco_e_aviso():

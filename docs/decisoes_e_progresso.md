@@ -197,6 +197,14 @@ Classificadas conforme a taxonomia da Seção 17 do `.agent.md`:
   * *Decisão:* Trocar o embaralhamento da ordem temporal, previsto na tarefa, por um teste determinístico que corrompe todo o alvo a partir de um corte cronológico e exige que os escores anteriores fiquem idênticos.
   * *Motivo:* O embaralhamento não discrimina — ao destruir a cronologia, ele dá ao modelo acesso a partidas futuras, e o desempenho **sobe** em vez de cair. Um teste que passa com e sem vazamento não testa nada.
   * *Impacto:* O teste determinístico reprovou duas versões do pipeline antes de aprovar a terceira: pegou a taxa populacional estimada sobre a base inteira e um corte temporal mal definido entre temporadas.
+* **D-NEG-02: Não atender mesas de trading nem áreas de precificação de operadoras (F4-03):**
+  * *Decisão:* Recusar o segmento, atendendo a área de integrity de operadora apenas com dado agregado por partida, sem identificação individual.
+  * *Motivo:* O mesmo escore é sinal de integridade e sinal de trading. Fornecido a quem precifica micro-mercados de cartão, o produto passaria a dar vantagem competitiva nos exatos mercados que o projeto identifica como vetor de vulnerabilidade — financiaria o problema que diz combater.
+  * *Impacto:* Recusa-se o segmento de maior disposição a pagar. Em contrapartida, o produto pode ser apresentado a federações, clubes e órgãos de investigação sem conflito de interesse aparente, e a recusa vira argumento comercial perante eles.
+* **D-TEC-12: Matriz de granularidade executável, não apenas contratual (F4-03):**
+  * *Decisão:* Implementar a matriz de segmentos em `src/pipeline/perfis_de_acesso.py`, com camadas aberta, pseudonimizada e identificada, e tornar o feed padrão o de menor exposição.
+  * *Motivo:* Cláusula sem controle técnico não se sustenta. Um perfil não atendido precisa falhar em tempo de execução, não depender de alguém lembrar do contrato.
+  * *Impacto:* O feed público deixou de expor 6.445 atletas nominados; a camada identificada foi isolada em diretório restrito e o banco passou a usar identificador HMAC estável. A varredura dos artefatos já publicados segue como F4-02.
 
 ### 2.3 Decisões Técnicas (Decididas pelo Agente)
 * **D-TEC-01: Governança do Diretório de Dados Brutos:**

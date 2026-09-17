@@ -29,7 +29,21 @@ logging.basicConfig(
 )
 logger = logging.getLogger("ProductFeedServer")
 
+from src.pipeline.perfis_de_acesso import (
+    CAMADA_ABERTA,
+    CAMADA_IDENTIFICADA,
+    CAMADA_PSEUDONIMIZADA,
+    PERFIS,
+    aplicar_perfil,
+    pseudonimizar,
+    registros_publicos,
+)
+
 FEED_DIR = Path("data/processed/product_feed")
+
+# Saídas com identificação nominal não ficam no diretório servido por padrão: vão para um
+# subdiretório que sinaliza a restrição contratual (tarefa F4-03).
+SUBDIR_RESTRITO = "restrito"
 
 # Ressalva que acompanha toda saída de risco, no feed e em qualquer interface derivada dele.
 # A obrigação de exibi-la vem da tarefa F3-01 e das diretrizes de governança do projeto.
@@ -346,13 +360,18 @@ class ProductFeedServer:
         with open(elenco_path, "w", encoding="utf-8") as f:
             json.dump(elenco_payload, f, indent=2, ensure_ascii=False)
 
-        # 4. Feed de risco pré-jogo por atleta escalado (F3-01)
+        # 4. Feed de risco pré-jogo por atleta escalado (F3-01), segmentado por perfil (F4-03)
         risco_path = self.feed_dir / "risco_pre_jogo.json"
         score_file = self.processed_dir / "integrity" / "score_pre_jogo.parquet"
         df_risco = pd.read_parquet(score_file) if score_file.exists() else pd.DataFrame()
+        df_risco_pseudonimo = pd.DataFrame()
 
         if not df_risco.empty:
-            risco_payload: Dict[str, Any] = {
+            publicos = registros_publicos()
+            restrito_dir = self.feed_dir / SUBDIR_RESTRITO
+            restrito_dir.mkdir(parents=True, exist_ok=True)
+
+            cabecalho = {
                 "gerado_em": datetime.now().isoformat(),
                 "aviso": AVISO_INTERPRETATIVO,
                 "descricao": (
@@ -360,15 +379,60 @@ class ProductFeedServer:
                     "informação anterior à rodada. Modo retroativo: usa a escalação da súmula "
                     "oficial, que só existe após a partida."
                 ),
-                "partidas": [],
             }
+
+            # O feed servido por padrão é o da camada aberta: nenhum atleta identificado.
+            # Publicar nominalmente atletas apenas atípicos, nunca investigados, é o risco que
+            # a F4-02 descreve — e este produto tem 6.445 deles.
+            aberto = aplicar_perfil(df_risco, "imprensa_academia")
+            payload_aberto = dict(cabecalho)
+            payload_aberto["perfil"] = "imprensa_academia"
+            payload_aberto["camada"] = CAMADA_ABERTA
+            payload_aberto["partidas"] = [
+                {k: (int(v) if isinstance(v, (int, float)) and k in
+                     ("temporada", "rodada", "partida_id", "atletas_no_agregado") else v)
+                 for k, v in linha.items()}
+                for linha in aberto.to_dict("records")
+            ]
+            with open(risco_path, "w", encoding="utf-8") as f:
+                json.dump(payload_aberto, f, indent=2, ensure_ascii=False)
+
+            # Camada pseudonimizada: perfil individual sob identificador estável, sem nome.
+            df_risco_pseudonimo = aplicar_perfil(
+                df_risco.assign(atleta_slug=df_risco["apelido"].str.lower().str.replace(" ", "_")),
+                "federacao_stjd",
+            )
+            df_risco_pseudonimo = df_risco_pseudonimo.copy()
+            df_risco_pseudonimo["atleta_pseudonimo"] = df_risco_pseudonimo["registro_cbf"].map(
+                pseudonimizar)
+            df_risco_pseudonimo = df_risco_pseudonimo.drop(
+                columns=[c for c in ("apelido", "registro_cbf", "atleta_slug", "num_camisa")
+                         if c in df_risco_pseudonimo.columns])
+
+            payload_pseudo = dict(cabecalho)
+            payload_pseudo["perfil"] = "demonstracao"
+            payload_pseudo["camada"] = CAMADA_PSEUDONIMIZADA
+            payload_pseudo["registros"] = df_risco_pseudonimo.head(5000).to_dict("records")
+            with open(restrito_dir / "risco_pre_jogo__pseudonimizado.json", "w",
+                      encoding="utf-8") as f:
+                json.dump(payload_pseudo, f, indent=2, ensure_ascii=False, default=str)
+
+            # Camada identificada: só para perfis contratados, em diretório restrito.
             ordenado = df_risco.sort_values(
                 ["serie", "temporada", "rodada", "partida_id", "score_pre_jogo"],
                 ascending=[True, True, True, True, False],
             )
+            payload_identificado = dict(cabecalho)
+            payload_identificado["perfil"] = "federacao_stjd"
+            payload_identificado["camada"] = CAMADA_IDENTIFICADA
+            payload_identificado["condicao_de_uso"] = (
+                "Uso restrito a federação, STJD ou órgão de investigação, com finalidade de "
+                "auditoria declarada e registro de acesso. Redistribuição vedada."
+            )
+            payload_identificado["partidas"] = []
             for (serie, temporada, partida_id), g in ordenado.groupby(
                     ["serie", "temporada", "partida_id"], sort=False):
-                risco_payload["partidas"].append({
+                payload_identificado["partidas"].append({
                     "serie": serie,
                     "temporada": int(temporada),
                     "rodada": int(g["rodada"].iloc[0]),
@@ -387,17 +451,33 @@ class ProductFeedServer:
                         for _, row in g.head(5).iterrows()
                     ],
                 })
-            with open(risco_path, "w", encoding="utf-8") as f:
-                json.dump(risco_payload, f, indent=2, ensure_ascii=False)
+            with open(restrito_dir / "risco_pre_jogo__federacao_stjd.json", "w",
+                      encoding="utf-8") as f:
+                json.dump(payload_identificado, f, indent=2, ensure_ascii=False)
+
+            aviso_md = restrito_dir / "AVISO.md"
+            aviso_md.write_text(
+                "# Camada identificada — uso restrito\n\n"
+                "Os arquivos deste diretório contêm **nome de atleta** e devem ser entregues\n"
+                "apenas a perfis contratados, com finalidade declarada e registro de acesso,\n"
+                "conforme `docs/termo_de_uso_e_licenciamento.md` (tarefa F4-03).\n\n"
+                "A maioria dos atletas aqui listados **nunca foi investigada**: são apenas\n"
+                "estatisticamente atípicos. Publicá-los nominalmente expõe o projeto a ação por\n"
+                "dano moral e contradiz a diretriz de presunção de inocência do relatório 07.\n\n"
+                f"{AVISO_INTERPRETATIVO}\n",
+                encoding="utf-8",
+            )
 
         # 5. Exportar para SQLite com tabelas e índices otimizados
-        self._export_to_sqlite(series_data, all_standings_rows, df_risco)
+        self._export_to_sqlite(series_data, all_standings_rows, df_risco_pseudonimo)
 
         feed_stats = {
             "json_classificacao": str(classificacao_path),
             "json_latest_matches": str(latest_path),
             "json_elenco_e_minutos": str(elenco_path),
             "json_risco_pre_jogo": str(risco_path) if not df_risco.empty else None,
+            "camada_do_feed_padrao": CAMADA_ABERTA,
+            "perfis_atendidos": [p for p, c in PERFIS.items() if c["atendido"]],
             "sqlite_db": str(self.db_path),
             "total_tabelas_classificacao": len(classificacao_payload["tabelas"]),
         }
@@ -476,14 +556,16 @@ class ProductFeedServer:
                 cur.execute("CREATE INDEX IF NOT EXISTS idx_min_atleta ON minutos_em_campo(temporada, serie, atleta_slug);")
 
             if df_risco is not None and not df_risco.empty:
+                # O banco recebe a camada PSEUDONIMIZADA: mantém utilidade analítica —
+                # acompanhar o mesmo atleta ao longo do tempo — sem expor nome nem registro.
                 colunas = ["serie", "temporada", "rodada", "partida_id", "clube_slug",
-                           "num_camisa", "apelido", "registro_cbf", "condicao",
-                           "minutos_previos", "cartoes_1t_previos", "taxa_1t_ajustada",
-                           "score_pre_jogo"]
+                           "atleta_pseudonimo", "condicao", "minutos_previos",
+                           "cartoes_1t_previos", "taxa_1t_ajustada", "score_pre_jogo"]
                 presentes = [c for c in colunas if c in df_risco.columns]
                 df_risco[presentes].to_sql("risco_pre_jogo", conn, if_exists="replace", index=False)
                 cur.execute("CREATE INDEX IF NOT EXISTS idx_risco_partida ON risco_pre_jogo(temporada, partida_id);")
-                cur.execute("CREATE INDEX IF NOT EXISTS idx_risco_atleta ON risco_pre_jogo(registro_cbf);")
+                if "atleta_pseudonimo" in presentes:
+                    cur.execute("CREATE INDEX IF NOT EXISTS idx_risco_atleta ON risco_pre_jogo(atleta_pseudonimo);")
                 # A ressalva viaja junto com o dado: quem consome a tabela ve o aviso.
                 pd.DataFrame([{"chave": "aviso_interpretativo", "valor": AVISO_INTERPRETATIVO}]).to_sql(
                     "avisos", conn, if_exists="replace", index=False)

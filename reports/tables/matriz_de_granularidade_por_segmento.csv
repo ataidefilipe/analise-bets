@@ -1,0 +1,6 @@
+perfil,segmento,atendido,camada,granularidade,finalidade_permitida,restrito_ao_proprio_elenco,observacao
+federacao_stjd,"Federação, STJD ou órgão de investigação",True,identificada,"partida, atleta",Auditoria desportiva e instrução de procedimento,False,
+clube,Clube,True,identificada,atleta,Compliance interno e due diligence de contratação,True,
+operadora_integrity,Operadora — área de integrity ou compliance,True,aberta,partida,Monitoramento regulatório e registro de diligência,False,
+operadora_trading,Operadora — mesa de trading ou precificação,False,—,—,—,False,"Fornecer sinal de atipicidade disciplinar a quem precifica micro-mercados de cartão converteria um instrumento de integridade em vantagem competitiva nos mercados que o projeto identifica como vetor de vulnerabilidade à manipulação. A recusa é decisão de posicionamento, registrada na tarefa F4-03."
+imprensa_academia,Imprensa e academia,True,aberta,partida,Divulgação e pesquisa,False,
