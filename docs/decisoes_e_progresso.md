@@ -82,6 +82,13 @@
   * Serialização dos modelos em `data/processed/integrity/models/` (`.joblib`) com persistência portável.
   * Geração das Tabelas 18, 19 e 20 em `reports/tables/` e datasets enriquecidos `.parquet`.
   * Suíte de testes automatizada expandida para **50 testes unitários com 100% de aprovação** no `pytest` (`tests/test_integrity_classifier.py`).
+* **Transição para Produto — Sessão de 2026-09-16 (oito tarefas do backlog, branch `fase-1-credibilidade`):**
+  * **Fase 1 completa (F1-01 a F1-04).** Fórmula reconciliada com a documentação, subscore de exposição comercial removido do índice e das features, tiers migrados para percentil empírico, ground truth reancorado por mapa de identidade explícito, validação fora da amostra e curva de carga operacional.
+  * **Fase 2 parcial (F2-01, F2-03 parcial, F2-04).** Motivo do cartão recuperado para a Série A, 519 cartões perdidos da Série B recuperados, e relação de atletas, substituições e minutos em campo extraídos da súmula — 57.406 registros de atleta-partida.
+  * **Fase 3 (F3-01).** Escore de risco pré-jogo por atleta, primeiro componente com poder preditivo demonstrado sem vazamento temporal: ganho de 2,4× a 2,7× sobre sorteio.
+  * **Fase 4 antecipada (F4-03).** Matriz de granularidade por perfil de cliente, executável em código, com a mesa de trading explicitamente não atendida.
+  * **Treze defeitos de dados encontrados e corrigidos**, nenhum deles previsto no backlog, todos afetando resultados já publicados. Inventário completo em [`docs/relatorio_de_execucao_2026-09-16.md`](file:///d:/Python%20Projetos/analise-bets/docs/relatorio_de_execucao_2026-09-16.md).
+  * **Suíte ampliada de 67 para 139 testes**, sem que nenhum precisasse ser reescrito para acomodar números novos quando a base mudou 14% de volume.
 
 ---
 

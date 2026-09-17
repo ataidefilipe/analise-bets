@@ -69,6 +69,22 @@ F5-01 → F5-02 → F5-03   (paralelo, inicia imediatamente — gargalo de calen
 F4-01 → F4-02 → F4-03   (paralelo; F4-02 trava F6-02 se houver nome de atleta)
 ```
 
+## Execução registrada
+
+A sessão de 2026-09-16 executou oito tarefas e encontrou treze defeitos de dados que não
+estavam no backlog. O registro consolidado — o que mudou nos resultados publicados, os defeitos
+corrigidos e o que permanece aberto — está em
+[`docs/relatorio_de_execucao_2026-09-16.md`](../docs/relatorio_de_execucao_2026-09-16.md).
+
+| Fase | Situação |
+| :--- | :--- |
+| 1 — Credibilidade | Concluída (F1-01 a F1-04) |
+| 2 — Ativo de dados | F2-01 e F2-04 concluídas; F2-03 parcial; F2-02 e F2-05 abertas |
+| 3 — Produto | F3-01 concluída; F3-02 a F3-04 abertas |
+| 4 — Governança | F4-03 em minuta; **F4-01 e F4-02 abertas e bloqueando exposição externa** |
+| 5 — Validação de mercado | Aberta |
+| 6 — Entregáveis | Aberta |
+
 ## Convenção de status
 
 Marcar no topo de cada arquivo: `Status: Backlog | Em andamento | Em revisão | Concluído`.
