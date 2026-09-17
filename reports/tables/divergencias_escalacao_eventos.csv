@@ -1,0 +1,90 @@
+serie,evento,temporada,partida_id,clube_slug,num_camisa,atleta,partida_sem_escalacao
+A,cartoes,2026,170,remo,37,Jandir Breno Souza Silva,True
+A,cartoes,2026,170,athletico_paranaense,10,Bruno Zapelli,True
+A,cartoes,2026,170,remo,79,Marcelo Rodrigues Souza,True
+A,cartoes,2026,170,athletico_paranaense,5,Antonio Feliphe Costa Silva,True
+A,cartoes,2026,170,athletico_paranaense,21,Leonardo Caetano Silva,True
+A,cartoes,2026,170,athletico_paranaense,63,Diogo Riquelme Rivas do Nascimento,True
+A,cartoes,2026,221,palmeiras,22,Joaquin Piquerez Moreira,True
+A,cartoes,2026,221,fluminense,23,Claudio Rodrigues Gomes,True
+A,cartoes,2026,221,fluminense,17,Agustin Canobbio Graviz,True
+A,cartoes,2026,221,palmeiras,56,Arthur Gabriel Santana Marcolino,True
+A,cartoes,2026,221,fluminense,32,Luciano Federico Acosta,True
+A,cartoes,2026,221,fluminense,8,Matheus Martinelli Lima,True
+A,cartoes,2026,221,palmeiras,15,Gustavo Raul Gomez Portillo,True
+A,gols,2026,170,remo,37,Jandir Breno Souza Silva,True
+A,gols,2026,170,athletico_paranaense,9,Kevin Estiben Viveros Rodallega,True
+A,gols,2026,170,athletico_paranaense,9,Kevin Estiben Viveros Rodallega,True
+A,gols,2026,221,palmeiras,15,Gustavo Raul Gomez Portillo,True
+A,gols,2026,221,fluminense,7,Givanildo Vieira de Sousa,True
+A,gols,2026,221,palmeiras,18,Mauricio Magalhaes Prado,True
+A,gols,2026,221,fluminense,90,Kevin Steven Serna Jaramillo,True
+A,gols,2026,221,fluminense,14,German Ezequiel Cano,True
+B,cartoes,2022,43,nautico,23,Leandro Carvalho da Silva,True
+B,cartoes,2022,43,nautico,23,Leandro Carvalho da Silva,True
+B,cartoes,2022,43,guarani,16,Matheus Pereira de Souza,True
+B,cartoes,2022,43,guarani,8,Eduardo Luiz Person,True
+B,cartoes,2022,43,nautico,3,Carlos Eduardo da Silva Santos,True
+B,cartoes,2022,43,guarani,13,Diogo Mateus de Almeida Rodrigues Maciel,True
+B,cartoes,2022,61,ponte_preta,16,Reginaldo Ramires de Oliveira Albertino,True
+B,cartoes,2022,61,novorizontino,5,Jhony Douglas Santiago,True
+B,cartoes,2022,61,novorizontino,2,Felipe Albuquerque Felippi,True
+B,cartoes,2022,61,ponte_preta,19,Felipe Amaral Casarin Damasceno,True
+B,cartoes,2022,61,ponte_preta,25,Wallisson Luiz Alves Maximo,True
+B,cartoes,2022,61,ponte_preta,3,Thiago Oliveira Lopes,True
+B,cartoes,2022,61,novorizontino,3,Rodolfo Filemon de Oliveira da Silva,True
+B,cartoes,2022,61,novorizontino,15,Leonardo Lima dos Santos,True
+B,cartoes,2022,146,operario,8,Tomas Almino Bastos da Silva,True
+B,cartoes,2022,146,chapecoense,7,Chrystian Amaral Barletta de Almeida,True
+B,cartoes,2022,146,chapecoense,10,Tiago Real do Prado,True
+B,cartoes,2022,146,chapecoense,8,Marcelo de Freitas Costa,True
+B,cartoes,2022,146,chapecoense,9,Pedro Henrique Perotti,True
+B,cartoes,2022,146,operario,10,Giovanni Fernando Cofreste Pavani,True
+B,cartoes,2022,146,chapecoense,27,Wesley Frazan Bernardo,True
+B,cartoes,2022,244,operario,19,Felipe Garcia Goncalves,True
+B,cartoes,2022,244,criciuma,8,Arilson Carlos Alves Baptista,True
+B,cartoes,2022,244,criciuma,5,Marcos Vinicius Cerato,True
+B,cartoes,2022,244,operario,4,Gustavo Alcino,True
+B,cartoes,2023,88,chapecoense,22,Bruno Vinicius Simão Elesbão,True
+B,cartoes,2023,88,sampaio_correa,17,Rafael Oliveira Silva,True
+B,cartoes,2023,88,chapecoense,11,Emaxwell Souza de Lima,True
+B,cartoes,2023,140,atletico,8,Rhaldney Norberto Simião Gomes,True
+B,cartoes,2023,140,abc,14,Wellington Rodrigues dos Reis,True
+B,cartoes,2023,140,abc,10,Thonny Anderson da Silva Carvalho,True
+B,cartoes,2023,140,atletico,5,Renato Alves de Mendonça,True
+B,cartoes,2023,140,atletico,7,Matheus de Sales Cabral,True
+B,cartoes,2023,140,atletico,1,Diego Terra Loureiro,True
+B,cartoes,2023,140,atletico,1,Diego Terra Loureiro,True
+B,cartoes,2023,140,abc,9,Felipe Garcia Goncalves,True
+B,cartoes,2023,140,abc,15,Stephannyo Afonso Lopes de Oliveira,True
+B,cartoes,2023,163,guarani,17,Bruno Jose de Souza,True
+B,cartoes,2023,163,criciuma,42,Miqueias Cabral Evaristo,True
+B,cartoes,2023,163,guarani,19,João Victor Lima Ferreira,True
+B,cartoes,2023,163,guarani,5,Matheus Barbosa Teixeira,True
+B,cartoes,2023,163,guarani,22,Álvaro José Oliveira Dias,True
+B,cartoes,2023,197,ituano,6,Kauan Richard Leal Silva,False
+B,cartoes,2026,167,avai,10,Jean Lucas Figueiredo,True
+B,cartoes,2026,167,nautico,46,Gustavo Henrique da Silva,True
+B,cartoes,2026,167,avai,56,William Fernando Soares de Almeida,True
+B,cartoes,2026,214,avai,11,Felipe dos Reis Pereira Vizeu do Carmo Linhares,True
+B,cartoes,2026,214,avai,25,Paulo Vitor Monteiro,True
+B,cartoes,2026,214,operario,43,Joseph Mauricio de Oliveira Figueredo,True
+B,cartoes,2026,214,avai,2,Wallison Nunes Silva,True
+B,gols,2022,43,guarani,17,Bruno Jose de Souza,True
+B,gols,2022,43,nautico,19,Amarildo Aparecido de Souza Junior,True
+B,gols,2022,61,novorizontino,19,Ronaldo Henrique Silva,True
+B,gols,2022,146,operario,4,Willian Estefani Machado,True
+B,gols,2022,146,operario,19,Jose Brandao Goncalves Junior,True
+B,gols,2022,146,chapecoense,7,Chrystian Amaral Barletta de Almeida,True
+B,gols,2022,244,criciuma,11,Hygor Cleber Garcia Silva,True
+B,gols,2022,244,criciuma,4,Jose Marcos Alves Luis,True
+B,gols,2023,88,chapecoense,32,Rodrigo dos Santos de Freitas,True
+B,gols,2023,140,abc,10,Thonny Anderson da Silva Carvalho,True
+B,gols,2023,140,atletico,18,David Francisco Trindade Braga,True
+B,gols,2023,163,guarani,27,Bruno Roberto Pereira da Silva,True
+B,gols,2023,163,criciuma,11,Fabio Augusto Luciano da Silva,True
+B,gols,2026,167,avai,36,Douglas da Silva Teixeira,True
+B,gols,2026,167,avai,14,Daniel dos Santos Penha,True
+B,gols,2026,214,operario,9,Vinicius Alessandro Mingotti,True
+B,gols,2026,214,avai,38,Jefferson Maciel Bento,True
+B,gols,2026,214,avai,2,Wallison Nunes Silva,True

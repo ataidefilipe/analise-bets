@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-09-16T19:18:00.652326",
+  "gerado_em": "2026-09-16T22:42:46.977046",
   "series": {
     "Série A": {
       "temporada": 2026,
@@ -19,7 +19,7 @@
           "resultado": "Vitoria Mandante",
           "vencedor": "Bahia",
           "estadio": "Octávio Mangabeira",
-          "arbitro": "",
+          "arbitro": "Rodrigo Jose Pereira de Lima",
           "gols": [
             {
               "minuto": 20,
@@ -53,7 +53,7 @@
               "atleta": "Nicolas Brian Acevedo Tabarez",
               "clube": "Bahia",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 24,
@@ -61,7 +61,7 @@
               "atleta": "Matheus Felipe Santos Nascimento",
               "clube": "Remo",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 90,
@@ -69,7 +69,7 @@
               "atleta": "Cristian Gonzalo Olivera Ibarra",
               "clube": "Bahia",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             }
           ]
         },
@@ -87,7 +87,7 @@
           "resultado": "Empate",
           "vencedor": "-",
           "estadio": "José Maria de Campos Maia",
-          "arbitro": "",
+          "arbitro": "Ramon Abatti Abel",
           "gols": [
             {
               "minuto": 2,
@@ -129,7 +129,7 @@
               "atleta": "Emanuel Britez",
               "clube": "Vitória",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 28,
@@ -137,7 +137,7 @@
               "atleta": "Alesson dos Santos Batista",
               "clube": "Mirassol",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 44,
@@ -145,7 +145,7 @@
               "atleta": "Caique de Jesus Goncalves",
               "clube": "Vitória",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 11,
@@ -153,7 +153,7 @@
               "atleta": "Wallisson Luiz Alves Maximo",
               "clube": "Mirassol",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 18,
@@ -161,7 +161,7 @@
               "atleta": "Willian Estefani Machado",
               "clube": "Mirassol",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 43,
@@ -169,7 +169,7 @@
               "atleta": "Mario Sergio Santos Costa",
               "clube": "Vitória",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 90,
@@ -177,7 +177,7 @@
               "atleta": "Mateus da Silva Duarte",
               "clube": "Vitória",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "conduta_antidesportiva"
             },
             {
               "minuto": 90,
@@ -185,7 +185,7 @@
               "atleta": "Edson Guilherme Mendes dos Santos",
               "clube": "Mirassol",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "conduta_antidesportiva"
             },
             {
               "minuto": 90,
@@ -193,7 +193,7 @@
               "atleta": "Edenilson Santos Nascimento Filho",
               "clube": "Vitória",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 90,
@@ -201,7 +201,7 @@
               "atleta": "Fernando Jose Marques Maciel",
               "clube": "Mirassol",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             }
           ]
         },
@@ -219,7 +219,7 @@
           "resultado": "Vitoria Mandante",
           "vencedor": "Flamengo",
           "estadio": "Jornalista Mário Filho",
-          "arbitro": "",
+          "arbitro": "Wilton Pereira Sampaio",
           "gols": [
             {
               "minuto": 2,
@@ -253,7 +253,7 @@
               "atleta": "Charles Rigon Matos",
               "clube": "Corinthians",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 4,
@@ -261,7 +261,7 @@
               "atleta": "Lucas Tolentino Coelho de Lima",
               "clube": "Flamengo",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 33,
@@ -269,7 +269,7 @@
               "atleta": "Samuel Dias Lino",
               "clube": "Flamengo",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             },
             {
               "minuto": 41,
@@ -277,7 +277,7 @@
               "atleta": "Breno de Souza Bidon",
               "clube": "Corinthians",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 90,
@@ -285,7 +285,7 @@
               "atleta": "Erick Antonio Pulgar Farfan",
               "clube": "Flamengo",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 90,
@@ -293,7 +293,7 @@
               "atleta": "Rodrigo Garro",
               "clube": "Corinthians",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             },
             {
               "minuto": 90,
@@ -301,7 +301,7 @@
               "atleta": "Jorge Luiz Frello Filho",
               "clube": "Flamengo",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             }
           ]
         },
@@ -319,7 +319,7 @@
           "resultado": "Vitoria Visitante",
           "vencedor": "Internacional",
           "estadio": "Índio Condá",
-          "arbitro": "",
+          "arbitro": "Flavio Rodrigues de Souza",
           "gols": [
             {
               "minuto": 26,
@@ -353,7 +353,7 @@
               "atleta": "Johan Stiven Carbonero Balanta",
               "clube": "Internacional",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             },
             {
               "minuto": 44,
@@ -361,7 +361,7 @@
               "atleta": "Rafael dos Santos Lacerda",
               "clube": "Chapecoense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             },
             {
               "minuto": 45,
@@ -369,7 +369,7 @@
               "atleta": "Paulo Cesar Pezzolano Suarez",
               "clube": "Internacional",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             },
             {
               "minuto": 45,
@@ -377,7 +377,7 @@
               "atleta": "Marcio Antonio de Sousa Junior",
               "clube": "Chapecoense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             },
             {
               "minuto": 3,
@@ -385,7 +385,7 @@
               "atleta": "Eduardo Vinicius Domachowski",
               "clube": "Chapecoense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 18,
@@ -393,7 +393,7 @@
               "atleta": "Camilo Reijers de Oliveira",
               "clube": "Chapecoense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 28,
@@ -401,7 +401,7 @@
               "atleta": "João Victor Alves de Morais Francisco",
               "clube": "Internacional",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 29,
@@ -409,7 +409,7 @@
               "atleta": "Bolasie Yala",
               "clube": "Chapecoense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 32,
@@ -417,7 +417,7 @@
               "atleta": "Bruno Gomes da Silva Clevelario",
               "clube": "Internacional",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 45,
@@ -425,7 +425,7 @@
               "atleta": "Fernando Augusto Pereira Bueno Junior",
               "clube": "Chapecoense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 45,
@@ -433,7 +433,7 @@
               "atleta": "Joao Paulo Silveira dos Santos",
               "clube": "Chapecoense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 45,
@@ -441,7 +441,7 @@
               "atleta": "Rodrigo Roman Villagra",
               "clube": "Internacional",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             }
           ]
         },
@@ -459,7 +459,7 @@
           "resultado": "Vitoria Visitante",
           "vencedor": "Vasco da Gama Saf",
           "estadio": "Arena do Grêmio",
-          "arbitro": "",
+          "arbitro": "Raphael Claus",
           "gols": [
             {
               "minuto": 39,
@@ -493,7 +493,7 @@
               "atleta": "Pedro Gabriel Crisostomo Pinheiro",
               "clube": "Grêmio",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 25,
@@ -501,7 +501,7 @@
               "atleta": "Danilo das Neves Pinheiro",
               "clube": "Vasco da Gama Saf",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 31,
@@ -509,7 +509,7 @@
               "atleta": "Wallace Gomes da Silva dos Santos",
               "clube": "Grêmio",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 45,
@@ -517,7 +517,7 @@
               "atleta": "Luis Eduardo Soares da Silva",
               "clube": "Vasco da Gama Saf",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 6,
@@ -525,7 +525,7 @@
               "atleta": "Robert Renan Alves Barbosa",
               "clube": "Vasco da Gama Saf",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 12,
@@ -533,7 +533,7 @@
               "atleta": "Diego Caito Barcellos Oliveira dos Santos",
               "clube": "Grêmio",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             }
           ]
         },
@@ -551,7 +551,7 @@
           "resultado": "Vitoria Mandante",
           "vencedor": "Atlético Mineiro",
           "estadio": "ARENA MRV",
-          "arbitro": "",
+          "arbitro": "Matheus Delgado Candançan",
           "gols": [
             {
               "minuto": 15,
@@ -593,7 +593,7 @@
               "atleta": "Alan Steven Franco Palma",
               "clube": "Atlético Mineiro",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 6,
@@ -601,7 +601,7 @@
               "atleta": "Otavio Henrique Passos Santos",
               "clube": "Fluminense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 22,
@@ -609,7 +609,7 @@
               "atleta": "Rodrigo Castillo",
               "clube": "Fluminense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             }
           ]
         },
@@ -627,7 +627,7 @@
           "resultado": "Vitoria Mandante",
           "vencedor": "Palmeiras",
           "estadio": "Nubank Parque",
-          "arbitro": "",
+          "arbitro": "Rafael Rodrigo Klein",
           "gols": [
             {
               "minuto": 45,
@@ -653,15 +653,15 @@
               "atleta": "Pablo Gonçalves Maia Fortunato",
               "clube": "São Paulo",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 39,
               "periodo": "1T",
-              "atleta": "Luis Osorio Messias de Oliveira - São Paulo/SP",
-              "clube": "Cartão Vermelho Direto",
+              "atleta": "Luis Osorio Messias de Oliveira",
+              "clube": "São Paulo",
               "cartao": "Vermelho",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 45,
@@ -669,7 +669,7 @@
               "atleta": "Gustavo Raul Gomez Portillo",
               "clube": "Palmeiras",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 45,
@@ -677,7 +677,7 @@
               "atleta": "Agustin Giay",
               "clube": "Palmeiras",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 30,
@@ -685,7 +685,7 @@
               "atleta": "Murilo Cerqueira Paim",
               "clube": "Palmeiras",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 40,
@@ -693,7 +693,7 @@
               "atleta": "Larson Torna Ferreira dos Santos",
               "clube": "Palmeiras",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             }
           ]
         },
@@ -711,7 +711,7 @@
           "resultado": "Vitoria Mandante",
           "vencedor": "Santos FC",
           "estadio": "Urbano Caldeira",
-          "arbitro": "",
+          "arbitro": "Bruno Arleu de Araujo",
           "gols": [
             {
               "minuto": 28,
@@ -745,7 +745,7 @@
               "atleta": "Kaio Jorge Pinto Ramos",
               "clube": "Cruzeiro",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 19,
@@ -753,7 +753,7 @@
               "atleta": "Everton Sousa Soares",
               "clube": "Santos FC",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 33,
@@ -761,7 +761,7 @@
               "atleta": "Ronielson da Silva Barbosa",
               "clube": "Santos FC",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 37,
@@ -769,7 +769,7 @@
               "atleta": "Gabriel Nascimento Resende Brazao",
               "clube": "Santos FC",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "cera_retardar"
             },
             {
               "minuto": 90,
@@ -777,7 +777,7 @@
               "atleta": "Fabricio Bruno Soares de Faria",
               "clube": "Cruzeiro",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             }
           ]
         },
@@ -795,7 +795,7 @@
           "resultado": "Empate",
           "vencedor": "-",
           "estadio": "Nilton Santos",
-          "arbitro": "",
+          "arbitro": "Fernando Antonio Mendes de Salles Nascimento Filho",
           "gols": [
             {
               "minuto": 29,
@@ -818,10 +818,10 @@
             {
               "minuto": 43,
               "periodo": "1T",
-              "atleta": "Wallace Yan de Souza Barreto - Red Bull Bragantino/SP",
-              "clube": "Cartão Vermelho Direto",
+              "atleta": "Wallace Yan de Souza Barreto",
+              "clube": "Red Bull Bragantino",
               "cartao": "Vermelho",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 19,
@@ -829,7 +829,7 @@
               "atleta": "Lucas Gabriel Nunes Monzon",
               "clube": "Botafogo",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 23,
@@ -837,7 +837,7 @@
               "atleta": "Jose Kadir Barria Rose",
               "clube": "Botafogo",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 24,
@@ -845,7 +845,7 @@
               "atleta": "Nahuel Adolfo Ferraresi Hernandez",
               "clube": "Botafogo",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 27,
@@ -853,7 +853,7 @@
               "atleta": "Tiago Luis Volpi",
               "clube": "Red Bull Bragantino",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             },
             {
               "minuto": 31,
@@ -861,7 +861,7 @@
               "atleta": "Luis Antonio da Rocha Junior",
               "clube": "Red Bull Bragantino",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             }
           ]
         },
@@ -879,7 +879,7 @@
           "resultado": "Empate",
           "vencedor": "-",
           "estadio": "Major Antônio Couto Pereira",
-          "arbitro": "",
+          "arbitro": "Wagner do Nascimento Magalhaes",
           "gols": [
             {
               "minuto": 13,
@@ -937,7 +937,7 @@
               "atleta": "Joaquin Lavega Colzada",
               "clube": "Coritiba SAF",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 33,
@@ -945,7 +945,7 @@
               "atleta": "Kevin Estiben Viveros Rodallega",
               "clube": "Athletico Paranaense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             },
             {
               "minuto": 41,
@@ -953,15 +953,15 @@
               "atleta": "João Victor Machado Cruz",
               "clube": "Athletico Paranaense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 45,
               "periodo": "1T",
-              "atleta": "Breno Henrique Vasconcelos Lopes - Coritiba SAF/PR",
-              "clube": "Cartão Vermelho Direto",
+              "atleta": "Breno Henrique Vasconcelos Lopes",
+              "clube": "Coritiba SAF",
               "cartao": "Vermelho",
-              "motivo": null
+              "motivo": "mao_intencional"
             },
             {
               "minuto": 45,
@@ -969,7 +969,7 @@
               "atleta": "Joao Vitor Silva Dantas de Oliveira",
               "clube": "Athletico Paranaense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "cera_retardar"
             },
             {
               "minuto": 45,
@@ -977,7 +977,7 @@
               "atleta": "Joao Pedro Chermont Crema",
               "clube": "Coritiba SAF",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 45,
@@ -985,7 +985,7 @@
               "atleta": "Pedro Rocha Neves",
               "clube": "Coritiba SAF",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 90,
@@ -993,7 +993,7 @@
               "atleta": "Luiz Gustavo Dias",
               "clube": "Athletico Paranaense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             }
           ]
         },
@@ -1011,7 +1011,7 @@
           "resultado": "Vitoria Mandante",
           "vencedor": "Vitória",
           "estadio": "Manoel Barradas",
-          "arbitro": "",
+          "arbitro": "Savio Pereira Sampaio",
           "gols": [
             {
               "minuto": 18,
@@ -1029,7 +1029,7 @@
               "atleta": "Pedro Gabriel Crisostomo Pinheiro",
               "clube": "Grêmio",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 37,
@@ -1037,7 +1037,7 @@
               "atleta": "Cristian David Pavon",
               "clube": "Grêmio",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             },
             {
               "minuto": 3,
@@ -1045,7 +1045,7 @@
               "atleta": "Erick de Arruda Serafim",
               "clube": "Vitória",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 3,
@@ -1053,7 +1053,7 @@
               "atleta": "Caio Fernando de Oliveira",
               "clube": "Grêmio",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 9,
@@ -1061,7 +1061,7 @@
               "atleta": "Caique de Jesus Goncalves",
               "clube": "Vitória",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 14,
@@ -1069,7 +1069,7 @@
               "atleta": "Erick Carlos Noriega Loret de Mola",
               "clube": "Grêmio",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 33,
@@ -1077,7 +1077,7 @@
               "atleta": "Gustavo Martins de Souza Santos",
               "clube": "Grêmio",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             }
           ]
         },
@@ -1095,7 +1095,7 @@
           "resultado": "Vitoria Visitante",
           "vencedor": "Flamengo",
           "estadio": "Olímpico do Pará",
-          "arbitro": "",
+          "arbitro": "Lucas Casagrande",
           "gols": [
             {
               "minuto": 19,
@@ -1113,7 +1113,7 @@
               "atleta": "Antonio Javier Galeano Ferreira",
               "clube": "Remo",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             },
             {
               "minuto": 40,
@@ -1121,7 +1121,7 @@
               "atleta": "Giorgian Daniel de Arrascaeta Benedetti",
               "clube": "Flamengo",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 2,
@@ -1129,7 +1129,7 @@
               "atleta": "Jorge Andres Carrascal Guardo",
               "clube": "Flamengo",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             },
             {
               "minuto": 30,
@@ -1137,7 +1137,7 @@
               "atleta": "Marcelo Rodrigues Souza",
               "clube": "Remo",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             }
           ]
         },
@@ -1155,7 +1155,7 @@
           "resultado": "Vitoria Visitante",
           "vencedor": "Mirassol",
           "estadio": "Major Antônio Couto Pereira",
-          "arbitro": "",
+          "arbitro": "Andre Luiz Skettino Policarpo Bento",
           "gols": [
             {
               "minuto": 15,
@@ -1189,7 +1189,7 @@
               "atleta": "Daniel Fortunato Borges",
               "clube": "Mirassol",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             },
             {
               "minuto": 26,
@@ -1197,7 +1197,7 @@
               "atleta": "Denilson Alves Borges",
               "clube": "Mirassol",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 33,
@@ -1205,7 +1205,7 @@
               "atleta": "João Victor Carroll Santana",
               "clube": "Mirassol",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 33,
@@ -1213,7 +1213,7 @@
               "atleta": "Thiago dos Santos",
               "clube": "Coritiba SAF",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 17,
@@ -1221,7 +1221,7 @@
               "atleta": "Joao Pedro Chermont Crema",
               "clube": "Coritiba SAF",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 45,
@@ -1229,7 +1229,7 @@
               "atleta": "Shaylon Kallyson Cardozo",
               "clube": "Mirassol",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "cera_retardar"
             }
           ]
         },
@@ -1247,7 +1247,7 @@
           "resultado": "Vitoria Visitante",
           "vencedor": "Santos FC",
           "estadio": "José Pinheiro Borda",
-          "arbitro": "",
+          "arbitro": "Alex Gomes Stefano",
           "gols": [
             {
               "minuto": 7,
@@ -1297,15 +1297,15 @@
               "atleta": "Benjamin Rollheiser",
               "clube": "Santos FC",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 27,
               "periodo": "1T",
-              "atleta": "Matheus Bahia Santos - Internacional/RS",
-              "clube": "Cartão Vermelho Direto",
+              "atleta": "Matheus Bahia Santos",
+              "clube": "Internacional",
               "cartao": "Vermelho",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 13,
@@ -1313,7 +1313,7 @@
               "atleta": "Gabriel Barbosa Almeida",
               "clube": "Santos FC",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "cera_retardar"
             },
             {
               "minuto": 19,
@@ -1321,7 +1321,7 @@
               "atleta": "Ronaldo da Silva Souza Guerrero",
               "clube": "Internacional",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 24,
@@ -1329,7 +1329,7 @@
               "atleta": "Gustavo Henrique Pereira",
               "clube": "Santos FC",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 24,
@@ -1337,7 +1337,7 @@
               "atleta": "Gonzalo Daniel Escobar",
               "clube": "Santos FC",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 24,
@@ -1345,7 +1345,7 @@
               "atleta": "Vitor Hugo Naum dos Santos",
               "clube": "Internacional",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 24,
@@ -1353,7 +1353,7 @@
               "atleta": "Paulo Lucas Santos de Paula",
               "clube": "Internacional",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 32,
@@ -1361,7 +1361,7 @@
               "atleta": "Braian Nahuel Aguirre",
               "clube": "Internacional",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             }
           ]
         },
@@ -1379,7 +1379,7 @@
           "resultado": "Vitoria Mandante",
           "vencedor": "Cruzeiro",
           "estadio": "Magalhães Pinto",
-          "arbitro": "",
+          "arbitro": "Daiane Muniz",
           "gols": [
             {
               "minuto": 29,
@@ -1421,7 +1421,7 @@
               "atleta": "GABRIEL HERNAN ROJAS",
               "clube": "Cruzeiro",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 16,
@@ -1429,7 +1429,7 @@
               "atleta": "Juan Felipe Aguirre Tabares",
               "clube": "Athletico Paranaense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 18,
@@ -1437,7 +1437,7 @@
               "atleta": "Fabricio Bruno Soares de Faria",
               "clube": "Cruzeiro",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 35,
@@ -1445,7 +1445,7 @@
               "atleta": "Mycael Pontes Moreira",
               "clube": "Athletico Paranaense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             }
           ]
         },
@@ -1463,7 +1463,7 @@
           "resultado": "Vitoria Visitante",
           "vencedor": "Chapecoense",
           "estadio": "Arena Corinthians",
-          "arbitro": "",
+          "arbitro": "Wagner do Nascimento Magalhaes",
           "gols": [
             {
               "minuto": 2,
@@ -1497,7 +1497,7 @@
               "atleta": "Yago Felipe da Costa Rocha",
               "clube": "Chapecoense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 45,
@@ -1505,7 +1505,7 @@
               "atleta": "Tulio Eduardo Silva de Oliveira",
               "clube": "Chapecoense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 12,
@@ -1513,7 +1513,7 @@
               "atleta": "Giovanni Augusto Oliveira Cardoso",
               "clube": "Chapecoense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 27,
@@ -1521,7 +1521,7 @@
               "atleta": "Kauan Faria Gomes",
               "clube": "Chapecoense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "cera_retardar"
             }
           ]
         },
@@ -1539,7 +1539,7 @@
           "resultado": "Empate",
           "vencedor": "-",
           "estadio": "Nilton Santos",
-          "arbitro": "",
+          "arbitro": "Rodrigo Jose Pereira de Lima",
           "gols": [],
           "cartoes": [
             {
@@ -1548,7 +1548,7 @@
               "atleta": "Alexander Nahuel Barboza Ullua",
               "clube": "Palmeiras",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 20,
@@ -1556,7 +1556,7 @@
               "atleta": "Arthur Mendonça Cabral",
               "clube": "Botafogo",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 25,
@@ -1564,7 +1564,7 @@
               "atleta": "Fernando Marcal de Oliveira",
               "clube": "Botafogo",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 31,
@@ -1572,7 +1572,7 @@
               "atleta": "Alvaro Montoro",
               "clube": "Botafogo",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 32,
@@ -1580,15 +1580,15 @@
               "atleta": "Marlon Rodrigues Freitas",
               "clube": "Palmeiras",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 90,
               "periodo": "2T",
-              "atleta": "Alexander Nahuel Barboza Ullua - Palmeiras/SP",
-              "clube": "2º Cartão Amarelo",
+              "atleta": "Alexander Nahuel Barboza Ullua",
+              "clube": "Palmeiras",
               "cartao": "Vermelho",
-              "motivo": null
+              "motivo": "falta_temeraria"
             }
           ]
         },
@@ -1606,7 +1606,7 @@
           "resultado": "Vitoria Visitante",
           "vencedor": "Bahia",
           "estadio": "Arbitragem",
-          "arbitro": "",
+          "arbitro": "Maguielson Lima Barbosa",
           "gols": [
             {
               "minuto": 14,
@@ -1656,7 +1656,7 @@
               "atleta": "Fernando dos Santos Pedro",
               "clube": "Red Bull Bragantino",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             },
             {
               "minuto": 5,
@@ -1664,7 +1664,7 @@
               "atleta": "Erick Luis Conrado Carvalho",
               "clube": "Bahia",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 16,
@@ -1672,7 +1672,7 @@
               "atleta": "Luciano Batista da Silva Junior",
               "clube": "Bahia",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 44,
@@ -1680,7 +1680,7 @@
               "atleta": "Charles Alexandre Patrice Francis Hembert",
               "clube": "Bahia",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             }
           ]
         },
@@ -1698,7 +1698,7 @@
           "resultado": "Vitoria Mandante",
           "vencedor": "São Paulo",
           "estadio": "Cícero Pompeu de Toledo",
-          "arbitro": "",
+          "arbitro": "Braulio da Silva Machado",
           "gols": [
             {
               "minuto": 21,
@@ -1724,7 +1724,7 @@
               "atleta": "Djhordney Ferreira",
               "clube": "São Paulo",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "conduta_antidesportiva"
             },
             {
               "minuto": 90,
@@ -1732,7 +1732,7 @@
               "atleta": "Tomas Esteban Cuello",
               "clube": "Atlético Mineiro",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             }
           ]
         },
@@ -1750,7 +1750,7 @@
           "resultado": "Vitoria Mandante",
           "vencedor": "Fluminense",
           "estadio": "Jornalista Mário Filho",
-          "arbitro": "",
+          "arbitro": "Davi De Oliveira Lacerda",
           "gols": [
             {
               "minuto": 15,
@@ -1768,7 +1768,7 @@
               "atleta": "Carlos Andres Gomez Hinestroza",
               "clube": "Vasco da Gama Saf",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 21,
@@ -1776,7 +1776,7 @@
               "atleta": "Juan Pablo Freytes",
               "clube": "Fluminense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 21,
@@ -1784,7 +1784,7 @@
               "atleta": "Daniel Cerantola Fuzato",
               "clube": "Vasco da Gama Saf",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 41,
@@ -1792,15 +1792,15 @@
               "atleta": "Paulo Henrique de Oliveira Alves",
               "clube": "Vasco da Gama Saf",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "mao_intencional"
             },
             {
               "minuto": 41,
               "periodo": "1T",
-              "atleta": "Igor Cotrim Menezes - Fluminense/RJ",
-              "clube": "Cartão Vermelho Direto",
+              "atleta": "Igor Cotrim Menezes",
+              "clube": "Fluminense",
               "cartao": "Vermelho",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 45,
@@ -1808,7 +1808,7 @@
               "atleta": "Ignacio da Silva Oliveira",
               "clube": "Fluminense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "cera_retardar"
             },
             {
               "minuto": 45,
@@ -1816,7 +1816,7 @@
               "atleta": "Givanildo Vieira de Sousa",
               "clube": "Fluminense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             },
             {
               "minuto": 8,
@@ -1824,7 +1824,7 @@
               "atleta": "FACUNDO COLIDIO",
               "clube": "Vasco da Gama Saf",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             }
           ]
         },
@@ -1842,7 +1842,7 @@
           "resultado": "Vitoria Mandante",
           "vencedor": "Flamengo",
           "estadio": "Jornalista Mário Filho",
-          "arbitro": "",
+          "arbitro": "Anderson Daronco",
           "gols": [
             {
               "minuto": 14,
@@ -1868,7 +1868,7 @@
               "atleta": "Rafael Silva Guanaes",
               "clube": "Mirassol",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             },
             {
               "minuto": 20,
@@ -1876,7 +1876,7 @@
               "atleta": "João Victor Carroll Santana",
               "clube": "Mirassol",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 36,
@@ -1884,7 +1884,7 @@
               "atleta": "Denilson Alves Borges",
               "clube": "Mirassol",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             }
           ]
         },
@@ -1902,7 +1902,7 @@
           "resultado": "Vitoria Visitante",
           "vencedor": "Coritiba SAF",
           "estadio": "Olímpico do Pará",
-          "arbitro": "",
+          "arbitro": "Daiane Muniz",
           "gols": [
             {
               "minuto": 2,
@@ -1952,7 +1952,7 @@
               "atleta": "Tiago Coser",
               "clube": "Coritiba SAF",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 20,
@@ -1960,7 +1960,7 @@
               "atleta": "Gabriel Pereira Taliari",
               "clube": "Remo",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 32,
@@ -1968,7 +1968,7 @@
               "atleta": "José Welison da Silva",
               "clube": "Remo",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             },
             {
               "minuto": 90,
@@ -1976,7 +1976,7 @@
               "atleta": "Marllon Goncalves Jeronimo Borges",
               "clube": "Remo",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             }
           ]
         },
@@ -1994,7 +1994,7 @@
           "resultado": "Vitoria Mandante",
           "vencedor": "Bahia",
           "estadio": "Octávio Mangabeira",
-          "arbitro": "",
+          "arbitro": "Paulo Cesar Zanovelli da Silva",
           "gols": [
             {
               "minuto": 15,
@@ -2044,7 +2044,7 @@
               "atleta": "Paulo Cesar Pezzolano Suarez",
               "clube": "Internacional",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             },
             {
               "minuto": 39,
@@ -2052,7 +2052,7 @@
               "atleta": "Alexandro Ezequiel Bernabei",
               "clube": "Internacional",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 39,
@@ -2060,7 +2060,7 @@
               "atleta": "Cristian Gonzalo Olivera Ibarra",
               "clube": "Bahia",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 8,
@@ -2068,7 +2068,7 @@
               "atleta": "Guillermo Alfonso Maripan Loayza",
               "clube": "Internacional",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             },
             {
               "minuto": 20,
@@ -2076,7 +2076,7 @@
               "atleta": "Roman Agustin Gomez",
               "clube": "Bahia",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 26,
@@ -2084,7 +2084,7 @@
               "atleta": "Michel Daryl Araujo Villar",
               "clube": "Bahia",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 90,
@@ -2092,7 +2092,7 @@
               "atleta": "David de Duarte Macedo",
               "clube": "Bahia",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             }
           ]
         },
@@ -2110,7 +2110,7 @@
           "resultado": "Empate",
           "vencedor": "-",
           "estadio": "Arbitragem",
-          "arbitro": "",
+          "arbitro": "Felipe Fernandes de Lima",
           "gols": [
             {
               "minuto": 34,
@@ -2168,7 +2168,7 @@
               "atleta": "Gaston Americo Benavidez",
               "clube": "Athletico Paranaense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "conduta_antidesportiva"
             },
             {
               "minuto": 45,
@@ -2176,7 +2176,7 @@
               "atleta": "Paulo Henrique Chagas de Lima",
               "clube": "Fluminense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 29,
@@ -2184,7 +2184,7 @@
               "atleta": "Gustavo Nonato Santana",
               "clube": "Fluminense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 34,
@@ -2192,7 +2192,7 @@
               "atleta": "Kevin Estiben Viveros Rodallega",
               "clube": "Athletico Paranaense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 90,
@@ -2200,7 +2200,7 @@
               "atleta": "Ricardo Frederico Rodrigues Antunes",
               "clube": "Fluminense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             }
           ]
         },
@@ -2218,7 +2218,7 @@
           "resultado": "Vitoria Mandante",
           "vencedor": "Grêmio",
           "estadio": "Arena do Grêmio",
-          "arbitro": "",
+          "arbitro": "Rodrigo Jose Pereira de Lima",
           "gols": [
             {
               "minuto": 15,
@@ -2260,7 +2260,7 @@
               "atleta": "Marlon Rodrigues Xavier",
               "clube": "Grêmio",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 43,
@@ -2268,7 +2268,7 @@
               "atleta": "Walter Kannemann",
               "clube": "Grêmio",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             },
             {
               "minuto": 9,
@@ -2276,7 +2276,7 @@
               "atleta": "Eduardo Vinicius Domachowski",
               "clube": "Chapecoense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 25,
@@ -2284,7 +2284,7 @@
               "atleta": "Bruno de Jesus Pacheco",
               "clube": "Chapecoense",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 90,
@@ -2292,7 +2292,7 @@
               "atleta": "Mateus Cardoso Lemos Martins",
               "clube": "Grêmio",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             }
           ]
         },
@@ -2310,7 +2310,7 @@
           "resultado": "Empate",
           "vencedor": "-",
           "estadio": "José Maria de Campos Maia",
-          "arbitro": "",
+          "arbitro": "Joao Vitor Gobi",
           "gols": [
             {
               "minuto": 5,
@@ -2336,7 +2336,7 @@
               "atleta": "Abel Fernando Moreira Ferreira",
               "clube": "Palmeiras",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             },
             {
               "minuto": 39,
@@ -2344,7 +2344,7 @@
               "atleta": "Denilson Alves Borges",
               "clube": "Mirassol",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 90,
@@ -2352,7 +2352,7 @@
               "atleta": "Antonio Francisco Moura Neto",
               "clube": "Mirassol",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             },
             {
               "minuto": 90,
@@ -2360,15 +2360,15 @@
               "atleta": "Arthur Gabriel Santana Marcolino",
               "clube": "Palmeiras",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 90,
               "periodo": "2T",
-              "atleta": "Arthur Gabriel Santana Marcolino - Palmeiras/SP",
-              "clube": "2º Cartão Amarelo",
+              "atleta": "Arthur Gabriel Santana Marcolino",
+              "clube": "Palmeiras",
               "cartao": "Vermelho",
-              "motivo": null
+              "motivo": "falta_temeraria"
             }
           ]
         },
@@ -2386,7 +2386,7 @@
           "resultado": "Vitoria Visitante",
           "vencedor": "Santos FC",
           "estadio": "Arena Corinthians",
-          "arbitro": "",
+          "arbitro": "Wilton Pereira Sampaio",
           "gols": [
             {
               "minuto": 32,
@@ -2404,7 +2404,7 @@
               "atleta": "Alvaro Martin Barreal",
               "clube": "Santos FC",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 18,
@@ -2412,7 +2412,7 @@
               "atleta": "Willian Souza Arao da Silva",
               "clube": "Santos FC",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 31,
@@ -2420,7 +2420,7 @@
               "atleta": "Gabriel Armando de Abreu",
               "clube": "Corinthians",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 45,
@@ -2428,7 +2428,7 @@
               "atleta": "Rodrigo Garro",
               "clube": "Corinthians",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             },
             {
               "minuto": 45,
@@ -2436,7 +2436,7 @@
               "atleta": "Lucas Verissimo da Silva",
               "clube": "Santos FC",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 45,
@@ -2444,7 +2444,7 @@
               "atleta": "Raniele Almeida Melo",
               "clube": "Corinthians",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             }
           ]
         },
@@ -2462,7 +2462,7 @@
           "resultado": "Vitoria Mandante",
           "vencedor": "Flamengo",
           "estadio": "Jornalista Mário Filho",
-          "arbitro": "",
+          "arbitro": "Alex Gomes Stefano",
           "gols": [
             {
               "minuto": 12,
@@ -2496,7 +2496,7 @@
               "atleta": "Fernando Marcal de Oliveira",
               "clube": "Botafogo",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 44,
@@ -2504,7 +2504,7 @@
               "atleta": "Gabriel Pereira Justino",
               "clube": "Botafogo",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             }
           ]
         },
@@ -2522,7 +2522,7 @@
           "resultado": "Vitoria Mandante",
           "vencedor": "Atlético Mineiro",
           "estadio": "ARENA MRV",
-          "arbitro": "",
+          "arbitro": "Edina Alves Batista",
           "gols": [
             {
               "minuto": 25,
@@ -2556,7 +2556,7 @@
               "atleta": "Diego Tarzia",
               "clube": "Vitória",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             },
             {
               "minuto": 43,
@@ -2564,7 +2564,7 @@
               "atleta": "Angelo Smit Preciado Quiñonez",
               "clube": "Atlético Mineiro",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 14,
@@ -2572,7 +2572,7 @@
               "atleta": "Mamady Cissé",
               "clube": "Atlético Mineiro",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "outro"
             }
           ]
         },
@@ -2590,7 +2590,7 @@
           "resultado": "Vitoria Mandante",
           "vencedor": "São Paulo",
           "estadio": "Cícero Pompeu de Toledo",
-          "arbitro": "",
+          "arbitro": "Anderson Daronco",
           "gols": [
             {
               "minuto": 13,
@@ -2624,7 +2624,7 @@
               "atleta": "Isidro Miguel Pitta Saldivar",
               "clube": "Red Bull Bragantino",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "reclamacao"
             },
             {
               "minuto": 44,
@@ -2632,7 +2632,7 @@
               "atleta": "Ariel Agustín Sant'anna Quintero",
               "clube": "Red Bull Bragantino",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 38,
@@ -2640,7 +2640,7 @@
               "atleta": "Daniel de Oliveira Sertanejo",
               "clube": "São Paulo",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "cera_retardar"
             },
             {
               "minuto": 38,
@@ -2648,7 +2648,7 @@
               "atleta": "Andre Oliveira Silva",
               "clube": "São Paulo",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "cera_retardar"
             },
             {
               "minuto": 40,
@@ -2656,7 +2656,7 @@
               "atleta": "Henry David Mosquera Sanchez",
               "clube": "Red Bull Bragantino",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 90,
@@ -2664,7 +2664,7 @@
               "atleta": "Luis Antonio da Rocha Junior",
               "clube": "Red Bull Bragantino",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "falta_temeraria"
             },
             {
               "minuto": 90,
@@ -2672,7 +2672,7 @@
               "atleta": "Jonathan Calleri",
               "clube": "São Paulo",
               "cartao": "Amarelo",
-              "motivo": null
+              "motivo": "conduta_antidesportiva"
             }
           ]
         }
@@ -2694,7 +2694,7 @@
           "gols_mandante": 2,
           "gols_visitante": 1,
           "resultado": "Vitoria Mandante",
-          "vencedor": null,
+          "vencedor": "CRB",
           "estadio": "R",
           "arbitro": "Davi De Oliveira Lacerda",
           "gols": [
@@ -2786,7 +2786,7 @@
           "gols_mandante": 3,
           "gols_visitante": 3,
           "resultado": "Empate",
-          "vencedor": null,
+          "vencedor": "-",
           "estadio": "Eládio de Barros Carvalho",
           "arbitro": "Matheus De Moraes Silva",
           "gols": [
@@ -2891,8 +2891,8 @@
             {
               "minuto": 90,
               "periodo": "2T",
-              "atleta": "Helio Cezar Pinto dos Anjos - Náutico/PE",
-              "clube": "Cartão Vermelho Direto",
+              "atleta": "Helio Cezar Pinto dos Anjos",
+              "clube": "Náutico",
               "cartao": "Vermelho",
               "motivo": "reclamacao"
             }
@@ -2910,7 +2910,7 @@
           "gols_mandante": 6,
           "gols_visitante": 0,
           "resultado": "Vitoria Mandante",
-          "vencedor": null,
+          "vencedor": "Londrina SAF",
           "estadio": "Vitorino Gonçalves Dias",
           "arbitro": "Deborah Cecilia Cruz Correia",
           "gols": [
@@ -3002,7 +3002,7 @@
           "gols_mandante": 1,
           "gols_visitante": 1,
           "resultado": "Empate",
-          "vencedor": null,
+          "vencedor": "-",
           "estadio": "Aderbal Ramos da Silva",
           "arbitro": "Daiane Muniz",
           "gols": [
@@ -3054,7 +3054,7 @@
           "gols_mandante": 0,
           "gols_visitante": 2,
           "resultado": "Vitoria Visitante",
-          "vencedor": null,
+          "vencedor": "São Bernardo SAF",
           "estadio": "Raimundo Sampaio",
           "arbitro": "Jonathan Benkenstein Pinheiro",
           "gols": [
@@ -3130,7 +3130,7 @@
           "gols_mandante": 1,
           "gols_visitante": 3,
           "resultado": "Vitoria Visitante",
-          "vencedor": null,
+          "vencedor": "Goiás",
           "estadio": "Santa Cruz",
           "arbitro": "Alex Gomes Stefano",
           "gols": [
@@ -3238,7 +3238,7 @@
           "gols_mandante": 0,
           "gols_visitante": 2,
           "resultado": "Vitoria Visitante",
-          "vencedor": null,
+          "vencedor": "Athletic SAF",
           "estadio": "Alfredo Jaconi",
           "arbitro": "Savio Pereira Sampaio",
           "gols": [
@@ -3330,7 +3330,7 @@
           "gols_mandante": 4,
           "gols_visitante": 0,
           "resultado": "Vitoria Mandante",
-          "vencedor": null,
+          "vencedor": "Atlético Goianiense Saf",
           "estadio": "Antônio Accioly",
           "arbitro": "Edina Alves Batista",
           "gols": [
@@ -3430,7 +3430,7 @@
           "gols_mandante": 1,
           "gols_visitante": 1,
           "resultado": "Empate",
-          "vencedor": null,
+          "vencedor": "-",
           "estadio": "Governador Plácido Aderaldo Castelo",
           "arbitro": "Marcelo de Lima Henrique",
           "gols": [
@@ -3498,7 +3498,7 @@
           "gols_mandante": 1,
           "gols_visitante": 1,
           "resultado": "Empate",
-          "vencedor": null,
+          "vencedor": "-",
           "estadio": "Dr. Jorge Ismael de Biasi",
           "arbitro": "Braulio da Silva Machado",
           "gols": [
@@ -3558,7 +3558,7 @@
           "gols_mandante": 2,
           "gols_visitante": 0,
           "resultado": "Vitoria Mandante",
-          "vencedor": null,
+          "vencedor": "Vila Nova",
           "estadio": "Onésio Brasileiro Alvarenga",
           "arbitro": "Anderson Daronco",
           "gols": [
@@ -3650,7 +3650,7 @@
           "gols_mandante": 2,
           "gols_visitante": 0,
           "resultado": "Vitoria Mandante",
-          "vencedor": null,
+          "vencedor": "Sport Recife",
           "estadio": "Adelmar da Costa Carvalho",
           "arbitro": "Raimundo Rodrigues De Oliveira Junior",
           "gols": [
@@ -3718,7 +3718,7 @@
           "gols_mandante": 1,
           "gols_visitante": 2,
           "resultado": "Vitoria Visitante",
-          "vencedor": null,
+          "vencedor": "Londrina SAF",
           "estadio": "1º de Maio",
           "arbitro": "Leonardo Willers Lorenzatto",
           "gols": [
@@ -3786,7 +3786,7 @@
           "gols_mandante": 2,
           "gols_visitante": 1,
           "resultado": "Vitoria Mandante",
-          "vencedor": null,
+          "vencedor": "Atlético Goianiense Saf",
           "estadio": "Antônio Accioly",
           "arbitro": "Gustavo Ervino Bauermann",
           "gols": [
@@ -3835,8 +3835,8 @@
             {
               "minuto": 6,
               "periodo": "2T",
-              "atleta": "Jose Domingos de Moraes Neto - Atlético Goianiense Saf/GO",
-              "clube": "Cartão Vermelho Direto",
+              "atleta": "Jose Domingos de Moraes Neto",
+              "clube": "Atlético Goianiense Saf",
               "cartao": "Vermelho",
               "motivo": "outro"
             },
@@ -3878,7 +3878,7 @@
           "gols_mandante": 1,
           "gols_visitante": 0,
           "resultado": "Vitoria Mandante",
-          "vencedor": null,
+          "vencedor": "Fortaleza SAF",
           "estadio": "Governador Plácido Aderaldo Castelo",
           "arbitro": "Yuri Elino Ferreira da Cruz",
           "gols": [
@@ -3922,7 +3922,7 @@
           "gols_mandante": 3,
           "gols_visitante": 0,
           "resultado": "Vitoria Mandante",
-          "vencedor": null,
+          "vencedor": "Operário",
           "estadio": "R",
           "arbitro": "Arthur Gomes Rabelo",
           "gols": [
@@ -3955,8 +3955,8 @@
             {
               "minuto": 10,
               "periodo": "1T",
-              "atleta": "Lucas Lovat - CRB/AL",
-              "clube": "Cartão Vermelho Direto",
+              "atleta": "Lucas Lovat",
+              "clube": "CRB",
               "cartao": "Vermelho",
               "motivo": "reclamacao"
             },
@@ -4006,7 +4006,7 @@
           "gols_mandante": 2,
           "gols_visitante": 1,
           "resultado": "Vitoria Mandante",
-          "vencedor": null,
+          "vencedor": "América",
           "estadio": "Raimundo Sampaio",
           "arbitro": "Kleber Ariel Goncalves Silva",
           "gols": [
@@ -4090,7 +4090,7 @@
           "gols_mandante": 1,
           "gols_visitante": 3,
           "resultado": "Vitoria Visitante",
-          "vencedor": null,
+          "vencedor": "Gremio Novorizontino",
           "estadio": "Santa Cruz",
           "arbitro": "Julio Cesar Pfleger",
           "gols": [
@@ -4198,7 +4198,7 @@
           "gols_mandante": 3,
           "gols_visitante": 0,
           "resultado": "Vitoria Mandante",
-          "vencedor": null,
+          "vencedor": "Cuiabá",
           "estadio": "Arena Pantanal",
           "arbitro": "Bruno Pereira Vasconcelos",
           "gols": [
@@ -4250,7 +4250,7 @@
           "gols_mandante": 0,
           "gols_visitante": 2,
           "resultado": "Vitoria Visitante",
-          "vencedor": null,
+          "vencedor": "Juventude",
           "estadio": "Heriberto Hulse",
           "arbitro": "Fernando Antonio Mendes de Salles Nascimento Filho",
           "gols": [
@@ -4358,7 +4358,7 @@
           "gols_mandante": 1,
           "gols_visitante": 2,
           "resultado": "Vitoria Visitante",
-          "vencedor": null,
+          "vencedor": "Operário",
           "estadio": "Vitorino Gonçalves Dias",
           "arbitro": "Bruno Arleu de Araujo",
           "gols": [
@@ -4431,8 +4431,8 @@
             {
               "minuto": 1,
               "periodo": "2T",
-              "atleta": "Guilherme Strass Miatto - Londrina SAF/PR",
-              "clube": "Cartão Vermelho Direto",
+              "atleta": "Guilherme Strass Miatto",
+              "clube": "Londrina SAF",
               "cartao": "Vermelho",
               "motivo": "outro"
             },
@@ -4498,7 +4498,7 @@
           "gols_mandante": 0,
           "gols_visitante": 2,
           "resultado": "Vitoria Visitante",
-          "vencedor": null,
+          "vencedor": "São Bernardo SAF",
           "estadio": "Moisés Lucarelli",
           "arbitro": "Edina Alves Batista",
           "gols": [
@@ -4539,8 +4539,8 @@
             {
               "minuto": 30,
               "periodo": "2T",
-              "atleta": "Sergio Stevan Palacios Zapata - Ponte Preta/SP",
-              "clube": "2º Cartão Amarelo",
+              "atleta": "Sergio Stevan Palacios Zapata",
+              "clube": "Ponte Preta",
               "cartao": "Vermelho",
               "motivo": "outro"
             },
@@ -4574,7 +4574,7 @@
           "gols_mandante": 2,
           "gols_visitante": 2,
           "resultado": "Empate",
-          "vencedor": null,
+          "vencedor": "-",
           "estadio": "Alfredo Jaconi",
           "arbitro": "Ramon Abatti Abel",
           "gols": [
@@ -4690,7 +4690,7 @@
           "gols_mandante": 0,
           "gols_visitante": 1,
           "resultado": "Vitoria Visitante",
-          "vencedor": null,
+          "vencedor": "Fortaleza SAF",
           "estadio": "Hailé Pinheiro",
           "arbitro": "Raphael Claus",
           "gols": [
@@ -4707,8 +4707,8 @@
             {
               "minuto": 12,
               "periodo": "1T",
-              "atleta": "Luiz Felipe do Nascimento dos Santos - Goiás/GO",
-              "clube": "Cartão Vermelho Direto",
+              "atleta": "Luiz Felipe do Nascimento dos Santos",
+              "clube": "Goiás",
               "cartao": "Vermelho",
               "motivo": "outro"
             },
@@ -4782,7 +4782,7 @@
           "gols_mandante": 2,
           "gols_visitante": 1,
           "resultado": "Vitoria Mandante",
-          "vencedor": null,
+          "vencedor": "Ceará",
           "estadio": "Governador Plácido Aderaldo Castelo",
           "arbitro": "Flavio Rodrigues de Souza",
           "gols": [
@@ -4842,7 +4842,7 @@
           "gols_mandante": 3,
           "gols_visitante": 1,
           "resultado": "Vitoria Mandante",
-          "vencedor": null,
+          "vencedor": "Gremio Novorizontino",
           "estadio": "Dr. Jorge Ismael de Biasi",
           "arbitro": "Wilton Pereira Sampaio",
           "gols": [
@@ -4918,7 +4918,7 @@
           "gols_mandante": 3,
           "gols_visitante": 1,
           "resultado": "Vitoria Mandante",
-          "vencedor": null,
+          "vencedor": "CRB",
           "estadio": "R",
           "arbitro": "Marianna Nanni Batalha",
           "gols": [
@@ -5002,7 +5002,7 @@
           "gols_mandante": 2,
           "gols_visitante": 0,
           "resultado": "Vitoria Mandante",
-          "vencedor": null,
+          "vencedor": "Criciúma",
           "estadio": "Heriberto Hulse",
           "arbitro": "Matheus Delgado Candançan",
           "gols": [
@@ -5054,7 +5054,7 @@
           "gols_mandante": 5,
           "gols_visitante": 0,
           "resultado": "Vitoria Mandante",
-          "vencedor": null,
+          "vencedor": "Athletic SAF",
           "estadio": "Arbitragem",
           "arbitro": "Rafael Rodrigo Klein",
           "gols": [
@@ -5135,8 +5135,8 @@
             {
               "minuto": 26,
               "periodo": "2T",
-              "atleta": "Tiago Pagnussat - Vila Nova/GO",
-              "clube": "Cartão Vermelho Direto",
+              "atleta": "Tiago Pagnussat",
+              "clube": "Vila Nova",
               "cartao": "Vermelho",
               "motivo": "outro"
             },
@@ -5170,7 +5170,7 @@
           "gols_mandante": 1,
           "gols_visitante": 0,
           "resultado": "Vitoria Mandante",
-          "vencedor": null,
+          "vencedor": "Náutico",
           "estadio": "Eládio de Barros Carvalho",
           "arbitro": "Thaillan Azevedo Gomes",
           "gols": [

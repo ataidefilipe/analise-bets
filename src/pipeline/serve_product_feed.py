@@ -150,10 +150,14 @@ class ProductFeedServer:
             p_file = s_path / "partidas.parquet"
             g_file = s_path / "gols.parquet"
             c_file = s_path / "cartoes.parquet"
+            e_file = s_path / "escalacoes.parquet"
+            m_file = s_path / "minutos_em_campo.parquet"
 
             df_p = pd.read_parquet(p_file) if p_file.exists() else pd.DataFrame()
             df_g = pd.read_parquet(g_file) if g_file.exists() else pd.DataFrame()
             df_c = pd.read_parquet(c_file) if c_file.exists() else pd.DataFrame()
+            df_e = pd.read_parquet(e_file) if e_file.exists() else pd.DataFrame()
+            df_m = pd.read_parquet(m_file) if m_file.exists() else pd.DataFrame()
 
             if not df_p.empty and "serie" not in df_p.columns:
                 df_p["serie"] = serie_label
@@ -161,11 +165,16 @@ class ProductFeedServer:
                 df_g["serie"] = serie_label
             if not df_c.empty and "serie" not in df_c.columns:
                 df_c["serie"] = serie_label
+            for df_aux in (df_e, df_m):
+                if not df_aux.empty and "serie" not in df_aux.columns:
+                    df_aux["serie"] = serie_label
 
             series_data[serie_label] = {
                 "partidas": df_p,
                 "gols": df_g,
                 "cartoes": df_c,
+                "escalacoes": df_e,
+                "minutos_em_campo": df_m,
             }
 
         # 1. Gerar Classificação JSON
@@ -285,12 +294,56 @@ class ProductFeedServer:
         with open(latest_path, "w", encoding="utf-8") as f:
             json.dump(latest_matches_payload, f, indent=2, ensure_ascii=False)
 
-        # 3. Exportar para SQLite com tabelas e índices otimizados
+        # 3. Feed de elenco e minutos em campo (F2-04)
+        elenco_payload: Dict[str, Any] = {
+            "gerado_em": datetime.now().isoformat(),
+            "descricao": (
+                "Participação e minutos em campo por atleta e temporada, derivados da relação "
+                "de atletas da súmula oficial cruzada com as substituições. Cobertura restrita "
+                "às temporadas com súmula disponível."
+            ),
+            "series": {},
+        }
+        for serie_label, dsets in series_data.items():
+            df_m = dsets.get("minutos_em_campo", pd.DataFrame())
+            if df_m.empty:
+                continue
+            por_temporada: Dict[str, Any] = {}
+            for temporada, g in df_m.groupby("temporada"):
+                elencos: Dict[str, Any] = {}
+                for clube, gc in g.groupby("clube_slug"):
+                    elencos[str(clube)] = [
+                        {
+                            "atleta": row["apelido"],
+                            "atleta_slug": row["atleta_slug"],
+                            "registro_cbf": row.get("registro_cbf"),
+                            "partidas_jogadas": int(row["partidas_jogadas"]),
+                            "partidas_como_titular": int(row["partidas_como_titular"]),
+                            "minutos_em_campo": int(row["minutos_em_campo"]),
+                            "media_minutos_por_jogo": (
+                                None if pd.isna(row["media_minutos_por_jogo"])
+                                else float(row["media_minutos_por_jogo"])
+                            ),
+                        }
+                        for _, row in gc.sort_values("minutos_em_campo", ascending=False).iterrows()
+                    ]
+                por_temporada[str(int(temporada))] = {
+                    "atletas": int(len(g)),
+                    "clubes": elencos,
+                }
+            elenco_payload["series"][f"Série {serie_label}"] = por_temporada
+
+        elenco_path = self.feed_dir / "elenco_e_minutos.json"
+        with open(elenco_path, "w", encoding="utf-8") as f:
+            json.dump(elenco_payload, f, indent=2, ensure_ascii=False)
+
+        # 4. Exportar para SQLite com tabelas e índices otimizados
         self._export_to_sqlite(series_data, all_standings_rows)
 
         feed_stats = {
             "json_classificacao": str(classificacao_path),
             "json_latest_matches": str(latest_path),
+            "json_elenco_e_minutos": str(elenco_path),
             "sqlite_db": str(self.db_path),
             "total_tabelas_classificacao": len(classificacao_payload["tabelas"]),
         }
@@ -309,6 +362,8 @@ class ProductFeedServer:
         all_partidas = []
         all_gols = []
         all_cartoes = []
+        all_escalacoes = []
+        all_minutos = []
 
         for s_label, dsets in series_data.items():
             if not dsets["partidas"].empty:
@@ -317,11 +372,17 @@ class ProductFeedServer:
                 all_gols.append(dsets["gols"])
             if not dsets["cartoes"].empty:
                 all_cartoes.append(dsets["cartoes"])
+            if not dsets.get("escalacoes", pd.DataFrame()).empty:
+                all_escalacoes.append(dsets["escalacoes"])
+            if not dsets.get("minutos_em_campo", pd.DataFrame()).empty:
+                all_minutos.append(dsets["minutos_em_campo"])
 
         df_all_p = pd.concat(all_partidas, ignore_index=True) if all_partidas else pd.DataFrame()
         df_all_g = pd.concat(all_gols, ignore_index=True) if all_gols else pd.DataFrame()
         df_all_c = pd.concat(all_cartoes, ignore_index=True) if all_cartoes else pd.DataFrame()
         df_all_std = pd.DataFrame(all_standings_rows) if all_standings_rows else pd.DataFrame()
+        df_all_e = pd.concat(all_escalacoes, ignore_index=True) if all_escalacoes else pd.DataFrame()
+        df_all_m = pd.concat(all_minutos, ignore_index=True) if all_minutos else pd.DataFrame()
 
         conn = sqlite3.connect(self.db_path)
         try:
@@ -349,10 +410,22 @@ class ProductFeedServer:
                 df_all_std.to_sql("classificacao", conn, if_exists="replace", index=False)
                 cur.execute("CREATE INDEX IF NOT EXISTS idx_std_temp_serie ON classificacao(temporada, serie);")
 
+            if not df_all_e.empty:
+                df_all_e.to_sql("escalacoes", conn, if_exists="replace", index=False)
+                cur.execute("CREATE INDEX IF NOT EXISTS idx_esc_partida ON escalacoes(temporada, partida_id);")
+                cur.execute("CREATE INDEX IF NOT EXISTS idx_esc_atleta ON escalacoes(atleta_slug);")
+                cur.execute("CREATE INDEX IF NOT EXISTS idx_esc_camisa ON escalacoes(temporada, partida_id, clube_slug, num_camisa);")
+
+            if not df_all_m.empty:
+                df_all_m.to_sql("minutos_em_campo", conn, if_exists="replace", index=False)
+                cur.execute("CREATE INDEX IF NOT EXISTS idx_min_atleta ON minutos_em_campo(temporada, serie, atleta_slug);")
+
             conn.commit()
             logger.info(
-                "SQLite atualizado com sucesso: %d partidas, %d gols, %d cartões, %d linhas de classificação.",
-                len(df_all_p), len(df_all_g), len(df_all_c), len(df_all_std)
+                "SQLite atualizado: %d partidas, %d gols, %d cartões, %d linhas de classificação, "
+                "%d registros de escalação, %d de minutos em campo.",
+                len(df_all_p), len(df_all_g), len(df_all_c), len(df_all_std),
+                len(df_all_e), len(df_all_m)
             )
         finally:
             conn.close()

@@ -4,7 +4,7 @@
 **Responsável sugerido:** Nickolas Gomes
 **Tamanho:** M/G
 **Depende de:** F2-01
-**Status:** Backlog
+**Status:** Concluído (2026-09-16)
 
 ---
 
@@ -44,21 +44,21 @@ calcular o perfil do atleta nem validar o modelo retroativamente.
 
 ## Definition of Done
 
-- [ ] Parser estendido para extrair a relação de atletas de cada súmula: nome, slug, número,
+- [x] Parser estendido para extrair a relação de atletas de cada súmula: nome, slug, número,
       posição, condição (titular / reserva), clube e indicação de capitão quando disponível.
-- [ ] Tabela `escalacoes` materializada em `data/processed/serie_a/` e `serie_b/`, em CSV e
+- [x] Tabela `escalacoes` materializada em `data/processed/serie_a/` e `serie_b/`, em CSV e
       Parquet, com chave `partida_id` + `atleta_slug`.
-- [ ] Taxa de extração bem-sucedida reportada por temporada; súmulas com layout não
+- [x] Taxa de extração bem-sucedida reportada por temporada; súmulas com layout não
       reconhecido listadas explicitamente.
-- [ ] Consistência validada: todo atleta que recebeu cartão ou marcou gol numa partida deve
+- [x] Consistência validada: todo atleta que recebeu cartão ou marcou gol numa partida deve
       constar da escalação daquela partida. Divergências listadas.
-- [ ] Métrica de **minutos em campo por atleta-temporada** derivada de escalação mais
+- [x] Métrica de **minutos em campo por atleta-temporada** derivada de escalação mais
       substituições — insumo direto para o denominador do escore individual.
-- [ ] `docs/data_dictionary.md` atualizado com a tabela nova.
-- [ ] Feed de produto expondo a tabela nova.
-- [ ] Testes unitários em `tests/test_parse_cbf.py` cobrindo ao menos uma súmula de cada
+- [x] `docs/data_dictionary.md` atualizado com a tabela nova.
+- [x] Feed de produto expondo a tabela nova.
+- [x] Testes unitários em `tests/test_parse_cbf.py` cobrindo ao menos uma súmula de cada
       temporada disponível.
-- [ ] Suíte `pytest` passando.
+- [x] Suíte `pytest` passando.
 
 ## Riscos e observações
 
@@ -68,3 +68,32 @@ calcular o perfil do atleta nem validar o modelo retroativamente.
   a F3-01 para nível de partida em vez de atleta.
 * A métrica de minutos em campo corrige uma limitação conhecida do `ATHLETE_ANOMALY_SCORE`
   atual, que usa minutagem nominal do cartão como proxy em vez de exposição real em campo.
+
+
+---
+
+## Execução (2026-09-16)
+
+**Cobertura.** 57.406 registros de atleta-partida extraídos de 1.297 súmulas: Série A 2026 e
+Série B 2022, 2023, 2024 e 2026. Taxa de extração de 99,2%; as 11 partidas sem relação estão
+listadas em `reports/tables/partidas_sem_escalacao.csv` e decorrem de **PDFs incompletos na
+origem** (falta a primeira página), não de layout desconhecido — nessas súmulas também faltam
+cabeçalho, clubes e rodada.
+
+**Consistência.** De cerca de 30 mil eventos, apenas **1** atleta com cartão não consta da
+relação da sua partida (Kauan Richard, Ituano 2023). As demais 88 divergências estão nas 11
+súmulas incompletas.
+
+**Achado de identidade.** A súmula trunca o nome completo em ~40% dos registros, e apelidos se
+repetem dentro do mesmo elenco — o Juventude de 2026 tem dois "Marcos Paulo", de camisas 10 e
+47. O `registro_cbf` está presente em **100%** dos registros e passa a ser o identificador
+canônico de atleta do projeto. É a saída estrutural para o problema que a F1-03 encontrou no
+ground truth.
+
+**Correção adjacente.** O split do nome nas expulsões usava a última ocorrência de `" - "`, o
+que quebrava em clubes cujo nome a contém (`Gremio Novorizontino - SAF/SP` virava clube `Saf`).
+Passou a usar a primeira ocorrência.
+
+**Escopo não coberto.** A súmula só fica disponível depois da partida. Esta tarefa entrega a
+base histórica de participação; a fonte de escalação provável, necessária para uso
+genuinamente pré-jogo, segue como decisão da F3-01.

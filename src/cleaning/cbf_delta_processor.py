@@ -312,7 +312,9 @@ def parse_single_cbf_pdf(
                     # token seguinte e o subtipo da expulsao. Ler a posicao fixa nas duas fazia o
                     # subtipo virar nome do clube.
                     if card_type == "Vermelho" and " - " in nome_raw:
-                        atleta, _, clube_raw = nome_raw.rpartition(" - ")
+                        # Separa na PRIMEIRA ocorrencia: o nome do clube pode conter " - "
+                        # (ex.: "Gremio Novorizontino - SAF/SP"), o nome do atleta nao.
+                        atleta, _, clube_raw = nome_raw.partition(" - ")
                         atleta = atleta.strip()
                         tipo_detalhe = seguinte.strip()
                     else:
@@ -363,6 +365,165 @@ def parse_single_cbf_pdf(
         parse_card_section(tokens[idx_red:idx_sub], "Vermelho")
 
     return meta, cards_list, gols_list
+
+
+# =============================================================================
+# RELAÇÃO DE ATLETAS E SUBSTITUIÇÕES (tarefa F2-04)
+# -----------------------------------------------------------------------------
+# A súmula da CBF traz, antes dos eventos, a relação completa de atletas de cada equipe:
+# número, apelido, nome completo, condição (titular ou reserva), presença e registro CBF.
+# É o insumo que habilita a camada pré-jogo do produto — sem ela só se responde depois do
+# apito final, quando os mercados de cartões já liquidaram.
+# =============================================================================
+
+RE_CONDICAO = re.compile(r"^([TR])(\(([a-z])?.*)?$")
+RE_CLUBE_UF = re.compile(r"^(.+?)\s*/\s*[A-Z]{2}$")
+RE_NUM_NOME = re.compile(r"^(\d{1,3})\s*-\s*(.+)$")
+
+
+def _fim_da_secao(tokens: List[str], inicio: int, marcadores: Tuple[str, ...]) -> int:
+    for i in range(inicio + 1, len(tokens)):
+        if any(tokens[i].startswith(m) for m in marcadores):
+            return i
+    return len(tokens)
+
+
+def parse_relacao_de_atletas(tokens: List[str], meta: Dict[str, Any]) -> List[Dict[str, Any]]:
+    """
+    Extrai a relação de atletas de uma súmula já tokenizada.
+
+    Layout, estável entre temporadas e séries:
+
+        'Relação de Jogadores'
+        '<Clube> / <UF>'
+        'Nº' 'Apelido' 'Nome Completo' 'T/R' 'P/A' 'CBF'
+        <numero> <apelido> <nome completo> <T|R[(g]> <P|A> <registro CBF>
+        ... (repete; depois vem a segunda equipe, com novo cabeçalho de clube)
+
+    A âncora é o token de condição (`T` ou `R`), e os demais campos são lidos em relação a
+    ele. Ancorar no número da camisa seria frágil: números aparecem em vários contextos.
+    """
+    inicio = next(
+        (i for i, t in enumerate(tokens) if t.startswith("Rela") and "Jogadores" in t), None
+    )
+    if inicio is None:
+        return []
+
+    fim = _fim_da_secao(tokens, inicio, ("Comiss", "Substitui", "Gols", "Cart"))
+    secao = tokens[inicio:fim]
+
+    atletas: List[Dict[str, Any]] = []
+    clube_atual = ""
+
+    for j, tok in enumerate(secao):
+        m_clube = RE_CLUBE_UF.match(tok)
+        if m_clube and not RE_CONDICAO.match(tok) and j + 1 < len(secao) and secao[j + 1].startswith("N"):
+            clube_atual = m_clube.group(1).strip()
+            continue
+
+        m_cond = RE_CONDICAO.match(tok)
+        if not m_cond or j < 3 or j + 2 >= len(secao):
+            continue
+
+        numero_raw, apelido, nome_completo = secao[j - 3], secao[j - 2], secao[j - 1]
+        if not numero_raw.isdigit():
+            continue
+
+        presenca = secao[j + 1]
+        registro = secao[j + 2]
+        nome_truncado = nome_completo.rstrip().endswith("...")
+        nome_limpo = nome_completo.replace("...", "").strip()
+
+        atletas.append({
+            "partida_id": meta["partida_id"],
+            "temporada": meta["temporada"],
+            "serie": meta["serie"],
+            "rodada": meta.get("rodada"),
+            "clube": clube_atual,
+            "clube_slug": slugify(clube_atual),
+            "num_camisa": int(numero_raw),
+            "apelido": apelido,
+            "nome_completo": nome_limpo,
+            "nome_truncado": nome_truncado,
+            # Quando o nome completo vem truncado pela largura da coluna, o apelido e o
+            # numero de registro sao as identificacoes confiaveis.
+            "atleta_slug": slugify(nome_limpo if not nome_truncado else apelido),
+            "apelido_slug": slugify(apelido),
+            "condicao": "Titular" if m_cond.group(1) == "T" else "Reserva",
+            "goleiro": m_cond.group(3) == "g",
+            "presente": presenca == "P",
+            "registro_cbf": registro if registro.isdigit() else None,
+        })
+
+    return atletas
+
+
+def parse_substituicoes(tokens: List[str], meta: Dict[str, Any]) -> List[Dict[str, Any]]:
+    """
+    Extrai as substituicoes de uma sumula ja tokenizada.
+
+    Layout: 'Substituições' 'Tempo' '1T/2T' 'Equipe' 'Entrou' 'Saiu', seguido de grupos
+    <tempo> <periodo> <Clube/UF> '<num> - <entrou>' '<num> - <saiu>'. O periodo pode ser
+    `INT` (intervalo), tratado como minuto 45.
+    """
+    inicio = next((i for i, t in enumerate(tokens) if t.startswith("Substitui")), None)
+    if inicio is None:
+        return []
+
+    fim = _fim_da_secao(tokens, inicio, ("Ocorr", "Observa", "Relat", "Confedera"))
+    secao = tokens[inicio:fim]
+    tempo_regex = re.compile(r"^(\+|\d{1,2}:)\d{1,2}(?::\d{2})?$|^\+\d{1,2}$")
+
+    subs: List[Dict[str, Any]] = []
+    for j, tok in enumerate(secao):
+        if not tempo_regex.match(tok) or j + 4 >= len(secao):
+            continue
+        periodo_raw = secao[j + 1]
+        if periodo_raw not in ("1T", "2T", "INT"):
+            continue
+
+        periodo = "1T" if periodo_raw == "1T" else "2T"
+        if periodo_raw == "INT":
+            min_nom, acr, min_cont = 45, 0, 45
+        else:
+            min_nom, acr, min_cont = parse_sumula_time(tok, periodo)
+
+        clube_raw = secao[j + 2]
+        m_entrou = RE_NUM_NOME.match(secao[j + 3])
+        m_saiu = RE_NUM_NOME.match(secao[j + 4])
+        if not m_entrou or not m_saiu:
+            continue
+
+        nome_entrou = m_entrou.group(2).replace("...", "").strip()
+        nome_saiu = m_saiu.group(2).replace("...", "").strip()
+
+        subs.append({
+            "partida_id": meta["partida_id"],
+            "temporada": meta["temporada"],
+            "serie": meta["serie"],
+            "rodada": meta.get("rodada"),
+            "clube": clube_raw.split("/")[0].strip(),
+            "clube_slug": slugify(clube_raw.split("/")[0].strip()),
+            "momento": periodo_raw,
+            "periodo": periodo,
+            "minuto_nominal": min_nom,
+            "acrescimo": acr,
+            "minuto_continuo": min_cont,
+            "num_entrou": int(m_entrou.group(1)),
+            "atleta_entrou": nome_entrou,
+            "atleta_entrou_slug": slugify(nome_entrou),
+            "num_saiu": int(m_saiu.group(1)),
+            "atleta_saiu": nome_saiu,
+            "atleta_saiu_slug": slugify(nome_saiu),
+        })
+
+    return subs
+
+
+def parse_escalacao_from_pdf(filepath: Path, meta: Dict[str, Any]) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
+    """Tokeniza a súmula e devolve (relação de atletas, substituições)."""
+    tokens = extract_tokens_from_pdf(filepath)
+    return parse_relacao_de_atletas(tokens, meta), parse_substituicoes(tokens, meta)
 
 
 def align_dataframe_types(df_new: pd.DataFrame, df_existing: pd.DataFrame) -> pd.DataFrame:
@@ -422,7 +583,12 @@ class CBFDeltaProcessor:
         serie = serie.upper()
         if not pdf_paths:
             logger.info("Nenhum PDF fornecido para processamento em Série %s / %d.", serie, temporada)
-            return {"matches_upserted": 0, "goals_upserted": 0, "cards_upserted": 0}
+            return {"matches_upserted": 0, "goals_upserted": 0, "cards_upserted": 0,
+            "escalacoes_upserted": len(df_new_lineups),
+            "substituicoes_upserted": len(df_new_subs),
+            "total_escalacoes_dataset": total_escalacoes,
+            "total_substituicoes_dataset": total_subs,
+        }
 
         serie_dir = self._get_serie_dir(serie)
         partidas_parquet = serie_dir / "partidas.parquet"
@@ -431,10 +597,16 @@ class CBFDeltaProcessor:
         gols_csv = serie_dir / "gols.csv"
         cartoes_parquet = serie_dir / "cartoes.parquet"
         cartoes_csv = serie_dir / "cartoes.csv"
+        escalacoes_parquet = serie_dir / "escalacoes.parquet"
+        escalacoes_csv = serie_dir / "escalacoes.csv"
+        substituicoes_parquet = serie_dir / "substituicoes.parquet"
+        substituicoes_csv = serie_dir / "substituicoes.csv"
 
         new_matches = []
         new_goals = []
         new_cards = []
+        new_lineups = []
+        new_subs = []
 
         for p in pdf_paths:
             try:
@@ -442,15 +614,21 @@ class CBFDeltaProcessor:
                 new_matches.append(meta)
                 new_goals.extend(g_list)
                 new_cards.extend(c_list)
+                esc_list, sub_list = parse_escalacao_from_pdf(p, meta)
+                new_lineups.extend(esc_list)
+                new_subs.extend(sub_list)
             except Exception as e:
                 logger.error("Erro ao processar súmula %s: %s", p.name, e)
 
         if not new_matches:
-            return {"matches_upserted": 0, "goals_upserted": 0, "cards_upserted": 0}
+            return {"matches_upserted": 0, "goals_upserted": 0, "cards_upserted": 0,
+                    "escalacoes_upserted": 0, "substituicoes_upserted": 0}
 
         df_new_matches = pd.DataFrame(new_matches)
         df_new_goals = pd.DataFrame(new_goals) if new_goals else pd.DataFrame()
         df_new_cards = pd.DataFrame(new_cards) if new_cards else pd.DataFrame()
+        df_new_lineups = pd.DataFrame(new_lineups) if new_lineups else pd.DataFrame()
+        df_new_subs = pd.DataFrame(new_subs) if new_subs else pd.DataFrame()
 
         partidas_upsert_ids = set(df_new_matches["partida_id"].unique())
 
@@ -525,7 +703,44 @@ class CBFDeltaProcessor:
             df_final_c.to_parquet(cartoes_parquet, index=False)
             df_final_c.to_csv(cartoes_csv, index=False, encoding="utf-8")
 
-        # 4. Atualizar manifesto de processamento
+        # 4. UPSERT RELAÇÃO DE ATLETAS E SUBSTITUIÇÕES (F2-04)
+        def _upsert_auxiliar(df_novo, caminho_parquet, caminho_csv, ordenacao):
+            """Substitui as linhas das partidas reprocessadas e preserva o restante."""
+            if caminho_parquet.exists():
+                df_ant = pd.read_parquet(caminho_parquet)
+                mask = ~((df_ant["temporada"] == temporada) & (df_ant["partida_id"].isin(partidas_upsert_ids)))
+                df_filtrado = df_ant[mask]
+                if not df_novo.empty:
+                    df_alinhado = align_dataframe_types(df_novo, df_ant)
+                    df_filtrado = unir_schema_historico(
+                        df_filtrado,
+                        [c for c in df_alinhado.columns if c not in df_filtrado.columns],
+                    )
+                    df_final = pd.concat([df_filtrado, df_alinhado], ignore_index=True)
+                else:
+                    df_final = df_filtrado
+            else:
+                df_final = df_novo
+
+            if df_final.empty:
+                return 0
+            cols = [c for c in ordenacao if c in df_final.columns]
+            if cols:
+                df_final = df_final.sort_values(cols).reset_index(drop=True)
+            df_final.to_parquet(caminho_parquet, index=False)
+            df_final.to_csv(caminho_csv, index=False, encoding="utf-8")
+            return len(df_final)
+
+        total_escalacoes = _upsert_auxiliar(
+            df_new_lineups, escalacoes_parquet, escalacoes_csv,
+            ["temporada", "rodada", "partida_id", "clube_slug", "num_camisa"],
+        )
+        total_subs = _upsert_auxiliar(
+            df_new_subs, substituicoes_parquet, substituicoes_csv,
+            ["temporada", "rodada", "partida_id", "minuto_continuo"],
+        )
+
+        # 5. Atualizar manifesto de processamento
         manifest_path = serie_dir / "manifest_processed.json"
         manifest_data = {
             "last_updated": datetime.now().isoformat(),
@@ -548,5 +763,9 @@ class CBFDeltaProcessor:
             "matches_upserted": len(new_matches),
             "goals_upserted": len(new_goals),
             "cards_upserted": len(new_cards),
+            "escalacoes_upserted": len(df_new_lineups),
+            "substituicoes_upserted": len(df_new_subs),
             "total_partidas_dataset": len(df_final_p),
+            "total_escalacoes_dataset": total_escalacoes,
+            "total_substituicoes_dataset": total_subs,
         }

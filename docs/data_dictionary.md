@@ -232,6 +232,82 @@ Gerados a partir do parsing direto das Súmulas Eletrônicas da CBF (`conteudo.c
 
 ---
 
+## 8A. Relação de Atletas, Substituições e Minutos em Campo (tarefa F2-04)
+
+Três datasets derivados da **relação de jogadores** da súmula oficial da CBF, materializados em
+`data/processed/serie_a/` e `data/processed/serie_b/`. Existem apenas para as temporadas com
+súmula disponível: Série A 2026 e Série B 2022, 2023, 2024 e 2026. Para a Série A de 2003 a
+2024, cuja origem é a base do Kaggle, **não há relação de atletas na fonte**.
+
+> **Chave de identidade.** O cruzamento entre estas tabelas e os eventos (cartões, gols) usa
+> `(temporada, partida_id, clube_slug, num_camisa)`, e o agrupamento por atleta usa
+> `registro_cbf` — nunca o nome. A súmula trunca o nome completo pela largura da coluna em
+> cerca de 40% dos registros, e apelidos se repetem dentro do mesmo elenco: o Juventude de 2026
+> tem dois atletas chamados "Marcos Paulo", de camisas 10 e 47. O `registro_cbf` está presente
+> em 100% dos 57.406 registros extraídos.
+
+### 8A.1 Dataset: `escalacoes` (`escalacoes.parquet` / `.csv`)
+* **Descrição:** Um registro por atleta relacionado em cada partida — titulares e banco.
+* **Granularidade:** 1 linha por atleta × partida.
+* **Volume:** 57.406 registros (12.097 na Série A, 45.309 na Série B).
+* **Cobertura:** 99,2% das partidas com súmula. As 11 exceções estão em
+  `reports/tables/partidas_sem_escalacao.csv` e decorrem de PDFs incompletos na origem, sem a
+  primeira página.
+
+| Campo | Tipo | Nulos | Descrição | Regras e Valores Válidos |
+| :--- | :--- | :---: | :--- | :--- |
+| `partida_id` | `int64` | Não | ID da partida | FK para `partidas` |
+| `temporada` | `int64` | Não | Ano da edição | 2022 a 2026 |
+| `serie` | `string` | Não | Divisão | `A` ou `B` |
+| `rodada` | `int64` | Não | Rodada da partida | 0 quando a súmula não a declara |
+| `clube` / `clube_slug` | `string` | Não | Equipe do atleta | Ex.: `gremio_novorizontino_saf` |
+| `num_camisa` | `int64` | Não | Número da camisa | Chave de junção com os eventos |
+| `apelido` | `string` | Não | Nome de campo do atleta | Pode ser truncado |
+| `nome_completo` | `string` | Não | Nome civil | Truncado pela largura da coluna em ~40% dos casos |
+| `nome_truncado` | `bool` | Não | Indica truncamento na origem | Quando `True`, o slug vem do apelido |
+| `atleta_slug` / `apelido_slug` | `string` | Não | Slugs de exibição | **Não usar como chave** |
+| `registro_cbf` | `string` | Não | Registro nacional do atleta na CBF | Identificador canônico |
+| `condicao` | `string` | Não | Condição na partida | `Titular` (11 por equipe) ou `Reserva` |
+| `goleiro` | `bool` | Não | Marcação `(g)` da súmula | Um titular por equipe |
+| `presente` | `bool` | Não | Coluna P/A da súmula | `False` indica ausência declarada |
+
+### 8A.2 Dataset: `substituicoes` (`substituicoes.parquet` / `.csv`)
+* **Descrição:** Cada substituição da partida, com minuto, equipe, quem entrou e quem saiu.
+* **Volume:** 11.826 registros.
+
+| Campo | Tipo | Nulos | Descrição | Regras e Valores Válidos |
+| :--- | :--- | :---: | :--- | :--- |
+| `momento` | `string` | Não | Momento declarado na súmula | `1T`, `2T` ou `INT` (intervalo) |
+| `periodo` | `string` | Não | Etapa normalizada | `INT` é contabilizado como `2T`, minuto 45 |
+| `minuto_nominal` / `acrescimo` / `minuto_continuo` | `int64` | Não | Minutagem da troca | Mesma convenção dos cartões |
+| `num_entrou` / `atleta_entrou` | `int64` / `string` | Não | Atleta que entrou | Junção por número de camisa |
+| `num_saiu` / `atleta_saiu` | `int64` / `string` | Não | Atleta que saiu | Junção por número de camisa |
+
+### 8A.3 Dataset: `minutos_em_campo` (`minutos_em_campo.parquet` / `.csv`)
+* **Descrição:** Exposição real de cada atleta por temporada, derivada da escalação cruzada com
+  as substituições. Titular que não sai joga 90 minutos; titular substituído joga até o minuto
+  da troca; reserva que entra joga do minuto de entrada ao fim; reserva que não entra fica com
+  zero. Acréscimos não são distribuídos por atleta, porque a súmula não os atribui
+  individualmente.
+* **Granularidade:** 1 linha por `registro_cbf` × clube × temporada.
+* **Volume:** 3.945 registros (949 na Série A, 2.996 na Série B).
+
+| Campo | Tipo | Nulos | Descrição | Regras e Valores Válidos |
+| :--- | :--- | :---: | :--- | :--- |
+| `registro_cbf` | `string` | Não | Identificador canônico do atleta | Chave do agrupamento |
+| `partidas_relacionado` | `int64` | Não | Partidas em que foi relacionado | $\le$ 38 |
+| `partidas_jogadas` | `int64` | Não | Partidas em que entrou em campo | $\le$ `partidas_relacionado` |
+| `partidas_como_titular` | `int64` | Não | Partidas iniciadas como titular | $\ge 0$ |
+| `minutos_em_campo` | `int64` | Não | Minutos acumulados na temporada | Máximo observado: 3.420 (38 × 90) |
+| `media_minutos_por_jogo` | `float64` | Sim | Minutos por partida jogada | Nulo para quem nunca entrou |
+
+**Por que isto importa.** O `ATHLETE_ANOMALY_SCORE` usa hoje a minutagem do cartão como proxy
+de exposição. Com os minutos reais em campo, passa a existir o denominador correto — cartões
+por minuto jogado em vez de cartões por atleta —, e a camada pré-jogo do produto ganha a
+informação de quem efetivamente entra em campo.
+
+---
+
 ## 9. Dataset de Integridade: Casos Investigados da Operação Penalidade Máxima
 
 * **Localização:** `data/processed/integrity/casos_penalidade_maxima.parquet` (e `.csv`).

@@ -295,7 +295,9 @@ def parse_single_sumula(
                     # token seguinte e o subtipo da expulsao. Ler a posicao fixa nas duas fazia o
                     # subtipo virar nome do clube.
                     if card_type == "Vermelho" and " - " in nome_raw:
-                        atleta, _, clube_raw = nome_raw.rpartition(" - ")
+                        # Separa na PRIMEIRA ocorrencia: o nome do clube pode conter " - "
+                        # (ex.: "Gremio Novorizontino - SAF/SP"), o nome do atleta nao.
+                        atleta, _, clube_raw = nome_raw.partition(" - ")
                         atleta = atleta.strip()
                         tipo_detalhe = seguinte.strip()
                     else:
