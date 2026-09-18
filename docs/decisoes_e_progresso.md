@@ -99,6 +99,13 @@
   * **Súmulas brutas fora do versionamento.** Os PDFs deixaram de ser versionados: são ~2.400 arquivos e dezenas de MB, e `manifest_delta.json` guarda URL, ETag e SHA-256 de cada um, de modo que `run_delta_pipeline.py` reconstitui o conjunto. Os 1.308 PDFs já versionados em sessões anteriores continuam no índice — a remoção afeta quem já clonou e fica registrada como decisão pendente.
   * **Suíte ampliada de 149 para 153 testes.** Inventário completo em [`docs/relatorio_de_execucao_2026-09-18.md`](relatorio_de_execucao_2026-09-18.md).
 
+* **Especificação do MVP — Sessão de 2026-09-18 (etapa 2 do plano de trabalho):**
+  * **Cinco documentos em [`docs/especificacao/`](especificacao/README.md)** que servem de contrato para as etapas de infraestrutura, backend, front-end e automação: contrato de API e modelo de autorização, regras de negócio e limiares, telas, infraestrutura e automação de alimentação.
+  * **Escopo declarado como protótipo/MVP.** Cada simplificação está marcada como `[MVP]` com a dívida explicitada — chave de API estática sem rotação nem limite de taxa, ambiente único sem homologação, e ausência do fluxo de due diligence pré-contratação, que é justamente o caso de uso mais concreto da persona de clube.
+  * **O princípio de autorização foi invertido em relação ao código atual.** Hoje `aplicar_perfil` recebe o perfil e o clube como argumentos: quem chama declara quem é. Num serviço isso é falha de autorização, e a especificação exige que ambos venham da credencial.
+  * **Três premissas registradas como não validadas:** as personas nunca foram entrevistadas, as capacidades operacionais que definem os limiares de alerta são estimativas, e o produto mede atipicidade e não fraude — esta última não é premissa, é resultado apurado.
+  * **Pesquisa com usuários dispensada neste ciclo**, por decisão do responsável. As personas da análise de negócio são assumidas como estão.
+
 ---
 
 ## 2. Registro de Decisões Tomadas

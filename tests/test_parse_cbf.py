@@ -210,6 +210,16 @@ def test_escalacoes_materializadas_e_consistentes():
         assert df["registro_cbf"].notna().all(), "registro CBF ausente"
         assert set(df["condicao"].unique()).issubset({"Titular", "Reserva"})
 
+        # Camisa tem no maximo tres digitos; um valor de seis ou sete e registro CBF gravado
+        # na coluna errada por desalinhamento de layout. Guarda o portao G3 da especificacao
+        # de automacao sobre a base real, e nao so sobre tokens sinteticos.
+        camisas = pd.to_numeric(df["num_camisa"], errors="coerce")
+        fora_da_faixa = df[(camisas < 1) | (camisas > 999) | camisas.isna()]
+        assert fora_da_faixa.empty, (
+            f"série {serie}: {len(fora_da_faixa)} camisas fora de 1..999 — provável "
+            f"desalinhamento de coluna: {fora_da_faixa['num_camisa'].head(3).tolist()}"
+        )
+
         # Onze titulares por equipe em cada partida extraída.
         titulares = df[df["condicao"] == "Titular"].groupby(
             ["temporada", "partida_id", "clube_slug"]).size()
