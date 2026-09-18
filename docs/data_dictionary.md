@@ -57,7 +57,7 @@ Os datasets da Série A foram normalizados a partir dos dados brutos do Adão Du
 | `formacao_mandante` | `string` | Sim | Esquema tático do clube mandante | Ex.: "4-2-3-1", "4-3-3" (disponível pós-2015) |
 | `formacao_visitante`| `string` | Sim | Esquema tático do clube visitante | Ex.: "3-5-2", "4-4-2" |
 | `tecnico_mandante` | `string` | Sim | Nome do treinador do mandante | Ex.: "Abel Ferreira" |
-| `tecnico_visitante` | `string` | Sim | Nome do treinador do visitante | Ex.: "Rogério Ceni" |
+| `tecnico_visitante` | `string` | Sim | Nome do treinador do visitante | Ex.: "o técnico da equipe visitante" |
 
 ---
 
@@ -243,7 +243,7 @@ súmula disponível: Série A 2026 e Série B 2022, 2023, 2024 e 2026. Para a S�
 > `(temporada, partida_id, clube_slug, num_camisa)`, e o agrupamento por atleta usa
 > `registro_cbf` — nunca o nome. A súmula trunca o nome completo pela largura da coluna em
 > cerca de 40% dos registros, e apelidos se repetem dentro do mesmo elenco: o Juventude de 2026
-> tem dois atletas chamados "Marcos Paulo", de camisas 10 e 47. O `registro_cbf` está presente
+> tem dois atletas de mesmo apelido, de camisas 10 e 47. O `registro_cbf` está presente
 > em 100% dos 57.406 registros extraídos.
 
 ### 8A.1 Dataset: `escalacoes` (`escalacoes.parquet` / `.csv`)

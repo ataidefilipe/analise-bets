@@ -17,3 +17,6 @@ ENV/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Dados restritos (mapeamento de reidentificacao) — tarefa F4-02
+data/restrito/

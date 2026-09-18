@@ -1,21 +1,21 @@
-atleta,atleta_slug,posicao,total_cartoes,cartoes_amarelos,cartoes_vermelhos,cartoes_1T,cartoes_ate_30min,minuto_medio,temporadas,pct_1T,pct_ate_30min
-Wesley Ribeiro Silva,wesley_ribeiro_silva,Meio-campo,16,16,0,11,5,45.75,5,0.688,0.312
-Diogo Barbosa,diogo_barbosa,Zagueiro,16,16,0,10,4,48.125,5,0.625,0.25
-Hélio Junio Nunes de Castro,helio_junio_nunes_de_castro,Meio-campo,23,23,0,14,7,44.08695652173913,5,0.609,0.304
-Bruno Fuchs,bruno_fuchs,Zagueiro,15,14,1,9,5,48.06666666666667,4,0.6,0.333
-Robson Fernandes,robson_fernandes,Meio-campo,15,15,0,9,3,50.666666666666664,3,0.6,0.2
-Willian Farias,willian_farias,Meio-campo,15,14,1,9,5,46.8,3,0.6,0.333
-Gabriel Baralhas,gabriel_baralhas,Meio-campo,24,24,0,14,5,47.041666666666664,3,0.583,0.208
-Caio Alexandre,caio_alexandre,Meio-campo,21,20,1,12,7,47.76190476190476,4,0.571,0.333
-Yuri Oliveira Lima,yuri_oliveira_lima,Meio-campo,23,22,1,13,5,51.08695652173913,4,0.565,0.217
-Alexandre Egea,alexandre_egea,Meio-campo,16,14,2,9,2,52.9375,3,0.562,0.125
-Pablo Maia,pablo_maia,Meio-campo,16,15,1,9,4,53.375,2,0.562,0.25
-Luiz Otávio,luiz_otavio,Zagueiro,27,25,2,15,6,53.148148148148145,4,0.556,0.222
-Patrick de Paula,patrick_de_paula,Meio-campo,18,17,1,10,4,54.77777777777778,4,0.556,0.222
-Felipe Melo,felipe_melo,Zagueiro,20,17,3,11,5,48.6,5,0.55,0.25
-Nino,nino,Zagueiro,31,28,3,17,7,50.87096774193548,5,0.548,0.226
-Fagner,fagner,Zagueiro,39,36,3,21,8,53.15384615384615,6,0.538,0.205
-Luan Garcia Teixeira,luan_garcia_teixeira,Zagueiro,15,15,0,8,4,56.0,5,0.533,0.267
-Lucas Mineiro,lucas_mineiro,Meio-campo,15,15,0,8,3,50.6,3,0.533,0.2
-Willian,willian,Meio-campo,15,15,0,8,5,47.8,2,0.533,0.333
-Paulo Henrique Ganso,paulo_henrique_ganso,Meio-campo,34,33,1,18,4,55.76470588235294,5,0.529,0.118
+atleta,atleta_slug,posicao,total_cartoes,cartoes_amarelos,cartoes_vermelhos,cartoes_1T,cartoes_ate_30min,minuto_medio,temporadas,pct_1T,pct_ate_30min,atleta_pseudonimo
+atl_dc9cbf8d9aae84b8,atl_dc9cbf8d9aae84b8,Meio-campo,16,16,0,11,5,45.75,5,0.688,0.312,atl_dc9cbf8d9aae84b8
+atl_20b829edd2790353,atl_20b829edd2790353,Zagueiro,16,16,0,10,4,48.125,5,0.625,0.25,atl_20b829edd2790353
+atl_9e3e0eb70dfa9ad2,atl_9e3e0eb70dfa9ad2,Meio-campo,23,23,0,14,7,44.08695652173913,5,0.609,0.304,atl_9e3e0eb70dfa9ad2
+atl_4419450ad89d67ee,atl_4419450ad89d67ee,Zagueiro,15,14,1,9,5,48.06666666666667,4,0.6,0.333,atl_4419450ad89d67ee
+atl_2743cc3923360e4d,atl_2743cc3923360e4d,Meio-campo,15,15,0,9,3,50.66666666666666,3,0.6,0.2,atl_2743cc3923360e4d
+atl_5422bdf01c7d7e04,atl_5422bdf01c7d7e04,Meio-campo,15,14,1,9,5,46.8,3,0.6,0.333,atl_5422bdf01c7d7e04
+atl_e284276c1c8ed74d,atl_e284276c1c8ed74d,Meio-campo,24,24,0,14,5,47.04166666666666,3,0.583,0.208,atl_e284276c1c8ed74d
+atl_8a504e79eb183da6,atl_8a504e79eb183da6,Meio-campo,21,20,1,12,7,47.76190476190476,4,0.571,0.333,atl_8a504e79eb183da6
+atl_02669bcd62bca7ee,atl_02669bcd62bca7ee,Meio-campo,23,22,1,13,5,51.08695652173913,4,0.565,0.217,atl_02669bcd62bca7ee
+atl_0f683fe187bde10b,atl_0f683fe187bde10b,Meio-campo,16,14,2,9,2,52.9375,3,0.562,0.125,atl_0f683fe187bde10b
+atl_8f7da715fbd567e4,atl_8f7da715fbd567e4,Meio-campo,16,15,1,9,4,53.375,2,0.562,0.25,atl_8f7da715fbd567e4
+atl_cf088a3ee300e7b0,atl_cf088a3ee300e7b0,Zagueiro,27,25,2,15,6,53.14814814814815,4,0.556,0.222,atl_cf088a3ee300e7b0
+atl_1325e24da9bab1ce,atl_1325e24da9bab1ce,Meio-campo,18,17,1,10,4,54.77777777777778,4,0.556,0.222,atl_1325e24da9bab1ce
+atl_71062f9d36d9cb8e,atl_71062f9d36d9cb8e,Zagueiro,20,17,3,11,5,48.6,5,0.55,0.25,atl_71062f9d36d9cb8e
+atl_d6e3f441b956097f,atl_d6e3f441b956097f,Zagueiro,31,28,3,17,7,50.87096774193548,5,0.548,0.226,atl_d6e3f441b956097f
+atl_325a4ab9776d2baa,atl_325a4ab9776d2baa,Zagueiro,39,36,3,21,8,53.15384615384615,6,0.538,0.205,atl_325a4ab9776d2baa
+atl_e7a68f35e8e58c31,atl_e7a68f35e8e58c31,Zagueiro,15,15,0,8,4,56.0,5,0.533,0.267,atl_e7a68f35e8e58c31
+atl_eddce4bdb2779072,atl_eddce4bdb2779072,Meio-campo,15,15,0,8,3,50.6,3,0.533,0.2,atl_eddce4bdb2779072
+atl_292d40355444528f,atl_292d40355444528f,Meio-campo,15,15,0,8,5,47.8,2,0.533,0.333,atl_292d40355444528f
+atl_a8de00c789a1c8a6,atl_a8de00c789a1c8a6,Meio-campo,34,33,1,18,4,55.76470588235294,5,0.529,0.118,atl_a8de00c789a1c8a6

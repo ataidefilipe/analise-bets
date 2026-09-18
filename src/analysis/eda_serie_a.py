@@ -371,7 +371,11 @@ def run_eda(
     reports_tab_dir.mkdir(parents=True, exist_ok=True)
     df_metrics.to_csv(reports_tab_dir / 'tabela_01_metricas_por_temporada.csv', index=False, encoding='utf-8')
     df_tests.to_csv(reports_tab_dir / 'tabela_02_testes_estatisticos_quebra.csv', index=False, encoding='utf-8')
-    top_athletes.to_csv(reports_tab_dir / 'tabela_03_atletas_outliers_1T.csv', index=False, encoding='utf-8')
+    # F4-02: a tabela lista atletas com concentracao atipica de cartoes no 1o tempo. Nenhum
+    # deles foi investigado; publicar com nome e exposicao sem contrapartida analitica.
+    from src.pipeline.camadas_de_exposicao import CAMADA_ABERTA, aplicar_camada
+    aplicar_camada(top_athletes, CAMADA_ABERTA).to_csv(
+        reports_tab_dir / 'tabela_03_atletas_outliers_1T.csv', index=False, encoding='utf-8')
     logger.info('Tabelas salvas com sucesso em %s', reports_tab_dir)
 
     logger.info('Gerando figuras em alta resolução...')

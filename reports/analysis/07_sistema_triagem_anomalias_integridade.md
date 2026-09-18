@@ -251,13 +251,13 @@ declaradamente **não resolvidos** — e não recebem o escore de um homônimo p
 | Atleta do ground truth | Associação anterior (errada) | Associação correta | Percentil publicado → real |
 | :--- | :--- | :--- | :---: |
 | Nino Paraíba (Ceará) | Nino (Fluminense) | `nino_paraiba` (Ceará) | 99,67% → **34,50%** |
-| Paulo Miranda (Juventude) | Paulo de Souza Junior (Tombense, Série B) | `paulo_miranda` (Juventude) | 95,29% → 90,04% |
+| Paulo Miranda (Juventude) | atl_3146e8f6133cd258 (Tombense, Série B) | `paulo_miranda` (Juventude) | 95,29% → 90,04% |
 | Moraes Jr (Juventude) | Anderson W. de Moraes Rodrigues (Sampaio Corrêa, Série B) | `onitlasi_junior_de_moraes_rodrigues` | 93,29% → 75,24% |
-| Eduardo Bauermann (Santos) | Luiz Eduardo Barros Cavalcanti (Vila Nova, Série B) | `eduardo` (Santos) | 90,46% → 74,05% |
-| Gabriel Tota (Juventude) | Gabriel Baralhas (Atlético-GO) | `gabriel_tota` — **abaixo do mínimo de 3 cartões** | 98,16% → sem escore |
+| Eduardo Bauermann (Santos) | atl_6bd8b2e068a1299f (Vila Nova, Série B) | `eduardo` (Santos) | 90,46% → 74,05% |
+| Gabriel Tota (Juventude) | atl_e284276c1c8ed74d (Atlético-GO) | `gabriel_tota` — **abaixo do mínimo de 3 cartões** | 98,16% → sem escore |
 | Igor Cariús (Cuiabá) | Igor Marques Paciência Cardoso (Ponte Preta, Série B) | **não resolvido** | 92,37% → sem escore |
-| Ygor Catatau (Sampaio Corrêa) | Hygor Cleber Garcia Silva (Criciúma) | `ygor_de_oliveira_ferreira` | 77,75% → 62,58% |
-| Romário (Vila Nova) | Romário Guilherme dos Santos | **não resolvido** (sem cartão em 2022) | 51,45% → sem escore |
+| Ygor Catatau (Sampaio Corrêa) | atl_1131b959776a0cc1 (Criciúma) | `ygor_de_oliveira_ferreira` | 77,75% → 62,58% |
+| Romário (Vila Nova) | atl_b4fd772b78e1ac7c | **não resolvido** (sem cartão em 2022) | 51,45% → sem escore |
 
 **Correção de partida.** O ground truth registra o caso PM-005 como "Náutico x Sampaio Corrêa"
 na rodada 23, mas naquela rodada o Náutico enfrentou o CRB. O único Náutico x Sampaio Corrêa da
@@ -536,12 +536,20 @@ América-MG, 2022) reúne os três marcadores simultaneamente: 8 cartões, todos
 
 ### 4.2 Top 5 atletas sinalizados (Tabela 16)
 
+> **Nota de exposição (F4-02).** Identificadores no formato `atl_...` substituem o nome de
+> atletas **sem condenação**. Eles são pseudônimos estáveis derivados do registro do atleta,
+> de modo que o mesmo atleta é reconhecível entre tabelas, e o mapeamento de reidentificação
+> vive fora do repositório. Atletas com condenação da Operação Penalidade Máxima seguem
+> nominados, por serem fato público. Um escore alto significa desvio estatístico, nunca
+> conduta — e nomear quem nunca foi investigado transformaria a ressalva em letra morta.
+
+
 | Ranking | Atleta | Temporada | Série | Clube | Total Cartões | Cartões 1ºT | % Cartões 1ºT | Minuto Médio | Athlete Anomaly Score | Percentil | Classificação |
 | :---: | :--- | :---: | :---: | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| **1º** | Diogo Barbosa | 2024 | A | fluminense | 6 | 6 | 100,0% | 34,7' | **80,66** | 99,99% | Extrema Anomalia Temporal (Top 1%) |
-| **2º** | Valdemir de Oliveira Soares | 2022 | A | coritiba | 6 | 6 | 100,0% | 34,7' | **80,66** | 99,99% | Extrema Anomalia Temporal (Top 1%) |
-| **3º** | Douglas do Espirito Santo Torres | 2022 | B | bahia | 5 | 5 | 100,0% | 19,6' | **78,41** | 99,93% | Extrema Anomalia Temporal (Top 1%) |
-| **4º** | Paulo Marcos de Jesus Ribeiro | 2017 | A | vasco | 5 | 5 | 100,0% | 16,6' | **78,41** | 99,93% | Extrema Anomalia Temporal (Top 1%) |
+| **1º** | atl_20b829edd2790353 | 2024 | A | fluminense | 6 | 6 | 100,0% | 34,7' | **80,66** | 99,99% | Extrema Anomalia Temporal (Top 1%) |
+| **2º** | atl_e05a95826461267d | 2022 | A | coritiba | 6 | 6 | 100,0% | 34,7' | **80,66** | 99,99% | Extrema Anomalia Temporal (Top 1%) |
+| **3º** | atl_8dc959eb5befb439 | 2022 | B | bahia | 5 | 5 | 100,0% | 19,6' | **78,41** | 99,93% | Extrema Anomalia Temporal (Top 1%) |
+| **4º** | atl_610529b609dd55ca | 2017 | A | vasco | 5 | 5 | 100,0% | 16,6' | **78,41** | 99,93% | Extrema Anomalia Temporal (Top 1%) |
 | **5º** | Marlon | 2023 | A | fluminense | 5 | 5 | 100,0% | 27,6' | **77,13** | 99,89% | Extrema Anomalia Temporal (Top 1%) |
 
 Os cinco primeiros colocados têm 100% dos cartões da temporada aplicados no 1º tempo, com

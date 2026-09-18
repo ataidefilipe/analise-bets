@@ -46,6 +46,11 @@ import numpy as np
 import pandas as pd
 
 from src.analysis.escalacoes_e_minutos import minutos_em_campo
+from src.pipeline.camadas_de_exposicao import (
+    CAMADA_ABERTA,
+    aplicar_camada,
+    salvar_mapa_pseudonimos,
+)
 
 PROCESSED = os.path.join("data", "processed")
 TABLES_DIR = os.path.join("reports", "tables")
@@ -318,8 +323,12 @@ def executar():
     destino = os.path.join(PROCESSED, "integrity")
     os.makedirs(destino, exist_ok=True)
     df.to_parquet(os.path.join(destino, "score_pre_jogo.parquet"), index=False)
-    ranking.to_csv(os.path.join(TABLES_DIR, "tabela_23c_score_pre_jogo_ranking.csv"),
-                   index=False, encoding="utf-8")
+    # F4-02: o ranking pre-jogo nomeia todo atleta relacionado. A versao publicada sai
+    # pseudonimizada; o mapa de reidentificacao fica em data/restrito/.
+    salvar_mapa_pseudonimos(ranking)
+    aplicar_camada(ranking, CAMADA_ABERTA).to_csv(
+        os.path.join(TABLES_DIR, "tabela_23c_score_pre_jogo_ranking.csv"),
+        index=False, encoding="utf-8")
 
     return df, avaliacao, vazamento, embaralhado, ranking
 

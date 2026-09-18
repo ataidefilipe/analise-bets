@@ -1,51 +1,51 @@
-temporada,serie,clube_slug,atleta,total_cartoes,cartoes_1t,prop_cartoes_1t,minuto_medio_partida,p_val_binom_1t,athlete_anomaly_score,percentil_atleta,classificacao_atleta
-2024,A,fluminense,Diogo Barbosa,6,6,1.0,34.7,0.0018700047030896004,80.66,99.99,Extrema Anomalia Temporal (Top 1%)
-2022,A,coritiba,Valdemir de Oliveira Soares,6,6,1.0,34.7,0.0018700047030896004,80.66,99.99,Extrema Anomalia Temporal (Top 1%)
-2022,B,bahia,Douglas do Espirito Santo Torres,5,5,1.0,19.6,0.005327648726750999,78.41,99.93,Extrema Anomalia Temporal (Top 1%)
-2017,A,vasco,Paulo Marcos de Jesus Ribeiro,5,5,1.0,16.6,0.005327648726750999,78.41,99.93,Extrema Anomalia Temporal (Top 1%)
-2023,A,fluminense,Marlon,5,5,1.0,27.6,0.005327648726750999,77.13,99.89,Extrema Anomalia Temporal (Top 1%)
-2023,B,crb,Lucas Eduardo Lima da Silva,5,5,1.0,28.6,0.005327648726750999,76.83,99.86,Extrema Anomalia Temporal (Top 1%)
-2016,A,figueirense,Dudu,5,5,1.0,31.6,0.005327648726750999,75.93,99.84,Extrema Anomalia Temporal (Top 1%)
-2018,A,parana,Jorge González,5,5,1.0,33.0,0.005327648726750999,75.51,99.81,Extrema Anomalia Temporal (Top 1%)
-2022,A,botafogo_rj,Kanu,5,5,1.0,35.2,0.005327648726750999,74.85,99.78,Extrema Anomalia Temporal (Top 1%)
-2017,A,cruzeiro,Henrique Pacheco Lima,8,7,0.875,29.6,0.003638268060298205,74.84,99.76,Extrema Anomalia Temporal (Top 1%)
-2023,A,palmeiras,Raphael Cavalcante Veiga,5,5,1.0,39.6,0.005327648726750999,73.53,99.73,Extrema Anomalia Temporal (Top 1%)
-2022,B,gremio,Pedro Tonon Geromel,4,4,1.0,18.2,0.015178486400999997,72.73,99.68,Extrema Anomalia Temporal (Top 1%)
-2022,B,novorizontino,Diego Fabian Torres,4,4,1.0,20.0,0.015178486400999997,72.73,99.68,Extrema Anomalia Temporal (Top 1%)
-2022,A,goias,Diego,4,4,1.0,23.0,0.015178486400999997,72.73,99.68,Extrema Anomalia Temporal (Top 1%)
-2021,A,palmeiras,Marcos Rocha,4,4,1.0,23.8,0.015178486400999997,72.59,99.62,Extrema Anomalia Temporal (Top 1%)
-2022,A,fluminense,Nino,4,4,1.0,24.8,0.015178486400999997,72.29,99.59,Extrema Anomalia Temporal (Top 1%)
-2021,A,palmeiras,Gabriel Menino,4,4,1.0,25.2,0.015178486400999997,72.17,99.57,Extrema Anomalia Temporal (Top 1%)
-2018,A,athletico_pr,Guilherme Milhomem Gusmão,4,4,1.0,26.0,0.015178486400999997,71.93,99.54,Extrema Anomalia Temporal (Top 1%)
-2022,B,criciuma,Marcelo Hermes,4,4,1.0,26.2,0.015178486400999997,71.87,99.51,Extrema Anomalia Temporal (Top 1%)
-2015,A,flamengo,Jonas Gomes de Sousa,8,7,0.875,41.2,0.003638268060298205,71.36,99.47,Extrema Anomalia Temporal (Top 1%)
-2024,A,botafogo_rj,Gregore,8,7,0.875,41.2,0.003638268060298205,71.36,99.47,Extrema Anomalia Temporal (Top 1%)
-2018,A,vitoria,Aderlan Santos,4,4,1.0,28.0,0.015178486400999997,71.33,99.43,Extrema Anomalia Temporal (Top 1%)
-2017,A,coritiba,Thiago Carleto,4,4,1.0,29.5,0.015178486400999997,70.88,99.4,Extrema Anomalia Temporal (Top 1%)
-2015,A,chapecoense,Ananias Elói Castro Monteiro,4,4,1.0,29.8,0.015178486400999997,70.79,99.38,Extrema Anomalia Temporal (Top 1%)
-2023,A,america_mg,Emmanuel Martínez,4,4,1.0,30.2,0.015178486400999997,70.67,99.35,Extrema Anomalia Temporal (Top 1%)
-2018,A,ceara,Edinho,4,4,1.0,30.5,0.015178486400999997,70.58,99.32,Extrema Anomalia Temporal (Top 1%)
-2018,A,parana,Junior,4,4,1.0,30.8,0.015178486400999997,70.49,99.3,Extrema Anomalia Temporal (Top 1%)
-2024,A,corinthians,Fagner,4,4,1.0,31.0,0.015178486400999997,70.43,99.27,Extrema Anomalia Temporal (Top 1%)
-2022,B,crb,Welington Pereira Rodrigues,4,4,1.0,33.0,0.015178486400999997,69.83,99.24,Extrema Anomalia Temporal (Top 1%)
-2017,A,atletico_mg,Adílson Warken,7,6,0.8571,29.9,0.009151803016920505,69.22,99.21,Extrema Anomalia Temporal (Top 1%)
-2024,A,gremio,Pedro Geromel,4,4,1.0,35.2,0.015178486400999997,69.17,99.19,Extrema Anomalia Temporal (Top 1%)
-2020,A,vasco,Léo Matos,10,8,0.8,35.9,0.004919956998680239,69.07,99.16,Extrema Anomalia Temporal (Top 1%)
-2023,A,goias,Willian,7,6,0.8571,31.6,0.009151803016920505,68.71,99.13,Extrema Anomalia Temporal (Top 1%)
-2015,A,sao_paulo,Matheus Reis,4,4,1.0,36.8,0.015178486400999997,68.69,99.11,Extrema Anomalia Temporal (Top 1%)
-2020,A,flamengo,Gabriel Barbosa,4,4,1.0,37.2,0.015178486400999997,68.57,99.08,Extrema Anomalia Temporal (Top 1%)
-2015,A,coritiba,Leandro Silva,10,8,0.8,37.7,0.004919956998680239,68.53,99.05,Extrema Anomalia Temporal (Top 1%)
-2022,A,sao_paulo,Diego Henrique Costa Barbosa,7,6,0.8571,33.3,0.009151803016920505,68.2,99.03,Extrema Anomalia Temporal (Top 1%)
-2017,A,gremio,Michel Ferreira dos Santos,7,6,0.8571,36.7,0.009151803016920505,67.18,99.0,Extrema Anomalia Temporal (Top 1%)
-2017,A,vasco,Rafael Marques Pinto,3,3,1.0,23.3,0.04324355099999999,67.05,98.92,Alta Concentração Precoce (Top 5%)
-2023,A,athletico_pr,Arturo Vidal,3,3,1.0,23.3,0.04324355099999999,67.05,98.92,Alta Concentração Precoce (Top 5%)
-2022,A,bragantino,Raul,3,3,1.0,22.0,0.04324355099999999,67.05,98.92,Alta Concentração Precoce (Top 5%)
-2023,A,cruzeiro,Arthur Gomes,3,3,1.0,17.3,0.04324355099999999,67.05,98.92,Alta Concentração Precoce (Top 5%)
-2020,A,vasco,Jadson,3,3,1.0,21.3,0.04324355099999999,67.05,98.92,Alta Concentração Precoce (Top 5%)
-2020,A,corinthians,Ángelo Araos,3,3,1.0,23.7,0.04324355099999999,66.94,98.82,Alta Concentração Precoce (Top 5%)
-2015,A,vasco,Anderson Salles,3,3,1.0,23.7,0.04324355099999999,66.94,98.82,Alta Concentração Precoce (Top 5%)
-2023,A,corinthians,João Victor Andrade Caetano,3,3,1.0,24.0,0.04324355099999999,66.85,98.78,Alta Concentração Precoce (Top 5%)
-2024,A,bragantino,Eric dos Santos Rodrigues,4,4,1.0,43.0,0.015178486400999997,66.83,98.75,Alta Concentração Precoce (Top 5%)
-2022,A,corinthians,Du Queiroz,4,4,1.0,43.2,0.015178486400999997,66.77,98.73,Alta Concentração Precoce (Top 5%)
-2023,B,ponte_preta,Andre Felipe Ribeiro de Souza,3,3,1.0,24.7,0.04324355099999999,66.64,98.67,Alta Concentração Precoce (Top 5%)
-2024,A,internacional,Agustín Rogel,3,3,1.0,24.7,0.04324355099999999,66.64,98.67,Alta Concentração Precoce (Top 5%)
+temporada,serie,clube_slug,atleta,atleta_slug,total_cartoes,cartoes_1t,prop_cartoes_1t,minuto_medio_partida,p_val_binom_1t,athlete_anomaly_score,percentil_atleta,classificacao_atleta,atleta_pseudonimo
+2024,A,fluminense,atl_20b829edd2790353,atl_20b829edd2790353,6,6,1.0,34.7,0.0018700047030896004,80.66,99.99,Extrema Anomalia Temporal (Top 1%),atl_20b829edd2790353
+2022,A,coritiba,atl_e05a95826461267d,atl_e05a95826461267d,6,6,1.0,34.7,0.0018700047030896004,80.66,99.99,Extrema Anomalia Temporal (Top 1%),atl_e05a95826461267d
+2022,B,bahia,atl_8dc959eb5befb439,atl_8dc959eb5befb439,5,5,1.0,19.6,0.005327648726750999,78.41,99.93,Extrema Anomalia Temporal (Top 1%),atl_8dc959eb5befb439
+2017,A,vasco,atl_610529b609dd55ca,atl_610529b609dd55ca,5,5,1.0,16.6,0.005327648726750999,78.41,99.93,Extrema Anomalia Temporal (Top 1%),atl_610529b609dd55ca
+2023,A,fluminense,atl_35b8c83659eabd51,atl_35b8c83659eabd51,5,5,1.0,27.6,0.005327648726750999,77.13,99.89,Extrema Anomalia Temporal (Top 1%),atl_35b8c83659eabd51
+2023,B,crb,atl_4cedf0f501aef855,atl_4cedf0f501aef855,5,5,1.0,28.6,0.005327648726750999,76.83,99.86,Extrema Anomalia Temporal (Top 1%),atl_4cedf0f501aef855
+2016,A,figueirense,atl_26fc54ccc97f9e6e,atl_26fc54ccc97f9e6e,5,5,1.0,31.6,0.005327648726750999,75.93,99.84,Extrema Anomalia Temporal (Top 1%),atl_26fc54ccc97f9e6e
+2018,A,parana,atl_553f418fe76a9022,atl_553f418fe76a9022,5,5,1.0,33.0,0.005327648726750999,75.51,99.81,Extrema Anomalia Temporal (Top 1%),atl_553f418fe76a9022
+2022,A,botafogo_rj,atl_a7bab48ceb9bc9b6,atl_a7bab48ceb9bc9b6,5,5,1.0,35.2,0.005327648726750999,74.85,99.78,Extrema Anomalia Temporal (Top 1%),atl_a7bab48ceb9bc9b6
+2017,A,cruzeiro,atl_2ca1a395e3052d9e,atl_2ca1a395e3052d9e,8,7,0.875,29.6,0.003638268060298205,74.84,99.76,Extrema Anomalia Temporal (Top 1%),atl_2ca1a395e3052d9e
+2023,A,palmeiras,atl_c9b5a564527ef644,atl_c9b5a564527ef644,5,5,1.0,39.6,0.005327648726750999,73.53,99.73,Extrema Anomalia Temporal (Top 1%),atl_c9b5a564527ef644
+2022,B,gremio,atl_6e641a0de2505565,atl_6e641a0de2505565,4,4,1.0,18.2,0.015178486400999997,72.73,99.68,Extrema Anomalia Temporal (Top 1%),atl_6e641a0de2505565
+2022,B,novorizontino,atl_00e668c466e2e756,atl_00e668c466e2e756,4,4,1.0,20.0,0.015178486400999997,72.73,99.68,Extrema Anomalia Temporal (Top 1%),atl_00e668c466e2e756
+2022,A,goias,atl_4b84462025ce16ae,atl_4b84462025ce16ae,4,4,1.0,23.0,0.015178486400999997,72.73,99.68,Extrema Anomalia Temporal (Top 1%),atl_4b84462025ce16ae
+2021,A,palmeiras,atl_e1fbe579b17cc2e6,atl_e1fbe579b17cc2e6,4,4,1.0,23.8,0.015178486400999997,72.59,99.62,Extrema Anomalia Temporal (Top 1%),atl_e1fbe579b17cc2e6
+2022,A,fluminense,atl_d6e3f441b956097f,atl_d6e3f441b956097f,4,4,1.0,24.8,0.015178486400999997,72.29,99.59,Extrema Anomalia Temporal (Top 1%),atl_d6e3f441b956097f
+2021,A,palmeiras,atl_ab8b8abc76102e88,atl_ab8b8abc76102e88,4,4,1.0,25.2,0.015178486400999997,72.17,99.57,Extrema Anomalia Temporal (Top 1%),atl_ab8b8abc76102e88
+2018,A,athletico_pr,atl_3ef5bbec1124edfc,atl_3ef5bbec1124edfc,4,4,1.0,26.0,0.015178486400999997,71.93,99.54,Extrema Anomalia Temporal (Top 1%),atl_3ef5bbec1124edfc
+2022,B,criciuma,atl_8195c48af4c04504,atl_8195c48af4c04504,4,4,1.0,26.2,0.015178486400999997,71.87,99.51,Extrema Anomalia Temporal (Top 1%),atl_8195c48af4c04504
+2015,A,flamengo,atl_0f69d47b578e806e,atl_0f69d47b578e806e,8,7,0.875,41.2,0.003638268060298205,71.36,99.47,Extrema Anomalia Temporal (Top 1%),atl_0f69d47b578e806e
+2024,A,botafogo_rj,atl_65f77041b141235e,atl_65f77041b141235e,8,7,0.875,41.2,0.003638268060298205,71.36,99.47,Extrema Anomalia Temporal (Top 1%),atl_65f77041b141235e
+2018,A,vitoria,atl_7a60212a51504a21,atl_7a60212a51504a21,4,4,1.0,28.0,0.015178486400999997,71.33,99.43,Extrema Anomalia Temporal (Top 1%),atl_7a60212a51504a21
+2017,A,coritiba,atl_510e2bc13de6268d,atl_510e2bc13de6268d,4,4,1.0,29.5,0.015178486400999997,70.88,99.4,Extrema Anomalia Temporal (Top 1%),atl_510e2bc13de6268d
+2015,A,chapecoense,atl_bdf16672e54e8483,atl_bdf16672e54e8483,4,4,1.0,29.8,0.015178486400999997,70.79,99.38,Extrema Anomalia Temporal (Top 1%),atl_bdf16672e54e8483
+2023,A,america_mg,atl_001e6ccced0e5e08,atl_001e6ccced0e5e08,4,4,1.0,30.2,0.015178486400999997,70.67,99.35,Extrema Anomalia Temporal (Top 1%),atl_001e6ccced0e5e08
+2018,A,ceara,atl_c07d57f3aa129369,atl_c07d57f3aa129369,4,4,1.0,30.5,0.015178486400999997,70.58,99.32,Extrema Anomalia Temporal (Top 1%),atl_c07d57f3aa129369
+2018,A,parana,atl_468120508cfa19e8,atl_468120508cfa19e8,4,4,1.0,30.8,0.015178486400999997,70.49,99.3,Extrema Anomalia Temporal (Top 1%),atl_468120508cfa19e8
+2024,A,corinthians,atl_325a4ab9776d2baa,atl_325a4ab9776d2baa,4,4,1.0,31.0,0.015178486400999997,70.43,99.27,Extrema Anomalia Temporal (Top 1%),atl_325a4ab9776d2baa
+2022,B,crb,atl_9e48bf9c56ff1462,atl_9e48bf9c56ff1462,4,4,1.0,33.0,0.015178486400999997,69.83,99.24,Extrema Anomalia Temporal (Top 1%),atl_9e48bf9c56ff1462
+2017,A,atletico_mg,atl_5c13018599746981,atl_5c13018599746981,7,6,0.8571,29.9,0.009151803016920505,69.22,99.21,Extrema Anomalia Temporal (Top 1%),atl_5c13018599746981
+2024,A,gremio,atl_2f087077554262fc,atl_2f087077554262fc,4,4,1.0,35.2,0.015178486400999997,69.17,99.19,Extrema Anomalia Temporal (Top 1%),atl_2f087077554262fc
+2020,A,vasco,atl_f5fafc1271cb5597,atl_f5fafc1271cb5597,10,8,0.8,35.9,0.004919956998680239,69.07,99.16,Extrema Anomalia Temporal (Top 1%),atl_f5fafc1271cb5597
+2023,A,goias,atl_292d40355444528f,atl_292d40355444528f,7,6,0.8571,31.6,0.009151803016920505,68.71,99.13,Extrema Anomalia Temporal (Top 1%),atl_292d40355444528f
+2015,A,sao_paulo,atl_f55a352e97e55b14,atl_f55a352e97e55b14,4,4,1.0,36.8,0.015178486400999997,68.69,99.11,Extrema Anomalia Temporal (Top 1%),atl_f55a352e97e55b14
+2020,A,flamengo,atl_b06e091fe67400d5,atl_b06e091fe67400d5,4,4,1.0,37.2,0.015178486400999997,68.57,99.08,Extrema Anomalia Temporal (Top 1%),atl_b06e091fe67400d5
+2015,A,coritiba,atl_65b82bf5f0bb6adb,atl_65b82bf5f0bb6adb,10,8,0.8,37.7,0.004919956998680239,68.53,99.05,Extrema Anomalia Temporal (Top 1%),atl_65b82bf5f0bb6adb
+2022,A,sao_paulo,atl_be688a18828bd764,atl_be688a18828bd764,7,6,0.8571,33.3,0.009151803016920505,68.2,99.03,Extrema Anomalia Temporal (Top 1%),atl_be688a18828bd764
+2017,A,gremio,atl_f7fe6d6c0b871787,atl_f7fe6d6c0b871787,7,6,0.8571,36.7,0.009151803016920505,67.18,99.0,Extrema Anomalia Temporal (Top 1%),atl_f7fe6d6c0b871787
+2017,A,vasco,atl_8c7da8b3699c2a1f,atl_8c7da8b3699c2a1f,3,3,1.0,23.3,0.04324355099999999,67.05,98.92,Alta Concentração Precoce (Top 5%),atl_8c7da8b3699c2a1f
+2023,A,athletico_pr,atl_f4755b771549b6d5,atl_f4755b771549b6d5,3,3,1.0,23.3,0.04324355099999999,67.05,98.92,Alta Concentração Precoce (Top 5%),atl_f4755b771549b6d5
+2022,A,bragantino,atl_c3cc4f40c7e7a12a,atl_c3cc4f40c7e7a12a,3,3,1.0,22.0,0.04324355099999999,67.05,98.92,Alta Concentração Precoce (Top 5%),atl_c3cc4f40c7e7a12a
+2023,A,cruzeiro,atl_9390ec185254a07b,atl_9390ec185254a07b,3,3,1.0,17.3,0.04324355099999999,67.05,98.92,Alta Concentração Precoce (Top 5%),atl_9390ec185254a07b
+2020,A,vasco,atl_e61d6927c004c920,atl_e61d6927c004c920,3,3,1.0,21.3,0.04324355099999999,67.05,98.92,Alta Concentração Precoce (Top 5%),atl_e61d6927c004c920
+2020,A,corinthians,atl_3c9023e47532f7b5,atl_3c9023e47532f7b5,3,3,1.0,23.7,0.04324355099999999,66.94,98.82,Alta Concentração Precoce (Top 5%),atl_3c9023e47532f7b5
+2015,A,vasco,atl_b63a1bdea177ee1e,atl_b63a1bdea177ee1e,3,3,1.0,23.7,0.04324355099999999,66.94,98.82,Alta Concentração Precoce (Top 5%),atl_b63a1bdea177ee1e
+2023,A,corinthians,atl_fc5352be84e62603,atl_fc5352be84e62603,3,3,1.0,24.0,0.04324355099999999,66.85,98.78,Alta Concentração Precoce (Top 5%),atl_fc5352be84e62603
+2024,A,bragantino,atl_def53adaf44f543f,atl_def53adaf44f543f,4,4,1.0,43.0,0.015178486400999997,66.83,98.75,Alta Concentração Precoce (Top 5%),atl_def53adaf44f543f
+2022,A,corinthians,atl_f950a790f6628b49,atl_f950a790f6628b49,4,4,1.0,43.2,0.015178486400999997,66.77,98.73,Alta Concentração Precoce (Top 5%),atl_f950a790f6628b49
+2023,B,ponte_preta,atl_2b3dadaa982af00a,atl_2b3dadaa982af00a,3,3,1.0,24.7,0.04324355099999999,66.64,98.67,Alta Concentração Precoce (Top 5%),atl_2b3dadaa982af00a
+2024,A,internacional,atl_b007680f91f39a30,atl_b007680f91f39a30,3,3,1.0,24.7,0.04324355099999999,66.64,98.67,Alta Concentração Precoce (Top 5%),atl_b007680f91f39a30

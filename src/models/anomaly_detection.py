@@ -15,6 +15,12 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 
+from src.pipeline.camadas_de_exposicao import (
+    CAMADA_ABERTA,
+    aplicar_camada,
+    salvar_mapa_pseudonimos,
+)
+
 SERIE_A_PARTIDAS = os.path.join("data", "processed", "serie_a", "partidas_com_exposure.parquet")
 SERIE_A_CARTOES = os.path.join("data", "processed", "serie_a", "cartoes.parquet")
 SERIE_A_GOLS = os.path.join("data", "processed", "serie_a", "gols.parquet")
@@ -448,12 +454,18 @@ def run_integrity_anomaly_pipeline():
     # Exportar Top 50 Atletas Anômalos
     top_athletes = athletes_scored.head(50)
     top_athletes_export = top_athletes[[
-        "temporada", "serie", "clube_slug", "atleta", "total_cartoes", "cartoes_1t",
+        "temporada", "serie", "clube_slug", "atleta", "atleta_slug", "total_cartoes", "cartoes_1t",
         "prop_cartoes_1t", "minuto_medio_partida", "p_val_binom_1t",
         "athlete_anomaly_score", "percentil_atleta", "classificacao_atleta"
     ]]
     tabela_16_path = os.path.join(TABLES_DIR, "tabela_16_ranking_atletas_anomalos.csv")
-    top_athletes_export.to_csv(tabela_16_path, index=False, encoding="utf-8")
+    # F4-02: o ranking de atipicidade e composto majoritariamente por atletas nunca
+    # investigados. A tabela publicada sai pseudonimizada; a identificada fica em
+    # data/restrito/, fora do versionamento.
+    salvar_mapa_pseudonimos(top_athletes_export, coluna_identificador="atleta_slug",
+                            colunas_de_nome=("atleta",))
+    aplicar_camada(top_athletes_export, CAMADA_ABERTA).to_csv(
+        tabela_16_path, index=False, encoding="utf-8")
     print(f"     [OK] Tabela 16 salva: {tabela_16_path}")
 
     print("\n--- 4. Validando Sensibilidade com os 14 Casos da Operação Penalidade Máxima ---")

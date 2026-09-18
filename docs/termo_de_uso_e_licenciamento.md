@@ -134,10 +134,12 @@ oficiais, cuja fonte primária é pública.
 Registradas por honestidade, e porque um controle cuja lacuna não é declarada é pior do que
 controle nenhum:
 
-1. O módulo `perfis_de_acesso.py` protege as saídas geradas por `serve_product_feed`. Os
-   artefatos **já publicados no repositório** — Tabela 16, rankings nominais do relatório 07,
-   feeds de elenco — continuam identificados. A varredura retroativa é a tarefa **F4-02**, e
-   este termo não pode ser oposto a terceiros antes dela.
+1. A varredura retroativa foi executada na tarefa **F4-02**: as tabelas nominais e os
+   relatórios saem pseudonimizados, e um teste automatizado reprova a suíte se um nome
+   reaparecer. Permanece a exposição no **histórico do Git**, já publicado — os commits
+   anteriores contêm as listas nominais. Enquanto o tratamento do histórico não for decidido
+   (ver `docs/decisao_historico_git_exposicao_nominal.md`), este termo não pode ser oposto a
+   terceiros com base na proteção da árvore atual.
 2. O segredo de pseudonimização tem valor de desenvolvimento embutido no código para tornar os
    testes determinísticos. Em produção precisa vir do ambiente, e a troca do segredo invalida
    a continuidade dos identificadores.

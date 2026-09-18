@@ -75,7 +75,7 @@ O dado mais contundente é a divergência entre a quantidade de infrações e as
 ### 4.3 Minutagem e Cartões no 1º Tempo
 Historicamente, aproximadamente 1 em cada 3 cartões (34,5%) é mostrado na primeira etapa, concentrando-se os 65,5% restantes nos 45 minutos finais (quando o cansaço físico e o desespero pelo placar aumentam as faltas duras).
 Contudo, ao isolar atletas na era recente (2019–2024), encontramos atletas experientes com proporções anormais de cartões no 1º tempo:
-* Atletas como Wesley Ribeiro (68,8%), Diogo Barbosa (62,5%), Hélio Junio (60,9%) e Bruno Fuchs (60,0%) acumulam a maioria esmagadora de suas penalidades antes do intervalo.
+* Atletas como Wesley Ribeiro (68,8%), atl_20b829edd2790353 (62,5%), Hélio Junio (60,9%) e atl_4419450ad89d67ee (60,0%) acumulam a maioria esmagadora de suas penalidades antes do intervalo.
 * **Validação com a Operação Penalidade Máxima:** Nos dados de 2022, Gabriel Tota recebeu 2 cartões em 2 partidas na Série A, ambos no 1º tempo (minuto médio 38,5'). Paulo Miranda recebeu 3 de seus 5 cartões da temporada no 1º tempo (minuto médio 35,8'). Isso comprova que o indicador de concentração prematura de cartões capta comportamentos compatíveis com o modus operandi das fraudes documentadas.
 
 ### 4.4 Gols de Pênalti e o Efeito VAR

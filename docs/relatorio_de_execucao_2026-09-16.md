@@ -128,7 +128,7 @@ as 11 partidas sem relação são PDFs incompletos na origem, listadas explicita
 
 **Achado que mudou a identificação de atleta no projeto:** a súmula trunca o nome completo em
 ~40% dos registros e apelidos se repetem dentro do mesmo elenco — o Juventude de 2026 tem dois
-"Marcos Paulo", de camisas 10 e 47. O `registro_cbf` está presente em 100% dos registros e
+atletas de mesmo apelido, de camisas 10 e 47. O `registro_cbf` está presente em 100% dos registros e
 passou a ser o identificador canônico. É a saída estrutural para o problema de identidade da
 F1-03.
 

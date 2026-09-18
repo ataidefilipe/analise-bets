@@ -212,6 +212,14 @@ Classificadas conforme a taxonomia da Seção 17 do `.agent.md`:
   * *Decisão:* Implementar a matriz de segmentos em `src/pipeline/perfis_de_acesso.py`, com camadas aberta, pseudonimizada e identificada, e tornar o feed padrão o de menor exposição.
   * *Motivo:* Cláusula sem controle técnico não se sustenta. Um perfil não atendido precisa falhar em tempo de execução, não depender de alguém lembrar do contrato.
   * *Impacto:* O feed público deixou de expor 6.445 atletas nominados; a camada identificada foi isolada em diretório restrito e o banco passou a usar identificador HMAC estável. A varredura dos artefatos já publicados segue como F4-02.
+* **D-TEC-13: Pseudonimização por camada aplicada retroativamente aos artefatos publicados (F4-02):**
+  * *Decisão:* Classificar cada atleta por status jurídico, aplicar a camada de exposição nos pontos de exportação e varrer os artefatos já publicados, pseudonimizando os nomes de atletas sem condenação. Guardar o mapa de reidentificação fora do versionamento.
+  * *Motivo:* O repositório publicava rankings de "atletas anômalos" com 40 pessoas nunca investigadas. A diretriz de presunção de inocência estava declarada desde o relatório 07, mas sem controle efetivo — e uma correção que não alcança o que já existe não corrige nada.
+  * *Impacto:* 2.897 ocorrências tratadas em 8 arquivos; varredura final com zero. Um teste reprova a suíte se um nome reaparecer. Os 10 condenados seguem nominados, por serem fato público.
+* **D-NEG-03: Não reescrever o histórico do Git sem decisão do responsável (F4-02):**
+  * *Decisão:* Registrar as opções e a recomendação, sem executar a reescrita.
+  * *Motivo:* O repositório está publicado e os commits anteriores contêm as listas nominais. Reescrever histórico publicado é destrutivo e irreversível para terceiros — quebra clones e forks, e num repositório público nem sequer garante a remoção. É decisão de quem responde pelo projeto.
+  * *Impacto:* A exposição no histórico permanece até a decisão. O termo de uso registra que, por causa dela, não pode ser oposto a terceiros com base na proteção da árvore atual.
 
 ### 2.3 Decisões Técnicas (Decididas pelo Agente)
 * **D-TEC-01: Governança do Diretório de Dados Brutos:**

@@ -17,6 +17,11 @@ from sklearn.ensemble import IsolationForest, RandomForestClassifier
 from sklearn.preprocessing import RobustScaler
 
 from src.models.ground_truth_resolver import resolver_partidas, resolver_atletas
+from src.pipeline.camadas_de_exposicao import (
+    CAMADA_ABERTA,
+    aplicar_camada,
+    salvar_mapa_pseudonimos,
+)
 
 DATA_PARTIDAS = os.path.join("data", "processed", "integrity", "partidas_anomaly_scored.parquet")
 DATA_ATLETAS = os.path.join("data", "processed", "integrity", "atletas_anomaly_scored.parquet")
@@ -359,12 +364,15 @@ def run_integrity_classifier_pipeline():
     # Atletas Top 50
     top_athletes = df_athletes_scored.sort_values("prob_suspeicao_ml", ascending=False).head(50)
     top_athletes_export = top_athletes[[
-        "temporada", "serie", "clube_slug", "atleta", "total_cartoes", "cartoes_1t",
+        "temporada", "serie", "clube_slug", "atleta", "atleta_slug", "total_cartoes", "cartoes_1t",
         "prop_cartoes_1t", "minuto_medio_partida", "iforest_outlier",
         "prob_suspeicao_ml", "classificacao_ml", "athlete_anomaly_score"
     ]]
     t20_path = os.path.join(TABLES_DIR, "tabela_20_classificacao_atletas_ml.csv")
-    top_athletes_export.to_csv(t20_path, index=False, encoding="utf-8")
+    # F4-02: mesma razao da Tabela 16 — probabilidade de suspeicao com nome e o artefato de
+    # maior potencial de dano do repositorio.
+    aplicar_camada(top_athletes_export, CAMADA_ABERTA).to_csv(
+        t20_path, index=False, encoding="utf-8")
     print("     [OK] Tabela 20 salva:", t20_path)
 
     print("\n" + "=" * 75)

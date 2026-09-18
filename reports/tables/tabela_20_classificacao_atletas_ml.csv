@@ -1,51 +1,51 @@
-temporada,serie,clube_slug,atleta,total_cartoes,cartoes_1t,prop_cartoes_1t,minuto_medio_partida,iforest_outlier,prob_suspeicao_ml,classificacao_ml,athlete_anomaly_score
-2022,A,juventude,Paulo Miranda,5,3,0.6,35.8,0,0.8547,Classe 2: Extrema Anomalia / Alto Risco,42.08
-2015,A,internacional,Alex Raphael Meschini,4,2,0.5,36.5,0,0.8536,Classe 2: Extrema Anomalia / Alto Risco,35.52
-2022,A,juventude,Onitlasi Júnior de Moraes Rodrigues,4,2,0.5,48.0,0,0.8519,Classe 2: Extrema Anomalia / Alto Risco,32.07
-2023,B,guarani,Lucas Cavalcante Silva Afonso,4,2,0.5,48.0,0,0.8519,Classe 2: Extrema Anomalia / Alto Risco,32.07
-2021,A,sport,André Felipe Ribeiro de Souza,4,2,0.5,48.0,0,0.8519,Classe 2: Extrema Anomalia / Alto Risco,32.07
-2022,A,santos,Eduardo,8,4,0.5,56.5,0,0.8452,Classe 2: Extrema Anomalia / Alto Risco,31.66
-2024,A,cuiaba,Derik Lacerda,8,4,0.5,56.5,0,0.8452,Classe 2: Extrema Anomalia / Alto Risco,31.66
-2016,A,sport,Rithely,4,2,0.5,43.0,0,0.8438,Classe 2: Extrema Anomalia / Alto Risco,33.57
-2015,A,atletico_mg,Carlos Júnior,5,3,0.6,35.2,0,0.8419,Classe 2: Extrema Anomalia / Alto Risco,42.26
-2023,A,gremio,Bruno Uvini,4,2,0.5,47.8,0,0.8409,Classe 2: Extrema Anomalia / Alto Risco,32.13
-2020,A,goias,Iago Mendonça,4,2,0.5,41.2,0,0.8392,Classe 2: Extrema Anomalia / Alto Risco,34.11
-2018,A,palmeiras,Gustavo Gómez,4,2,0.5,43.2,0,0.8372,Classe 2: Extrema Anomalia / Alto Risco,33.51
-2016,A,vitoria,Ramon Menezes Roma,4,2,0.5,48.2,0,0.8362,Classe 2: Extrema Anomalia / Alto Risco,32.01
-2017,A,vitoria,Neilton Mestzk,4,2,0.5,48.2,0,0.8362,Classe 2: Extrema Anomalia / Alto Risco,32.01
-2023,A,fortaleza,Imanol Machuca,4,2,0.5,48.2,0,0.8362,Classe 2: Extrema Anomalia / Alto Risco,32.01
-2017,A,atletico_mg,Gleison Bremer,4,2,0.5,37.0,0,0.835,Classe 2: Extrema Anomalia / Alto Risco,35.37
-2022,B,nautico,Geuvanio Santos da Silva Lima,4,2,0.5,37.2,0,0.8344,Classe 2: Extrema Anomalia / Alto Risco,35.31
-2017,A,gremio,Lucas Barrios,4,2,0.5,37.2,0,0.8344,Classe 2: Extrema Anomalia / Alto Risco,35.31
-2022,A,ceara,Nino Paraíba,11,3,0.2727,64.1,0,0.8333,Classe 2: Extrema Anomalia / Alto Risco,17.15
-2018,A,cruzeiro,Marcelo Hermes,4,2,0.5,37.8,0,0.8322,Classe 2: Extrema Anomalia / Alto Risco,35.13
-2015,A,santos,Werley Ananias da Silva,8,4,0.5,56.6,0,0.8302,Classe 2: Extrema Anomalia / Alto Risco,31.63
-2024,A,corinthians,Gustavo Henrique Vernes,8,4,0.5,56.6,0,0.8302,Classe 2: Extrema Anomalia / Alto Risco,31.63
-2022,B,sport,Fabio Augusto Schirmann,4,2,0.5,47.5,0,0.8283,Classe 2: Extrema Anomalia / Alto Risco,32.22
-2017,A,sport,Sander Henrique Bortolotto,4,2,0.5,47.5,0,0.8283,Classe 2: Extrema Anomalia / Alto Risco,32.22
-2016,A,santos,Jonathan Copete,5,3,0.6,37.8,0,0.827,Classe 2: Extrema Anomalia / Alto Risco,41.48
-2022,A,cuiaba,Joaquim Henrique Pereira Silva,4,2,0.5,38.5,0,0.825,Classe 2: Extrema Anomalia / Alto Risco,34.92
-2023,A,gremio,Mathías Villasanti,8,4,0.5,56.9,0,0.8247,Classe 2: Extrema Anomalia / Alto Risco,31.54
-2023,A,santos,José Rodolfo Pires Ribeiro,4,2,0.5,42.8,0,0.8228,Classe 2: Extrema Anomalia / Alto Risco,33.63
-2023,B,sampaio_correa,Rafael da Cunha Jensen,4,2,0.5,42.8,0,0.8228,Classe 2: Extrema Anomalia / Alto Risco,33.63
-2023,A,bahia,Gilberto Moraes Júnior,4,2,0.5,39.2,0,0.8197,Classe 2: Extrema Anomalia / Alto Risco,34.71
-2020,A,bahia,Nino Paraíba,4,2,0.5,43.0,0,0.819,Classe 2: Extrema Anomalia / Alto Risco,33.57
-2020,A,flamengo,Thiago Maia,4,2,0.5,41.5,0,0.8187,Classe 2: Extrema Anomalia / Alto Risco,34.02
-2024,A,vitoria,Alerrandro Barra Mansa Realino de Souza,4,2,0.5,42.0,0,0.8182,Classe 2: Extrema Anomalia / Alto Risco,33.87
-2022,B,csa,Geovane Silva Santos,4,2,0.5,47.2,0,0.8179,Classe 2: Extrema Anomalia / Alto Risco,32.31
-2016,A,america_mg,Juninho,4,2,0.5,41.8,0,0.8176,Classe 2: Extrema Anomalia / Alto Risco,33.93
-2018,A,cruzeiro,Federico Mancuello,4,2,0.5,41.8,0,0.8176,Classe 2: Extrema Anomalia / Alto Risco,33.93
-2020,A,palmeiras,Emerson Santos,3,1,0.3333,42.7,0,0.8172,Classe 2: Extrema Anomalia / Alto Risco,25.92
-2022,B,sampaio_correa,Ygor de Oliveira Ferreira,3,1,0.3333,42.7,0,0.8172,Classe 2: Extrema Anomalia / Alto Risco,25.92
-2022,A,corinthians,Maycon de Andrade Barberan,4,2,0.5,39.8,0,0.8171,Classe 2: Extrema Anomalia / Alto Risco,34.53
-2023,B,juventude,Reginaldo Lopes de Jesus,4,2,0.5,57.8,0,0.8169,Classe 2: Extrema Anomalia / Alto Risco,29.13
-2022,B,tombense,Joseph Mauricio de Oliveira Figueiredo,4,2,0.5,57.8,0,0.8169,Classe 2: Extrema Anomalia / Alto Risco,29.13
-2021,A,atletico_go,Natanael Batista Pimenta,4,2,0.5,57.8,0,0.8169,Classe 2: Extrema Anomalia / Alto Risco,29.13
-2017,A,santos,Thiago Maia,4,2,0.5,40.0,0,0.8161,Classe 2: Extrema Anomalia / Alto Risco,34.47
-2016,A,sport,Everton Felipe,4,2,0.5,40.2,0,0.8156,Classe 2: Extrema Anomalia / Alto Risco,34.41
-2016,A,cruzeiro,Edimar Fraga,4,2,0.5,47.8,0,0.8147,Classe 2: Extrema Anomalia / Alto Risco,32.13
-2019,A,atletico_mg,Vinícius,4,2,0.5,47.8,0,0.8147,Classe 2: Extrema Anomalia / Alto Risco,32.13
-2021,A,ceara,Jorginho,4,2,0.5,47.8,0,0.8147,Classe 2: Extrema Anomalia / Alto Risco,32.13
-2022,B,sampaio_correa,Mateus da Silva Duarte,7,3,0.4286,50.7,0,0.8143,Classe 2: Extrema Anomalia / Alto Risco,28.75
-2021,A,bragantino,Aderlan Silva,7,3,0.4286,50.7,0,0.8143,Classe 2: Extrema Anomalia / Alto Risco,28.75
-2022,B,gremio,Joao Paulo de Souza Mares,4,2,0.5,48.5,0,0.8128,Classe 2: Extrema Anomalia / Alto Risco,31.92
+temporada,serie,clube_slug,atleta,atleta_slug,total_cartoes,cartoes_1t,prop_cartoes_1t,minuto_medio_partida,iforest_outlier,prob_suspeicao_ml,classificacao_ml,athlete_anomaly_score,atleta_pseudonimo
+2022,A,juventude,Paulo Miranda,paulo_miranda,5,3,0.6,35.8,0,0.8547,Classe 2: Extrema Anomalia / Alto Risco,42.08,atl_2603c5000de4f26a
+2015,A,internacional,atl_848240b4cf3878f6,atl_848240b4cf3878f6,4,2,0.5,36.5,0,0.8536,Classe 2: Extrema Anomalia / Alto Risco,35.52,atl_848240b4cf3878f6
+2022,A,juventude,atl_47a2fe1c11746310,atl_47a2fe1c11746310,4,2,0.5,48.0,0,0.8519,Classe 2: Extrema Anomalia / Alto Risco,32.07,atl_47a2fe1c11746310
+2023,B,guarani,atl_999c37e097dd466d,atl_999c37e097dd466d,4,2,0.5,48.0,0,0.8519,Classe 2: Extrema Anomalia / Alto Risco,32.07,atl_999c37e097dd466d
+2021,A,sport,atl_2b3dadaa982af00a,atl_2b3dadaa982af00a,4,2,0.5,48.0,0,0.8519,Classe 2: Extrema Anomalia / Alto Risco,32.07,atl_2b3dadaa982af00a
+2022,A,santos,atl_42836c48cec38835,atl_42836c48cec38835,8,4,0.5,56.5,0,0.8452,Classe 2: Extrema Anomalia / Alto Risco,31.66,atl_42836c48cec38835
+2024,A,cuiaba,atl_a817acc143b705e8,atl_a817acc143b705e8,8,4,0.5,56.5,0,0.8452,Classe 2: Extrema Anomalia / Alto Risco,31.66,atl_a817acc143b705e8
+2016,A,sport,atl_c4a931efb55ce0d8,atl_c4a931efb55ce0d8,4,2,0.5,43.0,0,0.8438,Classe 2: Extrema Anomalia / Alto Risco,33.57,atl_c4a931efb55ce0d8
+2015,A,atletico_mg,atl_9d8b5ecd20dd8be2,atl_9d8b5ecd20dd8be2,5,3,0.6,35.2,0,0.8419,Classe 2: Extrema Anomalia / Alto Risco,42.26,atl_9d8b5ecd20dd8be2
+2023,A,gremio,atl_0aaaa17c878d4e89,atl_0aaaa17c878d4e89,4,2,0.5,47.8,0,0.8409,Classe 2: Extrema Anomalia / Alto Risco,32.13,atl_0aaaa17c878d4e89
+2020,A,goias,atl_b436693ec6e70255,atl_b436693ec6e70255,4,2,0.5,41.2,0,0.8392,Classe 2: Extrema Anomalia / Alto Risco,34.11,atl_b436693ec6e70255
+2018,A,palmeiras,atl_58e1b7dce250b5eb,atl_58e1b7dce250b5eb,4,2,0.5,43.2,0,0.8372,Classe 2: Extrema Anomalia / Alto Risco,33.51,atl_58e1b7dce250b5eb
+2016,A,vitoria,atl_f371f908bea86a79,atl_f371f908bea86a79,4,2,0.5,48.2,0,0.8362,Classe 2: Extrema Anomalia / Alto Risco,32.01,atl_f371f908bea86a79
+2017,A,vitoria,atl_602fc032167d318c,atl_602fc032167d318c,4,2,0.5,48.2,0,0.8362,Classe 2: Extrema Anomalia / Alto Risco,32.01,atl_602fc032167d318c
+2023,A,fortaleza,atl_01f06defb3ddc808,atl_01f06defb3ddc808,4,2,0.5,48.2,0,0.8362,Classe 2: Extrema Anomalia / Alto Risco,32.01,atl_01f06defb3ddc808
+2017,A,atletico_mg,atl_2b1460536b151202,atl_2b1460536b151202,4,2,0.5,37.0,0,0.835,Classe 2: Extrema Anomalia / Alto Risco,35.37,atl_2b1460536b151202
+2022,B,nautico,atl_57bd150ca091dba2,atl_57bd150ca091dba2,4,2,0.5,37.2,0,0.8344,Classe 2: Extrema Anomalia / Alto Risco,35.31,atl_57bd150ca091dba2
+2017,A,gremio,atl_8db3ac7136fdc0ea,atl_8db3ac7136fdc0ea,4,2,0.5,37.2,0,0.8344,Classe 2: Extrema Anomalia / Alto Risco,35.31,atl_8db3ac7136fdc0ea
+2022,A,ceara,Nino Paraíba,nino_paraiba,11,3,0.2727,64.1,0,0.8333,Classe 2: Extrema Anomalia / Alto Risco,17.15,atl_6e9ad17a884a77e6
+2018,A,cruzeiro,atl_8195c48af4c04504,atl_8195c48af4c04504,4,2,0.5,37.8,0,0.8322,Classe 2: Extrema Anomalia / Alto Risco,35.13,atl_8195c48af4c04504
+2015,A,santos,atl_114b42180e1865f0,atl_114b42180e1865f0,8,4,0.5,56.6,0,0.8302,Classe 2: Extrema Anomalia / Alto Risco,31.63,atl_114b42180e1865f0
+2024,A,corinthians,atl_356ca5f7fdd82d45,atl_356ca5f7fdd82d45,8,4,0.5,56.6,0,0.8302,Classe 2: Extrema Anomalia / Alto Risco,31.63,atl_356ca5f7fdd82d45
+2022,B,sport,atl_0672dcfabb67ccb2,atl_0672dcfabb67ccb2,4,2,0.5,47.5,0,0.8283,Classe 2: Extrema Anomalia / Alto Risco,32.22,atl_0672dcfabb67ccb2
+2017,A,sport,atl_3709ec9568545b51,atl_3709ec9568545b51,4,2,0.5,47.5,0,0.8283,Classe 2: Extrema Anomalia / Alto Risco,32.22,atl_3709ec9568545b51
+2016,A,santos,atl_72ba3206b5f42cd3,atl_72ba3206b5f42cd3,5,3,0.6,37.8,0,0.827,Classe 2: Extrema Anomalia / Alto Risco,41.48,atl_72ba3206b5f42cd3
+2022,A,cuiaba,atl_daf666ecd8d2c5c0,atl_daf666ecd8d2c5c0,4,2,0.5,38.5,0,0.825,Classe 2: Extrema Anomalia / Alto Risco,34.92,atl_daf666ecd8d2c5c0
+2023,A,gremio,atl_62fcf3481cd5632e,atl_62fcf3481cd5632e,8,4,0.5,56.9,0,0.8247,Classe 2: Extrema Anomalia / Alto Risco,31.54,atl_62fcf3481cd5632e
+2023,A,santos,atl_724561005c99bbc3,atl_724561005c99bbc3,4,2,0.5,42.8,0,0.8228,Classe 2: Extrema Anomalia / Alto Risco,33.63,atl_724561005c99bbc3
+2023,B,sampaio_correa,atl_fb5b9aa3f900fb7b,atl_fb5b9aa3f900fb7b,4,2,0.5,42.8,0,0.8228,Classe 2: Extrema Anomalia / Alto Risco,33.63,atl_fb5b9aa3f900fb7b
+2023,A,bahia,atl_0336d237cd67fcaf,atl_0336d237cd67fcaf,4,2,0.5,39.2,0,0.8197,Classe 2: Extrema Anomalia / Alto Risco,34.71,atl_0336d237cd67fcaf
+2020,A,bahia,Nino Paraíba,nino_paraiba,4,2,0.5,43.0,0,0.819,Classe 2: Extrema Anomalia / Alto Risco,33.57,atl_6e9ad17a884a77e6
+2020,A,flamengo,atl_789eac7fc3a298e9,atl_789eac7fc3a298e9,4,2,0.5,41.5,0,0.8187,Classe 2: Extrema Anomalia / Alto Risco,34.02,atl_789eac7fc3a298e9
+2024,A,vitoria,atl_8a5f8e3847aa30ad,atl_8a5f8e3847aa30ad,4,2,0.5,42.0,0,0.8182,Classe 2: Extrema Anomalia / Alto Risco,33.87,atl_8a5f8e3847aa30ad
+2022,B,csa,atl_5673f604913019c5,atl_5673f604913019c5,4,2,0.5,47.2,0,0.8179,Classe 2: Extrema Anomalia / Alto Risco,32.31,atl_5673f604913019c5
+2016,A,america_mg,atl_97907b9f7776e40d,atl_97907b9f7776e40d,4,2,0.5,41.8,0,0.8176,Classe 2: Extrema Anomalia / Alto Risco,33.93,atl_97907b9f7776e40d
+2018,A,cruzeiro,atl_2e8b07d20c7b1fc1,atl_2e8b07d20c7b1fc1,4,2,0.5,41.8,0,0.8176,Classe 2: Extrema Anomalia / Alto Risco,33.93,atl_2e8b07d20c7b1fc1
+2020,A,palmeiras,atl_4b76401bc0902ed2,atl_4b76401bc0902ed2,3,1,0.3333,42.7,0,0.8172,Classe 2: Extrema Anomalia / Alto Risco,25.92,atl_4b76401bc0902ed2
+2022,B,sampaio_correa,atl_f1d6bd9f5c01972c,atl_f1d6bd9f5c01972c,3,1,0.3333,42.7,0,0.8172,Classe 2: Extrema Anomalia / Alto Risco,25.92,atl_f1d6bd9f5c01972c
+2022,A,corinthians,atl_420a7d513bb56dcb,atl_420a7d513bb56dcb,4,2,0.5,39.8,0,0.8171,Classe 2: Extrema Anomalia / Alto Risco,34.53,atl_420a7d513bb56dcb
+2023,B,juventude,atl_cd4636aab03b2f20,atl_cd4636aab03b2f20,4,2,0.5,57.8,0,0.8169,Classe 2: Extrema Anomalia / Alto Risco,29.13,atl_cd4636aab03b2f20
+2022,B,tombense,atl_d3b970621affa744,atl_d3b970621affa744,4,2,0.5,57.8,0,0.8169,Classe 2: Extrema Anomalia / Alto Risco,29.13,atl_d3b970621affa744
+2021,A,atletico_go,atl_e16b8cb24468df36,atl_e16b8cb24468df36,4,2,0.5,57.8,0,0.8169,Classe 2: Extrema Anomalia / Alto Risco,29.13,atl_e16b8cb24468df36
+2017,A,santos,atl_789eac7fc3a298e9,atl_789eac7fc3a298e9,4,2,0.5,40.0,0,0.8161,Classe 2: Extrema Anomalia / Alto Risco,34.47,atl_789eac7fc3a298e9
+2016,A,sport,atl_59f66a63820da780,atl_59f66a63820da780,4,2,0.5,40.2,0,0.8156,Classe 2: Extrema Anomalia / Alto Risco,34.41,atl_59f66a63820da780
+2016,A,cruzeiro,atl_68b08fa8778cac3c,atl_68b08fa8778cac3c,4,2,0.5,47.8,0,0.8147,Classe 2: Extrema Anomalia / Alto Risco,32.13,atl_68b08fa8778cac3c
+2019,A,atletico_mg,atl_f7f8ddc5cda3a75a,atl_f7f8ddc5cda3a75a,4,2,0.5,47.8,0,0.8147,Classe 2: Extrema Anomalia / Alto Risco,32.13,atl_f7f8ddc5cda3a75a
+2021,A,ceara,atl_3462f410936630e1,atl_3462f410936630e1,4,2,0.5,47.8,0,0.8147,Classe 2: Extrema Anomalia / Alto Risco,32.13,atl_3462f410936630e1
+2022,B,sampaio_correa,atl_62ccb2c84fe69f35,atl_62ccb2c84fe69f35,7,3,0.4286,50.7,0,0.8143,Classe 2: Extrema Anomalia / Alto Risco,28.75,atl_62ccb2c84fe69f35
+2021,A,bragantino,atl_a6fe6115bdec33f1,atl_a6fe6115bdec33f1,7,3,0.4286,50.7,0,0.8143,Classe 2: Extrema Anomalia / Alto Risco,28.75,atl_a6fe6115bdec33f1
+2022,B,gremio,atl_bbbb56d66c7e52ce,atl_bbbb56d66c7e52ce,4,2,0.5,48.5,0,0.8128,Classe 2: Extrema Anomalia / Alto Risco,31.92,atl_bbbb56d66c7e52ce
