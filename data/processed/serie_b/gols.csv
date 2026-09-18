@@ -1551,6 +1551,13 @@ partida_id,temporada,serie,rodada,clube,clube_slug,atleta,atleta_slug,num_camisa
 380,2023,B,38,Vila Nova,vila_nova,Rafael Ferreira Donato,rafael_ferreira_donato,5,33,0,78,2T,Normal
 380,2023,B,38,Abc,abc,Thonny Anderson da Silva Carvalho,thonny_anderson_da_silva_carvalho,5,90,4,94,2T,Penalty
 380,2023,B,38,Vila Nova,vila_nova,Rafael Ferreira Donato,rafael_ferreira_donato,5,90,10,100,2T,Normal
+206,2024,B,0,Guarani,guarani,João Victor Lima Ferreira,joao_victor_lima_ferreira,19,4,0,4,1T,Normal
+206,2024,B,0,Guarani,guarani,Marlon Douglas de Sales Silva,marlon_douglas_de_sales_silva,8,24,0,24,1T,Normal
+206,2024,B,0,Guarani,guarani,Caio Henrique da Silva Dantas,caio_henrique_da_silva_dantas,99,9,0,54,2T,Normal
+206,2024,B,0,Guarani,guarani,Caio Henrique da Silva Dantas,caio_henrique_da_silva_dantas,99,31,0,76,2T,Normal
+331,2024,B,0,Goiás,goias,Breno Herculano Almeida,breno_herculano_almeida,18,16,0,16,1T,Normal
+331,2024,B,0,Goiás,goias,Lucas Ribeiro dos Santos,lucas_ribeiro_dos_santos,14,10,0,55,2T,Normal
+331,2024,B,0,Goiás,goias,Paulo Henrique Silva Ribeiro,paulo_henrique_silva_ribeiro,7,27,0,72,2T,Normal
 1,2024,B,1,Vila Nova,vila_nova,Luciano Francisco Paulino,luciano_francisco_paulino,10,31,0,31,1T,Normal
 1,2024,B,1,Vila Nova,vila_nova,Geremias Ribeiro Junior,geremias_ribeiro_junior,7,10,0,55,2T,Normal
 2,2024,B,1,Ponte Preta,ponte_preta,Joilson de Jesus Demetrio Cardoso,joilson_de_jesus_demetrio_cardoso,13,13,0,13,1T,Normal
@@ -1562,6 +1569,1638 @@ partida_id,temporada,serie,rodada,clube,clube_slug,atleta,atleta_slug,num_camisa
 4,2024,B,1,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Lucca Borges de Brito,lucca_borges_de_brito,11,90,4,94,2T,Normal
 5,2024,B,1,Santos,santos,Pedro Gabriel Pereira Lopes,pedro_gabriel_pereira_lopes,7,23,0,68,2T,Normal
 5,2024,B,1,Santos,santos,Guilherme Augusto Vieira dos Santos,guilherme_augusto_vieira_dos_santos,11,44,0,89,2T,Normal
+6,2024,B,1,Chapecoense,chapecoense,Pedro Henrique Perotti,pedro_henrique_perotti,9,43,0,43,1T,Penalty
+6,2024,B,1,Chapecoense,chapecoense,Gianluca Piola Minozzo,gianluca_piola_minozzo,6,4,0,49,2T,Normal
+6,2024,B,1,Chapecoense,chapecoense,Mario Sergio Pereira Junior,mario_sergio_pereira_junior,89,21,0,66,2T,Normal
+6,2024,B,1,Ituano,ituano,Salatiel de Oliveira Gabriel Junior,salatiel_de_oliveira_gabriel_junior,19,90,6,96,2T,Penalty
+7,2024,B,1,Brusque,brusque,Gerson Rodolfo da Silva,gerson_rodolfo_da_silva,5,7,0,7,1T,Normal
+7,2024,B,1,Mirassol,mirassol,Guilherme Augusto Alves Dellatorre,guilherme_augusto_alves_dellatorre,49,4,0,49,2T,Penalty
+7,2024,B,1,Mirassol,mirassol,Luiz Otavio da Silva Santos,luiz_otavio_da_silva_santos,4,22,0,67,2T,Gol Contra
+7,2024,B,1,Brusque,brusque,Olavio dos Santos Lima Filho,olavio_dos_santos_lima_filho,9,90,7,97,2T,Normal
+8,2024,B,1,Operário,operario,Emaxwell Souza de Lima,emaxwell_souza_de_lima,77,90,4,94,2T,Normal
+9,2024,B,1,Sport,sport,Jose Romario Silva de Souza,jose_romario_silva_de_souza,11,30,0,30,1T,Normal
+9,2024,B,1,Sport,sport,Gustavo Coutinho Silva Lopes,gustavo_coutinho_silva_lopes,9,4,0,49,2T,Normal
+9,2024,B,1,Amazonas Fc,amazonas_fc,Matheus Santos Soares,matheus_santos_soares,23,21,0,66,2T,Normal
+9,2024,B,1,Sport,sport,Luciano Castan da Silva,luciano_castan_da_silva,40,24,0,69,2T,Normal
+9,2024,B,1,Amazonas Fc,amazonas_fc,Joao Alves de Assis Silva,joao_alves_de_assis_silva,7,90,1,91,2T,Normal
+10,2024,B,1,Goiás,goias,Paulo Henrique Silva Ribeiro,paulo_henrique_silva_ribeiro,7,18,0,18,1T,Normal
+10,2024,B,1,Ceará,ceara,Joao Paulo Ferreira Lourenco,joao_paulo_ferreira_lourenco,97,45,0,45,1T,Penalty
+11,2024,B,2,Goiás,goias,Marcos Antonio Almeida Silva,marcos_antonio_almeida_silva,77,31,0,31,1T,Normal
+11,2024,B,2,Goiás,goias,Edson Felipe da Cruz,edson_felipe_da_cruz,19,16,0,61,2T,Normal
+11,2024,B,2,Goiás,goias,Breno Herculano Almeida,breno_herculano_almeida,18,27,0,72,2T,Normal
+12,2024,B,2,Chapecoense,chapecoense,Bruno Leonardo dos Santos Covas,bruno_leonardo_dos_santos_covas,33,29,0,29,1T,Normal
+13,2024,B,2,Mirassol,mirassol,Fernando Jose Marques Maciel,fernando_jose_marques_maciel,7,21,0,21,1T,Normal
+13,2024,B,2,Mirassol,mirassol,Gabriel Santana Pinto,gabriel_santana_pinto,27,41,0,41,1T,Normal
+13,2024,B,2,Ceará,ceara,Janderson Santos de Souza,janderson_santos_de_souza,77,21,0,66,2T,Normal
+13,2024,B,2,Ceará,ceara,Aylon Darwin Tavella,aylon_darwin_tavella,11,24,0,69,2T,Normal
+13,2024,B,2,Mirassol,mirassol,Daniel de Oliveira Sertanejo,daniel_de_oliveira_sertanejo,8,38,0,83,2T,Falta
+14,2024,B,2,Operário,operario,Ronaldo Henrique Silva,ronaldo_henrique_silva,90,26,0,26,1T,Normal
+14,2024,B,2,Operário,operario,Ronald Sant Anna Rodrigues,ronald_sant_anna_rodrigues,31,90,8,98,2T,Normal
+15,2024,B,2,America Saf,america_saf,Francisco Vitor Silva Costa,francisco_vitor_silva_costa,29,45,1,46,1T,Normal
+15,2024,B,2,America Saf,america_saf,Alexandre Egea,alexandre_egea,16,8,0,53,2T,Normal
+16,2024,B,2,Santos,santos,Joao Pedro Chermont Crema,joao_pedro_chermont_crema,44,12,0,57,2T,Normal
+16,2024,B,2,Santos,santos,Julio Cesar Furch,julio_cesar_furch,9,33,0,78,2T,Normal
+18,2024,B,2,Coritiba S.a.f.,coritiba_s_a_f,Guilherme Brandao Azevedo,guilherme_brandao_azevedo,21,39,0,84,2T,Normal
+19,2024,B,2,Paysandu,paysandu,Esli Samuel Garcia Cordero,esli_samuel_garcia_cordero,15,22,0,67,2T,Normal
+19,2024,B,2,Botafogo,botafogo,Jonas Gabriel da Silva Nunes,jonas_gabriel_da_silva_nunes,19,34,0,79,2T,Normal
+20,2024,B,2,Sport,sport,Rafael Thyere de Albuquerque Marques,rafael_thyere_de_albuquerque_marques,15,26,0,26,1T,Normal
+20,2024,B,2,Sport,sport,Gustavo Coutinho Silva Lopes,gustavo_coutinho_silva_lopes,9,5,0,50,2T,Normal
+21,2024,B,3,Vila Nova,vila_nova,Henrique Almeida Caixeta Nascentes,henrique_almeida_caixeta_nascentes,19,90,4,94,2T,Normal
+22,2024,B,3,Ponte Preta,ponte_preta,Gabriel Novaes Fernandes,gabriel_novaes_fernandes,35,17,0,17,1T,Normal
+22,2024,B,3,Ponte Preta,ponte_preta,Gabriel Novaes Fernandes,gabriel_novaes_fernandes,35,33,0,33,1T,Normal
+22,2024,B,3,Ponte Preta,ponte_preta,Vinicius Rodrigues Adelino dos Santos,vinicius_rodrigues_adelino_dos_santos,7,90,4,94,2T,Normal
+24,2024,B,3,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Cesar Henrique Martins,cesar_henrique_martins,37,22,0,22,1T,Normal
+24,2024,B,3,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Luis Fellipe Campos Doria,luis_fellipe_campos_doria,25,2,0,47,2T,Normal
+24,2024,B,3,Ituano,ituano,Eduardo Luiz Person,eduardo_luiz_person,10,45,6,51,1T,Normal
+24,2024,B,3,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Rodolfo Jose da Silva Bardella,rodolfo_jose_da_silva_bardella,7,38,0,83,2T,Normal
+25,2024,B,3,Santos,santos,Guilherme Augusto Vieira dos Santos,guilherme_augusto_vieira_dos_santos,11,32,0,32,1T,Normal
+25,2024,B,3,Santos,santos,Diego Cristiano Evaristo,diego_cristiano_evaristo,21,40,0,40,1T,Normal
+25,2024,B,3,Santos,santos,Alfredo Jose Morelos Avilez,alfredo_jose_morelos_avilez,30,10,0,55,2T,Normal
+25,2024,B,3,Santos,santos,Giuliano Victor de Paula,giuliano_victor_de_paula,20,16,0,61,2T,Normal
+25,2024,B,3,Guarani,guarani,Caio Henrique da Silva Dantas,caio_henrique_da_silva_dantas,99,27,0,72,2T,Penalty
+26,2024,B,3,Chapecoense,chapecoense,Mario Sergio Pereira Junior,mario_sergio_pereira_junior,89,35,0,35,1T,Normal
+26,2024,B,3,Chapecoense,chapecoense,Bruno Leonardo dos Santos Covas,bruno_leonardo_dos_santos_covas,33,31,0,76,2T,Normal
+26,2024,B,3,America Saf,america_saf,Fabio Augusto Luciano da Silva,fabio_augusto_luciano_da_silva,28,33,0,78,2T,Normal
+26,2024,B,3,America Saf,america_saf,Alexandre Egea,alexandre_egea,16,38,0,83,2T,Normal
+27,2024,B,3,Goiás,goias,Paulo Henrique Silva Ribeiro,paulo_henrique_silva_ribeiro,7,6,0,6,1T,Normal
+27,2024,B,3,Goiás,goias,Marcos Antonio Almeida Silva,marcos_antonio_almeida_silva,77,11,0,56,2T,Normal
+28,2024,B,3,Sport,sport,Gustavo Coutinho Silva Lopes,gustavo_coutinho_silva_lopes,9,20,0,20,1T,Normal
+30,2024,B,3,Ceará,ceara,Facundo Barcelo Viera,facundo_barcelo_viera,31,29,0,29,1T,Normal
+30,2024,B,3,Crb,crb,Diogo Hereda da Silva,diogo_hereda_da_silva,32,45,1,46,1T,Normal
+30,2024,B,3,Crb,crb,Romulo da Silva Machado,romulo_da_silva_machado,17,4,0,49,2T,Normal
+30,2024,B,3,Ceará,ceara,Ramon Menezes Roma,ramon_menezes_roma,40,30,0,75,2T,Normal
+31,2024,B,4,Goiás,goias,Jackson Diego Ibraim Fagundes,jackson_diego_ibraim_fagundes,20,10,0,10,1T,Normal
+31,2024,B,4,Goiás,goias,Paulo Henrique Silva Ribeiro,paulo_henrique_silva_ribeiro,7,27,0,72,2T,Normal
+32,2024,B,4,Guarani,guarani,João Vitor Carvalho Villela Nogueira,joao_vitor_carvalho_villela_nogueira,19,22,0,22,1T,Normal
+32,2024,B,4,Guarani,guarani,Luccas Paraizo Feitosa,luccas_paraizo_feitosa,7,21,0,66,2T,Normal
+33,2024,B,4,Mirassol,mirassol,Fernando Jose Marques Maciel,fernando_jose_marques_maciel,7,10,0,10,1T,Normal
+33,2024,B,4,Mirassol,mirassol,Guilherme Augusto Alves Dellatorre,guilherme_augusto_alves_dellatorre,49,15,0,15,1T,Normal
+33,2024,B,4,Paysandu,paysandu,Esli Samuel Garcia Cordero,esli_samuel_garcia_cordero,15,13,0,58,2T,Normal
+34,2024,B,4,Ceará,ceara,Jorge Eduardo Recalde Ramírez,jorge_eduardo_recalde_ramirez,28,10,0,10,1T,Normal
+34,2024,B,4,Ceará,ceara,Facundo Barcelo Viera,facundo_barcelo_viera,31,12,0,57,2T,Normal
+34,2024,B,4,Ceará,ceara,Lucas Andres Mugni,lucas_andres_mugni,10,42,0,87,2T,Normal
+35,2024,B,4,Vila Nova,vila_nova,Igor Henrique Martins Machado,igor_henrique_martins_machado,28,9,0,9,1T,Normal
+35,2024,B,4,America Saf,america_saf,Renato Marques de Oliveira Junior,renato_marques_de_oliveira_junior,78,21,0,21,1T,Normal
+35,2024,B,4,America Saf,america_saf,Adilson dos Anjos Oliveira,adilson_dos_anjos_oliveira,8,42,0,42,1T,Normal
+35,2024,B,4,America Saf,america_saf,Fabio Augusto Luciano da Silva,fabio_augusto_luciano_da_silva,28,43,0,88,2T,Normal
+36,2024,B,4,Avaí,avai,Jose Ricardo Barbosa Ribeiro Drumond,jose_ricardo_barbosa_ribeiro_drumond,77,39,0,84,2T,Normal
+37,2024,B,4,Crb,crb,Saimon Pains Tormen,saimon_pains_tormen,4,19,0,19,1T,Normal
+37,2024,B,4,Crb,crb,Anselmo Ramon Alves Herculano,anselmo_ramon_alves_herculano,9,45,1,46,1T,Penalty
+38,2024,B,4,Operário,operario,Willian Estefani Machado,willian_estefani_machado,4,25,0,25,1T,Normal
+38,2024,B,4,Ponte Preta,ponte_preta,Vinicius Rodrigues Adelino dos Santos,vinicius_rodrigues_adelino_dos_santos,7,90,7,97,2T,Normal
+39,2024,B,4,Amazonas Fc,amazonas_fc,Sebastiao Enio Santos de Almeida,sebastiao_enio_santos_de_almeida,22,18,0,18,1T,Normal
+40,2024,B,4,Sport,sport,Gustavo Coutinho Silva Lopes,gustavo_coutinho_silva_lopes,9,42,0,42,1T,Penalty
+40,2024,B,4,Sport,sport,Cristian Jonatan Ortiz,cristian_jonatan_ortiz,59,16,0,61,2T,Normal
+40,2024,B,4,Sport,sport,Chrystian Amaral Barletta de Almeida,chrystian_amaral_barletta_de_almeida,30,28,0,73,2T,Normal
+40,2024,B,4,Brusque,brusque,Paulo de Souza Junior,paulo_de_souza_junior,18,35,0,80,2T,Normal
+40,2024,B,4,Sport,sport,Chrystian Amaral Barletta de Almeida,chrystian_amaral_barletta_de_almeida,30,41,0,86,2T,Normal
+41,2024,B,5,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Danilo Carvalho Barcelos,danilo_carvalho_barcelos,14,23,0,68,2T,Gol Contra
+41,2024,B,5,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Lucca Borges de Brito,lucca_borges_de_brito,11,36,0,81,2T,Normal
+41,2024,B,5,Vila Nova,vila_nova,Henrique Almeida Caixeta Nascentes,henrique_almeida_caixeta_nascentes,19,90,3,93,2T,Normal
+42,2024,B,5,Santos,santos,Carlos Gilberto do Nascimento Silva,carlos_gilberto_do_nascimento_silva,4,17,0,17,1T,Normal
+42,2024,B,5,Santos,santos,Giuliano Victor de Paula,giuliano_victor_de_paula,20,20,0,20,1T,Normal
+42,2024,B,5,Ponte Preta,ponte_preta,Sergio Raphael dos Anjos Raphael,sergio_raphael_dos_anjos_raphael,6,7,0,52,2T,Normal
+44,2024,B,5,Ituano,ituano,Vinicius dos Santos de Oliveira Paiva,vinicius_dos_santos_de_oliveira_paiva,7,24,0,69,2T,Normal
+46,2024,B,5,Avaí,avai,Pedro Henrique de Castro Silva,pedro_henrique_de_castro_silva,21,32,0,32,1T,Normal
+46,2024,B,5,Avaí,avai,Mauricio Garcez de Jesus,mauricio_garcez_de_jesus,11,36,0,36,1T,Normal
+46,2024,B,5,Crb,crb,Anselmo Ramon Alves Herculano,anselmo_ramon_alves_herculano,9,45,0,90,2T,Normal
+48,2024,B,5,Coritiba S.a.f.,coritiba_s_a_f,Lucas Ronier Vieira Pires,lucas_ronier_vieira_pires,98,18,0,18,1T,Normal
+49,2024,B,5,Paysandu,paysandu,Nicolas Godinho Johann,nicolas_godinho_johann,11,19,0,19,1T,Normal
+49,2024,B,5,Goiás,goias,Breno Herculano Almeida,breno_herculano_almeida,18,40,0,85,2T,Normal
+50,2024,B,5,Ceará,ceara,Ramon Menezes Roma,ramon_menezes_roma,40,2,0,2,1T,Normal
+50,2024,B,5,Ceará,ceara,Erick da Costa Farias,erick_da_costa_farias,16,17,0,17,1T,Normal
+50,2024,B,5,Amazonas Fc,amazonas_fc,Diego Fabian Torres,diego_fabian_torres,8,19,0,64,2T,Normal
+51,2024,B,6,Goiás,goias,Marcos Antonio Almeida Silva,marcos_antonio_almeida_silva,77,23,0,23,1T,Normal
+51,2024,B,6,Goiás,goias,Marcos Antonio Almeida Silva,marcos_antonio_almeida_silva,77,40,0,40,1T,Normal
+51,2024,B,6,Goiás,goias,Angelo Jose Rodriguez Henry,angelo_jose_rodriguez_henry,9,24,0,69,2T,Normal
+51,2024,B,6,Goiás,goias,Thiago Galhardo do Nascimento Rocha,thiago_galhardo_do_nascimento_rocha,33,45,0,90,2T,Normal
+52,2024,B,6,Guarani,guarani,Luccas Paraizo Feitosa,luccas_paraizo_feitosa,7,18,0,18,1T,Normal
+52,2024,B,6,America Saf,america_saf,Fabio Augusto Luciano da Silva,fabio_augusto_luciano_da_silva,28,29,0,29,1T,Normal
+52,2024,B,6,America Saf,america_saf,Moises Lima Magalhaes,moises_lima_magalhaes,15,34,0,79,2T,Penalty
+53,2024,B,6,Mirassol,mirassol,Guilherme Augusto Alves Dellatorre,guilherme_augusto_alves_dellatorre,49,22,0,67,2T,Normal
+53,2024,B,6,Mirassol,mirassol,Daniel de Oliveira Sertanejo,daniel_de_oliveira_sertanejo,8,31,0,76,2T,Falta
+55,2024,B,6,Santos,santos,Weslley Pinto Batista,weslley_pinto_batista,42,22,0,22,1T,Normal
+55,2024,B,6,Santos,santos,Giuliano Victor de Paula,giuliano_victor_de_paula,20,33,0,33,1T,Normal
+55,2024,B,6,Santos,santos,Willian Gomes de Siqueira,willian_gomes_de_siqueira,27,40,0,40,1T,Normal
+55,2024,B,6,Santos,santos,Alfredo Jose Morelos Avilez,alfredo_jose_morelos_avilez,30,34,0,79,2T,Normal
+57,2024,B,6,Crb,crb,Anselmo Ramon Alves Herculano,anselmo_ramon_alves_herculano,9,14,0,14,1T,Normal
+59,2024,B,6,Amazonas Fc,amazonas_fc,Matheus Bonadiman Serafim,matheus_bonadiman_serafim,11,39,0,39,1T,Normal
+59,2024,B,6,Paysandu,paysandu,Esli Samuel Garcia Cordero,esli_samuel_garcia_cordero,15,45,2,47,1T,Normal
+60,2024,B,6,Sport,sport,Alan Nahuel Ruiz,alan_nahuel_ruiz,10,3,0,3,1T,Falta
+60,2024,B,6,Avaí,avai,Mauricio Garcez de Jesus,mauricio_garcez_de_jesus,11,45,0,90,2T,Normal
+60,2024,B,6,Avaí,avai,Jean Lucas Figueiredo,jean_lucas_figueiredo,29,90,6,96,2T,Normal
+61,2024,B,7,Vila Nova,vila_nova,Alesson dos Santos Batista,alesson_dos_santos_batista,11,20,0,20,1T,Penalty
+61,2024,B,7,Brusque,brusque,Guilherme de Queiroz Goncalves,guilherme_de_queiroz_goncalves,17,24,0,24,1T,Normal
+61,2024,B,7,Vila Nova,vila_nova,Geremias Ribeiro Junior,geremias_ribeiro_junior,29,2,0,47,2T,Normal
+61,2024,B,7,Brusque,brusque,Alex Ruan Vasconcelos Ferreira,alex_ruan_vasconcelos_ferreira,66,9,0,54,2T,Normal
+63,2024,B,7,Botafogo,botafogo,Carlos Manuel de Resende Teodoro,carlos_manuel_de_resende_teodoro,15,44,0,89,2T,Gol Contra
+64,2024,B,7,Ituano,ituano,Thonny Anderson da Silva Carvalho,thonny_anderson_da_silva_carvalho,9,11,0,56,2T,Normal
+64,2024,B,7,Ituano,ituano,Jose Walber Mota de Amorim,jose_walber_mota_de_amorim,4,15,0,60,2T,Normal
+65,2024,B,7,America Saf,america_saf,Renato Marques de Oliveira Junior,renato_marques_de_oliveira_junior,78,15,0,15,1T,Normal
+65,2024,B,7,Santos,santos,Willian Gomes de Siqueira,willian_gomes_de_siqueira,27,29,0,29,1T,Normal
+65,2024,B,7,America Saf,america_saf,Adilson dos Anjos Oliveira,adilson_dos_anjos_oliveira,8,21,0,66,2T,Normal
+66,2024,B,7,Avaí,avai,Mauricio Garcez de Jesus,mauricio_garcez_de_jesus,11,26,0,71,2T,Normal
+66,2024,B,7,Avaí,avai,Gabriel Buscariol Poveda,gabriel_buscariol_poveda,9,42,0,87,2T,Normal
+67,2024,B,7,Crb,crb,Mike dos Santos Nenatarvicius,mike_dos_santos_nenatarvicius,7,13,0,13,1T,Normal
+67,2024,B,7,Sport,sport,Wellington Alves da Silva,wellington_alves_da_silva,18,24,0,69,2T,Normal
+68,2024,B,7,Coritiba S.a.f.,coritiba_s_a_f,Everton Morelli Casimiro,everton_morelli_casimiro,40,2,0,2,1T,Normal
+68,2024,B,7,Coritiba S.a.f.,coritiba_s_a_f,Matheus Henrique Frizzo,matheus_henrique_frizzo,10,8,0,8,1T,Penalty
+68,2024,B,7,Coritiba S.a.f.,coritiba_s_a_f,Matheus Henrique Frizzo,matheus_henrique_frizzo,10,27,0,27,1T,Normal
+69,2024,B,7,Amazonas Fc,amazonas_fc,Jorge Andres Roa Jimenez,jorge_andres_roa_jimenez,5,28,0,73,2T,Normal
+70,2024,B,7,Chapecoense,chapecoense,Mario Sergio Pereira Junior,mario_sergio_pereira_junior,89,17,0,17,1T,Normal
+70,2024,B,7,Ceará,ceara,Facundo Barcelo Viera,facundo_barcelo_viera,31,43,0,43,1T,Normal
+70,2024,B,7,Ceará,ceara,Saulo Rodrigues da Silva,saulo_rodrigues_da_silva,73,90,10,100,2T,Penalty
+71,2024,B,8,Goiás,goias,Welliton Silva de Azevedo Matheus,welliton_silva_de_azevedo_matheus,31,4,0,4,1T,Normal
+71,2024,B,8,Goiás,goias,Marcos Antonio Almeida Silva,marcos_antonio_almeida_silva,77,25,0,70,2T,Normal
+71,2024,B,8,Goiás,goias,Luiz Henrique Araujo Silva,luiz_henrique_araujo_silva,88,90,5,95,2T,Normal
+72,2024,B,8,Ponte Preta,ponte_preta,Jeferson Marinho dos Santos,jeferson_marinho_dos_santos,9,1,0,46,2T,Normal
+72,2024,B,8,Crb,crb,Anselmo Ramon Alves Herculano,anselmo_ramon_alves_herculano,9,17,0,62,2T,Penalty
+72,2024,B,8,Ponte Preta,ponte_preta,Elvis Vieira Araujo,elvis_vieira_araujo,10,20,0,65,2T,Penalty
+72,2024,B,8,Crb,crb,Geirton Marques Aires,geirton_marques_aires,8,30,0,75,2T,Normal
+72,2024,B,8,Ponte Preta,ponte_preta,Wellison Matheus Rodrigues Regis,wellison_matheus_rodrigues_regis,77,33,0,78,2T,Normal
+72,2024,B,8,Ponte Preta,ponte_preta,Jose Renato da Silva Junior,jose_renato_da_silva_junior,19,90,7,97,2T,Normal
+74,2024,B,8,Avaí,avai,Jonathan Aparecido de Oliveira da Costa,jonathan_aparecido_de_oliveira_da_costa,95,27,0,27,1T,Normal
+75,2024,B,8,Botafogo,botafogo,Douglas Baggio de Oliveira Costa,douglas_baggio_de_oliveira_costa,11,42,0,42,1T,Normal
+75,2024,B,8,Botafogo,botafogo,Joao Vitor Hipolito Costa,joao_vitor_hipolito_costa,5,5,0,50,2T,Normal
+75,2024,B,8,Santos,santos,Joaquim Henrique Pereira Silva,joaquim_henrique_pereira_silva,6,28,0,73,2T,Normal
+76,2024,B,8,Vila Nova,vila_nova,Alesson dos Santos Batista,alesson_dos_santos_batista,11,39,0,84,2T,Normal
+76,2024,B,8,Chapecoense,chapecoense,Habraão Lincon do Nascimento Saraiva,habraao_lincon_do_nascimento_saraiva,28,90,3,93,2T,Normal
+78,2024,B,8,Operário,operario,Rodrigo Antonio Rodrigues,rodrigo_antonio_rodrigues,7,34,0,34,1T,Normal
+79,2024,B,8,Paysandu,paysandu,Valdemir de Oliveira Soares,valdemir_de_oliveira_soares,30,13,0,58,2T,Normal
+79,2024,B,8,Paysandu,paysandu,Esli Samuel Garcia Cordero,esli_samuel_garcia_cordero,15,21,0,66,2T,Normal
+80,2024,B,8,Ceará,ceara,Facundo Barcelo Viera,facundo_barcelo_viera,31,3,0,48,2T,Normal
+81,2024,B,9,Vila Nova,vila_nova,Juan Christian Pereira Coelho,juan_christian_pereira_coelho,70,8,0,8,1T,Normal
+81,2024,B,9,Ceará,ceara,Rai dos Reis Ramos,rai_dos_reis_ramos,2,43,0,43,1T,Penalty
+81,2024,B,9,Vila Nova,vila_nova,Joao Vitor de Souza Martins,joao_vitor_de_souza_martins,15,11,0,56,2T,Normal
+81,2024,B,9,Ceará,ceara,Erick da Costa Farias,erick_da_costa_farias,16,26,0,71,2T,Normal
+81,2024,B,9,Vila Nova,vila_nova,Alesson dos Santos Batista,alesson_dos_santos_batista,11,90,6,96,2T,Penalty
+82,2024,B,9,Operário,operario,Emaxwell Souza de Lima,emaxwell_souza_de_lima,77,40,0,40,1T,Normal
+83,2024,B,9,Mirassol,mirassol,Guilherme Augusto Alves Dellatorre,guilherme_augusto_alves_dellatorre,49,23,0,68,2T,Normal
+84,2024,B,9,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Fabricio Daniel de Souza,fabricio_daniel_de_souza,77,20,0,20,1T,Normal
+84,2024,B,9,Santos,santos,Diego Cristiano Evaristo,diego_cristiano_evaristo,21,2,0,47,2T,Normal
+84,2024,B,9,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Reverson Valuarth Paiva Silva,reverson_valuarth_paiva_silva,16,6,0,51,2T,Normal
+84,2024,B,9,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Rafael Ferreira Donato,rafael_ferreira_donato,3,36,0,81,2T,Normal
+85,2024,B,9,Ponte Preta,ponte_preta,Carlos Eduardo de Souza Vieira,carlos_eduardo_de_souza_vieira,5,13,0,13,1T,Gol Contra
+85,2024,B,9,America Saf,america_saf,Fabio Augusto Luciano da Silva,fabio_augusto_luciano_da_silva,28,5,0,50,2T,Normal
+87,2024,B,9,Botafogo,botafogo,Wallison Nunes Silva,wallison_nunes_silva,2,2,0,2,1T,Normal
+87,2024,B,9,Crb,crb,Diogo Hereda da Silva,diogo_hereda_da_silva,32,19,0,19,1T,Normal
+87,2024,B,9,Crb,crb,Kleiton Pego Duarte,kleiton_pego_duarte,75,43,0,43,1T,Normal
+87,2024,B,9,Crb,crb,Anselmo Ramon Alves Herculano,anselmo_ramon_alves_herculano,9,27,0,72,2T,Penalty
+87,2024,B,9,Crb,crb,Facundo Labandeira Castro,facundo_labandeira_castro,30,90,6,96,2T,Normal
+88,2024,B,9,Coritiba S.a.f.,coritiba_s_a_f,Rodrigo Silva Nascimento,rodrigo_silva_nascimento,6,11,0,11,1T,Normal
+88,2024,B,9,Coritiba S.a.f.,coritiba_s_a_f,Matheus Henrique Frizzo,matheus_henrique_frizzo,10,19,0,19,1T,Normal
+88,2024,B,9,Coritiba S.a.f.,coritiba_s_a_f,Leandro Damiao da Silva dos Santos,leandro_damiao_da_silva_dos_santos,9,45,0,45,1T,Normal
+88,2024,B,9,Ituano,ituano,Yann Del Pino Rolim,yann_del_pino_rolim,10,6,0,51,2T,Normal
+88,2024,B,9,Coritiba S.a.f.,coritiba_s_a_f,Guilherme Brandao Azevedo,guilherme_brandao_azevedo,21,24,0,69,2T,Normal
+88,2024,B,9,Ituano,ituano,Vinicius dos Santos de Oliveira Paiva,vinicius_dos_santos_de_oliveira_paiva,7,34,0,79,2T,Normal
+89,2024,B,9,Amazonas Fc,amazonas_fc,Luiz Ricardo Alves,luiz_ricardo_alves,99,6,0,51,2T,Normal
+89,2024,B,9,Brusque,brusque,Wellissol Santos de Oliveira,wellissol_santos_de_oliveira,29,18,0,63,2T,Normal
+89,2024,B,9,Amazonas Fc,amazonas_fc,Joao Alves de Assis Silva,joao_alves_de_assis_silva,9,45,0,90,2T,Normal
+90,2024,B,9,Sport,sport,Fabricio Dominguez Huertas,fabricio_dominguez_huertas,8,27,0,72,2T,Normal
+91,2024,B,10,Coritiba S.a.f.,coritiba_s_a_f,Matheus Henrique Frizzo,matheus_henrique_frizzo,10,2,0,2,1T,Normal
+91,2024,B,10,Goiás,goias,Luiz Henrique Araujo Silva,luiz_henrique_araujo_silva,88,26,0,26,1T,Normal
+92,2024,B,10,Ponte Preta,ponte_preta,Gabriel Novaes Fernandes,gabriel_novaes_fernandes,35,33,0,33,1T,Normal
+93,2024,B,10,Botafogo,botafogo,Jean Victor Barros,jean_victor_barros,6,45,1,46,1T,Falta
+94,2024,B,10,Paysandu,paysandu,Jean Dias da Costa,jean_dias_da_costa,22,20,0,20,1T,Normal
+94,2024,B,10,Paysandu,paysandu,Yeferson Agustin Quintana Alonso,yeferson_agustin_quintana_alonso,3,26,0,26,1T,Normal
+94,2024,B,10,Paysandu,paysandu,Kevyn Lucas Ramos da Costa,kevyn_lucas_ramos_da_costa,36,29,0,29,1T,Normal
+94,2024,B,10,Ituano,ituano,Miqueias Cabral Evaristo,miqueias_cabral_evaristo,8,41,0,41,1T,Normal
+94,2024,B,10,Ituano,ituano,Yann Del Pino Rolim,yann_del_pino_rolim,10,44,0,44,1T,Normal
+94,2024,B,10,Paysandu,paysandu,Esli Samuel Garcia Cordero,esli_samuel_garcia_cordero,15,10,0,55,2T,Normal
+94,2024,B,10,Ituano,ituano,Eduardo Jose Diniz Costa,eduardo_jose_diniz_costa,6,26,0,71,2T,Penalty
+94,2024,B,10,Paysandu,paysandu,Jose Domingos de Moraes Neto,jose_domingos_de_moraes_neto,5,90,1,91,2T,Normal
+95,2024,B,10,Crb,crb,Leonardo Augusto dos Santos Pereira,leonardo_augusto_dos_santos_pereira,38,18,0,18,1T,Normal
+95,2024,B,10,America Saf,america_saf,Adilson dos Anjos Oliveira,adilson_dos_anjos_oliveira,8,2,0,47,2T,Normal
+95,2024,B,10,America Saf,america_saf,Fabio Augusto Luciano da Silva,fabio_augusto_luciano_da_silva,28,10,0,55,2T,Normal
+96,2024,B,10,Guarani,guarani,Airton Moises Santos Sousa,airton_moises_santos_sousa,30,10,0,10,1T,Normal
+96,2024,B,10,Avaí,avai,Hygor Cleber Garcia Silva,hygor_cleber_garcia_silva,7,20,0,20,1T,Normal
+96,2024,B,10,Guarani,guarani,Caio Henrique da Silva Dantas,caio_henrique_da_silva_dantas,99,27,0,27,1T,Penalty
+96,2024,B,10,Avaí,avai,Hygor Cleber Garcia Silva,hygor_cleber_garcia_silva,7,3,0,48,2T,Normal
+96,2024,B,10,Avaí,avai,Joao Paulo da Silva Alves,joao_paulo_da_silva_alves,19,17,0,62,2T,Penalty
+97,2024,B,10,Brusque,brusque,Marcos Vinicius Cerato,marcos_vinicius_cerato,19,20,0,65,2T,Normal
+98,2024,B,10,Operário,operario,Willian Estefani Machado,willian_estefani_machado,4,21,0,21,1T,Normal
+99,2024,B,10,Chapecoense,chapecoense,Bruno Leonardo dos Santos Covas,bruno_leonardo_dos_santos_covas,33,21,0,66,2T,Normal
+100,2024,B,10,Sport,sport,Roberto Jose Rosales Altuve,roberto_jose_rosales_altuve,28,21,0,66,2T,Normal
+101,2024,B,11,Vila Nova,vila_nova,Henrique Almeida Caixeta Nascentes,henrique_almeida_caixeta_nascentes,19,22,0,67,2T,Normal
+102,2024,B,11,Ituano,ituano,Vinicius dos Santos de Oliveira Paiva,vinicius_dos_santos_de_oliveira_paiva,7,42,0,42,1T,Normal
+102,2024,B,11,Ituano,ituano,Yann Del Pino Rolim,yann_del_pino_rolim,10,11,0,56,2T,Normal
+102,2024,B,11,Guarani,guarani,Caio Henrique da Silva Dantas,caio_henrique_da_silva_dantas,99,30,0,75,2T,Normal
+102,2024,B,11,Guarani,guarani,Caio Henrique da Silva Dantas,caio_henrique_da_silva_dantas,99,38,0,83,2T,Normal
+102,2024,B,11,Ituano,ituano,Vinicius dos Santos de Oliveira Paiva,vinicius_dos_santos_de_oliveira_paiva,7,42,0,87,2T,Normal
+102,2024,B,11,Guarani,guarani,Heitor Rodrigues da Fonseca,heitor_rodrigues_da_fonseca,2,43,0,88,2T,Normal
+103,2024,B,11,Botafogo,botafogo,Matheus Barbosa Teixeira,matheus_barbosa_teixeira,8,10,0,55,2T,Normal
+103,2024,B,11,Botafogo,botafogo,Patrick de Carvalho Brey,patrick_de_carvalho_brey,16,90,1,91,2T,Normal
+104,2024,B,11,Amazonas Fc,amazonas_fc,Sebastiao Enio Santos de Almeida,sebastiao_enio_santos_de_almeida,22,34,0,34,1T,Normal
+104,2024,B,11,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Lucca Borges de Brito,lucca_borges_de_brito,11,90,6,96,2T,Normal
+105,2024,B,11,Goiás,goias,Tadeu Antonio Ferreira,tadeu_antonio_ferreira,23,35,0,80,2T,Gol Contra
+105,2024,B,11,Santos,santos,Willian Gomes de Siqueira,willian_gomes_de_siqueira,27,39,0,84,2T,Normal
+106,2024,B,11,Operário,operario,Marco Antonio de Oliveira Coelho,marco_antonio_de_oliveira_coelho,20,27,0,72,2T,Normal
+108,2024,B,11,Coritiba S.a.f.,coritiba_s_a_f,Lucas Ronier Vieira Pires,lucas_ronier_vieira_pires,98,11,0,56,2T,Normal
+109,2024,B,11,Paysandu,paysandu,Joao Pedro Vieira,joao_pedro_vieira,8,14,0,59,2T,Penalty
+109,2024,B,11,Crb,crb,Leonardo Augusto dos Santos Pereira,leonardo_augusto_dos_santos_pereira,38,20,0,65,2T,Normal
+111,2024,B,12,Vila Nova,vila_nova,Igor Henrique Martins Machado,igor_henrique_martins_machado,27,16,0,61,2T,Normal
+112,2024,B,12,Ponte Preta,ponte_preta,Luiz Felipe Castro Neto,luiz_felipe_castro_neto,15,10,0,10,1T,Normal
+112,2024,B,12,Ponte Preta,ponte_preta,Jeferson Marinho dos Santos,jeferson_marinho_dos_santos,9,34,0,34,1T,Normal
+112,2024,B,12,Ponte Preta,ponte_preta,Vinicius Rodrigues Adelino dos Santos,vinicius_rodrigues_adelino_dos_santos,7,14,0,59,2T,Penalty
+112,2024,B,12,Ceará,ceara,Kaique Rodrigues Barbosa Santos,kaique_rodrigues_barbosa_santos,45,23,0,68,2T,Normal
+114,2024,B,12,Ituano,ituano,Jose Aldo Soares de Oliveira Filho,jose_aldo_soares_de_oliveira_filho,8,8,0,53,2T,Normal
+114,2024,B,12,Brusque,brusque,Paulo Roberto Moccelin,paulo_roberto_moccelin,94,19,0,64,2T,Normal
+115,2024,B,12,Avaí,avai,Willian Marlon Ferreira Moraes,willian_marlon_ferreira_moraes,6,1,0,1,1T,Normal
+115,2024,B,12,America Saf,america_saf,Brenner Marlos Varanda de Oliveira,brenner_marlos_varanda_de_oliveira,9,45,3,48,1T,Penalty
+116,2024,B,12,Chapecoense,chapecoense,Marcio Antonio de Sousa Junior,marcio_antonio_de_sousa_junior,7,15,0,15,1T,Normal
+116,2024,B,12,Paysandu,paysandu,Leandro Vilela Sales Teixeira,leandro_vilela_sales_teixeira,28,44,0,44,1T,Normal
+116,2024,B,12,Paysandu,paysandu,Jose Domingos de Moraes Neto,jose_domingos_de_moraes_neto,5,35,0,80,2T,Normal
+117,2024,B,12,Crb,crb,Geirton Marques Aires,geirton_marques_aires,8,28,0,28,1T,Normal
+118,2024,B,12,Botafogo,botafogo,Gustavo Costa da Silva Machado,gustavo_costa_da_silva_machado,10,90,4,94,2T,Normal
+119,2024,B,12,Amazonas Fc,amazonas_fc,Matheus dos Santos Miranda,matheus_dos_santos_miranda,3,7,0,52,2T,Normal
+120,2024,B,12,Sport,sport,Alisson Dias Tavares Cassiano,alisson_dias_tavares_cassiano,12,1,0,1,1T,Gol Contra
+120,2024,B,12,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Fabricio Daniel de Souza,fabricio_daniel_de_souza,77,37,0,37,1T,Penalty
+120,2024,B,12,Sport,sport,Fabricio Dominguez Huertas,fabricio_dominguez_huertas,8,32,0,77,2T,Normal
+121,2024,B,13,Goiás,goias,Marcos Antonio Almeida Silva,marcos_antonio_almeida_silva,77,20,0,65,2T,Normal
+121,2024,B,13,Goiás,goias,Welliton Silva de Azevedo Matheus,welliton_silva_de_azevedo_matheus,31,31,0,76,2T,Normal
+121,2024,B,13,America Saf,america_saf,Adilson dos Anjos Oliveira,adilson_dos_anjos_oliveira,8,42,0,87,2T,Normal
+122,2024,B,13,Guarani,guarani,Luan Dias da Silva,luan_dias_da_silva,10,24,0,24,1T,Normal
+122,2024,B,13,Ponte Preta,ponte_preta,Jeferson Marinho dos Santos,jeferson_marinho_dos_santos,9,9,0,54,2T,Normal
+123,2024,B,13,Botafogo,botafogo,Carlos Manuel de Resende Teodoro,carlos_manuel_de_resende_teodoro,5,5,0,5,1T,Normal
+123,2024,B,13,Sport,sport,Jose Roberto Assunçao de Araujo Filho,jose_roberto_assuncao_de_araujo_filho,99,90,4,94,2T,Penalty
+124,2024,B,13,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Fabricio Daniel de Souza,fabricio_daniel_de_souza,77,8,0,8,1T,Normal
+124,2024,B,13,Mirassol,mirassol,Guilherme Augusto Alves Dellatorre,guilherme_augusto_alves_dellatorre,49,45,2,47,1T,Normal
+125,2024,B,13,Santos,santos,Willian Gomes de Siqueira,willian_gomes_de_siqueira,27,90,2,92,2T,Normal
+126,2024,B,13,Amazonas Fc,amazonas_fc,Joao Alves de Assis Silva,joao_alves_de_assis_silva,9,15,0,15,1T,Normal
+126,2024,B,13,Avaí,avai,Tiago Pagnussat,tiago_pagnussat,3,20,0,20,1T,Normal
+127,2024,B,13,Crb,crb,Anselmo Ramon Alves Herculano,anselmo_ramon_alves_herculano,9,34,0,79,2T,Normal
+127,2024,B,13,Brusque,brusque,Ianson Acosta Soares,ianson_acosta_soares,3,90,11,101,2T,Normal
+128,2024,B,13,Vila Nova,vila_nova,Henrique Almeida Caixeta Nascentes,henrique_almeida_caixeta_nascentes,19,1,0,46,2T,Normal
+128,2024,B,13,Coritiba S.a.f.,coritiba_s_a_f,Robson dos Santos Fernandes,robson_dos_santos_fernandes,30,90,2,92,2T,Penalty
+129,2024,B,13,Paysandu,paysandu,Joao Pedro Vieira,joao_pedro_vieira,8,30,0,30,1T,Penalty
+129,2024,B,13,Operário,operario,Ronald Sant Anna Rodrigues,ronald_sant_anna_rodrigues,31,43,0,88,2T,Normal
+130,2024,B,13,Ituano,ituano,Vinicius dos Santos de Oliveira Paiva,vinicius_dos_santos_de_oliveira_paiva,7,7,0,7,1T,Normal
+130,2024,B,13,Ceará,ceara,Saulo Rodrigues da Silva,saulo_rodrigues_da_silva,73,20,0,20,1T,Normal
+130,2024,B,13,Ceará,ceara,Saulo Rodrigues da Silva,saulo_rodrigues_da_silva,73,30,0,30,1T,Normal
+130,2024,B,13,Ceará,ceara,Joao Paulo Ferreira Lourenco,joao_paulo_ferreira_lourenco,97,38,0,38,1T,Normal
+130,2024,B,13,Ceará,ceara,Saulo Rodrigues da Silva,saulo_rodrigues_da_silva,73,27,0,72,2T,Normal
+130,2024,B,13,Ituano,ituano,Kauan Richard Leal Silva,kauan_richard_leal_silva,6,32,0,77,2T,Normal
+131,2024,B,14,Chapecoense,chapecoense,Mario Sergio Pereira Junior,mario_sergio_pereira_junior,89,39,0,39,1T,Normal
+131,2024,B,14,Goiás,goias,Thiago Galhardo do Nascimento Rocha,thiago_galhardo_do_nascimento_rocha,33,4,0,49,2T,Normal
+131,2024,B,14,Chapecoense,chapecoense,Mario Sergio Pereira Junior,mario_sergio_pereira_junior,89,22,0,67,2T,Normal
+132,2024,B,14,Sport,sport,Jose Roberto Assunçao de Araujo Filho,jose_roberto_assuncao_de_araujo_filho,99,31,0,76,2T,Normal
+133,2024,B,14,Mirassol,mirassol,Guilherme Augusto Alves Dellatorre,guilherme_augusto_alves_dellatorre,49,39,0,84,2T,Normal
+134,2024,B,14,Ituano,ituano,Jose Aldo Soares de Oliveira Filho,jose_aldo_soares_de_oliveira_filho,10,2,0,2,1T,Normal
+134,2024,B,14,Ituano,ituano,Jose Eduardo de Andrade,jose_eduardo_de_andrade,11,26,0,26,1T,Normal
+134,2024,B,14,Ituano,ituano,Jose Eduardo de Andrade,jose_eduardo_de_andrade,11,31,0,31,1T,Normal
+134,2024,B,14,Botafogo,botafogo,Alex Sandro de Oliveira,alex_sandro_de_oliveira,9,32,0,32,1T,Normal
+134,2024,B,14,Ituano,ituano,Rodrigo Vasconcelos Oliveira,rodrigo_vasconcelos_oliveira,5,2,0,47,2T,Gol Contra
+135,2024,B,14,America Saf,america_saf,Adyson do Nascimento Soares,adyson_do_nascimento_soares,44,11,0,56,2T,Normal
+135,2024,B,14,Operário,operario,Willian Estefani Machado,willian_estefani_machado,4,26,0,71,2T,Gol Contra
+136,2024,B,14,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Rodolfo Jose da Silva Bardella,rodolfo_jose_da_silva_bardella,7,43,0,43,1T,Normal
+138,2024,B,14,Paysandu,paysandu,Nicolas Godinho Johann,nicolas_godinho_johann,11,31,0,31,1T,Normal
+138,2024,B,14,Coritiba S.a.f.,coritiba_s_a_f,Lucas Ronier Vieira Pires,lucas_ronier_vieira_pires,98,45,0,45,1T,Normal
+139,2024,B,14,Amazonas Fc,amazonas_fc,Rafael Aparecido de Paulo Tavares,rafael_aparecido_de_paulo_tavares,10,16,0,16,1T,Normal
+139,2024,B,14,Vila Nova,vila_nova,Henrique Almeida Caixeta Nascentes,henrique_almeida_caixeta_nascentes,19,7,0,52,2T,Normal
+139,2024,B,14,Vila Nova,vila_nova,Emerson Lima Freitas,emerson_lima_freitas,7,18,0,63,2T,Normal
+140,2024,B,14,Santos,santos,Romulo Otero Vasquez,romulo_otero_vasquez,22,23,0,23,1T,Falta
+141,2024,B,15,Avaí,avai,Vagner Silva de Souza,vagner_silva_de_souza,9,28,0,28,1T,Normal
+141,2024,B,15,Vila Nova,vila_nova,Elias Lira Nogueira Junior,elias_lira_nogueira_junior,2,19,0,64,2T,Normal
+141,2024,B,15,Vila Nova,vila_nova,Henrique Almeida Caixeta Nascentes,henrique_almeida_caixeta_nascentes,19,90,4,94,2T,Normal
+142,2024,B,15,Mirassol,mirassol,Gabriel Santana Pinto,gabriel_santana_pinto,27,26,0,26,1T,Penalty
+142,2024,B,15,Ponte Preta,ponte_preta,Emerson Raymundo Santos,emerson_raymundo_santos,18,29,0,29,1T,Normal
+142,2024,B,15,Ponte Preta,ponte_preta,Ramon Rodrigo de Carvalho,ramon_rodrigo_de_carvalho,21,4,0,49,2T,Normal
+142,2024,B,15,Ponte Preta,ponte_preta,Jeferson Marinho dos Santos,jeferson_marinho_dos_santos,9,26,0,71,2T,Normal
+142,2024,B,15,Mirassol,mirassol,Luiz Otavio da Silva Santos,luiz_otavio_da_silva_santos,4,44,0,89,2T,Normal
+142,2024,B,15,Ponte Preta,ponte_preta,Wellison Matheus Rodrigues Regis,wellison_matheus_rodrigues_regis,77,90,10,100,2T,Normal
+143,2024,B,15,Amazonas Fc,amazonas_fc,Cauan Lucas Barros da Luz,cauan_lucas_barros_da_luz,18,19,0,19,1T,Normal
+145,2024,B,15,Santos,santos,Diego Cristiano Evaristo,diego_cristiano_evaristo,21,10,0,10,1T,Normal
+145,2024,B,15,Santos,santos,Guilherme Augusto Vieira dos Santos,guilherme_augusto_vieira_dos_santos,11,17,0,17,1T,Normal
+146,2024,B,15,Brusque,brusque,Olavio dos Santos Lima Filho,olavio_dos_santos_lima_filho,9,33,0,33,1T,Normal
+146,2024,B,15,Chapecoense,chapecoense,Bruno Leonardo dos Santos Covas,bruno_leonardo_dos_santos_covas,33,40,0,85,2T,Normal
+147,2024,B,15,Crb,crb,Anselmo Ramon Alves Herculano,anselmo_ramon_alves_herculano,9,34,0,34,1T,Gol Contra
+147,2024,B,15,Crb,crb,Saimon Pains Tormen,saimon_pains_tormen,4,8,0,53,2T,Normal
+147,2024,B,15,Crb,crb,Anselmo Ramon Alves Herculano,anselmo_ramon_alves_herculano,9,40,0,85,2T,Normal
+148,2024,B,15,Operário,operario,Rodrigo Antonio Rodrigues,rodrigo_antonio_rodrigues,7,42,0,42,1T,Normal
+148,2024,B,15,Operário,operario,Emaxwell Souza de Lima,emaxwell_souza_de_lima,77,90,2,92,2T,Normal
+149,2024,B,15,Paysandu,paysandu,Nicolas Godinho Johann,nicolas_godinho_johann,11,2,0,2,1T,Normal
+149,2024,B,15,Ceará,ceara,Rafael Antonio Figueiredo Ramos,rafael_antonio_figueiredo_ramos,6,36,0,36,1T,Normal
+149,2024,B,15,Paysandu,paysandu,Valdemir de Oliveira Soares,valdemir_de_oliveira_soares,30,41,0,86,2T,Normal
+150,2024,B,15,America Saf,america_saf,Eder Ferreira Graminho,eder_ferreira_graminho,33,16,0,16,1T,Normal
+150,2024,B,15,Sport,sport,Fabricio Dominguez Huertas,fabricio_dominguez_huertas,8,16,0,61,2T,Normal
+151,2024,B,16,Santos,santos,Julio Cesar Furch,julio_cesar_furch,9,9,0,54,2T,Normal
+151,2024,B,16,Vila Nova,vila_nova,Jemmes Bruno Ribeiro da Silva,jemmes_bruno_ribeiro_da_silva,4,19,0,64,2T,Normal
+152,2024,B,16,Guarani,guarani,Caio Henrique da Silva Dantas,caio_henrique_da_silva_dantas,99,31,0,31,1T,Normal
+152,2024,B,16,Goiás,goias,Nathan Melo Silva,nathan_melo_silva,70,44,0,44,1T,Normal
+152,2024,B,16,Guarani,guarani,Matheus Salustiano Pires,matheus_salustiano_pires,13,29,0,74,2T,Normal
+152,2024,B,16,Goiás,goias,Eduardo Nascimento da Silva Junior,eduardo_nascimento_da_silva_junior,99,90,3,93,2T,Penalty
+152,2024,B,16,Goiás,goias,Paulo Henrique Silva Ribeiro,paulo_henrique_silva_ribeiro,7,90,12,102,2T,Normal
+153,2024,B,16,Botafogo,botafogo,Alex Sandro de Oliveira,alex_sandro_de_oliveira,9,7,0,7,1T,Normal
+153,2024,B,16,Brusque,brusque,Mateus Cardoso Francisco,mateus_cardoso_francisco,97,10,0,55,2T,Normal
+153,2024,B,16,Botafogo,botafogo,Joao Vitor Hipolito Costa,joao_vitor_hipolito_costa,5,25,0,70,2T,Normal
+153,2024,B,16,Brusque,brusque,Cristovam Roberto Ribeiro da Silva,cristovam_roberto_ribeiro_da_silva,22,42,0,87,2T,Normal
+154,2024,B,16,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Rodolfo Jose da Silva Bardella,rodolfo_jose_da_silva_bardella,7,45,0,45,1T,Normal
+156,2024,B,16,Ceará,ceara,David Ricardo Loiola da Silva,david_ricardo_loiola_da_silva,4,23,0,68,2T,Normal
+157,2024,B,16,Crb,crb,Geirton Marques Aires,geirton_marques_aires,8,90,3,93,2T,Falta
+158,2024,B,16,Mirassol,mirassol,João Victor Carroll Santana,joao_victor_carroll_santana,34,33,0,78,2T,Normal
+159,2024,B,16,Paysandu,paysandu,Paulo Henrique Pereira da Silva,paulo_henrique_pereira_da_silva,9,37,0,37,1T,Normal
+160,2024,B,16,Operário,operario,Gabriel Boschilia,gabriel_boschilia,16,4,0,4,1T,Normal
+160,2024,B,16,Sport,sport,Cristian Jonatan Ortiz,cristian_jonatan_ortiz,59,22,0,22,1T,Normal
+160,2024,B,16,Operário,operario,Nathan Uiliam Fogaca,nathan_uiliam_fogaca,20,38,0,83,2T,Normal
+161,2024,B,17,Goiás,goias,Paulo Henrique Silva Ribeiro,paulo_henrique_silva_ribeiro,7,2,0,47,2T,Normal
+161,2024,B,17,Goiás,goias,Sander Henrique Bortolotto,sander_henrique_bortolotto,6,8,0,53,2T,Gol Contra
+162,2024,B,17,Ponte Preta,ponte_preta,Igor Inocencio de Oliveira,igor_inocencio_de_oliveira,2,38,0,38,1T,Normal
+162,2024,B,17,Ponte Preta,ponte_preta,Elvis Vieira Araujo,elvis_vieira_araujo,10,24,0,69,2T,Falta
+165,2024,B,17,Santos,santos,Giuliano Victor de Paula,giuliano_victor_de_paula,20,3,0,3,1T,Normal
+165,2024,B,17,Santos,santos,Guilherme Augusto Vieira dos Santos,guilherme_augusto_vieira_dos_santos,11,8,0,8,1T,Normal
+165,2024,B,17,Santos,santos,Julio Cesar Furch,julio_cesar_furch,9,27,0,72,2T,Penalty
+165,2024,B,17,Santos,santos,Pedro Gabriel Pereira Lopes,pedro_gabriel_pereira_lopes,7,37,0,82,2T,Normal
+166,2024,B,17,Sport,sport,Fabricio Dominguez Huertas,fabricio_dominguez_huertas,8,28,0,28,1T,Normal
+166,2024,B,17,Sport,sport,Roberto Jose Rosales Altuve,roberto_jose_rosales_altuve,28,90,5,95,2T,Gol Contra
+167,2024,B,17,Brusque,brusque,Gerson Rodolfo da Silva,gerson_rodolfo_da_silva,5,12,0,12,1T,Penalty
+169,2024,B,17,Guarani,guarani,Airton Moises Santos Sousa,airton_moises_santos_sousa,30,45,1,46,1T,Normal
+169,2024,B,17,Amazonas Fc,amazonas_fc,Luiz Ricardo Alves,luiz_ricardo_alves,99,45,3,48,1T,Normal
+170,2024,B,17,Ceará,ceara,Erick da Costa Farias,erick_da_costa_farias,16,21,0,21,1T,Normal
+170,2024,B,17,Ceará,ceara,Saulo Rodrigues da Silva,saulo_rodrigues_da_silva,73,23,0,23,1T,Normal
+170,2024,B,17,Ceará,ceara,Aylon Darwin Tavella,aylon_darwin_tavella,11,32,0,32,1T,Normal
+170,2024,B,17,Botafogo,botafogo,Alexandre de Jesus Jeruzalem Junior,alexandre_de_jesus_jeruzalem_junior,8,42,0,42,1T,Normal
+170,2024,B,17,Ceará,ceara,Joao Paulo Ferreira Lourenco,joao_paulo_ferreira_lourenco,97,9,0,54,2T,Normal
+171,2024,B,18,Goiás,goias,Alexandre de Almeida Silva Junior,alexandre_de_almeida_silva_junior,50,45,3,48,1T,Normal
+172,2024,B,18,Guarani,guarani,Matheus Bueno Batista,matheus_bueno_batista,18,4,0,49,2T,Normal
+173,2024,B,18,Mirassol,mirassol,Luis Henrique Soares Firmino,luis_henrique_soares_firmino,11,17,0,17,1T,Normal
+175,2024,B,18,Ceará,ceara,Aylon Darwin Tavella,aylon_darwin_tavella,11,5,0,5,1T,Normal
+175,2024,B,18,America Saf,america_saf,Alexandre Egea,alexandre_egea,16,6,0,6,1T,Normal
+175,2024,B,18,America Saf,america_saf,Adilson dos Anjos Oliveira,adilson_dos_anjos_oliveira,8,17,0,17,1T,Normal
+175,2024,B,18,Ceará,ceara,Erick da Costa Farias,erick_da_costa_farias,16,43,0,43,1T,Normal
+176,2024,B,18,Avaí,avai,Pedro Henrique de Castro Silva,pedro_henrique_de_castro_silva,21,37,0,82,2T,Penalty
+176,2024,B,18,Botafogo,botafogo,Fillipe Soutto Mayor Nogueira Ferreira,fillipe_soutto_mayor_nogueira_ferreira,15,90,7,97,2T,Normal
+177,2024,B,18,Santos,santos,Sergio Ricardo dos Santos Junior,sergio_ricardo_dos_santos_junior,37,11,0,56,2T,Normal
+177,2024,B,18,Crb,crb,Anselmo Ramon Alves Herculano,anselmo_ramon_alves_herculano,9,30,0,75,2T,Normal
+178,2024,B,18,Coritiba S.a.f.,coritiba_s_a_f,Lucas Ronier Vieira Pires,lucas_ronier_vieira_pires,98,16,0,61,2T,Normal
+179,2024,B,18,Paysandu,paysandu,Ruan Ribeiro Rodrigues,ruan_ribeiro_rodrigues,26,34,0,34,1T,Normal
+179,2024,B,18,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Rodolfo Jose da Silva Bardella,rodolfo_jose_da_silva_bardella,7,45,3,48,1T,Penalty
+179,2024,B,18,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Lucca Borges de Brito,lucca_borges_de_brito,11,38,0,83,2T,Normal
+179,2024,B,18,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Wagner da Silva Souza,wagner_da_silva_souza,30,90,6,96,2T,Normal
+180,2024,B,18,Sport,sport,Fabricio Dominguez Huertas,fabricio_dominguez_huertas,8,24,0,24,1T,Normal
+180,2024,B,18,Ponte Preta,ponte_preta,Jeferson Marinho dos Santos,jeferson_marinho_dos_santos,9,45,2,47,1T,Normal
+180,2024,B,18,Sport,sport,Fabricio Dominguez Huertas,fabricio_dominguez_huertas,8,38,0,83,2T,Normal
+180,2024,B,18,Sport,sport,Cristian Jonatan Ortiz,cristian_jonatan_ortiz,59,90,8,98,2T,Normal
+181,2024,B,19,Paysandu,paysandu,Paulo Henrique Pereira da Silva,paulo_henrique_pereira_da_silva,9,1,0,1,1T,Normal
+181,2024,B,19,Vila Nova,vila_nova,Geremias Ribeiro Junior,geremias_ribeiro_junior,29,18,0,18,1T,Normal
+181,2024,B,19,Vila Nova,vila_nova,Alesson dos Santos Batista,alesson_dos_santos_batista,11,1,0,46,2T,Normal
+181,2024,B,19,Paysandu,paysandu,Lucas Jaques Varone Maia,lucas_jaques_varone_maia,27,90,4,94,2T,Normal
+182,2024,B,19,Ponte Preta,ponte_preta,Jeferson Marinho dos Santos,jeferson_marinho_dos_santos,9,32,0,77,2T,Normal
+183,2024,B,19,Botafogo,botafogo,Douglas Baggio de Oliveira Costa,douglas_baggio_de_oliveira_costa,7,22,0,67,2T,Penalty
+183,2024,B,19,Botafogo,botafogo,Lucas Vinicius Dias Costa,lucas_vinicius_dias_costa,14,26,0,71,2T,Normal
+184,2024,B,19,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Rodolfo Jose da Silva Bardella,rodolfo_jose_da_silva_bardella,7,2,0,2,1T,Normal
+184,2024,B,19,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Luis Fellipe Campos Doria,luis_fellipe_campos_doria,25,3,0,48,2T,Normal
+184,2024,B,19,Goiás,goias,Angelo Jose Rodriguez Henry,angelo_jose_rodriguez_henry,9,25,0,70,2T,Normal
+185,2024,B,19,Santos,santos,Guilherme Augusto Vieira dos Santos,guilherme_augusto_vieira_dos_santos,11,28,0,28,1T,Normal
+185,2024,B,19,Sport,sport,Gustavo Coutinho Silva Lopes,gustavo_coutinho_silva_lopes,9,36,0,81,2T,Penalty
+186,2024,B,19,Mirassol,mirassol,Leonardo Gamalho de Souza,leonardo_gamalho_de_souza,99,2,0,47,2T,Normal
+188,2024,B,19,Operário,operario,Emaxwell Souza de Lima,emaxwell_souza_de_lima,77,11,0,11,1T,Normal
+188,2024,B,19,Operário,operario,Felipe Augusto Ferreira Batista,felipe_augusto_ferreira_batista,11,4,0,49,2T,Normal
+189,2024,B,19,Amazonas Fc,amazonas_fc,Luan Santos Silva,luan_santos_silva,9,18,0,63,2T,Normal
+190,2024,B,19,Ceará,ceara,Aylon Darwin Tavella,aylon_darwin_tavella,16,26,0,26,1T,Normal
+190,2024,B,19,Guarani,guarani,Caio Henrique da Silva Dantas,caio_henrique_da_silva_dantas,99,43,0,43,1T,Penalty
+190,2024,B,19,Ceará,ceara,Joao Paulo Ferreira Lourenco,joao_paulo_ferreira_lourenco,97,33,0,78,2T,Falta
+190,2024,B,19,Ceará,ceara,Aylon Darwin Tavella,aylon_darwin_tavella,16,90,2,92,2T,Normal
+191,2024,B,20,Ceará,ceara,Aylon Darwin Tavella,aylon_darwin_tavella,11,12,0,12,1T,Normal
+191,2024,B,20,Goiás,goias,Tadeu Antonio Ferreira,tadeu_antonio_ferreira,23,34,0,34,1T,Penalty
+191,2024,B,20,Goiás,goias,Tadeu Antonio Ferreira,tadeu_antonio_ferreira,23,90,10,100,2T,Penalty
+192,2024,B,20,Guarani,guarani,Douglas Silva Bacelar,douglas_silva_bacelar,23,38,0,38,1T,Normal
+192,2024,B,20,Guarani,guarani,Airton Moises Santos Sousa,airton_moises_santos_sousa,30,45,2,47,1T,Normal
+193,2024,B,20,Mirassol,mirassol,Guilherme Augusto Alves Dellatorre,guilherme_augusto_alves_dellatorre,49,24,0,24,1T,Normal
+193,2024,B,20,Mirassol,mirassol,Lucas Ramon Batista Silva,lucas_ramon_batista_silva,19,35,0,35,1T,Normal
+194,2024,B,20,Chapecoense,chapecoense,Marcio Antonio de Sousa Junior,marcio_antonio_de_sousa_junior,7,9,0,9,1T,Normal
+194,2024,B,20,Ituano,ituano,Thonny Anderson da Silva Carvalho,thonny_anderson_da_silva_carvalho,9,42,0,42,1T,Normal
+194,2024,B,20,Ituano,ituano,Bruno Cesar Xavier Sislo,bruno_cesar_xavier_sislo,11,26,0,71,2T,Normal
+195,2024,B,20,America Saf,america_saf,Marlon Matheus Lopes do Nascimento,marlon_matheus_lopes_do_nascimento,6,13,0,13,1T,Normal
+195,2024,B,20,America Saf,america_saf,Fabio Augusto Luciano da Silva,fabio_augusto_luciano_da_silva,28,27,0,27,1T,Normal
+195,2024,B,20,Botafogo,botafogo,Alexandre de Jesus Jeruzalem Junior,alexandre_de_jesus_jeruzalem_junior,9,5,0,50,2T,Normal
+195,2024,B,20,America Saf,america_saf,Daniel de Melo Araujo Junior,daniel_de_melo_araujo_junior,80,39,0,84,2T,Normal
+196,2024,B,20,Avaí,avai,Tiago Pagnussat,tiago_pagnussat,3,31,0,31,1T,Normal
+197,2024,B,20,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Wagner da Silva Souza,wagner_da_silva_souza,30,32,0,77,2T,Normal
+198,2024,B,20,Coritiba S.a.f.,coritiba_s_a_f,Robson dos Santos Fernandes,robson_dos_santos_fernandes,30,43,0,43,1T,Normal
+198,2024,B,20,Ponte Preta,ponte_preta,Gabriel Novaes Fernandes,gabriel_novaes_fernandes,35,90,5,95,2T,Normal
+199,2024,B,20,Santos,santos,Guilherme Augusto Vieira dos Santos,guilherme_augusto_vieira_dos_santos,11,38,0,38,1T,Normal
+199,2024,B,20,Santos,santos,Weslley Pinto Batista,weslley_pinto_batista,42,45,0,90,2T,Normal
+199,2024,B,20,Santos,santos,Guilherme Augusto Vieira dos Santos,guilherme_augusto_vieira_dos_santos,11,90,7,97,2T,Falta
+200,2024,B,20,Sport,sport,Chrystian Amaral Barletta de Almeida,chrystian_amaral_barletta_de_almeida,30,8,0,8,1T,Normal
+200,2024,B,20,Sport,sport,Gustavo Coutinho Silva Lopes,gustavo_coutinho_silva_lopes,9,14,0,14,1T,Normal
+200,2024,B,20,Amazonas Fc,amazonas_fc,Luan Santos Silva,luan_santos_silva,9,40,0,40,1T,Normal
+200,2024,B,20,Amazonas Fc,amazonas_fc,Luan Santos Silva,luan_santos_silva,9,16,0,61,2T,Normal
+200,2024,B,20,Sport,sport,Jose Roberto Assunçao de Araujo Filho,jose_roberto_assuncao_de_araujo_filho,99,39,0,84,2T,Normal
+201,2024,B,21,Vila Nova,vila_nova,Rhuan Ferreira Ramos,rhuan_ferreira_ramos,6,45,1,46,1T,Normal
+201,2024,B,21,Vila Nova,vila_nova,Emerson Lima Freitas,emerson_lima_freitas,7,32,0,77,2T,Normal
+202,2024,B,21,Goiás,goias,Mateus Goncalves Martins,mateus_goncalves_martins,11,41,0,41,1T,Normal
+202,2024,B,21,Ponte Preta,ponte_preta,Vinicius Rodrigues Adelino dos Santos,vinicius_rodrigues_adelino_dos_santos,7,42,0,87,2T,Normal
+203,2024,B,21,Paysandu,paysandu,Benjamin Manuel Borasi,benjamin_manuel_borasi,24,12,0,12,1T,Normal
+203,2024,B,21,Botafogo,botafogo,Alexandre de Jesus Jeruzalem Junior,alexandre_de_jesus_jeruzalem_junior,9,44,0,44,1T,Normal
+204,2024,B,21,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Altemir Cordeiro Pessôa Neto,altemir_cordeiro_pessoa_neto,9,1,0,1,1T,Normal
+204,2024,B,21,America Saf,america_saf,Alexandre Egea,alexandre_egea,16,39,0,39,1T,Normal
+205,2024,B,21,Avaí,avai,Giovanni Piccolomo,giovanni_piccolomo,8,38,0,38,1T,Normal
+207,2024,B,21,Coritiba S.a.f.,coritiba_s_a_f,Lucas Figueiredo dos Santos,lucas_figueiredo_dos_santos,22,25,0,25,1T,Normal
+208,2024,B,21,Ituano,ituano,Miqueias Cabral Evaristo,miqueias_cabral_evaristo,8,16,0,16,1T,Normal
+208,2024,B,21,Ituano,ituano,Bruno Cesar Xavier Sislo,bruno_cesar_xavier_sislo,11,22,0,22,1T,Normal
+208,2024,B,21,Operário,operario,Felipe Augusto Ferreira Batista,felipe_augusto_ferreira_batista,11,36,0,36,1T,Normal
+209,2024,B,21,Amazonas Fc,amazonas_fc,Alexis Ivan Alvarino,alexis_ivan_alvarino,14,34,0,34,1T,Normal
+209,2024,B,21,Amazonas Fc,amazonas_fc,Luan Santos Silva,luan_santos_silva,9,3,0,48,2T,Normal
+210,2024,B,21,Mirassol,mirassol,Luiz Otavio da Silva Santos,luiz_otavio_da_silva_santos,4,4,0,4,1T,Normal
+210,2024,B,21,Ceará,ceara,Aylon Darwin Tavella,aylon_darwin_tavella,11,27,0,72,2T,Normal
+210,2024,B,21,Mirassol,mirassol,Leonardo Gamalho de Souza,leonardo_gamalho_de_souza,99,90,7,97,2T,Penalty
+211,2024,B,22,Goiás,goias,Tadeu Antonio Ferreira,tadeu_antonio_ferreira,23,35,0,35,1T,Penalty
+211,2024,B,22,Goiás,goias,Thiago Galhardo do Nascimento Rocha,thiago_galhardo_do_nascimento_rocha,33,45,3,48,1T,Normal
+211,2024,B,22,Goiás,goias,Thiago Galhardo do Nascimento Rocha,thiago_galhardo_do_nascimento_rocha,33,11,0,56,2T,Normal
+211,2024,B,22,Brusque,brusque,Gerson Rodolfo da Silva,gerson_rodolfo_da_silva,5,15,0,60,2T,Normal
+211,2024,B,22,Goiás,goias,Thiago Galhardo do Nascimento Rocha,thiago_galhardo_do_nascimento_rocha,33,21,0,66,2T,Penalty
+212,2024,B,22,Santos,santos,Gonzalo Daniel Escobar,gonzalo_daniel_escobar,31,23,0,68,2T,Normal
+212,2024,B,22,Guarani,guarani,Anderson Leite Morais,anderson_leite_morais,5,42,0,87,2T,Normal
+213,2024,B,22,Mirassol,mirassol,Fernando Jose Marques Maciel,fernando_jose_marques_maciel,7,15,0,60,2T,Normal
+213,2024,B,22,Botafogo,botafogo,Alexandre de Jesus Jeruzalem Junior,alexandre_de_jesus_jeruzalem_junior,9,23,0,68,2T,Normal
+213,2024,B,22,Botafogo,botafogo,Douglas Baggio de Oliveira Costa,douglas_baggio_de_oliveira_costa,10,39,0,84,2T,Normal
+214,2024,B,22,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Lucca Borges de Brito,lucca_borges_de_brito,11,29,0,74,2T,Normal
+216,2024,B,22,Avaí,avai,Vagner Silva de Souza,vagner_silva_de_souza,9,45,3,48,1T,Normal
+217,2024,B,22,Ceará,ceara,Aylon Darwin Tavella,aylon_darwin_tavella,11,26,0,26,1T,Normal
+217,2024,B,22,Ceará,ceara,Erick da Costa Farias,erick_da_costa_farias,16,12,0,57,2T,Normal
+218,2024,B,22,Operário,operario,Vinicius Alessandro Mingotti,vinicius_alessandro_mingotti,9,3,0,3,1T,Normal
+218,2024,B,22,Vila Nova,vila_nova,Geremias Ribeiro Junior,geremias_ribeiro_junior,29,5,0,50,2T,Normal
+218,2024,B,22,Vila Nova,vila_nova,Emerson Lima Freitas,emerson_lima_freitas,7,27,0,72,2T,Normal
+218,2024,B,22,Vila Nova,vila_nova,Joao Lucas Vilela de Sousa,joao_lucas_vilela_de_sousa,20,37,0,82,2T,Normal
+218,2024,B,22,Operário,operario,Felipe Garcia Goncalves,felipe_garcia_goncalves,47,39,0,84,2T,Normal
+219,2024,B,22,Amazonas Fc,amazonas_fc,Luan Santos Silva,luan_santos_silva,9,7,0,7,1T,Normal
+219,2024,B,22,Amazonas Fc,amazonas_fc,Matheus Bonadiman Serafim,matheus_bonadiman_serafim,11,2,0,47,2T,Normal
+219,2024,B,22,Ponte Preta,ponte_preta,Igor Inocencio de Oliveira,igor_inocencio_de_oliveira,2,10,0,55,2T,Normal
+221,2024,B,23,Vila Nova,vila_nova,Eric Javier Davis Grajales,eric_javier_davis_grajales,6,15,0,60,2T,Falta
+222,2024,B,23,Operário,operario,Daniel Alves de Lima,daniel_alves_de_lima,99,28,0,73,2T,Normal
+223,2024,B,23,Guarani,guarani,Caio Henrique da Silva Dantas,caio_henrique_da_silva_dantas,99,2,0,2,1T,Normal
+223,2024,B,23,Botafogo,botafogo,Alex Sandro de Oliveira,alex_sandro_de_oliveira,9,18,0,18,1T,Normal
+223,2024,B,23,Guarani,guarani,Caio Henrique da Silva Dantas,caio_henrique_da_silva_dantas,99,45,1,46,1T,Penalty
+223,2024,B,23,Botafogo,botafogo,Victor Andrade Santos,victor_andrade_santos,11,35,0,80,2T,Penalty
+223,2024,B,23,Botafogo,botafogo,Alexandre de Jesus Jeruzalem Junior,alexandre_de_jesus_jeruzalem_junior,20,90,6,96,2T,Normal
+224,2024,B,23,Ituano,ituano,Bruno Cesar Xavier Sislo,bruno_cesar_xavier_sislo,11,7,0,7,1T,Normal
+227,2024,B,23,Brusque,brusque,Diego Mathias de Almeida,diego_mathias_de_almeida,27,42,0,42,1T,Normal
+228,2024,B,23,Coritiba S.a.f.,coritiba_s_a_f,Bruno Ferreira Melo,bruno_ferreira_melo,26,16,0,61,2T,Normal
+230,2024,B,23,Ceará,ceara,Saulo Rodrigues da Silva,saulo_rodrigues_da_silva,73,42,0,87,2T,Penalty
+231,2024,B,24,Goiás,goias,Rafael Gustavo Meneghel Gava,rafael_gustavo_meneghel_gava,8,16,0,61,2T,Normal
+231,2024,B,24,Paysandu,paysandu,Esli Samuel Garcia Cordero,esli_samuel_garcia_cordero,15,32,0,77,2T,Normal
+232,2024,B,24,Coritiba S.a.f.,coritiba_s_a_f,Marcelo da Conceiçao Benevenuto Malaquias,marcelo_da_conceicao_benevenuto_malaquias,4,41,0,41,1T,Gol Contra
+232,2024,B,24,Coritiba S.a.f.,coritiba_s_a_f,Matheus Henrique Frizzo,matheus_henrique_frizzo,10,3,0,48,2T,Normal
+232,2024,B,24,Guarani,guarani,Gabriel Bispo dos Santos,gabriel_bispo_dos_santos,33,5,0,50,2T,Normal
+233,2024,B,24,Mirassol,mirassol,Guilherme Augusto Alves Dellatorre,guilherme_augusto_alves_dellatorre,49,11,0,11,1T,Normal
+234,2024,B,24,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Luis Fellipe Campos Doria,luis_fellipe_campos_doria,25,14,0,59,2T,Normal
+234,2024,B,24,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Altemir Cordeiro Pessôa Neto,altemir_cordeiro_pessoa_neto,9,31,0,76,2T,Normal
+235,2024,B,24,Santos,santos,Giuliano Victor de Paula,giuliano_victor_de_paula,20,23,0,23,1T,Normal
+235,2024,B,24,Santos,santos,Joao Othavio Basso,joao_othavio_basso,15,33,0,33,1T,Normal
+235,2024,B,24,Ponte Preta,ponte_preta,Jeferson Marinho dos Santos,jeferson_marinho_dos_santos,9,10,0,55,2T,Normal
+235,2024,B,24,Ponte Preta,ponte_preta,Vinicius Rodrigues Adelino dos Santos,vinicius_rodrigues_adelino_dos_santos,7,90,1,91,2T,Normal
+236,2024,B,24,Chapecoense,chapecoense,Rafael dos Santos Carvalheira Natividade,rafael_dos_santos_carvalheira_natividade,99,25,0,25,1T,Normal
+236,2024,B,24,Chapecoense,chapecoense,Joao Paulo Silveira dos Santos,joao_paulo_silveira_dos_santos,4,39,0,84,2T,Gol Contra
+237,2024,B,24,Avaí,avai,Giovanni Piccolomo,giovanni_piccolomo,8,42,0,42,1T,Normal
+237,2024,B,24,Avaí,avai,Giovanni Piccolomo,giovanni_piccolomo,8,45,3,48,1T,Normal
+237,2024,B,24,Crb,crb,Geirton Marques Aires,geirton_marques_aires,8,15,0,60,2T,Penalty
+239,2024,B,24,Amazonas Fc,amazonas_fc,Erick de Souza Miranda,erick_de_souza_miranda,7,7,0,7,1T,Normal
+239,2024,B,24,Ceará,ceara,Jorge Eduardo Recalde Ramírez,jorge_eduardo_recalde_ramirez,28,41,0,86,2T,Normal
+240,2024,B,24,Ituano,ituano,Jose Aldo Soares de Oliveira Filho,jose_aldo_soares_de_oliveira_filho,10,1,0,1,1T,Normal
+240,2024,B,24,Sport,sport,Francisco Alves da Silva Neto,francisco_alves_da_silva_neto,44,11,0,11,1T,Normal
+240,2024,B,24,Sport,sport,Jose Roberto Assunçao de Araujo Filho,jose_roberto_assuncao_de_araujo_filho,99,25,0,70,2T,Penalty
+240,2024,B,24,Sport,sport,Jose Roberto Assunçao de Araujo Filho,jose_roberto_assuncao_de_araujo_filho,99,41,0,86,2T,Normal
+240,2024,B,24,Ituano,ituano,Alvaro Vieira de Oliveira,alvaro_vieira_de_oliveira,19,90,3,93,2T,Normal
+241,2024,B,25,Vila Nova,vila_nova,Jemmes Bruno Ribeiro da Silva,jemmes_bruno_ribeiro_da_silva,4,38,0,83,2T,Normal
+242,2024,B,25,Chapecoense,chapecoense,Joao Paulo Silveira dos Santos,joao_paulo_silveira_dos_santos,4,37,0,37,1T,Normal
+242,2024,B,25,Chapecoense,chapecoense,Mario Sergio Pereira Junior,mario_sergio_pereira_junior,89,44,0,89,2T,Normal
+243,2024,B,25,Botafogo,botafogo,Sabit Abdulai,sabit_abdulai,5,38,0,83,2T,Normal
+244,2024,B,25,Ituano,ituano,Thonny Anderson da Silva Carvalho,thonny_anderson_da_silva_carvalho,9,5,0,5,1T,Normal
+244,2024,B,25,Mirassol,mirassol,Leonardo Gamalho de Souza,leonardo_gamalho_de_souza,99,18,0,18,1T,Normal
+244,2024,B,25,Ituano,ituano,Bruno Cesar Xavier Sislo,bruno_cesar_xavier_sislo,11,25,0,70,2T,Normal
+244,2024,B,25,Mirassol,mirassol,Iury Lirio Freitas de Castilho,iury_lirio_freitas_de_castilho,77,27,0,72,2T,Normal
+244,2024,B,25,Ituano,ituano,Leonardo Caetano Silva,leonardo_caetano_silva,22,29,0,74,2T,Normal
+245,2024,B,25,America Saf,america_saf,Matheus Alvarenga de Oliveira,matheus_alvarenga_de_oliveira,88,17,0,17,1T,Normal
+245,2024,B,25,America Saf,america_saf,Rodrigo Henrique Santos de Souza,rodrigo_henrique_santos_de_souza,75,41,0,41,1T,Normal
+245,2024,B,25,America Saf,america_saf,Renato Marques de Oliveira Junior,renato_marques_de_oliveira_junior,78,44,0,89,2T,Normal
+246,2024,B,25,Sport,sport,Fabricio Dominguez Huertas,fabricio_dominguez_huertas,8,13,0,13,1T,Normal
+246,2024,B,25,Sport,sport,Chrystian Amaral Barletta de Almeida,chrystian_amaral_barletta_de_almeida,30,16,0,61,2T,Normal
+247,2024,B,25,Santos,santos,Wendel da Silva Costa,wendel_da_silva_costa,19,10,0,10,1T,Normal
+248,2024,B,25,Coritiba S.a.f.,coritiba_s_a_f,Jose Francisco dos Santos Junior,jose_francisco_dos_santos_junior,9,16,0,16,1T,Normal
+248,2024,B,25,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Altemir Cordeiro Pessôa Neto,altemir_cordeiro_pessoa_neto,9,40,0,40,1T,Normal
+248,2024,B,25,Coritiba S.a.f.,coritiba_s_a_f,Jose Francisco dos Santos Junior,jose_francisco_dos_santos_junior,9,9,0,54,2T,Normal
+248,2024,B,25,Coritiba S.a.f.,coritiba_s_a_f,Thalisson Gabriel Pereira Moreira,thalisson_gabriel_pereira_moreira,14,27,0,72,2T,Gol Contra
+249,2024,B,25,Amazonas Fc,amazonas_fc,Matheus Bonadiman Serafim,matheus_bonadiman_serafim,11,15,0,15,1T,Normal
+250,2024,B,25,Ceará,ceara,Aylon Darwin Tavella,aylon_darwin_tavella,11,42,0,42,1T,Normal
+250,2024,B,25,Ceará,ceara,Erick da Costa Farias,erick_da_costa_farias,16,28,0,73,2T,Normal
+250,2024,B,25,Operário,operario,Daniel Alves de Lima,daniel_alves_de_lima,99,90,5,95,2T,Normal
+251,2024,B,26,Goiás,goias,Rafael Gustavo Meneghel Gava,rafael_gustavo_meneghel_gava,8,2,0,47,2T,Normal
+251,2024,B,26,Goiás,goias,Edson Felipe da Cruz,edson_felipe_da_cruz,19,25,0,70,2T,Normal
+251,2024,B,26,Avaí,avai,Tiago Pagnussat,tiago_pagnussat,3,36,0,81,2T,Normal
+252,2024,B,26,Ituano,ituano,Bruno Cesar Xavier Sislo,bruno_cesar_xavier_sislo,11,4,0,4,1T,Normal
+252,2024,B,26,Ponte Preta,ponte_preta,Iago Angelo Dias,iago_angelo_dias,11,15,0,15,1T,Normal
+252,2024,B,26,Ituano,ituano,Thonny Anderson da Silva Carvalho,thonny_anderson_da_silva_carvalho,9,10,0,55,2T,Normal
+252,2024,B,26,Ituano,ituano,Bruno Cesar Xavier Sislo,bruno_cesar_xavier_sislo,11,23,0,68,2T,Normal
+252,2024,B,26,Ituano,ituano,Bruno Cesar Xavier Sislo,bruno_cesar_xavier_sislo,11,29,0,74,2T,Normal
+254,2024,B,26,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Wagner da Silva Souza,wagner_da_silva_souza,30,10,0,10,1T,Normal
+254,2024,B,26,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Wagner da Silva Souza,wagner_da_silva_souza,30,45,0,45,1T,Normal
+255,2024,B,26,Santos,santos,Wendel da Silva Costa,wendel_da_silva_costa,19,15,0,60,2T,Normal
+255,2024,B,26,Santos,santos,Joao Pedro Chermont Crema,joao_pedro_chermont_crema,44,26,0,71,2T,Normal
+255,2024,B,26,America Saf,america_saf,Moises Lima Magalhaes,moises_lima_magalhaes,15,90,3,93,2T,Normal
+256,2024,B,26,Chapecoense,chapecoense,Gianluca Piola Minozzo,gianluca_piola_minozzo,6,39,0,39,1T,Gol Contra
+256,2024,B,26,Chapecoense,chapecoense,Jhonnathan Espedito Coco Wagner,jhonnathan_espedito_coco_wagner,32,45,4,49,1T,Normal
+256,2024,B,26,Chapecoense,chapecoense,Marcelo Rodrigues Souza,marcelo_rodrigues_souza,79,13,0,58,2T,Normal
+257,2024,B,26,Brusque,brusque,Lucas Baptista Felix,lucas_baptista_felix,10,1,0,1,1T,Normal
+257,2024,B,26,Brusque,brusque,Diego Mathias de Almeida,diego_mathias_de_almeida,27,4,0,49,2T,Normal
+257,2024,B,26,Vila Nova,vila_nova,Elias Lira Nogueira Junior,elias_lira_nogueira_junior,2,37,0,82,2T,Normal
+257,2024,B,26,Brusque,brusque,Paulo de Souza Junior,paulo_de_souza_junior,18,40,0,85,2T,Normal
+258,2024,B,26,Coritiba S.a.f.,coritiba_s_a_f,Jose Gabriel dos Santos Silva,jose_gabriel_dos_santos_silva,8,13,0,13,1T,Normal
+258,2024,B,26,Operário,operario,Nathan Uiliam Fogaca,nathan_uiliam_fogaca,20,36,0,81,2T,Falta
+258,2024,B,26,Operário,operario,Daniel Alves de Lima,daniel_alves_de_lima,99,90,16,106,2T,Normal
+259,2024,B,26,Guarani,guarani,Douglas Silva Bacelar,douglas_silva_bacelar,23,22,0,22,1T,Normal
+259,2024,B,26,Paysandu,paysandu,Jean Dias da Costa,jean_dias_da_costa,22,2,0,47,2T,Normal
+259,2024,B,26,Paysandu,paysandu,Kevyn Lucas Ramos da Costa,kevyn_lucas_ramos_da_costa,36,9,0,54,2T,Normal
+260,2024,B,26,Sport,sport,Lucas Rafael Araujo Lima,lucas_rafael_araujo_lima,19,36,0,36,1T,Normal
+260,2024,B,26,Sport,sport,Jose Roberto Assunçao de Araujo Filho,jose_roberto_assuncao_de_araujo_filho,99,10,0,55,2T,Normal
+261,2024,B,27,Vila Nova,vila_nova,Alesson dos Santos Batista,alesson_dos_santos_batista,11,6,0,6,1T,Normal
+261,2024,B,27,Vila Nova,vila_nova,Alesson dos Santos Batista,alesson_dos_santos_batista,11,25,0,25,1T,Normal
+261,2024,B,27,Vila Nova,vila_nova,Geremias Ribeiro Junior,geremias_ribeiro_junior,29,5,0,50,2T,Normal
+261,2024,B,27,Chapecoense,chapecoense,Rafael dos Santos Carvalheira Natividade,rafael_dos_santos_carvalheira_natividade,99,28,0,73,2T,Normal
+261,2024,B,27,Chapecoense,chapecoense,Victor Henrique Carvalho Caetano,victor_henrique_carvalho_caetano,14,43,0,88,2T,Normal
+262,2024,B,27,Guarani,guarani,João Victor Lima Ferreira,joao_victor_lima_ferreira,19,45,2,47,1T,Normal
+263,2024,B,27,Santos,santos,Giuliano Victor de Paula,giuliano_victor_de_paula,20,40,0,40,1T,Normal
+264,2024,B,27,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Rafael Ferreira Donato,rafael_ferreira_donato,3,39,0,39,1T,Normal
+265,2024,B,27,America Saf,america_saf,Brenner Marlos Varanda de Oliveira,brenner_marlos_varanda_de_oliveira,9,6,0,6,1T,Normal
+265,2024,B,27,America Saf,america_saf,Rodrigo Henrique Santos de Souza,rodrigo_henrique_santos_de_souza,75,6,0,51,2T,Normal
+266,2024,B,27,Avaí,avai,Marcos Vinicius da Silva Santos,marcos_vinicius_da_silva_santos,63,23,0,23,1T,Normal
+266,2024,B,27,Avaí,avai,Giovanni Piccolomo,giovanni_piccolomo,8,44,0,44,1T,Normal
+267,2024,B,27,Ponte Preta,ponte_preta,Vinicius Rodrigues Adelino dos Santos,vinicius_rodrigues_adelino_dos_santos,7,90,5,95,2T,Normal
+268,2024,B,27,Coritiba S.a.f.,coritiba_s_a_f,Robson dos Santos Fernandes,robson_dos_santos_fernandes,30,15,0,60,2T,Falta
+268,2024,B,27,Coritiba S.a.f.,coritiba_s_a_f,Jose Francisco dos Santos Junior,jose_francisco_dos_santos_junior,9,18,0,63,2T,Normal
+268,2024,B,27,Ceará,ceara,Facundo Barcelo Viera,facundo_barcelo_viera,31,33,0,78,2T,Normal
+268,2024,B,27,Coritiba S.a.f.,coritiba_s_a_f,Matheus Henrique Frizzo,matheus_henrique_frizzo,10,36,0,81,2T,Normal
+269,2024,B,27,Amazonas Fc,amazonas_fc,Luiz Ricardo Alves,luiz_ricardo_alves,99,9,0,9,1T,Penalty
+269,2024,B,27,Operário,operario,Vinicius Alessandro Mingotti,vinicius_alessandro_mingotti,9,36,0,36,1T,Normal
+269,2024,B,27,Amazonas Fc,amazonas_fc,Matheus Bonadiman Serafim,matheus_bonadiman_serafim,11,90,2,92,2T,Normal
+270,2024,B,27,Goiás,goias,Eduardo Nascimento da Silva Junior,eduardo_nascimento_da_silva_junior,99,10,0,10,1T,Normal
+270,2024,B,27,Sport,sport,Jose Roberto Assunçao de Araujo Filho,jose_roberto_assuncao_de_araujo_filho,99,23,0,23,1T,Penalty
+271,2024,B,28,Mirassol,mirassol,Leonardo Gamalho de Souza,leonardo_gamalho_de_souza,99,37,0,82,2T,Normal
+272,2024,B,28,America Saf,america_saf,Adyson do Nascimento Soares,adyson_do_nascimento_soares,44,35,0,35,1T,Normal
+272,2024,B,28,America Saf,america_saf,Jonathas Cristian de Jesus,jonathas_cristian_de_jesus,99,41,0,86,2T,Normal
+274,2024,B,28,Coritiba S.a.f.,coritiba_s_a_f,Matheus Henrique Frizzo,matheus_henrique_frizzo,10,36,0,81,2T,Normal
+275,2024,B,28,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Pablo Dyego da Silva Rosa,pablo_dyego_da_silva_rosa,70,3,0,3,1T,Normal
+275,2024,B,28,Santos,santos,Romulo Otero Vasquez,romulo_otero_vasquez,22,31,0,31,1T,Normal
+276,2024,B,28,Chapecoense,chapecoense,Rafael dos Santos Carvalheira Natividade,rafael_dos_santos_carvalheira_natividade,99,38,0,38,1T,Normal
+277,2024,B,28,Brusque,brusque,Guilherme de Queiroz Goncalves,guilherme_de_queiroz_goncalves,17,20,0,65,2T,Normal
+278,2024,B,28,Operário,operario,Gabriel Boschilia,gabriel_boschilia,16,18,0,63,2T,Penalty
+279,2024,B,28,Sport,sport,Igor Aquino da Silva,igor_aquino_da_silva,16,18,0,63,2T,Normal
+280,2024,B,28,Ceará,ceara,Aylon Darwin Tavella,aylon_darwin_tavella,11,6,0,6,1T,Normal
+280,2024,B,28,Ceará,ceara,Jorge Eduardo Recalde Ramírez,jorge_eduardo_recalde_ramirez,28,38,0,38,1T,Normal
+280,2024,B,28,Ceará,ceara,Aylon Darwin Tavella,aylon_darwin_tavella,11,45,2,47,1T,Normal
+280,2024,B,28,Ceará,ceara,Erick da Costa Farias,erick_da_costa_farias,16,90,3,93,2T,Normal
+281,2024,B,29,Vila Nova,vila_nova,Alesson dos Santos Batista,alesson_dos_santos_batista,11,45,1,46,1T,Normal
+281,2024,B,29,Botafogo,botafogo,Victor Andrade Santos,victor_andrade_santos,11,26,0,71,2T,Normal
+284,2024,B,29,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Altemir Cordeiro Pessôa Neto,altemir_cordeiro_pessoa_neto,9,3,0,3,1T,Normal
+284,2024,B,29,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Altemir Cordeiro Pessôa Neto,altemir_cordeiro_pessoa_neto,9,37,0,37,1T,Normal
+284,2024,B,29,Ponte Preta,ponte_preta,Iago Angelo Dias,iago_angelo_dias,11,29,0,74,2T,Normal
+285,2024,B,29,Santos,santos,Giuliano Victor de Paula,giuliano_victor_de_paula,20,21,0,21,1T,Normal
+286,2024,B,29,Chapecoense,chapecoense,Marcelo Rodrigues Souza,marcelo_rodrigues_souza,79,2,0,47,2T,Normal
+286,2024,B,29,Chapecoense,chapecoense,Italo de Vargas da Rosa,italo_de_vargas_da_rosa,72,25,0,70,2T,Normal
+287,2024,B,29,Crb,crb,Leonardo Augusto dos Santos Pereira,leonardo_augusto_dos_santos_pereira,38,5,0,5,1T,Normal
+287,2024,B,29,America Saf,america_saf,Rodrigo Henrique Santos de Souza,rodrigo_henrique_santos_de_souza,75,16,0,16,1T,Normal
+287,2024,B,29,Crb,crb,Leonardo Augusto dos Santos Pereira,leonardo_augusto_dos_santos_pereira,38,24,0,69,2T,Normal
+290,2024,B,29,Ceará,ceara,Jorge Eduardo Recalde Ramírez,jorge_eduardo_recalde_ramirez,28,19,0,64,2T,Normal
+291,2024,B,30,Goiás,goias,Rildo Goncalves de Amorim Filho,rildo_goncalves_de_amorim_filho,80,9,0,9,1T,Normal
+291,2024,B,30,Goiás,goias,Rildo Goncalves de Amorim Filho,rildo_goncalves_de_amorim_filho,80,13,0,13,1T,Normal
+291,2024,B,30,Santos,santos,Giuliano Victor de Paula,giuliano_victor_de_paula,20,40,0,40,1T,Penalty
+291,2024,B,30,Goiás,goias,Welliton Silva de Azevedo Matheus,welliton_silva_de_azevedo_matheus,31,16,0,61,2T,Normal
+292,2024,B,30,Ponte Preta,ponte_preta,Gabriel Novaes Fernandes,gabriel_novaes_fernandes,35,9,0,9,1T,Normal
+293,2024,B,30,Mirassol,mirassol,Luis Henrique Soares Firmino,luis_henrique_soares_firmino,11,90,6,96,2T,Normal
+294,2024,B,30,Ituano,ituano,Jose Aldo Soares de Oliveira Filho,jose_aldo_soares_de_oliveira_filho,8,19,0,64,2T,Penalty
+295,2024,B,30,Coritiba S.a.f.,coritiba_s_a_f,Natanael Moreira Milouski,natanael_moreira_milouski,16,17,0,17,1T,Normal
+295,2024,B,30,America Saf,america_saf,Rodrigo Henrique Santos de Souza,rodrigo_henrique_santos_de_souza,75,23,0,68,2T,Falta
+295,2024,B,30,America Saf,america_saf,Matheus Alvarenga de Oliveira,matheus_alvarenga_de_oliveira,88,40,0,85,2T,Normal
+297,2024,B,30,Paysandu,paysandu,Jean Dias da Costa,jean_dias_da_costa,22,21,0,21,1T,Normal
+297,2024,B,30,Crb,crb,Anselmo Ramon Alves Herculano,anselmo_ramon_alves_herculano,9,38,0,38,1T,Normal
+297,2024,B,30,Crb,crb,Diogo Hereda da Silva,diogo_hereda_da_silva,32,9,0,54,2T,Normal
+297,2024,B,30,Crb,crb,Facundo Labandeira Castro,facundo_labandeira_castro,30,14,0,59,2T,Normal
+297,2024,B,30,Paysandu,paysandu,Benjamin Manuel Borasi,benjamin_manuel_borasi,24,21,0,66,2T,Normal
+298,2024,B,30,Chapecoense,chapecoense,Italo de Vargas da Rosa,italo_de_vargas_da_rosa,72,12,0,12,1T,Normal
+298,2024,B,30,Operário,operario,Gabriel Boschilia,gabriel_boschilia,16,38,0,38,1T,Falta
+298,2024,B,30,Operário,operario,Nathan Uiliam Fogaca,nathan_uiliam_fogaca,20,36,0,81,2T,Normal
+298,2024,B,30,Chapecoense,chapecoense,Guilherme Seefeldt Krolow,guilherme_seefeldt_krolow,35,45,0,90,2T,Normal
+298,2024,B,30,Operário,operario,Emaxwell Souza de Lima,emaxwell_souza_de_lima,77,90,2,92,2T,Normal
+299,2024,B,30,Amazonas Fc,amazonas_fc,Matheus Bonadiman Serafim,matheus_bonadiman_serafim,11,18,0,63,2T,Normal
+300,2024,B,30,Sport,sport,Chrystian Amaral Barletta de Almeida,chrystian_amaral_barletta_de_almeida,30,14,0,59,2T,Normal
+300,2024,B,30,Ceará,ceara,Erick da Costa Farias,erick_da_costa_farias,16,32,0,77,2T,Normal
+300,2024,B,30,Sport,sport,Wellington Alves da Silva,wellington_alves_da_silva,18,90,3,93,2T,Normal
+301,2024,B,31,Vila Nova,vila_nova,Alesson dos Santos Batista,alesson_dos_santos_batista,11,33,0,33,1T,Penalty
+302,2024,B,31,Crb,crb,Anselmo Ramon Alves Herculano,anselmo_ramon_alves_herculano,9,31,0,31,1T,Normal
+302,2024,B,31,Guarani,guarani,Matheus Salustiano Pires,matheus_salustiano_pires,13,37,0,37,1T,Falta
+302,2024,B,31,Guarani,guarani,Gabriel Bispo dos Santos,gabriel_bispo_dos_santos,33,18,0,63,2T,Normal
+304,2024,B,31,Sport,sport,Francisco Alves da Silva Neto,francisco_alves_da_silva_neto,44,37,0,37,1T,Normal
+304,2024,B,31,Sport,sport,Gustavo Coutinho Silva Lopes,gustavo_coutinho_silva_lopes,9,41,0,41,1T,Normal
+304,2024,B,31,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Marlon Adriano Prezotti,marlon_adriano_prezotti,28,13,0,58,2T,Penalty
+304,2024,B,31,Sport,sport,Chrystian Amaral Barletta de Almeida,chrystian_amaral_barletta_de_almeida,30,32,0,77,2T,Normal
+305,2024,B,31,Santos,santos,Giuliano Victor de Paula,giuliano_victor_de_paula,20,2,0,2,1T,Normal
+305,2024,B,31,Mirassol,mirassol,Gabriel Santana Pinto,gabriel_santana_pinto,27,6,0,6,1T,Penalty
+305,2024,B,31,Santos,santos,Willian Gomes de Siqueira,willian_gomes_de_siqueira,27,12,0,12,1T,Normal
+305,2024,B,31,Mirassol,mirassol,Guilherme Augusto Alves Dellatorre,guilherme_augusto_alves_dellatorre,49,27,0,72,2T,Normal
+305,2024,B,31,Santos,santos,Luan Peres Petroni,luan_peres_petroni,14,38,0,83,2T,Normal
+306,2024,B,31,America Saf,america_saf,Fernando Gaston Elizari Sedano,fernando_gaston_elizari_sedano,5,1,0,1,1T,Normal
+306,2024,B,31,Avaí,avai,Andrey Felisberto dos Santos,andrey_felisberto_dos_santos,78,24,0,24,1T,Normal
+306,2024,B,31,America Saf,america_saf,Brenner Marlos Varanda de Oliveira,brenner_marlos_varanda_de_oliveira,9,34,0,34,1T,Normal
+306,2024,B,31,Avaí,avai,Luis Eduardo Gaspar Coelho,luis_eduardo_gaspar_coelho,20,20,0,65,2T,Normal
+307,2024,B,31,Brusque,brusque,Rodrigo Pollero Lopez,rodrigo_pollero_lopez,9,9,0,54,2T,Normal
+308,2024,B,31,Coritiba S.a.f.,coritiba_s_a_f,Matheus Henrique Frizzo,matheus_henrique_frizzo,10,45,1,46,1T,Penalty
+308,2024,B,31,Coritiba S.a.f.,coritiba_s_a_f,Matheus Henrique Frizzo,matheus_henrique_frizzo,10,15,0,60,2T,Penalty
+308,2024,B,31,Amazonas Fc,amazonas_fc,Cauan Lucas Barros da Luz,cauan_lucas_barros_da_luz,18,29,0,74,2T,Normal
+308,2024,B,31,Coritiba S.a.f.,coritiba_s_a_f,Alef Mangueira Severino Pereira,alef_mangueira_severino_pereira,11,38,0,83,2T,Normal
+309,2024,B,31,Paysandu,paysandu,Paulo Henrique Pereira da Silva,paulo_henrique_pereira_da_silva,9,39,0,39,1T,Normal
+309,2024,B,31,Paysandu,paysandu,Luan de Freitas Molarinho Chagas,luan_de_freitas_molarinho_chagas,35,4,0,49,2T,Normal
+310,2024,B,31,Ceará,ceara,Lucas Andres Mugni,lucas_andres_mugni,10,21,0,21,1T,Normal
+311,2024,B,32,Coritiba S.a.f.,coritiba_s_a_f,Jose Francisco dos Santos Junior,jose_francisco_dos_santos_junior,9,32,0,32,1T,Normal
+311,2024,B,32,Coritiba S.a.f.,coritiba_s_a_f,Natanael Moreira Milouski,natanael_moreira_milouski,16,43,0,43,1T,Normal
+311,2024,B,32,Coritiba S.a.f.,coritiba_s_a_f,Lucas Ronier Vieira Pires,lucas_ronier_vieira_pires,98,41,0,86,2T,Normal
+312,2024,B,32,Guarani,guarani,Matheus Bueno Batista,matheus_bueno_batista,18,23,0,68,2T,Normal
+313,2024,B,32,Mirassol,mirassol,Alex da Silva,alex_da_silva,2,28,0,73,2T,Normal
+314,2024,B,32,Ituano,ituano,Thonny Anderson da Silva Carvalho,thonny_anderson_da_silva_carvalho,9,13,0,13,1T,Normal
+314,2024,B,32,Ceará,ceara,Aylon Darwin Tavella,aylon_darwin_tavella,11,27,0,72,2T,Normal
+314,2024,B,32,Ceará,ceara,Lucas Rian Santos Oliveira,lucas_rian_santos_oliveira,77,33,0,78,2T,Normal
+315,2024,B,32,Goiás,goias,Breno Herculano Almeida,breno_herculano_almeida,18,12,0,12,1T,Normal
+315,2024,B,32,America Saf,america_saf,Brenner Marlos Varanda de Oliveira,brenner_marlos_varanda_de_oliveira,9,33,0,33,1T,Penalty
+315,2024,B,32,Goiás,goias,Breno Herculano Almeida,breno_herculano_almeida,18,35,0,35,1T,Normal
+315,2024,B,32,America Saf,america_saf,Brenner Marlos Varanda de Oliveira,brenner_marlos_varanda_de_oliveira,9,22,0,67,2T,Normal
+316,2024,B,32,Santos,santos,Guilherme Augusto Vieira dos Santos,guilherme_augusto_vieira_dos_santos,11,44,0,44,1T,Normal
+316,2024,B,32,Chapecoense,chapecoense,Mario Sergio Pereira Junior,mario_sergio_pereira_junior,89,45,2,47,1T,Normal
+316,2024,B,32,Chapecoense,chapecoense,Marcelo Rodrigues Souza,marcelo_rodrigues_souza,79,23,0,68,2T,Normal
+316,2024,B,32,Chapecoense,chapecoense,Rafael dos Santos Carvalheira Natividade,rafael_dos_santos_carvalheira_natividade,99,33,0,78,2T,Normal
+316,2024,B,32,Santos,santos,Romulo Otero Vasquez,romulo_otero_vasquez,22,41,0,86,2T,Normal
+317,2024,B,32,Brusque,brusque,Rodrigo Pollero Lopez,rodrigo_pollero_lopez,9,23,0,23,1T,Normal
+317,2024,B,32,Crb,crb,Facundo Labandeira Castro,facundo_labandeira_castro,30,26,0,71,2T,Normal
+317,2024,B,32,Crb,crb,Matheus Antunes Ribeiro,matheus_antunes_ribeiro,2,40,0,85,2T,Normal
+318,2024,B,32,Paysandu,paysandu,Ruan Ribeiro Rodrigues,ruan_ribeiro_rodrigues,26,15,0,15,1T,Normal
+318,2024,B,32,Operário,operario,Emaxwell Souza de Lima,emaxwell_souza_de_lima,77,13,0,58,2T,Penalty
+319,2024,B,32,Avaí,avai,Luis Eduardo Gaspar Coelho,luis_eduardo_gaspar_coelho,20,39,0,39,1T,Normal
+319,2024,B,32,Amazonas Fc,amazonas_fc,Francinildo Pinheiro Bezerra,francinildo_pinheiro_bezerra,26,38,0,83,2T,Normal
+319,2024,B,32,Amazonas Fc,amazonas_fc,Matheus dos Santos Miranda,matheus_dos_santos_miranda,4,41,0,86,2T,Normal
+320,2024,B,32,Sport,sport,Fabricio Dominguez Huertas,fabricio_dominguez_huertas,8,20,0,20,1T,Normal
+320,2024,B,32,Sport,sport,Chrystian Amaral Barletta de Almeida,chrystian_amaral_barletta_de_almeida,30,29,0,29,1T,Normal
+320,2024,B,32,Botafogo,botafogo,Bernardo Schappo,bernardo_schappo,4,17,0,62,2T,Normal
+320,2024,B,32,Sport,sport,Julian Rodrigo Fernandez,julian_rodrigo_fernandez,5,30,0,75,2T,Normal
+321,2024,B,33,Vila Nova,vila_nova,Geremias Ribeiro Junior,geremias_ribeiro_junior,29,90,6,96,2T,Normal
+322,2024,B,33,Ponte Preta,ponte_preta,Gabriel Novaes Fernandes,gabriel_novaes_fernandes,35,10,0,55,2T,Normal
+322,2024,B,33,Ponte Preta,ponte_preta,Jose Renato da Silva Junior,jose_renato_da_silva_junior,19,39,0,84,2T,Normal
+323,2024,B,33,Ituano,ituano,Guilherme Mariano Barbosa,guilherme_mariano_barbosa,4,35,0,80,2T,Normal
+324,2024,B,33,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Altemir Cordeiro Pessôa Neto,altemir_cordeiro_pessoa_neto,9,4,0,4,1T,Normal
+324,2024,B,33,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Altemir Cordeiro Pessôa Neto,altemir_cordeiro_pessoa_neto,9,27,0,27,1T,Normal
+325,2024,B,33,Santos,santos,Diego Cristiano Evaristo,diego_cristiano_evaristo,21,13,0,13,1T,Normal
+326,2024,B,33,Goiás,goias,Alexandre de Almeida Silva Junior,alexandre_de_almeida_silva_junior,50,17,0,17,1T,Normal
+326,2024,B,33,Goiás,goias,Tadeu Antonio Ferreira,tadeu_antonio_ferreira,23,42,0,42,1T,Penalty
+326,2024,B,33,Goiás,goias,Lucas Ribeiro dos Santos,lucas_ribeiro_dos_santos,14,19,0,64,2T,Normal
+326,2024,B,33,Goiás,goias,Jhon Freduar Vasquez Anaya,jhon_freduar_vasquez_anaya,27,29,0,74,2T,Normal
+327,2024,B,33,Mirassol,mirassol,Iury Lirio Freitas de Castilho,iury_lirio_freitas_de_castilho,77,43,0,88,2T,Normal
+328,2024,B,33,Operário,operario,Ronald Sant Anna Rodrigues,ronald_sant_anna_rodrigues,31,25,0,70,2T,Normal
+329,2024,B,33,Coritiba S.a.f.,coritiba_s_a_f,Jose Francisco dos Santos Junior,jose_francisco_dos_santos_junior,9,25,0,25,1T,Normal
+329,2024,B,33,Paysandu,paysandu,Joao Pedro Vieira,joao_pedro_vieira,8,30,0,75,2T,Penalty
+329,2024,B,33,Paysandu,paysandu,Jean Dias da Costa,jean_dias_da_costa,22,45,0,90,2T,Normal
+330,2024,B,33,Sport,sport,Fabio Goncalves,fabio_goncalves,7,29,0,29,1T,Normal
+330,2024,B,33,Sport,sport,Chrystian Amaral Barletta de Almeida,chrystian_amaral_barletta_de_almeida,30,39,0,39,1T,Normal
+330,2024,B,33,Sport,sport,Andre Felipe de Almeida Santos,andre_felipe_de_almeida_santos,6,45,0,45,1T,Normal
+330,2024,B,33,Sport,sport,Francisco Alves da Silva Neto,francisco_alves_da_silva_neto,44,43,0,88,2T,Normal
+332,2024,B,34,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Rafael Ferreira Donato,rafael_ferreira_donato,3,26,0,26,1T,Normal
+332,2024,B,34,Guarani,guarani,Matheus Salustiano Pires,matheus_salustiano_pires,13,45,1,46,1T,Gol Contra
+333,2024,B,34,Mirassol,mirassol,Antonio Francisco Moura Neto,antonio_francisco_moura_neto,25,39,0,39,1T,Normal
+333,2024,B,34,Mirassol,mirassol,Francisco Hyun Sol Kim,francisco_hyun_sol_kim,10,43,0,88,2T,Falta
+333,2024,B,34,Mirassol,mirassol,Iury Lirio Freitas de Castilho,iury_lirio_freitas_de_castilho,77,90,1,91,2T,Normal
+334,2024,B,34,Santos,santos,Sergio Ricardo dos Santos Junior,sergio_ricardo_dos_santos_junior,37,17,0,17,1T,Normal
+334,2024,B,34,Santos,santos,Guilherme Augusto Vieira dos Santos,guilherme_augusto_vieira_dos_santos,11,6,0,51,2T,Normal
+335,2024,B,34,America Saf,america_saf,Fernando Gaston Elizari Sedano,fernando_gaston_elizari_sedano,5,9,0,9,1T,Normal
+335,2024,B,34,America Saf,america_saf,Brenner Marlos Varanda de Oliveira,brenner_marlos_varanda_de_oliveira,9,23,0,68,2T,Penalty
+335,2024,B,34,Sport,sport,Fabricio Dominguez Huertas,fabricio_dominguez_huertas,8,33,0,78,2T,Normal
+336,2024,B,34,Avaí,avai,Hygor Cleber Garcia Silva,hygor_cleber_garcia_silva,7,14,0,14,1T,Normal
+336,2024,B,34,Avaí,avai,Tiago Pagnussat,tiago_pagnussat,3,29,0,29,1T,Normal
+336,2024,B,34,Avaí,avai,Hygor Cleber Garcia Silva,hygor_cleber_garcia_silva,7,2,0,47,2T,Normal
+337,2024,B,34,Chapecoense,chapecoense,Walter David Clar Fritz,walter_david_clar_fritz,37,35,0,80,2T,Penalty
+338,2024,B,34,Coritiba S.a.f.,coritiba_s_a_f,Matheus Henrique Frizzo,matheus_henrique_frizzo,10,29,0,29,1T,Penalty
+338,2024,B,34,Crb,crb,Geirton Marques Aires,geirton_marques_aires,8,45,4,49,1T,Falta
+338,2024,B,34,Coritiba S.a.f.,coritiba_s_a_f,Bruno Ferreira Melo,bruno_ferreira_melo,26,90,1,91,2T,Normal
+339,2024,B,34,Botafogo,botafogo,Douglas Baggio de Oliveira Costa,douglas_baggio_de_oliveira_costa,10,11,0,56,2T,Normal
+340,2024,B,34,Ceará,ceara,Saulo Rodrigues da Silva,saulo_rodrigues_da_silva,73,21,0,21,1T,Penalty
+340,2024,B,34,Ceará,ceara,Rafael Antonio Figueiredo Ramos,rafael_antonio_figueiredo_ramos,6,1,0,46,2T,Gol Contra
+340,2024,B,34,Ceará,ceara,Erick da Costa Farias,erick_da_costa_farias,16,9,0,54,2T,Normal
+341,2024,B,35,Goiás,goias,Breno Herculano Almeida,breno_herculano_almeida,18,7,0,7,1T,Normal
+342,2024,B,35,Ponte Preta,ponte_preta,Mateus Ferreira da Silva,mateus_ferreira_da_silva,4,32,0,32,1T,Normal
+342,2024,B,35,Paysandu,paysandu,Benjamin Manuel Borasi,benjamin_manuel_borasi,24,37,0,37,1T,Normal
+342,2024,B,35,Paysandu,paysandu,Esli Samuel Garcia Cordero,esli_samuel_garcia_cordero,15,36,0,81,2T,Normal
+343,2024,B,35,Mirassol,mirassol,Fernando Jose Marques Maciel,fernando_jose_marques_maciel,7,23,0,23,1T,Normal
+343,2024,B,35,Mirassol,mirassol,Guilherme Augusto Alves Dellatorre,guilherme_augusto_alves_dellatorre,49,36,0,36,1T,Normal
+343,2024,B,35,Coritiba S.a.f.,coritiba_s_a_f,Jamerson Santos de Jesus,jamerson_santos_de_jesus,83,45,0,45,1T,Normal
+343,2024,B,35,Coritiba S.a.f.,coritiba_s_a_f,Jose Francisco dos Santos Junior,jose_francisco_dos_santos_junior,9,1,0,46,2T,Gol Contra
+343,2024,B,35,Mirassol,mirassol,Luiz Otavio da Silva Santos,luiz_otavio_da_silva_santos,4,6,0,51,2T,Normal
+344,2024,B,35,Ituano,ituano,Jose Aldo Soares de Oliveira Filho,jose_aldo_soares_de_oliveira_filho,10,20,0,20,1T,Penalty
+344,2024,B,35,Crb,crb,Luis Geovanny Segovia Vega,luis_geovanny_segovia_vega,3,22,0,22,1T,Normal
+344,2024,B,35,Crb,crb,Getulio Wandelly Silva Timoteo,getulio_wandelly_silva_timoteo,99,44,0,89,2T,Normal
+345,2024,B,35,Santos,santos,Joao Othavio Basso,joao_othavio_basso,15,10,0,55,2T,Normal
+345,2024,B,35,Santos,santos,Guilherme Augusto Vieira dos Santos,guilherme_augusto_vieira_dos_santos,11,90,5,95,2T,Penalty
+345,2024,B,35,Santos,santos,Romulo Otero Vasquez,romulo_otero_vasquez,22,90,8,98,2T,Falta
+346,2024,B,35,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Altemir Cordeiro Pessôa Neto,altemir_cordeiro_pessoa_neto,9,3,0,3,1T,Normal
+346,2024,B,35,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Patrick Marcos de Sousa Freitas,patrick_marcos_de_sousa_freitas,4,45,0,90,2T,Normal
+348,2024,B,35,Sport,sport,Cristian Jonatan Ortiz,cristian_jonatan_ortiz,59,39,0,39,1T,Normal
+348,2024,B,35,Operário,operario,Vinicius Diniz Dall Antonia,vinicius_diniz_dall_antonia,8,26,0,71,2T,Normal
+348,2024,B,35,Operário,operario,Gabriel Boschilia,gabriel_boschilia,16,37,0,82,2T,Normal
+349,2024,B,35,Amazonas Fc,amazonas_fc,Matheus Bonadiman Serafim,matheus_bonadiman_serafim,11,24,0,69,2T,Normal
+350,2024,B,35,Ceará,ceara,Erick da Costa Farias,erick_da_costa_farias,16,12,0,57,2T,Normal
+350,2024,B,35,Ceará,ceara,Lucas Andres Mugni,lucas_andres_mugni,10,26,0,71,2T,Normal
+351,2024,B,36,Ponte Preta,ponte_preta,Elvis Vieira Araujo,elvis_vieira_araujo,10,31,0,31,1T,Penalty
+351,2024,B,36,Vila Nova,vila_nova,Alesson dos Santos Batista,alesson_dos_santos_batista,11,39,0,39,1T,Normal
+351,2024,B,36,Vila Nova,vila_nova,Alesson dos Santos Batista,alesson_dos_santos_batista,11,38,0,83,2T,Normal
+353,2024,B,36,Ceará,ceara,Saulo Rodrigues da Silva,saulo_rodrigues_da_silva,73,37,0,37,1T,Penalty
+353,2024,B,36,Botafogo,botafogo,Gustavo Costa da Silva Machado,gustavo_costa_da_silva_machado,8,1,0,46,2T,Normal
+353,2024,B,36,Ceará,ceara,Saulo Rodrigues da Silva,saulo_rodrigues_da_silva,73,6,0,51,2T,Normal
+353,2024,B,36,Ceará,ceara,Erick da Costa Farias,erick_da_costa_farias,16,7,0,52,2T,Normal
+353,2024,B,36,Ceará,ceara,Saulo Rodrigues da Silva,saulo_rodrigues_da_silva,73,20,0,65,2T,Normal
+354,2024,B,36,Operário,operario,Nathan Uiliam Fogaca,nathan_uiliam_fogaca,20,40,0,85,2T,Normal
+355,2024,B,36,America Saf,america_saf,Ricardo Cesar Dantas da Silva,ricardo_cesar_dantas_da_silva,45,14,0,14,1T,Gol Contra
+355,2024,B,36,America Saf,america_saf,Nicolas Vichiatto da Silva,nicolas_vichiatto_da_silva,30,40,0,40,1T,Normal
+355,2024,B,36,America Saf,america_saf,Lucas Cavalcante Silva Afonso,lucas_cavalcante_silva_afonso,3,15,0,60,2T,Normal
+355,2024,B,36,Ituano,ituano,Bruno Cesar Xavier Sislo,bruno_cesar_xavier_sislo,20,19,0,64,2T,Normal
+355,2024,B,36,America Saf,america_saf,Fabio Augusto Luciano da Silva,fabio_augusto_luciano_da_silva,28,42,0,87,2T,Normal
+357,2024,B,36,Goiás,goias,Lucas Ribeiro dos Santos,lucas_ribeiro_dos_santos,14,90,2,92,2T,Normal
+358,2024,B,36,Santos,santos,Wendel da Silva Costa,wendel_da_silva_costa,19,19,0,19,1T,Normal
+358,2024,B,36,Santos,santos,Romulo Otero Vasquez,romulo_otero_vasquez,22,40,0,40,1T,Falta
+359,2024,B,36,Paysandu,paysandu,Esli Samuel Garcia Cordero,esli_samuel_garcia_cordero,15,34,0,79,2T,Normal
+360,2024,B,36,Sport,sport,Julian Rodrigo Fernandez,julian_rodrigo_fernandez,5,1,0,46,2T,Normal
+360,2024,B,36,Chapecoense,chapecoense,Pedro Henrique Perotti,pedro_henrique_perotti,9,38,0,83,2T,Normal
+361,2024,B,37,Ituano,ituano,Jose Aldo Soares de Oliveira Filho,jose_aldo_soares_de_oliveira_filho,10,5,0,5,1T,Normal
+361,2024,B,37,Vila Nova,vila_nova,Alesson dos Santos Batista,alesson_dos_santos_batista,11,17,0,17,1T,Normal
+361,2024,B,37,Vila Nova,vila_nova,Luciano Francisco Paulino,luciano_francisco_paulino,10,33,0,33,1T,Normal
+361,2024,B,37,Ituano,ituano,Leonardo Caetano Silva,leonardo_caetano_silva,11,36,0,36,1T,Normal
+361,2024,B,37,Vila Nova,vila_nova,Jemmes Bruno Ribeiro da Silva,jemmes_bruno_ribeiro_da_silva,4,10,0,55,2T,Normal
+361,2024,B,37,Ituano,ituano,Salatiel de Oliveira Gabriel Junior,salatiel_de_oliveira_gabriel_junior,23,39,0,84,2T,Normal
+361,2024,B,37,Ituano,ituano,Vinicius dos Santos de Oliveira Paiva,vinicius_dos_santos_de_oliveira_paiva,21,90,9,99,2T,Normal
+362,2024,B,37,Sport,sport,Chrystian Amaral Barletta de Almeida,chrystian_amaral_barletta_de_almeida,30,7,0,7,1T,Normal
+362,2024,B,37,Sport,sport,Fabricio Dominguez Huertas,fabricio_dominguez_huertas,8,33,0,33,1T,Normal
+362,2024,B,37,Sport,sport,Rafael Thyere de Albuquerque Marques,rafael_thyere_de_albuquerque_marques,15,2,0,47,2T,Normal
+362,2024,B,37,Sport,sport,Fabio Goncalves,fabio_goncalves,7,40,0,85,2T,Normal
+363,2024,B,37,Botafogo,botafogo,Emerson Ramon Bezerra Oliveira,emerson_ramon_bezerra_oliveira,11,36,0,36,1T,Normal
+363,2024,B,37,Avaí,avai,Vagner Silva de Souza,vagner_silva_de_souza,9,14,0,59,2T,Normal
+363,2024,B,37,Avaí,avai,Joao Paulo da Silva Alves,joao_paulo_da_silva_alves,19,42,0,87,2T,Normal
+363,2024,B,37,Avaí,avai,Mauricio Garcez de Jesus,mauricio_garcez_de_jesus,11,90,2,92,2T,Normal
+364,2024,B,37,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Geovane Batista de Faria,geovane_batista_de_faria,5,8,0,53,2T,Normal
+364,2024,B,37,Paysandu,paysandu,Esli Samuel Garcia Cordero,esli_samuel_garcia_cordero,15,30,0,75,2T,Falta
+365,2024,B,37,Crb,crb,Facundo Labandeira Castro,facundo_labandeira_castro,30,16,0,16,1T,Normal
+365,2024,B,37,Crb,crb,Kleiton Pego Duarte,kleiton_pego_duarte,75,19,0,64,2T,Normal
+366,2024,B,37,Coritiba S.a.f.,coritiba_s_a_f,Josue Filipe Soares Pesqueira,josue_filipe_soares_pesqueira,27,42,0,42,1T,Penalty
+366,2024,B,37,Chapecoense,chapecoense,Pedro Henrique Perotti,pedro_henrique_perotti,9,14,0,59,2T,Normal
+366,2024,B,37,Chapecoense,chapecoense,Tarik Michel Kedes Boschetti,tarik_michel_kedes_boschetti,31,20,0,65,2T,Normal
+367,2024,B,37,Brusque,brusque,Gerson Rodolfo da Silva,gerson_rodolfo_da_silva,5,7,0,7,1T,Normal
+367,2024,B,37,Brusque,brusque,Diego Mathias de Almeida,diego_mathias_de_almeida,27,23,0,68,2T,Normal
+367,2024,B,37,Guarani,guarani,Leonardo Porfirio da Silva,leonardo_porfirio_da_silva,26,90,3,93,2T,Normal
+368,2024,B,37,Operário,operario,Anderson Ferreira da Silva,anderson_ferreira_da_silva,6,27,0,27,1T,Normal
+368,2024,B,37,Mirassol,mirassol,Iury Lirio Freitas de Castilho,iury_lirio_freitas_de_castilho,77,41,0,86,2T,Normal
+369,2024,B,37,Goiás,goias,Ian Luccas Baroni Boetto,ian_luccas_baroni_boetto,25,7,0,7,1T,Normal
+369,2024,B,37,Goiás,goias,Marcos Antonio Almeida Silva,marcos_antonio_almeida_silva,77,15,0,15,1T,Normal
+369,2024,B,37,Goiás,goias,Paulo Henrique Silva Ribeiro,paulo_henrique_silva_ribeiro,7,22,0,22,1T,Normal
+369,2024,B,37,Goiás,goias,Sander Henrique Bortolotto,sander_henrique_bortolotto,6,31,0,76,2T,Normal
+370,2024,B,37,Ceará,ceara,Saulo Rodrigues da Silva,saulo_rodrigues_da_silva,73,27,0,27,1T,Penalty
+371,2024,B,38,Goiás,goias,Paulo Henrique Silva Ribeiro,paulo_henrique_silva_ribeiro,7,37,0,82,2T,Normal
+373,2024,B,38,Mirassol,mirassol,Iury Lirio Freitas de Castilho,iury_lirio_freitas_de_castilho,77,16,0,16,1T,Normal
+374,2024,B,38,Ituano,ituano,Rodrigo Vasconcelos Oliveira,rodrigo_vasconcelos_oliveira,5,14,0,14,1T,Gol Contra
+375,2024,B,38,America Saf,america_saf,Moises Lima Magalhaes,moises_lima_magalhaes,15,22,0,22,1T,Penalty
+375,2024,B,38,America Saf,america_saf,Matheus Alvarenga de Oliveira,matheus_alvarenga_de_oliveira,88,36,0,36,1T,Normal
+375,2024,B,38,America Saf,america_saf,Fabio Augusto Luciano da Silva,fabio_augusto_luciano_da_silva,28,31,0,76,2T,Normal
+376,2024,B,38,Avaí,avai,Mario Sergio Valerio,mario_sergio_valerio,33,42,0,42,1T,Normal
+376,2024,B,38,Avaí,avai,Mauricio Garcez de Jesus,mauricio_garcez_de_jesus,11,18,0,63,2T,Normal
+376,2024,B,38,Ponte Preta,ponte_preta,Jose Renato da Silva Junior,jose_renato_da_silva_junior,19,26,0,71,2T,Normal
+377,2024,B,38,Crb,crb,Rodrigo Jesse dos Santos Viana,rodrigo_jesse_dos_santos_viana,13,10,0,55,2T,Normal
+377,2024,B,38,Operário,operario,Emaxwell Souza de Lima,emaxwell_souza_de_lima,77,13,0,58,2T,Normal
+378,2024,B,38,Botafogo,botafogo,Wallison Nunes Silva,wallison_nunes_silva,2,28,0,28,1T,Normal
+378,2024,B,38,Botafogo,botafogo,Sabit Abdulai,sabit_abdulai,5,42,0,42,1T,Normal
+378,2024,B,38,Botafogo,botafogo,Bruno Henrique Marques Torres,bruno_henrique_marques_torres,9,7,0,52,2T,Normal
+378,2024,B,38,Coritiba S.a.f.,coritiba_s_a_f,Vinicius Romualdo dos Santos,vinicius_romualdo_dos_santos,36,13,0,58,2T,Normal
+379,2024,B,38,Vila Nova,vila_nova,Eduardo Fernandes Gomes Junior,eduardo_fernandes_gomes_junior,15,34,0,34,1T,Normal
+379,2024,B,38,Paysandu,paysandu,Esli Samuel Garcia Cordero,esli_samuel_garcia_cordero,15,12,0,57,2T,Normal
+379,2024,B,38,Paysandu,paysandu,Lucas Jaques Varone Maia,lucas_jaques_varone_maia,27,90,1,91,2T,Normal
+380,2024,B,38,Sport,sport,Lucas Rafael Araujo Lima,lucas_rafael_araujo_lima,19,45,4,49,1T,Penalty
+380,2024,B,38,Sport,sport,Fabio Goncalves,fabio_goncalves,7,17,0,62,2T,Normal
+380,2024,B,38,Santos Fc,santos_fc,Wendel da Silva Costa,wendel_da_silva_costa,19,31,0,76,2T,Normal
+43,2025,B,0,Cuiabá Saf,cuiaba_saf,Alan Pereira Empereur,alan_pereira_empereur,33,27,0,72,2T,Normal
+297,2025,B,0,Crb,crb,Thiago Fernandes Rodrigues,thiago_fernandes_rodrigues,17,44,0,44,1T,Normal
+323,2025,B,0,Atlético Goianiense Saf,atletico_goianiense_saf,Yuri Alves de Aquino,yuri_alves_de_aquino,11,21,0,66,2T,Normal
+369,2025,B,0,Ferroviária,ferroviaria,Fábio Soares dos Santos,fabio_soares_dos_santos,80,27,0,72,2T,Normal
+369,2025,B,0,Athletico Paranaense,athletico_paranaense,João Victor Machado Cruz,joao_victor_machado_cruz,57,40,0,85,2T,Falta
+369,2025,B,0,Athletico Paranaense,athletico_paranaense,Renan Peixoto Nepomuceno,renan_peixoto_nepomuceno,70,90,5,95,2T,Normal
+1,2025,B,1,Coritiba S.a.f.,coritiba_s_a_f,Josue Filipe Soares Pesqueira,josue_filipe_soares_pesqueira,10,90,5,95,2T,Penalty
+2,2025,B,1,Goiás,goias,Jose Rodrigo Andrade Ramos,jose_rodrigo_andrade_ramos,32,3,0,3,1T,Normal
+3,2025,B,1,Athletic Saf,athletic_saf,Alexsandro Amorim de Freitas Filho,alexsandro_amorim_de_freitas_filho,22,8,0,8,1T,Normal
+3,2025,B,1,Atlético Goianiense Saf,atletico_goianiense_saf,Rai dos Reis Ramos,rai_dos_reis_ramos,2,42,0,42,1T,Normal
+3,2025,B,1,Atlético Goianiense Saf,atletico_goianiense_saf,Matheus Felipe Santos Nascimento,matheus_felipe_santos_nascimento,3,23,0,68,2T,Normal
+3,2025,B,1,Atlético Goianiense Saf,atletico_goianiense_saf,Sandro Cesar Cordovil de Lima,sandro_cesar_cordovil_de_lima,20,34,0,79,2T,Normal
+3,2025,B,1,Athletic Saf,athletic_saf,Lincoln Correa dos Santos,lincoln_correa_dos_santos,9,42,0,87,2T,Normal
+3,2025,B,1,Atlético Goianiense Saf,atletico_goianiense_saf,Robert dos Santos Conceicao,robert_dos_santos_conceicao,19,90,2,92,2T,Normal
+4,2025,B,1,Athletico Paranaense,athletico_paranaense,Bruno Zapelli,bruno_zapelli,10,32,0,32,1T,Normal
+4,2025,B,1,Paysandu,paysandu,Leandro Vilela Sales Teixeira,leandro_vilela_sales_teixeira,28,42,0,42,1T,Normal
+4,2025,B,1,Athletico Paranaense,athletico_paranaense,Renan Peixoto Nepomuceno,renan_peixoto_nepomuceno,70,26,0,71,2T,Normal
+5,2025,B,1,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Jean Carlos de Souza Irmer,jean_carlos_de_souza_irmer,5,13,0,13,1T,Normal
+5,2025,B,1,Avaí,avai,Hygor Cleber Garcia Silva,hygor_cleber_garcia_silva,7,25,0,25,1T,Normal
+6,2025,B,1,Criciúma,criciuma,Fellipe Mateus de Sena Araujo,fellipe_mateus_de_sena_araujo,7,10,0,10,1T,Normal
+6,2025,B,1,Operário,operario,Rodrigo Antonio Rodrigues,rodrigo_antonio_rodrigues,7,36,0,36,1T,Normal
+6,2025,B,1,Operário,operario,Juan Pablo Zuluaga Estrada,juan_pablo_zuluaga_estrada,8,13,0,58,2T,Normal
+7,2025,B,1,Crb,crb,David da Hora da Conceicao,david_da_hora_da_conceicao,11,10,0,10,1T,Normal
+8,2025,B,1,America Saf,america_saf,Cauan Lucas Barros da Luz,cauan_lucas_barros_da_luz,88,36,0,81,2T,Normal
+9,2025,B,1,Remo,remo,Felipe dos Reis Pereira Vizeu do Carmo Linhares,felipe_dos_reis_pereira_vizeu_do_carmo_linhares,33,38,0,38,1T,Normal
+9,2025,B,1,Ferroviária,ferroviaria,Carlos Henrique de Moura Brito,carlos_henrique_de_moura_brito,9,90,4,94,2T,Normal
+10,2025,B,1,Cuiabá Saf,cuiaba_saf,Bruno Fabiano Alves,bruno_fabiano_alves,3,10,0,10,1T,Normal
+11,2025,B,2,Athletico Paranaense,athletico_paranaense,Alan Kardec de Souza Pereira Junior,alan_kardec_de_souza_pereira_junior,27,22,0,22,1T,Normal
+11,2025,B,2,Criciúma,criciuma,Marcelo Hermes,marcelo_hermes,22,31,0,76,2T,Falta
+11,2025,B,2,Athletico Paranaense,athletico_paranaense,Hayen Santiago Palacios Sanchez,hayen_santiago_palacios_sanchez,18,39,0,84,2T,Normal
+12,2025,B,2,Vila Nova,vila_nova,Gabriel Buscariol Poveda,gabriel_buscariol_poveda,9,11,0,11,1T,Normal
+13,2025,B,2,Cuiabá Saf,cuiaba_saf,Mateus da Silva Duarte,mateus_da_silva_duarte,98,6,0,6,1T,Normal
+13,2025,B,2,Avaí,avai,Alef Mangueira Severino Pereira,alef_mangueira_severino_pereira,11,21,0,66,2T,Normal
+13,2025,B,2,Cuiabá Saf,cuiaba_saf,Derik Gean Severino Lacerda,derik_gean_severino_lacerda,22,24,0,69,2T,Penalty
+13,2025,B,2,Avaí,avai,Gustavo Bonatto Barreto,gustavo_bonatto_barreto,5,36,0,81,2T,Normal
+14,2025,B,2,Remo,remo,Pedro Rocha Neves,pedro_rocha_neves,32,12,0,12,1T,Normal
+14,2025,B,2,Remo,remo,Pedro Rocha Neves,pedro_rocha_neves,32,2,0,47,2T,Normal
+15,2025,B,2,Coritiba S.a.f.,coritiba_s_a_f,Nicolas Mores da Cruz,nicolas_mores_da_cruz,7,2,0,47,2T,Normal
+15,2025,B,2,Coritiba S.a.f.,coritiba_s_a_f,Alex da Silva,alex_da_silva,20,14,0,59,2T,Normal
+15,2025,B,2,Chapecoense,chapecoense,Mario Sergio Pereira Junior,mario_sergio_pereira_junior,9,32,0,77,2T,Normal
+16,2025,B,2,Operário,operario,Rodrigo Antonio Rodrigues,rodrigo_antonio_rodrigues,7,6,0,51,2T,Normal
+16,2025,B,2,Goiás,goias,Arthur Caike do Nascimento Cruz,arthur_caike_do_nascimento_cruz,45,38,0,83,2T,Normal
+16,2025,B,2,Goiás,goias,Diego Caito Barcellos Oliveira dos Santos,diego_caito_barcellos_oliveira_dos_santos,20,41,0,86,2T,Normal
+18,2025,B,2,Athletic Saf,athletic_saf,Lincoln Correa dos Santos,lincoln_correa_dos_santos,9,28,0,28,1T,Normal
+18,2025,B,2,Crb,crb,Geirton Marques Aires,geirton_marques_aires,8,7,0,52,2T,Falta
+18,2025,B,2,Crb,crb,Douglas Baggio de Oliveira Costa,douglas_baggio_de_oliveira_costa,7,90,1,91,2T,Normal
+19,2025,B,2,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Robson dos Santos Fernandes,robson_dos_santos_fernandes,11,11,0,56,2T,Penalty
+20,2025,B,2,Botafogo,botafogo,Alexandre de Jesus Jeruzalem Junior,alexandre_de_jesus_jeruzalem_junior,9,10,0,10,1T,Normal
+20,2025,B,2,Atlético Goianiense Saf,atletico_goianiense_saf,Federico Andres Martinez Berroa,federico_andres_martinez_berroa,19,44,0,89,2T,Normal
+22,2025,B,3,Goiás,goias,Arthur Caike do Nascimento Cruz,arthur_caike_do_nascimento_cruz,45,26,0,26,1T,Normal
+22,2025,B,3,Vila Nova,vila_nova,Facundo Labandeira Castro,facundo_labandeira_castro,96,40,0,40,1T,Normal
+22,2025,B,3,Goiás,goias,Messias Rodrigues da Silva Junior,messias_rodrigues_da_silva_junior,75,20,0,65,2T,Normal
+22,2025,B,3,Vila Nova,vila_nova,Arilson Carlos Alves Baptista,arilson_carlos_alves_baptista,18,44,0,89,2T,Normal
+23,2025,B,3,Athletico Paranaense,athletico_paranaense,Kevin Andres Velasco Bonilla,kevin_andres_velasco_bonilla,7,15,0,15,1T,Normal
+23,2025,B,3,Cuiabá Saf,cuiaba_saf,Lucas da Silva Izidoro,lucas_da_silva_izidoro,30,15,0,60,2T,Normal
+23,2025,B,3,Cuiabá Saf,cuiaba_saf,Pedro Gabriel Pereira Lopes,pedro_gabriel_pereira_lopes,7,26,0,71,2T,Normal
+24,2025,B,3,Chapecoense,chapecoense,Mailton dos Santos de Sa,mailton_dos_santos_de_sa,22,25,0,25,1T,Normal
+24,2025,B,3,Chapecoense,chapecoense,Joao Paulo Silveira dos Santos,joao_paulo_silveira_dos_santos,4,35,0,35,1T,Normal
+25,2025,B,3,Avaí,avai,Cleber Bomfim de Jesus,cleber_bomfim_de_jesus,99,42,0,42,1T,Normal
+26,2025,B,3,Criciúma,criciuma,Alexandre de Almeida Silva Junior,alexandre_de_almeida_silva_junior,50,5,0,5,1T,Normal
+26,2025,B,3,Criciúma,criciuma,Diego Goncalves,diego_goncalves,77,45,0,45,1T,Normal
+26,2025,B,3,Criciúma,criciuma,Diego Goncalves,diego_goncalves,77,45,2,47,1T,Normal
+26,2025,B,3,Criciúma,criciuma,Jhonata Robert Alves da Silva,jhonata_robert_alves_da_silva,10,41,0,86,2T,Normal
+27,2025,B,3,Crb,crb,Breno Herculano Almeida,breno_herculano_almeida,9,25,0,25,1T,Normal
+28,2025,B,3,America Saf,america_saf,Miqueias Cabral Evaristo,miqueias_cabral_evaristo,42,4,0,4,1T,Normal
+28,2025,B,3,America Saf,america_saf,Ricardo Cesar Dantas da Silva,ricardo_cesar_dantas_da_silva,45,36,0,36,1T,Gol Contra
+28,2025,B,3,America Saf,america_saf,Fabio Augusto Luciano da Silva,fabio_augusto_luciano_da_silva,28,5,0,50,2T,Normal
+28,2025,B,3,America Saf,america_saf,Lucas Figueiredo dos Santos,lucas_figueiredo_dos_santos,22,18,0,63,2T,Normal
+29,2025,B,3,Ferroviária,ferroviaria,Thiago Ferreira Lopes,thiago_ferreira_lopes,37,45,1,46,1T,Normal
+29,2025,B,3,Ferroviária,ferroviaria,Gustavo dos Santos Silva Medina,gustavo_dos_santos_silva_medina,13,14,0,59,2T,Normal
+30,2025,B,3,Botafogo,botafogo,Jefferson Vasconcelos Braz da Silva,jefferson_vasconcelos_braz_da_silva,11,10,0,10,1T,Normal
+30,2025,B,3,Botafogo,botafogo,Alejo Martin Dramisino,alejo_martin_dramisino,18,1,0,46,2T,Normal
+30,2025,B,3,Remo,remo,Pedro Rocha Neves,pedro_rocha_neves,32,45,3,48,1T,Normal
+30,2025,B,3,Remo,remo,Giovanni Fernando Cofreste Pavani,giovanni_fernando_cofreste_pavani,7,39,0,84,2T,Normal
+31,2025,B,4,Athletico Paranaense,athletico_paranaense,Alan Kardec de Souza Pereira Junior,alan_kardec_de_souza_pereira_junior,27,6,0,6,1T,Normal
+31,2025,B,4,Athletico Paranaense,athletico_paranaense,Renan Peixoto Nepomuceno,renan_peixoto_nepomuceno,70,36,0,81,2T,Normal
+32,2025,B,4,Vila Nova,vila_nova,Gabriel Buscariol Poveda,gabriel_buscariol_poveda,9,14,0,14,1T,Normal
+32,2025,B,4,Vila Nova,vila_nova,Igor Henrique Martins Machado,igor_henrique_martins_machado,27,43,0,43,1T,Normal
+33,2025,B,4,Atlético Goianiense Saf,atletico_goianiense_saf,Luiz Gustavo Novaes Palhares,luiz_gustavo_novaes_palhares,5,4,0,4,1T,Normal
+33,2025,B,4,Cuiabá Saf,cuiaba_saf,Derik Gean Severino Lacerda,derik_gean_severino_lacerda,22,33,0,78,2T,Normal
+34,2025,B,4,Remo,remo,Pedro Rocha Neves,pedro_rocha_neves,32,45,2,47,1T,Normal
+35,2025,B,4,Athletic Saf,athletic_saf,David Francisco Trindade Braga,david_francisco_trindade_braga,10,10,0,55,2T,Gol Contra
+37,2025,B,4,Avaí,avai,Alef Mangueira Severino Pereira,alef_mangueira_severino_pereira,11,7,0,7,1T,Normal
+37,2025,B,4,Avaí,avai,João Pedro Murilo de Paula Morais,joao_pedro_murilo_de_paula_morais,80,45,3,48,1T,Normal
+38,2025,B,4,America Saf,america_saf,Miguel Angel Terceros Acuna,miguel_angel_terceros_acuna,7,12,0,12,1T,Penalty
+39,2025,B,4,Criciúma,criciuma,Werik Silva Pinto,werik_silva_pinto,45,17,0,17,1T,Normal
+39,2025,B,4,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Luis Felipe Oyama,luis_felipe_oyama,6,9,0,54,2T,Normal
+41,2025,B,5,Coritiba S.a.f.,coritiba_s_a_f,Gustavo Coutinho Silva Lopes,gustavo_coutinho_silva_lopes,91,18,0,18,1T,Normal
+41,2025,B,5,Coritiba S.a.f.,coritiba_s_a_f,Josue Filipe Soares Pesqueira,josue_filipe_soares_pesqueira,10,45,0,45,1T,Normal
+42,2025,B,5,Vila Nova,vila_nova,Facundo Labandeira Castro,facundo_labandeira_castro,96,2,0,47,2T,Normal
+44,2025,B,5,Crb,crb,Thiago Fernandes Rodrigues,thiago_fernandes_rodrigues,17,40,0,40,1T,Normal
+44,2025,B,5,Paysandu,paysandu,Reverson Valuarth Paiva Silva,reverson_valuarth_paiva_silva,16,43,0,43,1T,Normal
+45,2025,B,5,Avaí,avai,João Pedro Murilo de Paula Morais,joao_pedro_murilo_de_paula_morais,80,32,0,32,1T,Normal
+45,2025,B,5,Avaí,avai,Railan Reis Ferreira,railan_reis_ferreira,2,42,0,87,2T,Falta
+45,2025,B,5,Avaí,avai,Luis Eduardo Gaspar Coelho,luis_eduardo_gaspar_coelho,20,90,1,91,2T,Normal
+46,2025,B,5,Criciúma,criciuma,Everton Morelli Casimiro,everton_morelli_casimiro,40,1,0,46,2T,Normal
+46,2025,B,5,Remo,remo,Reynaldo Cesar Moraes,reynaldo_cesar_moraes,29,90,2,92,2T,Normal
+47,2025,B,5,Atlético Goianiense Saf,atletico_goianiense_saf,Marcelo Jose de Lima Filho,marcelo_jose_de_lima_filho,7,45,1,46,1T,Normal
+47,2025,B,5,Amazonas Fc,amazonas_fc,Luan Santos Silva,luan_santos_silva,9,36,0,81,2T,Penalty
+48,2025,B,5,Athletic Saf,athletic_saf,Arnaldo Francisco da Costa Neto,arnaldo_francisco_da_costa_neto,19,3,0,3,1T,Normal
+48,2025,B,5,Athletic Saf,athletic_saf,Arnaldo Francisco da Costa Neto,arnaldo_francisco_da_costa_neto,19,27,0,72,2T,Penalty
+48,2025,B,5,Volta Redonda,volta_redonda,Gabriel Barbosa Pinheiro,gabriel_barbosa_pinheiro,3,90,5,95,2T,Normal
+49,2025,B,5,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Pablo Dyego da Silva Rosa,pablo_dyego_da_silva_rosa,7,10,0,10,1T,Normal
+49,2025,B,5,Athletico Paranaense,athletico_paranaense,Renan Peixoto Nepomuceno,renan_peixoto_nepomuceno,70,19,0,64,2T,Normal
+49,2025,B,5,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Pablo Dyego da Silva Rosa,pablo_dyego_da_silva_rosa,7,29,0,74,2T,Normal
+50,2025,B,5,Goiás,goias,Anselmo Ramon Alves Herculano,anselmo_ramon_alves_herculano,9,44,0,44,1T,Normal
+51,2025,B,6,Athletico Paranaense,athletico_paranaense,Tevis Gabriel Alves Santos,tevis_gabriel_alves_santos,30,15,0,15,1T,Normal
+51,2025,B,6,Botafogo,botafogo,Leandro Isaac Maciel,leandro_isaac_maciel,10,23,0,23,1T,Penalty
+51,2025,B,6,Botafogo,botafogo,Jonathan Renato Barbosa,jonathan_renato_barbosa,11,45,2,47,1T,Normal
+51,2025,B,6,Botafogo,botafogo,Alexandre de Jesus Jeruzalem Junior,alexandre_de_jesus_jeruzalem_junior,9,14,0,59,2T,Normal
+51,2025,B,6,Botafogo,botafogo,Alexandre de Jesus Jeruzalem Junior,alexandre_de_jesus_jeruzalem_junior,9,22,0,67,2T,Normal
+52,2025,B,6,Avaí,avai,João Pedro Murilo de Paula Morais,joao_pedro_murilo_de_paula_morais,80,21,0,21,1T,Normal
+52,2025,B,6,Goiás,goias,Pedro Junqueira de Oliveira,pedro_junqueira_de_oliveira,17,23,0,23,1T,Normal
+52,2025,B,6,Goiás,goias,Lucas Lovat,lucas_lovat,36,29,0,29,1T,Normal
+53,2025,B,6,Atlético Goianiense Saf,atletico_goianiense_saf,Marcelo Jose de Lima Filho,marcelo_jose_de_lima_filho,7,30,0,30,1T,Normal
+54,2025,B,6,Remo,remo,Giovanni Fernando Cofreste Pavani,giovanni_fernando_cofreste_pavani,7,19,0,19,1T,Normal
+55,2025,B,6,Chapecoense,chapecoense,Mailton dos Santos de Sa,mailton_dos_santos_de_sa,22,1,0,1,1T,Normal
+55,2025,B,6,Criciúma,criciuma,Joao Carlos Barros Lopes,joao_carlos_barros_lopes,21,34,0,34,1T,Normal
+55,2025,B,6,Chapecoense,chapecoense,Mario Sergio Pereira Junior,mario_sergio_pereira_junior,9,8,0,53,2T,Normal
+56,2025,B,6,Operário,operario,Gabriel Boschilia,gabriel_boschilia,10,5,0,5,1T,Normal
+57,2025,B,6,Cuiabá Saf,cuiaba_saf,Max Alves da Silva,max_alves_da_silva,8,13,0,13,1T,Normal
+57,2025,B,6,Crb,crb,Breno Herculano Almeida,breno_herculano_almeida,9,21,0,21,1T,Normal
+58,2025,B,6,Vila Nova,vila_nova,Vinicius Rodrigues Adelino dos Santos,vinicius_rodrigues_adelino_dos_santos,11,90,3,93,2T,Normal
+59,2025,B,6,Coritiba S.a.f.,coritiba_s_a_f,Gustavo Coutinho Silva Lopes,gustavo_coutinho_silva_lopes,91,17,0,17,1T,Normal
+59,2025,B,6,Ferroviária,ferroviaria,Carlos Henrique de Moura Brito,carlos_henrique_de_moura_brito,92,18,0,63,2T,Normal
+59,2025,B,6,Ferroviária,ferroviaria,Carlos Henrique de Moura Brito,carlos_henrique_de_moura_brito,92,36,0,81,2T,Normal
+60,2025,B,6,Volta Redonda,volta_redonda,Gabriel Henrique Feitosa da Silva,gabriel_henrique_feitosa_da_silva,26,90,5,95,2T,Normal
+61,2025,B,7,Chapecoense,chapecoense,Walter David Clar Fritz,walter_david_clar_fritz,37,45,0,90,2T,Normal
+61,2025,B,7,Athletico Paranaense,athletico_paranaense,Giuliano Victor de Paula,giuliano_victor_de_paula,8,90,10,100,2T,Penalty
+62,2025,B,7,Goiás,goias,Rafael Gustavo Meneghel Gava,rafael_gustavo_meneghel_gava,8,22,0,67,2T,Normal
+63,2025,B,7,Operário,operario,Gabriel Boschilia,gabriel_boschilia,10,6,0,6,1T,Normal
+63,2025,B,7,Operário,operario,Daniel Amorim Dias da Silva,daniel_amorim_dias_da_silva,89,9,0,9,1T,Normal
+63,2025,B,7,Cuiabá Saf,cuiaba_saf,Max Alves da Silva,max_alves_da_silva,8,11,0,56,2T,Normal
+63,2025,B,7,Cuiabá Saf,cuiaba_saf,Eduardo Nascimento da Silva Junior,eduardo_nascimento_da_silva_junior,9,43,0,88,2T,Penalty
+63,2025,B,7,Operário,operario,Ademilson Braga Bispo Junior,ademilson_braga_bispo_junior,99,90,6,96,2T,Penalty
+64,2025,B,7,Remo,remo,Marcelo Rodrigues Souza,marcelo_rodrigues_souza,79,34,0,34,1T,Normal
+64,2025,B,7,Remo,remo,Regis Augusto Salmazzo,regis_augusto_salmazzo,22,33,0,78,2T,Normal
+67,2025,B,7,Amazonas Fc,amazonas_fc,Luan Santos Silva,luan_santos_silva,9,8,0,8,1T,Penalty
+67,2025,B,7,Crb,crb,Rafael Barbosa Silva,rafael_barbosa_silva,18,90,2,92,2T,Normal
+68,2025,B,7,Paysandu,paysandu,Rosicley Pereira da Silva,rosicley_pereira_da_silva,77,12,0,57,2T,Normal
+68,2025,B,7,Paysandu,paysandu,Jorge Daniel Benitez Guillen,jorge_daniel_benitez_guillen,9,24,0,69,2T,Normal
+68,2025,B,7,America Saf,america_saf,Willian Gomes de Siqueira,willian_gomes_de_siqueira,9,40,0,85,2T,Falta
+68,2025,B,7,America Saf,america_saf,Julio Cesar Alves Gonçalves,julio_cesar_alves_goncalves,18,43,0,88,2T,Normal
+69,2025,B,7,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Nathan Uiliam Fogaca,nathan_uiliam_fogaca,99,2,0,2,1T,Normal
+69,2025,B,7,Ferroviária,ferroviaria,Thiago Ferreira Lopes,thiago_ferreira_lopes,37,30,0,30,1T,Normal
+69,2025,B,7,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Matheus Henrique Frizzo,matheus_henrique_frizzo,10,3,0,48,2T,Penalty
+69,2025,B,7,Ferroviária,ferroviaria,Carlos Henrique de Moura Brito,carlos_henrique_de_moura_brito,92,9,0,54,2T,Normal
+70,2025,B,7,Athletic Saf,athletic_saf,Maswel Ananias Silva,maswel_ananias_silva,77,17,0,17,1T,Normal
+70,2025,B,7,Athletic Saf,athletic_saf,Ezequiel Santos da Silva,ezequiel_santos_da_silva,11,20,0,20,1T,Normal
+70,2025,B,7,Athletic Saf,athletic_saf,Arnaldo Francisco da Costa Neto,arnaldo_francisco_da_costa_neto,19,33,0,78,2T,Penalty
+71,2025,B,8,Coritiba S.a.f.,coritiba_s_a_f,Sebastian Gomez Londono,sebastian_gomez_londono,19,23,0,23,1T,Normal
+72,2025,B,8,Vila Nova,vila_nova,Bernardo Schappo,bernardo_schappo,4,12,0,12,1T,Normal
+72,2025,B,8,Vila Nova,vila_nova,Gabriel Buscariol Poveda,gabriel_buscariol_poveda,9,32,0,32,1T,Normal
+72,2025,B,8,Athletico Paranaense,athletico_paranaense,Bruno Zapelli,bruno_zapelli,10,32,0,77,2T,Penalty
+73,2025,B,8,Remo,remo,Pedro Rocha Neves,pedro_rocha_neves,32,7,0,52,2T,Normal
+73,2025,B,8,Atlético Goianiense Saf,atletico_goianiense_saf,Sandro Cesar Cordovil de Lima,sandro_cesar_cordovil_de_lima,9,90,5,95,2T,Normal
+75,2025,B,8,Chapecoense,chapecoense,Mailton dos Santos de Sa,mailton_dos_santos_de_sa,22,8,0,8,1T,Falta
+75,2025,B,8,Cuiabá Saf,cuiaba_saf,Patrick de Lucca Chaves de Oliveira,patrick_de_lucca_chaves_de_oliveira,45,22,0,67,2T,Normal
+75,2025,B,8,Chapecoense,chapecoense,Italo de Vargas da Rosa,italo_de_vargas_da_rosa,77,31,0,76,2T,Normal
+76,2025,B,8,Operário,operario,Daniel Amorim Dias da Silva,daniel_amorim_dias_da_silva,89,9,0,54,2T,Normal
+76,2025,B,8,Operário,operario,Daniel Amorim Dias da Silva,daniel_amorim_dias_da_silva,89,14,0,59,2T,Normal
+76,2025,B,8,Operário,operario,Allano Brendon de Souza Lima,allano_brendon_de_souza_lima,29,16,0,61,2T,Normal
+77,2025,B,8,Criciúma,criciuma,Marcelo da Conceiçao Benevenuto Malaquias,marcelo_da_conceicao_benevenuto_malaquias,14,11,0,56,2T,Gol Contra
+78,2025,B,8,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Nathan Uiliam Fogaca,nathan_uiliam_fogaca,99,10,0,55,2T,Normal
+78,2025,B,8,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Oscar Ramon Ruiz Roa,oscar_ramon_ruiz_roa,22,21,0,66,2T,Normal
+79,2025,B,8,Avaí,avai,Cleber Bomfim de Jesus,cleber_bomfim_de_jesus,99,5,0,5,1T,Normal
+79,2025,B,8,Ferroviária,ferroviaria,Thiago Ferreira Lopes,thiago_ferreira_lopes,37,41,0,41,1T,Normal
+80,2025,B,8,Amazonas Fc,amazonas_fc,Luan Santos Silva,luan_santos_silva,9,24,0,24,1T,Normal
+80,2025,B,8,Volta Redonda,volta_redonda,Matheus Lucas Jacintho Ferreira,matheus_lucas_jacintho_ferreira,23,90,3,93,2T,Normal
+81,2025,B,9,Athletico Paranaense,athletico_paranaense,Renan Peixoto Nepomuceno,renan_peixoto_nepomuceno,70,13,0,58,2T,Normal
+82,2025,B,9,Goiás,goias,Anselmo Ramon Alves Herculano,anselmo_ramon_alves_herculano,9,37,0,37,1T,Normal
+82,2025,B,9,Goiás,goias,Jandir Breno Souza Silva,jandir_breno_souza_silva,7,38,0,83,2T,Normal
+83,2025,B,9,Cuiabá Saf,cuiaba_saf,Juan Christian Pereira Coelho,juan_christian_pereira_coelho,70,12,0,12,1T,Normal
+84,2025,B,9,Volta Redonda,volta_redonda,Sanchez Jose Vale Costa,sanchez_jose_vale_costa,6,30,0,30,1T,Normal
+84,2025,B,9,Remo,remo,Pedro Rocha Neves,pedro_rocha_neves,32,34,0,34,1T,Normal
+85,2025,B,9,Avaí,avai,Cleber Bomfim de Jesus,cleber_bomfim_de_jesus,99,3,0,48,2T,Normal
+85,2025,B,9,Chapecoense,chapecoense,Italo de Vargas da Rosa,italo_de_vargas_da_rosa,77,29,0,74,2T,Normal
+85,2025,B,9,Avaí,avai,Hygor Cleber Garcia Silva,hygor_cleber_garcia_silva,7,38,0,83,2T,Normal
+86,2025,B,9,Coritiba S.a.f.,coritiba_s_a_f,Vinicius Romualdo dos Santos,vinicius_romualdo_dos_santos,36,15,0,60,2T,Normal
+87,2025,B,9,Amazonas Fc,amazonas_fc,Jackson de Souza,jackson_de_souza,3,5,0,50,2T,Normal
+87,2025,B,9,Amazonas Fc,amazonas_fc,Francinildo Pinheiro Bezerra,francinildo_pinheiro_bezerra,18,37,0,82,2T,Normal
+88,2025,B,9,America Saf,america_saf,Willian Gomes de Siqueira,willian_gomes_de_siqueira,9,23,0,23,1T,Normal
+88,2025,B,9,America Saf,america_saf,Miguel Angel Terceros Acuna,miguel_angel_terceros_acuna,7,27,0,27,1T,Normal
+88,2025,B,9,Atlético Goianiense Saf,atletico_goianiense_saf,Robert dos Santos Conceicao,robert_dos_santos_conceicao,10,35,0,35,1T,Normal
+89,2025,B,9,Paysandu,paysandu,Nicolas Godinho Johann,nicolas_godinho_johann,11,12,0,12,1T,Normal
+89,2025,B,9,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Nathan Uiliam Fogaca,nathan_uiliam_fogaca,99,26,0,26,1T,Normal
+89,2025,B,9,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Nathan Uiliam Fogaca,nathan_uiliam_fogaca,99,14,0,59,2T,Normal
+89,2025,B,9,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Nathan Uiliam Fogaca,nathan_uiliam_fogaca,99,36,0,81,2T,Normal
+90,2025,B,9,Botafogo,botafogo,Alexandre de Jesus Jeruzalem Junior,alexandre_de_jesus_jeruzalem_junior,9,1,0,1,1T,Normal
+90,2025,B,9,Botafogo,botafogo,Jonathan Renato Barbosa,jonathan_renato_barbosa,7,1,0,46,2T,Normal
+90,2025,B,9,Crb,crb,Higor Matheus Meritao,higor_matheus_meritao,22,18,0,63,2T,Normal
+91,2025,B,10,Coritiba S.a.f.,coritiba_s_a_f,Alex da Silva,alex_da_silva,20,34,0,34,1T,Normal
+91,2025,B,10,Avaí,avai,Andrey Felisberto dos Santos,andrey_felisberto_dos_santos,78,32,0,77,2T,Falta
+91,2025,B,10,Coritiba S.a.f.,coritiba_s_a_f,Carlos Maria de Pena Bonino,carlos_maria_de_pena_bonino,27,41,0,86,2T,Normal
+92,2025,B,10,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Jean Carlos de Souza Irmer,jean_carlos_de_souza_irmer,5,45,1,46,1T,Falta
+93,2025,B,10,Atlético Goianiense Saf,atletico_goianiense_saf,Alix Vinicius de Souza Sampaio,alix_vinicius_de_souza_sampaio,3,9,0,9,1T,Normal
+93,2025,B,10,Goiás,goias,Anselmo Ramon Alves Herculano,anselmo_ramon_alves_herculano,9,30,0,30,1T,Normal
+93,2025,B,10,Goiás,goias,Tadeu Antonio Ferreira,tadeu_antonio_ferreira,23,90,6,96,2T,Penalty
+94,2025,B,10,Criciúma,criciuma,Diego Goncalves,diego_goncalves,77,7,0,52,2T,Normal
+95,2025,B,10,Chapecoense,chapecoense,Mailton dos Santos de Sa,mailton_dos_santos_de_sa,22,14,0,14,1T,Normal
+95,2025,B,10,Chapecoense,chapecoense,Rafael dos Santos Carvalheira Natividade,rafael_dos_santos_carvalheira_natividade,99,26,0,26,1T,Normal
+95,2025,B,10,Chapecoense,chapecoense,Walter David Clar Fritz,walter_david_clar_fritz,37,11,0,56,2T,Penalty
+95,2025,B,10,Chapecoense,chapecoense,Italo de Vargas da Rosa,italo_de_vargas_da_rosa,77,90,3,93,2T,Normal
+96,2025,B,10,Athletico Paranaense,athletico_paranaense,Luiz Fernando Moraes dos Santos,luiz_fernando_moraes_dos_santos,19,9,0,9,1T,Normal
+96,2025,B,10,Operário,operario,Daniel Amorim Dias da Silva,daniel_amorim_dias_da_silva,89,17,0,17,1T,Normal
+96,2025,B,10,Operário,operario,Marcos Paulo Costa do Nascimento,marcos_paulo_costa_do_nascimento,32,26,0,26,1T,Normal
+96,2025,B,10,Athletico Paranaense,athletico_paranaense,Giuliano Victor de Paula,giuliano_victor_de_paula,8,16,0,61,2T,Normal
+97,2025,B,10,Crb,crb,Mikael Filipe Viana de Sousa,mikael_filipe_viana_de_sousa,28,9,0,9,1T,Normal
+97,2025,B,10,Crb,crb,Luis Geovanny Segovia Vega,luis_geovanny_segovia_vega,4,16,0,61,2T,Normal
+98,2025,B,10,Cuiabá Saf,cuiaba_saf,Mateus da Silva Duarte,mateus_da_silva_duarte,98,12,0,12,1T,Falta
+98,2025,B,10,Cuiabá Saf,cuiaba_saf,Mateus da Silva Duarte,mateus_da_silva_duarte,98,41,0,86,2T,Falta
+99,2025,B,10,Ferroviária,ferroviaria,Jose Domingos de Moraes Neto,jose_domingos_de_moraes_neto,35,11,0,11,1T,Penalty
+99,2025,B,10,Botafogo,botafogo,Leandro Isaac Maciel,leandro_isaac_maciel,10,40,0,85,2T,Normal
+100,2025,B,10,Volta Redonda,volta_redonda,Matheus Lucas Jacintho Ferreira,matheus_lucas_jacintho_ferreira,23,90,6,96,2T,Normal
+102,2025,B,11,Goiás,goias,Vitor Hugo Amorim de Assis,vitor_hugo_amorim_de_assis,22,21,0,21,1T,Normal
+102,2025,B,11,Goiás,goias,Arthur Caike do Nascimento Cruz,arthur_caike_do_nascimento_cruz,45,90,3,93,2T,Normal
+103,2025,B,11,Cuiabá Saf,cuiaba_saf,Lucas da Silva Izidoro,lucas_da_silva_izidoro,30,38,0,83,2T,Normal
+104,2025,B,11,Operário,operario,Rodrigo Antonio Rodrigues,rodrigo_antonio_rodrigues,7,3,0,48,2T,Normal
+104,2025,B,11,Remo,remo,Reynaldo Cesar Moraes,reynaldo_cesar_moraes,29,21,0,66,2T,Normal
+104,2025,B,11,Remo,remo,Savio Antonio Alves,savio_antonio_alves,16,45,0,90,2T,Normal
+105,2025,B,11,Avaí,avai,Joao Vitor de Souza Martins,joao_vitor_de_souza_martins,8,90,1,91,2T,Normal
+106,2025,B,11,Criciúma,criciuma,Rodrigo Fagundes de Freitas,rodrigo_fagundes_de_freitas,3,31,0,76,2T,Normal
+107,2025,B,11,Amazonas Fc,amazonas_fc,Luan Santos Silva,luan_santos_silva,9,18,0,63,2T,Normal
+108,2025,B,11,America Saf,america_saf,Stenio Zanetti Toledo,stenio_zanetti_toledo,17,32,0,32,1T,Normal
+108,2025,B,11,Ferroviária,ferroviaria,Vitor Prado Barreto,vitor_prado_barreto,11,26,0,71,2T,Normal
+108,2025,B,11,Ferroviária,ferroviaria,Carlos Henrique de Moura Brito,carlos_henrique_de_moura_brito,92,34,0,79,2T,Normal
+109,2025,B,11,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Pablo Dyego da Silva Rosa,pablo_dyego_da_silva_rosa,7,11,0,56,2T,Normal
+111,2025,B,12,Remo,remo,Adailton dos Santos da Silva,adailton_dos_santos_da_silva,15,1,0,1,1T,Normal
+111,2025,B,12,Athletico Paranaense,athletico_paranaense,Giuliano Victor de Paula,giuliano_victor_de_paula,8,9,0,54,2T,Penalty
+111,2025,B,12,Athletico Paranaense,athletico_paranaense,Alan Kardec de Souza Pereira Junior,alan_kardec_de_souza_pereira_junior,27,45,0,90,2T,Normal
+112,2025,B,12,America Saf,america_saf,Willian Gomes de Siqueira,willian_gomes_de_siqueira,9,15,0,60,2T,Normal
+112,2025,B,12,America Saf,america_saf,Willian Gomes de Siqueira,willian_gomes_de_siqueira,9,36,0,81,2T,Penalty
+112,2025,B,12,America Saf,america_saf,Fabio Augusto Luciano da Silva,fabio_augusto_luciano_da_silva,28,90,3,93,2T,Normal
+114,2025,B,12,Paysandu,paysandu,Leandro Vilela Sales Teixeira,leandro_vilela_sales_teixeira,28,44,0,89,2T,Normal
+115,2025,B,12,Chapecoense,chapecoense,Marcio Antonio de Sousa Junior,marcio_antonio_de_sousa_junior,7,28,0,28,1T,Normal
+115,2025,B,12,Chapecoense,chapecoense,Marcio Antonio de Sousa Junior,marcio_antonio_de_sousa_junior,7,7,0,52,2T,Normal
+115,2025,B,12,Ferroviária,ferroviaria,Eduardo Jose Barbosa da Silva Junior,eduardo_jose_barbosa_da_silva_junior,77,37,0,82,2T,Normal
+116,2025,B,12,Criciúma,criciuma,Marcio Almeida de Oliveira,marcio_almeida_de_oliveira,6,18,0,18,1T,Normal
+116,2025,B,12,Amazonas Fc,amazonas_fc,Jackson de Souza,jackson_de_souza,3,30,0,30,1T,Normal
+116,2025,B,12,Criciúma,criciuma,Nicolas Godinho Johann,nicolas_godinho_johann,9,2,0,47,2T,Normal
+116,2025,B,12,Amazonas Fc,amazonas_fc,Nilson David Castrillon Burbano,nilson_david_castrillon_burbano,30,13,0,58,2T,Normal
+116,2025,B,12,Criciúma,criciuma,Marcelo Hermes,marcelo_hermes,22,90,2,92,2T,Normal
+117,2025,B,12,Crb,crb,Thiago Fernandes Rodrigues,thiago_fernandes_rodrigues,17,33,0,33,1T,Normal
+117,2025,B,12,Crb,crb,Giovanni Piccolomo,giovanni_piccolomo,11,30,0,75,2T,Normal
+118,2025,B,12,Athletic Saf,athletic_saf,Douglas da Silva Santos,douglas_da_silva_santos,2,29,0,29,1T,Penalty
+118,2025,B,12,Operário,operario,Daniel Amorim Dias da Silva,daniel_amorim_dias_da_silva,89,38,0,38,1T,Penalty
+118,2025,B,12,Athletic Saf,athletic_saf,Arnaldo Francisco da Costa Neto,arnaldo_francisco_da_costa_neto,19,90,5,95,2T,Normal
+119,2025,B,12,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Marlon Adriano Prezotti,marlon_adriano_prezotti,28,20,0,20,1T,Normal
+119,2025,B,12,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Matheus Henrique Frizzo,matheus_henrique_frizzo,10,36,0,81,2T,Penalty
+119,2025,B,12,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Airton Moises Santos Sousa,airton_moises_santos_sousa,20,90,6,96,2T,Normal
+120,2025,B,12,Avaí,avai,Cleber Bomfim de Jesus,cleber_bomfim_de_jesus,99,27,0,27,1T,Normal
+120,2025,B,12,Volta Redonda,volta_redonda,Marcos Vinicius Silvestre Gaspar,marcos_vinicius_silvestre_gaspar,11,6,0,51,2T,Normal
+121,2025,B,13,Coritiba S.a.f.,coritiba_s_a_f,Bruno Ferreira Melo,bruno_ferreira_melo,26,15,0,60,2T,Normal
+121,2025,B,13,Coritiba S.a.f.,coritiba_s_a_f,Josue Filipe Soares Pesqueira,josue_filipe_soares_pesqueira,10,32,0,77,2T,Normal
+122,2025,B,13,Athletic Saf,athletic_saf,Arnaldo Francisco da Costa Neto,arnaldo_francisco_da_costa_neto,19,40,0,40,1T,Normal
+122,2025,B,13,Goiás,goias,Marcos Antonio Almeida Silva,marcos_antonio_almeida_silva,77,7,0,52,2T,Normal
+122,2025,B,13,Athletic Saf,athletic_saf,Ronaldo Rodrigues Tavares,ronaldo_rodrigues_tavares,21,90,4,94,2T,Normal
+123,2025,B,13,Atlético Goianiense Saf,atletico_goianiense_saf,Caio Henrique da Silva Dantas,caio_henrique_da_silva_dantas,9,42,0,87,2T,Normal
+123,2025,B,13,Atlético Goianiense Saf,atletico_goianiense_saf,Sandro Cesar Cordovil de Lima,sandro_cesar_cordovil_de_lima,20,90,7,97,2T,Normal
+124,2025,B,13,Paysandu,paysandu,Diogo de Oliveira Barbosa,diogo_de_oliveira_barbosa,9,27,0,72,2T,Normal
+125,2025,B,13,Athletico Paranaense,athletico_paranaense,Luiz Fernando Moraes dos Santos,luiz_fernando_moraes_dos_santos,19,25,0,25,1T,Normal
+125,2025,B,13,Athletico Paranaense,athletico_paranaense,Renan Peixoto Nepomuceno,renan_peixoto_nepomuceno,70,30,0,75,2T,Normal
+125,2025,B,13,Avaí,avai,Marcos Gabriel do Nascimento,marcos_gabriel_do_nascimento,10,32,0,77,2T,Normal
+126,2025,B,13,Operário,operario,Rodrigo Antonio Rodrigues,rodrigo_antonio_rodrigues,7,30,0,30,1T,Normal
+126,2025,B,13,Operário,operario,Gabriel Boschilia,gabriel_boschilia,10,16,0,61,2T,Penalty
+127,2025,B,13,Vila Nova,vila_nova,Jean Mota Oliveira de Sousa,jean_mota_oliveira_de_sousa,10,19,0,19,1T,Penalty
+127,2025,B,13,Amazonas Fc,amazonas_fc,Kevin Federik Ramirez Dutra,kevin_federik_ramirez_dutra,7,31,0,31,1T,Normal
+127,2025,B,13,Amazonas Fc,amazonas_fc,Roberto Menezes Bandeira Neto,roberto_menezes_bandeira_neto,77,25,0,70,2T,Normal
+128,2025,B,13,Criciúma,criciuma,Jhonata Robert Alves da Silva,jhonata_robert_alves_da_silva,10,24,0,24,1T,Normal
+128,2025,B,13,America Saf,america_saf,Miguel Angel Terceros Acuna,miguel_angel_terceros_acuna,7,38,0,38,1T,Normal
+129,2025,B,13,Ferroviária,ferroviaria,Jose Domingos de Moraes Neto,jose_domingos_de_moraes_neto,35,42,0,42,1T,Falta
+130,2025,B,13,Chapecoense,chapecoense,Bruno Leonardo dos Santos Covas,bruno_leonardo_dos_santos_covas,33,90,4,94,2T,Gol Contra
+131,2025,B,14,Coritiba S.a.f.,coritiba_s_a_f,Sebastian Gomez Londono,sebastian_gomez_londono,19,18,0,63,2T,Normal
+132,2025,B,14,Vila Nova,vila_nova,Bruno Cesar Xavier Sislo,bruno_cesar_xavier_sislo,33,38,0,83,2T,Normal
+133,2025,B,14,Botafogo,botafogo,Ronie Edmundo Carrillo Morales,ronie_edmundo_carrillo_morales,19,29,0,74,2T,Normal
+134,2025,B,14,Ferroviária,ferroviaria,Tarik Michel Kedes Boschetti,tarik_michel_kedes_boschetti,29,42,0,42,1T,Normal
+134,2025,B,14,Paysandu,paysandu,Marlon Douglas de Sales Silva,marlon_douglas_de_sales_silva,11,19,0,64,2T,Normal
+134,2025,B,14,Paysandu,paysandu,Marcelo Henrique Ferreira Junior,marcelo_henrique_ferreira_junior,30,23,0,68,2T,Normal
+135,2025,B,14,Chapecoense,chapecoense,Rafael dos Santos Carvalheira Natividade,rafael_dos_santos_carvalheira_natividade,99,15,0,15,1T,Normal
+135,2025,B,14,Goiás,goias,Tadeu Antonio Ferreira,tadeu_antonio_ferreira,23,43,0,88,2T,Penalty
+135,2025,B,14,Goiás,goias,Anselmo Ramon Alves Herculano,anselmo_ramon_alves_herculano,9,90,5,95,2T,Normal
+136,2025,B,14,Avaí,avai,Gustavo Bonatto Barreto,gustavo_bonatto_barreto,5,12,0,12,1T,Normal
+136,2025,B,14,Criciúma,criciuma,Jhonata Robert Alves da Silva,jhonata_robert_alves_da_silva,10,19,0,19,1T,Normal
+136,2025,B,14,Avaí,avai,Thayllon Roberth dos Santos Rebelo,thayllon_roberth_dos_santos_rebelo,41,42,0,87,2T,Normal
+137,2025,B,14,Crb,crb,Geirton Marques Aires,geirton_marques_aires,8,5,0,5,1T,Normal
+137,2025,B,14,America Saf,america_saf,Lucas Figueiredo dos Santos,lucas_figueiredo_dos_santos,22,24,0,24,1T,Normal
+137,2025,B,14,America Saf,america_saf,Cauan Lucas Barros da Luz,cauan_lucas_barros_da_luz,88,1,0,46,2T,Normal
+138,2025,B,14,Athletic Saf,athletic_saf,Ronaldo Rodrigues Tavares,ronaldo_rodrigues_tavares,21,25,0,70,2T,Normal
+138,2025,B,14,Remo,remo,Pedro Rocha Neves,pedro_rocha_neves,32,33,0,78,2T,Penalty
+138,2025,B,14,Remo,remo,Pedro Rocha Neves,pedro_rocha_neves,32,90,4,94,2T,Normal
+139,2025,B,14,Amazonas Fc,amazonas_fc,Kevin Federik Ramirez Dutra,kevin_federik_ramirez_dutra,7,5,0,5,1T,Normal
+139,2025,B,14,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Matheus Henrique Frizzo,matheus_henrique_frizzo,10,45,1,46,1T,Normal
+140,2025,B,14,Volta Redonda,volta_redonda,Gabriel Henrique Feitosa da Silva,gabriel_henrique_feitosa_da_silva,26,36,0,81,2T,Normal
+141,2025,B,15,Coritiba S.a.f.,coritiba_s_a_f,Guilherme Augusto Alves Dellatorre,guilherme_augusto_alves_dellatorre,49,17,0,17,1T,Normal
+141,2025,B,15,Coritiba S.a.f.,coritiba_s_a_f,Guilherme Augusto Alves Dellatorre,guilherme_augusto_alves_dellatorre,49,22,0,22,1T,Normal
+142,2025,B,15,Criciúma,criciuma,Matheus Trindade Gonçalves,matheus_trindade_goncalves,5,3,0,3,1T,Normal
+142,2025,B,15,Goiás,goias,Jandir Breno Souza Silva,jandir_breno_souza_silva,7,4,0,49,2T,Normal
+143,2025,B,15,Crb,crb,Thiago Fernandes Rodrigues,thiago_fernandes_rodrigues,17,6,0,6,1T,Normal
+143,2025,B,15,Atlético Goianiense Saf,atletico_goianiense_saf,Marcelo Jose de Lima Filho,marcelo_jose_de_lima_filho,7,13,0,13,1T,Normal
+143,2025,B,15,Atlético Goianiense Saf,atletico_goianiense_saf,Willian Marlon Ferreira Moraes,willian_marlon_ferreira_moraes,5,15,0,60,2T,Normal
+146,2025,B,15,Operário,operario,Vinicius Alessandro Mingotti,vinicius_alessandro_mingotti,9,25,0,25,1T,Normal
+146,2025,B,15,Chapecoense,chapecoense,Giovanni Augusto Oliveira Cardoso,giovanni_augusto_oliveira_cardoso,10,21,0,66,2T,Normal
+146,2025,B,15,Chapecoense,chapecoense,Walter David Clar Fritz,walter_david_clar_fritz,37,90,8,98,2T,Normal
+147,2025,B,15,Athletico Paranaense,athletico_paranaense,Alan Kardec de Souza Pereira Junior,alan_kardec_de_souza_pereira_junior,27,19,0,19,1T,Normal
+148,2025,B,15,Athletic Saf,athletic_saf,Sidimar Fernando Cigolini,sidimar_fernando_cigolini,4,17,0,17,1T,Normal
+149,2025,B,15,Vila Nova,vila_nova,Weverton Silva de Andrade,weverton_silva_de_andrade,4,2,0,2,1T,Normal
+149,2025,B,15,Ferroviária,ferroviaria,Carlos Henrique de Moura Brito,carlos_henrique_de_moura_brito,92,12,0,12,1T,Normal
+149,2025,B,15,Vila Nova,vila_nova,Vinicius Rodrigues Adelino dos Santos,vinicius_rodrigues_adelino_dos_santos,10,15,0,60,2T,Penalty
+149,2025,B,15,Vila Nova,vila_nova,Geremias Ribeiro Junior,geremias_ribeiro_junior,29,90,8,98,2T,Normal
+151,2025,B,16,Goiás,goias,Anselmo Ramon Alves Herculano,anselmo_ramon_alves_herculano,9,32,0,77,2T,Normal
+153,2025,B,16,Amazonas Fc,amazonas_fc,Joaquin Eduardo Torres,joaquin_eduardo_torres,11,4,0,4,1T,Normal
+153,2025,B,16,Cuiabá Saf,cuiaba_saf,Alisson Pelegrini Safira,alisson_pelegrini_safira,25,28,0,28,1T,Penalty
+153,2025,B,16,Cuiabá Saf,cuiaba_saf,Carlos Alberto Gomes da Silva Filho,carlos_alberto_gomes_da_silva_filho,11,35,0,35,1T,Normal
+153,2025,B,16,Cuiabá Saf,cuiaba_saf,Alisson Pelegrini Safira,alisson_pelegrini_safira,25,28,0,73,2T,Penalty
+154,2025,B,16,Atlético Goianiense Saf,atletico_goianiense_saf,Marcelo Jose de Lima Filho,marcelo_jose_de_lima_filho,7,26,0,26,1T,Normal
+154,2025,B,16,Paysandu,paysandu,Rosicley Pereira da Silva,rosicley_pereira_da_silva,77,40,0,40,1T,Normal
+154,2025,B,16,Paysandu,paysandu,Anderson Leite Morais,anderson_leite_morais,29,1,0,46,2T,Normal
+154,2025,B,16,Atlético Goianiense Saf,atletico_goianiense_saf,Marcelo Jose de Lima Filho,marcelo_jose_de_lima_filho,7,45,10,55,1T,Penalty
+155,2025,B,16,Chapecoense,chapecoense,Rafael dos Santos Carvalheira Natividade,rafael_dos_santos_carvalheira_natividade,99,1,0,46,2T,Normal
+155,2025,B,16,Remo,remo,Luan Martins Goncalves,luan_martins_goncalves,5,90,4,94,2T,Normal
+156,2025,B,16,Ferroviária,ferroviaria,Thayllon Lopes Medeiros,thayllon_lopes_medeiros,39,12,0,12,1T,Normal
+156,2025,B,16,Criciúma,criciuma,Marcio Almeida de Oliveira,marcio_almeida_de_oliveira,6,42,0,42,1T,Normal
+156,2025,B,16,Criciúma,criciuma,Jean Carlos Vicente,jean_carlos_vicente,20,32,0,77,2T,Normal
+157,2025,B,16,Coritiba S.a.f.,coritiba_s_a_f,Gustavo Coutinho Silva Lopes,gustavo_coutinho_silva_lopes,9,44,0,89,2T,Penalty
+159,2025,B,16,America Saf,america_saf,Cauan Lucas Barros da Luz,cauan_lucas_barros_da_luz,88,34,0,34,1T,Normal
+159,2025,B,16,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Matheus Henrique Frizzo,matheus_henrique_frizzo,10,44,0,44,1T,Penalty
+159,2025,B,16,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Pablo Dyego da Silva Rosa,pablo_dyego_da_silva_rosa,7,26,0,71,2T,Normal
+159,2025,B,16,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Cesar Henrique Martins,cesar_henrique_martins,37,90,1,91,2T,Normal
+161,2025,B,17,Coritiba S.a.f.,coritiba_s_a_f,Josue Filipe Soares Pesqueira,josue_filipe_soares_pesqueira,10,25,0,25,1T,Falta
+161,2025,B,17,Paysandu,paysandu,Mauricio Garcez de Jesus,mauricio_garcez_de_jesus,10,27,0,27,1T,Normal
+161,2025,B,17,Paysandu,paysandu,Diogo de Oliveira Barbosa,diogo_de_oliveira_barbosa,9,31,0,31,1T,Normal
+161,2025,B,17,Paysandu,paysandu,Diogo de Oliveira Barbosa,diogo_de_oliveira_barbosa,9,44,0,44,1T,Normal
+161,2025,B,17,Coritiba S.a.f.,coritiba_s_a_f,Josue Filipe Soares Pesqueira,josue_filipe_soares_pesqueira,10,11,0,56,2T,Penalty
+161,2025,B,17,Paysandu,paysandu,Marlon Douglas de Sales Silva,marlon_douglas_de_sales_silva,11,23,0,68,2T,Penalty
+161,2025,B,17,Paysandu,paysandu,Mauricio Garcez de Jesus,mauricio_garcez_de_jesus,10,41,0,86,2T,Normal
+162,2025,B,17,Goiás,goias,Jandir Breno Souza Silva,jandir_breno_souza_silva,7,17,0,17,1T,Normal
+162,2025,B,17,Cuiabá Saf,cuiaba_saf,David Miguel de Souza Arcanjo,david_miguel_de_souza_arcanjo,20,5,0,50,2T,Normal
+162,2025,B,17,Goiás,goias,Jandir Breno Souza Silva,jandir_breno_souza_silva,7,33,0,78,2T,Normal
+162,2025,B,17,Goiás,goias,Esli Samuel Garcia Cordero,esli_samuel_garcia_cordero,15,90,4,94,2T,Normal
+163,2025,B,17,Criciúma,criciuma,Nicolas Godinho Johann,nicolas_godinho_johann,9,28,0,73,2T,Normal
+164,2025,B,17,Remo,remo,Matheus Alvarenga de Oliveira,matheus_alvarenga_de_oliveira,8,10,0,10,1T,Normal
+164,2025,B,17,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Robson dos Santos Fernandes,robson_dos_santos_fernandes,11,45,0,45,1T,Normal
+165,2025,B,17,Avaí,avai,Marcos Gabriel do Nascimento,marcos_gabriel_do_nascimento,10,26,0,71,2T,Normal
+165,2025,B,17,Vila Nova,vila_nova,Gustavo dos Anjos Mathiello,gustavo_dos_anjos_mathiello,21,41,0,86,2T,Normal
+166,2025,B,17,Crb,crb,Thiago Fernandes Rodrigues,thiago_fernandes_rodrigues,17,2,0,2,1T,Normal
+166,2025,B,17,Operário,operario,Bruno Aparecido Reis Ezequiel,bruno_aparecido_reis_ezequiel,5,18,0,18,1T,Normal
+167,2025,B,17,Amazonas Fc,amazonas_fc,Kevin Federik Ramirez Dutra,kevin_federik_ramirez_dutra,7,4,0,4,1T,Normal
+167,2025,B,17,Amazonas Fc,amazonas_fc,Kevin Federik Ramirez Dutra,kevin_federik_ramirez_dutra,7,6,0,51,2T,Normal
+167,2025,B,17,Amazonas Fc,amazonas_fc,Gabriel Domingos de Moura,gabriel_domingos_de_moura,26,14,0,59,2T,Normal
+168,2025,B,17,Chapecoense,chapecoense,Italo de Vargas da Rosa,italo_de_vargas_da_rosa,77,4,0,4,1T,Normal
+169,2025,B,17,Ferroviária,ferroviaria,Thayllon Lopes Medeiros,thayllon_lopes_medeiros,39,9,0,9,1T,Normal
+169,2025,B,17,Athletic Saf,athletic_saf,Ronaldo Rodrigues Tavares,ronaldo_rodrigues_tavares,21,45,7,52,1T,Penalty
+169,2025,B,17,Athletic Saf,athletic_saf,David Francisco Trindade Braga,david_francisco_trindade_braga,10,12,0,57,2T,Normal
+170,2025,B,17,Athletico Paranaense,athletico_paranaense,Alan Kardec de Souza Pereira Junior,alan_kardec_de_souza_pereira_junior,27,25,0,25,1T,Normal
+170,2025,B,17,Athletico Paranaense,athletico_paranaense,Bruno Zapelli,bruno_zapelli,10,39,0,39,1T,Normal
+170,2025,B,17,Volta Redonda,volta_redonda,Marcos Vinicius Silvestre Gaspar,marcos_vinicius_silvestre_gaspar,11,9,0,54,2T,Normal
+170,2025,B,17,Volta Redonda,volta_redonda,André Luiz Guimarães Siqueira Junior,andre_luiz_guimaraes_siqueira_junior,28,21,0,66,2T,Normal
+170,2025,B,17,Volta Redonda,volta_redonda,Italo de Carvalho Rocha Lima,italo_de_carvalho_rocha_lima,9,35,0,80,2T,Normal
+171,2025,B,18,Athletico Paranaense,athletico_paranaense,John Steven Mendoza Valencia,john_steven_mendoza_valencia,17,17,0,62,2T,Normal
+171,2025,B,18,Ferroviária,ferroviaria,Eduardo Jose Barbosa da Silva Junior,eduardo_jose_barbosa_da_silva_junior,77,37,0,82,2T,Penalty
+172,2025,B,18,Vila Nova,vila_nova,Gustavo dos Anjos Mathiello,gustavo_dos_anjos_mathiello,21,19,0,19,1T,Normal
+172,2025,B,18,Vila Nova,vila_nova,Bruno Cesar Xavier Sislo,bruno_cesar_xavier_sislo,33,1,0,46,2T,Normal
+173,2025,B,18,America Saf,america_saf,Arthur Sousa Araujo,arthur_sousa_araujo,39,40,0,40,1T,Normal
+173,2025,B,18,Cuiabá Saf,cuiaba_saf,David Miguel de Souza Arcanjo,david_miguel_de_souza_arcanjo,20,45,5,50,1T,Penalty
+173,2025,B,18,Cuiabá Saf,cuiaba_saf,Jader Barbosa da Silva Gentil,jader_barbosa_da_silva_gentil,10,5,0,50,2T,Normal
+173,2025,B,18,Cuiabá Saf,cuiaba_saf,Juan Christian Pereira Coelho,juan_christian_pereira_coelho,70,40,0,85,2T,Normal
+174,2025,B,18,Avaí,avai,Emerson Ramon Bezerra Oliveira,emerson_ramon_bezerra_oliveira,94,2,0,2,1T,Normal
+174,2025,B,18,Remo,remo,Matheus Alvarenga de Oliveira,matheus_alvarenga_de_oliveira,8,29,0,29,1T,Normal
+174,2025,B,18,Remo,remo,Pedro Rocha Neves,pedro_rocha_neves,32,90,1,91,2T,Penalty
+175,2025,B,18,Chapecoense,chapecoense,Mailton dos Santos de Sa,mailton_dos_santos_de_sa,22,10,0,10,1T,Falta
+175,2025,B,18,Volta Redonda,volta_redonda,André Luiz Guimarães Siqueira Junior,andre_luiz_guimaraes_siqueira_junior,28,16,0,16,1T,Normal
+175,2025,B,18,Chapecoense,chapecoense,Rafael dos Santos Carvalheira Natividade,rafael_dos_santos_carvalheira_natividade,99,36,0,36,1T,Normal
+175,2025,B,18,Chapecoense,chapecoense,Altemir Cordeiro Pessôa Neto,altemir_cordeiro_pessoa_neto,18,40,0,40,1T,Normal
+175,2025,B,18,Chapecoense,chapecoense,Altemir Cordeiro Pessôa Neto,altemir_cordeiro_pessoa_neto,18,26,0,71,2T,Normal
+175,2025,B,18,Volta Redonda,volta_redonda,Matheus Lucas Jacintho Ferreira,matheus_lucas_jacintho_ferreira,23,34,0,79,2T,Normal
+176,2025,B,18,Operário,operario,Bruno Aparecido Reis Ezequiel,bruno_aparecido_reis_ezequiel,5,22,0,67,2T,Normal
+176,2025,B,18,Operário,operario,Gabriel Boschilia,gabriel_boschilia,10,41,0,86,2T,Penalty
+176,2025,B,18,Operário,operario,Brenno Pereira Silva,brenno_pereira_silva,21,90,8,98,2T,Penalty
+177,2025,B,18,Paysandu,paysandu,Diogo de Oliveira Barbosa,diogo_de_oliveira_barbosa,9,29,0,29,1T,Normal
+177,2025,B,18,Paysandu,paysandu,Anderson Leite Morais,anderson_leite_morais,29,8,0,53,2T,Gol Contra
+178,2025,B,18,Athletic Saf,athletic_saf,Welinton Macedo dos Santos,welinton_macedo_dos_santos,7,17,0,17,1T,Normal
+178,2025,B,18,Coritiba S.a.f.,coritiba_s_a_f,Lucas Ronier Vieira Pires,lucas_ronier_vieira_pires,11,36,0,36,1T,Normal
+179,2025,B,18,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Robson dos Santos Fernandes,robson_dos_santos_fernandes,11,20,0,20,1T,Penalty
+180,2025,B,18,Criciúma,criciuma,Diego Goncalves,diego_goncalves,77,5,0,5,1T,Normal
+180,2025,B,18,Criciúma,criciuma,Diego Goncalves,diego_goncalves,77,10,0,55,2T,Normal
+181,2025,B,19,Coritiba S.a.f.,coritiba_s_a_f,Maicon Pereira Roque,maicon_pereira_roque,3,39,0,39,1T,Normal
+181,2025,B,19,Amazonas Fc,amazonas_fc,Kevin Federik Ramirez Dutra,kevin_federik_ramirez_dutra,7,31,0,76,2T,Normal
+182,2025,B,19,Remo,remo,Pedro Rocha Neves,pedro_rocha_neves,32,15,0,15,1T,Normal
+182,2025,B,19,Goiás,goias,Anselmo Ramon Alves Herculano,anselmo_ramon_alves_herculano,9,45,0,90,2T,Normal
+184,2025,B,19,Athletic Saf,athletic_saf,Welinton Macedo dos Santos,welinton_macedo_dos_santos,7,25,0,25,1T,Normal
+184,2025,B,19,Paysandu,paysandu,Denner Fernando Melz,denner_fernando_melz,20,26,0,26,1T,Normal
+185,2025,B,19,Avaí,avai,Emerson Ramon Bezerra Oliveira,emerson_ramon_bezerra_oliveira,94,8,0,8,1T,Normal
+185,2025,B,19,Avaí,avai,João Pedro Murilo de Paula Morais,joao_pedro_murilo_de_paula_morais,98,13,0,13,1T,Normal
+185,2025,B,19,Avaí,avai,Emerson Ramon Bezerra Oliveira,emerson_ramon_bezerra_oliveira,94,39,0,39,1T,Normal
+185,2025,B,19,Avaí,avai,Cleber Bomfim de Jesus,cleber_bomfim_de_jesus,99,45,1,46,1T,Penalty
+185,2025,B,19,Avaí,avai,Alef Mangueira Severino Pereira,alef_mangueira_severino_pereira,11,42,0,87,2T,Penalty
+186,2025,B,19,Criciúma,criciuma,Jhonata Robert Alves da Silva,jhonata_robert_alves_da_silva,10,17,0,17,1T,Normal
+187,2025,B,19,Crb,crb,Douglas Baggio de Oliveira Costa,douglas_baggio_de_oliveira_costa,7,37,0,37,1T,Normal
+187,2025,B,19,Crb,crb,Geirton Marques Aires,geirton_marques_aires,8,6,0,51,2T,Normal
+187,2025,B,19,Crb,crb,Douglas Baggio de Oliveira Costa,douglas_baggio_de_oliveira_costa,7,8,0,53,2T,Normal
+187,2025,B,19,Crb,crb,Mikael Filipe Viana de Sousa,mikael_filipe_viana_de_sousa,28,21,0,66,2T,Normal
+188,2025,B,19,Athletico Paranaense,athletico_paranaense,Kevin Estiben Viveros Rodallega,kevin_estiben_viveros_rodallega,9,35,0,35,1T,Normal
+188,2025,B,19,America Saf,america_saf,Marlon Matheus Lopes do Nascimento,marlon_matheus_lopes_do_nascimento,6,7,0,52,2T,Normal
+188,2025,B,19,Athletico Paranaense,athletico_paranaense,Kevin Estiben Viveros Rodallega,kevin_estiben_viveros_rodallega,9,21,0,66,2T,Normal
+188,2025,B,19,America Saf,america_saf,Willian Gomes de Siqueira,willian_gomes_de_siqueira,9,90,4,94,2T,Penalty
+192,2025,B,20,Vila Nova,vila_nova,Tiago Pagnussat,tiago_pagnussat,3,14,0,14,1T,Gol Contra
+192,2025,B,20,Vila Nova,vila_nova,Vinicius Rodrigues Adelino dos Santos,vinicius_rodrigues_adelino_dos_santos,10,24,0,24,1T,Penalty
+192,2025,B,20,Coritiba S.a.f.,coritiba_s_a_f,Jacy Maranhao Oliveira,jacy_maranhao_oliveira,55,90,2,92,2T,Normal
+193,2025,B,20,Cuiabá Saf,cuiaba_saf,Alisson Pelegrini Safira,alisson_pelegrini_safira,25,20,0,20,1T,Penalty
+193,2025,B,20,Cuiabá Saf,cuiaba_saf,Silvio Alejandro Martinez,silvio_alejandro_martinez,7,13,0,58,2T,Normal
+194,2025,B,20,Ferroviária,ferroviaria,Ronaldo Henrique Silva,ronaldo_henrique_silva,9,45,3,48,1T,Normal
+194,2025,B,20,Ferroviária,ferroviaria,Eduardo Jose Barbosa da Silva Junior,eduardo_jose_barbosa_da_silva_junior,77,9,0,54,2T,Normal
+195,2025,B,20,Chapecoense,chapecoense,Altemir Cordeiro Pessôa Neto,altemir_cordeiro_pessoa_neto,18,6,0,6,1T,Normal
+195,2025,B,20,Chapecoense,chapecoense,Marcio Antonio de Sousa Junior,marcio_antonio_de_sousa_junior,7,26,0,26,1T,Normal
+195,2025,B,20,Chapecoense,chapecoense,Mailton dos Santos de Sa,mailton_dos_santos_de_sa,22,36,0,36,1T,Normal
+195,2025,B,20,Crb,crb,Breno Herculano Almeida,breno_herculano_almeida,9,22,0,67,2T,Normal
+195,2025,B,20,Crb,crb,Breno Herculano Almeida,breno_herculano_almeida,9,27,0,72,2T,Normal
+196,2025,B,20,Operário,operario,Matheus Henrique de Souza de Carvalho,matheus_henrique_de_souza_de_carvalho,19,44,0,89,2T,Normal
+197,2025,B,20,Goiás,goias,Onitlasi Junior de Moraes Rodrigues,onitlasi_junior_de_moraes_rodrigues,6,10,0,10,1T,Normal
+197,2025,B,20,Amazonas Fc,amazonas_fc,Kevin Federik Ramirez Dutra,kevin_federik_ramirez_dutra,7,15,0,15,1T,Normal
+197,2025,B,20,Goiás,goias,Anselmo Ramon Alves Herculano,anselmo_ramon_alves_herculano,9,32,0,32,1T,Normal
+197,2025,B,20,Amazonas Fc,amazonas_fc,Joaquin Eduardo Torres,joaquin_eduardo_torres,11,27,0,72,2T,Normal
+198,2025,B,20,Athletic Saf,athletic_saf,Douglas da Silva Santos,douglas_da_silva_santos,2,2,0,2,1T,Normal
+198,2025,B,20,Atlético Goianiense Saf,atletico_goianiense_saf,Robert dos Santos Conceicao,robert_dos_santos_conceicao,10,10,0,10,1T,Normal
+199,2025,B,20,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Caio Henrique da Silva Dantas,caio_henrique_da_silva_dantas,90,25,0,25,1T,Normal
+199,2025,B,20,Avaí,avai,Mario Sergio Valerio,mario_sergio_valerio,33,32,0,32,1T,Normal
+200,2025,B,20,Botafogo,botafogo,Leonardo Gamalho de Souza,leonardo_gamalho_de_souza,9,19,0,19,1T,Normal
+200,2025,B,20,America Saf,america_saf,Miguel Angel Terceros Acuna,miguel_angel_terceros_acuna,7,35,0,35,1T,Normal
+200,2025,B,20,Botafogo,botafogo,Leonardo Gamalho de Souza,leonardo_gamalho_de_souza,9,25,0,70,2T,Penalty
+202,2025,B,21,Goiás,goias,Onitlasi Junior de Moraes Rodrigues,onitlasi_junior_de_moraes_rodrigues,6,24,0,24,1T,Normal
+202,2025,B,21,Operário,operario,Gabriel Boschilia,gabriel_boschilia,10,38,0,38,1T,Normal
+202,2025,B,21,Goiás,goias,Messias Rodrigues da Silva Junior,messias_rodrigues_da_silva_junior,75,13,0,58,2T,Normal
+203,2025,B,21,Atlético Goianiense Saf,atletico_goianiense_saf,Federico Andres Martinez Berroa,federico_andres_martinez_berroa,11,19,0,64,2T,Normal
+203,2025,B,21,Atlético Goianiense Saf,atletico_goianiense_saf,Kelvin Giacobe Alves dos Santos,kelvin_giacobe_alves_dos_santos,7,42,0,87,2T,Normal
+204,2025,B,21,Vila Nova,vila_nova,Joao Pedro Vieira,joao_pedro_vieira,5,25,0,70,2T,Normal
+205,2025,B,21,Avaí,avai,Joao Vitor de Souza Martins,joao_vitor_de_souza_martins,8,20,0,20,1T,Normal
+205,2025,B,21,Avaí,avai,Marcos Vinicius da Silva Santos,marcos_vinicius_da_silva_santos,63,34,0,34,1T,Normal
+206,2025,B,21,Athletico Paranaense,athletico_paranaense,John Steven Mendoza Valencia,john_steven_mendoza_valencia,17,29,0,29,1T,Penalty
+206,2025,B,21,Athletico Paranaense,athletico_paranaense,Kauã Moraes Silva,kaua_moraes_silva,14,31,0,31,1T,Normal
+206,2025,B,21,Criciúma,criciuma,Rodrigo Fagundes de Freitas,rodrigo_fagundes_de_freitas,3,45,1,46,1T,Normal
+206,2025,B,21,Criciúma,criciuma,Nicolas Godinho Johann,nicolas_godinho_johann,9,10,0,55,2T,Penalty
+206,2025,B,21,Criciúma,criciuma,Matheus Trindade Gonçalves,matheus_trindade_goncalves,5,20,0,65,2T,Normal
+206,2025,B,21,Criciúma,criciuma,Rodrigo Fagundes de Freitas,rodrigo_fagundes_de_freitas,3,36,0,81,2T,Normal
+207,2025,B,21,Crb,crb,Adailson Freire Pereira da Silva,adailson_freire_pereira_da_silva,97,14,0,59,2T,Normal
+208,2025,B,21,Remo,remo,Marrony da Silva Liberato Silveira,marrony_da_silva_liberato_silveira,26,4,0,4,1T,Penalty
+209,2025,B,21,Ferroviária,ferroviaria,Carlos Henrique de Moura Brito,carlos_henrique_de_moura_brito,92,9,0,9,1T,Normal
+209,2025,B,21,Amazonas Fc,amazonas_fc,Henrique Almeida Caixeta Nascentes,henrique_almeida_caixeta_nascentes,19,1,0,46,2T,Normal
+209,2025,B,21,Ferroviária,ferroviaria,Thayllon Lopes Medeiros,thayllon_lopes_medeiros,39,40,0,85,2T,Normal
+211,2025,B,22,Athletico Paranaense,athletico_paranaense,Renan Peixoto Nepomuceno,renan_peixoto_nepomuceno,70,90,1,91,2T,Normal
+211,2025,B,22,Cuiabá Saf,cuiaba_saf,Mateus da Silva Duarte,mateus_da_silva_duarte,98,90,4,94,2T,Normal
+212,2025,B,22,Vila Nova,vila_nova,Elias Lira Nogueira Junior,elias_lira_nogueira_junior,2,1,0,1,1T,Normal
+212,2025,B,22,Vila Nova,vila_nova,Joao Pedro Vieira,joao_pedro_vieira,5,36,0,81,2T,Penalty
+213,2025,B,22,Ferroviária,ferroviaria,Edson Lucas Pereira,edson_lucas_pereira,66,20,0,20,1T,Normal
+213,2025,B,22,Atlético Goianiense Saf,atletico_goianiense_saf,Leanderson da Silva Genesio,leanderson_da_silva_genesio,9,8,0,53,2T,Normal
+213,2025,B,22,Ferroviária,ferroviaria,Ricardo Ribeiro de Lima,ricardo_ribeiro_de_lima,5,11,0,56,2T,Normal
+213,2025,B,22,Ferroviária,ferroviaria,Carlos Henrique de Moura Brito,carlos_henrique_de_moura_brito,92,90,8,98,2T,Penalty
+214,2025,B,22,Remo,remo,Caio Vinicius da Conceicao,caio_vinicius_da_conceicao,34,27,0,27,1T,Normal
+214,2025,B,22,Botafogo,botafogo,Jefferson Vasconcelos Braz da Silva,jefferson_vasconcelos_braz_da_silva,11,4,0,49,2T,Normal
+215,2025,B,22,Chapecoense,chapecoense,Walter David Clar Fritz,walter_david_clar_fritz,37,19,0,19,1T,Normal
+215,2025,B,22,Chapecoense,chapecoense,Walter David Clar Fritz,walter_david_clar_fritz,37,10,0,55,2T,Normal
+217,2025,B,22,Amazonas Fc,amazonas_fc,Kevin Federik Ramirez Dutra,kevin_federik_ramirez_dutra,7,37,0,37,1T,Penalty
+217,2025,B,22,Amazonas Fc,amazonas_fc,Rafael Aparecido de Paulo Tavares,rafael_aparecido_de_paulo_tavares,10,9,0,54,2T,Normal
+217,2025,B,22,America Saf,america_saf,Lucas Figueiredo dos Santos,lucas_figueiredo_dos_santos,22,33,0,78,2T,Penalty
+217,2025,B,22,America Saf,america_saf,Lucas Figueiredo dos Santos,lucas_figueiredo_dos_santos,22,90,7,97,2T,Penalty
+218,2025,B,22,Criciúma,criciuma,Diego Goncalves,diego_goncalves,77,4,0,4,1T,Normal
+218,2025,B,22,Athletic Saf,athletic_saf,Arnaldo Francisco da Costa Neto,arnaldo_francisco_da_costa_neto,19,14,0,59,2T,Normal
+219,2025,B,22,Coritiba S.a.f.,coritiba_s_a_f,Lucas Ronier Vieira Pires,lucas_ronier_vieira_pires,11,17,0,17,1T,Normal
+219,2025,B,22,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Matheus Henrique Frizzo,matheus_henrique_frizzo,10,32,0,77,2T,Normal
+219,2025,B,22,Coritiba S.a.f.,coritiba_s_a_f,Lucas Ronier Vieira Pires,lucas_ronier_vieira_pires,11,42,0,87,2T,Normal
+220,2025,B,22,Crb,crb,Daniel Sampaio Simoes,daniel_sampaio_simoes,10,16,0,16,1T,Falta
+223,2025,B,23,Atlético Goianiense Saf,atletico_goianiense_saf,Luis Eduardo Marques dos Santos,luis_eduardo_marques_dos_santos,2,13,0,13,1T,Normal
+223,2025,B,23,Cuiabá Saf,cuiaba_saf,Bruno Fabiano Alves,bruno_fabiano_alves,3,18,0,18,1T,Normal
+223,2025,B,23,Cuiabá Saf,cuiaba_saf,Alisson Pelegrini Safira,alisson_pelegrini_safira,25,3,0,48,2T,Normal
+223,2025,B,23,Atlético Goianiense Saf,atletico_goianiense_saf,Federico Andres Martinez Berroa,federico_andres_martinez_berroa,19,45,0,90,2T,Normal
+224,2025,B,23,Paysandu,paysandu,Diogo de Oliveira Barbosa,diogo_de_oliveira_barbosa,9,26,0,26,1T,Normal
+224,2025,B,23,Operário,operario,Jose Gervasio dos Santos Neto,jose_gervasio_dos_santos_neto,88,40,0,40,1T,Normal
+224,2025,B,23,Operário,operario,Gabriel Boschilia,gabriel_boschilia,10,4,0,49,2T,Penalty
+225,2025,B,23,Amazonas Fc,amazonas_fc,Rafael Aparecido de Paulo Tavares,rafael_aparecido_de_paulo_tavares,10,11,0,56,2T,Normal
+225,2025,B,23,Avaí,avai,Thayllon Roberth dos Santos Rebelo,thayllon_roberth_dos_santos_rebelo,41,90,3,93,2T,Normal
+225,2025,B,23,Amazonas Fc,amazonas_fc,Henrique Almeida Caixeta Nascentes,henrique_almeida_caixeta_nascentes,19,90,7,97,2T,Falta
+226,2025,B,23,Criciúma,criciuma,Nicolas Godinho Johann,nicolas_godinho_johann,9,18,0,63,2T,Normal
+226,2025,B,23,Criciúma,criciuma,Benjamin Manuel Borasi,benjamin_manuel_borasi,19,33,0,78,2T,Normal
+227,2025,B,23,Athletico Paranaense,athletico_paranaense,Kevin Estiben Viveros Rodallega,kevin_estiben_viveros_rodallega,9,2,0,47,2T,Normal
+228,2025,B,23,Chapecoense,chapecoense,Giovanni Augusto Oliveira Cardoso,giovanni_augusto_oliveira_cardoso,10,8,0,53,2T,Falta
+228,2025,B,23,Chapecoense,chapecoense,Victor Henrique Carvalho Caetano,victor_henrique_carvalho_caetano,25,12,0,57,2T,Normal
+228,2025,B,23,Chapecoense,chapecoense,Gabriel de Souza Inocencio,gabriel_de_souza_inocencio,2,23,0,68,2T,Normal
+228,2025,B,23,Chapecoense,chapecoense,Pedro Henrique Perotti,pedro_henrique_perotti,9,35,0,80,2T,Normal
+230,2025,B,23,Botafogo,botafogo,Marco Antonio Marsulo Junior,marco_antonio_marsulo_junior,10,13,0,58,2T,Penalty
+230,2025,B,23,Botafogo,botafogo,Ronie Edmundo Carrillo Morales,ronie_edmundo_carrillo_morales,19,90,3,93,2T,Normal
+231,2025,B,24,Athletico Paranaense,athletico_paranaense,Bruno Zapelli,bruno_zapelli,10,29,0,29,1T,Normal
+231,2025,B,24,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Wagner da Silva Souza,wagner_da_silva_souza,30,35,0,35,1T,Normal
+231,2025,B,24,Athletico Paranaense,athletico_paranaense,Bruno Zapelli,bruno_zapelli,10,4,0,49,2T,Normal
+232,2025,B,24,Goiás,goias,Wellington Soares da Silva,wellington_soares_da_silva,27,1,0,1,1T,Normal
+232,2025,B,24,Botafogo,botafogo,Ronie Edmundo Carrillo Morales,ronie_edmundo_carrillo_morales,9,7,0,7,1T,Normal
+232,2025,B,24,Botafogo,botafogo,Marco Antonio Marsulo Junior,marco_antonio_marsulo_junior,10,24,0,69,2T,Penalty
+232,2025,B,24,Goiás,goias,Anselmo Ramon Alves Herculano,anselmo_ramon_alves_herculano,9,36,0,81,2T,Normal
+232,2025,B,24,Botafogo,botafogo,Matheus Barbosa Teixeira,matheus_barbosa_teixeira,18,39,0,84,2T,Normal
+233,2025,B,24,Atlético Goianiense Saf,atletico_goianiense_saf,Luiz Gustavo Novaes Palhares,luiz_gustavo_novaes_palhares,5,45,0,45,1T,Normal
+233,2025,B,24,Atlético Goianiense Saf,atletico_goianiense_saf,Robert dos Santos Conceicao,robert_dos_santos_conceicao,10,10,0,55,2T,Normal
+234,2025,B,24,Criciúma,criciuma,Jean Carlos Vicente,jean_carlos_vicente,20,90,9,99,2T,Penalty
+235,2025,B,24,Chapecoense,chapecoense,Rafael dos Santos Carvalheira Natividade,rafael_dos_santos_carvalheira_natividade,99,40,0,40,1T,Normal
+235,2025,B,24,Vila Nova,vila_nova,Joao Pedro Vieira,joao_pedro_vieira,5,45,5,50,1T,Penalty
+235,2025,B,24,Chapecoense,chapecoense,Walter David Clar Fritz,walter_david_clar_fritz,37,16,0,61,2T,Penalty
+235,2025,B,24,Vila Nova,vila_nova,Bruno Pereira Mendes,bruno_pereira_mendes,20,18,0,63,2T,Normal
+236,2025,B,24,Operário,operario,Juan Pablo Zuluaga Estrada,juan_pablo_zuluaga_estrada,8,1,0,1,1T,Normal
+237,2025,B,24,Crb,crb,Thiago Fernandes Rodrigues,thiago_fernandes_rodrigues,17,3,0,48,2T,Normal
+237,2025,B,24,Crb,crb,Mikael Filipe Viana de Sousa,mikael_filipe_viana_de_sousa,28,90,7,97,2T,Normal
+238,2025,B,24,America Saf,america_saf,Arthur Sousa Araujo,arthur_sousa_araujo,39,34,0,34,1T,Normal
+238,2025,B,24,America Saf,america_saf,Kaua Diniz Rocha,kaua_diniz_rocha,15,8,0,53,2T,Normal
+239,2025,B,24,Ferroviária,ferroviaria,Eduardo Jose Barbosa da Silva Junior,eduardo_jose_barbosa_da_silva_junior,77,29,0,29,1T,Normal
+239,2025,B,24,Cuiabá Saf,cuiaba_saf,Alan Pereira Empereur,alan_pereira_empereur,33,43,0,43,1T,Gol Contra
+239,2025,B,24,Cuiabá Saf,cuiaba_saf,Alisson Pelegrini Safira,alisson_pelegrini_safira,25,27,0,72,2T,Normal
+239,2025,B,24,Cuiabá Saf,cuiaba_saf,Alisson Pelegrini Safira,alisson_pelegrini_safira,25,32,0,77,2T,Normal
+240,2025,B,24,Athletic Saf,athletic_saf,David Francisco Trindade Braga,david_francisco_trindade_braga,10,16,0,61,2T,Normal
+240,2025,B,24,Athletic Saf,athletic_saf,Jhonatan Paulo da Silva,jhonatan_paulo_da_silva,13,33,0,78,2T,Normal
+241,2025,B,25,Ferroviária,ferroviaria,Joao Pedro Ramos Oliveira Lima,joao_pedro_ramos_oliveira_lima,43,2,0,47,2T,Gol Contra
+241,2025,B,25,Coritiba S.a.f.,coritiba_s_a_f,Rodrigo Rodrigues Silva,rodrigo_rodrigues_silva,99,13,0,58,2T,Normal
+241,2025,B,25,Coritiba S.a.f.,coritiba_s_a_f,Iury Lirio Freitas de Castilho,iury_lirio_freitas_de_castilho,77,27,0,72,2T,Normal
+241,2025,B,25,Coritiba S.a.f.,coritiba_s_a_f,Gustavo Coutinho Silva Lopes,gustavo_coutinho_silva_lopes,9,43,0,88,2T,Normal
+242,2025,B,25,Vila Nova,vila_nova,Geremias Ribeiro Junior,geremias_ribeiro_junior,29,28,0,28,1T,Normal
+242,2025,B,25,Athletic Saf,athletic_saf,Ronaldo Rodrigues Tavares,ronaldo_rodrigues_tavares,21,25,0,70,2T,Normal
+243,2025,B,25,Cuiabá Saf,cuiaba_saf,Alisson Pelegrini Safira,alisson_pelegrini_safira,25,8,0,8,1T,Penalty
+244,2025,B,25,Paysandu,paysandu,Thalisson Gabriel Pereira Moreira,thalisson_gabriel_pereira_moreira,6,25,0,25,1T,Normal
+244,2025,B,25,Volta Redonda,volta_redonda,Gabriel Barbosa Pinheiro,gabriel_barbosa_pinheiro,3,45,0,90,2T,Normal
+244,2025,B,25,Volta Redonda,volta_redonda,Rai da Silva Pessanha,rai_da_silva_pessanha,16,90,4,94,2T,Normal
+245,2025,B,25,Avaí,avai,Cleber Bomfim de Jesus,cleber_bomfim_de_jesus,99,16,0,16,1T,Normal
+245,2025,B,25,Avaí,avai,Marcos Gabriel do Nascimento,marcos_gabriel_do_nascimento,10,7,0,52,2T,Normal
+245,2025,B,25,Goiás,goias,Welliton Silva de Azevedo Matheus,welliton_silva_de_azevedo_matheus,11,17,0,62,2T,Normal
+246,2025,B,25,Criciúma,criciuma,Rodrigo Fagundes de Freitas,rodrigo_fagundes_de_freitas,3,10,0,10,1T,Normal
+246,2025,B,25,Criciúma,criciuma,Nicolas Godinho Johann,nicolas_godinho_johann,9,14,0,14,1T,Normal
+247,2025,B,25,Remo,remo,Pedro Rocha Neves,pedro_rocha_neves,32,24,0,24,1T,Falta
+247,2025,B,25,Remo,remo,Pedro Rocha Neves,pedro_rocha_neves,32,22,0,67,2T,Normal
+247,2025,B,25,Amazonas Saf,amazonas_saf,Luan Santos Silva,luan_santos_silva,9,44,0,89,2T,Normal
+247,2025,B,25,Remo,remo,Marrony da Silva Liberato Silveira,marrony_da_silva_liberato_silveira,26,90,5,95,2T,Normal
+248,2025,B,25,America Saf,america_saf,Willian Gomes de Siqueira,willian_gomes_de_siqueira,9,20,0,20,1T,Normal
+248,2025,B,25,Operário,operario,Jose Gervasio dos Santos Neto,jose_gervasio_dos_santos_neto,88,32,0,32,1T,Normal
+249,2025,B,25,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Joao Vitor Silva Dantas de Oliveira,joao_vitor_silva_dantas_de_oliveira,26,23,0,68,2T,Normal
+249,2025,B,25,Atlético Goianiense Saf,atletico_goianiense_saf,Kelvin Giacobe Alves dos Santos,kelvin_giacobe_alves_dos_santos,17,40,0,85,2T,Normal
+250,2025,B,25,Athletico Paranaense,athletico_paranaense,Kevin Estiben Viveros Rodallega,kevin_estiben_viveros_rodallega,9,15,0,60,2T,Penalty
+250,2025,B,25,Botafogo,botafogo,Marco Antonio Marsulo Junior,marco_antonio_marsulo_junior,10,21,0,66,2T,Penalty
+250,2025,B,25,Athletico Paranaense,athletico_paranaense,Luiz Fernando Moraes dos Santos,luiz_fernando_moraes_dos_santos,19,45,0,90,2T,Normal
+250,2025,B,25,Athletico Paranaense,athletico_paranaense,Eduardo Kogitzki Anastacio,eduardo_kogitzki_anastacio,53,90,14,104,2T,Normal
+252,2025,B,26,Vila Nova,vila_nova,Gabriel Buscariol Poveda,gabriel_buscariol_poveda,9,11,0,56,2T,Normal
+252,2025,B,26,Vila Nova,vila_nova,Geremias Ribeiro Junior,geremias_ribeiro_junior,29,38,0,83,2T,Gol Contra
+253,2025,B,26,Avaí,avai,Marcos Vinicius da Silva Santos,marcos_vinicius_da_silva_santos,63,25,0,25,1T,Normal
+253,2025,B,26,Atlético Goianiense Saf,atletico_goianiense_saf,Leanderson da Silva Genesio,leanderson_da_silva_genesio,9,33,0,33,1T,Normal
+253,2025,B,26,Atlético Goianiense Saf,atletico_goianiense_saf,Leanderson da Silva Genesio,leanderson_da_silva_genesio,9,35,0,80,2T,Normal
+255,2025,B,26,Athletico Paranaense,athletico_paranaense,Kevin Estiben Viveros Rodallega,kevin_estiben_viveros_rodallega,9,42,0,42,1T,Penalty
+255,2025,B,26,Chapecoense,chapecoense,Eduardo Vinicius Domachowski,eduardo_vinicius_domachowski,3,4,0,49,2T,Normal
+255,2025,B,26,Chapecoense,chapecoense,Pedro Henrique Perotti,pedro_henrique_perotti,9,8,0,53,2T,Normal
+255,2025,B,26,Athletico Paranaense,athletico_paranaense,Leonardo Derik Dias Goncalves,leonardo_derik_dias_goncalves,61,12,0,57,2T,Normal
+255,2025,B,26,Athletico Paranaense,athletico_paranaense,Kevin Estiben Viveros Rodallega,kevin_estiben_viveros_rodallega,9,26,0,71,2T,Normal
+256,2025,B,26,Cuiabá Saf,cuiaba_saf,Nathan Raphael Pelae Cardoso,nathan_raphael_pelae_cardoso,4,19,0,64,2T,Normal
+256,2025,B,26,Operário,operario,Daniel Amorim Dias da Silva,daniel_amorim_dias_da_silva,89,37,0,82,2T,Normal
+257,2025,B,26,Crb,crb,Mikael Filipe Viana de Sousa,mikael_filipe_viana_de_sousa,28,18,0,18,1T,Normal
+257,2025,B,26,Amazonas Saf,amazonas_saf,Carlos Akapo Martinez,carlos_akapo_martinez,15,34,0,79,2T,Gol Contra
+258,2025,B,26,Botafogo,botafogo,Edson Felipe da Cruz,edson_felipe_da_cruz,3,7,0,52,2T,Gol Contra
+258,2025,B,26,Athletic Saf,athletic_saf,Welinton Macedo dos Santos,welinton_macedo_dos_santos,7,34,0,79,2T,Normal
+259,2025,B,26,Ferroviária,ferroviaria,Fabricio Daniel de Souza,fabricio_daniel_de_souza,10,2,0,2,1T,Penalty
+259,2025,B,26,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Bruno Jose de Souza,bruno_jose_de_souza,17,43,0,43,1T,Normal
+259,2025,B,26,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Nathan Uiliam Fogaca,nathan_uiliam_fogaca,99,1,0,46,2T,Normal
+261,2025,B,27,Athletico Paranaense,athletico_paranaense,Renan Peixoto Nepomuceno,renan_peixoto_nepomuceno,70,15,0,15,1T,Normal
+261,2025,B,27,Athletico Paranaense,athletico_paranaense,Luiz Fernando Moraes dos Santos,luiz_fernando_moraes_dos_santos,19,38,0,83,2T,Normal
+262,2025,B,27,Goiás,goias,Jean Carlos Alves Ferreira,jean_carlos_alves_ferreira,21,42,0,87,2T,Normal
+263,2025,B,27,Cuiabá Saf,cuiaba_saf,Jader Barbosa da Silva Gentil,jader_barbosa_da_silva_gentil,10,42,0,87,2T,Normal
+264,2025,B,27,Atlético Goianiense Saf,atletico_goianiense_saf,Guilherme Kennedy Romao,guilherme_kennedy_romao,6,13,0,13,1T,Normal
+265,2025,B,27,Ferroviária,ferroviaria,Jose Domingos de Moraes Neto,jose_domingos_de_moraes_neto,35,10,0,10,1T,Falta
+265,2025,B,27,Avaí,avai,Cleber Bomfim de Jesus,cleber_bomfim_de_jesus,99,40,0,40,1T,Normal
+265,2025,B,27,Ferroviária,ferroviaria,Fabricio Daniel de Souza,fabricio_daniel_de_souza,10,4,0,49,2T,Normal
+265,2025,B,27,Avaí,avai,Eduardo Schroeder Brock,eduardo_schroeder_brock,14,44,0,89,2T,Normal
+266,2025,B,27,Criciúma,criciuma,Guilherme Teixeira Lobo,guilherme_teixeira_lobo,25,21,0,21,1T,Normal
+267,2025,B,27,Amazonas Saf,amazonas_saf,Henrique Almeida Caixeta Nascentes,henrique_almeida_caixeta_nascentes,19,16,0,16,1T,Normal
+268,2025,B,27,America Saf,america_saf,Miguel Angel Terceros Acuna,miguel_angel_terceros_acuna,7,29,0,74,2T,Normal
+269,2025,B,27,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Oscar Ramon Ruiz Roa,oscar_ramon_ruiz_roa,22,90,1,91,2T,Normal
+270,2025,B,27,Operário,operario,Daniel Amorim Dias da Silva,daniel_amorim_dias_da_silva,89,45,1,46,1T,Normal
+270,2025,B,27,Botafogo,botafogo,Jefferson Vasconcelos Braz da Silva,jefferson_vasconcelos_braz_da_silva,11,39,0,84,2T,Normal
+271,2025,B,28,Criciúma,criciuma,Rodrigo Fagundes de Freitas,rodrigo_fagundes_de_freitas,3,32,0,32,1T,Normal
+271,2025,B,28,Criciúma,criciuma,Nicolas Godinho Johann,nicolas_godinho_johann,9,35,0,35,1T,Normal
+272,2025,B,28,Cuiabá Saf,cuiaba_saf,Juan Christian Pereira Coelho,juan_christian_pereira_coelho,70,3,0,48,2T,Normal
+272,2025,B,28,Vila Nova,vila_nova,Joao Pedro Vieira,joao_pedro_vieira,5,8,0,53,2T,Normal
+272,2025,B,28,Vila Nova,vila_nova,Geremias Ribeiro Junior,geremias_ribeiro_junior,29,24,0,69,2T,Normal
+272,2025,B,28,Cuiabá Saf,cuiaba_saf,Alisson Pelegrini Safira,alisson_pelegrini_safira,25,33,0,78,2T,Normal
+273,2025,B,28,Atlético Goianiense Saf,atletico_goianiense_saf,Leanderson da Silva Genesio,leanderson_da_silva_genesio,9,90,3,93,2T,Normal
+274,2025,B,28,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Rafael Ferreira Donato,rafael_ferreira_donato,3,44,0,89,2T,Normal
+275,2025,B,28,Avaí,avai,Cleber Bomfim de Jesus,cleber_bomfim_de_jesus,99,35,0,80,2T,Normal
+276,2025,B,28,Amazonas Saf,amazonas_saf,Kevin Federik Ramirez Dutra,kevin_federik_ramirez_dutra,7,20,0,20,1T,Normal
+276,2025,B,28,Operário,operario,Matheus dos Santos Miranda,matheus_dos_santos_miranda,16,28,0,28,1T,Normal
+276,2025,B,28,Operário,operario,Gabriel Boschilia,gabriel_boschilia,10,31,0,76,2T,Falta
+277,2025,B,28,Crb,crb,Fabio Augusto Schirmann,fabio_augusto_schirmann,27,20,0,20,1T,Normal
+277,2025,B,28,Crb,crb,Geirton Marques Aires,geirton_marques_aires,8,43,0,43,1T,Normal
+277,2025,B,28,Crb,crb,Daniel Sampaio Simoes,daniel_sampaio_simoes,10,29,0,74,2T,Normal
+277,2025,B,28,Botafogo,botafogo,Gabriel Bispo dos Santos,gabriel_bispo_dos_santos,15,37,0,82,2T,Normal
+277,2025,B,28,Botafogo,botafogo,Leandro Isaac Maciel,leandro_isaac_maciel,10,90,2,92,2T,Normal
+278,2025,B,28,Athletico Paranaense,athletico_paranaense,Kevin Estiben Viveros Rodallega,kevin_estiben_viveros_rodallega,9,45,1,46,1T,Normal
+278,2025,B,28,Athletico Paranaense,athletico_paranaense,Julimar Silva Oliveira Junior,julimar_silva_oliveira_junior,20,32,0,77,2T,Penalty
+278,2025,B,28,Athletico Paranaense,athletico_paranaense,Leonardo Caetano Silva,leonardo_caetano_silva,21,90,3,93,2T,Falta
+279,2025,B,28,Goiás,goias,Brayann Brito Batista,brayann_brito_batista,91,4,0,4,1T,Normal
+279,2025,B,28,Ferroviária,ferroviaria,Thiago Ferreira Lopes,thiago_ferreira_lopes,37,90,1,91,2T,Normal
+280,2025,B,28,Volta Redonda,volta_redonda,João Victor Vaz Lopes Pinto,joao_victor_vaz_lopes_pinto,17,14,0,14,1T,Normal
+280,2025,B,28,Remo,remo,Eduardo de Queiroz Melo,eduardo_de_queiroz_melo,39,43,0,88,2T,Normal
+280,2025,B,28,Volta Redonda,volta_redonda,Matheus Lucas Jacintho Ferreira,matheus_lucas_jacintho_ferreira,23,90,6,96,2T,Normal
+281,2025,B,29,Athletico Paranaense,athletico_paranaense,Gaston Americo Benavidez,gaston_americo_benavidez,29,9,0,9,1T,Normal
+283,2025,B,29,Athletic Saf,athletic_saf,David Francisco Trindade Braga,david_francisco_trindade_braga,10,20,0,20,1T,Normal
+283,2025,B,29,Cuiabá Saf,cuiaba_saf,Bruno Fabiano Alves,bruno_fabiano_alves,3,34,0,34,1T,Normal
+283,2025,B,29,Cuiabá Saf,cuiaba_saf,Juan Christian Pereira Coelho,juan_christian_pereira_coelho,70,24,0,69,2T,Normal
+284,2025,B,29,Crb,crb,Matheus Antunes Ribeiro,matheus_antunes_ribeiro,2,23,0,23,1T,Normal
+284,2025,B,29,Remo,remo,Diego Manuel Hernandez Gonzalez,diego_manuel_hernandez_gonzalez,33,27,0,27,1T,Falta
+284,2025,B,29,Crb,crb,Fabio Augusto Schirmann,fabio_augusto_schirmann,27,35,0,35,1T,Gol Contra
+284,2025,B,29,Remo,remo,Michael Nicolas Ferreira Berrondo,michael_nicolas_ferreira_berrondo,25,10,0,55,2T,Normal
+284,2025,B,29,Remo,remo,Caio Vinicius da Conceicao,caio_vinicius_da_conceicao,34,29,0,74,2T,Normal
+284,2025,B,29,Crb,crb,Breno Herculano Almeida,breno_herculano_almeida,9,90,3,93,2T,Normal
+285,2025,B,29,Coritiba S.a.f.,coritiba_s_a_f,Lucas Ronier Vieira Pires,lucas_ronier_vieira_pires,11,40,0,40,1T,Normal
+285,2025,B,29,Coritiba S.a.f.,coritiba_s_a_f,Bruno Ferreira Melo,bruno_ferreira_melo,26,34,0,79,2T,Normal
+286,2025,B,29,Criciúma,criciuma,Jhonata Robert Alves da Silva,jhonata_robert_alves_da_silva,10,13,0,13,1T,Normal
+286,2025,B,29,Paysandu,paysandu,Reverson Valuarth Paiva Silva,reverson_valuarth_paiva_silva,16,31,0,31,1T,Normal
+286,2025,B,29,Paysandu,paysandu,Mauricio Garcez de Jesus,mauricio_garcez_de_jesus,10,43,0,43,1T,Normal
+286,2025,B,29,Criciúma,criciuma,Nicolas Godinho Johann,nicolas_godinho_johann,9,45,3,48,1T,Normal
+286,2025,B,29,Paysandu,paysandu,Marlon Douglas de Sales Silva,marlon_douglas_de_sales_silva,11,23,0,68,2T,Normal
+286,2025,B,29,Paysandu,paysandu,Mauricio Garcez de Jesus,mauricio_garcez_de_jesus,10,34,0,79,2T,Normal
+287,2025,B,29,Chapecoense,chapecoense,Eduardo Vinicius Domachowski,eduardo_vinicius_domachowski,3,7,0,7,1T,Normal
+287,2025,B,29,Amazonas Saf,amazonas_saf,Kevin Federik Ramirez Dutra,kevin_federik_ramirez_dutra,7,45,2,47,1T,Normal
+287,2025,B,29,Chapecoense,chapecoense,Everton Souza da Cruz,everton_souza_da_cruz,26,39,0,84,2T,Normal
+287,2025,B,29,Chapecoense,chapecoense,Rafael dos Santos Carvalheira Natividade,rafael_dos_santos_carvalheira_natividade,99,90,2,92,2T,Normal
+288,2025,B,29,America Saf,america_saf,Willian Gomes de Siqueira,willian_gomes_de_siqueira,9,30,0,30,1T,Normal
+288,2025,B,29,Volta Redonda,volta_redonda,Sanchez Jose Vale Costa,sanchez_jose_vale_costa,6,10,0,55,2T,Penalty
+288,2025,B,29,America Saf,america_saf,Willian Gomes de Siqueira,willian_gomes_de_siqueira,9,35,0,80,2T,Normal
+289,2025,B,29,Vila Nova,vila_nova,Geremias Ribeiro Junior,geremias_ribeiro_junior,29,17,0,17,1T,Normal
+289,2025,B,29,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Wagner da Silva Souza,wagner_da_silva_souza,30,30,0,75,2T,Normal
+290,2025,B,29,Ferroviária,ferroviaria,Eduardo Jose Barbosa da Silva Junior,eduardo_jose_barbosa_da_silva_junior,77,8,0,53,2T,Normal
+290,2025,B,29,Ferroviária,ferroviaria,Carlos Henrique de Moura Brito,carlos_henrique_de_moura_brito,92,14,0,59,2T,Penalty
+290,2025,B,29,Botafogo,botafogo,Guilherme de Queiroz Goncalves,guilherme_de_queiroz_goncalves,19,25,0,70,2T,Normal
+291,2025,B,30,Coritiba S.a.f.,coritiba_s_a_f,Gustavo Coutinho Silva Lopes,gustavo_coutinho_silva_lopes,9,14,0,14,1T,Normal
+291,2025,B,30,Coritiba S.a.f.,coritiba_s_a_f,Iury Lirio Freitas de Castilho,iury_lirio_freitas_de_castilho,77,36,0,36,1T,Normal
+292,2025,B,30,Vila Nova,vila_nova,Geremias Ribeiro Junior,geremias_ribeiro_junior,29,6,0,6,1T,Normal
+292,2025,B,30,Criciúma,criciuma,Diego Goncalves,diego_goncalves,77,13,0,58,2T,Normal
+293,2025,B,30,Atlético Goianiense Saf,atletico_goianiense_saf,Guilherme da Silva Barbosa,guilherme_da_silva_barbosa,9,14,0,14,1T,Normal
+293,2025,B,30,Atlético Goianiense Saf,atletico_goianiense_saf,Guilherme Kennedy Romao,guilherme_kennedy_romao,6,45,3,48,1T,Normal
+293,2025,B,30,Atlético Goianiense Saf,atletico_goianiense_saf,Adriano Martins da Fonseca,adriano_martins_da_fonseca,4,17,0,62,2T,Normal
+294,2025,B,30,Cuiabá Saf,cuiaba_saf,Silvio Alejandro Martinez,silvio_alejandro_martinez,7,31,0,31,1T,Normal
+294,2025,B,30,Paysandu,paysandu,Mauricio Garcez de Jesus,mauricio_garcez_de_jesus,10,43,0,88,2T,Penalty
+295,2025,B,30,Chapecoense,chapecoense,Pedro Henrique Perotti,pedro_henrique_perotti,9,14,0,59,2T,Normal
+296,2025,B,30,Remo,remo,Jaderson Flores dos Reis,jaderson_flores_dos_reis,10,44,0,89,2T,Normal
+298,2025,B,30,Athletic Saf,athletic_saf,David Francisco Trindade Braga,david_francisco_trindade_braga,10,10,0,10,1T,Normal
+298,2025,B,30,Amazonas Saf,amazonas_saf,Henrique Almeida Caixeta Nascentes,henrique_almeida_caixeta_nascentes,19,41,0,41,1T,Normal
+298,2025,B,30,Amazonas Saf,amazonas_saf,Leonardo Henriques Coelho,leonardo_henriques_coelho,3,1,0,46,2T,Normal
+298,2025,B,30,Athletic Saf,athletic_saf,Sidimar Fernando Cigolini,sidimar_fernando_cigolini,4,12,0,57,2T,Normal
+299,2025,B,30,Ferroviária,ferroviaria,Fabricio Daniel de Souza,fabricio_daniel_de_souza,10,15,0,15,1T,Normal
+299,2025,B,30,America Saf,america_saf,Magno Jose da Silva,magno_jose_da_silva,26,29,0,29,1T,Normal
+299,2025,B,30,America Saf,america_saf,Lucas Cavalcante Silva Afonso,lucas_cavalcante_silva_afonso,3,45,0,90,2T,Normal
+299,2025,B,30,America Saf,america_saf,Fabio Augusto Luciano da Silva,fabio_augusto_luciano_da_silva,28,90,6,96,2T,Penalty
+301,2025,B,31,Coritiba S.a.f.,coritiba_s_a_f,Guilherme Augusto Alves Dellatorre,guilherme_augusto_alves_dellatorre,49,29,0,74,2T,Normal
+301,2025,B,31,Coritiba S.a.f.,coritiba_s_a_f,Josue Filipe Soares Pesqueira,josue_filipe_soares_pesqueira,10,44,0,89,2T,Penalty
+301,2025,B,31,Atlético Goianiense Saf,atletico_goianiense_saf,Adriano Martins da Fonseca,adriano_martins_da_fonseca,4,90,4,94,2T,Normal
+302,2025,B,31,Goiás,goias,Adilson dos Anjos Oliveira,adilson_dos_anjos_oliveira,28,1,0,1,1T,Normal
+302,2025,B,31,Crb,crb,Mikael Filipe Viana de Sousa,mikael_filipe_viana_de_sousa,28,27,0,27,1T,Normal
+302,2025,B,31,Crb,crb,Adailson Freire Pereira da Silva,adailson_freire_pereira_da_silva,97,17,0,62,2T,Normal
+303,2025,B,31,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Wagner da Silva Souza,wagner_da_silva_souza,30,11,0,56,2T,Normal
+304,2025,B,31,Remo,remo,Marcelo Rodrigues Souza,marcelo_rodrigues_souza,79,45,0,45,1T,Normal
+304,2025,B,31,Athletico Paranaense,athletico_paranaense,Eduardo Kogitzki Anastacio,eduardo_kogitzki_anastacio,53,19,0,64,2T,Normal
+304,2025,B,31,Remo,remo,Caio Vinicius da Conceicao,caio_vinicius_da_conceicao,34,27,0,72,2T,Normal
+305,2025,B,31,Avaí,avai,Cleber Bomfim de Jesus,cleber_bomfim_de_jesus,99,1,0,1,1T,Normal
+305,2025,B,31,Avaí,avai,Marcos Gabriel do Nascimento,marcos_gabriel_do_nascimento,10,15,0,60,2T,Normal
+305,2025,B,31,Avaí,avai,Thayllon Roberth dos Santos Rebelo,thayllon_roberth_dos_santos_rebelo,41,41,0,86,2T,Normal
+306,2025,B,31,Operário,operario,Matheus dos Santos Miranda,matheus_dos_santos_miranda,16,14,0,14,1T,Gol Contra
+306,2025,B,31,Athletic Saf,athletic_saf,Ronaldo Rodrigues Tavares,ronaldo_rodrigues_tavares,21,15,0,15,1T,Normal
+306,2025,B,31,Operário,operario,Gabriel Boschilia,gabriel_boschilia,10,26,0,26,1T,Normal
+306,2025,B,31,Athletic Saf,athletic_saf,Ronaldo Rodrigues Tavares,ronaldo_rodrigues_tavares,21,43,0,43,1T,Normal
+306,2025,B,31,Athletic Saf,athletic_saf,Alessio Sergio Fernando da Cruz,alessio_sergio_fernando_da_cruz,17,45,1,46,1T,Normal
+307,2025,B,31,Criciúma,criciuma,Jean Carlos Vicente,jean_carlos_vicente,20,45,0,45,1T,Normal
+307,2025,B,31,Amazonas Saf,amazonas_saf,Kevin Federik Ramirez Dutra,kevin_federik_ramirez_dutra,7,12,0,57,2T,Normal
+307,2025,B,31,Amazonas Saf,amazonas_saf,Henrique Almeida Caixeta Nascentes,henrique_almeida_caixeta_nascentes,19,41,0,86,2T,Normal
+308,2025,B,31,Vila Nova,vila_nova,Joao Pedro Vieira,joao_pedro_vieira,5,33,0,33,1T,Penalty
+308,2025,B,31,America Saf,america_saf,Felipe Amaral Casarin Damasceno,felipe_amaral_casarin_damasceno,8,5,0,50,2T,Normal
+309,2025,B,31,Chapecoense,chapecoense,Altemir Cordeiro Pessôa Neto,altemir_cordeiro_pessoa_neto,18,26,0,71,2T,Normal
+310,2025,B,31,Botafogo,botafogo,Ronie Edmundo Carrillo Morales,ronie_edmundo_carrillo_morales,19,43,0,88,2T,Normal
+311,2025,B,32,Avaí,avai,Joao Vitor de Souza Martins,joao_vitor_de_souza_martins,8,21,0,21,1T,Normal
+311,2025,B,32,Athletico Paranaense,athletico_paranaense,Kevin Estiben Viveros Rodallega,kevin_estiben_viveros_rodallega,9,5,0,50,2T,Penalty
+312,2025,B,32,Vila Nova,vila_nova,Pedro Henrique Oliveira Romano,pedro_henrique_oliveira_romano,4,43,0,88,2T,Normal
+313,2025,B,32,Cuiabá Saf,cuiaba_saf,Alisson Pelegrini Safira,alisson_pelegrini_safira,25,5,0,5,1T,Normal
+314,2025,B,32,Remo,remo,Caio Vinicius da Conceicao,caio_vinicius_da_conceicao,34,16,0,16,1T,Normal
+314,2025,B,32,Remo,remo,Pedro Henrique de Castro Silva,pedro_henrique_de_castro_silva,11,4,0,49,2T,Normal
+314,2025,B,32,Paysandu,paysandu,Mauricio Garcez de Jesus,mauricio_garcez_de_jesus,10,6,0,51,2T,Normal
+314,2025,B,32,Paysandu,paysandu,Wendel Rosas Nogueira Junior,wendel_rosas_nogueira_junior,26,18,0,63,2T,Normal
+314,2025,B,32,Remo,remo,Diego Manuel Hernandez Gonzalez,diego_manuel_hernandez_gonzalez,33,90,3,93,2T,Falta
+315,2025,B,32,Botafogo,botafogo,Gustavo Vilar dos Santos,gustavo_vilar_dos_santos,4,42,0,87,2T,Normal
+315,2025,B,32,Chapecoense,chapecoense,Rafael dos Santos Carvalheira Natividade,rafael_dos_santos_carvalheira_natividade,99,90,2,92,2T,Normal
+316,2025,B,32,Criciúma,criciuma,Jonathan Francisco Lemos,jonathan_francisco_lemos,13,19,0,64,2T,Normal
+316,2025,B,32,America Saf,america_saf,Ricardo Cesar Dantas da Silva,ricardo_cesar_dantas_da_silva,45,28,0,73,2T,Normal
+316,2025,B,32,Criciúma,criciuma,Diego Goncalves,diego_goncalves,77,29,0,74,2T,Normal
+317,2025,B,32,Crb,crb,Mikael Filipe Viana de Sousa,mikael_filipe_viana_de_sousa,28,12,0,12,1T,Normal
+317,2025,B,32,Ferroviária,ferroviaria,Rodrigo Souza Santos,rodrigo_souza_santos,8,44,0,44,1T,Normal
+317,2025,B,32,Crb,crb,Adailson Freire Pereira da Silva,adailson_freire_pereira_da_silva,97,45,3,48,1T,Normal
+317,2025,B,32,Ferroviária,ferroviaria,Carlos Henrique de Moura Brito,carlos_henrique_de_moura_brito,92,8,0,53,2T,Normal
+318,2025,B,32,Athletic Saf,athletic_saf,Yuri Antonio Costa da Silva,yuri_antonio_costa_da_silva,6,21,0,21,1T,Normal
+318,2025,B,32,Goiás,goias,Wellington Soares da Silva,wellington_soares_da_silva,27,8,0,53,2T,Penalty
+319,2025,B,32,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Lucca Borges de Brito,lucca_borges_de_brito,9,20,0,65,2T,Normal
+319,2025,B,32,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Lucca Borges de Brito,lucca_borges_de_brito,9,28,0,73,2T,Normal
+319,2025,B,32,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Jean Carlos de Souza Irmer,jean_carlos_de_souza_irmer,5,42,0,87,2T,Normal
+320,2025,B,32,Volta Redonda,volta_redonda,Ygor de Oliveira Ferreira,ygor_de_oliveira_ferreira,27,1,0,46,2T,Normal
+320,2025,B,32,Volta Redonda,volta_redonda,Marcos Vinicius da Silva,marcos_vinicius_da_silva,20,30,0,75,2T,Normal
+320,2025,B,32,Volta Redonda,volta_redonda,Bruno Sergio Jaime,bruno_sergio_jaime,5,41,0,86,2T,Normal
+322,2025,B,33,Chapecoense,chapecoense,Walter David Clar Fritz,walter_david_clar_fritz,37,3,0,3,1T,Penalty
+322,2025,B,33,Chapecoense,chapecoense,Marcio Antonio de Sousa Junior,marcio_antonio_de_sousa_junior,7,6,0,51,2T,Normal
+322,2025,B,33,Goiás,goias,Anselmo Ramon Alves Herculano,anselmo_ramon_alves_herculano,9,23,0,68,2T,Normal
+322,2025,B,33,Chapecoense,chapecoense,Italo de Vargas da Rosa,italo_de_vargas_da_rosa,77,41,0,86,2T,Normal
+324,2025,B,33,Remo,remo,Pedro Rocha Neves,pedro_rocha_neves,32,13,0,13,1T,Normal
+324,2025,B,33,Remo,remo,Diego Manuel Hernandez Gonzalez,diego_manuel_hernandez_gonzalez,33,18,0,18,1T,Falta
+324,2025,B,33,Athletic Saf,athletic_saf,David Francisco Trindade Braga,david_francisco_trindade_braga,10,22,0,67,2T,Normal
+324,2025,B,33,Remo,remo,Pedro Rocha Neves,pedro_rocha_neves,32,29,0,74,2T,Normal
+325,2025,B,33,Avaí,avai,João Pedro Murilo de Paula Morais,joao_pedro_murilo_de_paula_morais,98,28,0,73,2T,Normal
+325,2025,B,33,Criciúma,criciuma,Diego Goncalves,diego_goncalves,77,90,9,99,2T,Penalty
+326,2025,B,33,Operário,operario,Leonardo Andriel dos Santos,leonardo_andriel_dos_santos,70,5,0,5,1T,Normal
+326,2025,B,33,Operário,operario,Rodrigo Antonio Rodrigues,rodrigo_antonio_rodrigues,7,17,0,17,1T,Normal
+326,2025,B,33,Volta Redonda,volta_redonda,Marcos Vinicius da Silva,marcos_vinicius_da_silva,20,31,0,76,2T,Normal
+328,2025,B,33,Crb,crb,Thiago Fernandes Rodrigues,thiago_fernandes_rodrigues,17,11,0,11,1T,Normal
+328,2025,B,33,America Saf,america_saf,Kaua Diniz Rocha,kaua_diniz_rocha,15,11,0,56,2T,Normal
+329,2025,B,33,Ferroviária,ferroviaria,Carlos Henrique de Moura Brito,carlos_henrique_de_moura_brito,92,2,0,2,1T,Normal
+329,2025,B,33,Paysandu,paysandu,Thiago Heleno Henrique Ferreira,thiago_heleno_henrique_ferreira,44,14,0,14,1T,Normal
+329,2025,B,33,Paysandu,paysandu,Wendel Rosas Nogueira Junior,wendel_rosas_nogueira_junior,26,30,0,30,1T,Normal
+329,2025,B,33,Ferroviária,ferroviaria,Albano Sehn Neto,albano_sehn_neto,20,20,0,65,2T,Normal
+330,2025,B,33,Cuiabá Saf,cuiaba_saf,Carlos Alberto Gomes da Silva Filho,carlos_alberto_gomes_da_silva_filho,11,20,0,20,1T,Normal
+330,2025,B,33,Botafogo,botafogo,Ericson da Silva,ericson_da_silva,3,29,0,29,1T,Normal
+330,2025,B,33,Cuiabá Saf,cuiaba_saf,Carlos Alberto Gomes da Silva Filho,carlos_alberto_gomes_da_silva_filho,11,45,3,48,1T,Normal
+330,2025,B,33,Botafogo,botafogo,Wesley Dias Claudino,wesley_dias_claudino,5,45,0,90,2T,Normal
+331,2025,B,34,Athletico Paranaense,athletico_paranaense,Julimar Silva Oliveira Junior,julimar_silva_oliveira_junior,20,17,0,17,1T,Normal
+331,2025,B,34,Athletico Paranaense,athletico_paranaense,Julimar Silva Oliveira Junior,julimar_silva_oliveira_junior,20,25,0,70,2T,Normal
+332,2025,B,34,Vila Nova,vila_nova,Tiago Pagnussat,tiago_pagnussat,3,34,0,34,1T,Normal
+332,2025,B,34,Vila Nova,vila_nova,Andre Luis da Costa Alfredo,andre_luis_da_costa_alfredo,7,42,0,42,1T,Normal
+332,2025,B,34,Ferroviária,ferroviaria,Eduardo Jose Barbosa da Silva Junior,eduardo_jose_barbosa_da_silva_junior,77,45,1,46,1T,Normal
+332,2025,B,34,Ferroviária,ferroviaria,Carlos Henrique de Moura Brito,carlos_henrique_de_moura_brito,92,20,0,65,2T,Penalty
+333,2025,B,34,Remo,remo,Panagiots Tachtsidis,panagiots_tachtsidis,77,14,0,14,1T,Normal
+333,2025,B,34,Remo,remo,Michael Nicolas Ferreira Berrondo,michael_nicolas_ferreira_berrondo,25,42,0,42,1T,Normal
+333,2025,B,34,Cuiabá Saf,cuiaba_saf,Carlos Alberto Gomes da Silva Filho,carlos_alberto_gomes_da_silva_filho,11,28,0,73,2T,Normal
+333,2025,B,34,Remo,remo,João Pedro Sousa Silva,joao_pedro_sousa_silva,45,90,4,94,2T,Normal
+334,2025,B,34,Avaí,avai,Jonathan Aparecido de Oliveira da Costa,jonathan_aparecido_de_oliveira_da_costa,95,17,0,17,1T,Normal
+334,2025,B,34,Avaí,avai,Thayllon Roberth dos Santos Rebelo,thayllon_roberth_dos_santos_rebelo,41,25,0,25,1T,Normal
+334,2025,B,34,Paysandu,paysandu,Marlon Douglas de Sales Silva,marlon_douglas_de_sales_silva,11,31,0,76,2T,Penalty
+336,2025,B,34,Goiás,goias,Welliton Silva de Azevedo Matheus,welliton_silva_de_azevedo_matheus,11,8,0,8,1T,Normal
+336,2025,B,34,Criciúma,criciuma,Rodrigo Fagundes de Freitas,rodrigo_fagundes_de_freitas,3,45,1,46,1T,Normal
+336,2025,B,34,Goiás,goias,Gonzalo Gaston Freitas Silva,gonzalo_gaston_freitas_silva,5,19,0,64,2T,Normal
+337,2025,B,34,Atlético Goianiense Saf,atletico_goianiense_saf,Leanderson da Silva Genesio,leanderson_da_silva_genesio,9,45,0,45,1T,Normal
+337,2025,B,34,Crb,crb,Giovanni Piccolomo,giovanni_piccolomo,11,30,0,75,2T,Normal
+337,2025,B,34,Crb,crb,Douglas Baggio de Oliveira Costa,douglas_baggio_de_oliveira_costa,7,45,0,90,2T,Penalty
+338,2025,B,34,America Saf,america_saf,Miguel Angel Terceros Acuna,miguel_angel_terceros_acuna,7,14,0,59,2T,Normal
+338,2025,B,34,America Saf,america_saf,Felipe Amaral Casarin Damasceno,felipe_amaral_casarin_damasceno,8,29,0,74,2T,Normal
+339,2025,B,34,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Luiz Otavio Maria,luiz_otavio_maria,15,24,0,69,2T,Normal
+339,2025,B,34,Botafogo,botafogo,Guilherme de Queiroz Goncalves,guilherme_de_queiroz_goncalves,9,35,0,80,2T,Normal
+340,2025,B,34,Coritiba S.a.f.,coritiba_s_a_f,Wallisson Luiz Alves Maximo,wallisson_luiz_alves_maximo,70,45,0,45,1T,Normal
+342,2025,B,35,Athletico Paranaense,athletico_paranaense,Kevin Estiben Viveros Rodallega,kevin_estiben_viveros_rodallega,9,2,0,47,2T,Normal
+343,2025,B,35,Paysandu,paysandu,Mauricio Garcez de Jesus,mauricio_garcez_de_jesus,10,45,1,46,1T,Normal
+343,2025,B,35,Atlético Goianiense Saf,atletico_goianiense_saf,Leanderson da Silva Genesio,leanderson_da_silva_genesio,9,15,0,60,2T,Normal
+343,2025,B,35,Atlético Goianiense Saf,atletico_goianiense_saf,Robert dos Santos Conceicao,robert_dos_santos_conceicao,18,31,0,76,2T,Normal
+344,2025,B,35,Remo,remo,Caio Vinicius da Conceicao,caio_vinicius_da_conceicao,34,30,0,30,1T,Normal
+344,2025,B,35,Chapecoense,chapecoense,Eduardo Vinicius Domachowski,eduardo_vinicius_domachowski,3,90,6,96,2T,Normal
+345,2025,B,35,Avaí,avai,Emerson Ramon Bezerra Oliveira,emerson_ramon_bezerra_oliveira,94,2,0,47,2T,Normal
+345,2025,B,35,Avaí,avai,Cleber Bomfim de Jesus,cleber_bomfim_de_jesus,99,45,4,49,1T,Penalty
+345,2025,B,35,Athletic Saf,athletic_saf,Ronaldo Rodrigues Tavares,ronaldo_rodrigues_tavares,21,35,0,80,2T,Penalty
+346,2025,B,35,Vila Nova,vila_nova,Igor Henrique Martins Machado,igor_henrique_martins_machado,27,25,0,25,1T,Normal
+346,2025,B,35,Vila Nova,vila_nova,Igor Henrique Martins Machado,igor_henrique_martins_machado,27,4,0,49,2T,Normal
+346,2025,B,35,Operário,operario,Leonardo Andriel dos Santos,leonardo_andriel_dos_santos,70,26,0,71,2T,Normal
+346,2025,B,35,Operário,operario,Gabriel Boschilia,gabriel_boschilia,10,30,0,75,2T,Penalty
+347,2025,B,35,Amazonas Saf,amazonas_saf,Diego Joel Torres Garcete,diego_joel_torres_garcete,29,17,0,17,1T,Normal
+347,2025,B,35,Amazonas Saf,amazonas_saf,Henrique Almeida Caixeta Nascentes,henrique_almeida_caixeta_nascentes,19,90,7,97,2T,Normal
+348,2025,B,35,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Cesar Henrique Martins,cesar_henrique_martins,37,28,0,28,1T,Normal
+348,2025,B,35,America Saf,america_saf,Willian Gomes de Siqueira,willian_gomes_de_siqueira,9,45,4,49,1T,Normal
+348,2025,B,35,America Saf,america_saf,Miguel Angel Terceros Acuna,miguel_angel_terceros_acuna,7,41,0,86,2T,Normal
+348,2025,B,35,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Joao Vitor Silva Dantas de Oliveira,joao_vitor_silva_dantas_de_oliveira,26,90,4,94,2T,Normal
+350,2025,B,35,Botafogo,botafogo,Leonardo Gamalho de Souza,leonardo_gamalho_de_souza,19,22,0,67,2T,Penalty
+351,2025,B,36,Athletico Paranaense,athletico_paranaense,Julimar Silva Oliveira Junior,julimar_silva_oliveira_junior,20,26,0,26,1T,Normal
+351,2025,B,36,Athletico Paranaense,athletico_paranaense,Leonardo Caetano Silva,leonardo_caetano_silva,21,13,0,58,2T,Normal
+353,2025,B,36,Goiás,goias,Rafael Gustavo Meneghel Gava,rafael_gustavo_meneghel_gava,8,43,0,43,1T,Falta
+354,2025,B,36,Coritiba S.a.f.,coritiba_s_a_f,Guilherme Augusto Alves Dellatorre,guilherme_augusto_alves_dellatorre,49,6,0,6,1T,Normal
+354,2025,B,36,Coritiba S.a.f.,coritiba_s_a_f,Iury Lirio Freitas de Castilho,iury_lirio_freitas_de_castilho,77,39,0,39,1T,Normal
+354,2025,B,36,Paysandu,paysandu,Yeferson Agustin Quintana Alonso,yeferson_agustin_quintana_alonso,3,19,0,64,2T,Normal
+355,2025,B,36,America Saf,america_saf,Willian Gomes de Siqueira,willian_gomes_de_siqueira,9,6,0,51,2T,Normal
+356,2025,B,36,Criciúma,criciuma,Jhonata Robert Alves da Silva,jhonata_robert_alves_da_silva,10,38,0,83,2T,Normal
+357,2025,B,36,Operário,operario,Andre Henrique Simplicio Dantas,andre_henrique_simplicio_dantas,34,19,0,19,1T,Normal
+357,2025,B,36,Crb,crb,Daniel Sampaio Simoes,daniel_sampaio_simoes,10,45,0,45,1T,Normal
+357,2025,B,36,Crb,crb,Mikael Filipe Viana de Sousa,mikael_filipe_viana_de_sousa,28,18,0,63,2T,Gol Contra
+357,2025,B,36,Crb,crb,Thiago Fernandes Rodrigues,thiago_fernandes_rodrigues,17,21,0,66,2T,Normal
+358,2025,B,36,Athletic Saf,athletic_saf,Douglas da Silva Santos,douglas_da_silva_santos,2,9,0,9,1T,Normal
+358,2025,B,36,Ferroviária,ferroviaria,Carlos Henrique de Moura Brito,carlos_henrique_de_moura_brito,92,37,0,37,1T,Normal
+358,2025,B,36,Athletic Saf,athletic_saf,Jhonatan Paulo da Silva,jhonatan_paulo_da_silva,13,90,5,95,2T,Normal
+359,2025,B,36,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Wagner da Silva Souza,wagner_da_silva_souza,30,8,0,8,1T,Normal
+359,2025,B,36,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Mayksilvan da Silva Ferreira,mayksilvan_da_silva_ferreira,77,15,0,60,2T,Gol Contra
+360,2025,B,36,Botafogo,botafogo,Leonardo Gamalho de Souza,leonardo_gamalho_de_souza,9,23,0,68,2T,Penalty
+362,2025,B,37,Goiás,goias,Anselmo Ramon Alves Herculano,anselmo_ramon_alves_herculano,9,15,0,60,2T,Normal
+364,2025,B,37,Paysandu,paysandu,Andre da Silva Lima,andre_da_silva_lima,8,25,0,70,2T,Normal
+364,2025,B,37,Amazonas Saf,amazonas_saf,Diego Joel Torres Garcete,diego_joel_torres_garcete,29,31,0,76,2T,Normal
+364,2025,B,37,Amazonas Saf,amazonas_saf,Joaquin Eduardo Torres,joaquin_eduardo_torres,11,32,0,77,2T,Normal
+364,2025,B,37,Paysandu,paysandu,Bryan Borges Mascarenhas,bryan_borges_mascarenhas,21,90,1,91,2T,Normal
+365,2025,B,37,Avaí,avai,Cleber Bomfim de Jesus,cleber_bomfim_de_jesus,99,37,0,37,1T,Penalty
+365,2025,B,37,Avaí,avai,Cleber Bomfim de Jesus,cleber_bomfim_de_jesus,99,5,0,50,2T,Normal
+365,2025,B,37,Remo,remo,João Pedro Sousa Silva,joao_pedro_sousa_silva,45,26,0,71,2T,Normal
+365,2025,B,37,Avaí,avai,Leonardo Reis Fernandes,leonardo_reis_fernandes,32,36,0,81,2T,Normal
+366,2025,B,37,Criciúma,criciuma,Rodrigo Fagundes de Freitas,rodrigo_fagundes_de_freitas,3,10,0,10,1T,Normal
+366,2025,B,37,Criciúma,criciuma,Joao Carlos Barros Lopes,joao_carlos_barros_lopes,21,42,0,87,2T,Normal
+367,2025,B,37,Crb,crb,Daniel Sampaio Simoes,daniel_sampaio_simoes,10,38,0,38,1T,Normal
+367,2025,B,37,Crb,crb,Luis Vinicius Nunes Cavalcante,luis_vinicius_nunes_cavalcante,20,39,0,84,2T,Normal
+368,2025,B,37,Cuiabá Saf,cuiaba_saf,Carlos Alberto Gomes da Silva Filho,carlos_alberto_gomes_da_silva_filho,11,3,0,48,2T,Normal
+368,2025,B,37,America Saf,america_saf,Willian Gomes de Siqueira,willian_gomes_de_siqueira,9,12,0,57,2T,Normal
+370,2025,B,37,Volta Redonda,volta_redonda,Ygor de Oliveira Ferreira,ygor_de_oliveira_ferreira,9,7,0,52,2T,Normal
+370,2025,B,37,Chapecoense,chapecoense,Pedro Henrique Perotti,pedro_henrique_perotti,9,90,4,94,2T,Normal
+371,2025,B,38,Athletico Paranaense,athletico_paranaense,João Victor Machado Cruz,joao_victor_machado_cruz,57,41,0,41,1T,Normal
+372,2025,B,38,Volta Redonda,volta_redonda,Dener Gomes Clemente,dener_gomes_clemente,8,11,0,11,1T,Normal
+372,2025,B,38,Vila Nova,vila_nova,Emerson Lima Freitas,emerson_lima_freitas,17,39,0,39,1T,Normal
+372,2025,B,38,Volta Redonda,volta_redonda,Lucas Pereira Ramires Constante,lucas_pereira_ramires_constante,4,28,0,73,2T,Normal
+372,2025,B,38,Vila Nova,vila_nova,Gustavo dos Anjos Mathiello,gustavo_dos_anjos_mathiello,20,38,0,83,2T,Normal
+373,2025,B,38,Cuiabá Saf,cuiaba_saf,David Miguel de Souza Arcanjo,david_miguel_de_souza_arcanjo,20,12,0,57,2T,Normal
+374,2025,B,38,Goiás,goias,Willean Bernardo Willemen,willean_bernardo_willemen,97,7,0,7,1T,Normal
+374,2025,B,38,Remo,remo,Pedro Rocha Neves,pedro_rocha_neves,32,45,3,48,1T,Normal
+374,2025,B,38,Remo,remo,João Pedro Sousa Silva,joao_pedro_sousa_silva,45,17,0,62,2T,Normal
+374,2025,B,38,Remo,remo,João Pedro Sousa Silva,joao_pedro_sousa_silva,45,39,0,84,2T,Normal
+375,2025,B,38,Chapecoense,chapecoense,Walter David Clar Fritz,walter_david_clar_fritz,37,45,0,45,1T,Penalty
+376,2025,B,38,Ferroviária,ferroviaria,Jose Domingos de Moraes Neto,jose_domingos_de_moraes_neto,35,8,0,8,1T,Normal
+376,2025,B,38,Operário,operario,Eduardo Franzon Mosconi,eduardo_franzon_mosconi,97,32,0,77,2T,Normal
+376,2025,B,38,Operário,operario,Leonardo Andriel dos Santos,leonardo_andriel_dos_santos,70,90,4,94,2T,Penalty
+377,2025,B,38,Coritiba S.a.f.,coritiba_s_a_f,Sebastian Gomez Londono,sebastian_gomez_londono,19,38,0,38,1T,Normal
+377,2025,B,38,Coritiba S.a.f.,coritiba_s_a_f,Iury Lirio Freitas de Castilho,iury_lirio_freitas_de_castilho,77,44,0,44,1T,Normal
+377,2025,B,38,Amazonas Saf,amazonas_saf,Luan Santos Silva,luan_santos_silva,9,4,0,49,2T,Normal
+378,2025,B,38,Paysandu,paysandu,Petterson Novaes Reis,petterson_novaes_reis,19,7,0,7,1T,Normal
+378,2025,B,38,Athletic Saf,athletic_saf,Alessio Sergio Fernando da Cruz,alessio_sergio_fernando_da_cruz,17,32,0,77,2T,Normal
+378,2025,B,38,Athletic Saf,athletic_saf,Alessio Sergio Fernando da Cruz,alessio_sergio_fernando_da_cruz,17,42,0,87,2T,Normal
+379,2025,B,38,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Romulo Azevedo Simao,romulo_azevedo_simao,25,4,0,4,1T,Penalty
+379,2025,B,38,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Luis Felipe Oyama,luis_felipe_oyama,6,32,0,32,1T,Normal
+379,2025,B,38,Gremio Novorizontino - Saf,gremio_novorizontino_saf,Romulo Azevedo Simao,romulo_azevedo_simao,25,12,0,57,2T,Normal
 167,2026,B,0,Avaí,avai,Douglas da Silva Teixeira,douglas_da_silva_teixeira,36,6,0,6,1T,Normal
 167,2026,B,0,Avaí,avai,Daniel dos Santos Penha,daniel_dos_santos_penha,14,90,6,96,2T,Normal
 214,2026,B,0,Operário,operario,Vinicius Alessandro Mingotti,vinicius_alessandro_mingotti,9,45,0,90,2T,Normal

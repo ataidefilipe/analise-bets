@@ -388,6 +388,18 @@ def _fim_da_secao(tokens: List[str], inicio: int, marcadores: Tuple[str, ...]) -
     return len(tokens)
 
 
+def _e_numero_de_camisa(token: str) -> bool:
+    """
+    Distingue um numero de camisa de um registro CBF pela quantidade de digitos.
+
+    Nao vale limitar a 1..99: o Ceara em 2025 relacionou a camisa 100, e o Palmeiras a 188.
+    O que separa os dois campos e o tamanho — camisa tem ate tres digitos, registro tem seis
+    ou sete. Um limite mais apertado descartaria atletas reais, que foi o efeito da primeira
+    versao desta funcao.
+    """
+    return token.isdigit() and len(token) <= 3 and int(token) >= 1
+
+
 def parse_relacao_de_atletas(tokens: List[str], meta: Dict[str, Any]) -> List[Dict[str, Any]]:
     """
     Extrai a relação de atletas de uma súmula já tokenizada.
@@ -422,15 +434,30 @@ def parse_relacao_de_atletas(tokens: List[str], meta: Dict[str, Any]) -> List[Di
             continue
 
         m_cond = RE_CONDICAO.match(tok)
-        if not m_cond or j < 3 or j + 2 >= len(secao):
+        if not m_cond or j < 3 or j + 1 >= len(secao):
             continue
 
         numero_raw, apelido, nome_completo = secao[j - 3], secao[j - 2], secao[j - 1]
-        if not numero_raw.isdigit():
+
+        # Quando o apelido vem vazio na sumula, a coluna desaparece e todos os campos
+        # deslizam uma posicao: o token em `j-3` passa a ser o registro CBF da linha
+        # anterior — seis digitos que `isdigit()` aceita sem reclamar. Sem esta validacao a
+        # linha entra na base com o registro no lugar da camisa e sem registro nenhum, e o
+        # atleta fica sem identidade: e exatamente o defeito que a F2-04 existe para evitar.
+        if not _e_numero_de_camisa(numero_raw) and _e_numero_de_camisa(apelido):
+            numero_raw, apelido, nome_completo = apelido, "", nome_completo
+        if not _e_numero_de_camisa(numero_raw):
             continue
 
-        presenca = secao[j + 1]
-        registro = secao[j + 2]
+        # A marca de presenca (P/A) tambem pode faltar; nesse caso o registro vem logo apos
+        # a condicao.
+        seguinte = secao[j + 1]
+        if seguinte in ("P", "A"):
+            presenca = seguinte
+            registro = secao[j + 2] if j + 2 < len(secao) else ""
+        else:
+            presenca = ""
+            registro = seguinte
         nome_truncado = nome_completo.rstrip().endswith("...")
         nome_limpo = nome_completo.replace("...", "").strip()
 
@@ -447,7 +474,7 @@ def parse_relacao_de_atletas(tokens: List[str], meta: Dict[str, Any]) -> List[Di
             "nome_truncado": nome_truncado,
             # Quando o nome completo vem truncado pela largura da coluna, o apelido e o
             # numero de registro sao as identificacoes confiaveis.
-            "atleta_slug": slugify(nome_limpo if not nome_truncado else apelido),
+            "atleta_slug": slugify(apelido if (nome_truncado and apelido) else nome_limpo),
             "apelido_slug": slugify(apelido),
             "condicao": "Titular" if m_cond.group(1) == "T" else "Reserva",
             "goleiro": m_cond.group(3) == "g",

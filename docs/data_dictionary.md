@@ -232,24 +232,37 @@ Gerados a partir do parsing direto das Súmulas Eletrônicas da CBF (`conteudo.c
 
 ---
 
+> **Súmulas brutas não são versionadas (decisão de 2026-09-18).** Os PDFs em
+> `data/raw/cbf/` ficam fora do Git. Para reconstituí-los, rode
+> `python -m src.pipeline.run_delta_pipeline --ano <ano> --series <A|B>`: o
+> `manifest_delta.json` guarda URL, ETag e SHA-256 de cada arquivo, e a detecção incremental
+> não rebaixa o que já está presente e íntegro.
+
 ## 8A. Relação de Atletas, Substituições e Minutos em Campo (tarefa F2-04)
 
 Três datasets derivados da **relação de jogadores** da súmula oficial da CBF, materializados em
 `data/processed/serie_a/` e `data/processed/serie_b/`. Existem apenas para as temporadas com
-súmula disponível: Série A 2026 e Série B 2022, 2023, 2024 e 2026. Para a Série A de 2003 a
+súmula disponível: Série A 2025 e 2026, e Série B 2022 a 2026. Para a Série A de 2003 a
 2024, cuja origem é a base do Kaggle, **não há relação de atletas na fonte**.
+
+> **Número de camisa (correção de 2026-09-18).** A camisa não se limita a 1–99: o Ceará
+> relacionou a 100 na Série A 2025 e o Palmeiras a 188. O que distingue a camisa do
+> `registro_cbf` no parsing é o tamanho do campo — camisa tem até três dígitos, registro tem
+> seis ou sete. Quando o apelido vem vazio na súmula, a coluna desaparece e os campos deslizam
+> uma posição; sem essa validação o registro era gravado no lugar da camisa e o atleta entrava
+> na base sem identidade.
 
 > **Chave de identidade.** O cruzamento entre estas tabelas e os eventos (cartões, gols) usa
 > `(temporada, partida_id, clube_slug, num_camisa)`, e o agrupamento por atleta usa
 > `registro_cbf` — nunca o nome. A súmula trunca o nome completo pela largura da coluna em
 > cerca de 40% dos registros, e apelidos se repetem dentro do mesmo elenco: o Juventude de 2026
-> tem dois atletas de mesmo apelido, de camisas 10 e 47. O `registro_cbf` está presente
-> em 100% dos 57.406 registros extraídos.
+> tem dois atletas de mesmo apelido. de camisas 10 e 47. O `registro_cbf` está presente
+> em 100% dos 107.990 registros extraídos.
 
 ### 8A.1 Dataset: `escalacoes` (`escalacoes.parquet` / `.csv`)
 * **Descrição:** Um registro por atleta relacionado em cada partida — titulares e banco.
 * **Granularidade:** 1 linha por atleta × partida.
-* **Volume:** 57.406 registros (12.097 na Série A, 45.309 na Série B).
+* **Volume:** 107.990 registros (29.356 na Série A. 78.634 na Série B).
 * **Cobertura:** 99,2% das partidas com súmula. As 11 exceções estão em
   `reports/tables/partidas_sem_escalacao.csv` e decorrem de PDFs incompletos na origem, sem a
   primeira página.

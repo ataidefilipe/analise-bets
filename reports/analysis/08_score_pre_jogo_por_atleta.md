@@ -15,7 +15,7 @@ o número esperado de cartões no 1º tempo, usando exclusivamente informação 
 
 1. **Supera a linha de base ingênua em k = 3, 5 e 10**, e perde em k = 1. Ranquear por
    "quem tem mais cartões acumulados" continua sendo melhor para apontar um único nome.
-2. **Ganho de 2,4× a 2,7× sobre a seleção aleatória** entre os atletas relacionados.
+2. **Ganho de 2,4× a 3,0× sobre a seleção aleatória** entre os atletas relacionados.
 3. **Teste de vazamento aprovado:** corromper todo o alvo a partir de um corte cronológico não
    altera nenhum dos 40.054 escores anteriores a ele.
 4. **O contraste com a Fase 1 é o ponto.** O índice de partida não superava o acaso em nenhum
@@ -43,7 +43,7 @@ disponível pré-jogo. A tarefa previa três opções, e adotou-se a terceira:
 
 Em produção, o único insumo que muda é a lista de quem entra em campo. O perfil histórico, o
 cálculo e a validação são idênticos. A escolha da fonte de produção passa a depender deste
-resultado — e, com ganho de 2,4× a 2,7×, a decisão de contratar um provedor de escalação
+resultado — e, com ganho de 2,4× a 3,0×, a decisão de contratar um provedor de escalação
 provável tem agora uma base quantitativa, que antes não existia.
 
 ---
@@ -74,9 +74,15 @@ versão do teste de vazamento a detectou.
 
 ## 4. Validação Walk-Forward
 
-Base: 57.406 registros de atleta × partida, das temporadas com súmula (Série A 2026 e Série B
-2022, 2023, 2024 e 2026). As cinco primeiras rodadas de cada temporada são descartadas, por
-não haver histórico suficiente. Restam 111 rodadas avaliadas.
+Base: 107.990 registros de atleta × partida, das temporadas com súmula (Série A 2025 e 2026;
+Série B 2022 a 2026). As cinco primeiras rodadas de cada temporada são descartadas, por não
+haver histórico suficiente. Restam 210 rodadas avaliadas.
+
+> **Atualização de 18/09/2026 (F2-02).** A ingestão da temporada 2025 nas duas séries e da
+> Série B 2024 quase dobrou a base — de 57.406 para 107.990 registros, e de 111 para 210
+> rodadas avaliadas. Os números abaixo substituem os da primeira versão. A mudança de
+> substância é que o escore passou a superar a linha de base **em todos os k**, inclusive
+> k = 1, onde antes perdia.
 
 O alvo é observável e frequente: **o atleta recebeu cartão no 1º tempo naquela partida**. Não
 se usa o ground truth da Operação Penalidade Máxima, que tem 14 casos — número insuficiente
@@ -84,20 +90,25 @@ para medir poder preditivo, como a Fase 1 demonstrou.
 
 | k | Acertos | Precisão@k do escore | Linha de base | Taxa do acaso | Ganho sobre o acaso | Supera a base? |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | 12/111 | **10,8%** | 11,7% | 4,0% | 2,73× | não |
-| 3 | 34/333 | **10,2%** | 9,0% | 4,0% | 2,58× | **sim** |
-| 5 | 53/555 | **9,6%** | 9,0% | 4,0% | 2,41× | **sim** |
-| 10 | 120/1110 | **10,8%** | 8,2% | 4,0% | 2,73× | **sim** |
+| 1 | 20/210 | **9,5%** | 9,1% | 4,0% | 2,37× | **sim** |
+| 3 | 68/630 | **10,8%** | 9,1% | 4,0% | 2,69× | **sim** |
+| 5 | 118/1050 | **11,2%** | 9,2% | 4,0% | 2,80× | **sim** |
+| 10 | 250/2100 | **11,9%** | 8,6% | 4,0% | 2,96× | **sim** |
 
 A linha de base é o ranking por cartões acumulados na temporada, conforme a DoD. A taxa do
 acaso é a proporção de atletas relacionados que recebem cartão no 1º tempo (entre titulares,
 sobe para 7,8%).
 
-**Leitura.** O escore acerta de 2,4 a 2,7 vezes mais do que sortear entre os relacionados, e
-ganha da linha de base conforme k cresce. A derrota em k = 1 é consistente com o desenho: o
-encolhimento penaliza deliberadamente atletas com pouca exposição, o que custa precisão no topo
-absoluto e paga em estabilidade ao longo da lista. Para a pergunta de produto — *dos relacionados
-de hoje, quais cinco merecem atenção?* — o comportamento em k ≥ 3 é o que importa.
+**Leitura.** O escore acerta de 2,4 a 3,0 vezes mais do que sortear entre os relacionados, e
+a vantagem sobre a linha de base **cresce com k**: de 0,4 ponto percentual em k = 1 para 3,3
+em k = 10. É o padrão que o desenho previa — o encolhimento troca precisão no topo absoluto,
+onde a amostra de cada atleta é pequena, por estabilidade ao longo da lista. Para a pergunta de
+produto — *dos relacionados de hoje, quais cinco merecem atenção?* — é o comportamento em
+k ≥ 3 que importa, e é onde a diferença aparece.
+
+Com a base anterior, metade do tamanho, o escore perdia da linha de base em k = 1. Não perde
+mais. Vale registrar o que isso não significa: a linha de base continua próxima, e o ganho
+sobre o acaso mede **atipicidade disciplinar**, não conduta.
 
 ---
 
@@ -114,7 +125,7 @@ de ficar **idênticos, bit a bit**.
 
 | Linhas comparadas | Linhas divergentes | Resultado |
 | :---: | :---: | :---: |
-| 40.054 | **0** | Aprovado |
+| 75.291 | **0** | Aprovado |
 
 O corte é feito sobre a ordem cronológica global de cada série, e não sobre o número da rodada:
 com várias temporadas na base, a rodada 10 de 2023 vem depois da rodada 30 de 2022, e cortar
@@ -128,15 +139,23 @@ diagnóstico mostra que ele **não degrada** — e a razão é estrutural:
 
 | k | Ganho com a cronologia real | Ganho com a ordem embaralhada |
 | :---: | :---: | :---: |
-| 1 | 2,73× | 1,73× |
-| 3 | 2,58× | 2,74× |
-| 5 | 2,41× | 2,56× |
-| 10 | 2,73× | 2,52× |
+| 1 | 2,37× | 2,25× |
+| 3 | 2,69× | 2,63× |
+| 5 | 2,80× | 2,67× |
+| 10 | 2,96× | 2,68× |
 
 Ao destruir a cronologia, o embaralhamento faz a janela "anterior" de cada atleta conter
-partidas futuras. Isso **dá** informação ao modelo em vez de tirar, e o desempenho sobe em
-k = 3 e k = 5. Um teste que passa tanto com vazamento quanto sem ele não testa nada. O
-embaralhamento permanece publicado como diagnóstico, não como guarda.
+partidas futuras. Isso **dá** informação ao modelo em vez de tirar. Com a base da primeira
+versão, o desempenho chegava a **subir** em k = 3 e k = 5 — um teste que passa tanto com
+vazamento quanto sem ele não testa nada.
+
+Com a base dobrada pela F2-02, o embaralhamento passou a degradar o desempenho em todos os k,
+e o teste "passaria". Isso não o reabilita, por duas razões. A primeira é que ele continua sem
+poder de detecção garantido: o sinal só apareceu porque a base cresceu, não porque o teste
+ficou melhor. A segunda é que as duas colunas não são comparáveis — o embaralhamento muda
+quais rodadas têm histórico suficiente, e a coluna embaralhada avalia 310 rodadas contra 210
+da real. O embaralhamento permanece publicado como diagnóstico, não como guarda; quem decide
+é a corrupção determinística do futuro, em 5.1.
 
 ---
 

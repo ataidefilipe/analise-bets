@@ -53,6 +53,43 @@ def test_historico_da_primeira_rodada_e_vazio():
     assert primeira["score_pre_jogo"].notna().all()
 
 
+def test_atleta_sem_registro_cbf_e_pontuado_e_nao_sai_NaN():
+    """
+    Uma súmula com layout malformado deixa o `registro_cbf` vazio. O agrupamento padrão do
+    pandas descarta chave nula, e a linha sairia sem acumulado e com escore NaN — sem erro,
+    sem aviso. Como `teste_de_vazamento` compara escores com `!=`, e `NaN != NaN` é sempre
+    verdadeiro, a lacuna se apresentava como vazamento temporal.
+
+    O atleta sem histórico tem de ser pontuado pelo prior populacional, que é a resposta
+    correta para quem não tem passado.
+    """
+    base = _base_sintetica()
+    base.loc[base["registro_cbf"] == "C", "registro_cbf"] = None
+
+    df = spj.calcular_score(base)
+    orfas = df[df["registro_cbf"].isna()]
+
+    assert len(orfas) == 6, "as linhas sem registro sumiram do resultado"
+    assert orfas["score_pre_jogo"].notna().all(), "escore NaN para atleta sem registro"
+    assert orfas["minutos_previos"].notna().all()
+    assert (orfas.sort_values("rodada")["minutos_previos"].iloc[0] == 0)
+
+
+def test_vazamento_nao_acusa_divergencia_por_escore_ausente():
+    """
+    Um escore ausente não é um vazamento. A comparação precisa tratar NaN igual a NaN, ou a
+    guarda reprova por um motivo que não é o que ela existe para detectar — e, uma vez
+    acostumados a vê-la reprovar, ninguém mais investiga quando o vazamento for real.
+    """
+    base = _base_sintetica()
+    base.loc[base["registro_cbf"] == "C", "registro_cbf"] = None
+
+    resultado = spj.teste_de_vazamento(base)
+    assert bool(resultado["aprovado"].iloc[0]), (
+        f"{int(resultado['linhas_divergentes'].iloc[0])} divergências com base sem vazamento"
+    )
+
+
 def test_historico_acumula_apenas_o_passado():
     """Na rodada r, o acumulado tem de ser exatamente o que ocorreu até r-1."""
     df = spj.calcular_score(_base_sintetica())

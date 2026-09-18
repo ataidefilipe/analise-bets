@@ -1,0 +1,20 @@
+2026-09-18 13:43:02 [INFO] CBFDeltaPipeline: ======================================================================
+2026-09-18 13:43:02 [INFO] CBFDeltaPipeline: INICIANDO EXECUÇÃO DO PIPELINE DELTA CBF (D+1)
+2026-09-18 13:43:02 [INFO] CBFDeltaPipeline: Temporada: 2025 | Séries: ['A', 'B'] | Partidas: 1 a 380
+2026-09-18 13:43:02 [INFO] CBFDeltaPipeline: ======================================================================
+2026-09-18 13:43:02 [INFO] CBFDeltaPipeline: >>> [ETAPA 1/3] Sincronizando Delta Súmulas - Série A / 2025...
+2026-09-18 13:43:02 [INFO] CBFDeltaIngestor: Iniciando delta Série A / 2025: 380 partidas a inspecionar (de 1 a 380).
+2026-09-18 13:44:35 [INFO] CBFDeltaIngestor: Delta Série A / 2025 concluído: 372 novas, 0 atualizadas, 0 inalteradas, 0 pendentes (404), 8 erros.
+2026-09-18 13:44:35 [INFO] CBFDeltaPipeline: >>> [ETAPA 1/3] Sincronizando Delta Súmulas - Série B / 2025...
+2026-09-18 13:44:35 [INFO] CBFDeltaIngestor: Iniciando delta Série B / 2025: 380 partidas a inspecionar (de 1 a 380).
+2026-09-18 13:46:02 [INFO] CBFDeltaIngestor: Delta Série B / 2025 concluído: 380 novas, 0 atualizadas, 0 inalteradas, 0 pendentes (404), 0 erros.
+2026-09-18 13:46:02 [INFO] CBFDeltaPipeline: >>> [ETAPA 2/3] Processando e Upserting 372 súmulas - Série A / 2025...
+2026-09-18 13:46:06 [INFO] CBFDeltaProcessor: Upsert concluído com sucesso para Série A / 2025: 372 partidas, 916 gols, 2010 cartões.
+2026-09-18 13:46:06 [INFO] CBFDeltaPipeline: >>> [ETAPA 2/3] Processando e Upserting 380 súmulas - Série B / 2025...
+2026-09-18 13:46:09 [INFO] CBFDeltaProcessor: Upsert concluído com sucesso para Série B / 2025: 380 partidas, 826 gols, 2087 cartões.
+2026-09-18 13:46:09 [INFO] CBFDeltaPipeline: Geração de feeds ignorada (--skip-feed).
+2026-09-18 13:46:09 [INFO] CBFDeltaPipeline: ======================================================================
+2026-09-18 13:46:09 [INFO] CBFDeltaPipeline: PIPELINE DELTA FINALIZADO EM 187.57 segundos (Sucesso: True)
+2026-09-18 13:46:09 [INFO] CBFDeltaPipeline: Resumo: 752 downloads novos, 752 partidas upserted, 1742 gols, 4097 cartões.
+2026-09-18 13:46:09 [INFO] CBFDeltaPipeline: Relatório de auditoria salvo em: data\processed\delta_pipeline_last_run.json
+2026-09-18 13:46:09 [INFO] CBFDeltaPipeline: ======================================================================

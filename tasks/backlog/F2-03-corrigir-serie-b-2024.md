@@ -4,7 +4,7 @@
 **Responsável sugerido:** Filipe Ataíde
 **Tamanho:** P
 **Depende de:** —
-**Status:** Parcialmente concluído (2026-09-16) — pendência da F2-01 fechada; ingestão da Série B 2024 segue em aberto
+**Status:** Concluído (2026-09-18) — pendência da F2-01 fechada em 16/09; ingestão da Série B 2024 concluída em 18/09, junto com a F2-02
 
 ---
 
@@ -107,3 +107,14 @@ relatório 07.
 
 **Segue em aberto:** a ingestão da Série B 2024, objeto original desta tarefa (27 cartões em
 5 partidas, contra 380 partidas esperadas).
+
+---
+
+## Fechamento (2026-09-18)
+
+A ingestão faltante foi executada junto com a F2-02: **380 de 380 partidas** da Série B 2024,
+824 gols e 2.220 cartões, sem nenhum 404. A base da Série B passa a cobrir 2022 a 2025
+integralmente.
+
+Foi nessa temporada que apareceu a súmula malformada da partida 181 (Vila Nova), que revelou
+os três defeitos encadeados descritos no registro de execução da F2-02.

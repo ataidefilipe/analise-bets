@@ -20,3 +20,13 @@ Thumbs.db
 
 # Dados restritos (mapeamento de reidentificacao) — tarefa F4-02
 data/restrito/
+
+# Logs de execucao: so os do pipeline delta sao evidencia de tarefa (DoD da F2-02)
+logs/*
+!logs/delta_*.log
+
+# Sumulas brutas da CBF: nao versionadas.
+# Sao ~2.400 PDFs e dezenas de MB, e o repositorio nao precisa deles para ser reproduzivel:
+# `data/raw/cbf/manifest_delta.json` guarda a URL, o ETag e o SHA-256 de cada arquivo, e
+# `run_delta_pipeline.py --ano <ano> --series <serie>` rebaixa e reverifica o conjunto.
+data/raw/cbf/**/*.pdf

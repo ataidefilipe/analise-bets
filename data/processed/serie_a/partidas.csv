@@ -8784,6 +8784,386 @@ partida_id,temporada,rodada,data,horario,clube_mandante,clube_mandante_slug,club
 8783,2024,38,2024-12-08,16:04,Cuiaba,cuiaba,Vasco,vasco,1,2,3,-1,Vitoria Visitante,Vasco,Arena Pantanal,MT,RJ,4-3-3,4-3-2-1,B. Franco,F. Loureiro,,,,,
 8784,2024,38,2024-12-08,16:04,Palmeiras,palmeiras,Fluminense,fluminense,0,1,1,-1,Vitoria Visitante,Fluminense,Allianz Parque,SP,RJ,4-2-3-1,4-2-3-1,A. Moreira Ferreira,L. Venker de Menezes,,,,,
 8785,2024,38,2024-12-08,16:05,Gremio,gremio,Corinthians,corinthians,0,3,3,-3,Vitoria Visitante,Corinthians,Arena do Grêmio,RS,SP,4-4-2,4-3-1-2,Renato Gaúcho,R. Díaz,,,,,
+95,2025,0,,,,,,,0,1,1,-1,Vitoria Visitante,,,,,,,,,A,,,,
+156,2025,0,,,,,,,0,6,6,-6,Vitoria Visitante,,,,,,,,,A,,,,
+1,2025,1,2025-03-29,21:00,Flamengo,flamengo,Internacional,internacional,1,1,2,0,Empate,-,Jornalista Mário Filho,RJ,RS,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Davi de Oliveira Lacerda
+2,2025,1,2025-03-30,18:30,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Santos Fc,santos_fc,2,1,3,1,Vitoria Mandante,Vasco da Gama S.a.f.,São Januário,RJ,SP,,,,,A,São Januário,Rio de Janeiro,,Rafael Rodrigo Klein
+3,2025,1,2025-03-30,16:00,Palmeiras,palmeiras,Botafogo,botafogo,0,0,0,0,Empate,-,Palmeiras,SP,RJ,,,,,A,Palmeiras,SP,,Ramon Abatti Abel
+4,2025,1,2025-03-29,18:30,São Paulo,sao_paulo,Sport,sport,0,0,0,0,Empate,-,Cícero Pompeu de Toledo,SP,PE,,,,,A,Cícero Pompeu de Toledo,Sao Paulo,,Felipe Fernandes de Lima
+5,2025,1,2025-03-31,20:00,Red Bull Bragantino,red_bull_bragantino,Ceará,ceara,2,2,4,0,Empate,-,Nabi Abi Chedid,SP,CE,,,,,A,Nabi Abi Chedid,Braganca Paulista,,Bruno Pereira Vasconcelos
+6,2025,1,2025-03-29,18:30,Cruzeiro Saf,cruzeiro_saf,Mirassol,mirassol,2,1,3,1,Vitoria Mandante,Cruzeiro Saf,Magalhães Pinto,MG,SP,,,,,A,Magalhães Pinto,Belo Horizonte,,Alex Gomes Stefano
+7,2025,1,2025-03-29,18:30,Grêmio,gremio,Atlético Mineiro Saf,atletico_mineiro_saf,2,1,3,1,Vitoria Mandante,Grêmio,Arena do Grêmio,RS,MG,,,,,A,Arena do Grêmio,Porto Alegre,,Raphael Claus
+8,2025,1,2025-03-30,20:00,Bahia,bahia,Corinthians,corinthians,1,1,2,0,Empate,-,Octávio Mangabeira,BA,SP,,,,,A,Octávio Mangabeira,Salvador,,Bruno Arleu de Araujo
+9,2025,1,2025-03-29,18:30,Fortaleza,fortaleza,Fluminense,fluminense,2,0,2,2,Vitoria Mandante,Fortaleza,Governador Plácido Aderaldo Castelo,CE,RJ,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Rodrigo Jose Pereira de Lima
+10,2025,1,2025-03-29,18:30,Juventude,juventude,Vitória,vitoria,2,0,2,2,Vitoria Mandante,Juventude,Médico:,RS,BA,,,,,A,Médico:,Caxias do Sul,,Paulo Cesar Zanovelli da Silva
+11,2025,2,2025-04-06,16:00,Fluminense,fluminense,Red Bull Bragantino,red_bull_bragantino,2,1,3,1,Vitoria Mandante,Fluminense,Jornalista Mário Filho,RJ,SP,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Wilton Pereira Sampaio
+12,2025,2,2025-04-05,21:00,Botafogo,botafogo,Juventude,juventude,2,0,2,2,Vitoria Mandante,Botafogo,Nilton Santos,RJ,RS,,,,,A,Nilton Santos,Rio de Janeiro,,Rodrigo Jose Pereira de Lima
+13,2025,2,2025-04-05,18:30,Corinthians,corinthians,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,3,0,3,3,Vitoria Mandante,Corinthians,Arena Corinthians,SP,RJ,,,,,A,Arena Corinthians,Sao Paulo,,Anderson Daronco
+14,2025,2,2025-04-06,20:30,Santos Fc,santos_fc,Bahia,bahia,2,2,4,0,Empate,-,Urbano Caldeira,SP,BA,,,,,A,Urbano Caldeira,Santos,,Alex Gomes Stefano
+15,2025,2,2025-04-06,18:30,Mirassol,mirassol,Fortaleza Ec Saf,fortaleza_ec_saf,1,1,2,0,Empate,-,José Maria de Campos Maia,SP,CE,,,,,A,José Maria de Campos Maia,Mirassol,,Savio Pereira Sampaio
+16,2025,2,2025-04-06,16:00,Atlético Mineiro Saf,atletico_mineiro_saf,São Paulo,sao_paulo,0,0,0,0,Empate,-,Magalhães Pinto,MG,SP,,,,,A,Magalhães Pinto,Belo Horizonte,,Ramon Abatti Abel
+17,2025,2,2025-04-06,18:30,Internacional,internacional,Cruzeiro Saf,cruzeiro_saf,3,0,3,3,Vitoria Mandante,Internacional,José Pinheiro Borda,RS,MG,,,,,A,José Pinheiro Borda,Porto Alegre,,Marcelo de Lima Henrique
+18,2025,2,2025-04-06,18:30,Vitória,vitoria,Flamengo,flamengo,1,2,3,-1,Vitoria Visitante,Flamengo,Assistente Técnico:,BA,RJ,,,,,A,Assistente Técnico:,Salvador,,Rafael Rodrigo Klein
+19,2025,2,2025-04-05,18:30,Ceará,ceara,Grêmio,gremio,2,0,2,2,Vitoria Mandante,Ceará,Governador Plácido Aderaldo Castelo,CE,RS,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Edina Alves Batista
+20,2025,2,2025-04-06,18:30,Sport,sport,Palmeiras,palmeiras,1,2,3,-1,Vitoria Visitante,Palmeiras,R,PE,SP,,,,,A,R,Recife,,Bruno Arleu de Araujo
+21,2025,3,2025-04-13,19:30,Fluminense,fluminense,Santos Fc,santos_fc,1,0,1,1,Vitoria Mandante,Fluminense,Jornalista Mário Filho,RJ,SP,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Felipe Fernandes de Lima
+22,2025,3,2025-04-12,21:00,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Sport,sport,3,1,4,2,Vitoria Mandante,Vasco da Gama S.a.f.,São Januário,RJ,PE,,,,,A,São Januário,Rio de Janeiro,,Wilton Pereira Sampaio
+23,2025,3,2025-04-12,18:30,Palmeiras,palmeiras,Corinthians,corinthians,2,0,2,2,Vitoria Mandante,Palmeiras,T,SP,SP,,,,,A,T,Barueri,,Rafael Rodrigo Klein
+24,2025,3,2025-04-13,17:30,São Paulo,sao_paulo,Cruzeiro Saf,cruzeiro_saf,1,1,2,0,Empate,-,Cícero Pompeu de Toledo,SP,MG,,,,,A,Cícero Pompeu de Toledo,Sao Paulo,,Rodrigo Jose Pereira de Lima
+25,2025,3,2025-04-12,16:00,Red Bull Bragantino,red_bull_bragantino,Botafogo,botafogo,1,0,1,1,Vitoria Mandante,Red Bull Bragantino,Nabi Abi Chedid,SP,RJ,,,,,A,Nabi Abi Chedid,Braganca Paulista,,Anderson Daronco
+26,2025,3,2025-04-13,20:30,Atlético Mineiro Saf,atletico_mineiro_saf,Vitória,vitoria,2,2,4,0,Empate,-,Assistente Técnico:,MG,BA,,,,,A,Assistente Técnico:,Belo Horizonte,,Davi de Oliveira Lacerda
+27,2025,3,2025-04-13,17:30,Grêmio,gremio,Flamengo,flamengo,0,2,2,-2,Vitoria Visitante,Flamengo,Arena do Grêmio,RS,RJ,,,,,A,Arena do Grêmio,Porto Alegre,,Ramon Abatti Abel
+28,2025,3,2025-04-13,16:00,Bahia,bahia,Mirassol,mirassol,1,1,2,0,Empate,-,Octávio Mangabeira,BA,SP,,,,,A,Octávio Mangabeira,Salvador,,Braulio da Silva Machado
+29,2025,3,2025-04-13,20:00,Fortaleza Ec Saf,fortaleza_ec_saf,Internacional,internacional,0,0,0,0,Empate,-,Governador Plácido Aderaldo Castelo,CE,RS,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Flavio Rodrigues de Souza
+30,2025,3,2025-04-12,16:00,Juventude,juventude,Ceará,ceara,2,1,3,1,Vitoria Mandante,Juventude,Alfredo Jaconi,RS,CE,,,,,A,Alfredo Jaconi,Caxias do Sul,,Lucas Casagrande
+31,2025,4,2025-04-16,,Flamengo,flamengo,Juventude,juventude,0,0,0,0,Empate,-,,RJ,,,,,,A,,,,
+32,2025,4,2025-04-16,18:30,Botafogo,botafogo,São Paulo,sao_paulo,2,2,4,0,Empate,-,Nilton Santos,RJ,SP,,,,,A,Nilton Santos,Rio de Janeiro,,Davi de Oliveira Lacerda
+33,2025,4,2025-04-16,19:30,Corinthians,corinthians,Fluminense,fluminense,0,2,2,-2,Vitoria Visitante,Fluminense,Arena Corinthians,SP,RJ,,,,,A,Arena Corinthians,Sao Paulo,,Rodrigo Jose Pereira de Lima
+34,2025,4,2025-04-16,21:30,Santos Fc,santos_fc,Atlético Mineiro Saf,atletico_mineiro_saf,2,0,2,2,Vitoria Mandante,Santos Fc,Urbano Caldeira,SP,MG,,,,,A,Urbano Caldeira,Santos,,Braulio da Silva Machado
+35,2025,4,2025-04-16,19:00,Mirassol,mirassol,Grêmio,gremio,4,1,5,3,Vitoria Mandante,Mirassol,José Maria de Campos Maia,SP,RS,,,,,A,José Maria de Campos Maia,Mirassol,,Lucas Paulo Torezin
+36,2025,4,2025-04-17,21:30,Cruzeiro Saf,cruzeiro_saf,Bahia,bahia,3,0,3,3,Vitoria Mandante,Cruzeiro Saf,Magalhães Pinto,MG,BA,,,,,A,Magalhães Pinto,Belo Horizonte,,Flavio Rodrigues de Souza
+37,2025,4,2025-04-16,19:30,Internacional,internacional,Palmeiras,palmeiras,0,1,1,-1,Vitoria Visitante,Palmeiras,T,RS,SP,,,,,A,T,Porto Alegre,,Felipe Fernandes de Lima
+38,2025,4,2025-04-16,21:30,Vitória,vitoria,Fortaleza Ec Saf,fortaleza_ec_saf,2,1,3,1,Vitoria Mandante,Vitória,Assistente Técnico:,BA,CE,,,,,A,Assistente Técnico:,Salvador,,Raphael Claus
+39,2025,4,2025-04-15,21:30,Ceará,ceara,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,2,1,3,1,Vitoria Mandante,Ceará,Governador Plácido Aderaldo Castelo,CE,RJ,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Denis da Silva Ribeiro Serafim
+40,2025,4,2025-04-16,19:00,Sport,sport,Red Bull Bragantino,red_bull_bragantino,0,1,1,-1,Vitoria Visitante,Red Bull Bragantino,Adelmar da Costa Carvalho,PE,SP,,,,,A,Adelmar da Costa Carvalho,Recife,,Paulo Cesar Zanovelli da Silva
+41,2025,5,2025-04-20,18:30,Fluminense,fluminense,Vitória,vitoria,1,1,2,0,Empate,-,Médico:,RJ,BA,,,,,A,Médico:,Rio de Janeiro,,Matheus Delgado Candançan
+42,2025,5,2025-04-19,18:30,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Flamengo,flamengo,0,0,0,0,Empate,-,Jornalista Mário Filho,RJ,RJ,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Raphael Claus
+43,2025,5,2025-04-19,16:00,Corinthians,corinthians,Sport,sport,2,1,3,1,Vitoria Mandante,Corinthians,Arena Corinthians,SP,PE,,,,,A,Arena Corinthians,Sao Paulo,,Anderson Daronco
+44,2025,5,2025-04-20,16:00,São Paulo,sao_paulo,Santos Fc,santos_fc,2,1,3,1,Vitoria Mandante,São Paulo,Cícero Pompeu de Toledo,SP,SP,,,,,A,Cícero Pompeu de Toledo,Sao Paulo,,Wilton Pereira Sampaio
+45,2025,5,2025-04-20,20:30,Red Bull Bragantino,red_bull_bragantino,Cruzeiro Saf,cruzeiro_saf,1,0,1,1,Vitoria Mandante,Red Bull Bragantino,Nabi Abi Chedid,SP,MG,,,,,A,Nabi Abi Chedid,Braganca Paulista,,Alex Gomes Stefano
+46,2025,5,2025-04-20,16:00,Atlético Mineiro Saf,atletico_mineiro_saf,Botafogo,botafogo,1,0,1,1,Vitoria Mandante,Atlético Mineiro Saf,Magalhães Pinto,MG,RJ,,,,,A,Magalhães Pinto,Belo Horizonte,,Ramon Abatti Abel
+47,2025,5,2025-04-19,21:00,Grêmio,gremio,Internacional,internacional,1,1,2,0,Empate,-,Arena do Grêmio,RS,RS,,,,,A,Arena do Grêmio,Porto Alegre,,Braulio da Silva Machado
+48,2025,5,2025-04-21,20:00,Bahia,bahia,Ceará,ceara,1,0,1,1,Vitoria Mandante,Bahia,Octávio Mangabeira,BA,CE,,,,,A,Octávio Mangabeira,Salvador,,Rafael Rodrigo Klein
+49,2025,5,2025-04-20,18:30,Fortaleza Ec Saf,fortaleza_ec_saf,Palmeiras,palmeiras,1,2,3,-1,Vitoria Visitante,Palmeiras,T,CE,SP,,,,,A,T,Fortaleza,,Paulo Cesar Zanovelli da Silva
+50,2025,5,2025-04-20,11:00,Juventude,juventude,Mirassol,mirassol,2,2,4,0,Empate,-,Alfredo Jaconi,RS,SP,,,,,A,Alfredo Jaconi,Caxias do Sul,,Paulo Belence Alves dos Prazeres Filho
+51,2025,6,2025-04-27,16:00,Flamengo,flamengo,Corinthians,corinthians,4,0,4,4,Vitoria Mandante,Flamengo,Jornalista Mário Filho,RJ,SP,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Ramon Abatti Abel
+52,2025,6,2025-04-26,21:00,Botafogo,botafogo,Fluminense,fluminense,2,0,2,2,Vitoria Mandante,Botafogo,Nilton Santos,RJ,RJ,,,,,A,Nilton Santos,Rio de Janeiro,,Bruno Arleu de Araujo
+53,2025,6,2025-04-27,18:30,Palmeiras,palmeiras,Bahia,bahia,0,1,1,-1,Vitoria Visitante,Bahia,R,SP,BA,,,,,A,R,Sao Paulo,,Wilton Pereira Sampaio
+54,2025,6,2025-04-27,20:30,Santos Fc,santos_fc,Red Bull Bragantino,red_bull_bragantino,1,2,3,-1,Vitoria Visitante,Red Bull Bragantino,Urbano Caldeira,SP,SP,,,,,A,Urbano Caldeira,Santos,,Raphael Claus
+55,2025,6,2025-04-26,18:30,Mirassol,mirassol,Atlético Mineiro Saf,atletico_mineiro_saf,2,2,4,0,Empate,-,José Maria de Campos Maia,SP,MG,,,,,A,José Maria de Campos Maia,Mirassol,,Davi de Oliveira Lacerda
+56,2025,6,2025-04-27,18:30,Cruzeiro Saf,cruzeiro_saf,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,1,0,1,1,Vitoria Mandante,Cruzeiro Saf,Parque do Sabiá,MG,RJ,,,,,A,Parque do Sabiá,Uberlandia,,Rafael Rodrigo Klein
+57,2025,6,2025-04-26,16:00,Internacional,internacional,Juventude,juventude,3,1,4,2,Vitoria Mandante,Internacional,José Pinheiro Borda,RS,RS,,,,,A,José Pinheiro Borda,Porto Alegre,,Flavio Rodrigues de Souza
+58,2025,6,2025-04-27,18:30,Vitória,vitoria,Grêmio,gremio,1,1,2,0,Empate,-,Assistente Técnico:,BA,RS,,,,,A,Assistente Técnico:,Salvador,,Felipe Fernandes de Lima
+59,2025,6,2025-04-26,18:30,Ceará,ceara,São Paulo,sao_paulo,1,1,2,0,Empate,-,Governador Plácido Aderaldo Castelo,CE,SP,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Anderson Daronco
+60,2025,6,2025-04-26,20:00,Sport,sport,Fortaleza Ec Saf,fortaleza_ec_saf,0,0,0,0,Empate,-,Adelmar da Costa Carvalho,PE,CE,,,,,A,Adelmar da Costa Carvalho,Recife,,Matheus Delgado Candançan
+61,2025,7,2025-05-03,18:30,Fluminense,fluminense,Sport,sport,2,1,3,1,Vitoria Mandante,Fluminense,Jornalista Mário Filho,RJ,PE,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Rafael Rodrigo Klein
+62,2025,7,2025-05-04,16:00,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Palmeiras,palmeiras,0,1,1,-1,Vitoria Visitante,Palmeiras,T,RJ,SP,,,,,A,T,Brasilia,,Davi de Oliveira Lacerda
+63,2025,7,2025-05-03,18:30,Corinthians,corinthians,Internacional,internacional,4,2,6,2,Vitoria Mandante,Corinthians,Arena Corinthians,SP,RS,,,,,A,Arena Corinthians,Sao Paulo,,Paulo Cesar Zanovelli da Silva
+64,2025,7,2025-05-02,21:30,São Paulo,sao_paulo,Fortaleza Ec Saf,fortaleza_ec_saf,0,0,0,0,Empate,-,Cícero Pompeu de Toledo,SP,CE,,,,,A,Cícero Pompeu de Toledo,Sao Paulo,,Wagner do Nascimento Magalhaes
+65,2025,7,2025-05-05,19:00,Red Bull Bragantino,red_bull_bragantino,Mirassol,mirassol,1,0,1,1,Vitoria Mandante,Red Bull Bragantino,Arbitragem,SP,SP,,,,,A,Arbitragem,Braganca Paulista,,Lucas Canetto Bellote
+66,2025,7,2025-05-04,18:30,Cruzeiro Saf,cruzeiro_saf,Flamengo,flamengo,2,1,3,1,Vitoria Mandante,Cruzeiro Saf,Magalhães Pinto,MG,RJ,,,,,A,Magalhães Pinto,Belo Horizonte,,Wilton Pereira Sampaio
+67,2025,7,2025-05-04,16:00,Grêmio,gremio,Santos Fc,santos_fc,1,0,1,1,Vitoria Mandante,Grêmio,Arena do Grêmio,RS,SP,,,,,A,Arena do Grêmio,Porto Alegre,,Bruno Arleu de Araujo
+68,2025,7,2025-05-03,21:00,Bahia,bahia,Botafogo,botafogo,1,0,1,1,Vitoria Mandante,Bahia,Octávio Mangabeira,BA,RJ,,,,,A,Octávio Mangabeira,Salvador,,Flavio Rodrigues de Souza
+69,2025,7,2025-05-03,18:30,Ceará,ceara,Vitória,vitoria,1,0,1,1,Vitoria Mandante,Ceará,Assistente Técnico:,CE,BA,,,,,A,Assistente Técnico:,Fortaleza,,Alex Gomes Stefano
+70,2025,7,2025-05-05,20:00,Juventude,juventude,Atlético Mineiro Saf,atletico_mineiro_saf,0,1,1,-1,Vitoria Visitante,Atlético Mineiro Saf,Alfredo Jaconi,RS,MG,,,,,A,Alfredo Jaconi,Caxias do Sul,,Bruno Pereira Vasconcelos
+71,2025,8,2025-05-10,21:00,Flamengo,flamengo,Bahia,bahia,1,0,1,1,Vitoria Mandante,Flamengo,Jornalista Mário Filho,RJ,BA,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Anderson Daronco
+72,2025,8,2025-05-11,20:00,Botafogo,botafogo,Internacional,internacional,4,0,4,4,Vitoria Mandante,Botafogo,Nilton Santos,RJ,RS,,,,,A,Nilton Santos,Rio de Janeiro,,Matheus Delgado Candancan
+73,2025,8,2025-05-11,17:30,Palmeiras,palmeiras,São Paulo,sao_paulo,1,0,1,1,Vitoria Mandante,Palmeiras,T,SP,SP,,,,,A,T,Barueri,,Rafael Rodrigo Klein
+74,2025,8,2025-05-12,20:00,Santos Fc,santos_fc,Ceará,ceara,0,0,0,0,Empate,-,Allianz Parque,SP,CE,,,,,A,Allianz Parque,Sao Paulo,,Felipe Fernandes de Lima
+75,2025,8,2025-05-10,18:30,Mirassol,mirassol,Corinthians,corinthians,2,1,3,1,Vitoria Mandante,Mirassol,José Maria de Campos Maia,SP,SP,,,,,A,José Maria de Campos Maia,Mirassol,,Joao Vitor Gobi
+76,2025,8,2025-05-11,17:30,Atlético Mineiro Saf,atletico_mineiro_saf,Fluminense,fluminense,3,2,5,1,Vitoria Mandante,Atlético Mineiro Saf,ARENA MRV,MG,RJ,,,,,A,ARENA MRV,Belo Horizonte,,Ramon Abatti Abel
+77,2025,8,2025-05-10,18:30,Grêmio,gremio,Red Bull Bragantino,red_bull_bragantino,1,1,2,0,Empate,-,Arena do Grêmio,RS,SP,,,,,A,Arena do Grêmio,Porto Alegre,,Davi de Oliveira Lacerda
+78,2025,8,2025-05-10,18:30,Vitória,vitoria,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,2,1,3,1,Vitoria Mandante,Vitória,Assistente Técnico:,BA,RJ,,,,,A,Assistente Técnico:,Salvador,,Wilton Pereira Sampaio
+79,2025,8,2025-05-10,16:00,Fortaleza Ec Saf,fortaleza_ec_saf,Juventude,juventude,5,0,5,5,Vitoria Mandante,Fortaleza Ec Saf,Presidente Vargas,CE,RS,,,,,A,Presidente Vargas,Fortaleza,,Lucas Paulo Torezin
+80,2025,8,2025-05-11,16:00,Sport,sport,Cruzeiro Saf,cruzeiro_saf,0,4,4,-4,Vitoria Visitante,Cruzeiro Saf,Adelmar da Costa Carvalho,PE,MG,,,,,A,Adelmar da Costa Carvalho,Recife,,Raphael Claus
+81,2025,9,2025-05-18,18:30,Flamengo,flamengo,Botafogo,botafogo,0,0,0,0,Empate,-,Jornalista Mário Filho,RJ,RJ,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Bruno Arleu de Araujo
+82,2025,9,2025-05-17,18:30,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Fortaleza Ec Saf,fortaleza_ec_saf,3,0,3,3,Vitoria Mandante,Vasco da Gama S.a.f.,São Januário,RJ,CE,,,,,A,São Januário,Rio de Janeiro,,Anderson Daronco
+83,2025,9,2025-05-18,16:00,Corinthians,corinthians,Santos Fc,santos_fc,1,0,1,1,Vitoria Mandante,Corinthians,Arena Corinthians,SP,SP,,,,,A,Arena Corinthians,Sao Paulo,,Raphael Claus
+84,2025,9,2025-05-17,21:00,São Paulo,sao_paulo,Grêmio,gremio,2,1,3,1,Vitoria Mandante,São Paulo,Cícero Pompeu de Toledo,SP,RS,,,,,A,Cícero Pompeu de Toledo,Sao Paulo,,Rodrigo Jose Pereira de Lima
+85,2025,9,2025-05-18,18:30,Red Bull Bragantino,red_bull_bragantino,Palmeiras,palmeiras,1,2,3,-1,Vitoria Visitante,Palmeiras,Palmeiras,SP,SP,,,,,A,Palmeiras,SP,,Marcelo de Lima Henrique
+86,2025,9,2025-05-18,20:30,Cruzeiro Saf,cruzeiro_saf,Atlético Mineiro Saf,atletico_mineiro_saf,0,0,0,0,Empate,-,Magalhães Pinto,MG,MG,,,,,A,Magalhães Pinto,Belo Horizonte,,Flavio Rodrigues de Souza
+87,2025,9,2025-05-18,20:30,Internacional,internacional,Mirassol,mirassol,1,1,2,0,Empate,-,José Pinheiro Borda,RS,SP,,,,,A,José Pinheiro Borda,Porto Alegre,,Wagner do Nascimento Magalhaes
+88,2025,9,2025-05-18,16:00,Bahia,bahia,Vitória,vitoria,2,1,3,1,Vitoria Mandante,Bahia,Médico:,BA,BA,,,,,A,Médico:,Salvador,,Ramon Abatti Abel
+89,2025,9,2025-05-17,16:00,Ceará,ceara,Sport,sport,2,0,2,2,Vitoria Mandante,Ceará,Governador Plácido Aderaldo Castelo,CE,PE,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Gustavo Ervino Bauermann
+90,2025,9,2025-05-18,16:00,Juventude,juventude,Fluminense,fluminense,1,1,2,0,Empate,-,Alfredo Jaconi,RS,RJ,,,,,A,Alfredo Jaconi,Caxias do Sul,,Wilton Pereira Sampaio
+91,2025,10,2025-05-24,18:30,Fluminense,fluminense,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,2,1,3,1,Vitoria Mandante,Fluminense,Jornalista Mário Filho,RJ,RJ,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Rodrigo Jose Pereira de Lima
+92,2025,10,2025-06-04,20:00,Botafogo,botafogo,Ceará,ceara,3,2,5,1,Vitoria Mandante,Botafogo,Nilton Santos,RJ,CE,,,,,A,Nilton Santos,Rio de Janeiro,,Edina Alves Batista
+93,2025,10,2025-05-25,16:00,Palmeiras,palmeiras,Flamengo,flamengo,0,2,2,-2,Vitoria Visitante,Flamengo,T,SP,RJ,,,,,A,T,Sao Paulo,,Ramon Abatti Abel
+94,2025,10,2025-05-24,18:30,São Paulo,sao_paulo,Mirassol,mirassol,0,2,2,-2,Vitoria Visitante,Mirassol,Cícero Pompeu de Toledo,SP,SP,,,,,A,Cícero Pompeu de Toledo,Sao Paulo,,Alex Gomes Stefano
+96,2025,10,2025-05-24,21:00,Atlético Mineiro Saf,atletico_mineiro_saf,Corinthians,corinthians,0,0,0,0,Empate,-,ARENA MRV,MG,SP,,,,,A,ARENA MRV,Belo Horizonte,,Rafael Rodrigo Klein
+97,2025,10,2025-05-25,11:00,Grêmio,gremio,Bahia,bahia,1,0,1,1,Vitoria Mandante,Grêmio,Arena do Grêmio,RS,BA,,,,,A,Arena do Grêmio,Porto Alegre,,Bruno Arleu de Araujo
+98,2025,10,2025-05-25,18:30,Vitória,vitoria,Santos Fc,santos_fc,0,1,1,-1,Vitoria Visitante,Santos Fc,Assistente Técnico:,BA,SP,,,,,A,Assistente Técnico:,Salvador,,Anderson Daronco
+99,2025,10,2025-05-25,20:30,Fortaleza Ec Saf,fortaleza_ec_saf,Cruzeiro Saf,cruzeiro_saf,0,2,2,-2,Vitoria Visitante,Cruzeiro Saf,Governador Plácido Aderaldo Castelo,CE,MG,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Joao Vitor Gobi
+100,2025,10,2025-05-25,16:00,Sport,sport,Internacional,internacional,1,1,2,0,Empate,-,Adelmar da Costa Carvalho,PE,RS,,,,,A,Adelmar da Costa Carvalho,Recife,,Davi de Oliveira Lacerda
+101,2025,11,2025-06-01,18:30,Flamengo,flamengo,Fortaleza Ec Saf,fortaleza_ec_saf,5,0,5,5,Vitoria Mandante,Flamengo,Jornalista Mário Filho,RJ,CE,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Gustavo Ervino Bauermann
+102,2025,11,2025-05-31,21:00,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Red Bull Bragantino,red_bull_bragantino,0,2,2,-2,Vitoria Visitante,Red Bull Bragantino,São Januário,RJ,SP,,,,,A,São Januário,Rio de Janeiro,,Paulo Cesar Zanovelli da Silva
+103,2025,11,2025-06-01,18:30,CORINTHIANS,corinthians,Vitória,vitoria,0,0,0,0,Empate,-,Assistente Técnico:,SP,BA,,,,,A,Assistente Técnico:,Sao Paulo,,Felipe Fernandes de Lima
+104,2025,11,2025-06-01,16:00,Santos Fc,santos_fc,Botafogo,botafogo,0,1,1,-1,Vitoria Visitante,Botafogo,Urbano Caldeira,SP,RJ,,,,,A,Urbano Caldeira,Santos,,Davi de Oliveira Lacerda
+105,2025,11,2025-06-01,11:00,Mirassol,mirassol,Sport,sport,1,0,1,1,Vitoria Mandante,Mirassol,José Maria de Campos Maia,SP,PE,,,,,A,José Maria de Campos Maia,Mirassol,,Lucas Casagrande
+106,2025,11,2025-06-01,19:30,Cruzeiro Saf,cruzeiro_saf,Palmeiras,palmeiras,2,1,3,1,Vitoria Mandante,Cruzeiro Saf,Palmeiras,MG,SP,,,,,A,Palmeiras,SP,,Rodrigo Jose Pereira de Lima
+107,2025,11,2025-06-01,20:30,Internacional,internacional,Fluminense,fluminense,0,2,2,-2,Vitoria Visitante,Fluminense,José Pinheiro Borda,RS,RJ,,,,,A,José Pinheiro Borda,Porto Alegre,,Lucas Paulo Torezin
+108,2025,11,2025-05-31,18:30,Bahia,bahia,São Paulo,sao_paulo,2,1,3,1,Vitoria Mandante,Bahia,Octávio Mangabeira,BA,SP,,,,,A,Octávio Mangabeira,Salvador,,Anderson Daronco
+109,2025,11,2025-06-01,18:30,Ceará,ceara,Atlético Mineiro Saf,atletico_mineiro_saf,0,1,1,-1,Vitoria Visitante,Atlético Mineiro Saf,Governador Plácido Aderaldo Castelo,CE,MG,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Alex Gomes Stefano
+110,2025,11,2025-06-01,16:00,Juventude,juventude,Grêmio,gremio,0,2,2,-2,Vitoria Visitante,Grêmio,Alfredo Jaconi,RS,RS,,,,,A,Alfredo Jaconi,Caxias do Sul,,Raphael Claus
+111,2025,12,2025-10-29,19:00,Fluminense,fluminense,Ceará,ceara,1,0,1,1,Vitoria Mandante,Fluminense,Jornalista Mário Filho,RJ,CE,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Flavio Rodrigues de Souza
+112,2025,12,2025-09-17,19:30,Botafogo,botafogo,Mirassol,mirassol,3,3,6,0,Empate,-,Nilton Santos,RJ,SP,,,,,A,Nilton Santos,Rio de Janeiro,,Bruno Pereira Vasconcelos
+113,2025,12,2025-10-11,19:00,Palmeiras,palmeiras,Juventude,juventude,4,1,5,3,Vitoria Mandante,Palmeiras,Médico:,SP,RS,,,,,A,Médico:,Sao Paulo,,Davi De Oliveira Lacerda
+114,2025,12,2025-06-12,21:30,São Paulo,sao_paulo,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,1,3,4,-2,Vitoria Visitante,Vasco da Gama S.a.f.,Cícero Pompeu de Toledo,SP,RJ,,,,,A,Cícero Pompeu de Toledo,Sao Paulo,,Rafael Rodrigo Klein
+115,2025,12,2025-06-12,19:00,Red Bull Bragantino,red_bull_bragantino,Bahia,bahia,0,3,3,-3,Vitoria Visitante,Bahia,Arbitragem,SP,BA,,,,,A,Arbitragem,Braganca Paulista,,Lucas Paulo Torezin
+116,2025,12,2025-06-12,21:30,Atlético Mineiro Saf,atletico_mineiro_saf,Internacional,internacional,2,0,2,2,Vitoria Mandante,Atlético Mineiro Saf,ARENA MRV,MG,RS,,,,,A,ARENA MRV,Belo Horizonte,,Flavio Rodrigues de Souza
+117,2025,12,2025-06-12,20:00,Grêmio,gremio,Corinthians,corinthians,1,1,2,0,Empate,-,Arena do Grêmio,RS,SP,,,,,A,Arena do Grêmio,Porto Alegre,,Davi de Oliveira Lacerda
+118,2025,12,2025-06-12,19:00,Vitória,vitoria,Cruzeiro Saf,cruzeiro_saf,0,0,0,0,Empate,-,Assistente Técnico:,BA,MG,,,,,A,Assistente Técnico:,Salvador,,Alex Gomes Stefano
+119,2025,12,2025-06-12,19:30,Fortaleza Ec Saf,fortaleza_ec_saf,Santos Fc,santos_fc,2,3,5,-1,Vitoria Visitante,Santos Fc,Governador Plácido Aderaldo Castelo,CE,SP,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Paulo Cesar Zanovelli da Silva
+120,2025,12,2025-11-15,18:30,Sport Recife,sport_recife,Flamengo,flamengo,1,5,6,-4,Vitoria Visitante,Flamengo,Arena Pernambuco Governador Carlos Wilson Campos,PE,RJ,,,,,A,Arena Pernambuco Governador Carlos Wilson Campos,São Lourenço da Mata,,Rafael Rodrigo Klein
+121,2025,13,2025-07-12,16:30,Flamengo,flamengo,São Paulo,sao_paulo,2,0,2,2,Vitoria Mandante,Flamengo,Jornalista Mário Filho,RJ,SP,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Wilton Pereira Sampaio
+122,2025,13,2025-07-12,18:30,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Botafogo,botafogo,0,2,2,-2,Vitoria Visitante,Botafogo,Arbitragem,RJ,RJ,,,,,A,Arbitragem,Brasilia,,Anderson Daronco
+123,2025,13,2025-07-13,19:00,Corinthians,corinthians,Red Bull Bragantino,red_bull_bragantino,1,2,3,-1,Vitoria Visitante,Red Bull Bragantino,Arena Corinthians,SP,SP,,,,,A,Arena Corinthians,Sao Paulo,,Bruno Arleu de Araujo
+124,2025,13,2025-11-15,21:00,Santos Fc,santos_fc,Palmeiras,palmeiras,1,0,1,1,Vitoria Mandante,Santos Fc,Urbano Caldeira,SP,SP,,,,,A,Urbano Caldeira,Santos,,Raphael Claus
+125,2025,13,2025-10-08,21:00,Mirassol,mirassol,Fluminense,fluminense,2,1,3,1,Vitoria Mandante,Mirassol,José Maria de Campos Maia,SP,RJ,,,,,A,José Maria de Campos Maia,Mirassol,,Rodrigo Jose Pereira de Lima
+126,2025,13,2025-07-13,20:30,Cruzeiro Saf,cruzeiro_saf,Grêmio,gremio,4,1,5,3,Vitoria Mandante,Cruzeiro Saf,Magalhães Pinto,MG,RS,,,,,A,Magalhães Pinto,Belo Horizonte,,Lucas Paulo Torezin
+127,2025,13,2025-07-12,16:30,Internacional,internacional,Vitória,vitoria,1,0,1,1,Vitoria Mandante,Internacional,José Pinheiro Borda,RS,BA,,,,,A,José Pinheiro Borda,Porto Alegre,,Rodrigo Jose Pereira de Lima
+128,2025,13,2025-07-12,21:00,Bahia,bahia,Atlético Mineiro Saf,atletico_mineiro_saf,2,1,3,1,Vitoria Mandante,Bahia,Octávio Mangabeira,BA,MG,,,,,A,Octávio Mangabeira,Salvador,,Davi De Oliveira Lacerda
+129,2025,13,2025-07-13,20:30,Fortaleza Ec Saf,fortaleza_ec_saf,Ceará,ceara,0,1,1,-1,Vitoria Visitante,Ceará,Governador Plácido Aderaldo Castelo,CE,CE,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Raphael Claus
+130,2025,13,2025-07-14,20:00,Juventude,juventude,Sport,sport,2,0,2,2,Vitoria Mandante,Juventude,Alfredo Jaconi,RS,PE,,,,,A,Alfredo Jaconi,Caxias do Sul,,Jefferson Ferreira de Moraes
+131,2025,14,2025-07-17,19:30,Fluminense,fluminense,Cruzeiro Saf,cruzeiro_saf,0,2,2,-2,Vitoria Visitante,Cruzeiro Saf,Jornalista Mário Filho,RJ,MG,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Rafael Rodrigo Klein
+132,2025,14,2025-07-16,21:30,Botafogo,botafogo,Vitória,vitoria,0,0,0,0,Empate,-,Nilton Santos,RJ,BA,,,,,A,Nilton Santos,Rio de Janeiro,,Lucas Casagrande
+133,2025,14,2025-07-16,19:00,Palmeiras,palmeiras,Mirassol,mirassol,1,1,2,0,Empate,-,Allianz Parque,SP,SP,,,,,A,Allianz Parque,Sao Paulo,,Savio Pereira Sampaio
+134,2025,14,2025-07-16,20:00,Santos Fc,santos_fc,Flamengo,flamengo,1,0,1,1,Vitoria Mandante,Santos Fc,Urbano Caldeira,SP,RJ,,,,,A,Urbano Caldeira,Santos,,Felipe Fernandes de Lima
+135,2025,14,2025-07-16,21:30,Red Bull Bragantino,red_bull_bragantino,São Paulo,sao_paulo,2,2,4,0,Empate,-,Arbitragem,SP,SP,,,,,A,Arbitragem,Braganca Paulista,,Alex Gomes Stefano
+136,2025,14,2025-10-08,19:00,Atlético Mineiro Saf,atletico_mineiro_saf,Sport,sport,3,1,4,2,Vitoria Mandante,Atlético Mineiro Saf,ARENA MRV,MG,PE,,,,,A,ARENA MRV,Belo Horizonte,,Alex Gomes Stefano
+137,2025,14,2025-07-29,20:30,Grêmio,gremio,Fortaleza Ec Saf,fortaleza_ec_saf,2,1,3,1,Vitoria Mandante,Grêmio,Arena do Grêmio,RS,CE,,,,,A,Arena do Grêmio,Porto Alegre,,Alex Gomes Stefano
+138,2025,14,2025-10-22,19:00,Bahia,bahia,Internacional,internacional,1,0,1,1,Vitoria Mandante,Bahia,Octávio Mangabeira,BA,RS,,,,,A,Octávio Mangabeira,Salvador,,Flavio Rodrigues de Souza
+139,2025,14,2025-07-16,19:30,Ceará,ceara,Corinthians,corinthians,0,1,1,-1,Vitoria Visitante,Corinthians,Governador Plácido Aderaldo Castelo,CE,SP,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Paulo Cesar Zanovelli da Silva
+140,2025,14,2025-08-20,19:00,Juventude,juventude,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,2,0,2,2,Vitoria Mandante,Juventude,Assistente Técnico:,RS,RJ,,,,,A,Assistente Técnico:,Caxias do Sul,,Matheus Delgado Candancan
+141,2025,15,2025-07-20,19:30,Flamengo,flamengo,Fluminense,fluminense,1,0,1,1,Vitoria Mandante,Flamengo,Jornalista Mário Filho,RJ,RJ,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Raphael Claus
+142,2025,15,2025-07-19,17:30,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Grêmio,gremio,1,1,2,0,Empate,-,São Januário,RJ,RS,,,,,A,São Januário,Rio de Janeiro,,Felipe Fernandes de Lima
+143,2025,15,2025-07-20,17:30,Palmeiras,palmeiras,Atlético Mineiro Saf,atletico_mineiro_saf,3,2,5,1,Vitoria Mandante,Palmeiras,Allianz Parque,SP,MG,,,,,A,Allianz Parque,Sao Paulo,,Alex Gomes Stefano
+144,2025,15,2025-07-19,21:00,São Paulo,sao_paulo,Corinthians,corinthians,2,0,2,2,Vitoria Mandante,São Paulo,Cícero Pompeu de Toledo,SP,SP,,,,,A,Cícero Pompeu de Toledo,Sao Paulo,,Anderson Daronco
+145,2025,15,2025-07-19,18:30,Mirassol,mirassol,Santos Fc,santos_fc,3,0,3,3,Vitoria Mandante,Mirassol,José Maria de Campos Maia,SP,SP,,,,,A,José Maria de Campos Maia,Mirassol,,Matheus Delgado Candancan
+146,2025,15,2025-07-20,16:00,Cruzeiro Saf,cruzeiro_saf,Juventude,juventude,4,0,4,4,Vitoria Mandante,Cruzeiro Saf,Magalhães Pinto,MG,RS,,,,,A,Magalhães Pinto,Belo Horizonte,,Lucas Casagrande
+147,2025,15,2025-07-20,11:00,Internacional,internacional,Ceará,ceara,1,0,1,1,Vitoria Mandante,Internacional,José Pinheiro Borda,RS,CE,,,,,A,José Pinheiro Borda,Porto Alegre,,Davi De Oliveira Lacerda
+148,2025,15,2025-07-20,16:00,Vitória,vitoria,Red Bull Bragantino,red_bull_bragantino,1,0,1,1,Vitoria Mandante,Vitória,Manoel Barradas,BA,SP,,,,,A,Manoel Barradas,Salvador,,Rodrigo Jose Pereira de Lima
+149,2025,15,2025-07-19,16:00,Fortaleza Ec Saf,fortaleza_ec_saf,Bahia,bahia,1,1,2,0,Empate,-,Governador Plácido Aderaldo Castelo,CE,BA,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Wilton Pereira Sampaio
+150,2025,15,2025-07-20,17:30,Sport,sport,Botafogo,botafogo,0,1,1,-1,Vitoria Visitante,Botafogo,Adelmar da Costa Carvalho,PE,RJ,,,,,A,Adelmar da Costa Carvalho,Recife,,Flavio Rodrigues de Souza
+151,2025,16,2025-07-23,19:00,Fluminense,fluminense,Palmeiras,palmeiras,1,2,3,-1,Vitoria Visitante,Palmeiras,Jornalista Mário Filho,RJ,SP,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Ramon Abatti Abel
+152,2025,16,2025-09-24,19:30,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Bahia,bahia,3,1,4,2,Vitoria Mandante,Vasco da Gama S.a.f.,São Januário,RJ,BA,,,,,A,São Januário,Rio de Janeiro,,Joao Vitor Gobi
+153,2025,16,2025-07-23,19:30,Corinthians,corinthians,Cruzeiro Saf,cruzeiro_saf,0,0,0,0,Empate,-,Arena Corinthians,SP,MG,,,,,A,Arena Corinthians,Sao Paulo,,Alex Gomes Stefano
+154,2025,16,2025-07-23,21:30,Santos Fc,santos_fc,Internacional,internacional,1,2,3,-1,Vitoria Visitante,Internacional,Urbano Caldeira,SP,RS,,,,,A,Urbano Caldeira,Santos,,Lucas Paulo Torezin
+155,2025,16,2025-07-23,21:30,Red Bull Bragantino,red_bull_bragantino,Flamengo,flamengo,1,2,3,-1,Vitoria Visitante,Flamengo,Arbitragem,SP,RJ,,,,,A,Arbitragem,Braganca Paulista,,Davi De Oliveira Lacerda
+157,2025,16,2025-09-24,19:30,Grêmio,gremio,Botafogo,botafogo,1,1,2,0,Empate,-,Arena do Grêmio,RS,RJ,,,,,A,Arena do Grêmio,Porto Alegre,,Lucas Paulo Torezin
+158,2025,16,2025-07-23,21:30,Vitória,vitoria,Sport,sport,2,2,4,0,Empate,-,Manoel Barradas,BA,PE,,,,,A,Manoel Barradas,Salvador,,Lucas Canetto Bellote
+159,2025,16,2025-07-23,19:00,Ceará,ceara,Mirassol,mirassol,0,2,2,-2,Vitoria Visitante,Mirassol,Governador Plácido Aderaldo Castelo,CE,SP,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Lucas Casagrande
+160,2025,16,2025-07-24,19:00,Juventude,juventude,São Paulo,sao_paulo,0,1,1,-1,Vitoria Visitante,São Paulo,Alfredo Jaconi,RS,SP,,,,,A,Alfredo Jaconi,Caxias do Sul,,Savio Pereira Sampaio
+161,2025,17,2025-07-27,20:30,Flamengo,flamengo,Atlético Mineiro Saf,atletico_mineiro_saf,1,0,1,1,Vitoria Mandante,Flamengo,Jornalista Mário Filho,RJ,MG,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Ramon Abatti Abel
+162,2025,17,2025-07-26,18:30,Botafogo,botafogo,Corinthians,corinthians,1,1,2,0,Empate,-,Nilton Santos,RJ,SP,,,,,A,Nilton Santos,Rio de Janeiro,,Rodrigo Jose Pereira de Lima
+163,2025,17,2025-07-26,21:00,Palmeiras,palmeiras,Grêmio,gremio,1,0,1,1,Vitoria Mandante,Palmeiras,Allianz Parque,SP,RS,,,,,A,Allianz Parque,Sao Paulo,,Paulo Cesar Zanovelli da Silva
+164,2025,17,2025-07-27,16:00,São Paulo,sao_paulo,Fluminense,fluminense,3,1,4,2,Vitoria Mandante,São Paulo,Cícero Pompeu de Toledo,SP,RJ,,,,,A,Cícero Pompeu de Toledo,Sao Paulo,,Davi De Oliveira Lacerda
+165,2025,17,2025-07-26,18:30,Mirassol,mirassol,Vitória,vitoria,1,1,2,0,Empate,-,José Maria de Campos Maia,SP,BA,,,,,A,José Maria de Campos Maia,Mirassol,,Bruno Arleu de Araujo
+166,2025,17,2025-07-27,16:00,Cruzeiro Saf,cruzeiro_saf,Ceará,ceara,1,2,3,-1,Vitoria Visitante,Ceará,Magalhães Pinto,MG,CE,,,,,A,Magalhães Pinto,Belo Horizonte,,Raphael Claus
+167,2025,17,2025-07-27,18:30,Internacional,internacional,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,1,1,2,0,Empate,-,José Pinheiro Borda,RS,RJ,,,,,A,José Pinheiro Borda,Porto Alegre,,Flavio Rodrigues de Souza
+168,2025,17,2025-07-27,18:30,Bahia,bahia,Juventude,juventude,3,0,3,3,Vitoria Mandante,Bahia,Octávio Mangabeira,BA,RS,,,,,A,Octávio Mangabeira,Salvador,,Matheus Delgado Candancan
+169,2025,17,2025-07-26,18:30,Fortaleza Ec Saf,fortaleza_ec_saf,Red Bull Bragantino,red_bull_bragantino,3,1,4,2,Vitoria Mandante,Fortaleza Ec Saf,Governador Plácido Aderaldo Castelo,CE,SP,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Wagner do Nascimento Magalhaes
+170,2025,17,2025-07-26,18:30,Sport,sport,Santos Fc,santos_fc,2,2,4,0,Empate,-,Adelmar da Costa Carvalho,PE,SP,,,,,A,Adelmar da Costa Carvalho,Recife,,Rafael Rodrigo Klein
+171,2025,18,2025-08-02,21:00,Fluminense,fluminense,Grêmio,gremio,1,0,1,1,Vitoria Mandante,Fluminense,Jornalista Mário Filho,RJ,RS,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Lucas Paulo Torezin
+172,2025,18,2025-08-03,16:00,Botafogo,botafogo,Cruzeiro Saf,cruzeiro_saf,0,2,2,-2,Vitoria Visitante,Cruzeiro Saf,Nilton Santos,RJ,MG,,,,,A,Nilton Santos,Rio de Janeiro,,Matheus Delgado Candancan
+173,2025,18,2025-08-03,16:00,Corinthians,corinthians,Fortaleza Ec Saf,fortaleza_ec_saf,1,1,2,0,Empate,-,Arena Corinthians,SP,CE,,,,,A,Arena Corinthians,Sao Paulo,,Felipe Fernandes de Lima
+174,2025,18,2025-08-04,20:00,Santos Fc,santos_fc,Juventude,juventude,3,1,4,2,Vitoria Mandante,Santos Fc,Cícero Pompeu de Toledo,SP,RS,,,,,A,Cícero Pompeu de Toledo,Sao Paulo,,Paulo Cesar Zanovelli da Silva
+175,2025,18,2025-08-02,18:30,Mirassol,mirassol,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,3,2,5,1,Vitoria Mandante,Mirassol,José Maria de Campos Maia,SP,RJ,,,,,A,José Maria de Campos Maia,Mirassol,,Wilton Pereira Sampaio
+176,2025,18,2025-08-03,18:30,Atlético Mineiro Saf,atletico_mineiro_saf,Red Bull Bragantino,red_bull_bragantino,2,1,3,1,Vitoria Mandante,Atlético Mineiro Saf,ARENA MRV,MG,SP,,,,,A,ARENA MRV,Belo Horizonte,,Bruno Arleu de Araujo
+177,2025,18,2025-08-03,20:30,Internacional,internacional,São Paulo,sao_paulo,1,2,3,-1,Vitoria Visitante,São Paulo,José Pinheiro Borda,RS,SP,,,,,A,José Pinheiro Borda,Porto Alegre,,Alex Gomes Stefano
+178,2025,18,2025-08-03,19:30,Vitória,vitoria,Palmeiras,palmeiras,2,2,4,0,Empate,-,Manoel Barradas,BA,SP,,,,,A,Manoel Barradas,Salvador,,Davi De Oliveira Lacerda
+179,2025,18,2025-08-03,18:30,Ceará,ceara,Flamengo,flamengo,1,1,2,0,Empate,-,Governador Plácido Aderaldo Castelo,CE,RJ,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Rodrigo Jose Pereira de Lima
+180,2025,18,2025-08-02,16:00,Sport,sport,Bahia,bahia,0,0,0,0,Empate,-,Adelmar da Costa Carvalho,PE,BA,,,,,A,Adelmar da Costa Carvalho,Recife,,Anderson Daronco
+181,2025,19,2025-08-09,18:30,Flamengo,flamengo,Mirassol,mirassol,2,1,3,1,Vitoria Mandante,Flamengo,Jornalista Mário Filho,RJ,SP,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Paulo Cesar Zanovelli da Silva
+182,2025,19,2025-08-10,16:00,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Atlético Mineiro Saf,atletico_mineiro_saf,1,1,2,0,Empate,-,São Januário,RJ,MG,,,,,A,São Januário,Rio de Janeiro,,Davi De Oliveira Lacerda
+183,2025,19,2025-08-10,16:00,Palmeiras,palmeiras,Ceará,ceara,2,1,3,1,Vitoria Mandante,Palmeiras,Allianz Parque,SP,CE,,,,,A,Allianz Parque,Sao Paulo,,Lucas Paulo Torezin
+184,2025,19,2025-08-09,18:30,São Paulo,sao_paulo,Vitória,vitoria,2,0,2,2,Vitoria Mandante,São Paulo,Cícero Pompeu de Toledo,SP,BA,,,,,A,Cícero Pompeu de Toledo,Sao Paulo,,Bruno Arleu de Araujo
+185,2025,19,2025-08-09,18:30,Red Bull Bragantino,red_bull_bragantino,Internacional,internacional,1,3,4,-2,Vitoria Visitante,Internacional,Arbitragem,SP,RS,,,,,A,Arbitragem,Braganca Paulista,,Felipe Fernandes de Lima
+186,2025,19,2025-08-10,18:30,Cruzeiro Saf,cruzeiro_saf,Santos Fc,santos_fc,1,2,3,-1,Vitoria Visitante,Santos Fc,Magalhães Pinto,MG,SP,,,,,A,Magalhães Pinto,Belo Horizonte,,Wilton Pereira Sampaio
+187,2025,19,2025-08-10,20:30,Grêmio,gremio,Sport,sport,0,1,1,-1,Vitoria Visitante,Sport,Arena do Grêmio,RS,PE,,,,,A,Arena do Grêmio,Porto Alegre,,Yuri Elino Ferreira da Cruz
+188,2025,19,2025-08-09,21:00,Bahia,bahia,Fluminense,fluminense,3,3,6,0,Empate,-,Octávio Mangabeira,BA,RJ,,,,,A,Octávio Mangabeira,Salvador,,Jefferson Ferreira de Moraes
+189,2025,19,2025-08-09,20:30,Fortaleza Ec Saf,fortaleza_ec_saf,Botafogo,botafogo,0,5,5,-5,Vitoria Visitante,Botafogo,Governador Plácido Aderaldo Castelo,CE,RJ,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Anderson Daronco
+190,2025,19,2025-08-11,20:00,Juventude,juventude,Corinthians,corinthians,2,1,3,1,Vitoria Mandante,Juventude,Assistente Técnico:,RS,SP,,,,,A,Assistente Técnico:,Caxias do Sul,,Lucas Casagrande
+191,2025,20,2025-08-16,16:00,Fluminense,fluminense,Fortaleza Ec Saf,fortaleza_ec_saf,2,1,3,1,Vitoria Mandante,Fluminense,Jornalista Mário Filho,RJ,CE,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Rafael Rodrigo Klein
+192,2025,20,2025-08-17,20:30,Botafogo,botafogo,Palmeiras,palmeiras,0,1,1,-1,Vitoria Visitante,Palmeiras,Nilton Santos,RJ,SP,,,,,A,Nilton Santos,Rio de Janeiro,,Davi De Oliveira Lacerda
+193,2025,20,2025-08-16,21:00,Corinthians,corinthians,Bahia,bahia,1,2,3,-1,Vitoria Visitante,Bahia,Arena Corinthians,SP,BA,,,,,A,Arena Corinthians,Sao Paulo,,Paulo Cesar Zanovelli da Silva
+194,2025,20,2025-08-17,16:00,Santos Fc,santos_fc,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,0,6,6,-6,Vitoria Visitante,Vasco da Gama S.a.f.,Cícero Pompeu de Toledo,SP,RJ,,,,,A,Cícero Pompeu de Toledo,Sao Paulo,,Ramon Abatti Abel
+195,2025,20,2025-08-18,20:00,Mirassol,mirassol,Cruzeiro Saf,cruzeiro_saf,1,1,2,0,Empate,-,José Maria de Campos Maia,SP,MG,,,,,A,José Maria de Campos Maia,Mirassol,,Bruno Arleu de Araujo
+196,2025,20,2025-08-17,16:00,Atlético Mineiro Saf,atletico_mineiro_saf,Grêmio,gremio,1,3,4,-2,Vitoria Visitante,Grêmio,ARENA MRV,MG,RS,,,,,A,ARENA MRV,Belo Horizonte,,Alex Gomes Stefano
+197,2025,20,2025-08-17,18:30,Internacional,internacional,Flamengo,flamengo,1,3,4,-2,Vitoria Visitante,Flamengo,José Pinheiro Borda,RS,RJ,,,,,A,José Pinheiro Borda,Porto Alegre,,Rodrigo Jose Pereira de Lima
+198,2025,20,2025-08-16,18:30,Vitória,vitoria,Juventude,juventude,2,2,4,0,Empate,-,Médico:,BA,RS,,,,,A,Médico:,Salvador,,Raphael Claus
+199,2025,20,2025-08-16,16:00,Ceará,ceara,Red Bull Bragantino,red_bull_bragantino,1,0,1,1,Vitoria Mandante,Ceará,Governador Plácido Aderaldo Castelo,CE,SP,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Yuri Elino Ferreira da Cruz
+200,2025,20,2025-08-16,18:30,Sport,sport,São Paulo,sao_paulo,2,2,4,0,Empate,-,Adelmar da Costa Carvalho,PE,SP,,,,,A,Adelmar da Costa Carvalho,Recife,,Lucas Paulo Torezin
+201,2025,21,2025-08-25,21:00,Flamengo,flamengo,Vitória,vitoria,8,0,8,8,Vitoria Mandante,Flamengo,Jornalista Mário Filho,RJ,BA,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Felipe Fernandes de Lima
+202,2025,21,2025-08-24,16:00,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Corinthians,corinthians,2,3,5,-1,Vitoria Visitante,Corinthians,São Januário,RJ,SP,,,,,A,São Januário,Rio de Janeiro,,Rodrigo Jose Pereira de Lima
+203,2025,21,2025-08-25,19:00,Palmeiras,palmeiras,Sport,sport,3,0,3,3,Vitoria Mandante,Palmeiras,Allianz Parque,SP,PE,,,,,A,Allianz Parque,Sao Paulo,,Paulo Cesar Zanovelli da Silva
+204,2025,21,2025-08-24,20:30,São Paulo,sao_paulo,Atlético Mineiro Saf,atletico_mineiro_saf,2,0,2,2,Vitoria Mandante,São Paulo,Cícero Pompeu de Toledo,SP,MG,,,,,A,Cícero Pompeu de Toledo,Sao Paulo,,Lucas Casagrande
+205,2025,21,2025-08-23,16:00,Red Bull Bragantino,red_bull_bragantino,Fluminense,fluminense,4,2,6,2,Vitoria Mandante,Red Bull Bragantino,Arbitragem,SP,RJ,,,,,A,Arbitragem,Braganca Paulista,,Lucas Paulo Torezin
+206,2025,21,2025-08-23,18:30,Cruzeiro Saf,cruzeiro_saf,Internacional,internacional,2,1,3,1,Vitoria Mandante,Cruzeiro Saf,Magalhães Pinto,MG,RS,,,,,A,Magalhães Pinto,Belo Horizonte,,Matheus Delgado Candancan
+207,2025,21,2025-08-23,21:00,Grêmio,gremio,Ceará,ceara,0,0,0,0,Empate,-,Arena do Grêmio,RS,CE,,,,,A,Arena do Grêmio,Porto Alegre,,Davi De Oliveira Lacerda
+208,2025,21,2025-08-24,16:00,Bahia,bahia,Santos Fc,santos_fc,2,0,2,2,Vitoria Mandante,Bahia,Octávio Mangabeira,BA,SP,,,,,A,Octávio Mangabeira,Salvador,,Rafael Rodrigo Klein
+209,2025,21,2025-08-24,18:30,Fortaleza Ec Saf,fortaleza_ec_saf,Mirassol,mirassol,0,1,1,-1,Vitoria Visitante,Mirassol,Governador Plácido Aderaldo Castelo,CE,SP,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Bruno Pereira Vasconcelos
+210,2025,21,2025-08-24,18:30,Juventude,juventude,Botafogo,botafogo,1,3,4,-2,Vitoria Visitante,Botafogo,Médico:,RS,RJ,,,,,A,Médico:,Caxias do Sul,,Flavio Rodrigues de Souza
+211,2025,22,2025-08-31,16:00,Flamengo,flamengo,Grêmio,gremio,1,1,2,0,Empate,-,Jornalista Mário Filho,RJ,RS,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Paulo Cesar Zanovelli da Silva
+212,2025,22,2025-08-30,18:30,Botafogo,botafogo,Red Bull Bragantino,red_bull_bragantino,4,1,5,3,Vitoria Mandante,Botafogo,Nilton Santos,RJ,SP,,,,,A,Nilton Santos,Rio de Janeiro,,Lucas Casagrande
+213,2025,22,2025-08-31,18:30,Corinthians,corinthians,Palmeiras,palmeiras,1,1,2,0,Empate,-,Arena Corinthians,SP,SP,,,,,A,Arena Corinthians,Sao Paulo,,Ramon Abatti Abel
+214,2025,22,2025-08-31,16:00,Santos Fc,santos_fc,Fluminense,fluminense,0,0,0,0,Empate,-,Urbano Caldeira,SP,RJ,,,,,A,Urbano Caldeira,Santos,,Wilton Pereira Sampaio
+215,2025,22,2025-08-31,18:30,Mirassol,mirassol,Bahia,bahia,5,1,6,4,Vitoria Mandante,Mirassol,José Maria de Campos Maia,SP,BA,,,,,A,José Maria de Campos Maia,Mirassol,,Marcelo de Lima Henrique
+216,2025,22,2025-08-30,21:00,Cruzeiro Saf,cruzeiro_saf,São Paulo,sao_paulo,1,0,1,1,Vitoria Mandante,Cruzeiro Saf,Magalhães Pinto,MG,SP,,,,,A,Magalhães Pinto,Belo Horizonte,,Anderson Daronco
+217,2025,22,2025-08-31,20:30,Internacional,internacional,Fortaleza Ec Saf,fortaleza_ec_saf,2,1,3,1,Vitoria Mandante,Internacional,José Pinheiro Borda,RS,CE,,,,,A,José Pinheiro Borda,Porto Alegre,,Joao Vitor Gobi
+218,2025,22,2025-08-31,18:30,Vitória,vitoria,Atlético Mineiro Saf,atletico_mineiro_saf,1,0,1,1,Vitoria Mandante,Vitória,Manoel Barradas,BA,MG,,,,,A,Manoel Barradas,Salvador,,Alex Gomes Stefano
+219,2025,22,2025-08-30,16:00,Ceará,ceara,Juventude,juventude,0,1,1,-1,Vitoria Visitante,Juventude,Juventude,CE,RS,,,,,A,Juventude,RS,,Afro Rocha de Carvalho Filho
+220,2025,22,2025-08-31,20:30,Sport,sport,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,2,3,5,-1,Vitoria Visitante,Vasco da Gama S.a.f.,Adelmar da Costa Carvalho,PE,RJ,,,,,A,Adelmar da Costa Carvalho,Recife,,Raphael Claus
+221,2025,23,2025-09-13,21:00,Fluminense,fluminense,Corinthians,corinthians,0,1,1,-1,Vitoria Visitante,Corinthians,Jornalista Mário Filho,RJ,SP,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Felipe Fernandes de Lima
+222,2025,23,2025-09-14,20:30,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Ceará,ceara,2,2,4,0,Empate,-,São Januário,RJ,CE,,,,,A,São Januário,Rio de Janeiro,,Matheus Delgado Candançan
+223,2025,23,2025-09-13,18:30,Palmeiras,palmeiras,Internacional,internacional,4,1,5,3,Vitoria Mandante,Palmeiras,Allianz Parque,SP,RS,,,,,A,Allianz Parque,Sao Paulo,,Lucas Paulo Torezin
+224,2025,23,2025-09-14,17:30,São Paulo,sao_paulo,Botafogo,botafogo,1,0,1,1,Vitoria Mandante,São Paulo,Cícero Pompeu de Toledo,SP,RJ,,,,,A,Cícero Pompeu de Toledo,Sao Paulo,,Wilton Pereira Sampaio
+225,2025,23,2025-09-14,11:00,Red Bull Bragantino,red_bull_bragantino,Sport,sport,1,1,2,0,Empate,-,Arbitragem,SP,PE,,,,,A,Arbitragem,Braganca Paulista,,Anderson Daronco
+226,2025,23,2025-09-14,16:00,Atlético Mineiro Saf,atletico_mineiro_saf,Santos Fc,santos_fc,1,1,2,0,Empate,-,ARENA MRV,MG,SP,,,,,A,ARENA MRV,Belo Horizonte,,Bruno Arleu de Araujo
+227,2025,23,2025-09-13,16:00,Grêmio,gremio,Mirassol,mirassol,0,1,1,-1,Vitoria Visitante,Mirassol,Arena do Grêmio,RS,SP,,,,,A,Arena do Grêmio,Porto Alegre,,Lucas Casagrande
+228,2025,23,2025-09-15,20:00,Bahia,bahia,Cruzeiro Saf,cruzeiro_saf,1,2,3,-1,Vitoria Visitante,Cruzeiro Saf,Octávio Mangabeira,BA,MG,,,,,A,Octávio Mangabeira,Salvador,,Flavio Rodrigues de Souza
+229,2025,23,2025-09-13,16:00,Fortaleza Ec Saf,fortaleza_ec_saf,Vitória,vitoria,2,0,2,2,Vitoria Mandante,Fortaleza Ec Saf,Governador Plácido Aderaldo Castelo,CE,BA,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Edina Alves Batista
+230,2025,23,2025-09-14,16:00,Juventude,juventude,Flamengo,flamengo,0,2,2,-2,Vitoria Visitante,Flamengo,Assistente Técnico:,RS,RJ,,,,,A,Assistente Técnico:,Caxias do Sul,,Raphael Claus
+231,2025,24,2025-09-21,17:30,Flamengo,flamengo,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,1,1,2,0,Empate,-,Jornalista Mário Filho,RJ,RJ,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Rafael Rodrigo Klein
+232,2025,24,2025-09-20,18:30,Botafogo,botafogo,Atlético Mineiro Saf,atletico_mineiro_saf,1,0,1,1,Vitoria Mandante,Botafogo,Nilton Santos,RJ,MG,,,,,A,Nilton Santos,Rio de Janeiro,,Flavio Rodrigues de Souza
+233,2025,24,2025-09-20,21:00,Palmeiras,palmeiras,Fortaleza Ec Saf,fortaleza_ec_saf,4,1,5,3,Vitoria Mandante,Palmeiras,Allianz Parque,SP,CE,,,,,A,Allianz Parque,Sao Paulo,,Alex Gomes Stefano
+234,2025,24,2025-09-21,20:30,Santos Fc,santos_fc,São Paulo,sao_paulo,1,0,1,1,Vitoria Mandante,Santos Fc,Urbano Caldeira,SP,SP,,,,,A,Urbano Caldeira,Santos,,Rodrigo Jose Pereira de Lima
+235,2025,24,2025-09-21,16:00,Mirassol,mirassol,Juventude,juventude,2,0,2,2,Vitoria Mandante,Mirassol,Assistente Técnico:,SP,RS,,,,,A,Assistente Técnico:,Mirassol,,Davi De Oliveira Lacerda
+236,2025,24,2025-09-21,20:30,Cruzeiro Saf,cruzeiro_saf,Red Bull Bragantino,red_bull_bragantino,2,1,3,1,Vitoria Mandante,Cruzeiro Saf,Magalhães Pinto,MG,SP,,,,,A,Magalhães Pinto,Belo Horizonte,,Lucas Paulo Torezin
+237,2025,24,2025-09-21,17:30,Internacional,internacional,Grêmio,gremio,2,3,5,-1,Vitoria Visitante,Grêmio,José Pinheiro Borda,RS,RS,,,,,A,José Pinheiro Borda,Porto Alegre,,Marcelo de Lima Henrique
+238,2025,24,2025-09-20,16:00,Vitória,vitoria,Fluminense,fluminense,0,1,1,-1,Vitoria Visitante,Fluminense,Manoel Barradas,BA,RJ,,,,,A,Manoel Barradas,Salvador,,Matheus Delgado Candançan
+239,2025,24,2025-09-20,18:30,Ceará,ceara,Bahia,bahia,1,1,2,0,Empate,-,Governador Plácido Aderaldo Castelo,CE,BA,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Lucas Casagrande
+240,2025,24,2025-09-21,17:30,Sport,sport,Corinthians,corinthians,1,0,1,1,Vitoria Mandante,Sport,Adelmar da Costa Carvalho,PE,SP,,,,,A,Adelmar da Costa Carvalho,Recife,,Savio Pereira Sampaio
+241,2025,25,2025-09-28,16:00,Fluminense,fluminense,Botafogo,botafogo,2,0,2,2,Vitoria Mandante,Fluminense,Jornalista Mário Filho,RJ,RJ,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Ramon Abatti Abel
+242,2025,25,2025-09-27,18:30,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Cruzeiro Saf,cruzeiro_saf,2,0,2,2,Vitoria Mandante,Vasco da Gama S.a.f.,São Januário,RJ,MG,,,,,A,São Januário,Rio de Janeiro,,Rodrigo Jose Pereira de Lima
+243,2025,25,2025-09-28,20:30,Corinthians,corinthians,Flamengo,flamengo,1,2,3,-1,Vitoria Visitante,Flamengo,Arena Corinthians,SP,RJ,,,,,A,Arena Corinthians,Sao Paulo,,Wilton Pereira Sampaio
+244,2025,25,2025-09-29,20:00,São Paulo,sao_paulo,Ceará,ceara,0,1,1,-1,Vitoria Visitante,Ceará,Cícero Pompeu de Toledo,SP,CE,,,,,A,Cícero Pompeu de Toledo,Sao Paulo,,Bruno Arleu de Araujo
+245,2025,25,2025-09-28,18:30,Red Bull Bragantino,red_bull_bragantino,Santos Fc,santos_fc,2,2,4,0,Empate,-,Arbitragem,SP,SP,,,,,A,Arbitragem,Braganca Paulista,,Flavio Rodrigues de Souza
+246,2025,25,2025-09-27,21:00,Atlético Mineiro Saf,atletico_mineiro_saf,Mirassol,mirassol,1,0,1,1,Vitoria Mandante,Atlético Mineiro Saf,ARENA MRV,MG,SP,,,,,A,ARENA MRV,Belo Horizonte,,Rafael Rodrigo Klein
+247,2025,25,2025-09-28,11:00,Grêmio,gremio,Vitória,vitoria,3,1,4,2,Vitoria Mandante,Grêmio,Arena do Grêmio,RS,BA,,,,,A,Arena do Grêmio,Porto Alegre,,Raphael Claus
+248,2025,25,2025-09-28,16:00,Bahia,bahia,Palmeiras,palmeiras,1,0,1,1,Vitoria Mandante,Bahia,Octávio Mangabeira,BA,SP,,,,,A,Octávio Mangabeira,Salvador,,Anderson Daronco
+249,2025,25,2025-09-27,16:00,Fortaleza Ec Saf,fortaleza_ec_saf,Sport,sport,1,0,1,1,Vitoria Mandante,Fortaleza Ec Saf,Governador Plácido Aderaldo Castelo,CE,PE,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Davi De Oliveira Lacerda
+250,2025,25,2025-09-27,18:30,Juventude,juventude,Internacional,internacional,1,1,2,0,Empate,-,Médico:,RS,RS,,,,,A,Médico:,Caxias do Sul,,Matheus Delgado Candançan
+251,2025,26,2025-10-02,20:30,Flamengo,flamengo,Cruzeiro Saf,cruzeiro_saf,0,0,0,0,Empate,-,Jornalista Mário Filho,RJ,MG,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Ramon Abatti Abel
+252,2025,26,2025-10-01,21:30,Botafogo,botafogo,Bahia,bahia,2,1,3,1,Vitoria Mandante,Botafogo,Nilton Santos,RJ,BA,,,,,A,Nilton Santos,Rio de Janeiro,,Felipe Fernandes de Lima
+253,2025,26,2025-10-01,19:00,Palmeiras,palmeiras,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,3,0,3,3,Vitoria Mandante,Palmeiras,Allianz Parque,SP,RJ,,,,,A,Allianz Parque,Sao Paulo,,Rafael Rodrigo Klein
+254,2025,26,2025-10-01,21:30,Santos Fc,santos_fc,Grêmio,gremio,1,1,2,0,Empate,-,Urbano Caldeira,SP,RS,,,,,A,Urbano Caldeira,Santos,,Paulo Cesar Zanovelli da Silva
+255,2025,26,2025-10-01,19:00,Mirassol,mirassol,Red Bull Bragantino,red_bull_bragantino,1,1,2,0,Empate,-,José Maria de Campos Maia,SP,SP,,,,,A,José Maria de Campos Maia,Mirassol,,Wilton Pereira Sampaio
+256,2025,26,2025-09-30,21:30,Atlético Mineiro Saf,atletico_mineiro_saf,Juventude,juventude,0,0,0,0,Empate,-,Assistente Técnico:,MG,RS,,,,,A,Assistente Técnico:,Belo Horizonte,,Lucas Casagrande
+257,2025,26,2025-10-01,19:30,Internacional,internacional,Corinthians,corinthians,1,1,2,0,Empate,-,José Pinheiro Borda,RS,SP,,,,,A,José Pinheiro Borda,Porto Alegre,,Rodrigo Jose Pereira de Lima
+258,2025,26,2025-10-02,19:00,Vitória,vitoria,Ceará,ceara,1,0,1,1,Vitoria Mandante,Vitória,Manoel Barradas,BA,CE,,,,,A,Manoel Barradas,Salvador,,Matheus Delgado Candançan
+259,2025,26,2025-10-02,19:30,Fortaleza Ec Saf,fortaleza_ec_saf,São Paulo,sao_paulo,0,2,2,-2,Vitoria Visitante,São Paulo,Governador Plácido Aderaldo Castelo,CE,SP,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Anderson Daronco
+260,2025,26,2025-10-01,19:00,Sport,sport,Fluminense,fluminense,2,2,4,0,Empate,-,Adelmar da Costa Carvalho,PE,RJ,,,,,A,Adelmar da Costa Carvalho,Recife,,Raphael Claus
+261,2025,27,2025-10-04,18:30,Fluminense,fluminense,Atlético Mineiro Saf,atletico_mineiro_saf,3,0,3,3,Vitoria Mandante,Fluminense,Jornalista Mário Filho,RJ,MG,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Davi De Oliveira Lacerda
+262,2025,27,2025-10-05,16:00,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Vitória,vitoria,4,3,7,1,Vitoria Mandante,Vasco da Gama S.a.f.,São Januário,RJ,BA,,,,,A,São Januário,Rio de Janeiro,,Fernando Antonio Mendes de Salles Nascimento Filho
+263,2025,27,2025-10-04,21:00,Corinthians,corinthians,Mirassol,mirassol,3,0,3,3,Vitoria Mandante,Corinthians,Arena Corinthians,SP,SP,,,,,A,Arena Corinthians,Sao Paulo,,Felipe Fernandes de Lima
+264,2025,27,2025-10-05,16:00,São Paulo,sao_paulo,Palmeiras,palmeiras,2,3,5,-1,Vitoria Visitante,Palmeiras,Cícero Pompeu de Toledo,SP,SP,,,,,A,Cícero Pompeu de Toledo,Sao Paulo,,Ramon Abatti Abel
+265,2025,27,2025-10-04,18:30,Red Bull Bragantino,red_bull_bragantino,Grêmio,gremio,1,0,1,1,Vitoria Mandante,Red Bull Bragantino,Arbitragem,SP,RS,,,,,A,Arbitragem,Braganca Paulista,,Lucas Casagrande
+266,2025,27,2025-10-05,20:30,Cruzeiro Saf,cruzeiro_saf,Sport,sport,1,1,2,0,Empate,-,Magalhães Pinto,MG,PE,,,,,A,Magalhães Pinto,Belo Horizonte,,Jefferson Ferreira de Moraes
+267,2025,27,2025-10-04,18:30,Internacional,internacional,Botafogo,botafogo,2,0,2,2,Vitoria Mandante,Internacional,José Pinheiro Borda,RS,RJ,,,,,A,José Pinheiro Borda,Porto Alegre,,Flavio Rodrigues de Souza
+268,2025,27,2025-10-05,18:30,Bahia,bahia,Flamengo,flamengo,1,0,1,1,Vitoria Mandante,Bahia,Octávio Mangabeira,BA,RJ,,,,,A,Octávio Mangabeira,Salvador,,Rodrigo Jose Pereira de Lima
+269,2025,27,2025-10-05,20:30,Ceará,ceara,Santos Fc,santos_fc,3,0,3,3,Vitoria Mandante,Ceará,Governador Plácido Aderaldo Castelo,CE,SP,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Anderson Daronco
+270,2025,27,2025-10-05,18:30,Juventude,juventude,Fortaleza Ec Saf,fortaleza_ec_saf,1,2,3,-1,Vitoria Visitante,Fortaleza Ec Saf,Assistente Técnico:,RS,CE,,,,,A,Assistente Técnico:,Caxias do Sul,,Lucas Paulo Torezin
+271,2025,28,2025-10-16,21:30,Fluminense,fluminense,Juventude,juventude,1,0,1,1,Vitoria Mandante,Fluminense,Assistente Técnico:,RJ,RS,,,,,A,Assistente Técnico:,Rio de Janeiro,,Jefferson Ferreira de Moraes
+272,2025,28,2025-10-15,19:30,Botafogo,botafogo,Flamengo,flamengo,0,3,3,-3,Vitoria Visitante,Flamengo,Nilton Santos,RJ,RJ,,,,,A,Nilton Santos,Rio de Janeiro,,Alex Gomes Stefano
+273,2025,28,2025-10-15,19:00,Palmeiras,palmeiras,Red Bull Bragantino,red_bull_bragantino,5,1,6,4,Vitoria Mandante,Palmeiras,Allianz Parque,SP,SP,,,,,A,Allianz Parque,Sao Paulo,,Raphael Claus
+274,2025,28,2025-10-15,21:30,Santos Fc,santos_fc,Corinthians,corinthians,3,1,4,2,Vitoria Mandante,Santos Fc,Urbano Caldeira,SP,SP,,,,,A,Urbano Caldeira,Santos,,Flavio Rodrigues de Souza
+275,2025,28,2025-10-15,20:00,Mirassol,mirassol,Internacional,internacional,3,1,4,2,Vitoria Mandante,Mirassol,José Maria de Campos Maia,SP,RS,,,,,A,José Maria de Campos Maia,Mirassol,,Bruno Arleu de Araujo
+276,2025,28,2025-10-15,21:30,Atlético Mineiro Saf,atletico_mineiro_saf,Cruzeiro Saf,cruzeiro_saf,1,1,2,0,Empate,-,ARENA MRV,MG,MG,,,,,A,ARENA MRV,Belo Horizonte,,Paulo Cesar Zanovelli da Silva
+277,2025,28,2025-10-16,19:00,Grêmio,gremio,São Paulo,sao_paulo,2,0,2,2,Vitoria Mandante,Grêmio,Arena do Grêmio,RS,SP,,,,,A,Arena do Grêmio,Porto Alegre,,Davi De Oliveira Lacerda
+278,2025,28,2025-10-16,21:30,Vitória,vitoria,Bahia,bahia,2,1,3,1,Vitoria Mandante,Vitória,Manoel Barradas,BA,BA,,,,,A,Manoel Barradas,Salvador,,Anderson Daronco
+279,2025,28,2025-10-15,21:30,Fortaleza Ec Saf,fortaleza_ec_saf,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,0,2,2,-2,Vitoria Visitante,Vasco da Gama S.a.f.,Governador Plácido Aderaldo Castelo,CE,RJ,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Wilton Pereira Sampaio
+280,2025,28,2025-10-15,20:00,Sport,sport,Ceará,ceara,1,1,2,0,Empate,-,Adelmar da Costa Carvalho,PE,CE,,,,,A,Adelmar da Costa Carvalho,Recife,,Savio Pereira Sampaio
+281,2025,29,2025-10-19,16:00,Flamengo,flamengo,Palmeiras,palmeiras,3,2,5,1,Vitoria Mandante,Flamengo,Jornalista Mário Filho,RJ,SP,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Wilton Pereira Sampaio
+282,2025,29,2025-10-20,19:30,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Fluminense,fluminense,2,0,2,2,Vitoria Mandante,Vasco da Gama S.a.f.,Jornalista Mário Filho,RJ,RJ,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Wagner do Nascimento Magalhaes
+283,2025,29,2025-10-18,18:30,Corinthians,corinthians,Atlético Mineiro Saf,atletico_mineiro_saf,1,0,1,1,Vitoria Mandante,Corinthians,Arena Corinthians,SP,MG,,,,,A,Arena Corinthians,Sao Paulo,,Alex Gomes Stefano
+284,2025,29,2025-10-20,21:30,Santos Fc,santos_fc,Vitória,vitoria,0,1,1,-1,Vitoria Visitante,Vitória,Urbano Caldeira,SP,BA,,,,,A,Urbano Caldeira,Santos,,Rafael Rodrigo Klein
+285,2025,29,2025-10-19,18:30,Mirassol,mirassol,São Paulo,sao_paulo,3,0,3,3,Vitoria Mandante,Mirassol,José Maria de Campos Maia,SP,SP,,,,,A,José Maria de Campos Maia,Mirassol,,Matheus Delgado Candançan
+286,2025,29,2025-10-18,21:00,Cruzeiro Saf,cruzeiro_saf,Fortaleza Ec Saf,fortaleza_ec_saf,1,0,1,1,Vitoria Mandante,Cruzeiro Saf,Magalhães Pinto,MG,CE,,,,,A,Magalhães Pinto,Belo Horizonte,,Rodrigo Jose Pereira de Lima
+287,2025,29,2025-10-19,18:30,Internacional,internacional,Sport,sport,2,0,2,2,Vitoria Mandante,Internacional,José Pinheiro Borda,RS,PE,,,,,A,José Pinheiro Borda,Porto Alegre,,Lucas Paulo Torezin
+288,2025,29,2025-10-19,20:30,Bahia,bahia,Grêmio,gremio,4,0,4,4,Vitoria Mandante,Bahia,Octávio Mangabeira,BA,RS,,,,,A,Octávio Mangabeira,Salvador,,Raphael Claus
+289,2025,29,2025-10-19,18:30,Ceará,ceara,Botafogo,botafogo,0,2,2,-2,Vitoria Visitante,Botafogo,Governador Plácido Aderaldo Castelo,CE,RJ,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Davi De Oliveira Lacerda
+290,2025,29,2025-10-20,19:00,Juventude,juventude,Red Bull Bragantino,red_bull_bragantino,1,0,1,1,Vitoria Mandante,Juventude,Treinador De Goleiros:,RS,SP,,,,,A,Treinador De Goleiros:,Caxias do Sul,,Felipe Fernandes de Lima
+291,2025,30,2025-10-25,17:30,Fluminense,fluminense,Internacional,internacional,1,0,1,1,Vitoria Mandante,Fluminense,Jornalista Mário Filho,RJ,RS,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Raphael Claus
+292,2025,30,2025-10-26,16:00,Botafogo,botafogo,Santos Fc,santos_fc,2,2,4,0,Empate,-,Nilton Santos,RJ,SP,,,,,A,Nilton Santos,Rio de Janeiro,,Rodrigo Jose Pereira de Lima
+293,2025,30,2025-10-26,20:30,Palmeiras,palmeiras,Cruzeiro Saf,cruzeiro_saf,0,0,0,0,Empate,-,Allianz Parque,SP,MG,,,,,A,Allianz Parque,Sao Paulo,,Rafael Rodrigo Klein
+294,2025,30,2025-10-25,21:30,São Paulo,sao_paulo,Bahia,bahia,2,0,2,2,Vitoria Mandante,São Paulo,Cícero Pompeu de Toledo,SP,BA,,,,,A,Cícero Pompeu de Toledo,Sao Paulo,,Lucas Paulo Torezin
+295,2025,30,2025-10-26,18:30,Red Bull Bragantino,red_bull_bragantino,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,0,3,3,-3,Vitoria Visitante,Vasco da Gama S.a.f.,Arbitragem,SP,RJ,,,,,A,Arbitragem,Braganca Paulista,,Savio Pereira Sampaio
+296,2025,30,2025-10-25,16:00,Atlético Mineiro Saf,atletico_mineiro_saf,Ceará,ceara,1,0,1,1,Vitoria Mandante,Atlético Mineiro Saf,ARENA MRV,MG,CE,,,,,A,ARENA MRV,Belo Horizonte,,Bruno Arleu de Araujo
+297,2025,30,2025-10-26,16:00,Grêmio,gremio,Juventude,juventude,3,1,4,2,Vitoria Mandante,Grêmio,Assistente Técnico:,RS,RS,,,,,A,Assistente Técnico:,Porto Alegre,,Alex Gomes Stefano
+298,2025,30,2025-10-25,16:00,Vitória,vitoria,Corinthians,corinthians,0,1,1,-1,Vitoria Visitante,Corinthians,Manoel Barradas,BA,SP,,,,,A,Manoel Barradas,Salvador,,Wilton Pereira Sampaio
+299,2025,30,2025-10-25,19:30,Fortaleza Ec Saf,fortaleza_ec_saf,Flamengo,flamengo,1,0,1,1,Vitoria Mandante,Fortaleza Ec Saf,Governador Plácido Aderaldo Castelo,CE,RJ,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Davi De Oliveira Lacerda
+300,2025,30,2025-10-25,18:30,Sport,sport,Mirassol,mirassol,1,2,3,-1,Vitoria Visitante,Mirassol,Adelmar da Costa Carvalho,PE,SP,,,,,A,Adelmar da Costa Carvalho,Recife,,Jefferson Ferreira de Moraes
+301,2025,31,2025-11-01,21:00,Flamengo,flamengo,Sport Recife,sport_recife,3,0,3,3,Vitoria Mandante,Flamengo,Jornalista Mário Filho,RJ,PE,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Fernando Antonio Mendes de Salles Nascimento Filho
+302,2025,31,2025-11-02,20:30,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,São Paulo,sao_paulo,0,2,2,-2,Vitoria Visitante,São Paulo,São Januário,RJ,SP,,,,,A,São Januário,Rio de Janeiro,,Wilton Pereira Sampaio
+303,2025,31,2025-11-02,16:00,Corinthians,corinthians,Grêmio,gremio,2,0,2,2,Vitoria Mandante,Corinthians,Arena Corinthians,SP,RS,,,,,A,Arena Corinthians,Sao Paulo,,Davi De Oliveira Lacerda
+304,2025,31,2025-11-01,16:00,Santos Fc,santos_fc,Fortaleza Ec Saf,fortaleza_ec_saf,1,1,2,0,Empate,-,Urbano Caldeira,SP,CE,,,,,A,Urbano Caldeira,Santos,,Anderson Daronco
+305,2025,31,2025-11-01,18:00,Mirassol,mirassol,Botafogo,botafogo,0,0,0,0,Empate,-,José Maria de Campos Maia,SP,RJ,,,,,A,José Maria de Campos Maia,Mirassol,,Jonathan Benkenstein Pinheiro
+306,2025,31,2025-11-01,16:00,Cruzeiro Saf,cruzeiro_saf,Vitória,vitoria,3,1,4,2,Vitoria Mandante,Cruzeiro Saf,Magalhães Pinto,MG,BA,,,,,A,Magalhães Pinto,Belo Horizonte,,Jefferson Ferreira de Moraes
+307,2025,31,2025-11-02,18:30,Internacional,internacional,Atlético Mineiro Saf,atletico_mineiro_saf,0,0,0,0,Empate,-,José Pinheiro Borda,RS,MG,,,,,A,José Pinheiro Borda,Porto Alegre,,Alex Gomes Stefano
+308,2025,31,2025-11-02,16:00,Bahia,bahia,Red Bull Bragantino,red_bull_bragantino,2,1,3,1,Vitoria Mandante,Bahia,Octávio Mangabeira,BA,SP,,,,,A,Octávio Mangabeira,Salvador,,Marcelo de Lima Henrique
+309,2025,31,2025-11-02,16:00,Ceará,ceara,Fluminense,fluminense,2,0,2,2,Vitoria Mandante,Ceará,Governador Plácido Aderaldo Castelo,CE,RJ,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Lucas Paulo Torezin
+310,2025,31,2025-11-02,18:30,Juventude,juventude,Palmeiras,palmeiras,0,2,2,-2,Vitoria Visitante,Palmeiras,Assistente Técnico:,RS,SP,,,,,A,Assistente Técnico:,Caxias do Sul,,Savio Pereira Sampaio
+311,2025,32,2025-11-06,19:30,Fluminense,fluminense,Mirassol,mirassol,1,0,1,1,Vitoria Mandante,Fluminense,Jornalista Mário Filho,RJ,SP,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Anderson Daronco
+312,2025,32,2025-11-05,19:30,Botafogo,botafogo,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,3,0,3,3,Vitoria Mandante,Botafogo,Nilton Santos,RJ,RJ,,,,,A,Nilton Santos,Rio de Janeiro,,Bruno Arleu de Araujo
+313,2025,32,2025-11-06,21:30,Palmeiras,palmeiras,Santos Fc,santos_fc,2,0,2,2,Vitoria Mandante,Palmeiras,Allianz Parque,SP,SP,,,,,A,Allianz Parque,Sao Paulo,,Raphael Claus
+314,2025,32,2025-11-05,21:30,São Paulo,sao_paulo,Flamengo,flamengo,2,2,4,0,Empate,-,Urbano Caldeira,SP,RJ,,,,,A,Urbano Caldeira,Santos,,Rodrigo Jose Pereira de Lima
+315,2025,32,2025-11-05,19:00,Red Bull Bragantino,red_bull_bragantino,Corinthians,corinthians,2,1,3,1,Vitoria Mandante,Red Bull Bragantino,Arbitragem,SP,SP,,,,,A,Arbitragem,Braganca Paulista,,Edina Alves Batista
+316,2025,32,2025-11-05,20:00,Atlético Mineiro Saf,atletico_mineiro_saf,Bahia,bahia,3,0,3,3,Vitoria Mandante,Atlético Mineiro Saf,ARENA MRV,MG,BA,,,,,A,ARENA MRV,Belo Horizonte,,Davi De Oliveira Lacerda
+317,2025,32,2025-11-05,20:00,Grêmio,gremio,Cruzeiro Saf,cruzeiro_saf,0,1,1,-1,Vitoria Visitante,Cruzeiro Saf,Arena do Grêmio,RS,MG,,,,,A,Arena do Grêmio,Porto Alegre,,Lucas Paulo Torezin
+318,2025,32,2025-11-05,19:00,Vitória,vitoria,Internacional,internacional,1,0,1,1,Vitoria Mandante,Vitória,Manoel Barradas,BA,RS,,,,,A,Manoel Barradas,Salvador,,Felipe Fernandes de Lima
+319,2025,32,2025-11-06,20:00,Ceará,ceara,Fortaleza Ec Saf,fortaleza_ec_saf,1,1,2,0,Empate,-,Governador Plácido Aderaldo Castelo,CE,CE,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Wilton Pereira Sampaio
+320,2025,32,2025-11-05,19:00,Sport Recife,sport_recife,Juventude,juventude,0,2,2,-2,Vitoria Visitante,Juventude,Médico:,PE,RS,,,,,A,Médico:,Recife,,Andre Luiz Skettino Policarpo Bento
+321,2025,33,2025-11-09,18:30,Flamengo,flamengo,Santos Fc,santos_fc,3,2,5,1,Vitoria Mandante,Flamengo,Jornalista Mário Filho,RJ,SP,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Savio Pereira Sampaio
+322,2025,33,2025-11-08,18:00,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Juventude,juventude,1,3,4,-2,Vitoria Visitante,Juventude,Assistente Técnico:,RJ,RS,,,,,A,Assistente Técnico:,Rio de Janeiro,,Fernando Antonio Mendes de Salles Nascimento Filho
+323,2025,33,2025-11-09,16:00,Corinthians,corinthians,Ceará,ceara,0,1,1,-1,Vitoria Visitante,Ceará,Arena Corinthians,SP,CE,,,,,A,Arena Corinthians,Sao Paulo,,Felipe Fernandes de Lima
+324,2025,33,2025-11-08,21:00,São Paulo,sao_paulo,Red Bull Bragantino,red_bull_bragantino,0,1,1,-1,Vitoria Visitante,Red Bull Bragantino,Urbano Caldeira,SP,SP,,,,,A,Urbano Caldeira,Santos,,Bruno Arleu de Araujo
+325,2025,33,2025-11-09,20:30,Mirassol,mirassol,Palmeiras,palmeiras,2,1,3,1,Vitoria Mandante,Mirassol,José Maria de Campos Maia,SP,SP,,,,,A,José Maria de Campos Maia,Mirassol,,Flavio Rodrigues de Souza
+326,2025,33,2025-11-09,16:00,Cruzeiro Saf,cruzeiro_saf,Fluminense,fluminense,0,0,0,0,Empate,-,Magalhães Pinto,MG,RJ,,,,,A,Magalhães Pinto,Belo Horizonte,,Rodrigo Jose Pereira de Lima
+327,2025,33,2025-11-08,18:30,Internacional,internacional,Bahia,bahia,2,2,4,0,Empate,-,José Pinheiro Borda,RS,BA,,,,,A,José Pinheiro Borda,Porto Alegre,,Lucas Paulo Torezin
+328,2025,33,2025-11-09,16:00,Vitória,vitoria,Botafogo,botafogo,0,0,0,0,Empate,-,Manoel Barradas,BA,RJ,,,,,A,Manoel Barradas,Salvador,,Anderson Daronco
+329,2025,33,2025-11-09,20:30,Fortaleza Ec Saf,fortaleza_ec_saf,Grêmio,gremio,2,2,4,0,Empate,-,Governador Plácido Aderaldo Castelo,CE,RS,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Jefferson Ferreira de Moraes
+330,2025,33,2025-11-08,16:00,Sport Recife,sport_recife,Atlético Mineiro Saf,atletico_mineiro_saf,2,4,6,-2,Vitoria Visitante,Atlético Mineiro Saf,Adelmar da Costa Carvalho,PE,MG,,,,,A,Adelmar da Costa Carvalho,Recife,,Matheus Delgado Candançan
+331,2025,34,2025-11-19,21:30,Fluminense,fluminense,Flamengo,flamengo,2,1,3,1,Vitoria Mandante,Fluminense,Jornalista Mário Filho,RJ,RJ,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Davi De Oliveira Lacerda
+332,2025,34,2025-11-18,20:30,Botafogo,botafogo,Sport Recife,sport_recife,3,2,5,1,Vitoria Mandante,Botafogo,Nilton Santos,RJ,PE,,,,,A,Nilton Santos,Rio de Janeiro,,Bruno Pereira Vasconcelos
+333,2025,34,2025-11-20,19:30,Corinthians,corinthians,São Paulo,sao_paulo,3,1,4,2,Vitoria Mandante,Corinthians,Arena Corinthians,SP,SP,,,,,A,Arena Corinthians,Sao Paulo,,Anderson Daronco
+334,2025,34,2025-11-19,21:30,Santos Fc,santos_fc,Mirassol,mirassol,1,1,2,0,Empate,-,Urbano Caldeira,SP,SP,,,,,A,Urbano Caldeira,Santos,,Matheus Delgado Candançan
+335,2025,34,2025-12-03,19:00,Red Bull Bragantino,red_bull_bragantino,Vitória,vitoria,4,0,4,4,Vitoria Mandante,Red Bull Bragantino,Arbitragem,SP,BA,,,,,A,Arbitragem,Braganca Paulista,,Wagner do Nascimento Magalhaes
+336,2025,34,2025-12-03,21:30,Atlético Mineiro Saf,atletico_mineiro_saf,Palmeiras,palmeiras,0,3,3,-3,Vitoria Visitante,Palmeiras,ARENA MRV,MG,SP,,,,,A,ARENA MRV,Belo Horizonte,,Rafael Rodrigo Klein
+337,2025,34,2025-11-19,21:30,Grêmio,gremio,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,2,0,2,2,Vitoria Mandante,Grêmio,Arena do Grêmio,RS,RJ,,,,,A,Arena do Grêmio,Porto Alegre,,Raphael Claus
+338,2025,34,2025-11-20,18:00,Bahia,bahia,Fortaleza Ec Saf,fortaleza_ec_saf,2,3,5,-1,Vitoria Visitante,Fortaleza Ec Saf,Octávio Mangabeira,BA,CE,,,,,A,Octávio Mangabeira,Salvador,,Rafael Rodrigo Klein
+339,2025,34,2025-11-20,21:30,Ceará,ceara,Internacional,internacional,1,2,3,-1,Vitoria Visitante,Internacional,Governador Plácido Aderaldo Castelo,CE,RS,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Rodrigo Jose Pereira de Lima
+340,2025,34,2025-11-20,16:00,Juventude,juventude,Cruzeiro Saf,cruzeiro_saf,3,3,6,0,Empate,-,Assistente Técnico:,RS,MG,,,,,A,Assistente Técnico:,Caxias do Sul,,Savio Pereira Sampaio
+341,2025,35,2025-11-22,21:30,Flamengo,flamengo,Red Bull Bragantino,red_bull_bragantino,3,0,3,3,Vitoria Mandante,Flamengo,Jornalista Mário Filho,RJ,SP,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Fernando Antonio Mendes de Salles Nascimento Filho
+342,2025,35,2025-11-22,19:30,Botafogo,botafogo,Grêmio,gremio,3,2,5,1,Vitoria Mandante,Botafogo,Nilton Santos,RJ,RS,,,,,A,Nilton Santos,Rio de Janeiro,,Felipe Fernandes de Lima
+343,2025,35,2025-11-22,21:30,Palmeiras,palmeiras,Fluminense,fluminense,0,0,0,0,Empate,-,Allianz Parque,SP,RJ,,,,,A,Allianz Parque,Sao Paulo,,Jonathan Benkenstein Pinheiro
+344,2025,35,2025-11-23,16:00,São Paulo,sao_paulo,Juventude,juventude,2,1,3,1,Vitoria Mandante,São Paulo,Assistente Técnico:,SP,RS,,,,,A,Assistente Técnico:,Santos,,Andre Luiz Skettino Policarpo Bento
+345,2025,35,2025-11-24,19:00,Mirassol,mirassol,Ceará,ceara,3,0,3,3,Vitoria Mandante,Mirassol,José Maria de Campos Maia,SP,CE,,,,,A,José Maria de Campos Maia,Mirassol,,Lucas Casagrande
+346,2025,35,2025-11-23,20:30,Cruzeiro Saf,cruzeiro_saf,Corinthians,corinthians,3,0,3,3,Vitoria Mandante,Cruzeiro Saf,Magalhães Pinto,MG,SP,,,,,A,Magalhães Pinto,Belo Horizonte,,Alex Gomes Stefano
+347,2025,35,2025-11-24,21:00,Internacional,internacional,Santos Fc,santos_fc,1,1,2,0,Empate,-,José Pinheiro Borda,RS,SP,,,,,A,José Pinheiro Borda,Porto Alegre,,Davi De Oliveira Lacerda
+348,2025,35,2025-11-23,16:00,Bahia,bahia,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,1,0,1,1,Vitoria Mandante,Bahia,Octávio Mangabeira,BA,RJ,,,,,A,Octávio Mangabeira,Salvador,,Jefferson Ferreira de Moraes
+349,2025,35,2025-11-30,18:30,Fortaleza Ec Saf,fortaleza_ec_saf,Atlético Mineiro Saf,atletico_mineiro_saf,1,0,1,1,Vitoria Mandante,Fortaleza Ec Saf,Governador Plácido Aderaldo Castelo,CE,MG,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Davi De Oliveira Lacerda
+350,2025,35,2025-11-23,18:30,Sport Recife,sport_recife,Vitória,vitoria,1,3,4,-2,Vitoria Visitante,Vitória,Adelmar da Costa Carvalho,PE,BA,,,,,A,Adelmar da Costa Carvalho,Recife,,Yuri Elino Ferreira da Cruz
+351,2025,36,2025-11-27,20:30,Fluminense,fluminense,São Paulo,sao_paulo,6,0,6,6,Vitoria Mandante,Fluminense,Jornalista Mário Filho,RJ,SP,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Lucas Paulo Torezin
+352,2025,36,2025-11-28,19:30,Vasco da Gama S.A.F.,vasco_da_gama_s_a_f,Internacional,internacional,5,1,6,4,Vitoria Mandante,Vasco da Gama S.A.F.,São Januário,RJ,RS,,,,,A,São Januário,Rio de Janeiro,,Rodrigo Jose Pereira de Lima
+353,2025,36,2025-11-30,16:00,Corinthians,corinthians,Botafogo,botafogo,2,2,4,0,Empate,-,Arena Corinthians,SP,RJ,,,,,A,Arena Corinthians,Sao Paulo,,Jonathan Benkenstein Pinheiro
+354,2025,36,2025-11-28,21:30,Santos Fc,santos_fc,Sport Recife,sport_recife,3,0,3,3,Vitoria Mandante,Santos Fc,Urbano Caldeira,SP,PE,,,,,A,Urbano Caldeira,Santos,,Felipe Fernandes de Lima
+355,2025,36,2025-11-26,19:00,Red Bull Bragantino,red_bull_bragantino,Fortaleza Ec Saf,fortaleza_ec_saf,0,1,1,-1,Vitoria Visitante,Fortaleza Ec Saf,Arbitragem,SP,CE,,,,,A,Arbitragem,Braganca Paulista,,Bruno Arleu de Araujo
+356,2025,36,2025-11-25,21:30,Atlético Mineiro Saf,atletico_mineiro_saf,Flamengo,flamengo,1,1,2,0,Empate,-,ARENA MRV,MG,RJ,,,,,A,ARENA MRV,Belo Horizonte,,Rafael Rodrigo Klein
+357,2025,36,2025-11-25,21:30,Grêmio,gremio,Palmeiras,palmeiras,3,2,5,1,Vitoria Mandante,Grêmio,Arena do Grêmio,RS,SP,,,,,A,Arena do Grêmio,Porto Alegre,,Savio Pereira Sampaio
+358,2025,36,2025-11-29,16:00,Vitória,vitoria,Mirassol,mirassol,2,0,2,2,Vitoria Mandante,Vitória,Manoel Barradas,BA,SP,,,,,A,Manoel Barradas,Salvador,,Wilton Pereira Sampaio
+359,2025,36,2025-11-29,21:00,Ceará,ceara,Cruzeiro Saf,cruzeiro_saf,1,1,2,0,Empate,-,Governador Plácido Aderaldo Castelo,CE,MG,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Savio Pereira Sampaio
+360,2025,36,2025-11-28,19:00,Juventude,juventude,Bahia,bahia,1,1,2,0,Empate,-,Assistente Técnico:,RS,BA,,,,,A,Assistente Técnico:,Caxias do Sul,,Fernando Antonio Mendes de Salles Nascimento Filho
+361,2025,37,2025-12-03,21:30,Flamengo,flamengo,Ceará,ceara,1,0,1,1,Vitoria Mandante,Flamengo,Jornalista Mário Filho,RJ,CE,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Rodrigo Jose Pereira de Lima
+362,2025,37,2025-12-02,19:00,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Mirassol,mirassol,0,2,2,-2,Vitoria Visitante,Mirassol,São Januário,RJ,SP,,,,,A,São Januário,Rio de Janeiro,,Paulo Cesar Zanovelli da Silva
+363,2025,37,2025-11-19,19:30,Palmeiras,palmeiras,Vitória,vitoria,0,0,0,0,Empate,-,Allianz Parque,SP,BA,,,,,A,Allianz Parque,Sao Paulo,,Lucas Paulo Torezin
+364,2025,37,2025-12-03,20:00,São Paulo,sao_paulo,Internacional,internacional,3,0,3,3,Vitoria Mandante,São Paulo,Urbano Caldeira,SP,RS,,,,,A,Urbano Caldeira,Santos,,Bruno Arleu de Araujo
+365,2025,37,2025-11-16,19:00,Red Bull Bragantino,red_bull_bragantino,Atlético Mineiro Saf,atletico_mineiro_saf,2,0,2,2,Vitoria Mandante,Red Bull Bragantino,Arbitragem,SP,MG,,,,,A,Arbitragem,Braganca Paulista,,Marcelo de Lima Henrique
+366,2025,37,2025-12-04,19:30,Cruzeiro Saf,cruzeiro_saf,Botafogo,botafogo,2,2,4,0,Empate,-,Magalhães Pinto,MG,RJ,,,,,A,Magalhães Pinto,Belo Horizonte,,Anderson Daronco
+367,2025,37,2025-12-02,21:30,Grêmio,gremio,Fluminense,fluminense,1,2,3,-1,Vitoria Visitante,Fluminense,Arena do Grêmio,RS,RJ,,,,,A,Arena do Grêmio,Porto Alegre,,Raphael Claus
+368,2025,37,2025-12-03,20:00,Bahia,bahia,Sport Recife,sport_recife,2,0,2,2,Vitoria Mandante,Bahia,Octávio Mangabeira,BA,PE,,,,,A,Octávio Mangabeira,Salvador,,Flavio Rodrigues de Souza
+369,2025,37,2025-12-03,19:00,Fortaleza Ec Saf,fortaleza_ec_saf,Corinthians,corinthians,2,1,3,1,Vitoria Mandante,Fortaleza Ec Saf,Governador Plácido Aderaldo Castelo,CE,SP,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Savio Pereira Sampaio
+370,2025,37,2025-12-03,19:30,Juventude,juventude,Santos Fc,santos_fc,0,3,3,-3,Vitoria Visitante,Santos Fc,Assistente Técnico:,RS,SP,,,,,A,Assistente Técnico:,Caxias do Sul,,Wilton Pereira Sampaio
+371,2025,38,2025-12-07,16:00,Fluminense,fluminense,Bahia,bahia,2,0,2,2,Vitoria Mandante,Fluminense,Jornalista Mário Filho,RJ,BA,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Matheus Delgado Candançan
+372,2025,38,2025-12-07,16:00,Botafogo,botafogo,Fortaleza Ec Saf,fortaleza_ec_saf,4,2,6,2,Vitoria Mandante,Botafogo,Nilton Santos,RJ,CE,,,,,A,Nilton Santos,Rio de Janeiro,,Paulo Cesar Zanovelli da Silva
+373,2025,38,2025-12-07,16:00,Corinthians,corinthians,Juventude,juventude,1,1,2,0,Empate,-,Assistente Técnico:,SP,RS,,,,,A,Assistente Técnico:,Sao Paulo,,Felipe Fernandes de Lima
+374,2025,38,2025-12-07,16:00,Santos Fc,santos_fc,Cruzeiro Saf,cruzeiro_saf,3,0,3,3,Vitoria Mandante,Santos Fc,Urbano Caldeira,SP,MG,,,,,A,Urbano Caldeira,Santos,,Rodrigo Jose Pereira de Lima
+375,2025,38,2025-12-06,18:30,Mirassol,mirassol,Flamengo,flamengo,3,3,6,0,Empate,-,José Maria de Campos Maia,SP,RJ,,,,,A,José Maria de Campos Maia,Mirassol,,Lucas Casagrande
+376,2025,38,2025-12-07,16:00,Atlético Mineiro Saf,atletico_mineiro_saf,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,5,0,5,5,Vitoria Mandante,Atlético Mineiro Saf,ARENA MRV,MG,RJ,,,,,A,ARENA MRV,Belo Horizonte,,Lucas Paulo Torezin
+377,2025,38,2025-12-07,16:00,Internacional,internacional,Red Bull Bragantino,red_bull_bragantino,3,1,4,2,Vitoria Mandante,Internacional,José Pinheiro Borda,RS,SP,,,,,A,José Pinheiro Borda,Porto Alegre,,Davi De Oliveira Lacerda
+378,2025,38,2025-12-07,16:00,Vitória,vitoria,São Paulo,sao_paulo,1,0,1,1,Vitoria Mandante,Vitória,Manoel Barradas,BA,SP,,,,,A,Manoel Barradas,Salvador,,Wilton Pereira Sampaio
+379,2025,38,2025-12-07,16:00,Ceará,ceara,Palmeiras,palmeiras,1,3,4,-2,Vitoria Visitante,Palmeiras,Governador Plácido Aderaldo Castelo,CE,SP,,,,,A,Governador Plácido Aderaldo Castelo,Fortaleza,,Bruno Arleu de Araujo
+380,2025,38,2025-12-07,16:00,Sport Recife,sport_recife,Grêmio,gremio,0,4,4,-4,Vitoria Visitante,Grêmio,Adelmar da Costa Carvalho,PE,RS,,,,,A,Adelmar da Costa Carvalho,Recife,,Edina Alves Batista
 170,2026,0,,,,,,,0,3,3,-3,Vitoria Visitante,,,,,,,,,A,,,,
 221,2026,0,,,,,,,0,5,5,-5,Vitoria Visitante,,,,,,,,,A,,,,
 1,2026,1,2026-01-28,19:30,Fluminense,fluminense,Grêmio,gremio,2,1,3,1,Vitoria Mandante,Fluminense,Jornalista Mário Filho,RJ,RS,,,,,A,Jornalista Mário Filho,Rio de Janeiro,,Davi De Oliveira Lacerda

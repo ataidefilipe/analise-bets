@@ -9860,6 +9860,951 @@ partida_id,temporada,rodada,clube,clube_slug,atleta,atleta_slug,minuto_continuo,
 8785,2024,38,Corinthians,corinthians,Yuri Alberto,yuri_alberto,46,45,1,1T,Penalty,,
 8785,2024,38,Corinthians,corinthians,Charles Rigon Matos,charles_rigon_matos,88,88,0,2T,Normal,,
 8785,2024,38,Corinthians,corinthians,Memphis Depay,memphis_depay,93,90,3,2T,Normal,,
+95,2025,0,Red Bull Bragantino,red_bull_bragantino,Jhonatan dos Santos Rosa,jhonatan_dos_santos_rosa,48,45,3,1T,Falta,A,10
+156,2025,0,Atlético Mineiro Saf,atletico_mineiro_saf,Givanildo Vieira de Sousa,givanildo_vieira_de_sousa,8,8,0,1T,Normal,A,500
+156,2025,0,Atlético Mineiro Saf,atletico_mineiro_saf,Vitor Hugo Franchescoli de Souza,vitor_hugo_franchescoli_de_souza,46,45,1,1T,Normal,A,14
+156,2025,0,Fortaleza Ec Saf,fortaleza_ec_saf,Deyverson Brum Silva,deyverson_brum_silva,46,1,0,2T,Normal,A,18
+156,2025,0,Atlético Mineiro Saf,atletico_mineiro_saf,Eduardo Pereira Rodrigues,eduardo_pereira_rodrigues,60,15,0,2T,Normal,A,92
+156,2025,0,Fortaleza Ec Saf,fortaleza_ec_saf,Deyverson Brum Silva,deyverson_brum_silva,66,21,0,2T,Penalty,A,18
+156,2025,0,Fortaleza Ec Saf,fortaleza_ec_saf,Deyverson Brum Silva,deyverson_brum_silva,93,90,3,2T,Normal,A,18
+1,2025,1,Internacional,internacional,Bruno Henrique Corsini,bruno_henrique_corsini,34,34,0,1T,Normal,A,8
+1,2025,1,Flamengo,flamengo,Leonardo Pereira,leonardo_pereira,53,8,0,2T,Normal,A,4
+2,2025,1,Santos Fc,santos_fc,Alvaro Martin Barreal,alvaro_martin_barreal,20,20,0,1T,Normal,A,22
+2,2025,1,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Nuno Gonçalo Rocha Moreira,nuno_goncalo_rocha_moreira,52,7,0,2T,Normal,A,17
+2,2025,1,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Pablo Ezequiel Vegetti,pablo_ezequiel_vegetti,77,32,0,2T,Normal,A,99
+5,2025,1,Ceará,ceara,Pedro Raul Garay da Silva,pedro_raul_garay_da_silva,11,11,0,1T,Normal,A,9
+5,2025,1,Ceará,ceara,Marllon Goncalves Jeronimo Borges,marllon_goncalves_jeronimo_borges,22,22,0,1T,Normal,A,3
+5,2025,1,Red Bull Bragantino,red_bull_bragantino,Ignacio Jesus Laquintana Marsico,ignacio_jesus_laquintana_marsico,45,45,0,1T,Normal,A,33
+5,2025,1,Red Bull Bragantino,red_bull_bragantino,Eric dos Santos Rodrigues,eric_dos_santos_rodrigues,92,90,2,2T,Normal,A,7
+6,2025,1,Cruzeiro Saf,cruzeiro_saf,Eduardo Pereira Rodrigues,eduardo_pereira_rodrigues,14,14,0,1T,Normal,A,7
+6,2025,1,Cruzeiro Saf,cruzeiro_saf,Gabriel Barbosa Almeida,gabriel_barbosa_almeida,21,21,0,1T,Normal,A,9
+6,2025,1,Mirassol,mirassol,Lucas Ramon Batista Silva,lucas_ramon_batista_silva,47,45,2,1T,Normal,A,19
+7,2025,1,Grêmio,gremio,Douglas Matias Arezo Martinez,douglas_matias_arezo_martinez,36,36,0,1T,Normal,A,19
+7,2025,1,Grêmio,gremio,Edenilson Andrade dos Santos,edenilson_andrade_dos_santos,44,44,0,1T,Normal,A,8
+7,2025,1,Atlético Mineiro Saf,atletico_mineiro_saf,Ronielson da Silva Barbosa,ronielson_da_silva_barbosa,74,29,0,2T,Normal,A,33
+8,2025,1,Bahia,bahia,Gilberto Moraes Junior,gilberto_moraes_junior,45,45,0,1T,Normal,A,2
+8,2025,1,Corinthians,corinthians,Hector Jose Hernandez Marrero,hector_jose_hernandez_marrero,89,44,0,2T,Normal,A,22
+9,2025,1,Fortaleza,fortaleza,Juan Martin Lucero,juan_martin_lucero,3,3,0,1T,Normal,A,9
+9,2025,1,Fortaleza,fortaleza,Guilherme de Jesus da Silva,guilherme_de_jesus_da_silva,21,21,0,1T,Normal,A,2
+10,2025,1,Juventude,juventude,Gabriel Pereira Taliari,gabriel_pereira_taliari,7,7,0,1T,Normal,A,19
+10,2025,1,Juventude,juventude,Gabriel Pereira Taliari,gabriel_pereira_taliari,51,6,0,2T,Normal,A,19
+11,2025,2,Fluminense,fluminense,Vinicius Moreira de Lima,vinicius_moreira_de_lima,35,35,0,1T,Normal,A,45
+11,2025,2,Red Bull Bragantino,red_bull_bragantino,Isidro Miguel Pitta Saldivar,isidro_miguel_pitta_saldivar,83,38,0,2T,Normal,A,9
+11,2025,2,Fluminense,fluminense,Matheus Martinelli Lima,matheus_martinelli_lima,92,90,2,2T,Normal,A,8
+12,2025,2,Botafogo,botafogo,Igor Jesus Maciel da Cruz,igor_jesus_maciel_da_cruz,23,23,0,1T,Normal,A,99
+12,2025,2,Botafogo,botafogo,Mateo Ponte Costa,mateo_ponte_costa,62,17,0,2T,Normal,A,4
+13,2025,2,Corinthians,corinthians,Yuri Alberto Monteiro da Silva,yuri_alberto_monteiro_da_silva,10,10,0,1T,Normal,A,9
+13,2025,2,Corinthians,corinthians,Memphis Depay,memphis_depay,26,26,0,1T,Normal,A,10
+13,2025,2,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Joao Victor da Silva Marcelino,joao_victor_da_silva_marcelino,90,45,0,2T,Gol Contra,A,38
+14,2025,2,Bahia,bahia,Erick Luis Conrado Carvalho,erick_luis_conrado_carvalho,16,16,0,1T,Normal,A,14
+14,2025,2,Santos Fc,santos_fc,Thaciano Mickael da Silva,thaciano_mickael_da_silva,49,4,0,2T,Normal,A,16
+14,2025,2,Santos Fc,santos_fc,Diego Cristiano Evaristo,diego_cristiano_evaristo,80,35,0,2T,Normal,A,21
+14,2025,2,Bahia,bahia,Luciano Batista da Silva Junior,luciano_batista_da_silva_junior,89,44,0,2T,Normal,A,46
+15,2025,2,Fortaleza Ec Saf,fortaleza_ec_saf,Leandro Emmanuel Martinez,leandro_emmanuel_martinez,14,14,0,1T,Normal,A,8
+15,2025,2,Mirassol,mirassol,Cristian Renato Gonçalves Riquelme,cristian_renato_goncalves_riquelme,92,90,2,2T,Normal,A,17
+17,2025,2,Internacional,internacional,Alan Patrick Lourenço,alan_patrick_lourenco,30,30,0,1T,Normal,A,10
+17,2025,2,Internacional,internacional,Enner Remberto Valencia Lastra,enner_remberto_valencia_lastra,36,36,0,1T,Normal,A,13
+17,2025,2,Internacional,internacional,Rafael Santos Borre Maury,rafael_santos_borre_maury,76,31,0,2T,Normal,A,19
+18,2025,2,Flamengo,flamengo,Giorgian Daniel de Arrascaeta Benedetti,giorgian_daniel_de_arrascaeta_benedetti,62,17,0,2T,Normal,A,10
+18,2025,2,Vitória,vitoria,Wellington Soares da Silva,wellington_soares_da_silva,77,32,0,2T,Normal,A,10
+18,2025,2,Flamengo,flamengo,Bruno Henrique Pinto,bruno_henrique_pinto,87,42,0,2T,Normal,A,27
+19,2025,2,Ceará,ceara,Pedro Raul Garay da Silva,pedro_raul_garay_da_silva,25,25,0,1T,Penalty,A,9
+19,2025,2,Ceará,ceara,Matheus de Araujo Andrade,matheus_de_araujo_andrade,95,90,5,2T,Normal,A,8
+20,2025,2,Palmeiras,palmeiras,Jose Manuel Alberto Lopez,jose_manuel_alberto_lopez,33,33,0,1T,Penalty,A,42
+20,2025,2,Sport,sport,Chrystian Amaral Barletta de Almeida,chrystian_amaral_barletta_de_almeida,38,38,0,1T,Normal,A,30
+20,2025,2,Palmeiras,palmeiras,Joaquin Piquerez Moreira,joaquin_piquerez_moreira,91,90,1,2T,Penalty,A,22
+21,2025,3,Fluminense,fluminense,Samuel Xavier Brito,samuel_xavier_brito,96,90,6,2T,Normal,A,2
+22,2025,3,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Pablo Ezequiel Vegetti,pablo_ezequiel_vegetti,32,32,0,1T,Normal,A,99
+22,2025,3,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Pablo Ezequiel Vegetti,pablo_ezequiel_vegetti,40,40,0,1T,Normal,A,99
+22,2025,3,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Hugo Moura Arruda da Silva,hugo_moura_arruda_da_silva,55,10,0,2T,Gol Contra,A,25
+22,2025,3,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Rayan Vitor Simplício Rocha,rayan_vitor_simplicio_rocha,82,37,0,2T,Normal,A,77
+23,2025,3,Palmeiras,palmeiras,Joaquin Piquerez Moreira,joaquin_piquerez_moreira,14,14,0,1T,Normal,A,22
+23,2025,3,Palmeiras,palmeiras,Emiliano Martinez Toranza,emiliano_martinez_toranza,19,19,0,1T,Normal,A,32
+24,2025,3,São Paulo,sao_paulo,Aldemir dos Santos Ferreira,aldemir_dos_santos_ferreira,51,6,0,2T,Normal,A,11
+24,2025,3,Cruzeiro Saf,cruzeiro_saf,Kaio Jorge Pinto Ramos,kaio_jorge_pinto_ramos,64,19,0,2T,Normal,A,19
+25,2025,3,Red Bull Bragantino,red_bull_bragantino,Eduardo Colcenti Antunes,eduardo_colcenti_antunes,5,5,0,1T,Normal,A,8
+26,2025,3,Vitória,vitoria,Lucas Halter,lucas_halter,47,2,0,2T,Normal,A,5
+26,2025,3,Atlético Mineiro Saf,atletico_mineiro_saf,Fausto Mariano Vera,fausto_mariano_vera,56,11,0,2T,Normal,A,8
+26,2025,3,Vitória,vitoria,Matheus Martins Fogaca de Paulo,matheus_martins_fogaca_de_paulo,65,20,0,2T,Normal,A,30
+26,2025,3,Atlético Mineiro Saf,atletico_mineiro_saf,Igor Silveira Gomes,igor_silveira_gomes,87,42,0,2T,Normal,A,17
+27,2025,3,Flamengo,flamengo,Giorgian Daniel de Arrascaeta Benedetti,giorgian_daniel_de_arrascaeta_benedetti,3,3,0,1T,Normal,A,10
+27,2025,3,Flamengo,flamengo,Giorgian Daniel de Arrascaeta Benedetti,giorgian_daniel_de_arrascaeta_benedetti,67,22,0,2T,Normal,A,10
+28,2025,3,Mirassol,mirassol,Gabriel Santana Pinto,gabriel_santana_pinto,16,16,0,1T,Normal,A,27
+28,2025,3,Bahia,bahia,Erick da Costa Farias,erick_da_costa_farias,39,39,0,1T,Normal,A,16
+30,2025,3,Ceará,ceara,Aylon Darwin Tavella,aylon_darwin_tavella,40,40,0,1T,Normal,A,11
+30,2025,3,Juventude,juventude,Luiz Gustavo da Silva Machado Duarte,luiz_gustavo_da_silva_machado_duarte,45,45,0,1T,Normal,A,44
+30,2025,3,Juventude,juventude,Matheus Barcelos da Silva,matheus_barcelos_da_silva,69,24,0,2T,Normal,A,17
+32,2025,4,São Paulo,sao_paulo,Aldemir dos Santos Ferreira,aldemir_dos_santos_ferreira,20,20,0,1T,Normal,A,11
+32,2025,4,Botafogo,botafogo,Jefferson David Savarino Quintero,jefferson_david_savarino_quintero,23,23,0,1T,Normal,A,10
+32,2025,4,São Paulo,sao_paulo,Andre Oliveira Silva,andre_oliveira_silva,57,45,12,1T,Normal,A,17
+32,2025,4,Botafogo,botafogo,Igor Jesus Maciel da Cruz,igor_jesus_maciel_da_cruz,83,38,0,2T,Normal,A,99
+33,2025,4,Fluminense,fluminense,Rene Rodrigues Martins,rene_rodrigues_martins,62,17,0,2T,Normal,A,6
+33,2025,4,Fluminense,fluminense,Jhon Adolfo Arias Andrade,jhon_adolfo_arias_andrade,82,37,0,2T,Penalty,A,21
+34,2025,4,Santos Fc,santos_fc,Jose Ivaldo Almeida Silva,jose_ivaldo_almeida_silva,24,24,0,1T,Normal,A,2
+34,2025,4,Santos Fc,santos_fc,Alvaro Martin Barreal,alvaro_martin_barreal,26,26,0,1T,Normal,A,22
+35,2025,4,Mirassol,mirassol,Daniel Fortunato Borges,daniel_fortunato_borges,2,2,0,1T,Normal,A,20
+35,2025,4,Mirassol,mirassol,Reinaldo Manoel da Silva,reinaldo_manoel_da_silva,20,20,0,1T,Penalty,A,6
+35,2025,4,Mirassol,mirassol,Reinaldo Manoel da Silva,reinaldo_manoel_da_silva,77,32,0,2T,Falta,A,6
+35,2025,4,Grêmio,gremio,Martin Christensen Braithwaite,martin_christensen_braithwaite,82,37,0,2T,Normal,A,22
+35,2025,4,Mirassol,mirassol,Daniel Fortunato Borges,daniel_fortunato_borges,84,39,0,2T,Normal,A,20
+36,2025,4,Cruzeiro Saf,cruzeiro_saf,Lucas Daniel Romero,lucas_daniel_romero,52,45,7,1T,Normal,A,29
+36,2025,4,Cruzeiro Saf,cruzeiro_saf,Kaio Jorge Pinto Ramos,kaio_jorge_pinto_ramos,65,20,0,2T,Normal,A,19
+36,2025,4,Cruzeiro Saf,cruzeiro_saf,Kaio Jorge Pinto Ramos,kaio_jorge_pinto_ramos,76,31,0,2T,Normal,A,19
+37,2025,4,Palmeiras,palmeiras,Facundo Daniel Torres Perez,facundo_daniel_torres_perez,62,17,0,2T,Normal,A,17
+38,2025,4,Vitória,vitoria,Janderson de Carvalho Costa,janderson_de_carvalho_costa,36,36,0,1T,Normal,A,39
+38,2025,4,Fortaleza Ec Saf,fortaleza_ec_saf,Diogo Barbosa Mendanha,diogo_barbosa_mendanha,47,2,0,2T,Normal,A,16
+38,2025,4,Vitória,vitoria,Matheus Martins Fogaca de Paulo,matheus_martins_fogaca_de_paulo,72,27,0,2T,Normal,A,30
+39,2025,4,Ceará,ceara,Pedro Raul Garay da Silva,pedro_raul_garay_da_silva,28,28,0,1T,Normal,A,9
+39,2025,4,Ceará,ceara,Pedro Raul Garay da Silva,pedro_raul_garay_da_silva,80,35,0,2T,Normal,A,9
+39,2025,4,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Pablo Ezequiel Vegetti,pablo_ezequiel_vegetti,92,90,2,2T,Normal,A,99
+40,2025,4,Red Bull Bragantino,red_bull_bragantino,Luis Antonio da Rocha Junior,luis_antonio_da_rocha_junior,13,13,0,1T,Normal,A,29
+41,2025,5,Fluminense,fluminense,German Ezequiel Cano,german_ezequiel_cano,38,38,0,1T,Normal,A,14
+41,2025,5,Vitória,vitoria,Lucas Braga Ribeiro,lucas_braga_ribeiro,89,44,0,2T,Normal,A,22
+43,2025,5,Sport,sport,Sergio Miguel Relvas Goncalves Pereira de Oliveira,sergio_miguel_relvas_goncalves_pereira_de_oliveira,45,45,0,1T,Normal,A,27
+43,2025,5,Corinthians,corinthians,Memphis Depay,memphis_depay,46,1,0,2T,Normal,A,10
+43,2025,5,Corinthians,corinthians,Memphis Depay,memphis_depay,61,16,0,2T,Normal,A,10
+44,2025,5,São Paulo,sao_paulo,Aldemir dos Santos Ferreira,aldemir_dos_santos_ferreira,9,9,0,1T,Normal,A,11
+44,2025,5,São Paulo,sao_paulo,Andre Oliveira Silva,andre_oliveira_silva,22,22,0,1T,Normal,A,17
+44,2025,5,Santos Fc,santos_fc,Francisco das Chagas Soares dos Santos,francisco_das_chagas_soares_dos_santos,47,45,2,1T,Penalty,A,9
+45,2025,5,Red Bull Bragantino,red_bull_bragantino,Jhonatan dos Santos Rosa,jhonatan_dos_santos_rosa,14,14,0,1T,Normal,A,10
+46,2025,5,Atlético Mineiro Saf,atletico_mineiro_saf,Tomas Esteban Cuello,tomas_esteban_cuello,47,2,0,2T,Normal,A,28
+47,2025,5,Grêmio,gremio,Cristian Gonzalo Olivera Ibarra,cristian_gonzalo_olivera_ibarra,37,37,0,1T,Normal,A,99
+47,2025,5,Internacional,internacional,Alan Patrick Lourenço,alan_patrick_lourenco,65,20,0,2T,Penalty,A,10
+48,2025,5,Bahia,bahia,Everton Augusto de Barros Ribeiro,everton_augusto_de_barros_ribeiro,104,90,14,2T,Penalty,A,10
+49,2025,5,Palmeiras,palmeiras,Facundo Daniel Torres Perez,facundo_daniel_torres_perez,48,45,3,1T,Normal,A,17
+49,2025,5,Palmeiras,palmeiras,Jose Manuel Alberto Lopez,jose_manuel_alberto_lopez,57,12,0,2T,Normal,A,42
+49,2025,5,Fortaleza Ec Saf,fortaleza_ec_saf,Deyverson Brum Silva,deyverson_brum_silva,70,25,0,2T,Normal,A,18
+50,2025,5,Juventude,juventude,Sebastiao Enio Santos de Almeida,sebastiao_enio_santos_de_almeida,23,23,0,1T,Normal,A,97
+50,2025,5,Mirassol,mirassol,Iury Lirio Freitas de Castilho,iury_lirio_freitas_de_castilho,33,33,0,1T,Normal,A,77
+50,2025,5,Juventude,juventude,Emerson Geovanny Batalla Martinez,emerson_geovanny_batalla_martinez,46,45,1,1T,Normal,A,27
+50,2025,5,Mirassol,mirassol,Reinaldo Manoel da Silva,reinaldo_manoel_da_silva,71,26,0,2T,Penalty,A,6
+51,2025,6,Flamengo,flamengo,Everton Sousa Soares,everton_sousa_soares,4,4,0,1T,Normal,A,11
+51,2025,6,Flamengo,flamengo,Giorgian Daniel de Arrascaeta Benedetti,giorgian_daniel_de_arrascaeta_benedetti,33,33,0,1T,Normal,A,10
+51,2025,6,Flamengo,flamengo,Pedro Guilherme Abreu dos Santos,pedro_guilherme_abreu_dos_santos,37,37,0,1T,Normal,A,9
+51,2025,6,Flamengo,flamengo,Pedro Guilherme Abreu dos Santos,pedro_guilherme_abreu_dos_santos,78,33,0,2T,Penalty,A,9
+52,2025,6,Botafogo,botafogo,Victor Alexander da Silva,victor_alexander_da_silva,37,37,0,1T,Normal,A,2
+52,2025,6,Botafogo,botafogo,Jefferson David Savarino Quintero,jefferson_david_savarino_quintero,94,90,4,2T,Normal,A,10
+53,2025,6,Bahia,bahia,Kayky da Silva Chagas,kayky_da_silva_chagas,93,90,3,2T,Normal,A,37
+54,2025,6,Red Bull Bragantino,red_bull_bragantino,Eduardo Colcenti Antunes,eduardo_colcenti_antunes,63,18,0,2T,Normal,A,8
+54,2025,6,Red Bull Bragantino,red_bull_bragantino,Ignacio Jesus Laquintana Marsico,ignacio_jesus_laquintana_marsico,82,37,0,2T,Normal,A,33
+54,2025,6,Santos Fc,santos_fc,Deivid Washington de Souza Eugenio,deivid_washington_de_souza_eugenio,93,90,3,2T,Normal,A,36
+55,2025,6,Mirassol,mirassol,Edson Guilherme Mendes dos Santos,edson_guilherme_mendes_dos_santos,12,12,0,1T,Normal,A,95
+55,2025,6,Atlético Mineiro Saf,atletico_mineiro_saf,Ronielson da Silva Barbosa,ronielson_da_silva_barbosa,70,25,0,2T,Normal,A,33
+55,2025,6,Atlético Mineiro Saf,atletico_mineiro_saf,Givanildo Vieira de Sousa,givanildo_vieira_de_sousa,80,35,0,2T,Penalty,A,7
+55,2025,6,Mirassol,mirassol,Reinaldo Manoel da Silva,reinaldo_manoel_da_silva,92,90,2,2T,Normal,A,6
+56,2025,6,Cruzeiro Saf,cruzeiro_saf,Christian Roberto Alves Cardoso,christian_roberto_alves_cardoso,64,19,0,2T,Normal,A,88
+57,2025,6,Juventude,juventude,Emerson Geovanny Batalla Martinez,emerson_geovanny_batalla_martinez,3,3,0,1T,Normal,A,27
+57,2025,6,Internacional,internacional,Victor Gabriel da Conceição Ribeiro,victor_gabriel_da_conceicao_ribeiro,17,17,0,1T,Normal,A,41
+57,2025,6,Internacional,internacional,Victor Gabriel da Conceição Ribeiro,victor_gabriel_da_conceicao_ribeiro,38,38,0,1T,Normal,A,41
+57,2025,6,Internacional,internacional,Rafael Santos Borre Maury,rafael_santos_borre_maury,61,16,0,2T,Normal,A,19
+58,2025,6,Grêmio,gremio,Jemerson de Jesus Nascimento,jemerson_de_jesus_nascimento,21,21,0,1T,Normal,A,21
+58,2025,6,Vitória,vitoria,Carlos Moises de Lima,carlos_moises_de_lima,65,20,0,2T,Normal,A,99
+59,2025,6,Ceará,ceara,Pedro Henrique Konzen Medina da Silva,pedro_henrique_konzen_medina_da_silva,3,3,0,1T,Normal,A,7
+59,2025,6,São Paulo,sao_paulo,Ryan Francisco Rodrigues dos Santos Silva,ryan_francisco_rodrigues_dos_santos_silva,44,44,0,1T,Normal,A,49
+61,2025,7,Sport,sport,Pablo Felipe Teixeira,pablo_felipe_teixeira,23,23,0,1T,Normal,A,92
+61,2025,7,Fluminense,fluminense,Kevin Steven Serna Jaramillo,kevin_steven_serna_jaramillo,59,14,0,2T,Normal,A,90
+61,2025,7,Fluminense,fluminense,Everaldo Stum,everaldo_stum,96,90,6,2T,Normal,A,9
+62,2025,7,Palmeiras,palmeiras,Vitor Hugo Roque Ferreira,vitor_hugo_roque_ferreira,60,15,0,2T,Normal,A,9
+63,2025,7,Corinthians,corinthians,Yuri Alberto Monteiro da Silva,yuri_alberto_monteiro_da_silva,24,24,0,1T,Normal,A,9
+63,2025,7,Internacional,internacional,Braian Nahuel Aguirre,braian_nahuel_aguirre,38,38,0,1T,Normal,A,35
+63,2025,7,Internacional,internacional,Thiago Maia Alencar,thiago_maia_alencar,42,42,0,1T,Normal,A,29
+63,2025,7,Corinthians,corinthians,Yuri Alberto Monteiro da Silva,yuri_alberto_monteiro_da_silva,65,20,0,2T,Normal,A,9
+63,2025,7,Corinthians,corinthians,Yuri Alberto Monteiro da Silva,yuri_alberto_monteiro_da_silva,95,90,5,2T,Penalty,A,9
+63,2025,7,Corinthians,corinthians,Igor Caique Coronado,igor_caique_coronado,103,90,13,2T,Normal,A,77
+65,2025,7,Red Bull Bragantino,red_bull_bragantino,Isidro Miguel Pitta Saldivar,isidro_miguel_pitta_saldivar,91,90,1,2T,Normal,A,9
+66,2025,7,Cruzeiro Saf,cruzeiro_saf,Kaio Jorge Pinto Ramos,kaio_jorge_pinto_ramos,14,14,0,1T,Normal,A,19
+66,2025,7,Flamengo,flamengo,Giorgian Daniel de Arrascaeta Benedetti,giorgian_daniel_de_arrascaeta_benedetti,43,43,0,1T,Normal,A,10
+66,2025,7,Cruzeiro Saf,cruzeiro_saf,Gabriel Barbosa Almeida,gabriel_barbosa_almeida,97,90,7,2T,Normal,A,9
+67,2025,7,Grêmio,gremio,Cristian Gonzalo Olivera Ibarra,cristian_gonzalo_olivera_ibarra,77,32,0,2T,Normal,A,99
+68,2025,7,Bahia,bahia,Cauly Oliveira Souza,cauly_oliveira_souza,39,39,0,1T,Normal,A,8
+69,2025,7,Ceará,ceara,Marllon Goncalves Jeronimo Borges,marllon_goncalves_jeronimo_borges,52,7,0,2T,Normal,A,3
+70,2025,7,Atlético Mineiro Saf,atletico_mineiro_saf,Gustavo Henrique Furtado Scarpa,gustavo_henrique_furtado_scarpa,30,30,0,1T,Falta,A,10
+71,2025,8,Flamengo,flamengo,Giorgian Daniel de Arrascaeta Benedetti,giorgian_daniel_de_arrascaeta_benedetti,7,7,0,1T,Normal,A,10
+72,2025,8,Botafogo,botafogo,Igor Jesus Maciel da Cruz,igor_jesus_maciel_da_cruz,8,8,0,1T,Normal,A,99
+72,2025,8,Botafogo,botafogo,Artur Victor Guimaraes,artur_victor_guimaraes,44,44,0,1T,Normal,A,7
+72,2025,8,Botafogo,botafogo,Luis Eduardo Soares da Silva,luis_eduardo_soares_da_silva,53,8,0,2T,Normal,A,66
+72,2025,8,Botafogo,botafogo,Alex Nicolao Telles,alex_nicolao_telles,68,23,0,2T,Normal,A,13
+73,2025,8,Palmeiras,palmeiras,Vitor Hugo Roque Ferreira,vitor_hugo_roque_ferreira,94,90,4,2T,Normal,A,9
+75,2025,8,Mirassol,mirassol,Edson Guilherme Mendes dos Santos,edson_guilherme_mendes_dos_santos,49,4,0,2T,Normal,A,95
+75,2025,8,Corinthians,corinthians,Carlos de Menezes Junior,carlos_de_menezes_junior,52,45,7,1T,Normal,A,25
+75,2025,8,Mirassol,mirassol,Gabriel Santana Pinto,gabriel_santana_pinto,65,20,0,2T,Normal,A,27
+76,2025,8,Fluminense,fluminense,Agustin Canobbio Graviz,agustin_canobbio_graviz,55,10,0,2T,Normal,A,17
+76,2025,8,Atlético Mineiro Saf,atletico_mineiro_saf,Rubens Antonio Dias,rubens_antonio_dias,76,31,0,2T,Normal,A,44
+76,2025,8,Atlético Mineiro Saf,atletico_mineiro_saf,Jose Antonio dos Santos Junior,jose_antonio_dos_santos_junior,83,38,0,2T,Normal,A,37
+76,2025,8,Fluminense,fluminense,Kevin Steven Serna Jaramillo,kevin_steven_serna_jaramillo,87,42,0,2T,Normal,A,90
+76,2025,8,Atlético Mineiro Saf,atletico_mineiro_saf,Igor Silveira Gomes,igor_silveira_gomes,94,90,4,2T,Normal,A,17
+77,2025,8,Grêmio,gremio,Francis Apelete Amuzu,francis_apelete_amuzu,86,41,0,2T,Normal,A,9
+77,2025,8,Red Bull Bragantino,red_bull_bragantino,Isidro Miguel Pitta Saldivar,isidro_miguel_pitta_saldivar,88,43,0,2T,Normal,A,9
+78,2025,8,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Pablo Ezequiel Vegetti,pablo_ezequiel_vegetti,42,42,0,1T,Normal,A,99
+78,2025,8,Vitória,vitoria,Renato Kayzer de Souza,renato_kayzer_de_souza,60,15,0,2T,Normal,A,79
+78,2025,8,Vitória,vitoria,Renato Kayzer de Souza,renato_kayzer_de_souza,89,44,0,2T,Normal,A,79
+79,2025,8,Fortaleza Ec Saf,fortaleza_ec_saf,Juan Martin Lucero,juan_martin_lucero,3,3,0,1T,Normal,A,9
+79,2025,8,Fortaleza Ec Saf,fortaleza_ec_saf,Breno Henrique Vasconcelos Lopes,breno_henrique_vasconcelos_lopes,62,17,0,2T,Normal,A,26
+79,2025,8,Fortaleza Ec Saf,fortaleza_ec_saf,Tomas Pochettino,tomas_pochettino,81,36,0,2T,Normal,A,7
+79,2025,8,Fortaleza Ec Saf,fortaleza_ec_saf,Juan Martin Lucero,juan_martin_lucero,85,40,0,2T,Normal,A,9
+79,2025,8,Fortaleza Ec Saf,fortaleza_ec_saf,Calebe Gonçalves Ferreira da Silva,calebe_goncalves_ferreira_da_silva,89,44,0,2T,Normal,A,10
+80,2025,8,Sport,sport,Igor Aquino da Silva,igor_aquino_da_silva,7,7,0,1T,Gol Contra,A,16
+80,2025,8,Cruzeiro Saf,cruzeiro_saf,Kaio Jorge Pinto Ramos,kaio_jorge_pinto_ramos,17,17,0,1T,Normal,A,19
+80,2025,8,Cruzeiro Saf,cruzeiro_saf,Matheus Fellipe Costa Pereira,matheus_fellipe_costa_pereira,45,45,0,1T,Normal,A,10
+80,2025,8,Cruzeiro Saf,cruzeiro_saf,Matheus Fellipe Costa Pereira,matheus_fellipe_costa_pereira,52,7,0,2T,Normal,A,10
+82,2025,9,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Nuno Gonçalo Rocha Moreira,nuno_goncalo_rocha_moreira,2,2,0,1T,Normal,A,17
+82,2025,9,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Pablo Ezequiel Vegetti,pablo_ezequiel_vegetti,46,1,0,2T,Normal,A,99
+82,2025,9,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Pablo Ezequiel Vegetti,pablo_ezequiel_vegetti,79,34,0,2T,Normal,A,99
+83,2025,9,Corinthians,corinthians,Yuri Alberto Monteiro da Silva,yuri_alberto_monteiro_da_silva,67,22,0,2T,Normal,A,9
+84,2025,9,Grêmio,gremio,Alexander Ernesto Aravena Guzman,alexander_ernesto_aravena_guzman,36,36,0,1T,Normal,A,16
+84,2025,9,São Paulo,sao_paulo,Robert Abel Arboleda Escobar,robert_abel_arboleda_escobar,48,3,0,2T,Normal,A,5
+84,2025,9,São Paulo,sao_paulo,Andre Oliveira Silva,andre_oliveira_silva,84,39,0,2T,Penalty,A,17
+85,2025,9,Red Bull Bragantino,red_bull_bragantino,Gabriel Girotto Franco,gabriel_girotto_franco,23,23,0,1T,Normal,A,6
+85,2025,9,Palmeiras,palmeiras,Murilo Cerqueira Paim,murilo_cerqueira_paim,72,27,0,2T,Normal,A,26
+85,2025,9,Palmeiras,palmeiras,Mauricio Magalhaes Prado,mauricio_magalhaes_prado,78,33,0,2T,Normal,A,18
+87,2025,9,Mirassol,mirassol,Jemmes Bruno Ribeiro da Silva,jemmes_bruno_ribeiro_da_silva,7,7,0,1T,Normal,A,3
+87,2025,9,Internacional,internacional,Ricardo Mathias da Silva,ricardo_mathias_da_silva,76,31,0,2T,Normal,A,49
+88,2025,9,Bahia,bahia,Erick da Costa Farias,erick_da_costa_farias,22,22,0,1T,Normal,A,16
+88,2025,9,Vitória,vitoria,Renato Kayzer de Souza,renato_kayzer_de_souza,53,8,0,2T,Normal,A,79
+88,2025,9,Bahia,bahia,Michel Daryl Araujo Villar,michel_daryl_araujo_villar,65,20,0,2T,Normal,A,15
+89,2025,9,Ceará,ceara,Lucas Andres Mugni,lucas_andres_mugni,9,9,0,1T,Normal,A,100
+89,2025,9,Ceará,ceara,Antonio Javier Galeano Ferreira,antonio_javier_galeano_ferreira,60,15,0,2T,Normal,A,27
+90,2025,9,Juventude,juventude,Emerson Geovanny Batalla Martinez,emerson_geovanny_batalla_martinez,55,10,0,2T,Normal,A,27
+90,2025,9,Fluminense,fluminense,Hercules Pereira do Nascimento,hercules_pereira_do_nascimento,57,12,0,2T,Normal,A,35
+91,2025,10,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Joao Victor da Silva Marcelino,joao_victor_da_silva_marcelino,25,25,0,1T,Normal,A,38
+91,2025,10,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Pablo Ezequiel Vegetti,pablo_ezequiel_vegetti,42,42,0,1T,Gol Contra,A,99
+91,2025,10,Fluminense,fluminense,Claudio Rodrigues Gomes,claudio_rodrigues_gomes,86,41,0,2T,Normal,A,23
+92,2025,10,Botafogo,botafogo,Gonzalo Mathias Mastriani Borges,gonzalo_mathias_mastriani_borges,45,45,0,1T,Normal,A,39
+92,2025,10,Ceará,ceara,Pedro Raul Garay da Silva,pedro_raul_garay_da_silva,57,12,0,2T,Normal,A,9
+92,2025,10,Botafogo,botafogo,Alex Nicolao Telles,alex_nicolao_telles,72,27,0,2T,Penalty,A,13
+92,2025,10,Botafogo,botafogo,Marlon Rodrigues Freitas,marlon_rodrigues_freitas,77,32,0,2T,Normal,A,17
+92,2025,10,Ceará,ceara,Pedro Raul Garay da Silva,pedro_raul_garay_da_silva,86,41,0,2T,Normal,A,9
+93,2025,10,Flamengo,flamengo,Giorgian Daniel de Arrascaeta Benedetti,giorgian_daniel_de_arrascaeta_benedetti,72,27,0,2T,Penalty,A,10
+93,2025,10,Flamengo,flamengo,Ayrton Lucas Dantas de Medeiros,ayrton_lucas_dantas_de_medeiros,87,42,0,2T,Normal,A,6
+94,2025,10,São Paulo,sao_paulo,Nahuel Adolfo Ferraresi Hernandez,nahuel_adolfo_ferraresi_hernandez,52,7,0,2T,Gol Contra,A,32
+94,2025,10,Mirassol,mirassol,Reinaldo Manoel da Silva,reinaldo_manoel_da_silva,89,44,0,2T,Penalty,A,6
+97,2025,10,Grêmio,gremio,Martin Christensen Braithwaite,martin_christensen_braithwaite,60,15,0,2T,Penalty,A,22
+98,2025,10,Santos Fc,santos_fc,Guilherme Augusto Vieira dos Santos,guilherme_augusto_vieira_dos_santos,18,18,0,1T,Normal,A,11
+99,2025,10,Cruzeiro Saf,cruzeiro_saf,Kaio Jorge Pinto Ramos,kaio_jorge_pinto_ramos,33,33,0,1T,Normal,A,19
+99,2025,10,Cruzeiro Saf,cruzeiro_saf,Lucas Silva Borges,lucas_silva_borges,40,40,0,1T,Normal,A,16
+100,2025,10,Sport,sport,Chrystian Amaral Barletta de Almeida,chrystian_amaral_barletta_de_almeida,7,7,0,1T,Normal,A,30
+100,2025,10,Internacional,internacional,Gustavo Prado Alves,gustavo_prado_alves,48,3,0,2T,Normal,A,47
+101,2025,11,Flamengo,flamengo,Giorgian Daniel de Arrascaeta Benedetti,giorgian_daniel_de_arrascaeta_benedetti,29,29,0,1T,Normal,A,10
+101,2025,11,Flamengo,flamengo,Evertton Gustavo Fernandes Araujo,evertton_gustavo_fernandes_araujo,48,3,0,2T,Normal,A,52
+101,2025,11,Flamengo,flamengo,Luiz de Araujo Guimaraes Neto,luiz_de_araujo_guimaraes_neto,56,11,0,2T,Normal,A,7
+101,2025,11,Flamengo,flamengo,Michael Richard Delgado de Oliveira,michael_richard_delgado_de_oliveira,70,25,0,2T,Normal,A,30
+101,2025,11,Flamengo,flamengo,Luiz de Araujo Guimaraes Neto,luiz_de_araujo_guimaraes_neto,73,28,0,2T,Normal,A,7
+102,2025,11,Red Bull Bragantino,red_bull_bragantino,Guilherme Lopes de Almeida,guilherme_lopes_de_almeida,1,1,0,1T,Normal,A,31
+102,2025,11,Red Bull Bragantino,red_bull_bragantino,Isidro Miguel Pitta Saldivar,isidro_miguel_pitta_saldivar,34,34,0,1T,Normal,A,9
+104,2025,11,Botafogo,botafogo,Artur Victor Guimaraes,artur_victor_guimaraes,86,41,0,2T,Normal,A,7
+105,2025,11,Mirassol,mirassol,Reinaldo Manoel da Silva,reinaldo_manoel_da_silva,33,33,0,1T,Penalty,A,6
+106,2025,11,Cruzeiro Saf,cruzeiro_saf,Kaio Jorge Pinto Ramos,kaio_jorge_pinto_ramos,1,1,0,1T,Normal,A,19
+106,2025,11,Cruzeiro Saf,cruzeiro_saf,Kaio Jorge Pinto Ramos,kaio_jorge_pinto_ramos,4,4,0,1T,Normal,A,19
+106,2025,11,Palmeiras,palmeiras,Allan Andrade Elias,allan_andrade_elias,85,40,0,2T,Normal,A,40
+107,2025,11,Fluminense,fluminense,Kevin Steven Serna Jaramillo,kevin_steven_serna_jaramillo,10,10,0,1T,Normal,A,90
+107,2025,11,Fluminense,fluminense,Paulo Henrique Silva Ribeiro,paulo_henrique_silva_ribeiro,83,38,0,2T,Normal,A,77
+108,2025,11,Bahia,bahia,Willian Jose da Silva,willian_jose_da_silva,52,7,0,2T,Normal,A,12
+108,2025,11,Bahia,bahia,Willian Jose da Silva,willian_jose_da_silva,72,27,0,2T,Penalty,A,12
+108,2025,11,São Paulo,sao_paulo,Luciano da Rocha Neves,luciano_da_rocha_neves,84,39,0,2T,Penalty,A,10
+109,2025,11,Atlético Mineiro Saf,atletico_mineiro_saf,Ronielson da Silva Barbosa,ronielson_da_silva_barbosa,77,32,0,2T,Normal,A,33
+110,2025,11,Grêmio,gremio,Martin Christensen Braithwaite,martin_christensen_braithwaite,13,13,0,1T,Penalty,A,22
+110,2025,11,Grêmio,gremio,Cristian Gonzalo Olivera Ibarra,cristian_gonzalo_olivera_ibarra,37,37,0,1T,Normal,A,99
+111,2025,12,Fluminense,fluminense,Rene Rodrigues Martins,rene_rodrigues_martins,25,25,0,1T,Falta,A,6
+112,2025,12,Botafogo,botafogo,Jefferson David Savarino Quintero,jefferson_david_savarino_quintero,11,11,0,1T,Normal,A,10
+112,2025,12,Botafogo,botafogo,Christopher Ramos de La Flor,christopher_ramos_de_la_flor,30,30,0,1T,Normal,A,9
+112,2025,12,Botafogo,botafogo,Alvaro Montoro,alvaro_montoro,39,39,0,1T,Normal,A,8
+112,2025,12,Mirassol,mirassol,Francisco da Costa Aragao,francisco_da_costa_aragao,46,1,0,2T,Normal,A,91
+112,2025,12,Mirassol,mirassol,Jemmes Bruno Ribeiro da Silva,jemmes_bruno_ribeiro_da_silva,59,14,0,2T,Normal,A,3
+112,2025,12,Mirassol,mirassol,Lucas Ramon Batista Silva,lucas_ramon_batista_silva,61,16,0,2T,Normal,A,19
+113,2025,12,Palmeiras,palmeiras,Raphael Cavalcante Veiga,raphael_cavalcante_veiga,26,26,0,1T,Normal,A,23
+113,2025,12,Palmeiras,palmeiras,Bruno Rafael Rodrigues do Nascimento,bruno_rafael_rodrigues_do_nascimento,44,44,0,1T,Normal,A,11
+113,2025,12,Palmeiras,palmeiras,Bruno de Lara Fuchs,bruno_de_lara_fuchs,48,3,0,2T,Normal,A,3
+113,2025,12,Palmeiras,palmeiras,Felipe Anderson Pereira Gomes,felipe_anderson_pereira_gomes,55,10,0,2T,Normal,A,7
+113,2025,12,Juventude,juventude,Rodrigo Eduardo da Silva,rodrigo_eduardo_da_silva,76,31,0,2T,Normal,A,34
+114,2025,12,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Rayan Vitor Simplício Rocha,rayan_vitor_simplicio_rocha,25,25,0,1T,Normal,A,77
+114,2025,12,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Nuno Gonçalo Rocha Moreira,nuno_goncalo_rocha_moreira,39,39,0,1T,Normal,A,17
+114,2025,12,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Pablo Ezequiel Vegetti,pablo_ezequiel_vegetti,68,23,0,2T,Normal,A,99
+114,2025,12,São Paulo,sao_paulo,Ryan Francisco Rodrigues dos Santos Silva,ryan_francisco_rodrigues_dos_santos_silva,92,90,2,2T,Normal,A,49
+115,2025,12,Bahia,bahia,Luciano Batista da Silva Junior,luciano_batista_da_silva_junior,39,39,0,1T,Normal,A,46
+115,2025,12,Red Bull Bragantino,red_bull_bragantino,Guilherme Lopes de Almeida,guilherme_lopes_de_almeida,51,45,6,1T,Gol Contra,A,31
+115,2025,12,Bahia,bahia,Michel Daryl Araujo Villar,michel_daryl_araujo_villar,74,29,0,2T,Normal,A,15
+116,2025,12,Internacional,internacional,Vitor Eduardo da Silva Matos,vitor_eduardo_da_silva_matos,30,30,0,1T,Gol Contra,A,4
+116,2025,12,Atlético Mineiro Saf,atletico_mineiro_saf,Jose Antonio dos Santos Junior,jose_antonio_dos_santos_junior,93,90,3,2T,Normal,A,37
+117,2025,12,Grêmio,gremio,Martin Christensen Braithwaite,martin_christensen_braithwaite,28,28,0,1T,Normal,A,22
+117,2025,12,Corinthians,corinthians,Breno de Souza Bidon,breno_de_souza_bidon,35,35,0,1T,Normal,A,27
+119,2025,12,Santos Fc,santos_fc,Alvaro Martin Barreal,alvaro_martin_barreal,14,14,0,1T,Normal,A,22
+119,2025,12,Santos Fc,santos_fc,Guilherme Augusto Vieira dos Santos,guilherme_augusto_vieira_dos_santos,40,40,0,1T,Normal,A,11
+119,2025,12,Fortaleza Ec Saf,fortaleza_ec_saf,Glaybson Yago Souza Lisboa,glaybson_yago_souza_lisboa,70,25,0,2T,Penalty,A,22
+119,2025,12,Fortaleza Ec Saf,fortaleza_ec_saf,Glaybson Yago Souza Lisboa,glaybson_yago_souza_lisboa,73,28,0,2T,Penalty,A,22
+119,2025,12,Fortaleza Ec Saf,fortaleza_ec_saf,Joao Ricardo Riedi,joao_ricardo_riedi,92,90,2,2T,Gol Contra,A,1
+120,2025,12,Sport Recife,sport_recife,Pablo Felipe Teixeira,pablo_felipe_teixeira,14,14,0,1T,Normal,A,92
+120,2025,12,Flamengo,flamengo,Luiz de Araujo Guimaraes Neto,luiz_de_araujo_guimaraes_neto,41,41,0,1T,Normal,A,7
+120,2025,12,Flamengo,flamengo,Olavio Vieira dos Santos Junior,olavio_vieira_dos_santos_junior,60,15,0,2T,Normal,A,23
+120,2025,12,Flamengo,flamengo,Bruno Henrique Pinto,bruno_henrique_pinto,62,17,0,2T,Normal,A,27
+120,2025,12,Flamengo,flamengo,Ayrton Lucas Dantas de Medeiros,ayrton_lucas_dantas_de_medeiros,70,25,0,2T,Normal,A,6
+120,2025,12,Flamengo,flamengo,Douglas Costa Telles,douglas_costa_telles,80,35,0,2T,Normal,A,81
+121,2025,13,Flamengo,flamengo,Luiz de Araujo Guimaraes Neto,luiz_de_araujo_guimaraes_neto,60,15,0,2T,Normal,A,7
+121,2025,13,Flamengo,flamengo,Wallace Yan de Souza Barreto,wallace_yan_de_souza_barreto,95,90,5,2T,Normal,A,64
+122,2025,13,Botafogo,botafogo,Arthur Mendonça Cabral,arthur_mendonca_cabral,48,3,0,2T,Normal,A,98
+122,2025,13,Botafogo,botafogo,Nathan Ribeiro Fernandes,nathan_ribeiro_fernandes,78,33,0,2T,Normal,A,16
+123,2025,13,Red Bull Bragantino,red_bull_bragantino,Eduardo Colcenti Antunes,eduardo_colcenti_antunes,30,30,0,1T,Penalty,A,8
+123,2025,13,Corinthians,corinthians,Carlos de Menezes Junior,carlos_de_menezes_junior,52,7,0,2T,Normal,A,25
+123,2025,13,Red Bull Bragantino,red_bull_bragantino,Thiago Nicolas Borbas Silva,thiago_nicolas_borbas_silva,97,90,7,2T,Normal,A,18
+124,2025,13,Santos Fc,santos_fc,Benjamin Rollheiser,benjamin_rollheiser,90,45,0,2T,Normal,A,32
+125,2025,13,Mirassol,mirassol,Guilherme Costa Marques,guilherme_costa_marques,36,36,0,1T,Normal,A,12
+125,2025,13,Fluminense,fluminense,Matheus Martinelli Lima,matheus_martinelli_lima,56,11,0,2T,Normal,A,8
+125,2025,13,Mirassol,mirassol,Luis Henrique Soares Firmino,luis_henrique_soares_firmino,85,40,0,2T,Normal,A,11
+126,2025,13,Cruzeiro Saf,cruzeiro_saf,Kaio Jorge Pinto Ramos,kaio_jorge_pinto_ramos,25,25,0,1T,Normal,A,19
+126,2025,13,Cruzeiro Saf,cruzeiro_saf,Lucas Hernan Villalba,lucas_hernan_villalba,33,33,0,1T,Normal,A,25
+126,2025,13,Cruzeiro Saf,cruzeiro_saf,Kaio Jorge Pinto Ramos,kaio_jorge_pinto_ramos,53,8,0,2T,Normal,A,19
+126,2025,13,Grêmio,gremio,Andre Henrique da Silva Martins,andre_henrique_da_silva_martins,63,18,0,2T,Normal,A,77
+126,2025,13,Cruzeiro Saf,cruzeiro_saf,Kaio Jorge Pinto Ramos,kaio_jorge_pinto_ramos,76,31,0,2T,Normal,A,19
+127,2025,13,Internacional,internacional,Bruno Vinicius Souza Ramos,bruno_vinicius_souza_ramos,92,90,2,2T,Normal,A,17
+128,2025,13,Bahia,bahia,Luciano Batista da Silva Junior,luciano_batista_da_silva_junior,53,8,0,2T,Normal,A,46
+128,2025,13,Atlético Mineiro Saf,atletico_mineiro_saf,Givanildo Vieira de Sousa,givanildo_vieira_de_sousa,90,45,0,2T,Normal,A,7
+128,2025,13,Bahia,bahia,Michel Daryl Araujo Villar,michel_daryl_araujo_villar,97,90,7,2T,Normal,A,15
+129,2025,13,Ceará,ceara,Antonio Javier Galeano Ferreira,antonio_javier_galeano_ferreira,56,11,0,2T,Normal,A,27
+130,2025,13,Juventude,juventude,Gilberto Oliveira Souza Junior,gilberto_oliveira_souza_junior,11,11,0,1T,Normal,A,9
+130,2025,13,Juventude,juventude,Gilberto Oliveira Souza Junior,gilberto_oliveira_souza_junior,48,3,0,2T,Normal,A,9
+131,2025,14,Cruzeiro Saf,cruzeiro_saf,Fabricio Bruno Soares de Faria,fabricio_bruno_soares_de_faria,29,29,0,1T,Normal,A,15
+131,2025,14,Cruzeiro Saf,cruzeiro_saf,Kaio Jorge Pinto Ramos,kaio_jorge_pinto_ramos,35,35,0,1T,Normal,A,19
+133,2025,14,Palmeiras,palmeiras,Facundo Daniel Torres Perez,facundo_daniel_torres_perez,54,9,0,2T,Normal,A,17
+133,2025,14,Mirassol,mirassol,Francisco da Costa Aragao,francisco_da_costa_aragao,71,26,0,2T,Normal,A,91
+134,2025,14,Santos Fc,santos_fc,Neymar da Silva Santos Junior,neymar_da_silva_santos_junior,84,39,0,2T,Normal,A,10
+135,2025,14,São Paulo,sao_paulo,Andre Oliveira Silva,andre_oliveira_silva,8,8,0,1T,Normal,A,17
+135,2025,14,Red Bull Bragantino,red_bull_bragantino,Guzman Rodriguez Ferrari,guzman_rodriguez_ferrari,42,42,0,1T,Normal,A,2
+135,2025,14,Red Bull Bragantino,red_bull_bragantino,Jose Andres Hurtado Cheme,jose_andres_hurtado_cheme,48,3,0,2T,Normal,A,34
+135,2025,14,São Paulo,sao_paulo,Andre Oliveira Silva,andre_oliveira_silva,63,18,0,2T,Normal,A,17
+136,2025,14,Atlético Mineiro Saf,atletico_mineiro_saf,Vitor Hugo Franchescoli de Souza,vitor_hugo_franchescoli_de_souza,8,8,0,1T,Normal,A,14
+136,2025,14,Atlético Mineiro Saf,atletico_mineiro_saf,Guilherme Antonio Arana Lopes,guilherme_antonio_arana_lopes,38,38,0,1T,Normal,A,13
+136,2025,14,Atlético Mineiro Saf,atletico_mineiro_saf,Ronielson da Silva Barbosa,ronielson_da_silva_barbosa,62,17,0,2T,Normal,A,33
+136,2025,14,Sport,sport,Derik Gean Severino Lacerda,derik_gean_severino_lacerda,81,36,0,2T,Penalty,A,18
+137,2025,14,Grêmio,gremio,Martin Christensen Braithwaite,martin_christensen_braithwaite,11,11,0,1T,Penalty,A,22
+137,2025,14,Grêmio,gremio,Martin Christensen Braithwaite,martin_christensen_braithwaite,16,16,0,1T,Penalty,A,22
+137,2025,14,Fortaleza Ec Saf,fortaleza_ec_saf,Deyverson Brum Silva,deyverson_brum_silva,23,23,0,1T,Normal,A,18
+138,2025,14,Bahia,bahia,Willian Jose da Silva,willian_jose_da_silva,50,45,5,1T,Penalty,A,12
+139,2025,14,Corinthians,corinthians,Talles Magno Bacelar Martins,talles_magno_bacelar_martins,71,26,0,2T,Normal,A,43
+140,2025,14,Juventude,juventude,Anderson Luis de Carvalho,anderson_luis_de_carvalho,2,2,0,1T,Penalty,A,10
+140,2025,14,Juventude,juventude,Gabriel Pereira Taliari,gabriel_pereira_taliari,15,15,0,1T,Normal,A,19
+141,2025,15,Flamengo,flamengo,Pedro Guilherme Abreu dos Santos,pedro_guilherme_abreu_dos_santos,84,39,0,2T,Normal,A,9
+142,2025,15,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Lucas de Freitas Molarinho Chagas,lucas_de_freitas_molarinho_chagas,63,18,0,2T,Normal,A,43
+142,2025,15,Grêmio,gremio,Gustavo Martins de Souza Santos,gustavo_martins_de_souza_santos,80,35,0,2T,Normal,A,53
+143,2025,15,Palmeiras,palmeiras,Lucas Evangelista Santana de Oliveira,lucas_evangelista_santana_de_oliveira,33,33,0,1T,Normal,A,30
+143,2025,15,Atlético Mineiro Saf,atletico_mineiro_saf,Givanildo Vieira de Sousa,givanildo_vieira_de_sousa,42,42,0,1T,Falta,A,7
+143,2025,15,Atlético Mineiro Saf,atletico_mineiro_saf,Junior Osmar Ignacio Alonso Mujica,junior_osmar_ignacio_alonso_mujica,50,5,0,2T,Gol Contra,A,6
+143,2025,15,Palmeiras,palmeiras,Mauricio Magalhaes Prado,mauricio_magalhaes_prado,76,31,0,2T,Normal,A,18
+143,2025,15,Atlético Mineiro Saf,atletico_mineiro_saf,Givanildo Vieira de Sousa,givanildo_vieira_de_sousa,90,45,0,2T,Falta,A,7
+144,2025,15,São Paulo,sao_paulo,Luciano da Rocha Neves,luciano_da_rocha_neves,31,31,0,1T,Normal,A,10
+144,2025,15,São Paulo,sao_paulo,Luciano da Rocha Neves,luciano_da_rocha_neves,34,34,0,1T,Normal,A,10
+145,2025,15,Mirassol,mirassol,Francisco da Costa Aragao,francisco_da_costa_aragao,68,23,0,2T,Normal,A,91
+145,2025,15,Mirassol,mirassol,Reinaldo Manoel da Silva,reinaldo_manoel_da_silva,73,28,0,2T,Normal,A,6
+145,2025,15,Mirassol,mirassol,Cristian Renato Gonçalves Riquelme,cristian_renato_goncalves_riquelme,91,90,1,2T,Normal,A,17
+146,2025,15,Cruzeiro Saf,cruzeiro_saf,Christian Roberto Alves Cardoso,christian_roberto_alves_cardoso,39,39,0,1T,Normal,A,88
+146,2025,15,Cruzeiro Saf,cruzeiro_saf,Gabriel Barbosa Almeida,gabriel_barbosa_almeida,51,6,0,2T,Normal,A,9
+146,2025,15,Cruzeiro Saf,cruzeiro_saf,Gabriel Barbosa Almeida,gabriel_barbosa_almeida,62,17,0,2T,Penalty,A,9
+146,2025,15,Cruzeiro Saf,cruzeiro_saf,Carlos Eduardo de Oliveira Alves,carlos_eduardo_de_oliveira_alves,91,90,1,2T,Normal,A,21
+147,2025,15,Internacional,internacional,Alan Patrick Lourenço,alan_patrick_lourenco,23,23,0,1T,Normal,A,10
+148,2025,15,Vitória,vitoria,Renato Kayzer de Souza,renato_kayzer_de_souza,8,8,0,1T,Normal,A,79
+149,2025,15,Fortaleza Ec Saf,fortaleza_ec_saf,Mario Sergio Santos Costa,mario_sergio_santos_costa,29,29,0,1T,Normal,A,11
+149,2025,15,Bahia,bahia,Rodrigo Nestor Bertalia,rodrigo_nestor_bertalia,79,34,0,2T,Normal,A,11
+150,2025,15,Botafogo,botafogo,Luis Eduardo Soares da Silva,luis_eduardo_soares_da_silva,90,45,0,2T,Normal,A,66
+151,2025,16,Fluminense,fluminense,German Ezequiel Cano,german_ezequiel_cano,35,35,0,1T,Penalty,A,14
+151,2025,16,Palmeiras,palmeiras,Mauricio Magalhaes Prado,mauricio_magalhaes_prado,48,45,3,1T,Normal,A,18
+151,2025,16,Palmeiras,palmeiras,Vitor Hugo Roque Ferreira,vitor_hugo_roque_ferreira,62,17,0,2T,Normal,A,9
+152,2025,16,Bahia,bahia,Mateo Naim Sanabria Doracio,mateo_naim_sanabria_doracio,30,30,0,1T,Normal,A,23
+152,2025,16,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Philippe Coutinho Correia,philippe_coutinho_correia,45,45,0,1T,Normal,A,10
+152,2025,16,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Jose Luis Rodriguez Bebanz,jose_luis_rodriguez_bebanz,59,14,0,2T,Normal,A,2
+152,2025,16,Bahia,bahia,Luciano Batista da Silva Junior,luciano_batista_da_silva_junior,76,31,0,2T,Gol Contra,A,46
+154,2025,16,Internacional,internacional,Johan Stiven Carbonero Balanta,johan_stiven_carbonero_balanta,8,8,0,1T,Normal,A,7
+154,2025,16,Internacional,internacional,Rafael Santos Borre Maury,rafael_santos_borre_maury,74,29,0,2T,Penalty,A,19
+154,2025,16,Santos Fc,santos_fc,Alvaro Martin Barreal,alvaro_martin_barreal,90,45,0,2T,Normal,A,22
+155,2025,16,Red Bull Bragantino,red_bull_bragantino,Lucas Henrique Barbosa,lucas_henrique_barbosa,46,1,0,2T,Normal,A,21
+155,2025,16,Flamengo,flamengo,Leonardo Pereira,leonardo_pereira,65,20,0,2T,Normal,A,4
+155,2025,16,Flamengo,flamengo,Wesley Vinicius França Lima,wesley_vinicius_franca_lima,84,39,0,2T,Normal,A,43
+157,2025,16,Botafogo,botafogo,Luis Eduardo Soares da Silva,luis_eduardo_soares_da_silva,52,7,0,2T,Normal,A,6
+157,2025,16,Grêmio,gremio,Tiago Luis Volpi,tiago_luis_volpi,89,44,0,2T,Penalty,A,1
+158,2025,16,Vitória,vitoria,Erick de Arruda Serafim,erick_de_arruda_serafim,53,8,0,2T,Normal,A,33
+158,2025,16,Sport,sport,Jose Romario Silva de Souza,jose_romario_silva_de_souza,88,43,0,2T,Normal,A,11
+158,2025,16,Vitória,vitoria,Renzo Lopez Patron,renzo_lopez_patron,94,90,4,2T,Normal,A,31
+158,2025,16,Sport,sport,Jose Romario Silva de Souza,jose_romario_silva_de_souza,98,90,8,2T,Normal,A,11
+159,2025,16,Mirassol,mirassol,Francisco da Costa Aragao,francisco_da_costa_aragao,15,15,0,1T,Normal,A,91
+159,2025,16,Mirassol,mirassol,Luis Henrique Soares Firmino,luis_henrique_soares_firmino,21,21,0,1T,Normal,A,11
+160,2025,16,São Paulo,sao_paulo,Luciano da Rocha Neves,luciano_da_rocha_neves,85,40,0,2T,Normal,A,10
+161,2025,17,Flamengo,flamengo,Leonardo Rech Ortiz,leonardo_rech_ortiz,75,30,0,2T,Normal,A,3
+162,2025,17,Botafogo,botafogo,Arthur Mendonça Cabral,arthur_mendonca_cabral,24,24,0,1T,Normal,A,98
+162,2025,17,Corinthians,corinthians,Memphis Depay,memphis_depay,83,38,0,2T,Normal,A,10
+163,2025,17,Palmeiras,palmeiras,Facundo Daniel Torres Perez,facundo_daniel_torres_perez,3,3,0,1T,Normal,A,17
+164,2025,17,São Paulo,sao_paulo,Robert Abel Arboleda Escobar,robert_abel_arboleda_escobar,23,23,0,1T,Normal,A,5
+164,2025,17,São Paulo,sao_paulo,Aldemir dos Santos Ferreira,aldemir_dos_santos_ferreira,59,14,0,2T,Normal,A,11
+164,2025,17,Fluminense,fluminense,Samuel Xavier Brito,samuel_xavier_brito,76,31,0,2T,Normal,A,2
+164,2025,17,São Paulo,sao_paulo,Gonzalo Andrés Tapia Dubournais,gonzalo_andres_tapia_dubournais,91,90,1,2T,Normal,A,14
+165,2025,17,Mirassol,mirassol,Edson Guilherme Mendes dos Santos,edson_guilherme_mendes_dos_santos,5,5,0,1T,Normal,A,95
+165,2025,17,Vitória,vitoria,Gabriel Baralhas dos Santos,gabriel_baralhas_dos_santos,12,12,0,1T,Normal,A,44
+166,2025,17,Cruzeiro Saf,cruzeiro_saf,Kaio Jorge Pinto Ramos,kaio_jorge_pinto_ramos,3,3,0,1T,Normal,A,19
+166,2025,17,Ceará,ceara,Antonio Javier Galeano Ferreira,antonio_javier_galeano_ferreira,38,38,0,1T,Normal,A,27
+166,2025,17,Ceará,ceara,Antonio Javier Galeano Ferreira,antonio_javier_galeano_ferreira,59,14,0,2T,Normal,A,27
+167,2025,17,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Rayan Vitor Simplício Rocha,rayan_vitor_simplicio_rocha,29,29,0,1T,Normal,A,77
+167,2025,17,Internacional,internacional,Johan Stiven Carbonero Balanta,johan_stiven_carbonero_balanta,90,45,0,2T,Normal,A,7
+168,2025,17,Bahia,bahia,Jean Lucas de Souza Oliveira,jean_lucas_de_souza_oliveira,26,26,0,1T,Normal,A,6
+168,2025,17,Bahia,bahia,Jean Lucas de Souza Oliveira,jean_lucas_de_souza_oliveira,57,12,0,2T,Normal,A,6
+168,2025,17,Bahia,bahia,Luciano Rodriguez Rosales,luciano_rodriguez_rosales,93,90,3,2T,Normal,A,17
+169,2025,17,Fortaleza Ec Saf,fortaleza_ec_saf,Deyverson Brum Silva,deyverson_brum_silva,3,3,0,1T,Normal,A,18
+169,2025,17,Fortaleza Ec Saf,fortaleza_ec_saf,Benjamin Kuscevic Jaramillo,benjamin_kuscevic_jaramillo,19,19,0,1T,Normal,A,13
+169,2025,17,Red Bull Bragantino,red_bull_bragantino,Isidro Miguel Pitta Saldivar,isidro_miguel_pitta_saldivar,37,37,0,1T,Normal,A,9
+169,2025,17,Fortaleza Ec Saf,fortaleza_ec_saf,Lucca Prior Pimenta,lucca_prior_pimenta,47,2,0,2T,Normal,A,38
+170,2025,17,Sport,sport,Derik Gean Severino Lacerda,derik_gean_severino_lacerda,3,3,0,1T,Normal,A,18
+170,2025,17,Sport,sport,Lucas Rafael Araujo Lima,lucas_rafael_araujo_lima,69,24,0,2T,Normal,A,10
+170,2025,17,Santos Fc,santos_fc,Gabriel Morais Silva Bontempo,gabriel_morais_silva_bontempo,78,33,0,2T,Normal,A,49
+170,2025,17,Santos Fc,santos_fc,Joao Othavio Basso,joao_othavio_basso,87,42,0,2T,Normal,A,3
+171,2025,18,Fluminense,fluminense,Everaldo Stum,everaldo_stum,43,43,0,1T,Normal,A,9
+172,2025,18,Cruzeiro Saf,cruzeiro_saf,Christian Roberto Alves Cardoso,christian_roberto_alves_cardoso,23,23,0,1T,Normal,A,88
+172,2025,18,Cruzeiro Saf,cruzeiro_saf,Matheus Fellipe Costa Pereira,matheus_fellipe_costa_pereira,40,40,0,1T,Normal,A,10
+173,2025,18,Fortaleza Ec Saf,fortaleza_ec_saf,Breno Henrique Vasconcelos Lopes,breno_henrique_vasconcelos_lopes,5,5,0,1T,Normal,A,26
+173,2025,18,Corinthians,corinthians,Andre Martin Carrillo Diaz,andre_martin_carrillo_diaz,93,90,3,2T,Normal,A,19
+174,2025,18,Santos Fc,santos_fc,Neymar da Silva Santos Junior,neymar_da_silva_santos_junior,36,36,0,1T,Normal,A,10
+174,2025,18,Santos Fc,santos_fc,Alvaro Martin Barreal,alvaro_martin_barreal,39,39,0,1T,Normal,A,22
+174,2025,18,Juventude,juventude,Wilker José Angel Romero,wilker_jose_angel_romero,45,45,0,1T,Normal,A,4
+174,2025,18,Santos Fc,santos_fc,Neymar da Silva Santos Junior,neymar_da_silva_santos_junior,80,35,0,2T,Penalty,A,10
+175,2025,18,Mirassol,mirassol,Luis Henrique Soares Firmino,luis_henrique_soares_firmino,50,5,0,2T,Normal,A,11
+175,2025,18,Mirassol,mirassol,Francisco da Costa Aragao,francisco_da_costa_aragao,58,13,0,2T,Normal,A,91
+175,2025,18,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Jose Luis Rodriguez Bebanz,jose_luis_rodriguez_bebanz,65,20,0,2T,Normal,A,2
+175,2025,18,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Pablo Ezequiel Vegetti,pablo_ezequiel_vegetti,69,24,0,2T,Normal,A,99
+175,2025,18,Mirassol,mirassol,Alesson dos Santos Batista,alesson_dos_santos_batista,82,37,0,2T,Normal,A,77
+176,2025,18,Atlético Mineiro Saf,atletico_mineiro_saf,Igor Silveira Gomes,igor_silveira_gomes,6,6,0,1T,Normal,A,17
+176,2025,18,Red Bull Bragantino,red_bull_bragantino,Ignacio Jesus Laquintana Marsico,ignacio_jesus_laquintana_marsico,77,32,0,2T,Normal,A,33
+176,2025,18,Atlético Mineiro Saf,atletico_mineiro_saf,Natanael Moreira Milouski,natanael_moreira_milouski,81,36,0,2T,Normal,A,2
+177,2025,18,São Paulo,sao_paulo,Robert Abel Arboleda Escobar,robert_abel_arboleda_escobar,43,43,0,1T,Normal,A,5
+177,2025,18,São Paulo,sao_paulo,Damian Josue Bobadilla Benitez,damian_josue_bobadilla_benitez,75,30,0,2T,Normal,A,21
+177,2025,18,Internacional,internacional,Bruno Vinicius Souza Ramos,bruno_vinicius_souza_ramos,88,43,0,2T,Penalty,A,17
+178,2025,18,Vitória,vitoria,Renato Kayzer de Souza,renato_kayzer_de_souza,33,33,0,1T,Normal,A,79
+178,2025,18,Vitória,vitoria,Erick de Arruda Serafim,erick_de_arruda_serafim,64,19,0,2T,Normal,A,33
+178,2025,18,Palmeiras,palmeiras,Joaquin Piquerez Moreira,joaquin_piquerez_moreira,69,24,0,2T,Penalty,A,22
+178,2025,18,Palmeiras,palmeiras,Jose Manuel Alberto Lopez,jose_manuel_alberto_lopez,86,41,0,2T,Normal,A,42
+179,2025,18,Flamengo,flamengo,Giorgian Daniel de Arrascaeta Benedetti,giorgian_daniel_de_arrascaeta_benedetti,36,36,0,1T,Normal,A,10
+179,2025,18,Ceará,ceara,Pedro Raul Garay da Silva,pedro_raul_garay_da_silva,66,21,0,2T,Normal,A,9
+181,2025,19,Flamengo,flamengo,Leonardo Pereira,leonardo_pereira,18,18,0,1T,Normal,A,4
+181,2025,19,Flamengo,flamengo,Gonzalo Jordy Plata Jimenez,gonzalo_jordy_plata_jimenez,67,22,0,2T,Normal,A,50
+181,2025,19,Mirassol,mirassol,Gabriel Santana Pinto,gabriel_santana_pinto,73,28,0,2T,Normal,A,27
+182,2025,19,Atlético Mineiro Saf,atletico_mineiro_saf,Gabriel Vinicius Menino,gabriel_vinicius_menino,1,1,0,1T,Normal,A,25
+182,2025,19,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Pablo Ezequiel Vegetti,pablo_ezequiel_vegetti,17,17,0,1T,Penalty,A,99
+183,2025,19,Ceará,ceara,Joao Paulo Ferreira Lourenco,joao_paulo_ferreira_lourenco,51,6,0,2T,Normal,A,97
+183,2025,19,Palmeiras,palmeiras,Jose Manuel Alberto Lopez,jose_manuel_alberto_lopez,65,20,0,2T,Penalty,A,42
+183,2025,19,Palmeiras,palmeiras,Vitor Hugo Roque Ferreira,vitor_hugo_roque_ferreira,68,23,0,2T,Normal,A,9
+184,2025,19,São Paulo,sao_paulo,Damian Josue Bobadilla Benitez,damian_josue_bobadilla_benitez,20,20,0,1T,Normal,A,21
+184,2025,19,São Paulo,sao_paulo,Jose Sabino Chagas Monteiro,jose_sabino_chagas_monteiro,85,40,0,2T,Normal,A,35
+185,2025,19,Internacional,internacional,Ricardo Mathias da Silva,ricardo_mathias_da_silva,6,6,0,1T,Normal,A,49
+185,2025,19,Internacional,internacional,Alan Patrick Lourenço,alan_patrick_lourenco,32,32,0,1T,Penalty,A,10
+185,2025,19,Internacional,internacional,Ricardo Mathias da Silva,ricardo_mathias_da_silva,46,1,0,2T,Normal,A,49
+185,2025,19,Red Bull Bragantino,red_bull_bragantino,Isidro Miguel Pitta Saldivar,isidro_miguel_pitta_saldivar,54,9,0,2T,Normal,A,9
+186,2025,19,Cruzeiro Saf,cruzeiro_saf,Fabricio Bruno Soares de Faria,fabricio_bruno_soares_de_faria,43,43,0,1T,Normal,A,15
+186,2025,19,Santos Fc,santos_fc,Guilherme Augusto Vieira dos Santos,guilherme_augusto_vieira_dos_santos,61,16,0,2T,Normal,A,11
+186,2025,19,Santos Fc,santos_fc,Gustavo Ruben Caballero Gonzalez,gustavo_ruben_caballero_gonzalez,87,42,0,2T,Normal,A,17
+187,2025,19,Sport,sport,Matheus Leonardo Sales Cardoso,matheus_leonardo_sales_cardoso,50,5,0,2T,Normal,A,17
+188,2025,19,Fluminense,fluminense,German Ezequiel Cano,german_ezequiel_cano,9,9,0,1T,Normal,A,14
+188,2025,19,Fluminense,fluminense,Facundo Bernal Cruz,facundo_bernal_cruz,12,12,0,1T,Gol Contra,A,5
+188,2025,19,Bahia,bahia,Everton Augusto de Barros Ribeiro,everton_augusto_de_barros_ribeiro,18,18,0,1T,Normal,A,10
+188,2025,19,Fluminense,fluminense,German Ezequiel Cano,german_ezequiel_cano,48,3,0,2T,Normal,A,14
+188,2025,19,Fluminense,fluminense,Gustavo Nonato Santana,gustavo_nonato_santana,71,26,0,2T,Normal,A,16
+188,2025,19,Bahia,bahia,Luciano Batista da Silva Junior,luciano_batista_da_silva_junior,89,44,0,2T,Normal,A,46
+189,2025,19,Botafogo,botafogo,Fernando Marcal de Oliveira,fernando_marcal_de_oliveira,14,14,0,1T,Normal,A,21
+189,2025,19,Botafogo,botafogo,Fernando Marcal de Oliveira,fernando_marcal_de_oliveira,48,3,0,2T,Normal,A,21
+189,2025,19,Botafogo,botafogo,Arthur Mendonça Cabral,arthur_mendonca_cabral,50,45,5,1T,Normal,A,98
+189,2025,19,Botafogo,botafogo,David Ricardo Loiola da Silva,david_ricardo_loiola_da_silva,53,8,0,2T,Normal,A,57
+189,2025,19,Botafogo,botafogo,Matheus Martins Silva dos Santos,matheus_martins_silva_dos_santos,92,90,2,2T,Normal,A,11
+190,2025,19,Juventude,juventude,Gabriel Pereira Taliari,gabriel_pereira_taliari,27,27,0,1T,Normal,A,19
+190,2025,19,Juventude,juventude,Matheus Barcelos da Silva,matheus_barcelos_da_silva,81,36,0,2T,Normal,A,17
+190,2025,19,Corinthians,corinthians,Matheus Franca Silva,matheus_franca_silva,89,44,0,2T,Falta,A,2
+192,2025,20,Palmeiras,palmeiras,Felipe Anderson Pereira Gomes,felipe_anderson_pereira_gomes,45,45,0,1T,Normal,A,7
+193,2025,20,Bahia,bahia,Michel Daryl Araujo Villar,michel_daryl_araujo_villar,2,2,0,1T,Normal,A,15
+193,2025,20,Corinthians,corinthians,Guilherme William Silva Inacio,guilherme_william_silva_inacio,30,30,0,1T,Normal,A,56
+193,2025,20,Bahia,bahia,Willian Jose da Silva,willian_jose_da_silva,42,42,0,1T,Penalty,A,12
+194,2025,20,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Lucas Piton Crivellaro,lucas_piton_crivellaro,17,17,0,1T,Normal,A,6
+194,2025,20,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,David Correa da Fonseca,david_correa_da_fonseca,51,6,0,2T,Normal,A,7
+194,2025,20,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Philippe Coutinho Correia,philippe_coutinho_correia,53,8,0,2T,Normal,A,10
+194,2025,20,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Rayan Vitor Simplício Rocha,rayan_vitor_simplicio_rocha,59,14,0,2T,Penalty,A,77
+194,2025,20,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Philippe Coutinho Correia,philippe_coutinho_correia,62,17,0,2T,Normal,A,10
+194,2025,20,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Danilo das Neves Pinheiro,danilo_das_neves_pinheiro,68,23,0,2T,Normal,A,3
+195,2025,20,Cruzeiro Saf,cruzeiro_saf,Kaio Jorge Pinto Ramos,kaio_jorge_pinto_ramos,4,4,0,1T,Normal,A,19
+195,2025,20,Mirassol,mirassol,Luis Henrique Soares Firmino,luis_henrique_soares_firmino,64,19,0,2T,Normal,A,11
+196,2025,20,Atlético Mineiro Saf,atletico_mineiro_saf,Gustavo Henrique Furtado Scarpa,gustavo_henrique_furtado_scarpa,38,38,0,1T,Normal,A,10
+196,2025,20,Grêmio,gremio,Edenilson Andrade dos Santos,edenilson_andrade_dos_santos,45,45,0,1T,Normal,A,8
+196,2025,20,Grêmio,gremio,Fabian Cornelio Balbuena Gonzalez,fabian_cornelio_balbuena_gonzalez,57,12,0,2T,Normal,A,13
+196,2025,20,Grêmio,gremio,Alexander Ernesto Aravena Guzman,alexander_ernesto_aravena_guzman,90,45,0,2T,Normal,A,16
+197,2025,20,Flamengo,flamengo,Pedro Guilherme Abreu dos Santos,pedro_guilherme_abreu_dos_santos,6,6,0,1T,Normal,A,9
+197,2025,20,Flamengo,flamengo,Pedro Guilherme Abreu dos Santos,pedro_guilherme_abreu_dos_santos,11,11,0,1T,Normal,A,9
+197,2025,20,Flamengo,flamengo,Gonzalo Jordy Plata Jimenez,gonzalo_jordy_plata_jimenez,61,16,0,2T,Normal,A,50
+197,2025,20,Internacional,internacional,Rafael Santos Borre Maury,rafael_santos_borre_maury,92,90,2,2T,Normal,A,19
+198,2025,20,Vitória,vitoria,Renato Kayzer de Souza,renato_kayzer_de_souza,32,32,0,1T,Normal,A,79
+198,2025,20,Vitória,vitoria,Renato Kayzer de Souza,renato_kayzer_de_souza,46,1,0,2T,Normal,A,79
+198,2025,20,Juventude,juventude,Igor Marques Paciencia Cardoso,igor_marques_paciencia_cardoso,81,36,0,2T,Normal,A,32
+198,2025,20,Juventude,juventude,Anderson Luis de Carvalho,anderson_luis_de_carvalho,99,90,9,2T,Penalty,A,10
+199,2025,20,Ceará,ceara,Aylon Darwin Tavella,aylon_darwin_tavella,13,13,0,1T,Normal,A,11
+200,2025,20,Sport,sport,Lucas Rafael Araujo Lima,lucas_rafael_araujo_lima,5,5,0,1T,Normal,A,10
+200,2025,20,Sport,sport,Derik Gean Severino Lacerda,derik_gean_severino_lacerda,50,5,0,2T,Normal,A,18
+200,2025,20,São Paulo,sao_paulo,Lucas Rodrigues Moura da Silva,lucas_rodrigues_moura_da_silva,66,21,0,2T,Normal,A,7
+200,2025,20,São Paulo,sao_paulo,Maik Gomes Viegas,maik_gomes_viegas,91,90,1,2T,Normal,A,42
+201,2025,21,Flamengo,flamengo,Samuel Dias Lino,samuel_dias_lino,1,1,0,1T,Normal,A,16
+201,2025,21,Flamengo,flamengo,Pedro Guilherme Abreu dos Santos,pedro_guilherme_abreu_dos_santos,3,3,0,1T,Normal,A,9
+201,2025,21,Flamengo,flamengo,Giorgian Daniel de Arrascaeta Benedetti,giorgian_daniel_de_arrascaeta_benedetti,33,33,0,1T,Normal,A,10
+201,2025,21,Flamengo,flamengo,Pedro Guilherme Abreu dos Santos,pedro_guilherme_abreu_dos_santos,47,2,0,2T,Normal,A,9
+201,2025,21,Flamengo,flamengo,Samuel Dias Lino,samuel_dias_lino,49,4,0,2T,Normal,A,16
+201,2025,21,Flamengo,flamengo,Luiz de Araujo Guimaraes Neto,luiz_de_araujo_guimaraes_neto,53,8,0,2T,Normal,A,7
+201,2025,21,Flamengo,flamengo,Pedro Guilherme Abreu dos Santos,pedro_guilherme_abreu_dos_santos,58,13,0,2T,Normal,A,9
+201,2025,21,Flamengo,flamengo,Bruno Henrique Pinto,bruno_henrique_pinto,80,35,0,2T,Penalty,A,27
+202,2025,21,Corinthians,corinthians,Maycon de Andrade Barberan,maycon_de_andrade_barberan,21,21,0,1T,Normal,A,7
+202,2025,21,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Pablo Ezequiel Vegetti,pablo_ezequiel_vegetti,58,13,0,2T,Penalty,A,99
+202,2025,21,Corinthians,corinthians,Guilherme William Silva Inacio,guilherme_william_silva_inacio,68,23,0,2T,Normal,A,56
+202,2025,21,Corinthians,corinthians,Gustavo Henrique Vernes,gustavo_henrique_vernes,85,40,0,2T,Normal,A,13
+202,2025,21,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Rayan Vitor Simplício Rocha,rayan_vitor_simplicio_rocha,95,90,5,2T,Normal,A,77
+203,2025,21,Palmeiras,palmeiras,Jose Manuel Alberto Lopez,jose_manuel_alberto_lopez,14,14,0,1T,Normal,A,42
+203,2025,21,Palmeiras,palmeiras,Jose Manuel Alberto Lopez,jose_manuel_alberto_lopez,56,11,0,2T,Normal,A,42
+203,2025,21,Palmeiras,palmeiras,Gustavo Raul Gomez Portillo,gustavo_raul_gomez_portillo,59,14,0,2T,Normal,A,15
+204,2025,21,São Paulo,sao_paulo,Pablo Gonçalves Maia Fortunato,pablo_goncalves_maia_fortunato,22,22,0,1T,Normal,A,29
+204,2025,21,São Paulo,sao_paulo,Gonzalo Andrés Tapia Dubournais,gonzalo_andres_tapia_dubournais,80,35,0,2T,Normal,A,14
+205,2025,21,Red Bull Bragantino,red_bull_bragantino,Jhonatan dos Santos Rosa,jhonatan_dos_santos_rosa,2,2,0,1T,Normal,A,10
+205,2025,21,Red Bull Bragantino,red_bull_bragantino,Eduardo Colcenti Antunes,eduardo_colcenti_antunes,3,3,0,1T,Normal,A,8
+205,2025,21,Fluminense,fluminense,Hercules Pereira do Nascimento,hercules_pereira_do_nascimento,46,45,1,1T,Normal,A,35
+205,2025,21,Red Bull Bragantino,red_bull_bragantino,Ignacio Jesus Laquintana Marsico,ignacio_jesus_laquintana_marsico,47,2,0,2T,Normal,A,33
+205,2025,21,Fluminense,fluminense,Luciano Federico Acosta,luciano_federico_acosta,61,16,0,2T,Normal,A,32
+205,2025,21,Red Bull Bragantino,red_bull_bragantino,Davi Gomes de Alvarenga,davi_gomes_de_alvarenga,80,35,0,2T,Normal,A,27
+206,2025,21,Cruzeiro Saf,cruzeiro_saf,Matheus Fellipe Costa Pereira,matheus_fellipe_costa_pereira,18,18,0,1T,Normal,A,10
+206,2025,21,Internacional,internacional,Bruno Vinicius Souza Ramos,bruno_vinicius_souza_ramos,23,23,0,1T,Normal,A,17
+206,2025,21,Cruzeiro Saf,cruzeiro_saf,Kaio Jorge Pinto Ramos,kaio_jorge_pinto_ramos,58,13,0,2T,Normal,A,19
+208,2025,21,Bahia,bahia,Luciano Batista da Silva Junior,luciano_batista_da_silva_junior,11,11,0,1T,Normal,A,46
+208,2025,21,Bahia,bahia,Luciano Rodriguez Rosales,luciano_rodriguez_rosales,59,14,0,2T,Normal,A,17
+209,2025,21,Mirassol,mirassol,Edson Guilherme Mendes dos Santos,edson_guilherme_mendes_dos_santos,16,16,0,1T,Normal,A,95
+210,2025,21,Juventude,juventude,Emerson Geovanny Batalla Martinez,emerson_geovanny_batalla_martinez,32,32,0,1T,Normal,A,27
+210,2025,21,Botafogo,botafogo,Alex Nicolao Telles,alex_nicolao_telles,38,38,0,1T,Penalty,A,13
+210,2025,21,Botafogo,botafogo,Christopher Ramos De La Flor,christopher_ramos_de_la_flor,83,38,0,2T,Normal,A,9
+210,2025,21,Botafogo,botafogo,Christopher Ramos De La Flor,christopher_ramos_de_la_flor,91,90,1,2T,Normal,A,9
+211,2025,22,Flamengo,flamengo,Giorgian Daniel de Arrascaeta Benedetti,giorgian_daniel_de_arrascaeta_benedetti,53,8,0,2T,Normal,A,10
+211,2025,22,Grêmio,gremio,Tiago Luis Volpi,tiago_luis_volpi,84,39,0,2T,Penalty,A,1
+212,2025,22,Botafogo,botafogo,Danilo dos Santos de Oliveira,danilo_dos_santos_de_oliveira,5,5,0,1T,Normal,A,35
+212,2025,22,Red Bull Bragantino,red_bull_bragantino,Jhonatan dos Santos Rosa,jhonatan_dos_santos_rosa,15,15,0,1T,Normal,A,10
+212,2025,22,Botafogo,botafogo,Newton Araujo da Costa Junior,newton_araujo_da_costa_junior,32,32,0,1T,Normal,A,28
+212,2025,22,Botafogo,botafogo,Jefferson David Savarino Quintero,jefferson_david_savarino_quintero,46,45,1,1T,Normal,A,10
+212,2025,22,Botafogo,botafogo,Alvaro Montoro,alvaro_montoro,92,90,2,2T,Normal,A,8
+213,2025,22,Palmeiras,palmeiras,Vitor Hugo Roque Ferreira,vitor_hugo_roque_ferreira,17,17,0,1T,Penalty,A,9
+213,2025,22,Palmeiras,palmeiras,Joaquin Piquerez Moreira,joaquin_piquerez_moreira,28,28,0,1T,Gol Contra,A,22
+215,2025,22,Mirassol,mirassol,João Victor Carroll Santana,joao_victor_carroll_santana,2,2,0,1T,Normal,A,34
+215,2025,22,Mirassol,mirassol,Francisco da Costa Aragao,francisco_da_costa_aragao,21,21,0,1T,Normal,A,91
+215,2025,22,Mirassol,mirassol,Lucas Ramon Batista Silva,lucas_ramon_batista_silva,29,29,0,1T,Normal,A,19
+215,2025,22,Mirassol,mirassol,Alesson dos Santos Batista,alesson_dos_santos_batista,58,13,0,2T,Normal,A,77
+215,2025,22,Mirassol,mirassol,Cristian Renato Gonçalves Riquelme,cristian_renato_goncalves_riquelme,74,29,0,2T,Normal,A,17
+215,2025,22,Bahia,bahia,Rodrigo Nestor Bertalia,rodrigo_nestor_bertalia,87,42,0,2T,Normal,A,11
+216,2025,22,Cruzeiro Saf,cruzeiro_saf,Matheus Fellipe Costa Pereira,matheus_fellipe_costa_pereira,64,19,0,2T,Falta,A,10
+217,2025,22,Internacional,internacional,Alan Patrick Lourenço,alan_patrick_lourenco,23,23,0,1T,Penalty,A,10
+217,2025,22,Fortaleza Ec Saf,fortaleza_ec_saf,Lucca Prior Pimenta,lucca_prior_pimenta,30,30,0,1T,Normal,A,38
+217,2025,22,Internacional,internacional,Vitor Hugo Naum dos Santos,vitor_hugo_naum_dos_santos,50,5,0,2T,Normal,A,28
+218,2025,22,Vitória,vitoria,Erick de Arruda Serafim,erick_de_arruda_serafim,5,5,0,1T,Normal,A,33
+219,2025,22,Juventude,juventude,Luiz Gustavo da Silva Machado Duarte,luiz_gustavo_da_silva_machado_duarte,95,90,5,2T,Normal,A,44
+220,2025,22,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Nuno Gonçalo Rocha Moreira,nuno_goncalo_rocha_moreira,7,7,0,1T,Normal,A,17
+220,2025,22,Sport,sport,Lucas Rafael Araujo Lima,lucas_rafael_araujo_lima,25,25,0,1T,Penalty,A,10
+220,2025,22,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Philippe Coutinho Correia,philippe_coutinho_correia,42,42,0,1T,Normal,A,10
+220,2025,22,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Pablo Ezequiel Vegetti,pablo_ezequiel_vegetti,48,3,0,2T,Penalty,A,99
+220,2025,22,Sport,sport,Ramon Menezes Roma,ramon_menezes_roma,75,30,0,2T,Normal,A,40
+221,2025,23,Corinthians,corinthians,Matheus Franca Silva,matheus_franca_silva,73,28,0,2T,Falta,A,2
+222,2025,23,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Philippe Coutinho Correia,philippe_coutinho_correia,11,11,0,1T,Falta,A,10
+222,2025,23,Ceará,ceara,Antonio Javier Galeano Ferreira,antonio_javier_galeano_ferreira,15,15,0,1T,Normal,A,27
+222,2025,23,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Carlos Eccehomo Cuesta Figueroa,carlos_eccehomo_cuesta_figueroa,79,34,0,2T,Normal,A,46
+222,2025,23,Ceará,ceara,Pedro Henrique Konzen Medina da Silva,pedro_henrique_konzen_medina_da_silva,95,90,5,2T,Normal,A,7
+223,2025,23,Palmeiras,palmeiras,Vitor Hugo Roque Ferreira,vitor_hugo_roque_ferreira,3,3,0,1T,Normal,A,9
+223,2025,23,Palmeiras,palmeiras,Vitor Hugo Roque Ferreira,vitor_hugo_roque_ferreira,23,23,0,1T,Normal,A,9
+223,2025,23,Palmeiras,palmeiras,Lucas Evangelista Santana de Oliveira,lucas_evangelista_santana_de_oliveira,28,28,0,1T,Normal,A,30
+223,2025,23,Palmeiras,palmeiras,Vitor Hugo Roque Ferreira,vitor_hugo_roque_ferreira,42,42,0,1T,Normal,A,9
+223,2025,23,Internacional,internacional,Johan Stiven Carbonero Balanta,johan_stiven_carbonero_balanta,71,26,0,2T,Normal,A,7
+224,2025,23,São Paulo,sao_paulo,Juan Ignacio Dinenno de Cara,juan_ignacio_dinenno_de_cara,6,6,0,1T,Normal,A,19
+225,2025,23,Red Bull Bragantino,red_bull_bragantino,Eduardo Colcenti Antunes,eduardo_colcenti_antunes,56,11,0,2T,Penalty,A,8
+225,2025,23,Sport,sport,Derik Gean Severino Lacerda,derik_gean_severino_lacerda,93,90,3,2T,Normal,A,18
+226,2025,23,Atlético Mineiro Saf,atletico_mineiro_saf,Igor Silveira Gomes,igor_silveira_gomes,59,14,0,2T,Normal,A,17
+226,2025,23,Santos Fc,santos_fc,Francisco das Chagas Soares dos Santos,francisco_das_chagas_soares_dos_santos,86,41,0,2T,Penalty,A,9
+227,2025,23,Mirassol,mirassol,Alesson dos Santos Batista,alesson_dos_santos_batista,45,45,0,1T,Normal,A,77
+228,2025,23,Bahia,bahia,Jean Lucas de Souza Oliveira,jean_lucas_de_souza_oliveira,66,21,0,2T,Normal,A,6
+228,2025,23,Cruzeiro Saf,cruzeiro_saf,Luis Fernando Sinisterra Lucumi,luis_fernando_sinisterra_lucumi,76,31,0,2T,Normal,A,17
+228,2025,23,Cruzeiro Saf,cruzeiro_saf,Gabriel Barbosa Almeida,gabriel_barbosa_almeida,86,41,0,2T,Normal,A,9
+229,2025,23,Fortaleza Ec Saf,fortaleza_ec_saf,Breno Henrique Vasconcelos Lopes,breno_henrique_vasconcelos_lopes,30,30,0,1T,Normal,A,26
+229,2025,23,Fortaleza Ec Saf,fortaleza_ec_saf,Bruno de Jesus Pacheco,bruno_de_jesus_pacheco,47,2,0,2T,Normal,A,6
+230,2025,23,Flamengo,flamengo,Giorgian Daniel de Arrascaeta Benedetti,giorgian_daniel_de_arrascaeta_benedetti,31,31,0,1T,Normal,A,10
+230,2025,23,Flamengo,flamengo,Emerson Aparecido Leite de Souza Junior,emerson_aparecido_leite_de_souza_junior,86,41,0,2T,Normal,A,22
+231,2025,24,Flamengo,flamengo,Jorge Andres Carrascal Guardo,jorge_andres_carrascal_guardo,10,10,0,1T,Normal,A,15
+231,2025,24,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Rayan Vitor Simplício Rocha,rayan_vitor_simplicio_rocha,29,29,0,1T,Normal,A,77
+232,2025,24,Botafogo,botafogo,Santiago Mariano Rodriguez Molina,santiago_mariano_rodriguez_molina,48,3,0,2T,Normal,A,23
+233,2025,24,Palmeiras,palmeiras,Raphael Cavalcante Veiga,raphael_cavalcante_veiga,10,10,0,1T,Penalty,A,188
+233,2025,24,Fortaleza Ec Saf,fortaleza_ec_saf,Lucas de Figueiredo Crispim,lucas_de_figueiredo_crispim,22,22,0,1T,Normal,A,91
+233,2025,24,Palmeiras,palmeiras,Ramon Sosa Acosta,ramon_sosa_acosta,57,12,0,2T,Normal,A,19
+233,2025,24,Palmeiras,palmeiras,Andreas Hugo Hoelgebaum Pereira,andreas_hugo_hoelgebaum_pereira,81,36,0,2T,Normal,A,8
+233,2025,24,Palmeiras,palmeiras,Andreas Hugo Hoelgebaum Pereira,andreas_hugo_hoelgebaum_pereira,89,44,0,2T,Normal,A,8
+234,2025,24,Santos Fc,santos_fc,Guilherme Augusto Vieira dos Santos,guilherme_augusto_vieira_dos_santos,60,15,0,2T,Normal,A,11
+235,2025,24,Mirassol,mirassol,Reinaldo Manoel da Silva,reinaldo_manoel_da_silva,33,33,0,1T,Normal,A,6
+235,2025,24,Mirassol,mirassol,Cristian Renato Gonçalves Riquelme,cristian_renato_goncalves_riquelme,47,45,2,1T,Normal,A,17
+236,2025,24,Red Bull Bragantino,red_bull_bragantino,Jhonatan dos Santos Rosa,jhonatan_dos_santos_rosa,25,25,0,1T,Normal,A,10
+236,2025,24,Cruzeiro Saf,cruzeiro_saf,Lucas Silva Borges,lucas_silva_borges,46,45,1,1T,Normal,A,16
+236,2025,24,Cruzeiro Saf,cruzeiro_saf,Kaiki Bruno da Silva,kaiki_bruno_da_silva,77,32,0,2T,Normal,A,6
+237,2025,24,Internacional,internacional,Alan Patrick Lourenço,alan_patrick_lourenco,21,21,0,1T,Penalty,A,10
+237,2025,24,Grêmio,gremio,Carlos Vinicius Alves Morais,carlos_vinicius_alves_morais,29,29,0,1T,Normal,A,95
+237,2025,24,Internacional,internacional,Alan Patrick Lourenço,alan_patrick_lourenco,50,45,5,1T,Penalty,A,10
+237,2025,24,Grêmio,gremio,Andre Henrique da Silva Martins,andre_henrique_da_silva_martins,53,45,8,1T,Normal,A,77
+237,2025,24,Grêmio,gremio,Alysson Edward Franco da Rocha dos Santos,alysson_edward_franco_da_rocha_dos_santos,62,17,0,2T,Normal,A,47
+238,2025,24,Fluminense,fluminense,Hercules Pereira do Nascimento,hercules_pereira_do_nascimento,37,37,0,1T,Normal,A,35
+239,2025,24,Ceará,ceara,Joao Paulo Ferreira Lourenco,joao_paulo_ferreira_lourenco,48,45,3,1T,Normal,A,97
+239,2025,24,Bahia,bahia,Willian Jose da Silva,willian_jose_da_silva,56,11,0,2T,Normal,A,12
+240,2025,24,Sport,sport,Matheus Leonardo Sales Cardoso,matheus_leonardo_sales_cardoso,49,4,0,2T,Normal,A,17
+241,2025,25,Fluminense,fluminense,German Ezequiel Cano,german_ezequiel_cano,32,32,0,1T,Normal,A,14
+241,2025,25,Fluminense,fluminense,Vinicius Moreira de Lima,vinicius_moreira_de_lima,88,43,0,2T,Normal,A,45
+242,2025,25,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Rayan Vitor Simplício Rocha,rayan_vitor_simplicio_rocha,7,7,0,1T,Normal,A,77
+242,2025,25,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Paulo Henrique de Oliveira Alves,paulo_henrique_de_oliveira_alves,60,15,0,2T,Normal,A,96
+243,2025,25,Corinthians,corinthians,Yuri Alberto Monteiro da Silva,yuri_alberto_monteiro_da_silva,47,2,0,2T,Normal,A,9
+243,2025,25,Flamengo,flamengo,Giorgian Daniel de Arrascaeta Benedetti,giorgian_daniel_de_arrascaeta_benedetti,54,9,0,2T,Normal,A,10
+243,2025,25,Flamengo,flamengo,Luiz de Araujo Guimaraes Neto,luiz_de_araujo_guimaraes_neto,87,42,0,2T,Normal,A,7
+244,2025,25,Ceará,ceara,Pedro Henrique Konzen Medina da Silva,pedro_henrique_konzen_medina_da_silva,56,11,0,2T,Normal,A,7
+245,2025,25,Red Bull Bragantino,red_bull_bragantino,Lucas Henrique Barbosa,lucas_henrique_barbosa,30,30,0,1T,Normal,A,21
+245,2025,25,Santos Fc,santos_fc,Lautaro Ariel Diaz,lautaro_ariel_diaz,55,10,0,2T,Normal,A,19
+245,2025,25,Santos Fc,santos_fc,Alvaro Martin Barreal,alvaro_martin_barreal,59,14,0,2T,Normal,A,22
+245,2025,25,Red Bull Bragantino,red_bull_bragantino,Pedro Henrique Ribeiro Goncalves,pedro_henrique_ribeiro_goncalves,78,33,0,2T,Normal,A,14
+246,2025,25,Atlético Mineiro Saf,atletico_mineiro_saf,Vitor Hugo Franchescoli de Souza,vitor_hugo_franchescoli_de_souza,8,8,0,1T,Normal,A,14
+247,2025,25,Grêmio,gremio,Andre Henrique da Silva Martins,andre_henrique_da_silva_martins,46,45,1,1T,Normal,A,77
+247,2025,25,Vitória,vitoria,Aitor Cantalapiedra Fernandez,aitor_cantalapiedra_fernandez,48,3,0,2T,Normal,A,17
+247,2025,25,Grêmio,gremio,Francis Apelete Amuzu,francis_apelete_amuzu,66,21,0,2T,Normal,A,9
+247,2025,25,Grêmio,gremio,Alexander Ernesto Aravena Guzman,alexander_ernesto_aravena_guzman,89,44,0,2T,Normal,A,16
+248,2025,25,Bahia,bahia,Ademir da Silva Santos Junior,ademir_da_silva_santos_junior,78,33,0,2T,Normal,A,7
+249,2025,25,Fortaleza Ec Saf,fortaleza_ec_saf,Lucas Pacheco Affini,lucas_pacheco_affini,43,43,0,1T,Normal,A,88
+250,2025,25,Internacional,internacional,Alan Patrick Lourenço,alan_patrick_lourenco,24,24,0,1T,Normal,A,10
+250,2025,25,Juventude,juventude,Sebastiao Enio Santos de Almeida,sebastiao_enio_santos_de_almeida,63,18,0,2T,Normal,A,97
+252,2025,26,Botafogo,botafogo,Santiago Mariano Rodriguez Molina,santiago_mariano_rodriguez_molina,26,26,0,1T,Normal,A,23
+252,2025,26,Botafogo,botafogo,Jefferson Ruan Pereira dos Santos,jefferson_ruan_pereira_dos_santos,46,1,0,2T,Normal,A,47
+252,2025,26,Bahia,bahia,Rodrigo Nestor Bertalia,rodrigo_nestor_bertalia,55,10,0,2T,Falta,A,11
+253,2025,26,Palmeiras,palmeiras,Jose Manuel Alberto Lopez,jose_manuel_alberto_lopez,6,6,0,1T,Normal,A,42
+253,2025,26,Palmeiras,palmeiras,Jose Manuel Alberto Lopez,jose_manuel_alberto_lopez,17,17,0,1T,Normal,A,42
+253,2025,26,Palmeiras,palmeiras,Vitor Hugo Roque Ferreira,vitor_hugo_roque_ferreira,23,23,0,1T,Normal,A,9
+254,2025,26,Grêmio,gremio,Edenilson Andrade dos Santos,edenilson_andrade_dos_santos,56,11,0,2T,Normal,A,8
+254,2025,26,Santos Fc,santos_fc,Lautaro Ariel Diaz,lautaro_ariel_diaz,90,45,0,2T,Normal,A,19
+255,2025,26,Red Bull Bragantino,red_bull_bragantino,Eric dos Santos Rodrigues,eric_dos_santos_rodrigues,25,25,0,1T,Normal,A,7
+255,2025,26,Mirassol,mirassol,Reinaldo Manoel da Silva,reinaldo_manoel_da_silva,76,31,0,2T,Normal,A,6
+257,2025,26,Corinthians,corinthians,Guilherme William Silva Inacio,guilherme_william_silva_inacio,10,10,0,1T,Normal,A,56
+257,2025,26,Internacional,internacional,Johan Stiven Carbonero Balanta,johan_stiven_carbonero_balanta,101,90,11,2T,Penalty,A,7
+258,2025,26,Vitória,vitoria,Jose Marcos Alves Luis,jose_marcos_alves_luis,19,19,0,1T,Normal,A,3
+259,2025,26,São Paulo,sao_paulo,Gonzalo Andrés Tapia Dubournais,gonzalo_andres_tapia_dubournais,11,11,0,1T,Normal,A,14
+259,2025,26,São Paulo,sao_paulo,Luciano da Rocha Neves,luciano_da_rocha_neves,84,39,0,2T,Normal,A,10
+260,2025,26,Fluminense,fluminense,Luciano Federico Acosta,luciano_federico_acosta,64,19,0,2T,Normal,A,32
+260,2025,26,Sport,sport,Lucas Rafael Araujo Lima,lucas_rafael_araujo_lima,73,28,0,2T,Normal,A,10
+260,2025,26,Fluminense,fluminense,John Kennedy Batista de Souza,john_kennedy_batista_de_souza,83,38,0,2T,Penalty,A,99
+260,2025,26,Sport,sport,Luan Candido de Almeida,luan_candido_de_almeida,96,90,6,2T,Normal,A,36
+261,2025,27,Fluminense,fluminense,Samuel Xavier Brito,samuel_xavier_brito,14,14,0,1T,Normal,A,2
+261,2025,27,Fluminense,fluminense,Kevin Steven Serna Jaramillo,kevin_steven_serna_jaramillo,58,13,0,2T,Normal,A,90
+261,2025,27,Fluminense,fluminense,Marcos da Silva Franca,marcos_da_silva_franca,91,90,1,2T,Normal,A,11
+262,2025,27,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Nuno Gonçalo Rocha Moreira,nuno_goncalo_rocha_moreira,5,5,0,1T,Normal,A,17
+262,2025,27,Vitória,vitoria,Aitor Cantalapiedra Fernandez,aitor_cantalapiedra_fernandez,26,26,0,1T,Normal,A,17
+262,2025,27,Vitória,vitoria,Lucas Halter,lucas_halter,33,33,0,1T,Normal,A,5
+262,2025,27,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Rayan Vitor Simplício Rocha,rayan_vitor_simplicio_rocha,51,6,0,2T,Normal,A,77
+262,2025,27,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Rayan Vitor Simplício Rocha,rayan_vitor_simplicio_rocha,66,21,0,2T,Penalty,A,77
+262,2025,27,Vitória,vitoria,Raul Alejandro Caceres Bogado,raul_alejandro_caceres_bogado,71,26,0,2T,Normal,A,27
+262,2025,27,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Gabriel Souza da Silva,gabriel_souza_da_silva,97,90,7,2T,Normal,A,19
+263,2025,27,Corinthians,corinthians,Maycon de Andrade Barberan,maycon_de_andrade_barberan,17,17,0,1T,Penalty,A,7
+263,2025,27,Corinthians,corinthians,Yuri Alberto Monteiro da Silva,yuri_alberto_monteiro_da_silva,71,26,0,2T,Normal,A,9
+263,2025,27,Corinthians,corinthians,André Luiz Santos Dias,andre_luiz_santos_dias,94,90,4,2T,Normal,A,49
+264,2025,27,São Paulo,sao_paulo,Luciano da Rocha Neves,luciano_da_rocha_neves,14,14,0,1T,Normal,A,10
+264,2025,27,São Paulo,sao_paulo,Gonzalo Andrés Tapia Dubournais,gonzalo_andres_tapia_dubournais,34,34,0,1T,Normal,A,14
+264,2025,27,Palmeiras,palmeiras,Vitor Hugo Roque Ferreira,vitor_hugo_roque_ferreira,69,24,0,2T,Normal,A,9
+264,2025,27,Palmeiras,palmeiras,Jose Manuel Alberto Lopez,jose_manuel_alberto_lopez,73,28,0,2T,Normal,A,42
+264,2025,27,Palmeiras,palmeiras,Ramon Sosa Acosta,ramon_sosa_acosta,88,43,0,2T,Normal,A,19
+265,2025,27,Red Bull Bragantino,red_bull_bragantino,Jhonatan dos Santos Rosa,jhonatan_dos_santos_rosa,99,90,9,2T,Penalty,A,10
+266,2025,27,Sport,sport,Derik Gean Severino Lacerda,derik_gean_severino_lacerda,40,40,0,1T,Normal,A,18
+266,2025,27,Cruzeiro Saf,cruzeiro_saf,Gabriel Barbosa Almeida,gabriel_barbosa_almeida,58,13,0,2T,Normal,A,9
+267,2025,27,Internacional,internacional,Alan Patrick Lourenço,alan_patrick_lourenco,8,8,0,1T,Normal,A,10
+267,2025,27,Internacional,internacional,Vitor Hugo Naum dos Santos,vitor_hugo_naum_dos_santos,51,6,0,2T,Normal,A,28
+268,2025,27,Bahia,bahia,Willian Jose da Silva,willian_jose_da_silva,44,44,0,1T,Normal,A,12
+269,2025,27,Ceará,ceara,Lucas Andres Mugni,lucas_andres_mugni,10,10,0,1T,Normal,A,10
+269,2025,27,Ceará,ceara,Pedro Henrique Konzen Medina da Silva,pedro_henrique_konzen_medina_da_silva,65,20,0,2T,Normal,A,7
+269,2025,27,Ceará,ceara,Fernando Pereira do Nascimento,fernando_pereira_do_nascimento,93,90,3,2T,Normal,A,88
+270,2025,27,Juventude,juventude,Rafael Bilu Mudesto,rafael_bilu_mudesto,5,5,0,1T,Normal,A,99
+270,2025,27,Fortaleza Ec Saf,fortaleza_ec_saf,Eros Nazareno Mancuso,eros_nazareno_mancuso,71,26,0,2T,Normal,A,14
+270,2025,27,Fortaleza Ec Saf,fortaleza_ec_saf,Adam Fernando Bareiro Gamarra,adam_fernando_bareiro_gamarra,84,39,0,2T,Normal,A,27
+271,2025,28,Fluminense,fluminense,Thiago Emiliano da Silva,thiago_emiliano_da_silva,97,90,7,2T,Normal,A,3
+272,2025,28,Flamengo,flamengo,Pedro Guilherme Abreu dos Santos,pedro_guilherme_abreu_dos_santos,39,39,0,1T,Normal,A,9
+272,2025,28,Flamengo,flamengo,Luiz de Araujo Guimaraes Neto,luiz_de_araujo_guimaraes_neto,69,24,0,2T,Normal,A,7
+272,2025,28,Flamengo,flamengo,Gonzalo Jordy Plata Jimenez,gonzalo_jordy_plata_jimenez,79,34,0,2T,Normal,A,50
+273,2025,28,Red Bull Bragantino,red_bull_bragantino,Jhonatan dos Santos Rosa,jhonatan_dos_santos_rosa,37,37,0,1T,Penalty,A,10
+273,2025,28,Palmeiras,palmeiras,Bruno de Lara Fuchs,bruno_de_lara_fuchs,50,45,5,1T,Normal,A,3
+273,2025,28,Palmeiras,palmeiras,Vitor Hugo Roque Ferreira,vitor_hugo_roque_ferreira,58,13,0,2T,Normal,A,9
+273,2025,28,Palmeiras,palmeiras,Felipe Anderson Pereira Gomes,felipe_anderson_pereira_gomes,73,28,0,2T,Normal,A,7
+273,2025,28,Palmeiras,palmeiras,Jose Manuel Alberto Lopez,jose_manuel_alberto_lopez,83,38,0,2T,Normal,A,42
+273,2025,28,Palmeiras,palmeiras,Vitor Hugo Roque Ferreira,vitor_hugo_roque_ferreira,88,43,0,2T,Normal,A,9
+274,2025,28,Santos Fc,santos_fc,Jose Rafael Vivian,jose_rafael_vivian,3,3,0,1T,Normal,A,6
+274,2025,28,Santos Fc,santos_fc,Alvaro Martin Barreal,alvaro_martin_barreal,38,38,0,1T,Normal,A,22
+274,2025,28,Santos Fc,santos_fc,Benjamin Rollheiser,benjamin_rollheiser,54,9,0,2T,Penalty,A,32
+274,2025,28,Corinthians,corinthians,Raniele Almeida Melo,raniele_almeida_melo,57,12,0,2T,Normal,A,14
+275,2025,28,Mirassol,mirassol,Antonio Francisco Moura Neto,antonio_francisco_moura_neto,25,25,0,1T,Normal,A,25
+275,2025,28,Internacional,internacional,Thiago Maia Alencar,thiago_maia_alencar,38,38,0,1T,Normal,A,29
+275,2025,28,Mirassol,mirassol,Reinaldo Manoel da Silva,reinaldo_manoel_da_silva,49,45,4,1T,Normal,A,6
+275,2025,28,Mirassol,mirassol,Luis Henrique Soares Firmino,luis_henrique_soares_firmino,49,4,0,2T,Normal,A,11
+276,2025,28,Cruzeiro Saf,cruzeiro_saf,Matheus Fellipe Costa Pereira,matheus_fellipe_costa_pereira,48,3,0,2T,Normal,A,10
+276,2025,28,Atlético Mineiro Saf,atletico_mineiro_saf,Ruan Tressoldi Netto,ruan_tressoldi_netto,50,5,0,2T,Normal,A,16
+277,2025,28,Grêmio,gremio,Carlos Vinicius Alves Morais,carlos_vinicius_alves_morais,38,38,0,1T,Normal,A,95
+277,2025,28,Grêmio,gremio,Carlos Vinicius Alves Morais,carlos_vinicius_alves_morais,55,10,0,2T,Penalty,A,95
+278,2025,28,Vitória,vitoria,Renato Kayzer de Souza,renato_kayzer_de_souza,26,26,0,1T,Penalty,A,79
+278,2025,28,Bahia,bahia,Tiago Souza de Jesus Carvalho,tiago_souza_de_jesus_carvalho,40,40,0,1T,Normal,A,77
+278,2025,28,Vitória,vitoria,Raul Alejandro Caceres Bogado,raul_alejandro_caceres_bogado,63,18,0,2T,Normal,A,27
+279,2025,28,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Rayan Vitor Simplício Rocha,rayan_vitor_simplicio_rocha,49,45,4,1T,Normal,A,77
+279,2025,28,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,David Correa da Fonseca,david_correa_da_fonseca,81,36,0,2T,Normal,A,7
+280,2025,28,Ceará,ceara,Pedro Raul Garay da Silva,pedro_raul_garay_da_silva,82,37,0,2T,Normal,A,9
+280,2025,28,Sport,sport,Igor Aquino da Silva,igor_aquino_da_silva,86,41,0,2T,Normal,A,16
+281,2025,29,Flamengo,flamengo,Giorgian Daniel de Arrascaeta Benedetti,giorgian_daniel_de_arrascaeta_benedetti,9,9,0,1T,Normal,A,10
+281,2025,29,Palmeiras,palmeiras,Vitor Hugo Roque Ferreira,vitor_hugo_roque_ferreira,24,24,0,1T,Normal,A,9
+281,2025,29,Flamengo,flamengo,Jorge Luiz Frello Filho,jorge_luiz_frello_filho,41,41,0,1T,Penalty,A,21
+281,2025,29,Flamengo,flamengo,Pedro Guilherme Abreu dos Santos,pedro_guilherme_abreu_dos_santos,44,44,0,1T,Normal,A,9
+281,2025,29,Palmeiras,palmeiras,Gustavo Raul Gomez Portillo,gustavo_raul_gomez_portillo,93,90,3,2T,Normal,A,15
+282,2025,29,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Rayan Vitor Simplício Rocha,rayan_vitor_simplicio_rocha,38,38,0,1T,Normal,A,77
+282,2025,29,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Nuno Gonçalo Rocha Moreira,nuno_goncalo_rocha_moreira,52,7,0,2T,Normal,A,17
+283,2025,29,Corinthians,corinthians,Maycon de Andrade Barberan,maycon_de_andrade_barberan,49,4,0,2T,Normal,A,7
+284,2025,29,Vitória,vitoria,Matheus Martins Fogaca de Paulo,matheus_martins_fogaca_de_paulo,40,40,0,1T,Penalty,A,10
+285,2025,29,Mirassol,mirassol,Alesson dos Santos Batista,alesson_dos_santos_batista,1,1,0,1T,Normal,A,77
+285,2025,29,Mirassol,mirassol,Reinaldo Manoel da Silva,reinaldo_manoel_da_silva,34,34,0,1T,Penalty,A,6
+285,2025,29,Mirassol,mirassol,Carlos Eduardo Ferreira de Souza,carlos_eduardo_ferreira_de_souza,68,23,0,2T,Penalty,A,96
+286,2025,29,Cruzeiro Saf,cruzeiro_saf,Christian Roberto Alves Cardoso,christian_roberto_alves_cardoso,20,20,0,1T,Normal,A,88
+287,2025,29,Internacional,internacional,Rafael Santos Borre Maury,rafael_santos_borre_maury,24,24,0,1T,Normal,A,19
+287,2025,29,Internacional,internacional,Bruno Henrique Corsini,bruno_henrique_corsini,67,22,0,2T,Normal,A,8
+288,2025,29,Bahia,bahia,Iago Amaral Borduchi,iago_amaral_borduchi,3,3,0,1T,Normal,A,25
+288,2025,29,Bahia,bahia,Willian Jose da Silva,willian_jose_da_silva,9,9,0,1T,Normal,A,12
+288,2025,29,Bahia,bahia,David de Duarte Macedo,david_de_duarte_macedo,56,11,0,2T,Normal,A,33
+288,2025,29,Bahia,bahia,Rodrigo Nestor Bertalia,rodrigo_nestor_bertalia,92,90,2,2T,Normal,A,11
+289,2025,29,Botafogo,botafogo,Christopher Ramos de La Flor,christopher_ramos_de_la_flor,39,39,0,1T,Normal,A,9
+289,2025,29,Botafogo,botafogo,Jefferson Ruan Pereira dos Santos,jefferson_ruan_pereira_dos_santos,78,33,0,2T,Normal,A,47
+290,2025,29,Juventude,juventude,Daniel Nascimento Peixoto dos Santos,daniel_nascimento_peixoto_dos_santos,39,39,0,1T,Normal,A,72
+291,2025,30,Fluminense,fluminense,Samuel Xavier Brito,samuel_xavier_brito,60,15,0,2T,Normal,A,2
+292,2025,30,Botafogo,botafogo,Carlos Joaquin Correa,carlos_joaquin_correa,1,1,0,1T,Normal,A,30
+292,2025,30,Santos Fc,santos_fc,João Victor de Souza Menezes,joao_victor_de_souza_menezes,26,26,0,1T,Normal,A,33
+292,2025,30,Botafogo,botafogo,Carlos Joaquin Correa,carlos_joaquin_correa,38,38,0,1T,Normal,A,30
+292,2025,30,Santos Fc,santos_fc,Alvaro Martin Barreal,alvaro_martin_barreal,69,24,0,2T,Penalty,A,22
+294,2025,30,São Paulo,sao_paulo,Luciano da Rocha Neves,luciano_da_rocha_neves,7,7,0,1T,Normal,A,10
+294,2025,30,São Paulo,sao_paulo,Damian Josue Bobadilla Benitez,damian_josue_bobadilla_benitez,40,40,0,1T,Normal,A,21
+295,2025,30,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Pablo Ezequiel Vegetti,pablo_ezequiel_vegetti,27,27,0,1T,Normal,A,99
+295,2025,30,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Pablo Ezequiel Vegetti,pablo_ezequiel_vegetti,69,24,0,2T,Normal,A,99
+295,2025,30,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Gabriel Souza da Silva,gabriel_souza_da_silva,88,43,0,2T,Normal,A,19
+296,2025,30,Atlético Mineiro Saf,atletico_mineiro_saf,Alan Steven Franco Palma,alan_steven_franco_palma,1,1,0,1T,Normal,A,21
+297,2025,30,Grêmio,gremio,Carlos Vinicius Alves Morais,carlos_vinicius_alves_morais,34,34,0,1T,Penalty,A,95
+297,2025,30,Grêmio,gremio,Carlos Vinicius Alves Morais,carlos_vinicius_alves_morais,47,2,0,2T,Normal,A,95
+297,2025,30,Grêmio,gremio,Carlos Vinicius Alves Morais,carlos_vinicius_alves_morais,67,22,0,2T,Normal,A,95
+297,2025,30,Juventude,juventude,Igor Marques Paciencia Cardoso,igor_marques_paciencia_cardoso,78,33,0,2T,Normal,A,32
+298,2025,30,Corinthians,corinthians,Charles Rigon Matos,charles_rigon_matos,87,42,0,2T,Normal,A,35
+299,2025,30,Fortaleza Ec Saf,fortaleza_ec_saf,Breno Henrique Vasconcelos Lopes,breno_henrique_vasconcelos_lopes,12,12,0,1T,Normal,A,26
+300,2025,30,Mirassol,mirassol,Luis Henrique Soares Firmino,luis_henrique_soares_firmino,28,28,0,1T,Normal,A,11
+300,2025,30,Sport,sport,Derik Gean Severino Lacerda,derik_gean_severino_lacerda,39,39,0,1T,Normal,A,18
+300,2025,30,Mirassol,mirassol,Guilherme Costa Marques,guilherme_costa_marques,47,2,0,2T,Normal,A,12
+301,2025,31,Flamengo,flamengo,Bruno Henrique Pinto,bruno_henrique_pinto,50,5,0,2T,Normal,A,27
+301,2025,31,Flamengo,flamengo,Bruno Henrique Pinto,bruno_henrique_pinto,60,15,0,2T,Normal,A,27
+301,2025,31,Flamengo,flamengo,Giorgian Daniel de Arrascaeta Benedetti,giorgian_daniel_de_arrascaeta_benedetti,66,21,0,2T,Falta,A,10
+302,2025,31,São Paulo,sao_paulo,Lucas Rodrigues Moura da Silva,lucas_rodrigues_moura_da_silva,47,45,2,1T,Penalty,A,7
+302,2025,31,São Paulo,sao_paulo,Luiz Gustavo Dias,luiz_gustavo_dias,87,42,0,2T,Normal,A,16
+303,2025,31,Corinthians,corinthians,Gustavo Henrique Vernes,gustavo_henrique_vernes,15,15,0,1T,Normal,A,13
+303,2025,31,Corinthians,corinthians,Memphis Depay,memphis_depay,80,35,0,2T,Penalty,A,10
+304,2025,31,Fortaleza Ec Saf,fortaleza_ec_saf,Adam Fernando Bareiro Gamarra,adam_fernando_bareiro_gamarra,35,35,0,1T,Normal,A,27
+304,2025,31,Santos Fc,santos_fc,Adonis Uriel Frias,adonis_uriel_frias,73,28,0,2T,Normal,A,98
+306,2025,31,Cruzeiro Saf,cruzeiro_saf,Kaio Jorge Pinto Ramos,kaio_jorge_pinto_ramos,6,6,0,1T,Penalty,A,19
+306,2025,31,Cruzeiro Saf,cruzeiro_saf,Kaio Jorge Pinto Ramos,kaio_jorge_pinto_ramos,22,22,0,1T,Normal,A,19
+306,2025,31,Vitória,vitoria,Willian Osmar de Oliveira Silva,willian_osmar_de_oliveira_silva,36,36,0,1T,Normal,A,29
+306,2025,31,Cruzeiro Saf,cruzeiro_saf,Keny Alexander Arroyo Alvarado,keny_alexander_arroyo_alvarado,44,44,0,1T,Normal,A,99
+308,2025,31,Red Bull Bragantino,red_bull_bragantino,Matheus Fernandes Siqueira,matheus_fernandes_siqueira,19,19,0,1T,Normal,A,35
+308,2025,31,Bahia,bahia,Willian Jose da Silva,willian_jose_da_silva,74,29,0,2T,Normal,A,12
+308,2025,31,Bahia,bahia,Willian Jose da Silva,willian_jose_da_silva,90,45,0,2T,Normal,A,12
+310,2025,31,Palmeiras,palmeiras,Bruno Rafael Rodrigues do Nascimento,bruno_rafael_rodrigues_do_nascimento,24,24,0,1T,Normal,A,11
+310,2025,31,Palmeiras,palmeiras,Felipe Anderson Pereira Gomes,felipe_anderson_pereira_gomes,61,16,0,2T,Normal,A,7
+311,2025,32,Fluminense,fluminense,Kevin Steven Serna Jaramillo,kevin_steven_serna_jaramillo,30,30,0,1T,Normal,A,90
+312,2025,32,Botafogo,botafogo,Alex Nicolao Telles,alex_nicolao_telles,46,45,1,1T,Penalty,A,13
+312,2025,32,Botafogo,botafogo,Artur Victor Guimaraes,artur_victor_guimaraes,71,26,0,2T,Normal,A,7
+312,2025,32,Botafogo,botafogo,David Ricardo Loiola da Silva,david_ricardo_loiola_da_silva,76,31,0,2T,Normal,A,57
+313,2025,32,Palmeiras,palmeiras,Vitor Hugo Roque Ferreira,vitor_hugo_roque_ferreira,67,22,0,2T,Normal,A,9
+313,2025,32,Palmeiras,palmeiras,Vitor Hugo Roque Ferreira,vitor_hugo_roque_ferreira,81,36,0,2T,Normal,A,9
+314,2025,32,São Paulo,sao_paulo,Luciano da Rocha Neves,luciano_da_rocha_neves,3,3,0,1T,Normal,A,10
+314,2025,32,Flamengo,flamengo,Giorgian Daniel de Arrascaeta Benedetti,giorgian_daniel_de_arrascaeta_benedetti,7,7,0,1T,Penalty,A,10
+314,2025,32,Flamengo,flamengo,Samuel Dias Lino,samuel_dias_lino,64,19,0,2T,Normal,A,16
+314,2025,32,São Paulo,sao_paulo,Aldemir dos Santos Ferreira,aldemir_dos_santos_ferreira,79,34,0,2T,Normal,A,11
+315,2025,32,Red Bull Bragantino,red_bull_bragantino,Eduardo Colcenti Antunes,eduardo_colcenti_antunes,45,45,0,1T,Penalty,A,8
+315,2025,32,Corinthians,corinthians,Yuri Alberto Monteiro da Silva,yuri_alberto_monteiro_da_silva,66,21,0,2T,Normal,A,9
+315,2025,32,Red Bull Bragantino,red_bull_bragantino,Isidro Miguel Pitta Saldivar,isidro_miguel_pitta_saldivar,92,90,2,2T,Normal,A,9
+316,2025,32,Atlético Mineiro Saf,atletico_mineiro_saf,Givanildo Vieira de Sousa,givanildo_vieira_de_sousa,66,21,0,2T,Normal,A,7
+316,2025,32,Atlético Mineiro Saf,atletico_mineiro_saf,Igor Silveira Gomes,igor_silveira_gomes,75,30,0,2T,Falta,A,17
+316,2025,32,Atlético Mineiro Saf,atletico_mineiro_saf,Gabriel Teixeira Aragao,gabriel_teixeira_aragao,76,31,0,2T,Normal,A,77
+317,2025,32,Cruzeiro Saf,cruzeiro_saf,Fabricio Bruno Soares de Faria,fabricio_bruno_soares_de_faria,42,42,0,1T,Normal,A,15
+318,2025,32,Vitória,vitoria,Lucas Halter,lucas_halter,68,23,0,2T,Normal,A,5
+319,2025,32,Fortaleza Ec Saf,fortaleza_ec_saf,Adam Fernando Bareiro Gamarra,adam_fernando_bareiro_gamarra,36,36,0,1T,Normal,A,27
+319,2025,32,Ceará,ceara,Pedro Raul Garay da Silva,pedro_raul_garay_da_silva,89,44,0,2T,Normal,A,9
+320,2025,32,Juventude,juventude,Gabriel Pereira Taliari,gabriel_pereira_taliari,46,45,1,1T,Normal,A,19
+320,2025,32,Juventude,juventude,Sebastiao Enio Santos de Almeida,sebastiao_enio_santos_de_almeida,78,33,0,2T,Normal,A,97
+321,2025,33,Flamengo,flamengo,Leonardo Pereira,leonardo_pereira,36,36,0,1T,Normal,A,4
+321,2025,33,Flamengo,flamengo,Jorge Andres Carrascal Guardo,jorge_andres_carrascal_guardo,50,5,0,2T,Normal,A,15
+321,2025,33,Flamengo,flamengo,Bruno Henrique Pinto,bruno_henrique_pinto,80,35,0,2T,Normal,A,27
+321,2025,33,Santos Fc,santos_fc,Gabriel Morais Silva Bontempo,gabriel_morais_silva_bontempo,88,43,0,2T,Normal,A,49
+321,2025,33,Santos Fc,santos_fc,Lautaro Ariel Diaz,lautaro_ariel_diaz,90,45,0,2T,Normal,A,19
+322,2025,33,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Rayan Vitor Simplício Rocha,rayan_vitor_simplicio_rocha,26,26,0,1T,Normal,A,77
+322,2025,33,Juventude,juventude,Marcelo Hermes,marcelo_hermes,38,38,0,1T,Normal,A,22
+322,2025,33,Juventude,juventude,Anderson Luis de Carvalho,anderson_luis_de_carvalho,45,45,0,1T,Normal,A,10
+322,2025,33,Juventude,juventude,Ewerthon Diogenes da Silva,ewerthon_diogenes_da_silva,90,45,0,2T,Normal,A,2
+323,2025,33,Ceará,ceara,Antonio Javier Galeano Ferreira,antonio_javier_galeano_ferreira,31,31,0,1T,Normal,A,27
+324,2025,33,Red Bull Bragantino,red_bull_bragantino,Jhonatan dos Santos Rosa,jhonatan_dos_santos_rosa,74,29,0,2T,Penalty,A,10
+325,2025,33,Mirassol,mirassol,Gabriel Santana Pinto,gabriel_santana_pinto,2,2,0,1T,Normal,A,27
+325,2025,33,Palmeiras,palmeiras,Vitor Hugo Roque Ferreira,vitor_hugo_roque_ferreira,30,30,0,1T,Normal,A,9
+325,2025,33,Mirassol,mirassol,João Victor Carroll Santana,joao_victor_carroll_santana,47,45,2,1T,Normal,A,34
+327,2025,33,Internacional,internacional,Vitor Hugo Naum dos Santos,vitor_hugo_naum_dos_santos,25,25,0,1T,Normal,A,28
+327,2025,33,Internacional,internacional,Vitor Hugo Naum dos Santos,vitor_hugo_naum_dos_santos,48,3,0,2T,Normal,A,28
+327,2025,33,Bahia,bahia,Willian Jose da Silva,willian_jose_da_silva,59,14,0,2T,Normal,A,12
+327,2025,33,Bahia,bahia,Tiago Souza de Jesus Carvalho,tiago_souza_de_jesus_carvalho,93,90,3,2T,Normal,A,77
+329,2025,33,Fortaleza Ec Saf,fortaleza_ec_saf,Adam Fernando Bareiro Gamarra,adam_fernando_bareiro_gamarra,5,5,0,1T,Normal,A,27
+329,2025,33,Grêmio,gremio,Carlos Vinicius Alves Morais,carlos_vinicius_alves_morais,13,13,0,1T,Normal,A,95
+329,2025,33,Grêmio,gremio,Marlon Rodrigues Xavier,marlon_rodrigues_xavier,32,32,0,1T,Normal,A,23
+329,2025,33,Fortaleza Ec Saf,fortaleza_ec_saf,Matheus Pereira da Silva,matheus_pereira_da_silva,64,19,0,2T,Falta,A,5
+330,2025,33,Sport Recife,sport_recife,Leonardo Augusto dos Santos Pereira,leonardo_augusto_dos_santos_pereira,17,17,0,1T,Normal,A,38
+330,2025,33,Sport Recife,sport_recife,Leonardo Augusto dos Santos Pereira,leonardo_augusto_dos_santos_pereira,62,17,0,2T,Normal,A,38
+330,2025,33,Atlético Mineiro Saf,atletico_mineiro_saf,Givanildo Vieira de Sousa,givanildo_vieira_de_sousa,67,22,0,2T,Falta,A,7
+330,2025,33,Atlético Mineiro Saf,atletico_mineiro_saf,Ronielson da Silva Barbosa,ronielson_da_silva_barbosa,70,25,0,2T,Normal,A,33
+330,2025,33,Atlético Mineiro Saf,atletico_mineiro_saf,Alexsander Cristhian Gomes da Costa,alexsander_cristhian_gomes_da_costa,80,35,0,2T,Normal,A,5
+330,2025,33,Atlético Mineiro Saf,atletico_mineiro_saf,Ronielson da Silva Barbosa,ronielson_da_silva_barbosa,83,38,0,2T,Normal,A,33
+331,2025,34,Fluminense,fluminense,Luciano Federico Acosta,luciano_federico_acosta,24,24,0,1T,Normal,A,32
+331,2025,34,Fluminense,fluminense,Kevin Steven Serna Jaramillo,kevin_steven_serna_jaramillo,33,33,0,1T,Normal,A,90
+331,2025,34,Flamengo,flamengo,Jorge Luiz Frello Filho,jorge_luiz_frello_filho,84,39,0,2T,Penalty,A,21
+332,2025,34,Sport Recife,sport_recife,Leonardo Augusto dos Santos Pereira,leonardo_augusto_dos_santos_pereira,13,13,0,1T,Normal,A,38
+332,2025,34,Sport Recife,sport_recife,Rafael Thyere de Albuquerque Marques,rafael_thyere_de_albuquerque_marques,27,27,0,1T,Normal,A,15
+332,2025,34,Botafogo,botafogo,Artur Victor Guimaraes,artur_victor_guimaraes,30,30,0,1T,Normal,A,7
+332,2025,34,Botafogo,botafogo,Jose Kadir Barria Rose,jose_kadir_barria_rose,57,12,0,2T,Normal,A,37
+332,2025,34,Botafogo,botafogo,Jose Kadir Barria Rose,jose_kadir_barria_rose,94,90,4,2T,Normal,A,37
+333,2025,34,Corinthians,corinthians,Yuri Alberto Monteiro da Silva,yuri_alberto_monteiro_da_silva,31,31,0,1T,Penalty,A,9
+333,2025,34,São Paulo,sao_paulo,Gonzalo Andrés Tapia Dubournais,gonzalo_andres_tapia_dubournais,54,9,0,2T,Normal,A,14
+333,2025,34,Corinthians,corinthians,Memphis Depay,memphis_depay,84,39,0,2T,Normal,A,10
+333,2025,34,Corinthians,corinthians,Yuri Alberto Monteiro da Silva,yuri_alberto_monteiro_da_silva,89,44,0,2T,Normal,A,9
+334,2025,34,Santos Fc,santos_fc,Neymar da Silva Santos Junior,neymar_da_silva_santos_junior,3,3,0,1T,Normal,A,10
+334,2025,34,Mirassol,mirassol,Reinaldo Manoel da Silva,reinaldo_manoel_da_silva,60,15,0,2T,Penalty,A,6
+335,2025,34,Red Bull Bragantino,red_bull_bragantino,Eduardo Colcenti Antunes,eduardo_colcenti_antunes,5,5,0,1T,Normal,A,8
+335,2025,34,Red Bull Bragantino,red_bull_bragantino,Eduardo Colcenti Antunes,eduardo_colcenti_antunes,8,8,0,1T,Normal,A,8
+335,2025,34,Red Bull Bragantino,red_bull_bragantino,Lucas Henrique Barbosa,lucas_henrique_barbosa,51,6,0,2T,Normal,A,21
+335,2025,34,Red Bull Bragantino,red_bull_bragantino,Jhonatan dos Santos Rosa,jhonatan_dos_santos_rosa,64,19,0,2T,Normal,A,10
+336,2025,34,Palmeiras,palmeiras,Jose Manuel Alberto Lopez,jose_manuel_alberto_lopez,9,9,0,1T,Normal,A,42
+336,2025,34,Palmeiras,palmeiras,Allan Andrade Elias,allan_andrade_elias,19,19,0,1T,Normal,A,40
+336,2025,34,Palmeiras,palmeiras,Luighi Hanri Sousa Santos,luighi_hanri_sousa_santos,81,36,0,2T,Normal,A,31
+337,2025,34,Grêmio,gremio,Carlos Vinicius Alves Morais,carlos_vinicius_alves_morais,51,6,0,2T,Normal,A,95
+337,2025,34,Grêmio,gremio,Francis Apelete Amuzu,francis_apelete_amuzu,84,39,0,2T,Normal,A,9
+338,2025,34,Fortaleza Ec Saf,fortaleza_ec_saf,Adam Fernando Bareiro Gamarra,adam_fernando_bareiro_gamarra,29,29,0,1T,Normal,A,27
+338,2025,34,Fortaleza Ec Saf,fortaleza_ec_saf,Jose Maria Herrera Ares,jose_maria_herrera_ares,36,36,0,1T,Normal,A,80
+338,2025,34,Bahia,bahia,Willian Jose da Silva,willian_jose_da_silva,65,20,0,2T,Penalty,A,12
+338,2025,34,Fortaleza Ec Saf,fortaleza_ec_saf,Deyverson Brum Silva,deyverson_brum_silva,75,30,0,2T,Normal,A,18
+338,2025,34,Bahia,bahia,Tiago Souza de Jesus Carvalho,tiago_souza_de_jesus_carvalho,93,90,3,2T,Normal,A,77
+339,2025,34,Internacional,internacional,Vitor Hugo Naum dos Santos,vitor_hugo_naum_dos_santos,77,32,0,2T,Normal,A,28
+339,2025,34,Internacional,internacional,Ricardo Mathias da Silva,ricardo_mathias_da_silva,79,34,0,2T,Gol Contra,A,49
+339,2025,34,Internacional,internacional,Ricardo Mathias da Silva,ricardo_mathias_da_silva,86,41,0,2T,Normal,A,49
+340,2025,34,Juventude,juventude,Marcelo Hermes,marcelo_hermes,8,8,0,1T,Normal,A,22
+340,2025,34,Juventude,juventude,Gabriel Pereira Taliari,gabriel_pereira_taliari,15,15,0,1T,Normal,A,19
+340,2025,34,Cruzeiro Saf,cruzeiro_saf,Luis Fernando Sinisterra Lucumi,luis_fernando_sinisterra_lucumi,41,41,0,1T,Normal,A,17
+340,2025,34,Cruzeiro Saf,cruzeiro_saf,Kaio Jorge Pinto Ramos,kaio_jorge_pinto_ramos,52,7,0,2T,Normal,A,19
+340,2025,34,Juventude,juventude,Gabriel Pereira Taliari,gabriel_pereira_taliari,59,14,0,2T,Normal,A,19
+340,2025,34,Cruzeiro Saf,cruzeiro_saf,Kaio Jorge Pinto Ramos,kaio_jorge_pinto_ramos,85,40,0,2T,Normal,A,19
+341,2025,35,Flamengo,flamengo,Giorgian Daniel de Arrascaeta Benedetti,giorgian_daniel_de_arrascaeta_benedetti,49,4,0,2T,Normal,A,10
+341,2025,35,Flamengo,flamengo,Jorge Luiz Frello Filho,jorge_luiz_frello_filho,63,18,0,2T,Penalty,A,21
+341,2025,35,Flamengo,flamengo,Bruno Henrique Pinto,bruno_henrique_pinto,71,26,0,2T,Normal,A,27
+342,2025,35,Botafogo,botafogo,Luis Eduardo Soares da Silva,luis_eduardo_soares_da_silva,15,15,0,1T,Normal,A,6
+342,2025,35,Botafogo,botafogo,Artur Victor Guimaraes,artur_victor_guimaraes,18,18,0,1T,Normal,A,7
+342,2025,35,Grêmio,gremio,Andre Henrique da Silva Martins,andre_henrique_da_silva_martins,48,3,0,2T,Normal,A,77
+342,2025,35,Botafogo,botafogo,Fernando Marcal de Oliveira,fernando_marcal_de_oliveira,81,36,0,2T,Normal,A,21
+342,2025,35,Grêmio,gremio,Carlos Vinicius Alves Morais,carlos_vinicius_alves_morais,89,44,0,2T,Normal,A,95
+344,2025,35,São Paulo,sao_paulo,Damian Josue Bobadilla Benitez,damian_josue_bobadilla_benitez,6,6,0,1T,Normal,A,21
+344,2025,35,São Paulo,sao_paulo,Emiliano Ariel Rigoni,emiliano_ariel_rigoni,93,90,3,2T,Normal,A,77
+344,2025,35,São Paulo,sao_paulo,Nahuel Adolfo Ferraresi Hernandez,nahuel_adolfo_ferraresi_hernandez,95,90,5,2T,Gol Contra,A,32
+345,2025,35,Mirassol,mirassol,Luis Henrique Soares Firmino,luis_henrique_soares_firmino,3,3,0,1T,Normal,A,11
+345,2025,35,Mirassol,mirassol,Reinaldo Manoel da Silva,reinaldo_manoel_da_silva,23,23,0,1T,Falta,A,6
+345,2025,35,Mirassol,mirassol,Alesson dos Santos Batista,alesson_dos_santos_batista,76,31,0,2T,Normal,A,77
+346,2025,35,Cruzeiro Saf,cruzeiro_saf,Kaio Jorge Pinto Ramos,kaio_jorge_pinto_ramos,25,25,0,1T,Normal,A,19
+346,2025,35,Cruzeiro Saf,cruzeiro_saf,Kaio Jorge Pinto Ramos,kaio_jorge_pinto_ramos,48,3,0,2T,Normal,A,19
+346,2025,35,Cruzeiro Saf,cruzeiro_saf,Keny Alexander Arroyo Alvarado,keny_alexander_arroyo_alvarado,64,19,0,2T,Normal,A,99
+347,2025,35,Internacional,internacional,Alan Patrick Lourenço,alan_patrick_lourenco,20,20,0,1T,Normal,A,10
+347,2025,35,Santos Fc,santos_fc,Alvaro Martin Barreal,alvaro_martin_barreal,62,17,0,2T,Normal,A,22
+348,2025,35,Bahia,bahia,Erick da Costa Farias,erick_da_costa_farias,72,27,0,2T,Normal,A,16
+349,2025,35,Fortaleza Ec Saf,fortaleza_ec_saf,Tomas Pochettino,tomas_pochettino,40,40,0,1T,Normal,A,7
+350,2025,35,Sport Recife,sport_recife,Luan Candido de Almeida,luan_candido_de_almeida,12,12,0,1T,Gol Contra,A,36
+350,2025,35,Vitória,vitoria,Aitor Cantalapiedra Fernandez,aitor_cantalapiedra_fernandez,14,14,0,1T,Normal,A,17
+350,2025,35,Sport Recife,sport_recife,Pablo Felipe Teixeira,pablo_felipe_teixeira,28,28,0,1T,Normal,A,92
+350,2025,35,Vitória,vitoria,Renato Kayzer de Souza,renato_kayzer_de_souza,47,2,0,2T,Normal,A,79
+351,2025,36,Fluminense,fluminense,Agustin Canobbio Graviz,agustin_canobbio_graviz,8,8,0,1T,Penalty,A,17
+351,2025,36,Fluminense,fluminense,Matheus Martinelli Lima,matheus_martinelli_lima,15,15,0,1T,Normal,A,8
+351,2025,36,Fluminense,fluminense,Gustavo Nonato Santana,gustavo_nonato_santana,23,23,0,1T,Normal,A,16
+351,2025,36,Fluminense,fluminense,John Kennedy Batista de Souza,john_kennedy_batista_de_souza,69,24,0,2T,Normal,A,99
+351,2025,36,Fluminense,fluminense,Agustin Canobbio Graviz,agustin_canobbio_graviz,76,31,0,2T,Normal,A,17
+351,2025,36,Fluminense,fluminense,Kevin Steven Serna Jaramillo,kevin_steven_serna_jaramillo,86,41,0,2T,Normal,A,90
+352,2025,36,Vasco da Gama S.A.F.,vasco_da_gama_s_a_f,Carlos Andres Gomez Hinestroza,carlos_andres_gomez_hinestroza,1,1,0,1T,Normal,A,11
+352,2025,36,Vasco da Gama S.A.F.,vasco_da_gama_s_a_f,Rayan Vitor Simplício Rocha,rayan_vitor_simplicio_rocha,8,8,0,1T,Normal,A,77
+352,2025,36,Internacional,internacional,Ricardo Mathias da Silva,ricardo_mathias_da_silva,46,45,1,1T,Normal,A,49
+352,2025,36,Vasco da Gama S.A.F.,vasco_da_gama_s_a_f,Rayan Vitor Simplício Rocha,rayan_vitor_simplicio_rocha,46,1,0,2T,Normal,A,77
+352,2025,36,Vasco da Gama S.A.F.,vasco_da_gama_s_a_f,Cauan Lucas Barros da Luz,cauan_lucas_barros_da_luz,57,12,0,2T,Normal,A,88
+352,2025,36,Vasco da Gama S.A.F.,vasco_da_gama_s_a_f,Nuno Gonçalo Rocha Moreira,nuno_goncalo_rocha_moreira,65,20,0,2T,Normal,A,17
+353,2025,36,Corinthians,corinthians,Raniele Almeida Melo,raniele_almeida_melo,7,7,0,1T,Normal,A,14
+353,2025,36,Botafogo,botafogo,Luis Eduardo Soares da Silva,luis_eduardo_soares_da_silva,60,15,0,2T,Normal,A,6
+353,2025,36,Botafogo,botafogo,Jordan Andres Barrera Herrera,jordan_andres_barrera_herrera,65,20,0,2T,Normal,A,14
+353,2025,36,Corinthians,corinthians,Gustavo Henrique Vernes,gustavo_henrique_vernes,81,36,0,2T,Normal,A,13
+355,2025,36,Fortaleza Ec Saf,fortaleza_ec_saf,Adam Fernando Bareiro Gamarra,adam_fernando_bareiro_gamarra,75,30,0,2T,Normal,A,27
+356,2025,36,Atlético Mineiro Saf,atletico_mineiro_saf,Bernard Anicio Caldeira Duarte,bernard_anicio_caldeira_duarte,34,34,0,1T,Normal,A,11
+356,2025,36,Flamengo,flamengo,Bruno Henrique Pinto,bruno_henrique_pinto,92,90,2,2T,Normal,A,27
+357,2025,36,Palmeiras,palmeiras,Facundo Daniel Torres Perez,facundo_daniel_torres_perez,23,23,0,1T,Normal,A,17
+357,2025,36,Grêmio,gremio,Francis Apelete Amuzu,francis_apelete_amuzu,47,45,2,1T,Normal,A,9
+357,2025,36,Grêmio,gremio,Carlos Vinicius Alves Morais,carlos_vinicius_alves_morais,60,15,0,2T,Penalty,A,95
+357,2025,36,Grêmio,gremio,Willian Borges da Silva,willian_borges_da_silva,83,38,0,2T,Penalty,A,88
+357,2025,36,Palmeiras,palmeiras,Luis Gustavo Roncholeta Benedetti,luis_gustavo_roncholeta_benedetti,93,90,3,2T,Normal,A,43
+358,2025,36,Vitória,vitoria,Lucas Halter,lucas_halter,24,24,0,1T,Normal,A,5
+358,2025,36,Vitória,vitoria,Matheus Martins Fogaca de Paulo,matheus_martins_fogaca_de_paulo,89,44,0,2T,Penalty,A,10
+359,2025,36,Ceará,ceara,Vinicius Nelson de Souza Zanocelo,vinicius_nelson_de_souza_zanocelo,55,10,0,2T,Normal,A,25
+359,2025,36,Ceará,ceara,Willian Estefani Machado,willian_estefani_machado,70,25,0,2T,Gol Contra,A,23
+360,2025,36,Bahia,bahia,Ademir da Silva Santos Junior,ademir_da_silva_santos_junior,20,20,0,1T,Normal,A,7
+360,2025,36,Juventude,juventude,Gabriel Pereira Taliari,gabriel_pereira_taliari,27,27,0,1T,Normal,A,19
+361,2025,37,Flamengo,flamengo,Samuel Dias Lino,samuel_dias_lino,37,37,0,1T,Normal,A,16
+362,2025,37,Mirassol,mirassol,Renato Marques de Oliveira Junior,renato_marques_de_oliveira_junior,69,24,0,2T,Normal,A,78
+362,2025,37,Mirassol,mirassol,Carlos Eduardo Ferreira de Souza,carlos_eduardo_ferreira_de_souza,92,90,2,2T,Normal,A,96
+364,2025,37,São Paulo,sao_paulo,Jose Sabino Chagas Monteiro,jose_sabino_chagas_monteiro,21,21,0,1T,Normal,A,35
+364,2025,37,São Paulo,sao_paulo,Maik Gomes Viegas,maik_gomes_viegas,47,45,2,1T,Normal,A,42
+364,2025,37,São Paulo,sao_paulo,Luciano da Rocha Neves,luciano_da_rocha_neves,48,3,0,2T,Normal,A,10
+365,2025,37,Red Bull Bragantino,red_bull_bragantino,Lucas Henrique Barbosa,lucas_henrique_barbosa,54,9,0,2T,Normal,A,21
+365,2025,37,Red Bull Bragantino,red_bull_bragantino,Gustavo Marques Alves dos Santos,gustavo_marques_alves_dos_santos,58,13,0,2T,Normal,A,16
+366,2025,37,Cruzeiro Saf,cruzeiro_saf,Christian Roberto Alves Cardoso,christian_roberto_alves_cardoso,15,15,0,1T,Normal,A,88
+366,2025,37,Cruzeiro Saf,cruzeiro_saf,Matheus Fellipe Costa Pereira,matheus_fellipe_costa_pereira,50,5,0,2T,Normal,A,10
+366,2025,37,Botafogo,botafogo,Fernando Marcal de Oliveira,fernando_marcal_de_oliveira,57,12,0,2T,Normal,A,21
+366,2025,37,Botafogo,botafogo,Alex Nicolao Telles,alex_nicolao_telles,94,90,4,2T,Penalty,A,13
+367,2025,37,Fluminense,fluminense,Yeferson Julio Soteldo Martinez,yeferson_julio_soteldo_martinez,19,19,0,1T,Normal,A,7
+367,2025,37,Fluminense,fluminense,Yeferson Julio Soteldo Martinez,yeferson_julio_soteldo_martinez,52,7,0,2T,Normal,A,7
+367,2025,37,Grêmio,gremio,Andre Henrique da Silva Martins,andre_henrique_da_silva_martins,54,9,0,2T,Normal,A,77
+368,2025,37,Bahia,bahia,Rodrigo Nestor Bertalia,rodrigo_nestor_bertalia,39,39,0,1T,Normal,A,11
+368,2025,37,Bahia,bahia,Luciano Batista da Silva Junior,luciano_batista_da_silva_junior,54,9,0,2T,Normal,A,46
+369,2025,37,Fortaleza Ec Saf,fortaleza_ec_saf,Tomas Pochettino,tomas_pochettino,8,8,0,1T,Normal,A,7
+369,2025,37,Fortaleza Ec Saf,fortaleza_ec_saf,Jose Maria Herrera Ares,jose_maria_herrera_ares,58,13,0,2T,Normal,A,80
+369,2025,37,Corinthians,corinthians,André Luiz Santos Dias,andre_luiz_santos_dias,69,24,0,2T,Normal,A,49
+370,2025,37,Santos Fc,santos_fc,Neymar da Silva Santos Junior,neymar_da_silva_santos_junior,55,10,0,2T,Normal,A,10
+370,2025,37,Santos Fc,santos_fc,Neymar da Silva Santos Junior,neymar_da_silva_santos_junior,65,20,0,2T,Normal,A,10
+370,2025,37,Santos Fc,santos_fc,Neymar da Silva Santos Junior,neymar_da_silva_santos_junior,72,27,0,2T,Penalty,A,10
+371,2025,38,Fluminense,fluminense,Paulo Henrique Chagas de Lima,paulo_henrique_chagas_de_lima,75,30,0,2T,Normal,A,10
+371,2025,38,Fluminense,fluminense,Thiago Emiliano da Silva,thiago_emiliano_da_silva,82,37,0,2T,Normal,A,3
+372,2025,38,Fortaleza Ec Saf,fortaleza_ec_saf,Breno Henrique Vasconcelos Lopes,breno_henrique_vasconcelos_lopes,17,17,0,1T,Normal,A,26
+372,2025,38,Botafogo,botafogo,Arthur Mendonça Cabral,arthur_mendonca_cabral,48,3,0,2T,Normal,A,98
+372,2025,38,Botafogo,botafogo,Alvaro Montoro,alvaro_montoro,50,45,5,1T,Normal,A,8
+372,2025,38,Fortaleza Ec Saf,fortaleza_ec_saf,Adam Fernando Bareiro Gamarra,adam_fernando_bareiro_gamarra,56,11,0,2T,Penalty,A,27
+372,2025,38,Botafogo,botafogo,Fernando Marcal de Oliveira,fernando_marcal_de_oliveira,84,39,0,2T,Normal,A,21
+372,2025,38,Botafogo,botafogo,Mateo Ponte Costa,mateo_ponte_costa,95,90,5,2T,Normal,A,4
+373,2025,38,Corinthians,corinthians,Jose Andres Martinez Torres,jose_andres_martinez_torres,23,23,0,1T,Normal,A,70
+373,2025,38,Juventude,juventude,Edison Custodio dos Santos,edison_custodio_dos_santos,87,42,0,2T,Normal,A,87
+374,2025,38,Santos Fc,santos_fc,Thaciano Mickael da Silva,thaciano_mickael_da_silva,26,26,0,1T,Normal,A,16
+374,2025,38,Santos Fc,santos_fc,Thaciano Mickael da Silva,thaciano_mickael_da_silva,27,27,0,1T,Normal,A,16
+374,2025,38,Santos Fc,santos_fc,Joao Felipe Schmidt Urbano,joao_felipe_schmidt_urbano,60,15,0,2T,Normal,A,5
+375,2025,38,Flamengo,flamengo,Douglas Costa Telles,douglas_costa_telles,8,8,0,1T,Normal,A,81
+375,2025,38,Mirassol,mirassol,Francisco Hyun Sol Kim,francisco_hyun_sol_kim,13,13,0,1T,Normal,A,10
+375,2025,38,Flamengo,flamengo,Guilherme Henrique Bernardineli Gomes,guilherme_henrique_bernardineli_gomes,31,31,0,1T,Normal,A,47
+375,2025,38,Mirassol,mirassol,Alesson dos Santos Batista,alesson_dos_santos_batista,40,40,0,1T,Normal,A,77
+375,2025,38,Flamengo,flamengo,Guilherme Henrique Bernardineli Gomes,guilherme_henrique_bernardineli_gomes,59,14,0,2T,Normal,A,47
+375,2025,38,Mirassol,mirassol,Cristian Renato Gonçalves Riquelme,cristian_renato_goncalves_riquelme,65,20,0,2T,Normal,A,17
+376,2025,38,Atlético Mineiro Saf,atletico_mineiro_saf,Junior Osmar Ignacio Alonso Mujica,junior_osmar_ignacio_alonso_mujica,18,18,0,1T,Normal,A,6
+376,2025,38,Atlético Mineiro Saf,atletico_mineiro_saf,Givanildo Vieira de Sousa,givanildo_vieira_de_sousa,31,31,0,1T,Falta,A,7
+376,2025,38,Atlético Mineiro Saf,atletico_mineiro_saf,Eduardo Pereira Rodrigues,eduardo_pereira_rodrigues,48,3,0,2T,Normal,A,92
+376,2025,38,Atlético Mineiro Saf,atletico_mineiro_saf,Eduardo Pereira Rodrigues,eduardo_pereira_rodrigues,68,23,0,2T,Normal,A,92
+376,2025,38,Vasco da Gama S.a.f.,vasco_da_gama_s_a_f,Victor Luis Chuab Zamblauskas,victor_luis_chuab_zamblauskas,75,30,0,2T,Gol Contra,A,12
+377,2025,38,Internacional,internacional,Gabriel Ivan Mercado,gabriel_ivan_mercado,49,4,0,2T,Normal,A,25
+377,2025,38,Internacional,internacional,Alan Patrick Lourenço,alan_patrick_lourenco,77,32,0,2T,Penalty,A,10
+377,2025,38,Internacional,internacional,Johan Stiven Carbonero Balanta,johan_stiven_carbonero_balanta,80,35,0,2T,Normal,A,7
+377,2025,38,Red Bull Bragantino,red_bull_bragantino,Jhonatan dos Santos Rosa,jhonatan_dos_santos_rosa,87,42,0,2T,Normal,A,10
+378,2025,38,Vitória,vitoria,Gabriel Baralhas dos Santos,gabriel_baralhas_dos_santos,67,22,0,2T,Normal,A,44
+379,2025,38,Ceará,ceara,Pedro Raul Garay da Silva,pedro_raul_garay_da_silva,11,11,0,1T,Normal,A,9
+379,2025,38,Palmeiras,palmeiras,Facundo Daniel Torres Perez,facundo_daniel_torres_perez,16,16,0,1T,Normal,A,17
+379,2025,38,Palmeiras,palmeiras,Ramon Sosa Acosta,ramon_sosa_acosta,60,15,0,2T,Falta,A,19
+379,2025,38,Palmeiras,palmeiras,Jose Manuel Alberto Lopez,jose_manuel_alberto_lopez,64,19,0,2T,Normal,A,42
+380,2025,38,Grêmio,gremio,Carlos Vinicius Alves Morais,carlos_vinicius_alves_morais,28,28,0,1T,Normal,A,95
+380,2025,38,Grêmio,gremio,Carlos Vinicius Alves Morais,carlos_vinicius_alves_morais,31,31,0,1T,Normal,A,95
+380,2025,38,Grêmio,gremio,Gustavo Martins de Souza Santos,gustavo_martins_de_souza_santos,41,41,0,1T,Normal,A,53
+380,2025,38,Grêmio,gremio,Franco Sebastian Cristaldo,franco_sebastian_cristaldo,47,2,0,2T,Normal,A,10
 170,2026,0,Remo,remo,Jandir Breno Souza Silva,jandir_breno_souza_silva,13,13,0,1T,Normal,A,37
 170,2026,0,Athletico Paranaense,athletico_paranaense,Kevin Estiben Viveros Rodallega,kevin_estiben_viveros_rodallega,45,45,0,1T,Normal,A,9
 170,2026,0,Athletico Paranaense,athletico_paranaense,Kevin Estiben Viveros Rodallega,kevin_estiben_viveros_rodallega,52,7,0,2T,Normal,A,9

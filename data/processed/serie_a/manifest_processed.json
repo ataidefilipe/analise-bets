@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-16T22:29:05.940778",
+  "last_updated": "2026-09-18T14:10:51.546466",
   "temporadas": [
     2003,
     2004,
@@ -23,19 +23,20 @@
     2022,
     2023,
     2024,
+    2025,
     2026
   ],
   "datasets": {
     "partidas": {
-      "linhas": 9056,
+      "linhas": 9431,
       "colunas": 27
     },
     "cartoes": {
-      "linhas": 22364,
+      "linhas": 24368,
       "colunas": 18
     },
     "gols": {
-      "linhas": 10571,
+      "linhas": 11500,
       "colunas": 14
     }
   }

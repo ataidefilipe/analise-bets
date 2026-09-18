@@ -90,6 +90,15 @@
   * **Treze defeitos de dados encontrados e corrigidos**, nenhum deles previsto no backlog, todos afetando resultados já publicados. Inventário completo em [`docs/relatorio_de_execucao_2026-09-16.md`](file:///d:/Python%20Projetos/analise-bets/docs/relatorio_de_execucao_2026-09-16.md).
   * **Suíte ampliada de 67 para 139 testes**, sem que nenhum precisasse ser reescrito para acomodar números novos quando a base mudou 14% de volume.
 
+* **Ativo de dados — Sessão de 2026-09-18 (F2-02 e fechamento da F2-03, branch `main`):**
+  * **Temporada 2025 ingerida nas duas séries** e **Série B 2024 completada**: 1.140 súmulas, 380/380 partidas em cada caso, nenhum 404. O buraco de uma temporada inteira na base deixou de existir; a Série B passa a cobrir 2022 a 2025 integralmente.
+  * **Base do escore pré-jogo quase dobrou**, de 57.406 para 107.990 registros de atleta-partida, e de 111 para 210 rodadas avaliadas. O escore passou a superar a linha de base **em todos os k** — antes perdia em k = 1 — com ganho de 2,4× a 3,0× sobre sorteio. Teste de vazamento: 0 divergências em 75.291 linhas.
+  * **Três defeitos encadeados, encontrados em cascata e nenhum previsto:** súmula com apelido vazio desloca as colunas e grava o registro CBF no lugar da camisa; o `groupby` do escore descarta a chave nula e produz `NaN` silencioso; e o teste de vazamento, comparando com `!=`, lê `NaN != NaN` como vazamento temporal. Cada um só apareceu porque o seguinte falhou.
+  * **Um quarto defeito criado e corrigido na mesma sessão:** a primeira correção limitou o número de camisa a 1–99 e apagou atletas reais — o Ceará usou a camisa 100 em 2025, o Palmeiras a 188. O critério correto é o tamanho do campo, não a magnitude. Os dois defeitos originais vinham se anulando mutuamente na junção entre evento e escalação, e corrigir um só fez o outro aparecer.
+  * **A janela de modelagem da Fase 1 não foi estendida.** 2025 está na base e fora dos modelos, por decisão explícita: estender mudaria todos os números publicados e deve ser deliberado, não efeito colateral de uma ingestão.
+  * **Súmulas brutas fora do versionamento.** Os PDFs deixaram de ser versionados: são ~2.400 arquivos e dezenas de MB, e `manifest_delta.json` guarda URL, ETag e SHA-256 de cada um, de modo que `run_delta_pipeline.py` reconstitui o conjunto. Os 1.308 PDFs já versionados em sessões anteriores continuam no índice — a remoção afeta quem já clonou e fica registrada como decisão pendente.
+  * **Suíte ampliada de 149 para 153 testes.** Inventário completo em [`docs/relatorio_de_execucao_2026-09-18.md`](relatorio_de_execucao_2026-09-18.md).
+
 ---
 
 ## 2. Registro de Decisões Tomadas

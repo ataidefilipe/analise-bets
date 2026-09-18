@@ -1,4 +1,17 @@
 serie,evento,temporada,partida_id,clube_slug,num_camisa,atleta,partida_sem_escalacao
+A,cartoes,2025,95,juventude,16,Jadson Alves dos Santos,True
+A,cartoes,2025,95,juventude,1,Luiz Gustavo de Almeida Pinto,True
+A,cartoes,2025,95,juventude,95,Caique de Jesus Goncalves,True
+A,cartoes,2025,95,red_bull_bragantino,21,Lucas Henrique Barbosa,True
+A,cartoes,2025,95,red_bull_bragantino,18,Thiago Nicolas Borbas Silva,True
+A,cartoes,2025,95,juventude,44,Luiz Gustavo da Silva Machado Duarte,True
+A,cartoes,2025,95,red_bull_bragantino,34,Jose Andres Hurtado Cheme,True
+A,cartoes,2025,95,red_bull_bragantino,21,Lucas Henrique Barbosa,True
+A,cartoes,2025,95,red_bull_bragantino,2,Guzman Rodriguez Ferrari,True
+A,cartoes,2025,156,atletico_mineiro_saf,92,Eduardo Pereira Rodrigues,True
+A,cartoes,2025,156,atletico_mineiro_saf,16,Ruan Tressoldi Netto,True
+A,cartoes,2025,156,fortaleza_ec_saf,88,Lucas Pacheco Affini,True
+A,cartoes,2025,31,junior,9,Gilberto Oliveira Souza,True
 A,cartoes,2026,170,remo,37,Jandir Breno Souza Silva,True
 A,cartoes,2026,170,athletico_paranaense,10,Bruno Zapelli,True
 A,cartoes,2026,170,remo,79,Marcelo Rodrigues Souza,True
@@ -12,6 +25,13 @@ A,cartoes,2026,221,palmeiras,56,Arthur Gabriel Santana Marcolino,True
 A,cartoes,2026,221,fluminense,32,Luciano Federico Acosta,True
 A,cartoes,2026,221,fluminense,8,Matheus Martinelli Lima,True
 A,cartoes,2026,221,palmeiras,15,Gustavo Raul Gomez Portillo,True
+A,gols,2025,95,red_bull_bragantino,10,Jhonatan dos Santos Rosa,True
+A,gols,2025,156,atletico_mineiro_saf,500,Givanildo Vieira de Sousa,True
+A,gols,2025,156,atletico_mineiro_saf,14,Vitor Hugo Franchescoli de Souza,True
+A,gols,2025,156,fortaleza_ec_saf,18,Deyverson Brum Silva,True
+A,gols,2025,156,atletico_mineiro_saf,92,Eduardo Pereira Rodrigues,True
+A,gols,2025,156,fortaleza_ec_saf,18,Deyverson Brum Silva,True
+A,gols,2025,156,fortaleza_ec_saf,18,Deyverson Brum Silva,True
 A,gols,2026,170,remo,37,Jandir Breno Souza Silva,True
 A,gols,2026,170,athletico_paranaense,9,Kevin Estiben Viveros Rodallega,True
 A,gols,2026,170,athletico_paranaense,9,Kevin Estiben Viveros Rodallega,True
@@ -62,7 +82,47 @@ B,cartoes,2023,163,criciuma,42,Miqueias Cabral Evaristo,True
 B,cartoes,2023,163,guarani,19,João Victor Lima Ferreira,True
 B,cartoes,2023,163,guarani,5,Matheus Barbosa Teixeira,True
 B,cartoes,2023,163,guarani,22,Álvaro José Oliveira Dias,True
-B,cartoes,2023,197,ituano,6,Kauan Richard Leal Silva,False
+B,cartoes,2024,86,chapecoense,57,João Pedro Galvão de Carvalho,True
+B,cartoes,2024,86,chapecoense,5,Auremir Evangelista dos Santos,True
+B,cartoes,2024,86,avai,77,Jose Ricardo Barbosa Ribeiro Drumond,True
+B,cartoes,2024,86,avai,6,Willian Marlon Ferreira Moraes,True
+B,cartoes,2024,86,chapecoense,30,Thomas Jaguaribe Bedinelli,True
+B,cartoes,2024,86,avai,19,Joao Paulo da Silva Alves,True
+B,cartoes,2024,86,chapecoense,7,Marcio Antonio de Sousa Junior,True
+B,cartoes,2024,86,chapecoense,27,Regis Tosatti Giacomin,True
+B,cartoes,2024,86,chapecoense,31,Tarik Michel Kedes Boschetti,True
+B,cartoes,2024,206,chapecoense,10,Giovanni Augusto Oliveira Cardoso,True
+B,cartoes,2024,206,chapecoense,99,Rafael dos Santos Carvalheira Natividade,True
+B,cartoes,2024,206,guarani,8,Marlon Douglas de Sales Silva,True
+B,cartoes,2024,206,chapecoense,35,Guilherme Seefeldt Krolow,True
+B,cartoes,2024,331,goias,22,Diego Caito Barcellos Oliveira dos Santos,True
+B,cartoes,2024,331,operario,1,Rafael de Carvalho Santos,True
+B,cartoes,2025,43,cuiaba_saf,27,Denilson Alves Borges,True
+B,cartoes,2025,43,ferroviaria,92,Carlos Henrique de Moura Brito,True
+B,cartoes,2025,43,ferroviaria,77,Eduardo Jose Barbosa da Silva Junior,True
+B,cartoes,2025,43,cuiaba_saf,77,Jadson Alves de Lima,True
+B,cartoes,2025,43,ferroviaria,20,Albano Sehn Neto,True
+B,cartoes,2025,43,cuiaba_saf,55,Calebe Oliveira Costa,True
+B,cartoes,2025,297,avai,94,Emerson Ramon Bezerra Oliveira,True
+B,cartoes,2025,297,avai,36,Douglas da Silva Teixeira,True
+B,cartoes,2025,297,avai,98,João Pedro Murilo de Paula Morais,True
+B,cartoes,2025,297,crb,60,Hayner William Monjardim Cordeiro,True
+B,cartoes,2025,323,vila_nova,4,Pedro Henrique Oliveira Romano,True
+B,cartoes,2025,323,atletico_goianiense_saf,3,Gebson Gomes dos Santos,True
+B,cartoes,2025,323,vila_nova,13,Willian Prado Camargo,True
+B,cartoes,2025,323,atletico_goianiense_saf,6,Guilherme Kennedy Romao,True
+B,cartoes,2025,323,vila_nova,2,Elias Lira Nogueira Junior,True
+B,cartoes,2025,323,atletico_goianiense_saf,17,Ariel Felipe Gomes da Rosa,True
+B,cartoes,2025,323,atletico_goianiense_saf,1,Paulo Vitor Fagundes dos Anjos,True
+B,cartoes,2025,323,vila_nova,3,Tiago Pagnussat,True
+B,cartoes,2025,323,vila_nova,20,Bruno Pereira Mendes,True
+B,cartoes,2025,323,vila_nova,11,Vinicius dos Santos de Oliveira Paiva,True
+B,cartoes,2025,369,ferroviaria,35,Jose Domingos de Moraes Neto,True
+B,cartoes,2025,369,athletico_paranaense,29,Gaston Americo Benavidez,True
+B,cartoes,2025,369,athletico_paranaense,5,Antonio Feliphe Costa Silva,True
+B,cartoes,2025,369,athletico_paranaense,9,Kevin Estiben Viveros Rodallega,True
+B,cartoes,2025,369,ferroviaria,80,Fábio Soares dos Santos,True
+B,cartoes,2025,369,athletico_paranaense,21,Leonardo Caetano Silva,True
 B,cartoes,2026,167,avai,10,Jean Lucas Figueiredo,True
 B,cartoes,2026,167,nautico,46,Gustavo Henrique da Silva,True
 B,cartoes,2026,167,avai,56,William Fernando Soares de Almeida,True
@@ -83,6 +143,19 @@ B,gols,2023,140,abc,10,Thonny Anderson da Silva Carvalho,True
 B,gols,2023,140,atletico,18,David Francisco Trindade Braga,True
 B,gols,2023,163,guarani,27,Bruno Roberto Pereira da Silva,True
 B,gols,2023,163,criciuma,11,Fabio Augusto Luciano da Silva,True
+B,gols,2024,206,guarani,19,João Victor Lima Ferreira,True
+B,gols,2024,206,guarani,8,Marlon Douglas de Sales Silva,True
+B,gols,2024,206,guarani,99,Caio Henrique da Silva Dantas,True
+B,gols,2024,206,guarani,99,Caio Henrique da Silva Dantas,True
+B,gols,2024,331,goias,18,Breno Herculano Almeida,True
+B,gols,2024,331,goias,14,Lucas Ribeiro dos Santos,True
+B,gols,2024,331,goias,7,Paulo Henrique Silva Ribeiro,True
+B,gols,2025,43,cuiaba_saf,33,Alan Pereira Empereur,True
+B,gols,2025,297,crb,17,Thiago Fernandes Rodrigues,True
+B,gols,2025,323,atletico_goianiense_saf,11,Yuri Alves de Aquino,True
+B,gols,2025,369,ferroviaria,80,Fábio Soares dos Santos,True
+B,gols,2025,369,athletico_paranaense,57,João Victor Machado Cruz,True
+B,gols,2025,369,athletico_paranaense,70,Renan Peixoto Nepomuceno,True
 B,gols,2026,167,avai,36,Douglas da Silva Teixeira,True
 B,gols,2026,167,avai,14,Daniel dos Santos Penha,True
 B,gols,2026,214,operario,9,Vinicius Alessandro Mingotti,True

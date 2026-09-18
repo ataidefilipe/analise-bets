@@ -1,9 +1,9 @@
 k,criterio,rodadas_avaliadas,atletas_inspecionados,acertos,precisao_at_k,taxa_base_da_populacao,ganho_sobre_o_acaso
-1,Escore pré-jogo,111,111,12,0.1081,0.0396,2.73
-1,Linha de base (cartões acumulados),111,111,13,0.1171,0.0396,2.96
-3,Escore pré-jogo,111,333,34,0.1021,0.0396,2.58
-3,Linha de base (cartões acumulados),111,333,30,0.0901,0.0396,2.28
-5,Escore pré-jogo,111,555,53,0.0955,0.0396,2.41
-5,Linha de base (cartões acumulados),111,555,50,0.0901,0.0396,2.28
-10,Escore pré-jogo,111,1110,120,0.1081,0.0396,2.73
-10,Linha de base (cartões acumulados),111,1110,91,0.082,0.0396,2.07
+1,Escore pré-jogo,210,210,20,0.0952,0.0402,2.37
+1,Linha de base (cartões acumulados),210,210,19,0.0905,0.0402,2.25
+3,Escore pré-jogo,210,630,68,0.1079,0.0402,2.69
+3,Linha de base (cartões acumulados),210,630,57,0.0905,0.0402,2.25
+5,Escore pré-jogo,210,1050,118,0.1124,0.0402,2.8
+5,Linha de base (cartões acumulados),210,1050,97,0.0924,0.0402,2.3
+10,Escore pré-jogo,210,2100,250,0.119,0.0402,2.96
+10,Linha de base (cartões acumulados),210,2100,181,0.0862,0.0402,2.14

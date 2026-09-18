@@ -1,0 +1,15 @@
+2026-09-18 13:48:20 [INFO] CBFDeltaPipeline: ======================================================================
+2026-09-18 13:48:20 [INFO] CBFDeltaPipeline: INICIANDO EXECUÇÃO DO PIPELINE DELTA CBF (D+1)
+2026-09-18 13:48:20 [INFO] CBFDeltaPipeline: Temporada: 2024 | Séries: ['B'] | Partidas: 1 a 380
+2026-09-18 13:48:20 [INFO] CBFDeltaPipeline: ======================================================================
+2026-09-18 13:48:20 [INFO] CBFDeltaPipeline: >>> [ETAPA 1/3] Sincronizando Delta Súmulas - Série B / 2024...
+2026-09-18 13:48:20 [INFO] CBFDeltaIngestor: Iniciando delta Série B / 2024: 380 partidas a inspecionar (de 1 a 380).
+2026-09-18 13:49:16 [INFO] CBFDeltaIngestor: Delta Série B / 2024 concluído: 375 novas, 0 atualizadas, 5 inalteradas, 0 pendentes (404), 0 erros.
+2026-09-18 13:49:16 [INFO] CBFDeltaPipeline: >>> [ETAPA 2/3] Processando e Upserting 375 súmulas - Série B / 2024...
+2026-09-18 13:49:20 [INFO] CBFDeltaProcessor: Upsert concluído com sucesso para Série B / 2024: 375 partidas, 813 gols, 2193 cartões.
+2026-09-18 13:49:20 [INFO] CBFDeltaPipeline: Geração de feeds ignorada (--skip-feed).
+2026-09-18 13:49:20 [INFO] CBFDeltaPipeline: ======================================================================
+2026-09-18 13:49:20 [INFO] CBFDeltaPipeline: PIPELINE DELTA FINALIZADO EM 59.59 segundos (Sucesso: True)
+2026-09-18 13:49:20 [INFO] CBFDeltaPipeline: Resumo: 375 downloads novos, 375 partidas upserted, 813 gols, 2193 cartões.
+2026-09-18 13:49:20 [INFO] CBFDeltaPipeline: Relatório de auditoria salvo em: data\processed\delta_pipeline_last_run.json
+2026-09-18 13:49:20 [INFO] CBFDeltaPipeline: ======================================================================

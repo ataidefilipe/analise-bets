@@ -145,6 +145,56 @@ def test_substituicoes_extraidas_com_minuto_e_equipe():
         assert s["clube_slug"], "substituição sem equipe"
 
 
+def test_relacao_sem_apelido_nao_desloca_as_colunas():
+    """
+    Quando o apelido vem vazio na súmula, a coluna desaparece e todos os campos deslizam uma
+    posição: o token lido como número de camisa passa a ser o registro CBF da linha anterior
+    — seis dígitos que `isdigit()` aceita sem reclamar —, e o atleta entra na base sem
+    registro nenhum.
+
+    Ocorreu de verdade na Série B 2024, partida 181 (Vila Nova), e só apareceu porque o
+    escore pré-jogo produziu um NaN. O que separa camisa de registro é o tamanho — camisa
+    tem até três dígitos, registro tem seis ou sete. Limitar a camisa a 1..99 descartaria
+    atletas reais: o Ceará usou a 100 em 2025 e o Palmeiras a 188.
+    """
+    from src.cleaning.cbf_delta_processor import parse_relacao_de_atletas
+
+    tokens = [
+        "Relação de Jogadores", "Vila Nova / GO", "Nº", "Apelido", "Nome Completo",
+        "23", "Guilherme ...", "Guilherme Silva Lacerda", "R", "P", "617642",
+        "70", "Juan Christian Perei ...", "R", "2198626",
+    ]
+    meta = {"partida_id": 181, "temporada": 2024, "serie": "B", "rodada": 19}
+    atletas = parse_relacao_de_atletas(tokens, meta)
+
+    por_camisa = {a["num_camisa"]: a for a in atletas}
+    assert set(por_camisa) == {23, 70}, f"camisas obtidas: {sorted(por_camisa)}"
+    assert por_camisa[70]["registro_cbf"] == "2198626"
+    assert por_camisa[23]["registro_cbf"] == "617642"
+    assert all(1 <= a["num_camisa"] <= 999 for a in atletas)
+    assert all(a["registro_cbf"] for a in atletas), "atleta sem identidade na base"
+
+
+def test_camisa_de_tres_digitos_nao_e_descartada():
+    """
+    O Ceará relacionou a camisa 100 na Série A 2025 e o Palmeiras a 188. Um guard que
+    limitasse a camisa a 1..99 apagaria esses atletas da relação — e, como o evento continua
+    na base, o gol passaria a ser de alguém que não foi relacionado.
+    """
+    from src.cleaning.cbf_delta_processor import parse_relacao_de_atletas
+
+    tokens = [
+        "Relação de Jogadores", "Ceará / CE", "Nº", "Apelido", "Nome Completo",
+        "100", "Mugni", "Lucas Andres Mugni", "T", "P", "459744",
+    ]
+    atletas = parse_relacao_de_atletas(
+        tokens, {"partida_id": 89, "temporada": 2025, "serie": "A", "rodada": 9}
+    )
+    assert len(atletas) == 1
+    assert atletas[0]["num_camisa"] == 100
+    assert atletas[0]["registro_cbf"] == "459744"
+
+
 def test_escalacoes_materializadas_e_consistentes():
     """A tabela `escalacoes` tem chave partida + camisa única e cobre as duas séries."""
     for serie in ("a", "b"):

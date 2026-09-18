@@ -117,14 +117,21 @@ def _acumulados_anteriores(base: pd.DataFrame) -> pd.DataFrame:
     temporada e rodada, o deslocamento respeita a cronologia inclusive entre temporadas.
     """
     df = base.sort_values(["serie", "registro_cbf", "temporada", "rodada"]).copy()
-    grupo = df.groupby(["serie", "registro_cbf"], sort=False)
+    # `dropna=False` e obrigatorio: uma sumula com layout malformado pode deixar o
+    # `registro_cbf` vazio, e o agrupamento padrao descarta chave nula. A linha ficaria sem
+    # grupo, o acumulado sairia NaN e o escore tambem — silenciosamente. Pior, o
+    # `teste_de_vazamento` compara escores com `!=`, e `NaN != NaN` e sempre verdadeiro:
+    # a lacuna se disfarcava de vazamento temporal. Sem historico, o atleta e pontuado
+    # apenas pelo prior populacional, que e a resposta correta para quem nao tem passado.
+    grupo = df.groupby(["serie", "registro_cbf"], sort=False, dropna=False)
 
     for origem, destino in (("minutos_em_campo", "minutos_previos"),
                             ("cartao_1t", "cartoes_1t_previos"),
                             ("cartao_30m", "cartoes_30m_previos"),
                             ("cartao", "cartoes_previos"),
                             ("participou", "partidas_previas")):
-        df[destino] = grupo[origem].transform(lambda s: s.cumsum().shift(1).fillna(0))
+        df[destino] = grupo[origem].transform(
+            lambda s: s.fillna(0).cumsum().shift(1).fillna(0))
 
     return df
 
@@ -265,7 +272,10 @@ def teste_de_vazamento(base: pd.DataFrame, fracao_de_corte: float = 0.7) -> pd.D
     a = a.loc[comparaveis].sort_index()
     b = b.loc[comparaveis].sort_index()
 
-    divergentes = int((a != b).sum())
+    # Comparacao ciente de NaN: `NaN != NaN` e verdadeiro em pandas, e um escore ausente
+    # seria contado como divergencia — um vazamento falso que desmoralizaria a guarda.
+    iguais = (a == b) | (a.isna() & b.isna())
+    divergentes = int((~iguais).sum())
 
     return pd.DataFrame([{
         "teste": "Escores anteriores ao corte não mudam quando o futuro é corrompido",

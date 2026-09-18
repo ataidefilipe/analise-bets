@@ -195,7 +195,7 @@ temporada,serie,clube_slug,registro_cbf,apelido,atleta_slug,num_camisa,partidas_
 2022,B,criciuma,311146,Hygor,hygor_cleber_garcia_silva,18,31,27,15,1522,56.4
 2022,B,csa,356563,Rodrigo Ro ...,rodrigo_rodrigues_silva,99,32,28,18,1520,54.3
 2022,B,novorizontino,298282,Ronaldo,ronaldo_henrique_silva,9,21,21,19,1507,71.8
-2022,B,vasco_da_gama,559670,Figueiredo,figueiredo,15,22,22,18,1501,68.2
+2022,B,vasco_da_gama,559670,Figueiredo,figueiredo,15,23,22,18,1501,68.2
 2022,B,nautico,393400,João Paulo,joao_paulo,14,26,18,17,1497,83.2
 2022,B,gremio,339876,Diogo,diogo_barbosa_mendanha,6,33,20,16,1490,74.5
 2022,B,londrina,465944,Negueba,negueba,9,31,28,19,1485,53.0
@@ -362,7 +362,7 @@ temporada,serie,clube_slug,registro_cbf,apelido,atleta_slug,num_camisa,partidas_
 2022,B,nautico,351498,Everton,everton_sidnei_de_brito,15,12,12,10,806,67.2
 2022,B,sport,375729,Thiago Lopes,thiago_ferreira_lopes,19,31,21,9,806,38.4
 2022,B,cruzeiro_saf,757699,Leonardo Pais,leonardo_pais,7,23,17,8,802,47.2
-2022,B,sport,336907,Pedrinho,pedrinho,6,23,16,8,801,50.1
+2022,B,sport,336907,Pedrinho,pedrinho,6,24,16,9,801,50.1
 2022,B,vasco_da_gama_s_a_f,716623,Eguinaldo,eguinaldo_de_sousa_lemos,21,12,11,10,794,72.2
 2022,B,gremio,320111,Lucas Silva,lucas_silva_borges,16,36,22,9,793,36.0
 2022,B,sport,779885,FACUNDO,facundo_labandeira_castro,30,14,14,7,793,56.6
@@ -595,7 +595,7 @@ temporada,serie,clube_slug,registro_cbf,apelido,atleta_slug,num_camisa,partidas_
 2022,B,ponte_preta,647148,Leandro Ba ...,leandro_barcia_montero,11,10,7,3,247,35.3
 2022,B,vasco_da_gama_s_a_f,591665,Paulo Victor,paulo_victor,66,10,5,4,247,49.4
 2022,B,vila_nova,296193,Jean Silva,jean_goncalves_silva,17,11,8,1,247,30.9
-2022,B,sport,439881,Alan,alan_de_souza_guimaraes,18,15,9,1,245,27.2
+2022,B,sport,439881,Alan,alan_de_souza_guimaraes,18,16,9,1,245,27.2
 2022,B,csa,352216,Matheus,matheus_ferreira_de_sousa,16,17,8,2,244,30.5
 2022,B,ponte_preta,429853,Léo Santos,leo_santos,3,10,5,3,239,47.8
 2022,B,csa,700961,John Mercado,john_mercado,22,13,9,0,238,26.4
@@ -694,7 +694,7 @@ temporada,serie,clube_slug,registro_cbf,apelido,atleta_slug,num_camisa,partidas_
 2022,B,csa,437380,Cedric,cedric,14,3,2,2,96,48.0
 2022,B,londrina,337491,Salatiel Jr,salatiel_jr,19,16,5,0,93,18.6
 2022,B,sampaio_correa,321434,Matheus,matheus,31,14,2,1,92,46.0
-2022,B,vasco_da_gama,611036,Marlon Gomes,marlon_gomes_claudino,25,6,4,1,91,22.8
+2022,B,vasco_da_gama,611036,Marlon Gomes,marlon_gomes_claudino,25,7,4,2,91,22.8
 2022,B,bahia,532101,Warley,warley,99,5,2,2,90,45.0
 2022,B,brusque,172036,Sandro,sandro_silva_de_souza,33,6,1,1,90,90.0
 2022,B,brusque,372717,Lucas,lucas_barboza_rodrigues,86,22,1,1,90,90.0
@@ -897,12 +897,10 @@ temporada,serie,clube_slug,registro_cbf,apelido,atleta_slug,num_camisa,partidas_
 2022,B,sampaio_correa,523771,Yann,yann,23,5,0,0,0,
 2022,B,sampaio_correa,567457,Eduardo Ma ...,eduardo_ma,1,4,0,0,0,
 2022,B,sampaio_correa,588246,Otavio,otavio_ataide_da_silva,3,7,0,0,0,
-2022,B,sport,20,18,alan_de_souza_guimaraes,749414,1,0,0,0,
 2022,B,sport,354129,Joao Igor,joao_igor,28,10,0,0,0,
 2022,B,sport,537209,Denival,denival,32,1,0,0,0,
 2022,B,sport,555397,Italo,helber_italo_dos_santos,39,3,0,0,0,
 2022,B,sport,619494,RENZO,renzo,13,4,0,0,0,
-2022,B,sport,7,6,6,338491,1,0,1,0,
 2022,B,sport,749415,NICOLAS WA ...,nicolas_ezequiel_watson,27,2,0,0,0,
 2022,B,tombense,379565,Jhemerson,jhemerson,9,5,0,0,0,
 2022,B,tombense,443489,Leonardo,leonardo_lang_lopes,12,6,0,0,0,
@@ -911,8 +909,6 @@ temporada,serie,clube_slug,registro_cbf,apelido,atleta_slug,num_camisa,partidas_
 2022,B,tombense,545253,Mateus Buiate,mateus_buiate,15,2,0,0,0,
 2022,B,tombense,595616,Luizao,luizao,19,1,0,0,0,
 2022,B,tombense,615495,Gabriel Lira,gabriel_lira_de_oliveira,19,1,0,0,0,
-2022,B,vasco_da_gama,18,15,15,461723,1,0,0,0,
-2022,B,vasco_da_gama,24,25,marlon_gomes_claudino,372403,1,0,1,0,
 2022,B,vasco_da_gama,541691,Fintelman,fintelman,12,2,0,0,0,
 2022,B,vasco_da_gama,582155,Cadu Neves,cadu_neves,57,1,0,0,0,
 2022,B,vasco_da_gama,632758,Sarrafiore,martin_nicolas_sarrafiore,33,1,0,0,0,
@@ -969,7 +965,7 @@ temporada,serie,clube_slug,registro_cbf,apelido,atleta_slug,num_camisa,partidas_
 2023,B,mirassol,335611,Gabriel,gabriel_santana_pinto,10,36,36,36,2737,76.0
 2023,B,botafogo,547120,Marcio Silva,marcio_silva,16,34,32,30,2728,85.2
 2023,B,botafogo,310382,Matheus Al ...,matheus_albino_carneiro,1,38,31,30,2716,87.6
-2023,B,botafogo,536655,Guilherme,guilherme,5,32,32,32,2705,84.5
+2023,B,botafogo,536655,Guilherme,guilherme,5,33,32,33,2705,84.5
 2023,B,novorizontino,447189,Willean Lepo,willean_bernardo_willemen,22,35,33,30,2693,81.6
 2023,B,juventude,353336,Reginaldo,reginaldo_lopes_de_jesus,93,33,33,32,2668,80.8
 2023,B,sport,437531,Sabino,sabino,35,30,30,30,2615,87.2
@@ -1232,7 +1228,7 @@ temporada,serie,clube_slug,registro_cbf,apelido,atleta_slug,num_camisa,partidas_
 2023,B,vitoria,527047,Carroll,carroll,3,37,16,9,977,61.1
 2023,B,mirassol,525399,Cristian,cristian,19,35,31,8,976,31.5
 2023,B,crb,318165,Romulo,romulo,77,30,24,11,973,40.5
-2023,B,abc,460566,Nathan,nathan_melo_silva,99,15,15,14,972,64.8
+2023,B,abc,460566,Nathan,nathan_melo_silva,99,16,15,15,972,64.8
 2023,B,juventude,407221,BILL,gabriel_pereira_taliari,19,11,11,11,972,88.4
 2023,B,tombense,508857,Wesley,wesley_augusto_henn_marth,3,19,12,10,972,81.0
 2023,B,abc,311487,Felipe Garcia,felipe_garcia_goncalves,9,12,12,11,964,80.3
@@ -1288,7 +1284,7 @@ temporada,serie,clube_slug,registro_cbf,apelido,atleta_slug,num_camisa,partidas_
 2023,B,ceara,375896,Saulo,saulo_rodrigues_da_silva,73,14,14,9,779,55.6
 2023,B,avai,345043,Denilson,denilson_pereira_junior,9,9,9,9,772,85.8
 2023,B,novorizontino,363480,Felipe Mar ...,felipe_marques_da_silva,20,28,23,4,770,33.5
-2023,B,ituano,646646,Kauan,kauan_richard_leal_silva,16,20,11,8,767,69.7
+2023,B,ituano,646646,Kauan,kauan_richard_leal_silva,16,21,11,9,767,69.7
 2023,B,londrina,303922,Léo,leonardo_moreira_morais,15,15,10,9,766,76.6
 2023,B,botafogo,352883,Carlos,carlos,3,12,9,8,765,85.0
 2023,B,crb,183844,Rafael Lon ...,rafael_lon,10,38,26,5,762,29.3
@@ -1705,7 +1701,6 @@ temporada,serie,clube_slug,registro_cbf,apelido,atleta_slug,num_camisa,partidas_
 2023,B,botafogo,462906,Marcos,marcos,23,13,1,0,3,3.0
 2023,B,tombense,529861,Lucas Alex ...,lucas_alex,13,7,1,0,3,3.0
 2023,B,tombense,797448,Franco,franco_mederos_sandez,22,7,1,0,3,3.0
-2023,B,abc,30,27,nathan_melo_silva,462686,1,0,1,0,
 2023,B,abc,647691,Yuri,yuri,40,3,0,0,0,
 2023,B,abc,648845,Mike,mike,19,2,0,0,0,
 2023,B,abc,707036,Gil Robson,gil_robson,18,4,0,0,0,
@@ -1723,7 +1718,6 @@ temporada,serie,clube_slug,registro_cbf,apelido,atleta_slug,num_camisa,partidas_
 2023,B,botafogo,445329,Lucas Lour ...,lucas_lourenco_andrade,23,2,0,0,0,
 2023,B,botafogo,460816,Gustavo,gustavo,13,4,0,0,0,
 2023,B,botafogo,463639,Levy,levy_sabatim_barbosa,12,8,0,0,0,
-2023,B,botafogo,6,5,5,320478,1,0,1,0,
 2023,B,botafogo,647284,Brenno Faro,brenno_faro_klippel,12,1,0,0,0,
 2023,B,ceara,542822,Leonardo,leonardo,80,8,0,0,0,
 2023,B,ceara,552374,Cristian,cristian_de_lima,20,3,0,0,0,
@@ -1756,7 +1750,6 @@ temporada,serie,clube_slug,registro_cbf,apelido,atleta_slug,num_camisa,partidas_
 2023,B,ituano,590937,Poz,vinicius_poz_villas_boas,15,3,0,0,0,
 2023,B,ituano,669135,Erik,erik,13,1,0,0,0,
 2023,B,ituano,691350,VINICIUS O ...,vinicius_o,17,3,0,0,0,
-2023,B,ituano,7,6,kauan_richard_leal_silva,422022,1,0,1,0,
 2023,B,ituano,711702,João Pedro,joao_pedro,14,6,0,0,0,
 2023,B,juventude,317780,Daniel Guedes,daniel_guedes_da_silva,2,3,0,0,0,
 2023,B,juventude,401024,Lucas Wingert,lucas_leandro_wingert,99,5,0,0,0,
@@ -1815,230 +1808,1888 @@ temporada,serie,clube_slug,registro_cbf,apelido,atleta_slug,num_camisa,partidas_
 2023,B,vitoria,629937,Charlys,charlys,21,2,0,0,0,
 2023,B,vitoria,707096,FAU,fabio_soares_dos_santos,21,2,0,0,0,
 2023,B,vitoria,793833,Nicolas Di ...,nicolas_di,19,1,0,0,0,
-2024,B,america_saf,318115,Eder,eder_ferreira_graminho,33,1,1,1,90,90.0
-2024,B,america_saf,337261,Juninho,juninho,8,1,1,1,90,90.0
-2024,B,america_saf,392189,Dalberson,dalberson,31,1,1,1,90,90.0
-2024,B,america_saf,406246,Nicolas,nicolas,30,1,1,1,90,90.0
-2024,B,america_saf,567698,Jacare,jacare,29,1,1,1,90,90.0
-2024,B,america_saf,583842,Mateus,mateus,36,1,1,1,90,90.0
-2024,B,america_saf,606805,Julio,julio,18,1,1,1,90,90.0
-2024,B,botafogo,306149,Leandro,leandro,9,1,1,1,90,90.0
-2024,B,botafogo,308427,Gustavo Bo ...,gustavo_bo,10,1,1,1,90,90.0
-2024,B,botafogo,351839,Michael,michael_matias_fracaro,1,1,1,1,90,90.0
-2024,B,botafogo,401299,Alex Sandro,alex_sandro_de_oliveira,11,1,1,1,90,90.0
-2024,B,botafogo,459533,Matheus de ...,matheus_de_mello_costa,2,1,1,1,90,90.0
-2024,B,botafogo,500953,Bernardo,bernardo_schappo,4,1,1,1,90,90.0
-2024,B,botafogo,610886,Emerson,emerson,7,1,1,1,90,90.0
-2024,B,coritiba_s_a_f,292608,Mauricio,mauricio,5,1,1,1,90,90.0
-2024,B,coritiba_s_a_f,329952,Bruno,bruno_ferreira_melo,26,1,1,1,90,90.0
-2024,B,coritiba_s_a_f,337271,Matheus Fr ...,matheus_henrique_frizzo,10,1,1,1,90,90.0
-2024,B,coritiba_s_a_f,522984,David,david,33,1,1,1,90,90.0
-2024,B,coritiba_s_a_f,523074,Vini Paulista,vini_paulista,36,1,1,1,90,90.0
-2024,B,coritiba_s_a_f,528144,Jamerson,jamerson_santos_de_jesus,83,1,1,1,90,90.0
-2024,B,coritiba_s_a_f,559812,Natanael M ...,natanael_moreira_milouski,16,1,1,1,90,90.0
-2024,B,coritiba_s_a_f,613263,Pedro Morisco,pedro_morisco,72,1,1,1,90,90.0
-2024,B,crb,182466,Anselmo Ramon,anselmo_ramon,9,1,1,1,90,90.0
-2024,B,crb,310382,Matheus Al ...,matheus_albino_carneiro,12,1,1,1,90,90.0
-2024,B,crb,310627,Gêge,geirton_marques_aires,8,1,1,1,90,90.0
-2024,B,crb,355781,Caio,caio,6,1,1,1,90,90.0
-2024,B,crb,378811,Fabio Alemão,fabio_augusto_schirmann,3,1,1,1,90,90.0
-2024,B,crb,428683,Diogo,diogo_hereda_da_silva,32,1,1,1,90,90.0
-2024,B,crb,555571,Gustavo He ...,gustavo_henrique_santos,26,1,1,1,90,90.0
-2024,B,gremio_novorizontino_saf,175223,Geovane,geovane_batista_de_faria,5,1,1,1,90,90.0
-2024,B,gremio_novorizontino_saf,294484,Marlon,marlon_adriano_prezotti,28,1,1,1,90,90.0
-2024,B,gremio_novorizontino_saf,312663,Cesar,cesar_henrique_martins,37,1,1,1,90,90.0
-2024,B,gremio_novorizontino_saf,320196,Jordi,jordi_martins_almeida,93,1,1,1,90,90.0
-2024,B,gremio_novorizontino_saf,383352,Neto,neto,9,1,1,1,90,90.0
-2024,B,gremio_novorizontino_saf,405127,Reverson,reverson,16,1,1,1,90,90.0
-2024,B,gremio_novorizontino_saf,548978,Luis,luis_fellipe_campos_doria,25,1,1,1,90,90.0
-2024,B,guarani,183873,Camacho,camacho,14,1,1,1,90,90.0
-2024,B,guarani,184332,Douglas,douglas_borges,31,1,1,1,90,90.0
-2024,B,guarani,184819,Rayan,rayan_poltronieri_pereira,4,1,1,1,90,90.0
-2024,B,guarani,369639,Caio,caio,99,1,1,1,90,90.0
-2024,B,guarani,506641,Matheus Bueno,matheus_bueno_batista,18,1,1,1,90,90.0
-2024,B,guarani,610163,LUCAS,lucas_cardoso_adell,12,1,1,1,90,90.0
-2024,B,paysandu,179934,Nicolas,nicolas_godinho_johann,11,1,1,1,90,90.0
-2024,B,paysandu,331982,Joao Vieira,joao_pedro_vieira,8,1,1,1,90,90.0
-2024,B,paysandu,393872,Wanderson,wanderson_camelo_viana,4,1,1,1,90,90.0
-2024,B,paysandu,415808,Matheus No ...,matheus_no,13,1,1,1,90,90.0
-2024,B,paysandu,424585,Bryan,bryan_borges_mascarenhas,21,1,1,1,90,90.0
-2024,B,paysandu,836501,Quintana,quintana,3,1,1,1,90,90.0
-2024,B,ponte_preta,183975,Elvis,elvis_vieira_araujo,10,1,1,1,90,90.0
-2024,B,ponte_preta,296302,Emerson Sa ...,emerson_sa,8,1,1,1,90,90.0
-2024,B,ponte_preta,326727,Joilson,joilson,13,1,1,1,90,90.0
-2024,B,ponte_preta,355149,Ramon Carv ...,ramon_rodrigo_de_carvalho,21,1,1,1,90,90.0
-2024,B,ponte_preta,380640,Dudu Vieira,dudu_vieira,5,1,1,1,90,90.0
-2024,B,ponte_preta,448526,Matheus Regis,matheus_regis,77,1,1,1,90,90.0
-2024,B,ponte_preta,559363,Pedro,pedro,1,1,1,1,90,90.0
-2024,B,ponte_preta,836635,Gabriel Pa ...,gabriel_pa,33,1,1,1,90,90.0
-2024,B,santos,178854,Gil,gil,4,1,1,1,90,90.0
-2024,B,santos,291939,Aderlan,aderlan_de_lima_silva,13,1,1,1,90,90.0
-2024,B,santos,316640,João Schmidt,joao_schmidt,5,1,1,1,90,90.0
-2024,B,santos,334559,Diego Pituca,diego_cristiano_evaristo,21,1,1,1,90,90.0
-2024,B,santos,362877,Joao Paulo,joao_paulo_silva_martins,1,1,1,1,90,90.0
-2024,B,santos,402405,Hayner,hayner,3,1,1,1,90,90.0
-2024,B,santos,410547,Guilherme  ...,guilherme,11,1,1,1,90,90.0
-2024,B,santos,510781,Joaquim,joaquim,6,1,1,1,90,90.0
-2024,B,vila_nova,168387,Ralf,ralf_de_souza_teles,8,1,1,1,90,90.0
-2024,B,vila_nova,170178,Anderson C ...,anderson_c,4,1,1,1,90,90.0
-2024,B,vila_nova,451683,Denis Junior,denis_junior,26,1,1,1,90,90.0
-2024,B,vila_nova,559119,Cris,cris,5,1,1,1,90,90.0
-2024,B,vila_nova,612652,Ruan Matheus,ruan_matheus,23,1,1,1,90,90.0
-2024,B,vila_nova,641068,ERIC,eric_almeida_de_melo,14,1,1,1,90,90.0
-2024,B,coritiba_s_a_f,433565,Morelli,everton_morelli_casimiro,40,1,1,1,88,88.0
-2024,B,vila_nova,420186,Vitor,vitor,15,1,1,1,88,88.0
-2024,B,vila_nova,443663,Alesson,alesson,11,1,1,1,88,88.0
-2024,B,santos,178486,Giuliano,giuliano_victor_de_paula,20,1,1,1,87,87.0
-2024,B,guarani,400906,Jefferson  ...,jefferson,17,1,1,1,86,86.0
-2024,B,botafogo,387314,Jean Victor,jean_victor_barros,6,1,1,1,84,84.0
-2024,B,america_saf,311988,Ale,alexandre_egea,16,1,1,1,82,82.0
-2024,B,america_saf,581782,Renato,renato,78,1,1,1,82,82.0
-2024,B,crb,398807,Falcão,falcao,98,1,1,1,82,82.0
-2024,B,crb,581048,Léo Pereira,leo_pereira,38,1,1,1,82,82.0
-2024,B,vila_nova,359865,Luciano,luciano_francisco_paulino,10,1,1,1,81,81.0
-2024,B,vila_nova,401315,Todinho,geremias_ribeiro_junior,7,1,1,1,81,81.0
-2024,B,coritiba_s_a_f,291866,Leandro Da ...,leandro_da,9,1,1,1,80,80.0
-2024,B,coritiba_s_a_f,559670,Figueiredo,figueiredo,22,1,1,1,80,80.0
-2024,B,ponte_preta,389034,Gabriel No ...,gabriel_novaes_fernandes,35,1,1,1,80,80.0
-2024,B,guarani,315945,Diogo,diogo,13,1,1,1,79,79.0
-2024,B,guarani,460340,Airton Moises,airton_moises,30,1,1,1,79,79.0
-2024,B,botafogo,344228,Matheus Ba ...,matheus_barbosa_teixeira,5,1,1,1,76,76.0
-2024,B,botafogo,395968,Patrick Brey,patrick_de_carvalho_brey,8,1,1,1,76,76.0
-2024,B,botafogo,427213,Lucas,lucas_vinicius_dias_costa,3,1,1,1,76,76.0
-2024,B,paysandu,345678,Jean Dias,jean_dias_da_costa,22,1,1,1,75,75.0
-2024,B,paysandu,377355,Edinho,edinho,18,1,1,1,75,75.0
-2024,B,paysandu,402841,Edilson,edilson,2,1,1,1,75,75.0
-2024,B,gremio_novorizontino_saf,300229,Waguininho,wagner_da_silva_souza,30,1,1,1,72,72.0
-2024,B,gremio_novorizontino_saf,342224,Rodrigo So ...,rodrigo_alves_soares,2,1,1,1,72,72.0
-2024,B,vila_nova,396317,Geovane,geovane_da_silva_de_souza,22,1,1,1,71,71.0
-2024,B,ponte_preta,509192,Luiz Felip ...,luiz_felip,14,1,1,1,70,70.0
-2024,B,paysandu,444950,Val,val,30,1,1,0,68,68.0
-2024,B,crb,311439,Mike,mike,7,1,1,1,66,66.0
-2024,B,crb,391300,Willian,willian_prado_camargo,13,1,1,1,66,66.0
-2024,B,paysandu,315023,Leandro Vi ...,leandro_vi,28,1,1,1,66,66.0
-2024,B,gremio_novorizontino_saf,337894,Fabricio,fabricio_daniel_de_souza,77,1,1,0,64,64.0
-2024,B,guarani,352508,Luan,luan_dias_da_silva,10,1,1,1,61,61.0
-2024,B,guarani,527941,Reinaldo,reinaldo,20,1,1,1,61,61.0
-2024,B,gremio_novorizontino_saf,313755,Danilo Bar ...,danilo_carvalho_barcelos,14,1,1,1,60,60.0
-2024,B,santos,554728,Otero,romulo_otero_vasquez,22,1,1,1,60,60.0
+2024,B,brusque,177903,Matheus,matheus_nogueira_da_silva,1,37,37,37,3330,90.0
+2024,B,goias,308316,Tadeu,tadeu_antonio_ferreira,23,37,37,37,3330,90.0
+2024,B,mirassol,335362,Daniel,daniel,8,37,37,37,3261,88.1
+2024,B,sport,313131,Caique,caique_franca_godoy,22,37,37,37,3258,88.1
+2024,B,coritiba_s_a_f,613263,Pedro Morisco,pedro_morisco,72,37,36,36,3240,90.0
+2024,B,crb,310382,Matheus Al ...,matheus_albino_carneiro,12,38,36,36,3240,90.0
+2024,B,mirassol,177010,Alex Muralha,alex_muralha,23,36,36,36,3240,90.0
+2024,B,vila_nova,451683,Denis Junior,denis_junior,26,37,36,36,3240,90.0
+2024,B,avai,409084,Cesar,cesar,31,36,36,36,3219,89.4
+2024,B,mirassol,527047,Carroll,carroll,34,36,36,36,3193,88.7
+2024,B,america_saf,337261,Juninho,juninho,8,37,37,37,3171,85.7
+2024,B,mirassol,376828,Lucas Ramon,lucas_ramon_batista_silva,19,37,37,37,3166,85.6
+2024,B,gremio_novorizontino_saf,320196,Jordi,jordi_martins_almeida,93,35,35,35,3150,90.0
+2024,B,coritiba_s_a_f,329952,Bruno,bruno_ferreira_melo,26,35,35,35,3121,89.2
+2024,B,coritiba_s_a_f,559812,Natanael M ...,natanael_moreira_milouski,16,36,36,35,3098,86.1
+2024,B,vila_nova,443663,Alesson,alesson,11,35,35,35,3084,88.1
+2024,B,ceara,526916,Erick Pulga,erick_da_costa_farias,16,35,35,35,3065,87.6
+2024,B,amazonas_fc,540636,Marcos,marcos,12,38,34,34,3060,90.0
+2024,B,operario,431740,Willian Ma ...,willian_estefani_machado,4,34,34,34,3060,90.0
+2024,B,paysandu,331982,Joao Vieira,joao_pedro_vieira,8,35,35,35,3055,87.3
+2024,B,santos,178854,Gil,gil,4,34,34,34,3053,89.8
+2024,B,guarani,506641,Matheus Bueno,matheus_bueno_batista,18,35,35,35,3041,86.9
+2024,B,santos,334559,Diego Pituca,diego_cristiano_evaristo,21,35,35,34,3031,86.6
+2024,B,avai,374251,Marcos Vin ...,marcos_vin,63,35,34,34,3029,89.1
+2024,B,brusque,166649,Wallace Reis,wallace_reis_silva,4,34,34,34,2992,88.0
+2024,B,amazonas_fc,304325,Fabiano,fabiano_da_silva_souza,6,35,34,34,2950,86.8
+2024,B,vila_nova,582558,Jemmes,jemmes,3,36,34,33,2950,86.8
+2024,B,ceara,655804,David,david,4,34,33,33,2940,89.1
+2024,B,sport,331937,Lucas Lima,lucas_rafael_araujo_lima,19,35,35,35,2936,83.9
+2024,B,avai,188260,Tiago,tiago_pagnussat,3,34,34,33,2928,86.1
+2024,B,crb,581048,Léo Pereira,leo_pereira,38,34,34,34,2917,85.8
+2024,B,santos,316640,João Schmidt,joao_schmidt,5,33,33,33,2907,88.1
+2024,B,santos,816190,Escobar,gonzalo_daniel_escobar,31,33,33,33,2882,87.3
+2024,B,ponte_preta,559363,Pedro,pedro,1,33,32,32,2880,90.0
+2024,B,vila_nova,559119,Cris,cris,5,33,33,33,2871,87.0
+2024,B,crb,182466,Anselmo Ramon,anselmo_ramon,9,36,35,32,2868,81.9
+2024,B,ituano,335765,Je,je,12,33,32,32,2857,89.3
+2024,B,america_saf,311988,Ale,alexandre_egea,16,35,34,34,2849,83.8
+2024,B,goias,345210,Marcos,marcos,77,35,33,33,2828,85.7
+2024,B,coritiba_s_a_f,645961,LUCAS RONIER,lucas_ronier_vieira_pires,98,35,33,32,2816,85.3
+2024,B,operario,177436,Rafael Santos,rafael_de_carvalho_santos,1,31,31,31,2790,90.0
+2024,B,brusque,183707,Rodolfo,gerson_rodolfo_da_silva,5,37,35,33,2761,78.9
+2024,B,america_saf,327667,Ricardo Silva,ricardo_silva,45,33,32,32,2753,86.0
+2024,B,crb,428683,Diogo,diogo_hereda_da_silva,32,34,33,31,2751,83.4
+2024,B,ituano,308008,Claudinho,claudio_de_souza,15,35,31,31,2751,88.7
+2024,B,ceara,355362,Aylon,aylon_darwin_tavella,11,36,36,32,2743,76.2
+2024,B,gremio_novorizontino_saf,548978,Luis,luis_fellipe_campos_doria,25,33,31,29,2735,88.2
+2024,B,amazonas_fc,541183,Serafim,matheus_bonadiman_serafim,11,33,33,33,2724,82.5
+2024,B,sport,837018,FABRICIO,fabricio,8,33,33,33,2724,82.5
+2024,B,mirassol,335012,Luiz Otavio,luiz_otavio,4,33,31,31,2710,87.4
+2024,B,sport,420080,Luis,luis,94,33,32,31,2705,84.5
+2024,B,santos,517633,Gabriel Br ...,gabriel_br,77,36,30,29,2682,89.4
+2024,B,mirassol,311122,Guilherme  ...,guilherme,49,34,34,34,2679,78.8
+2024,B,ceara,431101,Matheus Bahia,matheus_bahia_santos,79,34,32,31,2663,83.2
+2024,B,botafogo,363149,Douglas Ba ...,douglas_ba,20,35,33,31,2662,80.7
+2024,B,goias,429437,Jackson,jackson,20,31,31,31,2649,85.5
+2024,B,ituano,542628,Miqueias,miqueias_cabral_evaristo,5,36,32,30,2626,82.1
+2024,B,crb,398807,Falcão,falcao,98,36,34,33,2617,77.0
+2024,B,vila_nova,500501,Elias,elias,2,32,31,30,2609,84.2
+2024,B,santos,410547,Guilherme  ...,guilherme,11,31,31,30,2598,83.8
+2024,B,mirassol,451258,Fernandinho,fernandinho,7,34,33,33,2596,78.7
+2024,B,guarani,369639,Caio,caio,99,33,32,31,2591,81.0
+2024,B,ituano,302774,Rodrigo,rodrigo,23,36,31,31,2578,83.2
+2024,B,crb,310627,Gêge,geirton_marques_aires,8,33,33,30,2559,77.5
+2024,B,america_saf,316223,Marlon,marlon,6,30,29,29,2557,88.2
+2024,B,ituano,543481,Vinicius,vinicius,17,34,34,30,2555,75.1
+2024,B,paysandu,360603,Lucas Maia,lucas_jaques_varone_maia,27,29,29,29,2538,87.5
+2024,B,goias,540238,Lucas Ribeiro,lucas_ribeiro_dos_santos,14,33,29,28,2532,87.3
+2024,B,amazonas_fc,567979,Enio,enio,22,36,32,29,2515,78.6
+2024,B,amazonas_fc,778423,Alexis Ivan,alexis_ivan_alvarino,3,31,29,28,2493,86.0
+2024,B,chapecoense,376599,Bruno Leon ...,bruno_leon,33,30,28,28,2483,88.7
+2024,B,mirassol,335611,Gabriel,gabriel_santana_pinto,27,34,34,33,2482,73.0
+2024,B,avai,335286,Mario Sergio,mario_sergio_valerio,33,28,28,28,2470,88.2
+2024,B,chapecoense,305360,Marcinho,marcinho,7,31,31,31,2445,78.9
+2024,B,gremio_novorizontino_saf,294484,Marlon,marlon_adriano_prezotti,28,35,33,28,2440,73.9
+2024,B,ceara,757386,Rafael Ramos,rafael_ramos,6,37,28,28,2432,86.9
+2024,B,amazonas_fc,462355,Miranda,miranda,15,33,27,27,2420,89.6
+2024,B,ponte_preta,183975,Elvis,elvis_vieira_araujo,10,35,30,28,2418,80.6
+2024,B,ceara,447205,de Lucca,de_lucca,8,36,32,29,2412,75.4
+2024,B,paysandu,402841,Edilson,edilson,2,33,30,29,2409,80.3
+2024,B,botafogo,610886,Emerson,emerson,7,35,33,27,2390,72.4
+2024,B,ponte_preta,382612,Igor Inoce ...,igor_inoce,2,35,29,26,2390,82.4
+2024,B,ceara,533963,Lourenço,lourenco,97,30,30,28,2377,79.2
+2024,B,gremio_novorizontino_saf,190431,Rafael Donato,rafael_ferreira_donato,3,36,30,26,2358,78.6
+2024,B,crb,461293,Joao Pedro,joao_pedro_mendes_santos,33,35,30,27,2356,78.5
+2024,B,chapecoense,443387,Rafael Car ...,rafael_car,99,32,29,27,2351,81.1
+2024,B,avai,318493,Giovanni,giovanni_piccolomo,8,32,32,31,2344,73.2
+2024,B,america_saf,318115,Eder,eder_ferreira_graminho,33,34,26,25,2338,89.9
+2024,B,avai,642656,Mauricio G ...,mauricio_garcez_de_jesus,11,34,32,26,2338,73.1
+2024,B,america_saf,583842,Mateus,mateus,36,32,27,26,2318,85.9
+2024,B,gremio_novorizontino_saf,300229,Waguininho,wagner_da_silva_souza,30,31,30,27,2314,77.1
+2024,B,botafogo,500953,Bernardo,bernardo_schappo,4,32,31,27,2308,74.5
+2024,B,mirassol,383527,Neto,neto,25,33,33,27,2304,69.8
+2024,B,amazonas_fc,302436,Ezequiel,ezequiel_jacinto_de_biasi,13,34,27,26,2291,84.9
+2024,B,sport,546794,Chrystian,chrystian,30,32,31,27,2285,73.7
+2024,B,avai,682166,Vilar,gustavo_vilar_dos_santos,14,30,27,25,2279,84.4
+2024,B,coritiba_s_a_f,337271,Matheus Fr ...,matheus_henrique_frizzo,10,36,31,28,2279,73.5
+2024,B,ceara,291617,Richard,richard_de_oliveira_costa,1,26,26,26,2273,87.4
+2024,B,vila_nova,168387,Ralf,ralf_de_souza_teles,8,29,27,27,2267,84.0
+2024,B,guarani,400906,Jefferson  ...,jefferson,17,33,28,26,2245,80.2
+2024,B,ponte_preta,453857,Castro,luiz_felipe_castro_neto,15,36,27,26,2245,83.1
+2024,B,gremio_novorizontino_saf,500215,Patrick,patrick,4,31,26,26,2240,86.2
+2024,B,brusque,355387,Cerato,marcos_vinicius_cerato,19,34,30,25,2237,74.6
+2024,B,ceara,375896,Saulo,saulo_rodrigues_da_silva,73,30,30,26,2230,74.3
+2024,B,santos,178486,Giuliano,giuliano_victor_de_paula,20,29,29,29,2230,76.9
+2024,B,gremio_novorizontino_saf,383352,Neto,neto,9,37,31,25,2225,71.8
+2024,B,avai,421180,Willian Ma ...,willian_ma,6,33,29,28,2219,76.5
+2024,B,coritiba_s_a_f,820851,Sebastian  ...,sebastian_gomez_londono,19,29,28,26,2208,78.9
+2024,B,paysandu,179934,Nicolas,nicolas_godinho_johann,11,29,28,27,2197,78.5
+2024,B,sport,518992,Chico,chico,44,35,28,24,2195,78.4
+2024,B,goias,512737,Welliton,welliton,31,35,32,28,2175,68.0
+2024,B,ituano,422022,Jose Aldo,jose_aldo,8,33,28,26,2172,77.6
+2024,B,chapecoense,430175,Mario Sergio,mario_sergio,89,29,29,25,2159,74.4
+2024,B,ponte_preta,296302,Emerson Sa ...,emerson_sa,8,34,30,27,2129,71.0
+2024,B,chapecoense,520331,Mancha,gianluca_piola_minozzo,6,28,24,24,2128,88.7
+2024,B,guarani,436143,Joao Victor,joao_victor,19,29,28,25,2128,76.0
+2024,B,ituano,318266,Thonny And ...,thonny_and,20,27,26,26,2125,81.7
+2024,B,brusque,405535,Pivo,mateus_cardoso_francisco,99,27,26,25,2122,81.6
+2024,B,gremio_novorizontino_saf,392562,Eduardo,eduardo_jacinto_de_biasi,21,36,29,26,2114,72.9
+2024,B,guarani,352508,Luan,luan_dias_da_silva,10,29,27,26,2109,78.1
+2024,B,guarani,295957,Douglas,douglas_silva_bacelar,23,29,25,23,2092,83.7
+2024,B,paysandu,387358,Kevyn,kevyn,36,34,29,21,2091,72.1
+2024,B,gremio_novorizontino_saf,405127,Reverson,reverson,16,37,27,23,2086,77.3
+2024,B,vila_nova,432146,Rhuan,rhuan_ferreira_ramos,16,33,30,23,2086,69.5
+2024,B,ponte_preta,836635,Gabriel Pa ...,gabriel_pa,33,31,25,24,2077,83.1
+2024,B,sport,436949,Gustavo Co ...,gustavo_co,9,35,31,25,2073,66.9
+2024,B,brusque,311522,Ianson,ianson_acosta_soares,3,35,24,22,2066,86.1
+2024,B,santos,554728,Otero,romulo_otero_vasquez,22,36,34,25,2060,60.6
+2024,B,crb,188643,Saimon,saimon_pains_tormen,4,25,23,23,2050,89.1
+2024,B,botafogo,387314,Jean Victor,jean_victor_barros,6,34,32,23,2048,64.0
+2024,B,sport,313474,R. Thyere,r_thyere,15,23,23,23,2039,88.7
+2024,B,america_saf,336900,Fabinho,fabinho,28,34,34,25,2031,59.7
+2024,B,chapecoense,340535,FOGUINHO,guilherme_seefeldt_krolow,35,31,27,25,2027,75.1
+2024,B,botafogo,308427,Gustavo Bo ...,gustavo_bo,10,37,31,24,2026,65.4
+2024,B,brusque,501491,Diego Mathias,diego_mathias_de_almeida,27,34,29,24,2019,69.6
+2024,B,botafogo,614965,joao,joao_vitor_hipolito_costa,16,35,31,22,2010,64.8
+2024,B,botafogo,395968,Patrick Brey,patrick_de_carvalho_brey,8,36,30,22,1997,66.6
+2024,B,sport,837571,ORTIZ,cristian_jonatan_ortiz,59,33,29,23,1995,68.8
+2024,B,america_saf,360921,Elias,elias_martello_curzel,1,35,22,22,1980,90.0
+2024,B,botafogo,174755,Joao Carlos,joao_carlos_heidemann,12,32,22,22,1980,90.0
+2024,B,operario,522753,Rodrigo An ...,rodrigo_antonio_rodrigues,7,27,24,24,1976,82.3
+2024,B,guarani,316480,Matheus,matheus_salustiano_pires,13,22,22,22,1966,89.4
+2024,B,mirassol,294382,Zeca,jose_carlos_cracco_neto,37,23,23,23,1953,84.9
+2024,B,santos,693399,JP Chermont,joao_pedro_chermont_crema,44,31,28,22,1945,69.5
+2024,B,ponte_preta,389034,Gabriel No ...,gabriel_novaes_fernandes,35,26,25,24,1942,77.7
+2024,B,coritiba_s_a_f,402719,Marcelo,marcelo,4,35,23,23,1936,84.2
+2024,B,paysandu,393872,Wanderson,wanderson_camelo_viana,4,32,23,21,1933,84.0
+2024,B,avai,297781,Pedro Castro,pedro_castro,21,30,28,22,1930,68.9
+2024,B,coritiba_s_a_f,292608,Mauricio,mauricio,5,33,25,21,1930,77.2
+2024,B,goias,313001,Rafael Gava,rafael_gava,8,33,27,23,1925,71.3
+2024,B,goias,346046,Sander,sander,6,25,22,22,1909,86.8
+2024,B,goias,568353,Paulo Baya,paulo_baya,7,33,28,20,1908,68.1
+2024,B,paysandu,836501,Quintana,quintana,3,27,22,22,1908,86.7
+2024,B,amazonas_fc,633725,Diego Torres,diego_fabian_torres,8,34,30,21,1901,63.4
+2024,B,goias,381149,Messias,messias,37,25,22,22,1896,86.2
+2024,B,guarani,180622,Vladimir,vladimir,89,26,21,21,1890,90.0
+2024,B,gremio_novorizontino_saf,342224,Rodrigo So ...,rodrigo_alves_soares,2,34,29,22,1883,64.9
+2024,B,ponte_preta,319620,Sergio,sergio,6,32,23,22,1880,81.7
+2024,B,ituano,315637,Marcinho,marcinho,13,22,22,21,1866,84.8
+2024,B,gremio_novorizontino_saf,175223,Geovane,geovane_batista_de_faria,5,30,28,20,1846,65.9
+2024,B,ceara,459744,Mugni,lucas_andres_mugni,10,33,30,23,1841,61.4
+2024,B,coritiba_s_a_f,523074,Vini Paulista,vini_paulista,36,32,28,19,1816,64.9
+2024,B,avai,358808,Ze Ricardo,ze_ricardo,77,26,23,20,1813,78.8
+2024,B,amazonas_fc,622485,Barros,cauan_lucas_barros_da_luz,21,28,23,21,1808,78.6
+2024,B,goias,291843,Edson Felipe,edson_felipe_da_cruz,19,28,27,19,1805,66.9
+2024,B,vila_nova,305811,Igor,igor,18,28,23,22,1801,78.3
+2024,B,chapecoense,456246,Edu Doma,edu_doma,3,28,22,20,1800,81.8
+2024,B,ponte_preta,378323,Mateus Silva,mateus_ferreira_da_silva,4,25,21,20,1796,85.5
+2024,B,ceara,502008,Matheus Fe ...,matheus_fe,42,30,22,19,1795,81.6
+2024,B,vila_nova,178303,H. Almeida,h_almeida,19,36,31,21,1789,57.7
+2024,B,operario,465929,Vinicius,vinicius,8,34,27,20,1786,66.1
+2024,B,operario,393868,Para,para,6,31,24,21,1782,74.2
+2024,B,botafogo,533772,Alexandre  ...,alexandre,9,25,22,21,1780,80.9
+2024,B,botafogo,186135,Fabio Sanches,fabio_pizarro_sanches,16,32,22,21,1760,80.0
+2024,B,ponte_preta,387255,Iago Dias,iago_angelo_dias,11,36,30,18,1755,58.5
+2024,B,chapecoense,294486,Tarik,tarik,31,33,27,20,1742,64.5
+2024,B,ponte_preta,450596,Vinicius,vinicius,7,36,31,19,1735,56.0
+2024,B,chapecoense,319134,Marcelinho,marcelo_rodrigues_souza,79,28,22,19,1732,78.7
+2024,B,brusque,463027,Dentinho,lucas_baptista_felix,10,25,24,20,1728,72.0
+2024,B,mirassol,326622,Chico,francisco_hyun_sol_kim,10,37,35,17,1716,49.0
+2024,B,ituano,640575,GUILHERME,guilherme_mariano_barbosa,14,21,19,19,1710,90.0
+2024,B,paysandu,165094,Diogo Silva,diogo_silva,12,38,19,19,1710,90.0
+2024,B,paysandu,415808,Matheus No ...,matheus_no,13,38,19,19,1710,90.0
+2024,B,vila_nova,401315,Todinho,geremias_ribeiro_junior,7,26,26,24,1708,65.7
+2024,B,operario,403078,Jacy Maran ...,jacy_maranhao_oliveira,55,33,25,19,1706,68.2
+2024,B,sport,292282,Luciano Ca ...,luciano_castan_da_silva,40,36,22,19,1704,77.5
+2024,B,santos,650119,Jair Paula,jair_paula_da_cunha_filho,32,24,19,19,1699,89.4
+2024,B,gremio_novorizontino_saf,423003,Rodolfo,rodolfo,7,34,29,20,1680,57.9
+2024,B,operario,382807,Joseph Mau ...,joseph_mau,30,35,20,18,1677,83.8
+2024,B,brusque,360467,Paulo,paulo_roberto_moccelin,94,29,28,20,1665,59.5
+2024,B,mirassol,462916,Negueba,negueba,11,25,24,22,1660,69.2
+2024,B,chapecoense,168926,Matheus,matheus,26,31,19,19,1634,86.0
+2024,B,paysandu,424585,Bryan,bryan_borges_mascarenhas,21,31,21,18,1623,77.3
+2024,B,operario,427774,Emaxwell,emaxwell_souza_de_lima,77,29,24,19,1607,67.0
+2024,B,coritiba_s_a_f,433565,Morelli,everton_morelli_casimiro,40,28,25,21,1606,64.2
+2024,B,ituano,432666,Bruno,bruno_cesar_xavier_sislo,11,36,24,19,1602,66.8
+2024,B,goias,540274,Juninho,juninho,50,28,25,19,1599,64.0
+2024,B,goias,189822,Thiago Gal ...,thiago_gal,33,24,22,18,1598,72.6
+2024,B,goias,168008,David Braz,david_braz,4,27,21,18,1591,75.8
+2024,B,gremio_novorizontino_saf,335513,Renato,renato_palm_da_silveira,33,32,19,17,1589,83.6
+2024,B,avai,153924,Vagner Love,vagner_silva_de_souza,9,24,24,19,1539,64.1
+2024,B,paysandu,315023,Leandro Vi ...,leandro_vi,28,29,23,18,1526,66.3
+2024,B,ponte_preta,448526,Matheus Regis,matheus_regis,77,33,29,16,1522,52.5
+2024,B,coritiba_s_a_f,719313,RODRIGO,rodrigo_silva_nascimento,6,37,21,17,1519,72.3
+2024,B,america_saf,643996,ADYSON,adyson,44,36,28,17,1516,54.1
+2024,B,crb,391300,Willian,willian_prado_camargo,13,24,23,18,1500,65.2
+2024,B,botafogo,459533,Matheus de ...,matheus_de_mello_costa,2,20,20,17,1499,75.0
+2024,B,chapecoense,307432,Thomas,thomas,30,31,24,18,1499,62.5
+2024,B,paysandu,837209,Esli Garcia,esli_garcia,15,38,28,14,1481,52.9
+2024,B,amazonas_fc,177093,Rafa,rafa,10,33,28,19,1478,52.8
+2024,B,amazonas_fc,337172,Sassa,luiz_ricardo_alves,99,32,26,17,1462,56.2
+2024,B,brusque,302881,Everton,everton_paulo_strieder,2,27,19,17,1458,76.7
+2024,B,ponte_preta,348257,Emerson,emerson_raymundo_santos,18,30,23,16,1450,63.0
+2024,B,ponte_preta,674534,Jé,je,9,18,18,17,1446,80.3
+2024,B,ceara,328312,Richardson,richardson,26,27,24,16,1442,60.1
+2024,B,chapecoense,177092,Leo Vieira,leonardo_da_silva_vieira,12,16,16,16,1440,90.0
+2024,B,crb,555571,Gustavo He ...,gustavo_henrique_santos,26,36,20,15,1434,71.7
+2024,B,operario,338081,Bruno,bruno,5,34,23,18,1432,62.3
+2024,B,guarani,454107,Gabriel Bispo,gabriel_bispo_dos_santos,33,21,19,17,1429,75.2
+2024,B,amazonas_fc,622068,Jorge Jimenez,jorge_andres_roa_jimenez,5,28,21,15,1427,68.0
+2024,B,sport,690534,Felipinho,felipinho,6,27,19,16,1424,74.9
+2024,B,sport,350158,Dalbert,dalbert,29,29,21,17,1423,67.8
+2024,B,crb,378811,Fabio Alemão,fabio_augusto_schirmann,3,16,16,16,1422,88.9
+2024,B,sport,421778,Igor Carius,igor_aquino_da_silva,16,21,19,17,1399,73.6
+2024,B,botafogo,463211,Wallison,wallison_nunes_silva,22,25,19,16,1384,72.8
+2024,B,operario,318837,Thales,thales_bento_oleques,16,22,17,16,1383,81.4
+2024,B,operario,383244,Ronald,ronald,31,31,26,15,1379,53.0
+2024,B,avai,311146,Hygor,hygor_cleber_garcia_silva,7,23,22,18,1369,62.2
+2024,B,paysandu,345678,Jean Dias,jean_dias_da_costa,22,29,27,17,1362,50.4
+2024,B,amazonas_fc,433682,Erick Varao,erick_de_souza_miranda,20,21,17,16,1360,80.0
+2024,B,america_saf,392189,Dalberson,dalberson,31,35,15,15,1350,90.0
+2024,B,coritiba_s_a_f,559670,Figueiredo,figueiredo,22,34,25,14,1321,52.8
+2024,B,america_saf,581782,Renato,renato,78,33,25,14,1303,52.1
+2024,B,guarani,310646,Pacheco,guilherme_augusto_pacheco,28,19,18,15,1303,72.4
+2024,B,guarani,460340,Airton Moises,airton_moises,30,19,18,17,1301,72.3
+2024,B,coritiba_s_a_f,302768,Robson,robson,30,22,20,14,1294,64.7
+2024,B,brusque,336063,Guilherme  ...,guilherme,17,29,24,17,1289,53.7
+2024,B,operario,323819,Felipe Aug ...,felipe_aug,11,25,20,14,1284,64.2
+2024,B,vila_nova,646848,Quintero,quintero,3,21,16,14,1281,80.1
+2024,B,america_saf,347998,Brenner,brenner,9,25,24,16,1273,53.0
+2024,B,botafogo,427213,Lucas,lucas_vinicius_dias_costa,3,15,15,14,1269,84.6
+2024,B,ponte_preta,326727,Joilson,joilson,13,29,15,14,1264,84.3
+2024,B,america_saf,351849,Lucas,lucas,3,22,14,14,1260,90.0
+2024,B,guarani,464051,Heitor Rod ...,heitor_rod,2,27,23,14,1258,54.7
+2024,B,america_saf,872812,Fernando E ...,fernando_e,5,20,18,16,1250,69.4
+2024,B,guarani,610163,LUCAS,lucas_cardoso_adell,12,32,15,14,1247,83.1
+2024,B,botafogo,387972,Ericson,ericson_da_silva,14,34,18,12,1242,69.0
+2024,B,chapecoense,292205,Giovanni A ...,giovanni_a,10,30,22,14,1235,56.1
+2024,B,coritiba_s_a_f,372403,Zé Gabriel,ze_gabriel,8,17,15,14,1229,81.9
+2024,B,operario,633802,Daniel Alves,daniel_alves_de_lima,99,33,25,12,1211,48.4
+2024,B,botafogo,876629,Sabit,sabit_abdulai,21,16,16,14,1207,75.4
+2024,B,ituano,646646,Kauan,kauan_richard_leal_silva,16,26,15,14,1205,80.3
+2024,B,amazonas_fc,320478,Diogo,diogo_da_costa_silva,4,14,14,13,1204,86.0
+2024,B,operario,373841,Gabriel,gabriel_boschilia,16,16,16,14,1192,74.5
+2024,B,santos,818504,Julio Furch,julio_cesar_furch,9,30,27,12,1186,43.9
+2024,B,santos,515843,Wendel da  ...,wendel_da_silva_costa,19,15,15,15,1179,78.6
+2024,B,botafogo,344228,Matheus Ba ...,matheus_barbosa_teixeira,5,17,17,15,1169,68.8
+2024,B,chapecoense,532045,Mailton do ...,mailton_dos_santos_de_sa,98,32,22,11,1169,53.1
+2024,B,ceara,836860,Recalde,recalde,28,31,27,10,1167,43.2
+2024,B,botafogo,401299,Alex Sandro,alex_sandro_de_oliveira,11,24,21,14,1166,55.5
+2024,B,crb,527542,Ryan,ryan,66,24,19,13,1159,61.0
+2024,B,vila_nova,551796,Juan Chris ...,juan_chris,70,17,17,14,1159,68.2
+2024,B,chapecoense,393400,João Paulo,joao_paulo,4,24,16,13,1158,72.4
+2024,B,ituano,505613,Leozinho,leonardo_caetano_silva,20,37,26,12,1158,44.5
+2024,B,sport,334457,Zé Roberto,ze_roberto,99,28,27,11,1156,42.8
+2024,B,paysandu,836673,Borasi,benjamin_manuel_borasi,37,18,15,14,1149,76.6
+2024,B,ceara,325261,Bruno,bruno,94,37,13,12,1147,88.2
+2024,B,botafogo,316763,Victor And ...,victor_andrade_santos,11,15,14,13,1143,81.6
+2024,B,brusque,370091,Alex Ruan,alex_ruan,66,16,15,14,1143,76.2
+2024,B,vila_nova,420186,Vitor,vitor,15,26,21,11,1128,53.7
+2024,B,goias,381191,Luiz Henrique,luiz_henrique,88,28,21,11,1123,53.5
+2024,B,america_saf,178704,Moises,moises_lima_magalhaes,15,32,24,12,1120,46.7
+2024,B,paysandu,608651,Ruan Ribeiro,ruan_ribeiro_rodrigues,26,30,20,12,1114,55.7
+2024,B,coritiba_s_a_f,450033,Junior Bru ...,junior_bru,9,19,17,13,1107,65.1
+2024,B,ituano,305721,Guilherme  ...,guilherme,6,16,14,12,1105,78.9
+2024,B,gremio_novorizontino_saf,337894,Fabricio,fabricio_daniel_de_souza,77,34,21,13,1096,52.2
+2024,B,gremio_novorizontino_saf,180083,Willian Fa ...,willian_roberto_de_farias,8,31,21,12,1094,52.1
+2024,B,brusque,350705,Dionisio,dionisio,7,35,19,11,1090,57.4
+2024,B,ceara,331532,Rai,rai_dos_reis_ramos,2,37,23,11,1083,47.1
+2024,B,ituano,386746,Walber,walber,3,16,13,12,1081,83.2
+2024,B,paysandu,432391,Paulinho Boia,paulinho_boia,9,20,18,12,1081,60.1
+2024,B,crb,793896,Luis Segovia,luis_segovia,3,13,12,12,1080,90.0
+2024,B,mirassol,438977,Lucas Gazal,lucas_xavier_gazal,3,37,18,10,1080,60.0
+2024,B,crb,509540,Kleiton,kleiton_pego_duarte,75,23,19,12,1077,56.7
+2024,B,operario,298995,Alemao,fagner_ironi_daponte,21,22,14,11,1075,76.8
+2024,B,america_saf,540989,Rodrigo,rodrigo,75,25,15,12,1074,71.6
+2024,B,santos,510781,Joaquim,joaquim,6,13,12,12,1067,88.9
+2024,B,ponte_preta,509192,Luiz Felip ...,luiz_felip,14,17,13,13,1060,81.5
+2024,B,coritiba_s_a_f,528144,Jamerson,jamerson_santos_de_jesus,83,30,16,11,1055,65.9
+2024,B,crb,311439,Mike,mike,7,35,26,11,1053,40.5
+2024,B,ponte_preta,355149,Ramon Carv ...,ramon_rodrigo_de_carvalho,21,31,19,12,1049,55.2
+2024,B,avai,371170,João Paulo,joao_paulo_da_silva_alves,19,29,20,10,1045,52.2
+2024,B,brusque,880761,AGUSTIN,agustin_gonzalez_pereira,14,14,14,13,1042,74.4
+2024,B,operario,184455,Rodrigo,rodrigo_oliveira_lindoso,19,20,18,11,1036,57.6
+2024,B,paysandu,172189,Robinho,robson_michael_signorini,20,26,20,14,1035,51.8
+2024,B,amazonas_fc,393761,Renan Castro,renan_santos_de_castro,16,30,16,10,1029,64.3
+2024,B,america_saf,600810,Felipe Amaral,felipe_amaral,19,38,22,11,1023,46.5
+2024,B,ceara,402095,Ramon Menezes,ramon_menezes_roma,40,31,14,13,1013,72.4
+2024,B,crb,324513,Matheus Ri ...,matheus_antunes_ribeiro,2,36,21,9,1010,48.1
+2024,B,gremio_novorizontino_saf,457375,Paulo Vitor,paulo_vitor,75,14,13,11,1003,77.2
+2024,B,america_saf,322852,Daniel Borges,daniel_fortunato_borges,20,34,16,11,1002,62.6
+2024,B,mirassol,581767,Warley,warley_leandro_da_silva,28,13,12,12,978,81.5
+2024,B,chapecoense,307366,Marlone,marlone,8,33,22,9,977,44.4
+2024,B,ponte_preta,380640,Dudu Vieira,dudu_vieira,5,16,14,10,968,69.1
+2024,B,santos,166061,Willian Du ...,willian_gomes_de_siqueira,27,33,28,9,957,34.2
+2024,B,botafogo,542573,Raphael,raphael_rodrigues_borges,3,14,11,11,954,86.7
+2024,B,guarani,323184,Anderson,anderson_leite_morais,5,28,20,11,954,47.7
+2024,B,crb,779885,FACUNDO,facundo_labandeira_castro,30,29,20,11,948,47.4
+2024,B,coritiba_s_a_f,880608,Josue,josue,27,15,14,13,941,67.2
+2024,B,brusque,882317,JHAN POOL,jhan_pool_torres_canate,16,14,14,10,936,66.9
+2024,B,avai,554480,Rodrigo,rodrigo,72,14,12,12,935,77.9
+2024,B,guarani,429853,Léo Santos,leo_santos,3,17,11,10,927,84.3
+2024,B,botafogo,504858,Carlos Manuel,carlos_manuel,15,36,17,9,925,54.4
+2024,B,santos,402405,Hayner,hayner,3,28,21,9,921,43.9
+2024,B,avai,301087,Pottker,pottker,10,24,19,8,920,48.4
+2024,B,vila_nova,379541,Arilson,arilson,18,17,14,11,911,65.1
+2024,B,ituano,291429,Yann Rolim,yann_del_pino_rolim,18,29,16,11,906,56.6
+2024,B,paysandu,538202,Juninho,juninho,14,30,16,12,902,56.4
+2024,B,ceara,837033,Facundo Ba ...,facundo_barcelo_viera,31,29,23,9,901,39.2
+2024,B,chapecoense,341763,Auremir,auremir,5,29,17,10,901,53.0
+2024,B,guarani,293383,Pegorari,pegorari,1,14,10,10,900,90.0
+2024,B,avai,350723,Jonathan C ...,jonathan_c,95,26,12,10,889,74.1
+2024,B,amazonas_fc,399776,Luan,luan_santos_silva,9,14,14,11,888,63.4
+2024,B,operario,298282,Ronaldo,ronaldo_henrique_silva,90,23,18,11,888,49.3
+2024,B,paysandu,444950,Val,val,30,33,17,9,887,52.2
+2024,B,coritiba_s_a_f,552216,Thalisson  ...,thalisson,14,30,11,10,884,80.4
+2024,B,ituano,337491,Salatiel Jr,salatiel_jr,19,23,18,9,884,49.1
+2024,B,brusque,522740,Paulinho,paulinho,28,12,12,11,880,73.3
+2024,B,chapecoense,621854,JP Galvão,jp_galvao,57,15,13,10,880,67.7
+2024,B,gremio_novorizontino_saf,292592,Lucca,lucca_borges_de_brito,11,26,21,7,875,41.7
+2024,B,america_saf,406246,Nicolas,nicolas,30,32,15,9,862,57.5
+2024,B,operario,306691,Allan Godoy,allan_godoi_santos,3,17,11,11,859,78.1
+2024,B,goias,551111,Breno,breno_herculano_almeida,18,26,17,8,858,50.5
+2024,B,operario,749043,Santiago O ...,santiago_ocampos_ibarra,37,21,11,9,854,77.6
+2024,B,mirassol,392650,Iury,iury,77,18,17,8,850,50.0
+2024,B,santos,305977,Serginho,serginho,37,32,18,9,846,47.0
+2024,B,vila_nova,359865,Luciano,luciano_francisco_paulino,10,31,19,8,843,44.4
+2024,B,operario,520881,Pedro Lucas,pedro_lucas,70,23,16,9,838,52.4
+2024,B,chapecoense,581989,Habraão,habraao,28,17,10,9,837,83.7
+2024,B,paysandu,540839,Juan Cazares,juan_cazares,10,14,12,10,832,69.3
+2024,B,crb,379397,Romulo,romulo_da_silva_machado,17,35,23,10,828,36.0
+2024,B,brusque,331248,Diego,diego_barbosa_tavares,11,37,28,4,825,29.5
+2024,B,ituano,619973,Leo Oliveira,leo_oliveira,13,23,15,10,819,54.6
+2024,B,brusque,879513,POLLERO,rodrigo_pollero_lopez,99,11,11,10,814,74.0
+2024,B,avai,313767,Judson,judson_silva_tavares,93,27,14,10,813,58.1
+2024,B,ceara,615235,Joao Pedro,joao_pedro,3,19,9,9,810,90.0
+2024,B,goias,432199,Rildo,rildo,80,20,15,10,808,53.9
+2024,B,amazonas_fc,312572,Xavier,xavier,17,25,14,9,802,57.3
+2024,B,operario,345443,Lucas Hipo ...,lucas_hipo,13,26,11,9,802,72.9
+2024,B,ponte_preta,351498,Everton,everton_sidnei_de_brito,29,23,14,8,799,57.1
+2024,B,vila_nova,396317,Geovane,geovane_da_silva_de_souza,22,12,12,10,796,66.3
+2024,B,sport,320951,Alisson Ca ...,alisson_ca,12,34,10,9,788,78.8
+2024,B,paysandu,308421,Matheus Tr ...,matheus_tr,38,17,12,9,781,65.1
+2024,B,paysandu,367731,Netinho,netinho,5,31,24,6,779,32.5
+2024,B,chapecoense,655546,Italo,italo_de_vargas_da_rosa,37,14,13,8,771,59.3
+2024,B,sport,306146,Wellington ...,wellington_alves_da_silva,18,21,18,7,768,42.7
+2024,B,coritiba_s_a_f,291866,Leandro Da ...,leandro_da,9,12,12,10,761,63.4
+2024,B,mirassol,354923,Isaque,isaque_elias_brito,14,34,16,8,759,47.4
+2024,B,guarani,315945,Diogo,diogo,13,13,11,8,753,68.5
+2024,B,guarani,411070,Marlon,marlon,8,26,21,7,752,35.8
+2024,B,vila_nova,619065,EMERSON,emerson_lima_freitas,17,34,20,8,750,37.5
+2024,B,america_saf,435809,Matheus Davó,matheus_davo,88,18,14,9,748,53.4
+2024,B,ituano,465413,Eduardo Pe ...,eduardo_luiz_person,10,15,13,8,731,56.2
+2024,B,ponte_preta,307569,Nilson Junior,nilson_junior,44,22,9,7,727,80.8
+2024,B,botafogo,299833,Victor Souza,victor_souza,24,15,8,8,720,90.0
+2024,B,botafogo,351839,Michael,michael_matias_fracaro,1,35,8,8,720,90.0
+2024,B,chapecoense,881479,Walter Clar,walter_david_clar_fritz,37,15,8,8,715,89.4
+2024,B,gremio_novorizontino_saf,315834,Pablo Dyego,pablo_dyego_da_silva_rosa,70,13,11,8,715,65.0
+2024,B,gremio_novorizontino_saf,531144,Leonardo,leonardo,19,27,15,7,714,47.6
+2024,B,amazonas_fc,178620,Patric,patric_cabral_lalau,2,8,8,8,712,89.0
+2024,B,operario,462755,Gabriel Fe ...,gabriel_fe,27,14,10,7,711,71.1
+2024,B,brusque,422344,Luiz Henrique,luiz_henrique,21,18,15,8,708,47.2
+2024,B,gremio_novorizontino_saf,312663,Cesar,cesar_henrique_martins,37,11,10,9,706,70.6
+2024,B,brusque,379565,Jhemerson,jhemerson,8,24,14,8,702,50.1
+2024,B,ituano,415195,Leonardo,leonardo,2,25,15,6,694,46.3
+2024,B,botafogo,190417,Fillipe So ...,fillipe_so,18,37,18,5,693,38.5
+2024,B,operario,310743,Paraíba,paraiba,88,30,14,7,693,49.5
+2024,B,brusque,346659,Olavio,olavio,9,14,12,8,685,57.1
+2024,B,gremio_novorizontino_saf,460331,Igor Marqu ...,igor_marqu,31,22,16,7,680,42.5
+2024,B,ponte_preta,671998,JOAO GABRIEL,joao_gabriel,20,22,10,7,679,67.9
+2024,B,sport,741363,Pedro Lima,pedro_lima,54,8,8,8,674,84.2
+2024,B,guarani,183873,Camacho,camacho,14,11,9,8,673,74.8
+2024,B,vila_nova,293325,Dankler,dankler,23,11,8,7,667,83.4
+2024,B,ituano,176196,Eduardo Diniz,eduardo_jose_diniz_costa,6,9,8,8,663,82.9
+2024,B,avai,303063,Natanael,natanael_batista_pimenta,25,29,16,6,649,40.6
+2024,B,operario,359819,Savio,savio_alves_marchiote,23,21,10,8,644,64.4
+2024,B,vila_nova,463527,Joao,joao,18,32,21,4,633,30.1
+2024,B,goias,307405,Edu,edu,99,18,13,8,632,48.6
+2024,B,paysandu,604967,Carlão,carlao,23,24,9,7,632,70.2
+2024,B,botafogo,551154,Jonas Toró,jonas_toro,19,21,17,6,626,36.8
+2024,B,brusque,335599,Osman Junior,osman_junior,80,22,16,4,623,38.9
+2024,B,guarani,527941,Reinaldo,reinaldo,20,31,20,6,620,31.0
+2024,B,sport,882066,JULIAN,julian_rodrigo_fernandez,5,14,9,7,615,68.3
+2024,B,ceara,378268,Jean,jean,5,36,14,6,611,43.6
+2024,B,paysandu,377355,Edinho,edinho,18,19,12,7,603,50.2
+2024,B,sport,553984,Lenny,lenny,77,24,14,6,600,42.9
+2024,B,amazonas_fc,559140,Pará,luis_felipe_rebelo_costa,20,29,13,7,599,46.1
+2024,B,avai,338491,Ronaldo,ronaldo,28,36,17,4,598,35.2
+2024,B,operario,544426,Mingotti,mingotti,9,10,10,8,594,59.4
+2024,B,guarani,620656,Luccas,luccas_paraizo_feitosa,7,18,13,5,588,45.2
+2024,B,america_saf,695297,Martin Ben ...,martin_nicolas_benitez,10,10,10,7,587,58.7
+2024,B,santos,674772,Weslley,weslley_pinto_batista,42,17,13,6,587,45.2
+2024,B,chapecoense,419436,Pedro,pedro_henrique_perotti,9,21,15,6,586,39.1
+2024,B,america_saf,567698,Jacare,jacare,29,21,15,5,577,38.5
+2024,B,crb,300394,Wanderson,wanderson_santos_pereira,37,16,7,7,577,82.4
+2024,B,america_saf,532986,Wallisson,wallisson,77,28,19,4,575,30.3
+2024,B,guarani,410715,Emerson,emerson,6,15,9,6,575,63.9
+2024,B,amazonas_fc,310101,Bruno,bruno_henrique_lopes,9,26,16,5,567,35.4
+2024,B,avai,556082,Gaspar,gaspar,20,24,8,7,564,70.5
+2024,B,ceara,591665,Paulo Victor,paulo_victor,21,20,12,5,563,46.9
+2024,B,goias,775434,Jhon Vasquez,jhon_vasquez,27,14,13,6,559,43.0
+2024,B,santos,362877,Joao Paulo,joao_paulo_silva_martins,1,8,7,7,558,79.7
+2024,B,vila_nova,641068,ERIC,eric_almeida_de_melo,14,9,8,6,558,69.8
+2024,B,santos,542491,Pedrinho,pedrinho,7,22,14,5,557,39.8
+2024,B,chapecoense,442668,Jhonnathan,jhonnathan,32,18,7,6,556,79.4
+2024,B,ituano,300856,Luiz Gustavo,luiz_gustavo,15,17,7,6,552,78.9
+2024,B,america_saf,175557,Felipe Aze ...,felipe_azevedo_dos_santos,11,21,16,4,550,34.4
+2024,B,sport,413857,Romarinho,romarinho,11,10,8,7,550,68.8
+2024,B,coritiba_s_a_f,656428,GUILHERME  ...,guilherme_brandao_azevedo,21,33,19,3,544,28.6
+2024,B,guarani,622581,Yan Henrique,yan_henrique,29,19,7,6,543,77.6
+2024,B,operario,394441,Gabriel Me ...,gabriel_me,91,35,6,6,540,90.0
+2024,B,ponte_preta,836841,Luis Haquin,luis_haquin,23,10,6,6,540,90.0
+2024,B,brusque,442951,Marcelo,marcelo_nunes_correa,12,19,8,6,539,67.4
+2024,B,mirassol,345933,Alex Silva,alex_da_silva,2,36,24,2,537,22.4
+2024,B,santos,406738,Rodrigo Fe ...,rodrigo_ferreira_da_silva,29,28,14,5,532,38.0
+2024,B,mirassol,168982,Leo Gamalho,leonardo_gamalho_de_souza,99,20,17,4,530,31.2
+2024,B,santos,294407,Joao Basso,joao_othavio_basso,15,21,7,6,528,75.4
+2024,B,botafogo,306149,Leandro,leandro,9,12,11,5,527,47.9
+2024,B,ituano,380308,Marcel,marcel,4,12,8,6,507,63.4
+2024,B,sport,733551,FABIO,fabio,47,27,14,5,500,35.7
+2024,B,ituano,523897,Xavier,xavier,23,16,10,5,498,49.8
+2024,B,ponte_preta,306019,Renato,renato,19,25,15,5,493,32.9
+2024,B,goias,614954,Diego Caito,diego_caito,22,24,8,5,490,61.2
+2024,B,gremio_novorizontino_saf,313755,Danilo Bar ...,danilo_carvalho_barcelos,14,38,12,5,490,40.8
+2024,B,america_saf,606805,Julio,julio,18,29,7,5,489,69.9
+2024,B,ponte_preta,544845,Hudson,hudson,80,19,10,4,488,48.8
+2024,B,brusque,188472,Cristovam,cristovam,22,14,11,6,487,44.3
+2024,B,ituano,453964,Zé Eduardo,jose_eduardo_de_andrade,19,16,11,5,486,44.2
+2024,B,paysandu,540808,Luan Freitas,luan_freitas,35,27,9,5,481,53.4
+2024,B,vila_nova,876342,Eric Davis,eric_davis,6,7,7,6,480,68.6
+2024,B,ituano,345455,Saulo,saulo_ferreira_silva,1,27,6,5,473,78.8
+2024,B,brusque,333809,Mauricio,mauricio,28,22,7,5,469,67.0
+2024,B,sport,527541,Pedrinho,pedro_veronez_vilhena,17,28,16,2,468,29.2
+2024,B,coritiba_s_a_f,521903,Wesley Pomba,wesley_pomba,57,32,16,4,463,28.9
+2024,B,amazonas_fc,162504,Jo,joao_alves_de_assis_silva,7,13,11,5,461,41.9
+2024,B,crb,387443,Bilu,rafael_bilu_mudesto,10,20,13,3,455,35.0
+2024,B,sport,175065,Fabinho,fabio_goncalves,7,35,12,4,453,37.8
+2024,B,ponte_preta,337241,Luan,luan_fernandes_ribeiro,30,22,5,5,450,90.0
+2024,B,vila_nova,170178,Anderson C ...,anderson_c,4,6,5,5,450,90.0
+2024,B,goias,305723,Regis,regis_augusto_salmazzo,10,17,14,4,446,31.9
+2024,B,paysandu,646477,Yony Gonzalez,yony_gonzalez,99,7,7,5,446,63.7
+2024,B,goias,396450,Aloisio,aloisio_de_souza_genezio,16,15,7,5,440,62.9
+2024,B,crb,536040,Marco Antonio,marco_antonio,35,16,8,5,437,54.6
+2024,B,avai,590697,Pedrinho,pedrinho,27,26,19,2,434,22.8
+2024,B,goias,526646,Douglas,douglas_da_silva_teixeira,36,9,6,5,434,72.3
+2024,B,ceara,708728,Lucas,lucas,77,23,14,4,431,30.8
+2024,B,brusque,310725,Lorran,lorran,70,11,7,5,430,61.4
+2024,B,botafogo,543706,Thassio Melo,thassio_melo,13,27,7,4,429,61.3
+2024,B,operario,461356,Nathan Fogaca,nathan_uiliam_fogaca,20,12,11,3,428,38.9
+2024,B,gremio_novorizontino_saf,181172,Raul,raul_prata,22,21,6,5,426,71.0
+2024,B,vila_nova,501939,Gabriel Silva,gabriel_santos_silva,20,14,12,3,421,35.1
+2024,B,ceara,742015,Jonathan,jonathan_de_jesus_alves,55,9,5,4,419,83.8
+2024,B,crb,598606,João Neto,joao_neto,35,21,17,3,417,24.5
+2024,B,gremio_novorizontino_saf,621114,Lucas Cardoso,lucas_cardoso_moreira,99,23,9,4,414,46.0
+2024,B,sport,410105,Allyson,allyson_aires_dos_santos,2,19,7,4,413,59.0
+2024,B,brusque,412193,Keké,paulo_de_souza_junior,18,19,10,4,407,40.7
+2024,B,america_saf,551333,Daniel JR,daniel_jr,80,12,9,4,401,44.6
+2024,B,santos,541292,Sandry,sandry,23,31,9,5,401,44.6
+2024,B,sport,820344,ROBERTO,roberto,28,15,6,5,398,66.3
+2024,B,crb,299778,Chay,chay,14,15,12,3,396,33.0
+2024,B,mirassol,429655,Rodrigo An ...,rodrigo_an,32,12,12,3,396,33.0
+2024,B,goias,184600,Wellington,wellington,5,28,8,5,395,49.4
+2024,B,ituano,291855,Neto Berola,neto_berola,23,25,16,3,394,24.6
+2024,B,brusque,326257,Anderson Rosa,anderson_rosa,70,12,6,4,391,65.2
+2024,B,guarani,548055,Pierre Wagner,pierre_wagner,47,15,9,4,388,43.1
+2024,B,crb,630496,Darlisson,darlisson,34,30,5,4,384,76.8
+2024,B,amazonas_fc,307680,Wiliam Barbio,wiliam_silva_gomes_barbio,19,37,13,3,383,29.5
+2024,B,amazonas_fc,716563,COCOTE,cocote,26,18,14,2,380,27.1
+2024,B,goias,460566,Nathan,nathan_melo_silva,70,36,11,4,380,34.5
+2024,B,mirassol,311813,Quirino,diego_de_souza_quirino,9,20,16,1,378,23.6
+2024,B,vila_nova,345043,Denilson,denilson_pereira_junior,9,13,10,2,377,37.7
+2024,B,goias,839072,Angelo,angelo,9,21,13,4,374,28.8
+2024,B,guarani,593597,MARLON MAR ...,marlon_mar,77,16,9,3,370,41.1
+2024,B,crb,613097,RAI,rai_da_silva_pessanha,16,26,7,4,369,52.7
+2024,B,crb,350899,Getulio,getulio,37,22,9,3,366,40.7
+2024,B,crb,355781,Caio,caio,6,13,11,3,366,33.3
+2024,B,amazonas_fc,387530,Matheus,matheus_santos_soares,23,13,6,4,364,60.7
+2024,B,avai,188990,Alan Costa,alan_henrique_costa,5,25,6,4,360,60.0
+2024,B,brusque,438425,Gabriel,gabriel_barbosa_pinheiro,12,14,4,4,360,90.0
+2024,B,coritiba_s_a_f,556855,Geovane Me ...,geovane_santana_meurer,38,26,10,3,360,36.0
+2024,B,guarani,184332,Douglas,douglas_borges,31,26,4,4,360,90.0
+2024,B,vila_nova,612652,Ruan Matheus,ruan_matheus,23,5,4,4,360,90.0
+2024,B,goias,316729,Mateus Gon ...,mateus_goncalves_martins,11,8,7,4,357,51.0
+2024,B,goias,352000,Reynaldo,reynaldo_cesar_moraes,29,18,6,4,357,59.5
+2024,B,brusque,424347,Madison,madison_araujo_costa,33,29,12,2,349,29.1
+2024,B,sport,795731,Di Placido,leonel_di_placido,20,14,10,3,349,34.9
+2024,B,guarani,434877,Lucas Araujo,lucas_araujo_de_oliveira,21,31,9,3,345,38.3
+2024,B,brusque,316480,Matheus,matheus_salustiano_pires,6,12,4,3,338,84.5
+2024,B,guarani,335954,Bruno,bruno_felipe_de_oliveira,40,8,7,4,337,48.1
+2024,B,ponte_preta,451549,Roca,heitor_roca_santo,5,9,4,4,334,83.5
+2024,B,amazonas_fc,616783,Junior,junior,15,6,5,5,333,66.6
+2024,B,goias,610404,Ian,ian_luccas_baroni_boetto,25,20,11,2,331,30.1
+2024,B,santos,826932,Morelos,morelos,30,8,6,4,331,55.2
+2024,B,brusque,443894,Ronei,ronei_gebing,15,20,8,2,329,41.1
+2024,B,botafogo,606130,Bruno Marques,bruno_marques,21,19,11,2,328,29.8
+2024,B,avai,546683,Andrey,andrey,78,14,10,3,324,32.4
+2024,B,santos,291939,Aderlan,aderlan_de_lima_silva,13,9,4,4,324,81.0
+2024,B,paysandu,179288,Michel,michel,16,18,9,2,323,35.9
+2024,B,amazonas_fc,605794,Igor Bolt,igor_luiz_costa_lemos,11,23,11,2,304,27.6
+2024,B,ceara,836859,Facundo Ca ...,facundo_ca,7,22,7,3,299,42.7
+2024,B,chapecoense,551564,Thayllon,thayllon_lopes_medeiros,39,12,8,3,298,37.2
+2024,B,operario,442672,Guilherme  ...,guilherme,22,11,10,2,298,29.8
+2024,B,coritiba_s_a_f,581520,Matheus,matheus_henrique_bianqui,18,35,16,1,297,18.6
+2024,B,guarani,430440,Lohan,lohan_dos_santos_freire,39,13,9,1,297,33.0
+2024,B,crb,320593,Jorge,jorge,11,15,8,3,295,36.9
+2024,B,operario,509191,M,m,20,23,11,2,292,26.5
+2024,B,vila_nova,172576,Apodi,apodi,22,33,18,1,289,16.1
+2024,B,sport,459864,Alan Ruiz,alan_nahuel_ruiz,10,6,5,3,288,57.6
+2024,B,ituano,590937,Poz,vinicius_poz_villas_boas,6,10,6,3,287,47.8
+2024,B,coritiba_s_a_f,548446,Jhonny,jhonny_cardinoti_pedro,43,33,7,3,286,40.9
+2024,B,ituano,523677,Gabriel,gabriel,18,32,14,2,282,20.1
+2024,B,operario,711594,Filipe Cla ...,filipe_cla,38,21,9,2,277,30.8
+2024,B,avai,338185,Poveda,gabriel_buscariol_poveda,9,12,6,2,275,45.8
+2024,B,vila_nova,523789,Vanderley,vanderley,3,9,5,3,275,55.0
+2024,B,operario,320834,Cassinho,cassinho,10,9,6,3,273,45.5
+2024,B,vila_nova,678455,Rian,rian_caio_fleuri_pacheco,21,10,4,3,273,68.2
+2024,B,crb,617935,Lucas Kallyel,lucas_kallyel,19,22,6,2,272,45.3
+2024,B,amazonas_fc,296573,Edson,edson,1,17,3,3,270,90.0
+2024,B,gremio_novorizontino_saf,332840,Airton,airton_moraes_michellon,1,37,3,3,270,90.0
+2024,B,ituano,456884,Joao Carlos,joao_carlos_barros_lopes,17,12,11,2,270,24.5
+2024,B,operario,310646,Pacheco,guilherme_augusto_pacheco,28,6,3,3,270,90.0
+2024,B,chapecoense,456887,Marcelinho,marcelinho,11,17,9,3,267,29.7
+2024,B,goias,363313,Cristiano,cristiano_da_silva_leite,12,18,8,2,266,33.2
+2024,B,america_saf,312048,Vinicius,vinicius_santos_silva,7,19,11,1,265,24.1
+2024,B,guarani,642018,Yuji,yuji,32,9,4,3,265,66.2
+2024,B,ceara,516214,Guilherme  ...,guilherme,99,13,10,2,260,26.0
+2024,B,ituano,360598,Bruno Alves,bruno_alves_de_souza,9,15,5,2,260,52.0
+2024,B,guarani,299778,Chay,chay,11,4,4,2,258,64.5
+2024,B,guarani,184819,Rayan,rayan_poltronieri_pereira,4,7,3,3,253,84.3
+2024,B,guarani,532559,Pedro Henr ...,pedro_henr,15,15,3,3,252,84.0
+2024,B,santos,802130,Nacho Laqu ...,nacho_laqu,66,13,9,2,252,28.0
+2024,B,ituano,541189,Alvaro Oli ...,alvaro_vieira_de_oliveira,19,15,9,2,248,27.6
+2024,B,coritiba_s_a_f,609955,Eberth,eberth_araujo_nogueira,77,10,5,2,242,48.4
+2024,B,paysandu,436567,Leo Pereira,leo_pereira,34,18,6,2,242,40.3
+2024,B,coritiba_s_a_f,566788,Yago,yago_de_paula_ferreira,17,17,5,2,241,48.2
+2024,B,santos,823241,Tomás Rinc ...,tomas_rinc,8,25,10,2,240,24.0
+2024,B,ponte_preta,178402,Ze Mario,jose_mario_de_bona,31,14,4,2,239,59.8
+2024,B,sport,501375,Pedro,pedro,48,21,5,2,238,47.6
+2024,B,avai,308283,Jean Lucas,jean_lucas_figueiredo,29,19,12,0,232,19.3
+2024,B,goias,599806,YAN,yan_da_cruz_souto,3,14,4,2,224,56.0
+2024,B,santos,711253,Souza,souza,33,23,7,2,224,32.0
+2024,B,amazonas_fc,355990,Sidcley,sidcley_ferreira_pereira,16,16,10,1,222,22.2
+2024,B,operario,531717,Dudu,eduardo_scheit,29,7,5,4,215,43.0
+2024,B,sport,609350,Luciano,luciano_silva_santos,43,17,5,3,215,43.0
+2024,B,avai,539977,Gabriel Ba ...,gabriel_de_sousa_barros,80,11,4,2,214,53.5
+2024,B,vila_nova,636831,Vitor Graz ...,vitor_graz,13,12,3,2,211,70.3
+2024,B,ituano,529923,Victor Mat ...,victor_mat,14,10,3,2,210,70.0
+2024,B,ituano,629262,Marlinho,marlinho,21,12,7,1,206,29.4
+2024,B,avai,364092,Roberto,roberto_pinheiro_da_rosa,4,24,5,2,202,40.4
+2024,B,sport,558560,Riquelme,riquelme,45,10,6,1,199,33.2
+2024,B,amazonas_fc,392058,Cametá,tiago_coelho_andrade,13,19,4,3,198,49.5
+2024,B,avai,611457,Gustavo Ta ...,gustavo_talles_da_silva,82,17,3,2,195,65.0
+2024,B,vila_nova,515816,Du Fernandes,du_fernandes,21,9,5,2,194,38.8
+2024,B,operario,293440,Marcelo Ci ...,marcelo_cirino_da_silva,25,3,3,3,190,63.3
+2024,B,vila_nova,869756,Alex Silva,alex_silva_quiroga,21,16,4,2,189,47.2
+2024,B,avai,316737,Ademilson,ademilson,99,15,9,1,187,20.8
+2024,B,botafogo,401976,Pedro Costa,pedro_costa,13,6,3,2,187,62.3
+2024,B,santos,318682,Luan Peres,luan_peres_petroni,14,10,4,2,185,46.2
+2024,B,botafogo,403850,Robinho,robinho,17,7,5,2,183,36.6
+2024,B,ceara,641068,ERIC,eric_almeida_de_melo,14,18,3,2,183,61.0
+2024,B,coritiba_s_a_f,610699,Benassi,benassi,67,36,2,2,180,90.0
+2024,B,crb,442225,Vitor,vitor_caetano_ferreira,1,38,2,2,180,90.0
+2024,B,guarani,328820,Mancini,matheus_mancini,3,6,2,2,180,90.0
+2024,B,guarani,548910,Frederico,frederico_meireles_conte,50,3,2,2,180,90.0
+2024,B,mirassol,177770,Vanderlei,vanderlei_farias_da_silva,1,34,2,2,180,90.0
+2024,B,vila_nova,461723,Halls,halls,30,35,2,2,180,90.0
+2024,B,ponte_preta,565679,Edson Rogerio,edson_rogerio,3,15,4,2,179,44.8
+2024,B,mirassol,519525,Marcos Silva,marcos_vinicius_da_silva,98,19,11,0,177,16.1
+2024,B,paysandu,461774,Biel,biel,17,15,3,1,172,57.3
+2024,B,chapecoense,539582,Daniel Cruz,daniel_dos_santos_da_cruz,81,6,3,2,171,57.0
+2024,B,operario,311487,Felipe Garcia,felipe_garcia_goncalves,9,10,5,1,168,33.6
+2024,B,chapecoense,318165,Romulo,romulo,11,8,5,1,167,33.4
+2024,B,ponte_preta,527404,Buchecha,lucas_xavier_felix,25,17,6,1,167,27.8
+2024,B,sport,606026,Lucas Andre,lucas_andre,55,14,3,1,167,55.7
+2024,B,chapecoense,309717,Gabriel Ga ...,gabriel_ga,1,24,2,1,166,83.0
+2024,B,vila_nova,652687,Igor Torres,igor_torres_da_silva,20,6,4,2,166,41.5
+2024,B,chapecoense,316754,Neilton,neilton_meira_mestzk,77,10,3,2,165,55.0
+2024,B,paysandu,465944,Gabriel Sa ...,gabriel_sa,19,11,8,0,165,20.6
+2024,B,coritiba_s_a_f,182380,Fransergio,fransergio,15,11,4,2,163,40.8
+2024,B,mirassol,377697,Artur,artur,15,9,6,1,162,27.0
+2024,B,sport,432216,Thiago,thiago_couto_wenceslau,21,38,2,1,162,81.0
+2024,B,chapecoense,305521,Jenison,jenison,91,15,7,1,161,23.0
+2024,B,coritiba_s_a_f,522984,David,david,33,6,4,1,160,40.0
+2024,B,mirassol,452427,Bruno,bruno_matias_dos_santos,16,22,11,0,158,14.4
+2024,B,amazonas_fc,522481,Juda,juda_aguiar_da_silva,18,8,2,2,156,78.0
+2024,B,gremio_novorizontino_saf,646576,Enzo,enzo,56,9,2,2,156,78.0
+2024,B,paysandu,337157,Wesley Fraga,wesley_fraga,39,12,6,1,155,25.8
+2024,B,gremio_novorizontino_saf,548873,Dudu,dudu,15,11,7,1,154,22.0
+2024,B,brusque,879519,MATIAS OCAMPO,matias_ocampo,77,8,4,1,153,38.2
+2024,B,goias,639870,Pedrinho,pedrinho,17,14,7,0,152,21.7
+2024,B,sport,434300,Vini Faria,vinicius_faria_dos_santos,14,10,7,0,152,21.7
+2024,B,guarani,553452,Estevao,estevao,11,11,3,2,148,49.3
+2024,B,santos,315585,Patrick,patrick,88,32,7,0,147,21.0
+2024,B,guarani,728441,Rafael,rafael_da_silva_freitas,26,14,6,1,146,24.3
+2024,B,guarani,648944,João,joao,19,2,2,2,143,71.5
+2024,B,operario,377521,Bessa,erik_da_silva_bessa,17,13,4,1,142,35.5
+2024,B,coritiba_s_a_f,519385,Bernardo L ...,bernardo_marcos_lemes,23,15,6,2,140,23.3
+2024,B,chapecoense,600164,Rubens,rubens,70,12,6,1,139,23.2
+2024,B,guarani,374375,Bruno Mendes,bruno_pereira_mendes,9,6,4,2,133,33.2
+2024,B,ponte_preta,567670,Venicius,venicius,98,11,3,1,130,43.3
+2024,B,amazonas_fc,869911,JONNY PINTADO,jonny_pintado,21,11,4,1,128,32.0
+2024,B,mirassol,178402,Ze Mario,jose_mario_de_bona,31,11,4,1,127,31.8
+2024,B,amazonas_fc,296374,Robson,robson_carlos_duarte,15,9,3,1,121,40.3
+2024,B,chapecoense,577268,Bruno,bruno,22,10,6,0,120,20.0
+2024,B,coritiba_s_a_f,718665,HENRIQUE,henrique_melo_pereira,20,3,2,1,120,60.0
+2024,B,santos,432392,Alex Nasci ...,alex_nasci,2,26,4,1,118,29.5
+2024,B,crb,544247,Luis,luis,20,11,3,1,116,38.7
+2024,B,ituano,652670,Jonatan,jonatan,19,10,5,1,116,23.2
+2024,B,ceara,650186,Talisson,talisson_de_almeida,70,19,10,0,115,11.5
+2024,B,amazonas_fc,311358,Gustavo Ermel,gustavo_ermel,25,12,4,1,113,28.2
+2024,B,avai,297646,Igor Bohn,igor_jose_bohn,1,21,2,1,111,55.5
+2024,B,gremio_novorizontino_saf,776773,João Dantas,joao_dantas,26,29,6,0,111,18.5
+2024,B,chapecoense,173551,Moledo,moledo,34,12,3,2,110,36.7
+2024,B,operario,589862,GUI,guilherme_baldo_borech,14,11,2,1,110,55.0
+2024,B,brusque,514016,Wellissol,wellissol,29,16,7,0,108,15.4
+2024,B,ituano,620716,LUCAS DIAS,lucas_dias_do_rosario,13,3,3,1,108,36.0
+2024,B,avai,181681,Cassiano,cassiano_dias_moreira,89,10,8,0,106,13.2
+2024,B,guarani,567420,Vinícius K ...,vinicius_k,27,6,2,1,106,53.0
+2024,B,coritiba_s_a_f,836741,Eryc Castillo,eryc_castillo,7,18,6,0,104,17.3
+2024,B,chapecoense,374427,Walterson,walterson_silva,77,10,7,0,100,14.3
+2024,B,botafogo,622570,Felipinho,felipinho,10,7,4,1,99,24.8
+2024,B,ceara,523883,Janderson,janderson_santos_de_souza,77,14,3,1,99,33.0
+2024,B,ituano,646352,Felipe,felipe,7,2,2,1,98,49.0
+2024,B,mirassol,376405,Diego,diego_goncalves,21,8,5,0,97,19.4
+2024,B,ponte_preta,555280,Thomas Luc ...,thomas_luc,58,10,3,1,96,32.0
+2024,B,chapecoense,364275,Victor Cae ...,victor_cae,14,8,3,1,95,31.7
+2024,B,chapecoense,527404,Buchecha,lucas_xavier_felix,59,9,4,1,95,23.8
+2024,B,ponte_preta,588048,Jean Carlos,jean_carlos_dos_santos,16,7,5,0,94,18.8
+2024,B,goias,565047,Douglas Borel,douglas_borel,2,14,4,0,91,22.8
+2024,B,ituano,608601,Aluísio,aluisio,23,14,7,0,91,13.0
+2024,B,amazonas_fc,355730,Wellington,wellington,3,5,1,1,90,90.0
+2024,B,amazonas_fc,421193,Fabian Volpi,fabian_harry_volpi,1,17,1,1,90,90.0
+2024,B,america_saf,427979,Joriwinnyson,joriwinnyson,12,5,1,1,90,90.0
+2024,B,avai,318837,Thales,thales_bento_oleques,72,12,1,1,90,90.0
+2024,B,brusque,351526,Georgemy,georgemy_goncalves,35,31,1,1,90,90.0
+2024,B,crb,693137,MATEUS,mateus_pureza_santos,66,2,1,1,90,90.0
+2024,B,guarani,305764,Rene,rene_ferreira_dos_santos,15,10,1,1,90,90.0
+2024,B,ituano,545619,Wesley,wesley_borges_da_silva,1,20,1,1,90,90.0
+2024,B,ituano,669135,Erik,erik,15,18,1,1,90,90.0
+2024,B,ponte_preta,436507,William,william_arthur_assmann,12,22,1,1,90,90.0
+2024,B,santos,546648,Diogenes,diogenes,12,32,1,1,90,90.0
+2024,B,santos_fc,294407,Joao Basso,joao_othavio_basso,15,1,1,1,90,90.0
+2024,B,santos_fc,318682,Luan Peres,luan_peres_petroni,14,1,1,1,90,90.0
+2024,B,santos_fc,334559,Diego Pituca,diego_cristiano_evaristo,21,1,1,1,90,90.0
+2024,B,santos_fc,402405,Hayner,hayner,3,1,1,1,90,90.0
+2024,B,santos_fc,515843,Wendel da  ...,wendel_da_silva_costa,19,1,1,1,90,90.0
+2024,B,santos_fc,517633,Gabriel Br ...,gabriel_br,77,1,1,1,90,90.0
+2024,B,santos_fc,541292,Sandry,sandry,23,1,1,1,90,90.0
+2024,B,santos_fc,554728,Otero,romulo_otero_vasquez,22,1,1,1,90,90.0
+2024,B,santos_fc,775783,Miguelito,miguelito,47,1,1,1,90,90.0
+2024,B,santos_fc,823241,Tomás Rin ...,tomas_rin,8,1,1,1,90,90.0
+2024,B,vila_nova,311339,Marcondes,marcondes,23,10,1,1,90,90.0
+2024,B,vila_nova,657282,Higor,higor_luiz_de_souza,6,3,1,1,90,90.0
+2024,B,ceara,650671,Kaique Rod ...,kaique_rod,45,10,4,0,89,22.2
+2024,B,goias,745239,Halerrandrio,halerrandrio,90,10,6,0,88,14.7
+2024,B,america_saf,533422,Flavio,flavio,39,11,2,0,86,43.0
+2024,B,coritiba_s_a_f,422347,Alef Manga,alef_manga,11,6,4,0,86,21.5
+2024,B,sport,315834,Pablo Dyego,pablo_dyego_da_silva_rosa,27,13,4,0,86,21.5
+2024,B,sport,690305,Dieguinho,dieguinho,38,8,6,0,86,14.3
+2024,B,amazonas_fc,176772,Dentinho,bruno_ferreira_bonfim,23,9,4,0,85,21.2
+2024,B,america_saf,177363,Jonathas,jonathas,99,8,4,0,83,20.8
+2024,B,guarani,508210,Marcelinho,marcelinho,7,7,4,0,83,20.8
+2024,B,chapecoense,588139,Mailson,mailson_bezerra_silva,90,1,1,1,82,82.0
+2024,B,mirassol,582820,João Pedro ...,joao_pedro,20,9,5,0,82,16.4
+2024,B,operario,521902,Guilherme  ...,guilherme,18,9,3,0,82,27.3
+2024,B,vila_nova,188110,Roberto,roberto,6,4,2,1,82,41.0
+2024,B,chapecoense,533292,Felipe,felipe_vieira_augusto,76,5,2,1,80,40.0
+2024,B,santos_fc,711253,Souza,souza,33,1,1,1,80,80.0
+2024,B,guarani,797119,Pedro Manoel,pedro_manoel,16,4,2,0,79,39.5
+2024,B,sport,816086,Palacios,palacios,93,5,2,1,79,39.5
+2024,B,ceara,404816,Andrey,andrey,98,22,8,0,78,9.8
+2024,B,santos,540839,Cazares,cazares,36,9,3,0,75,25.0
+2024,B,amazonas_fc,548113,Matheus,matheus_augusto_de_melo,23,6,4,0,73,18.2
+2024,B,botafogo,630365,Ronald,ronald,19,16,7,0,73,10.4
+2024,B,guarani,567780,Renyer,renyer,43,5,3,0,73,24.3
+2024,B,mirassol,525399,Cristian,cristian,29,13,6,0,72,12.0
+2024,B,paysandu,402984,Joel Tagueu,joel_tagueu,19,10,5,0,71,14.2
+2024,B,vila_nova,695436,LEONARDO,leonardo_barbosa_gama,23,1,1,0,71,71.0
+2024,B,gremio_novorizontino_saf,714444,Ruiz,oscar_ramon_ruiz_roa,17,10,4,0,67,16.8
+2024,B,ituano,622859,Victor Reis,victor_silva_dos_reis,22,3,1,1,67,67.0
+2024,B,ponte_preta,541928,Gui Dantas,guilherme_maciel_dantas,70,19,3,0,67,22.3
+2024,B,ituano,378203,JONATHAN,jonathan_silva_vieira,16,6,2,1,66,33.0
+2024,B,ceara,612929,João Victor,joao_victor,17,11,2,1,65,32.5
+2024,B,chapecoense,365346,Regis,regis_tosatti_giacomin,27,7,5,0,63,12.6
+2024,B,america_saf,728103,Thauan,thauan,37,11,4,0,61,15.2
+2024,B,paysandu,554408,Brendon,brendon_valenca_sobral,19,13,4,0,60,15.0
 2024,B,santos,674397,Enzo Monteiro,enzo_monteiro,18,1,1,1,60,60.0
-2024,B,america_saf,336900,Fabinho,fabinho,28,1,1,1,57,57.0
-2024,B,america_saf,695297,Martin Ben ...,martin_nicolas_benitez,10,1,1,1,57,57.0
-2024,B,ponte_preta,319620,Sergio,sergio,6,1,1,1,52,52.0
-2024,B,ponte_preta,565679,Edson Rogerio,edson_rogerio,3,1,1,0,38,38.0
-2024,B,america_saf,175557,Felipe Aze ...,felipe_azevedo_dos_santos,11,1,1,0,33,33.0
-2024,B,america_saf,532986,Wallisson,wallisson,77,1,1,0,33,33.0
-2024,B,gremio_novorizontino_saf,423003,Rodolfo,rodolfo,7,1,1,0,30,30.0
-2024,B,santos,542491,Pedrinho,pedrinho,7,1,1,0,30,30.0
-2024,B,santos,818504,Julio Furch,julio_cesar_furch,9,1,1,0,30,30.0
-2024,B,guarani,567780,Renyer,renyer,43,1,1,0,29,29.0
-2024,B,guarani,728441,Rafael,rafael_da_silva_freitas,26,1,1,0,29,29.0
-2024,B,gremio_novorizontino_saf,392562,Eduardo,eduardo_jacinto_de_biasi,21,1,1,1,26,26.0
-2024,B,crb,324513,Matheus Ri ...,matheus_antunes_ribeiro,2,1,1,0,24,24.0
-2024,B,crb,598606,João Neto,joao_neto,35,1,1,0,24,24.0
+2024,B,guarani,431741,Daniel,daniel_da_silva_dos_anjos,39,5,3,0,59,19.7
+2024,B,santos,775783,Miguelito,miguelito,47,5,4,0,57,14.2
+2024,B,amazonas_fc,388303,Sousa,van_basty_sousa_e_silva,5,9,2,0,56,28.0
+2024,B,botafogo,647656,Willian,willian,22,18,6,0,56,9.3
+2024,B,ituano,422351,Jean Pyerre,jean_pyerre,20,6,3,0,56,18.7
+2024,B,sport,604931,Nassom,nassom_de_souza_oliveira,26,7,1,1,56,56.0
+2024,B,brusque,679711,Robson Luiz,robson_luiz,99,19,4,0,54,13.5
+2024,B,paysandu,303018,Vinicius L ...,vinicius_leite_silva,10,6,3,0,53,17.7
+2024,B,paysandu,461802,Crystopher,crystopher,32,10,3,0,53,17.7
+2024,B,vila_nova,637237,FABIO,fabio,2,14,3,0,53,17.7
+2024,B,paysandu,633137,Carlos Maia,carlos_maia,25,4,1,1,52,52.0
+2024,B,vila_nova,617642,Guilherme  ...,guilherme_silva_lacerda,13,22,4,1,51,12.8
+2024,B,guarani,510342,Kayque,kayque_luiz_pereira,6,12,4,0,48,12.0
+2024,B,vila_nova,452427,Bruno,bruno_matias_dos_santos,21,12,2,0,48,24.0
+2024,B,ituano,606790,MARCELO MI ...,marcelo_soares_costa,22,2,2,0,45,22.5
+2024,B,ponte_preta,619562,Guilherme  ...,guilherme,17,12,4,0,45,11.2
+2024,B,vila_nova,641030,CAIQUE,caique,17,10,2,0,44,22.0
+2024,B,america_saf,539206,Gustavo,gustavo,97,15,5,0,41,8.2
+2024,B,coritiba_s_a_f,621412,Felipe Gui ...,felipe_gui,70,3,2,0,39,19.5
+2024,B,guarani,610734,Leonardo P ...,leonardo_p,26,2,2,0,39,19.5
+2024,B,chapecoense,677252,RODRIGO EN ...,rodrigo_en,25,4,2,0,36,18.0
+2024,B,santos,875223,Billy Arce,billy_vladimir_arce_mina,81,6,2,0,36,18.0
+2024,B,ituano,626965,Ruan,ruan,22,7,2,0,32,16.0
+2024,B,mirassol,454793,Paulo Henr ...,paulo_henr,6,21,4,0,32,8.0
+2024,B,ponte_preta,756081,Kauã,kaua_eduardo_moreira,25,5,2,0,32,16.0
+2024,B,ceara,440615,Rafael Bar ...,rafael_barbosa_silva,18,8,2,0,31,15.5
+2024,B,coritiba_s_a_f,610578,Jean,jean,47,8,2,0,31,15.5
+2024,B,crb,533689,Heron Crespo,heron_crespo_da_silva,37,3,2,1,31,15.5
+2024,B,amazonas_fc,404239,Douglas,douglas_santos_da_silva,25,4,2,0,30,15.0
+2024,B,amazonas_fc,633359,Tim,tim,3,6,2,0,28,14.0
+2024,B,vila_nova,565265,Everton,everton,21,18,1,0,28,28.0
+2024,B,brusque,724087,Cauari,cauari,70,7,3,0,27,9.0
+2024,B,goias,522890,Jhonny,jhonny,21,13,1,0,27,27.0
+2024,B,chapecoense,350039,Ronaldo Me ...,ronaldo_me,17,3,2,0,26,13.0
+2024,B,goias,836848,Ivan Torres,ivan_torres,11,5,1,0,26,26.0
+2024,B,amazonas_fc,310961,Rubens,rubens_da_silva_coura,11,1,1,0,25,25.0
+2024,B,botafogo,740079,Rafinha,rafinha,23,7,2,0,25,12.5
+2024,B,avai,502001,Kevin,kevin,2,6,2,0,24,12.0
 2024,B,paysandu,454107,Gabriel Bispo,gabriel_bispo_dos_santos,6,1,1,0,24,24.0
-2024,B,paysandu,172189,Robinho,robson_michael_signorini,20,1,1,1,22,22.0
-2024,B,ponte_preta,527404,Buchecha,lucas_xavier_felix,25,1,1,0,20,20.0
-2024,B,vila_nova,452427,Bruno,bruno_matias_dos_santos,21,1,1,0,19,19.0
-2024,B,gremio_novorizontino_saf,181172,Raul,raul_prata,22,1,1,0,18,18.0
-2024,B,gremio_novorizontino_saf,457375,Paulo Vitor,paulo_vitor,75,1,1,0,18,18.0
-2024,B,paysandu,179288,Michel,michel,16,1,1,0,15,15.0
-2024,B,paysandu,465944,Gabriel Sa ...,gabriel_sa,19,1,1,0,15,15.0
-2024,B,paysandu,608651,Ruan Ribeiro,ruan_ribeiro_rodrigues,26,1,1,0,15,15.0
-2024,B,botafogo,463211,Wallison,wallison_nunes_silva,22,1,1,0,14,14.0
-2024,B,botafogo,551154,Jonas Toró,jonas_toro,19,1,1,0,14,14.0
-2024,B,botafogo,614965,joao,joao_vitor_hipolito_costa,16,1,1,0,14,14.0
-2024,B,guarani,411070,Marlon,marlon,8,1,1,0,11,11.0
-2024,B,guarani,464051,Heitor Rod ...,heitor_rod,2,1,1,0,11,11.0
-2024,B,coritiba_s_a_f,521903,Wesley Pomba,wesley_pomba,57,1,1,0,10,10.0
-2024,B,coritiba_s_a_f,656428,GUILHERME  ...,guilherme_brandao_azevedo,21,1,1,0,10,10.0
-2024,B,ponte_preta,387255,Iago Dias,iago_angelo_dias,11,1,1,0,10,10.0
-2024,B,vila_nova,619065,EMERSON,emerson_lima_freitas,17,1,1,0,9,9.0
-2024,B,vila_nova,652687,Igor Torres,igor_torres_da_silva,20,1,1,0,9,9.0
-2024,B,america_saf,347998,Brenner,brenner,9,1,1,0,8,8.0
-2024,B,america_saf,600810,Felipe Amaral,felipe_amaral,19,1,1,0,8,8.0
-2024,B,crb,461293,Joao Pedro,joao_pedro_mendes_santos,33,1,1,0,8,8.0
-2024,B,crb,779885,FACUNDO,facundo_labandeira_castro,30,1,1,0,8,8.0
-2024,B,botafogo,363149,Douglas Ba ...,douglas_ba,20,1,1,0,6,6.0
-2024,B,guarani,295957,Douglas,douglas_silva_bacelar,23,1,1,0,4,4.0
-2024,B,santos,823241,Tomás Rinc ...,tomas_rinc,8,1,1,0,3,3.0
-2024,B,coritiba_s_a_f,519385,Bernardo L ...,bernardo_marcos_lemes,23,1,1,0,2,2.0
-2024,B,vila_nova,178303,H. Almeida,h_almeida,19,1,1,0,2,2.0
-2024,B,vila_nova,582558,Jemmes,jemmes,3,1,1,0,2,2.0
-2024,B,america_saf,316223,Marlon,marlon,6,1,0,0,0,
-2024,B,america_saf,322852,Daniel Borges,daniel_fortunato_borges,20,1,0,0,0,
-2024,B,america_saf,327667,Ricardo Silva,ricardo_silva,45,1,0,0,0,
-2024,B,america_saf,360921,Elias,elias_martello_curzel,1,1,0,0,0,
-2024,B,america_saf,539206,Gustavo,gustavo,97,1,0,0,0,
-2024,B,america_saf,540989,Rodrigo,rodrigo,75,1,0,0,0,
-2024,B,america_saf,643996,ADYSON,adyson,44,1,0,0,0,
-2024,B,america_saf,837336,PEDRO BARC ...,pedro_barc,4,1,0,0,0,
-2024,B,botafogo,174755,Joao Carlos,joao_carlos_heidemann,12,1,0,0,0,
-2024,B,botafogo,190417,Fillipe So ...,fillipe_so,18,1,0,0,0,
-2024,B,botafogo,299833,Victor Souza,victor_souza,24,1,0,0,0,
-2024,B,botafogo,387972,Ericson,ericson_da_silva,14,1,0,0,0,
-2024,B,botafogo,403850,Robinho,robinho,17,1,0,0,0,
-2024,B,botafogo,504858,Carlos Manuel,carlos_manuel,15,1,0,0,0,
-2024,B,botafogo,543706,Thassio Melo,thassio_melo,13,1,0,0,0,
-2024,B,botafogo,611746,Arthur,arthur,21,1,0,0,0,
-2024,B,coritiba_s_a_f,402719,Marcelo,marcelo,4,1,0,0,0,
-2024,B,coritiba_s_a_f,404816,Andrey,andrey,7,1,0,0,0,
+2024,B,ceara,617563,Yago,yago_lincoln_rocha_santos,96,16,3,0,23,7.7
+2024,B,chapecoense,617551,Paulo,paulo_henrique_novais,21,1,1,0,23,23.0
+2024,B,chapecoense,629558,Kaka,caetano_gemelli_colossi,20,3,1,0,23,23.0
+2024,B,operario,308392,Rafael Oller,rafael_oller_pereira,22,1,1,0,23,23.0
+2024,B,operario,696216,JOAO,joao,32,1,1,0,23,23.0
+2024,B,guarani,337267,Gustavo Fr ...,gustavo_franca_amadio,33,6,2,0,22,11.0
+2024,B,operario,309723,Rafhael Lucas,rafhael_lucas,35,3,1,0,22,22.0
+2024,B,amazonas_fc,407823,Jonny,jonny,15,4,1,0,20,20.0
+2024,B,ceara,631069,Caio,caio_rafael_aquino_lima,82,5,3,0,20,6.7
+2024,B,goias,731523,Tallyson C ...,tallyson_teixeira_carlos,22,2,2,0,20,10.0
+2024,B,santos,753549,Mateus Xavier,mateus_xavier_de_sousa,43,3,1,0,18,18.0
+2024,B,mirassol,300394,Wanderson,wanderson_santos_pereira,33,16,3,0,17,5.7
+2024,B,guarani,740814,João Marcelo,joao_marcelo,43,2,1,0,16,16.0
+2024,B,santos,308980,Alison,alison_lopes_ferreira,25,17,1,0,16,16.0
+2024,B,santos,618515,Hyan,hyan,14,4,1,0,16,16.0
+2024,B,santos,844373,Villarreal,villarreal,30,1,1,0,16,16.0
+2024,B,vila_nova,618509,Gustavo,gustavo_sarjani_de_melo,9,1,1,0,16,16.0
+2024,B,vila_nova,647904,Mathiello,mathiello,18,2,1,0,16,16.0
+2024,B,vila_nova,694148,Carlos Miguel,carlos_miguel,15,2,1,0,16,16.0
+2024,B,america_saf,837336,PEDRO BARC ...,pedro_barc,4,13,1,1,14,14.0
+2024,B,operario,730724,DUDU,eduardo_franzon_mosconi,39,1,1,0,14,14.0
+2024,B,botafogo,674843,Thalles,thalles,19,5,1,0,13,13.0
+2024,B,mirassol,609056,Miguel dos ...,miguel_dos_santos_silva,26,8,1,0,12,12.0
+2024,B,santos,694911,Luca Meire ...,luca_oliveira_meirelles,43,1,1,0,12,12.0
+2024,B,america_saf,612793,kaua,kaua_diniz_rocha,73,1,1,0,11,11.0
+2024,B,america_saf,615494,Yago,yago_santos_de_andrade,68,14,1,0,11,11.0
+2024,B,botafogo,696611,Pedro Henr ...,pedro_henrique_severino,19,1,1,0,10,10.0
+2024,B,brusque,611688,Gabriel,gabriel_lima_da_silva,6,8,1,0,10,10.0
+2024,B,santos_fc,406738,Rodrigo Fe ...,rodrigo_ferreira_da_silva,29,1,1,0,10,10.0
+2024,B,chapecoense,629156,David,david_antunes_da_silva,15,1,1,0,8,8.0
+2024,B,chapecoense,629552,Diego,diego_coser,19,2,1,0,8,8.0
+2024,B,mirassol,541952,Henri,henri_marinho_dos_santos,44,12,1,0,8,8.0
+2024,B,botafogo,551944,Luquinhas,lucas_queiroz_cantero,14,4,1,0,7,7.0
+2024,B,goias,608091,DENZEL,denzel_nogueira_damasceno,16,1,1,0,7,7.0
+2024,B,santos,337363,Nonato,gustavo_nonato_santana,15,9,1,0,7,7.0
+2024,B,mirassol,777655,VINICIUS S ...,vinicius_s,31,4,1,0,6,6.0
+2024,B,botafogo,640973,JOÃO,joao,23,7,1,0,5,5.0
+2024,B,brusque,741542,LUCAS,lucas,4,1,1,0,5,5.0
+2024,B,chapecoense,555438,Kelvyn,kelvyn_ramos_da_fonseca,23,8,1,0,5,5.0
+2024,B,chapecoense,584422,Rafael,rafael_pasquali_rech,71,3,1,0,5,5.0
+2024,B,operario,622329,José Gabriel,jose_gabriel,35,1,1,0,4,4.0
+2024,B,coritiba_s_a_f,404816,Andrey,andrey,7,6,1,0,3,3.0
+2024,B,vila_nova,553452,Estevao,estevao,17,2,1,0,3,3.0
+2024,B,chapecoense,576987,Thiaguinho,thiaguinho,21,5,1,0,2,2.0
+2024,B,america_saf,614903,PAULO,paulo,72,10,1,0,1,1.0
+2024,B,amazonas_fc,178353,Spice,thiago_fernandes_pessoa,14,15,0,0,0,
+2024,B,amazonas_fc,306605,PH,philippe_guimaraes,5,2,0,0,0,
+2024,B,amazonas_fc,338251,Oliveira,oliveira,25,4,0,0,0,
+2024,B,amazonas_fc,393357,Weverton,weverton_nunes_coelho,23,1,0,0,0,
+2024,B,amazonas_fc,453528,Kaio Cristian,kaio_cristian,14,5,0,0,0,
+2024,B,amazonas_fc,563947,Alison,alison,13,1,0,0,0,
+2024,B,america_saf,464516,Cassio,cassio,27,2,0,0,0,
+2024,B,america_saf,583117,Jonathan A ...,jonathan_a,71,13,0,0,0,
+2024,B,america_saf,612799,Rafa,rafael_raul_barcelos,70,6,0,0,0,
+2024,B,america_saf,658375,SAMUEL ALVES,samuel_alves_barroso,71,2,0,0,0,
+2024,B,america_saf,728818,Yago,yago_souza_de_santana,69,2,0,0,0,
+2024,B,avai,341930,Otavio,otavio,66,21,0,0,0,
+2024,B,avai,599113,Favero,favero,69,6,0,0,0,
+2024,B,avai,693896,Wanderson,wanderson_barros_de_sousa,83,4,0,0,0,
+2024,B,avai,727552,Paulo,paulo,97,1,0,0,0,
+2024,B,avai,763958,Kevin,kevin_da_silva_soares,2,1,0,0,0,
+2024,B,botafogo,611746,Arthur,arthur,21,14,0,0,0,
+2024,B,botafogo,647284,Brenno Faro,brenno_faro_klippel,24,3,0,0,0,
+2024,B,botafogo,653437,Erik,erik_rebello_de_castro,20,4,0,0,0,
+2024,B,botafogo,836672,Leandro Ma ...,leandro_isaac_maciel,20,2,0,0,0,
+2024,B,brusque,460288,Iran,iran,20,1,0,0,0,
+2024,B,brusque,510784,Matheus Em ...,matheus_em,31,12,0,0,0,
+2024,B,brusque,642784,PEDRO VITOR,pedro_vitor,51,2,0,0,0,
+2024,B,brusque,670276,Hilton,hilton,77,6,0,0,0,
+2024,B,brusque,670729,Dionatan,dionatan_augusto_barbosa,30,1,0,0,0,
+2024,B,ceara,291651,Luiz,luiz,13,4,0,0,0,
+2024,B,ceara,351142,Luiz,luiz,23,2,0,0,0,
+2024,B,ceara,409030,Gabriel La ...,gabriel_la,15,4,0,0,0,
+2024,B,ceara,523596,Matheus Ma ...,matheus_ma,20,1,0,0,0,
+2024,B,ceara,526592,Maycon,maycon,12,23,0,0,0,
+2024,B,ceara,527028,Bruno,bruno,27,7,0,0,0,
+2024,B,ceara,542822,Leo Rafael,leo_rafael,80,4,0,0,0,
+2024,B,ceara,631389,Fernando G ...,fernando_g,33,1,0,0,0,
+2024,B,ceara,678964,Joao,joao_vitor_dos_santos,29,1,0,0,0,
+2024,B,chapecoense,540237,Joao Paulo,joao_paulo,19,1,0,0,0,
+2024,B,chapecoense,599009,KAUAN,kauan_faria_gomes,18,2,0,0,0,
+2024,B,coritiba_s_a_f,184460,Gabriel Leite,gabriel_christoni_leite,87,10,0,0,0,
 2024,B,coritiba_s_a_f,565654,Jean Gabriel,jean_gabriel_silveira,82,1,0,0,0,
-2024,B,coritiba_s_a_f,581520,Matheus,matheus_henrique_bianqui,18,1,0,0,0,
-2024,B,coritiba_s_a_f,610699,Benassi,benassi,67,1,0,0,0,
-2024,B,coritiba_s_a_f,613494,Diogo Batista,diogo_batista_de_souza,2,1,0,0,0,
-2024,B,coritiba_s_a_f,618684,Guilherme  ...,guilherme,13,1,0,0,0,
-2024,B,coritiba_s_a_f,645961,LUCAS RONIER,lucas_ronier_vieira_pires,98,1,0,0,0,
-2024,B,coritiba_s_a_f,719313,RODRIGO,rodrigo_silva_nascimento,6,1,0,0,0,
-2024,B,crb,350899,Getulio,getulio,37,1,0,0,0,
-2024,B,crb,379397,Romulo,romulo_da_silva_machado,17,1,0,0,0,
-2024,B,crb,442225,Vitor,vitor_caetano_ferreira,1,1,0,0,0,
-2024,B,crb,617935,Lucas Kallyel,lucas_kallyel,19,1,0,0,0,
-2024,B,crb,630496,Darlisson,darlisson,34,1,0,0,0,
-2024,B,crb,684995,Erik Filipe,erik_filipe,40,1,0,0,0,
-2024,B,gremio_novorizontino_saf,180083,Willian Fa ...,willian_roberto_de_farias,8,1,0,0,0,
-2024,B,gremio_novorizontino_saf,190431,Rafael Donato,rafael_ferreira_donato,3,1,0,0,0,
-2024,B,gremio_novorizontino_saf,292592,Lucca,lucca_borges_de_brito,11,1,0,0,0,
-2024,B,gremio_novorizontino_saf,332840,Airton,airton_moraes_michellon,1,1,0,0,0,
-2024,B,gremio_novorizontino_saf,335513,Renato,renato_palm_da_silveira,33,1,0,0,0,
-2024,B,gremio_novorizontino_saf,500215,Patrick,patrick,4,1,0,0,0,
-2024,B,gremio_novorizontino_saf,531144,Leonardo,leonardo,19,1,0,0,0,
-2024,B,gremio_novorizontino_saf,776773,João Dantas,joao_dantas,26,1,0,0,0,
-2024,B,guarani,337267,Gustavo Fr ...,gustavo_franca_amadio,33,1,0,0,0,
-2024,B,guarani,434877,Lucas Araujo,lucas_araujo_de_oliveira,21,1,0,0,0,
-2024,B,guarani,532559,Pedro Henr ...,pedro_henr,15,1,0,0,0,
-2024,B,guarani,639890,Álvaro,alvaro,22,1,0,0,0,
-2024,B,paysandu,165094,Diogo Silva,diogo_silva,12,1,0,0,0,
-2024,B,paysandu,387358,Kevyn,kevyn,36,1,0,0,0,
-2024,B,paysandu,461802,Crystopher,crystopher,32,1,0,0,0,
-2024,B,paysandu,540808,Luan Freitas,luan_freitas,35,1,0,0,0,
-2024,B,paysandu,604967,Carlão,carlao,23,1,0,0,0,
-2024,B,paysandu,837209,Esli Garcia,esli_garcia,15,1,0,0,0,
-2024,B,ponte_preta,178402,Ze Mario,jose_mario_de_bona,31,1,0,0,0,
-2024,B,ponte_preta,307569,Nilson Junior,nilson_junior,44,1,0,0,0,
-2024,B,ponte_preta,337241,Luan,luan_fernandes_ribeiro,30,1,0,0,0,
-2024,B,ponte_preta,351498,Everton,everton_sidnei_de_brito,29,1,0,0,0,
-2024,B,ponte_preta,450596,Vinicius,vinicius,7,1,0,0,0,
-2024,B,ponte_preta,453857,Castro,luiz_felipe_castro_neto,15,1,0,0,0,
-2024,B,ponte_preta,567670,Venicius,venicius,98,1,0,0,0,
-2024,B,ponte_preta,794735,KAUE,kaue,17,1,0,0,0,
-2024,B,ponte_preta,836841,Luis Haquin,luis_haquin,23,1,0,0,0,
-2024,B,santos,337363,Nonato,gustavo_nonato_santana,15,1,0,0,0,
-2024,B,santos,406738,Rodrigo Fe ...,rodrigo_ferreira_da_silva,29,1,0,0,0,
-2024,B,santos,412394,Vinicius B ...,vinicius_b,17,1,0,0,0,
-2024,B,santos,432392,Alex Nasci ...,alex_nasci,2,1,0,0,0,
-2024,B,santos,517633,Gabriel Br ...,gabriel_br,77,1,0,0,0,
-2024,B,santos,540839,Cazares,cazares,36,1,0,0,0,
-2024,B,santos,546648,Diogenes,diogenes,12,1,0,0,0,
-2024,B,santos,674772,Weslley,weslley_pinto_batista,42,1,0,0,0,
-2024,B,santos,693399,JP Chermont,joao_pedro_chermont_crema,44,1,0,0,0,
-2024,B,vila_nova,188110,Roberto,roberto,6,1,0,0,0,
-2024,B,vila_nova,188453,Fernandao,fernandao,9,1,0,0,0,
-2024,B,vila_nova,305811,Igor,igor,18,1,0,0,0,
-2024,B,vila_nova,432146,Rhuan,rhuan_ferreira_ramos,16,1,0,0,0,
-2024,B,vila_nova,500501,Elias,elias,2,1,0,0,0,
-2024,B,vila_nova,513441,Vitor Hugo,vitor_hugo,1,1,0,0,0,
+2024,B,coritiba_s_a_f,613494,Diogo Batista,diogo_batista_de_souza,2,6,0,0,0,
+2024,B,coritiba_s_a_f,618684,Guilherme  ...,guilherme,13,4,0,0,0,
+2024,B,coritiba_s_a_f,621745,Ruan Lucas,ruan_lucas_de_assis,97,1,0,0,0,
+2024,B,coritiba_s_a_f,647826,ROBERTO,roberto,12,1,0,0,0,
+2024,B,crb,2229054,,caio_cesar_da_silva,6,1,0,0,0,
+2024,B,crb,613188,Bruno Dent ...,bruno_dent,37,5,0,0,0,
+2024,B,crb,621414,Fabio Henr ...,fabio_henr,23,10,0,0,0,
+2024,B,crb,631479,Carlison,carlison,30,1,0,0,0,
+2024,B,crb,641082,Baranhas,baranhas,50,4,0,0,0,
+2024,B,crb,667358,RODRIGO,rodrigo,16,2,0,0,0,
+2024,B,crb,684995,Erik Filipe,erik_filipe,40,7,0,0,0,
+2024,B,crb,793846,WALLACE,wallace,70,4,0,0,0,
+2024,B,goias,178365,Thiago Rod ...,thiago_rod,1,35,0,0,0,
+2024,B,goias,299156,Sidimar,sidimar_fernando_cigolini,34,1,0,0,0,
+2024,B,goias,509619,Edu,edu,43,3,0,0,0,
+2024,B,goias,545967,Murillo,murillo_barbosa_lopes,76,1,0,0,0,
+2024,B,goias,580984,Ezequiel,ezequiel,41,6,0,0,0,
+2024,B,goias,623309,Xavier,gustavo_xavier_teixeira,16,1,0,0,0,
+2024,B,goias,650675,Anthony,anthony,13,3,0,0,0,
+2024,B,goias,726173,Larson,larson,97,5,0,0,0,
+2024,B,gremio_novorizontino_saf,433789,Lucas Pereira,lucas_pereira,12,13,0,0,0,
+2024,B,gremio_novorizontino_saf,509383,Marcelo,marcelo_de_bem_dal_soler,23,11,0,0,0,
+2024,B,gremio_novorizontino_saf,610164,Stenio,stenio_lima_silva,50,2,0,0,0,
+2024,B,gremio_novorizontino_saf,630013,Gabriel Co ...,gabriel_correia_da_silva,85,2,0,0,0,
+2024,B,gremio_novorizontino_saf,648911,Pedro Balo ...,pedro_balo,95,4,0,0,0,
+2024,B,gremio_novorizontino_saf,670341,Miguel,miguel_tavares_contiero,39,1,0,0,0,
+2024,B,gremio_novorizontino_saf,697659,Isack,isack,29,3,0,0,0,
+2024,B,guarani,2337386,,daniel_da_silva_dos_anjos,39,1,0,0,0,
+2024,B,guarani,410702,Bruno,bruno_goncalves_do_prado,4,2,0,0,0,
+2024,B,guarani,418809,Lima,guilherme_natan_de_lima,32,3,0,0,0,
+2024,B,guarani,639890,Álvaro,alvaro,22,9,0,0,0,
+2024,B,guarani,736954,Wictor,wictor_gabriel_de_campos,25,3,0,0,0,
+2024,B,ituano,312907,Pablo,pablo_diogo_lopes_de_lima,17,5,0,0,0,
+2024,B,ituano,517622,Pedro,pedro,14,7,0,0,0,
+2024,B,ituano,583312,Vialle,vialle,22,5,0,0,0,
+2024,B,ituano,622284,Nathan,nathan,15,1,0,0,0,
+2024,B,ituano,691350,VINICIUS O ...,vinicius_o,23,1,0,0,0,
+2024,B,ituano,693916,Matheus,matheus_henrique_rocha,15,5,0,0,0,
+2024,B,ituano,755457,Izidoro,izidoro,16,4,0,0,0,
+2024,B,mirassol,306773,Carlos Edu ...,carlos_edu,90,9,0,0,0,
+2024,B,mirassol,307979,Yuri,yuri_oliveira_lima,5,1,0,0,0,
+2024,B,mirassol,547230,Felipe,felipe_sambudio_rosalen,30,3,0,0,0,
+2024,B,mirassol,582062,Sidnei Fer ...,sidnei_fernandes_junior,12,10,0,0,0,
+2024,B,operario,558142,Igor Ribeiro,igor_ribeiro_costa,24,6,0,0,0,
+2024,B,operario,563901,Arthur,arthur_neves_ferreira,33,1,0,0,0,
+2024,B,operario,693983,Guilherme,guilherme,51,8,0,0,0,
+2024,B,operario,711396,Matheus Ga ...,matheus_galdino_silva,37,1,0,0,0,
+2024,B,operario,714287,Ryan,ryan_de_carvalho_krettly,36,1,0,0,0,
+2024,B,operario,749345,KAYO,kayo,47,1,0,0,0,
+2024,B,paysandu,318862,Iago Hass,iago_hass_ferreira,40,1,0,0,0,
+2024,B,paysandu,536351,Keffel,keffel_resende_alvim,6,3,0,0,0,
+2024,B,paysandu,568268,Pedro Romano,pedro_romano,29,8,0,0,0,
+2024,B,ponte_preta,2261885,,carlos_eduardo_de_so,5,1,0,0,0,
+2024,B,ponte_preta,544530,Thiago Lopes,thiago_oliveira_lopes,39,2,0,0,0,
+2024,B,ponte_preta,583091,Nicolodi,guilherme_nicolodi,20,1,0,0,0,
+2024,B,ponte_preta,794735,KAUE,kaue,17,3,0,0,0,
+2024,B,santos,188424,Renan dos  ...,renan_dos_santos,18,3,0,0,0,
+2024,B,santos,412394,Vinicius B ...,vinicius_b,17,4,0,0,0,
+2024,B,santos,632661,Gustavo,gustavo_sonego_jundi,34,4,0,0,0,
+2024,B,santos,695085,,joao_pedro_lucio_da,34,4,0,0,0,
+2024,B,santos,711256,Samuel,samuel_lima_barros,40,1,0,0,0,
+2024,B,santos,882085,Yusupha,yusupha_o_m_njie,17,1,0,0,0,
+2024,B,santos_fc,188424,Renan dos  ...,renan_dos_santos,18,1,0,0,0,
+2024,B,santos_fc,308980,Alison,alison_lopes_ferreira,25,1,0,0,0,
+2024,B,santos_fc,315585,Patrick,patrick,88,1,0,0,0,
+2024,B,santos_fc,412394,Vinicius B ...,vinicius_b,28,1,0,0,0,
+2024,B,santos_fc,546648,Diogenes,diogenes,12,1,0,0,0,
+2024,B,santos_fc,618515,Hyan,hyan,35,1,0,0,0,
+2024,B,santos_fc,645380,Guilherme  ...,guilherme_de_jesus_lima,45,1,0,0,0,
+2024,B,santos_fc,693399,Chermont,joao_pedro_chermont_crema,44,1,0,0,0,
+2024,B,santos_fc,694911,Luca Meire ...,luca_oliveira_meirelles,43,1,0,0,0,
+2024,B,santos_fc,711256,Samuel,samuel_lima_barros,46,1,0,0,0,
+2024,B,santos_fc,802130,Nacho Laqu ...,nacho_laqu,66,1,0,0,0,
+2024,B,sport,391214,JORDAN,jordan,76,5,0,0,0,
+2024,B,sport,591106,Matheus Mi ...,matheus_mi,58,3,0,0,0,
+2024,B,sport,668004,Micael,micael_de_barros_viturino,39,2,0,0,0,
+2024,B,vila_nova,188453,Fernandao,fernandao,9,3,0,0,0,
+2024,B,vila_nova,2198626,,juan_christian_perei,70,1,0,0,0,
+2024,B,vila_nova,2206476,,eric_almeida_de_melo,14,1,0,0,0,
+2024,B,vila_nova,513441,Vitor Hugo,vitor_hugo,1,5,0,0,0,
+2024,B,vila_nova,542104,Gustavo,gustavo_dos_santos_cabral,17,2,0,0,0,
+2024,B,vila_nova,550098,Fernando,fernando,18,1,0,0,0,
 2024,B,vila_nova,612261,Kayk,kayk,13,1,0,0,0,
+2025,B,chapecoense,881479,Walter Clar,walter_david_clar_fritz,37,38,38,38,3388,89.2
+2025,B,america_saf,351849,Lucas,lucas,3,37,37,37,3330,90.0
+2025,B,goias,308316,Tadeu,tadeu_antonio_ferreira,23,37,37,37,3330,90.0
+2025,B,remo,186722,Rangel,marcelo_rangel_rosa,88,37,37,37,3290,88.9
+2025,B,ferroviaria,451683,Denis Junior,denis_junior,1,36,36,36,3240,90.0
+2025,B,criciuma,177531,Rodrigo,rodrigo,3,36,36,36,3225,89.6
+2025,B,chapecoense,443387,Rafael Car ...,rafael_car,99,38,38,36,3204,84.3
+2025,B,crb,310382,Matheus Al ...,matheus_albino_carneiro,12,35,35,35,3150,90.0
+2025,B,crb,541952,Henri,henri_marinho_dos_santos,44,35,35,35,3150,90.0
+2025,B,criciuma,292282,Luciano Ca ...,luciano_castan_da_silva,4,35,35,35,3139,89.7
+2025,B,avai,291997,Brock,eduardo_schroeder_brock,14,35,35,35,3137,89.6
+2025,B,avai,190389,Marquinhos ...,marquinhos,10,35,35,35,3101,88.6
+2025,B,botafogo,299833,Victor Souza,victor_souza,12,38,34,34,3060,90.0
+2025,B,crb,324513,Matheus Ri ...,matheus_antunes_ribeiro,2,36,35,34,3000,85.7
+2025,B,gremio_novorizontino_saf,332840,Airton,airton_moraes_michellon,1,36,33,33,2970,90.0
+2025,B,operario,360921,Elias,elias_martello_curzel,1,33,33,33,2970,90.0
+2025,B,athletic_saf,299156,Sidimar,sidimar_fernando_cigolini,4,35,34,33,2969,87.3
+2025,B,goias,182466,Anselmo Ramon,anselmo_ramon,9,35,35,33,2953,84.4
+2025,B,crb,427004,Higor,higor_matheus_meritao,22,34,34,34,2936,86.4
+2025,B,goias,337261,Juninho,juninho,28,37,36,34,2927,81.3
+2025,B,operario,373841,Gabriel,gabriel_boschilia,10,34,34,34,2927,86.1
+2025,B,vila_nova,500501,Elias,elias,2,33,33,33,2926,88.7
+2025,B,ferroviaria,298550,Carlos Hen ...,carlos_hen,9,34,34,34,2920,85.9
+2025,B,ferroviaria,505081,Lucas Rodr ...,lucas_silva_rodrigues,2,33,33,33,2901,87.9
+2025,B,vila_nova,461723,Halls,halls,99,34,32,32,2880,90.0
+2025,B,criciuma,376405,Diego,diego_goncalves,77,37,35,35,2860,81.7
+2025,B,coritiba_s_a_f,820851,Sebastian  ...,sebastian_gomez_londono,19,34,34,34,2834,83.4
+2025,B,vila_nova,331982,Joao Vieira,joao_pedro_vieira,5,35,35,32,2830,80.9
+2025,B,avai,601171,CLEBER,cleber_bomfim_de_jesus,99,35,35,34,2800,80.0
+2025,B,cuiaba_saf,524341,Denilson,denilson_alves_borges,27,34,34,34,2796,82.2
+2025,B,botafogo,836635,Gabriel Pa ...,gabriel_pa,6,37,34,32,2720,80.0
+2025,B,chapecoense,393400,João Paulo,joao_paulo,4,31,31,31,2718,87.7
+2025,B,coritiba_s_a_f,613263,Pedro Morisco,pedro_morisco,1,30,30,30,2700,90.0
+2025,B,remo,379462,Pedro Rocha,pedro_rocha_neves,32,32,32,31,2698,84.3
+2025,B,coritiba_s_a_f,880608,Josue,josue,10,34,34,33,2695,79.3
+2025,B,coritiba_s_a_f,178178,Maicon,maicon_pereira_roque,3,36,31,29,2679,86.4
+2025,B,vila_nova,188260,Tiago,tiago_pagnussat,4,32,32,32,2664,83.2
+2025,B,avai,374251,Marcos Vin ...,marcos_vin,63,33,32,32,2653,82.9
+2025,B,goias,447189,Willean Lepo,willean_bernardo_willemen,97,32,31,30,2639,85.1
+2025,B,coritiba_s_a_f,294382,Zeca,jose_carlos_cracco_neto,73,36,32,29,2635,82.3
+2025,B,athletic_saf,558228,Adriel,adriel_vasconcelos_ramos,1,34,29,29,2610,90.0
+2025,B,ferroviaria,174941,Ronaldo Alves,ronaldo_luiz_alves,4,31,29,29,2610,90.0
+2025,B,crb,308495,Daniel,daniel_sampaio_simoes,10,33,33,33,2597,78.7
+2025,B,avai,420186,Joao Vitor,joao_vitor,8,33,33,30,2563,77.7
+2025,B,america_saf,327667,Ricardo Silva,ricardo_silva,45,31,29,29,2559,88.2
+2025,B,volta_redonda,356231,Sanchez,sanchez_jose_vale_costa,6,31,31,29,2552,82.3
+2025,B,goias,381149,Messias,messias,75,33,29,29,2538,87.5
+2025,B,avai,350723,Jonathan C ...,jonathan_c,95,29,29,29,2515,86.7
+2025,B,gremio_novorizontino_saf,342224,Rodrigo So ...,rodrigo_alves_soares,2,36,29,28,2513,86.7
+2025,B,cuiaba_saf,433799,Matheusinho,mateus_da_silva_duarte,98,30,30,30,2511,83.7
+2025,B,criciuma,315637,Marcinho,marcinho,6,32,30,29,2503,83.4
+2025,B,criciuma,355827,Alisson,alisson,1,36,28,28,2499,89.2
+2025,B,ferroviaria,179100,Ricardo,ricardo_ribeiro_de_lima,5,32,30,30,2497,83.2
+2025,B,operario,894752,ZULUAGA,zuluaga,8,35,32,28,2490,77.8
+2025,B,crb,621119,Thiaguinho,thiaguinho,17,35,34,33,2477,72.9
+2025,B,vila_nova,391300,Willian,willian_prado_camargo,13,28,28,28,2468,88.1
+2025,B,gremio_novorizontino_saf,500215,Patrick,patrick,4,35,30,27,2464,82.1
+2025,B,athletico_paranaense,818807,Zapelli,bruno_zapelli,10,34,33,29,2463,74.6
+2025,B,america_saf,166061,Willian Du ...,willian_gomes_de_siqueira,9,34,33,30,2439,73.9
+2025,B,chapecoense,456246,Edu Doma,edu_doma,3,37,28,27,2432,86.9
+2025,B,paysandu,405127,Reverson,reverson,16,35,30,26,2422,80.7
+2025,B,remo,360293,Klaus,william_klaus,4,31,27,27,2418,89.6
+2025,B,atletico_goianiense_saf,419442,Guilherme  ...,guilherme_kennedy_romao,6,29,28,27,2397,85.6
+2025,B,chapecoense,292205,Giovanni A ...,giovanni_a,10,32,31,31,2396,77.3
+2025,B,cuiaba_saf,548252,Max,max_alves_da_silva,8,34,30,28,2394,79.8
+2025,B,chapecoense,305360,Marcinho,marcinho,7,34,34,34,2382,70.1
+2025,B,athletic_saf,541292,Sandry,sandry,8,31,29,28,2369,81.7
+2025,B,coritiba_s_a_f,403078,Jacy,jacy_maranhao_oliveira,55,27,27,26,2365,87.6
+2025,B,gremio_novorizontino_saf,312663,Cesar,cesar_henrique_martins,37,27,27,27,2354,87.2
+2025,B,remo,434289,Caio Vinicius,caio_vinicius,34,30,28,27,2309,82.5
+2025,B,america_saf,606805,Julio,julio,18,37,30,28,2307,76.9
+2025,B,volta_redonda,613097,RAI,rai_da_silva_pessanha,30,31,29,27,2298,79.2
+2025,B,athletic_saf,591319,Douglas Silva,douglas_da_silva_santos,2,35,30,26,2283,76.1
+2025,B,gremio_novorizontino_saf,776773,João Dantas,joao_dantas,26,33,26,26,2276,87.5
+2025,B,criciuma,308421,Matheus Tr ...,matheus_tr,5,36,31,25,2275,73.4
+2025,B,coritiba_s_a_f,645961,Lucas Ronier,lucas_ronier_vieira_pires,11,29,27,27,2274,84.2
+2025,B,botafogo,836672,Leandro Ma ...,leandro_isaac_maciel,10,35,33,25,2272,68.8
+2025,B,botafogo,417467,Jefferson Nem,jefferson_nem,11,31,30,27,2268,75.6
+2025,B,ferroviaria,367731,Netinho,netinho,15,30,29,28,2254,77.7
+2025,B,chapecoense,364275,Victor Cae ...,victor_cae,25,31,27,26,2243,83.1
+2025,B,operario,310743,Paraíba,paraiba,88,32,30,28,2243,74.8
+2025,B,botafogo,337508,Jeferson,jeferson,2,30,28,24,2229,79.6
+2025,B,avai,358808,Ze Ricardo,ze_ricardo,77,27,26,26,2194,84.4
+2025,B,gremio_novorizontino_saf,337271,Matheus Fr ...,matheus_henrique_frizzo,10,37,33,27,2186,66.2
+2025,B,ferroviaria,464992,Gustavo Me ...,gustavo_me,3,26,25,25,2181,87.2
+2025,B,chapecoense,376599,Bruno Leon ...,bruno_leon,33,29,28,25,2174,77.6
+2025,B,gremio_novorizontino_saf,733551,FABIO,fabio,47,35,29,25,2170,74.8
+2025,B,chapecoense,452427,Bruno,bruno_matias_dos_santos,16,25,25,25,2168,86.7
+2025,B,remo,352000,Reynaldo,reynaldo_cesar_moraes,29,32,28,25,2161,77.2
+2025,B,operario,462355,Miranda,miranda,34,33,24,24,2160,90.0
+2025,B,criciuma,605512,Guilherme,guilherme_teixeira_lobo,25,31,28,27,2154,76.9
+2025,B,chapecoense,177092,Leo Vieira,leonardo_da_silva_vieira,12,35,24,24,2150,89.6
+2025,B,goias,313001,Rafael Gava,rafael_gava,8,32,30,24,2131,71.0
+2025,B,coritiba_s_a_f,329952,Bruno Melo,bruno_ferreira_melo,26,29,27,25,2130,78.9
+2025,B,botafogo,454107,Gabriel Bispo,gabriel_bispo_dos_santos,18,32,25,24,2126,85.0
+2025,B,operario,338081,Bruno,bruno,5,33,29,24,2125,73.3
+2025,B,athletico_paranaense,346294,Léo,leo,3,31,26,22,2118,81.5
+2025,B,criciuma,528449,Jhonata Ro ...,jhonata_ro,10,36,30,26,2115,70.5
+2025,B,paysandu,411070,Marlon,marlon,20,32,31,26,2109,68.0
+2025,B,volta_redonda,438425,Gabriel,gabriel_barbosa_pinheiro,3,34,25,24,2108,84.3
+2025,B,athletic_saf,459007,Welinton,welinton,7,31,30,24,2107,70.2
+2025,B,gremio_novorizontino_saf,383906,Luis,luis_felipe_oyama,6,36,30,23,2092,69.7
+2025,B,ferroviaria,620776,Alencar,rodrigo_souza_santos,8,35,33,24,2090,63.3
+2025,B,athletico_paranaense,536558,Felipe,felipe,5,34,29,24,2082,71.8
+2025,B,botafogo,387972,Ericson,ericson_da_silva,13,31,26,23,2073,79.7
+2025,B,atletico_goianiense_saf,183760,Paulo Vitor,paulo_vitor,1,23,23,23,2070,90.0
+2025,B,operario,522753,Rodrigo An ...,rodrigo_antonio_rodrigues,7,34,31,26,2062,66.5
+2025,B,athletic_saf,711292,David,david,10,35,31,26,2058,66.4
+2025,B,amazonas_fc,304325,Fabiano,fabiano_da_silva_souza,6,23,23,23,2040,88.7
+2025,B,athletic_saf,719313,RODRIGO,rodrigo_silva_nascimento,16,31,25,22,2022,80.9
+2025,B,goias,540238,Lucas Ribeiro,lucas_ribeiro_dos_santos,14,27,25,23,2011,80.4
+2025,B,goias,614954,Diego Caito,diego_caito,20,33,27,24,1999,74.0
+2025,B,coritiba_s_a_f,383537,Filipe Mac ...,filipe_mac,8,35,33,24,1995,60.5
+2025,B,ferroviaria,321012,Juninho,juninho,17,32,31,27,1994,64.3
+2025,B,avai,409084,Cesar,cesar,31,32,22,22,1980,90.0
+2025,B,volta_redonda,297039,Jean Drosny,jean_drosny,12,32,22,22,1980,90.0
+2025,B,cuiaba_saf,317706,Nathan,nathan,4,29,25,23,1973,78.9
+2025,B,remo,376801,Savio,savio_antonio_alves,16,29,23,22,1943,84.5
+2025,B,cuiaba_saf,312015,Bruno Alves,bruno_fabiano_alves,3,33,24,21,1941,80.9
+2025,B,coritiba_s_a_f,345933,Alex Silva,alex_da_silva,20,25,24,22,1921,80.0
+2025,B,criciuma,179934,Nicolas,nicolas_godinho_johann,9,25,25,25,1916,76.6
+2025,B,volta_redonda,548446,Jhonny,jhonny_cardinoti_pedro,13,31,27,22,1909,70.7
+2025,B,atletico_goianiense_saf,356684,Luizao,luizao,15,34,26,21,1904,73.2
+2025,B,atletico_goianiense_saf,605426,Robert,robert,19,34,27,24,1896,70.2
+2025,B,paysandu,552216,Thalisson  ...,thalisson,6,21,21,21,1890,90.0
+2025,B,chapecoense,383352,Neto,neto,18,26,26,22,1888,72.6
+2025,B,criciuma,690534,Felipinho,felipinho,76,24,24,22,1888,78.7
+2025,B,coritiba_s_a_f,436949,Gustavo Co ...,gustavo_co,91,37,36,21,1881,52.2
+2025,B,crb,310627,Gêge,geirton_marques_aires,8,35,29,22,1879,64.8
+2025,B,avai,609746,João Pedro,joao_pedro,80,29,27,22,1878,69.6
+2025,B,botafogo,302451,Cafu,jonathan_renato_barbosa,7,37,30,23,1861,62.0
+2025,B,gremio_novorizontino_saf,378268,Jean,jean,5,32,27,21,1858,68.8
+2025,B,athletico_paranaense,815502,Lucas Esqu ...,lucas_angel_esquivel,37,24,23,21,1853,80.6
+2025,B,athletico_paranaense,451607,Luiz Fernando,luiz_fernando,19,32,30,23,1849,61.6
+2025,B,athletico_paranaense,315585,Patrick,patrick,88,33,28,22,1848,66.0
+2025,B,amazonas_fc,896410,LARRY VASQUEZ,larry_vasquez_ortega,5,22,22,22,1847,84.0
+2025,B,vila_nova,338185,Poveda,gabriel_buscariol_poveda,9,32,30,21,1843,61.4
+2025,B,remo,319134,Marcelinho,marcelo_rodrigues_souza,79,31,24,22,1834,76.4
+2025,B,athletic_saf,919679,RONALDO,ronaldo_rodrigues_tavares,21,24,24,20,1817,75.7
+2025,B,america_saf,614903,PAULO,paulo,29,36,22,20,1807,82.1
+2025,B,operario,363313,Cristiano,cristiano_da_silva_leite,90,28,22,21,1792,81.5
+2025,B,athletic_saf,566865,Marcelo,marcelo_alixandre_ajul,14,31,22,21,1783,81.0
+2025,B,avai,610886,Emerson,emerson,94,30,26,22,1760,67.7
+2025,B,vila_nova,450596,Vinicius,vinicius,11,34,30,19,1760,58.7
+2025,B,america_saf,775783,Miguelito,miguelito,7,25,23,20,1753,76.2
+2025,B,cuiaba_saf,346046,Sander,sander,6,24,23,19,1751,76.1
+2025,B,paysandu,642656,Mauricio G ...,mauricio_garcez_de_jesus,10,21,21,20,1747,83.2
+2025,B,paysandu,415808,Matheus No ...,matheus_no,13,32,21,21,1746,83.1
+2025,B,goias,345210,Marcos,marcos,77,31,24,21,1745,72.7
+2025,B,volta_redonda,423695,André Luiz,andre_luiz,28,34,27,20,1742,64.5
+2025,B,paysandu,402841,Edilson,edilson,2,29,25,18,1738,69.5
+2025,B,cuiaba_saf,613826,CALEBE,calebe_oliveira_costa,55,32,26,20,1730,66.5
+2025,B,vila_nova,305811,Igor,igor,27,26,25,22,1714,68.6
+2025,B,athletico_paranaense,293428,Santos,santos,23,35,19,19,1710,90.0
+2025,B,atletico_goianiense_saf,452276,Adriano Ma ...,adriano_ma,4,19,19,19,1710,90.0
+2025,B,atletico_goianiense_saf,701439,Alix,alix,15,22,19,19,1710,90.0
+2025,B,avai,335286,Mario Sergio,mario_sergio_valerio,33,28,21,19,1703,81.1
+2025,B,operario,382807,Joseph Mau ...,joseph_mau,30,19,19,19,1697,89.3
+2025,B,america_saf,542628,Miqueias,miqueias_cabral_evaristo,42,36,28,20,1695,60.5
+2025,B,cuiaba_saf,706429,ALAN,alan_pereira_empereur,33,20,20,20,1688,84.4
+2025,B,athletic_saf,636772,MASWEL,maswel_ananias_silva,21,26,25,21,1675,67.0
+2025,B,america_saf,612793,kaua,kaua_diniz_rocha,15,33,25,18,1672,66.9
+2025,B,america_saf,559670,Figueiredo,figueiredo,22,21,21,19,1668,79.4
+2025,B,volta_redonda,548055,Pierre Wagner,pierre_wagner,20,19,19,19,1649,86.8
+2025,B,atletico_goianiense_saf,895305,Federico M ...,federico_m,19,33,30,19,1642,54.7
+2025,B,crb,793896,Luis Segovia,luis_segovia,4,33,21,17,1639,78.0
+2025,B,gremio_novorizontino_saf,558580,Mayk,mayk,77,22,22,19,1634,74.3
+2025,B,chapecoense,532045,Mailton do ...,mailton_dos_santos_de_sa,22,20,20,20,1627,81.4
+2025,B,athletic_saf,317384,Yuri,yuri,6,32,25,20,1625,65.0
+2025,B,america_saf,462152,Matheus Me ...,matheus_me,1,20,18,18,1620,90.0
+2025,B,atletico_goianiense_saf,609749,Kauan Rodr ...,kauan_rodrigues_da_silva,18,36,28,16,1618,57.8
+2025,B,volta_redonda,436982,Marcos Vin ...,marcos_vin,11,23,21,19,1613,76.8
+2025,B,vila_nova,552578,Weverton,weverton_silva_de_andrade,13,25,19,17,1602,84.3
+2025,B,cuiaba_saf,351040,Alisson,alisson_pelegrini_safira,25,22,21,19,1595,76.0
+2025,B,goias,512737,Welliton,welliton,30,37,29,19,1588,54.8
+2025,B,crb,537549,Weverton,weverton,42,32,22,18,1584,72.0
+2025,B,paysandu,394441,Gabriel Me ...,gabriel_me,12,32,18,16,1584,88.0
+2025,B,crb,599514,MIKAEL,mikael,28,34,28,21,1580,56.4
+2025,B,crb,363149,Douglas Ba ...,douglas_ba,7,33,29,19,1566,54.0
+2025,B,remo,513348,Jaderson,jaderson_flores_dos_reis,10,31,24,18,1558,64.9
+2025,B,ferroviaria,500736,Albano,albano_sehn_neto,10,29,26,18,1555,59.8
+2025,B,crb,378811,Fabio Alemão,fabio_augusto_schirmann,27,25,18,18,1543,85.7
+2025,B,athletico_paranaense,615317,Mycael,mycael_pontes_moreira,1,36,17,17,1530,90.0
+2025,B,cuiaba_saf,331915,Mateus,mateus_pasinato,14,18,17,17,1530,90.0
+2025,B,ferroviaria,375729,Thiago Lopes,thiago_ferreira_lopes,23,35,29,15,1514,52.2
+2025,B,volta_redonda,541442,Gabriel He ...,gabriel_he,26,18,17,17,1510,88.8
+2025,B,america_saf,316223,Marlon,marlon,6,19,18,17,1509,83.8
+2025,B,remo,297781,Pedro Castro,pedro_castro,11,36,28,18,1508,53.9
+2025,B,goias,639870,Pedrinho,pedrinho,17,26,25,18,1502,60.1
+2025,B,america_saf,170144,Mariano,mariano_ferreira_filho,23,31,21,16,1489,70.9
+2025,B,botafogo,322930,Wesley,wesley_dias_claudino,8,27,18,18,1489,82.7
+2025,B,athletico_paranaense,922690,Kevin Viveros,kevin_viveros,9,19,19,16,1477,77.7
+2025,B,coritiba_s_a_f,392650,Iury,iury,77,27,27,20,1477,54.7
+2025,B,volta_redonda,529724,Vitinho,vitinho,17,34,23,19,1473,64.0
+2025,B,coritiba_s_a_f,532986,Wallisson,wallisson,70,34,29,18,1471,50.7
+2025,B,paysandu,315023,Leandro Vi ...,leandro_vi,28,18,18,18,1465,81.4
+2025,B,gremio_novorizontino_saf,300229,Waguininho,wagner_da_silva_souza,30,22,22,15,1459,66.3
+2025,B,america_saf,600810,Felipe Amaral,felipe_amaral,8,30,20,18,1454,72.7
+2025,B,vila_nova,401315,Todinho,geremias_ribeiro_junior,29,26,24,17,1446,60.2
+2025,B,paysandu,524492,Andre Lima,andre_da_silva_lima,8,28,21,15,1442,68.7
+2025,B,botafogo,604967,Carlão,carlao,14,28,17,16,1436,84.5
+2025,B,paysandu,424585,Bryan,bryan_borges_mascarenhas,21,27,20,17,1436,71.8
+2025,B,athletico_paranaense,923742,Gaston Ben ...,gaston_americo_benavidez,29,17,17,16,1426,83.9
+2025,B,botafogo,894142,Dramisino,alejo_martin_dramisino,18,35,25,17,1415,56.6
+2025,B,goias,313582,Moraes,moraes,6,21,20,15,1414,70.7
+2025,B,gremio_novorizontino_saf,420539,Bruno Jose,bruno_jose_de_souza,17,36,29,17,1414,48.8
+2025,B,operario,315945,Diogo,diogo,2,30,20,17,1413,70.6
+2025,B,goias,440246,Jajá,jandir_breno_souza_silva,7,36,30,18,1411,47.0
+2025,B,crb,461802,Crystopher,crystopher,21,23,21,15,1399,66.6
+2025,B,cuiaba_saf,592044,Carlos Alb ...,carlos_alb,11,23,23,17,1399,60.8
+2025,B,atletico_goianiense_saf,511220,Lelê,lele,9,16,16,16,1395,87.2
+2025,B,operario,462755,Gabriel Fe ...,gabriel_fe,27,28,21,15,1388,66.1
+2025,B,gremio_novorizontino_saf,302768,Robson,robson,11,25,22,16,1372,62.4
+2025,B,cuiaba_saf,895186,Alejandro  ...,silvio_alejandro_martinez,7,17,17,16,1358,79.9
+2025,B,crb,327114,Léo Campos,leonardo_de_campos,77,27,18,14,1343,74.6
+2025,B,cuiaba_saf,771631,DAVID,david,20,27,22,16,1342,61.0
+2025,B,athletico_paranaense,522146,Mendoza,mendoza,17,19,18,15,1335,74.2
+2025,B,cuiaba_saf,389361,Lucas,lucas_da_silva_izidoro,30,33,23,14,1318,57.3
+2025,B,paysandu,540808,Luan Freitas,luan_freitas,4,18,16,14,1317,82.3
+2025,B,athletic_saf,298638,Fabricio I ...,fabricio_i,14,21,19,15,1310,68.9
+2025,B,america_saf,622485,Barros,cauan_lucas_barros_da_luz,88,17,15,15,1303,86.9
+2025,B,amazonas_fc,896148,KEVIN RAMIREZ,kevin_ramirez,8,18,17,16,1301,76.5
+2025,B,botafogo,533772,Alexandre  ...,alexandre,9,17,17,15,1299,76.4
+2025,B,volta_redonda,610163,LUCAS,lucas_cardoso_adell,15,29,16,15,1299,81.2
+2025,B,america_saf,568151,Stênio,stenio_zanetti_toledo,17,35,26,16,1298,49.9
+2025,B,criciuma,465048,Leo,leonardo_naldi_de_matos,18,25,17,15,1290,75.9
+2025,B,athletico_paranaense,745104,Arthur Dias,arthur_dias,65,23,16,15,1286,80.4
+2025,B,cuiaba_saf,447205,de Lucca,de_lucca,45,30,23,13,1286,55.9
+2025,B,paysandu,895786,Joaquin No ...,joaquin_ariel_novillo,5,24,15,14,1283,85.5
+2025,B,coritiba_s_a_f,311122,Dellatorre,dellatorre,49,29,25,15,1282,51.3
+2025,B,vila_nova,411198,G. Parede,guilherme_parede_pinheiro,77,21,18,16,1276,70.9
+2025,B,cuiaba_saf,551796,Juan Chris ...,juan_chris,70,34,27,15,1273,47.1
+2025,B,chapecoense,177436,Rafael Santos,rafael_de_carvalho_santos,1,36,15,14,1270,84.7
+2025,B,america_saf,321622,Gustavo,gustavo,1,14,14,14,1260,90.0
+2025,B,cuiaba_saf,338625,Luan Polli,luan_polli_gomes,50,15,14,14,1260,90.0
+2025,B,volta_redonda,335765,Je,je,31,17,14,14,1260,90.0
+2025,B,operario,544426,Mingotti,mingotti,9,34,25,14,1254,50.2
+2025,B,goias,170255,TITI,christian_chagas_tarouco,4,27,15,14,1251,83.4
+2025,B,athletic_saf,384004,Neto Costa,neto_costa,19,35,30,13,1243,41.4
+2025,B,volta_redonda,375401,Italo,italo,9,20,18,15,1235,68.6
+2025,B,goias,307285,Wellington ...,wellington,27,19,18,13,1222,67.9
+2025,B,botafogo,503097,Rafael,rafael_henrique_milhorim,4,31,17,13,1218,71.6
+2025,B,volta_redonda,184226,Bruno,bruno_sergio_jaime,5,30,16,13,1213,75.8
+2025,B,athletico_paranaense,923095,Aguirre,aguirre,33,19,16,13,1201,75.1
+2025,B,ferroviaria,178402,Ze Mario,jose_mario_de_bona,6,26,20,13,1199,60.0
+2025,B,remo,523883,Janderson,janderson_santos_de_souza,99,31,26,13,1195,46.0
+2025,B,athletic_saf,466167,Wesley,wesley,52,30,21,12,1182,56.3
+2025,B,ferroviaria,436289,Maycon,maycon,13,26,16,13,1181,73.8
+2025,B,volta_redonda,179486,Wellington ...,wellington,2,32,19,14,1180,62.1
+2025,B,paysandu,582781,Diogo Oliv ...,diogo_de_oliveira_barbosa,27,16,16,13,1173,73.3
+2025,B,amazonas_saf,778423,Alexis Ivan,alexis_ivan_alvarino,14,13,13,13,1170,90.0
+2025,B,atletico_goianiense_saf,537899,13 - Tito,gebson_gomes_dos_santos,3,13,13,13,1170,90.0
+2025,B,botafogo,532185,Marco Júnior,marco_junior,18,26,21,11,1164,55.4
+2025,B,cuiaba_saf,639064,DERIK,derik,22,14,14,14,1164,83.1
+2025,B,atletico_goianiense_saf,551375,Rhaldney,rhaldney,8,13,13,13,1155,88.8
+2025,B,paysandu,292608,Mauricio A ...,mauricio_a,35,24,14,12,1140,81.4
+2025,B,volta_redonda,403460,Igor,igor_morais_carvalho,19,14,13,13,1140,87.7
+2025,B,chapecoense,655546,Italo,italo_de_vargas_da_rosa,77,37,35,6,1138,32.5
+2025,B,remo,926305,Nicolas Fe ...,nicolas_fe,25,17,16,14,1138,71.1
+2025,B,remo,653267,Kayky Almeida,kayky_almeida,27,23,15,12,1137,75.8
+2025,B,athletic_saf,541945,Alexsandro,alexsandro,22,14,14,13,1132,80.9
+2025,B,remo,376246,Giovanni,giovanni,7,32,21,13,1132,53.9
+2025,B,botafogo,463211,Wallison,wallison_nunes_silva,22,36,18,13,1131,62.8
+2025,B,ferroviaria,630830,EDSON,edson_lucas_pereira,16,27,15,13,1128,75.2
+2025,B,atletico_goianiense_saf,600270,Ronald,ronald_cardoso_falkoski,8,13,13,13,1123,86.4
+2025,B,atletico_goianiense_saf,534970,Marcelinho,marcelinho,7,14,14,14,1116,79.7
+2025,B,paysandu,314059,Rossi,rosicley_pereira_da_silva,77,17,15,13,1113,74.2
+2025,B,amazonas_saf,178303,H. Almeida,h_almeida,19,13,13,13,1108,85.2
+2025,B,athletico_paranaense,581989,Habraão,habraao,28,20,13,13,1088,83.7
+2025,B,goias,870524,GONZALO FR ...,gonzalo_fr,5,29,19,11,1086,57.2
+2025,B,vila_nova,331842,Sousa,sousa,17,21,21,12,1086,51.7
+2025,B,operario,325581,Daniel Amorim,daniel_amorim,89,28,22,13,1082,49.2
+2025,B,gremio_novorizontino_saf,315834,Pablo Dyego,pablo_dyego_da_silva_rosa,7,31,19,10,1081,56.9
+2025,B,avai,297646,Igor Bohn,igor_jose_bohn,1,28,12,12,1080,90.0
+2025,B,criciuma,363926,Marcelo He ...,marcelo_hermes,22,12,12,12,1080,90.0
+2025,B,vila_nova,500953,Bernardo,bernardo_schappo,14,13,12,12,1080,90.0
+2025,B,atletico_goianiense_saf,421180,Willian Ma ...,willian_ma,5,15,13,13,1073,82.5
+2025,B,crb,533140,Adailson,adailson,97,25,20,13,1071,53.6
+2025,B,operario,678962,gabriel,gabriel_souza_dos_santos,18,25,19,11,1070,56.3
+2025,B,athletico_paranaense,178095,Alan Kardec,alan_kardec,27,35,23,14,1069,46.5
+2025,B,botafogo,291843,Edson Felipe,edson_felipe_da_cruz,5,25,14,12,1069,76.4
+2025,B,gremio_novorizontino_saf,464026,Romulo,romulo_azevedo_simao,25,19,16,13,1067,66.7
+2025,B,vila_nova,298361,W. Maia,w_maia,3,28,16,10,1057,66.1
+2025,B,america_saf,872812,Fernando E ...,fernando_e,5,26,21,12,1056,50.3
+2025,B,crb,551111,Breno,breno_herculano_almeida,9,30,22,11,1049,47.7
+2025,B,volta_redonda,183874,Fabricio,fabricio_silva_dornellas,4,13,13,12,1046,80.5
+2025,B,volta_redonda,731131,ROBSON,robson,8,15,14,13,1040,74.3
+2025,B,coritiba_s_a_f,523074,Vini Paulista,vini_paulista,36,38,24,10,1032,43.0
+2025,B,atletico_goianiense_saf,382739,Sandro Cesar,sandro_cesar,20,17,16,12,1026,64.1
+2025,B,athletico_paranaense,691619,Kauã Moraes,kaua_moraes_silva,14,13,13,12,1024,78.8
+2025,B,paysandu,338491,Ronaldo,ronaldo,14,20,14,12,1020,72.9
+2025,B,amazonas_fc,188424,Renan dos  ...,renan_dos_santos,31,14,12,12,1019,84.9
+2025,B,ferroviaria,337894,Fabricio,fabricio_daniel_de_souza,10,16,16,13,1017,63.6
+2025,B,coritiba_s_a_f,376734,Clayson,clayson,25,26,20,12,1012,50.6
+2025,B,remo,524196,Luan Martins,luan_martins_goncalves,5,26,13,11,1005,77.3
+2025,B,gremio_novorizontino_saf,461356,Nathan Fogaca,nathan_uiliam_fogaca,99,20,17,11,1003,59.0
+2025,B,amazonas_saf,366392,Leonardo,leonardo_henriques_coelho,3,12,12,12,1000,83.3
+2025,B,atletico_goianiense_saf,180622,Vladimir,vladimir,1,29,12,11,996,83.0
+2025,B,botafogo,682166,4 - Vilar,gustavo_vilar_dos_santos,14,15,11,11,990,90.0
+2025,B,amazonas_fc,178303,H. Almeida,h_almeida,91,17,15,11,987,65.8
+2025,B,criciuma,381191,Luiz Henrique,luiz_henrique,88,36,20,9,980,49.0
+2025,B,avai,546683,Andrey,andrey,78,17,12,10,979,81.6
+2025,B,america_saf,728818,Yago,yago_souza_de_santana,40,27,17,11,977,57.5
+2025,B,operario,894287,Jaime Ocampo,jaime_ocampo,4,24,12,12,968,80.7
+2025,B,atletico_goianiense_saf,502008,Matheus Fe ...,matheus_fe,3,15,12,10,962,80.2
+2025,B,criciuma,402719,Marcelo,marcelo,14,22,14,11,962,68.7
+2025,B,chapecoense,622068,Jorge Jimenez,jorge_andres_roa_jimenez,5,35,25,10,958,38.3
+2025,B,vila_nova,321636,Andre Luis,andre_luis,7,22,18,12,947,52.6
+2025,B,operario,370695,Allano,allano,29,12,12,12,941,78.4
+2025,B,paysandu,323184,Anderson L ...,anderson_leite_morais,29,16,12,11,935,77.9
+2025,B,remo,463599,Marrony,marrony,26,22,17,11,929,54.6
+2025,B,remo,543703,Nathan,nathan_santos_de_araujo,23,13,11,11,923,83.9
+2025,B,atletico_goianiense_saf,648700,Yuri,yuri_alves_de_aquino,22,21,15,9,921,61.4
+2025,B,amazonas_saf,896148,KEVIN RAMIREZ,kevin_ramirez,7,11,11,11,916,83.3
+2025,B,athletico_paranaense,582823,Lucas Belezi,lucas_belezi_barbosa,45,26,14,10,916,65.4
+2025,B,amazonas_fc,177093,Rafa,rafa,10,20,17,10,912,53.6
+2025,B,remo,895855,ALAN RODRI ...,alan_rodri,21,28,11,10,908,82.5
+2025,B,avai,526646,Douglas,douglas_da_silva_teixeira,36,21,14,10,903,64.5
+2025,B,goias,429655,Rodrigo An ...,rodrigo_an,32,19,14,10,902,64.4
+2025,B,criciuma,619677,Kauã,kaua_inacio_moroso,12,20,10,10,900,90.0
+2025,B,operario,306691,Allan Godoy,allan_godoi_santos,93,10,10,10,900,90.0
+2025,B,avai,422347,Alef Manga,alef_manga,11,24,20,10,898,44.9
+2025,B,ferroviaria,641068,ERIC,eric_almeida_de_melo,14,20,15,10,895,59.7
+2025,B,paysandu,338237,Matheus Va ...,matheus_de_vargas,96,14,13,11,895,68.8
+2025,B,paysandu,502079,Denner,denner_fernando_melz,20,17,14,13,895,63.9
+2025,B,avai,311146,Hygor,hygor_cleber_garcia_silva,7,27,25,10,893,35.7
+2025,B,botafogo,539977,Gabriel Ba ...,gabriel_de_sousa_barros,21,17,14,11,891,63.6
+2025,B,gremio_novorizontino_saf,395968,Patrick Brey,patrick_de_carvalho_brey,88,28,14,9,891,63.6
+2025,B,atletico_goianiense_saf,320017,Ruan,ruan_gregorio_teixeira,14,18,15,9,890,59.3
+2025,B,operario,316737,Ademilson,ademilson,99,28,21,9,890,42.4
+2025,B,remo,388312,Camutanga,camutanga,3,21,11,10,887,80.6
+2025,B,gremio_novorizontino_saf,294484,Marlon,marlon_adriano_prezotti,28,18,17,10,870,51.2
+2025,B,botafogo,876629,Sabit,sabit_abdulai,15,16,15,10,867,57.8
+2025,B,america_saf,610290,ARTHUR SOUSA,arthur_sousa_araujo,39,21,19,9,865,45.5
+2025,B,gremio_novorizontino_saf,190431,Rafael Donato,rafael_ferreira_donato,3,30,12,10,856,71.3
+2025,B,botafogo,870027,Ronie,ronie,19,32,21,8,853,40.6
+2025,B,remo,815856,Diego Hern ...,diego_hern,33,16,14,11,850,60.7
+2025,B,amazonas_fc,299142,Jackson,jackson_de_souza,3,10,10,9,843,84.3
+2025,B,america_saf,336900,Fabinho,fabinho,28,14,11,9,843,76.6
+2025,B,chapecoense,369852,Everton,everton_souza_da_cruz,26,34,20,8,835,41.8
+2025,B,athletico_paranaense,446399,Raul,raul_lo_goncalves,31,30,14,9,833,59.5
+2025,B,botafogo,168982,Leo Gamalho,leonardo_gamalho_de_souza,9,11,11,10,833,75.7
+2025,B,amazonas_fc,908823,CASTRILLON,castrillon,13,12,12,10,825,68.8
+2025,B,cuiaba_saf,528636,MARCELINHO,marcelinho,23,24,12,9,818,68.2
+2025,B,athletico_paranaense,650633,Léo Derik,leo_derik,61,26,11,9,804,73.1
+2025,B,paysandu,897091,BENITEZ,benitez,9,20,17,11,804,47.3
+2025,B,paysandu,171788,Thiago Heleno,thiago_heleno,44,15,9,9,798,88.7
+2025,B,vila_nova,543481,Vinicius,vinicius,11,30,22,8,795,36.1
+2025,B,vila_nova,568268,Pedro Romano,pedro_romano,14,17,11,9,794,72.2
+2025,B,goias,354299,Luiz Felipe,luiz_felipe,3,33,10,9,790,79.0
+2025,B,remo,291758,Adailton,adailton,15,16,16,9,780,48.8
+2025,B,atletico_goianiense_saf,409168,Kelvin,kelvin,19,18,16,6,779,48.7
+2025,B,criciuma,465950,Leandro Sa ...,leandro_sa,23,24,15,8,779,51.9
+2025,B,amazonas_saf,433682,Erick Varao,erick_de_souza_miranda,21,12,11,9,777,70.6
+2025,B,coritiba_s_a_f,618684,Guilherme  ...,guilherme,15,22,10,9,772,77.2
+2025,B,volta_redonda,582820,João Pedro ...,joao_pedro,7,18,14,8,771,55.1
+2025,B,remo,930248,João Pedro,joao_pedro_sousa_silva,45,14,12,7,770,64.2
+2025,B,volta_redonda,423224,Patrick,patrick_machado_ferreira,10,28,18,7,761,42.3
+2025,B,remo,435809,Matheus Davó,matheus_davo,8,14,12,8,760,63.3
+2025,B,goias,314275,Lucas,lucas_lovat,36,16,12,9,757,63.1
+2025,B,athletic_saf,314625,Diego Fumaça,diego_cesar_de_oliveira,5,12,11,8,756,68.7
+2025,B,athletico_paranaense,531455,Renan,renan_peixoto_nepomuceno,70,29,20,6,751,37.6
+2025,B,athletic_saf,894749,CHAPA,fernando_martinez_rojas,15,29,15,8,750,50.0
+2025,B,coritiba_s_a_f,603057,Pedro Rangel,pedro_rangel,12,35,9,8,750,83.3
+2025,B,amazonas_saf,304325,Fabiano,fabiano_da_silva_souza,6,9,9,9,745,82.8
+2025,B,athletico_paranaense,620709,Dudu,dudu,53,23,15,7,744,49.6
+2025,B,atletico_goianiense_saf,345678,Jean Dias,jean_dias_da_costa,11,13,11,10,742,67.5
+2025,B,criciuma,433565,Morelli,everton_morelli_casimiro,40,14,10,9,741,74.1
+2025,B,volta_redonda,537477,Ygor Catatau,ygor_de_oliveira_ferreira,27,12,12,10,739,61.6
+2025,B,botafogo,403850,Robinho,robinho,17,24,16,7,731,45.7
+2025,B,coritiba_s_a_f,682522,João Almeida,joao_almeida,16,34,12,7,730,60.8
+2025,B,criciuma,372403,Zé Gabriel,ze_gabriel,35,11,10,9,723,72.3
+2025,B,amazonas_fc,895842,ZABALA,zabala,22,21,14,9,719,51.4
+2025,B,atletico_goianiense_saf,349177,Conrado,conrado_buchanelli_holz,15,18,11,8,718,65.3
+2025,B,amazonas_fc,555280,Thomas Luc ...,thomas_luc,15,11,10,10,717,71.7
+2025,B,botafogo,320951,Alisson Ca ...,alisson_ca,3,23,12,8,716,59.7
+2025,B,cuiaba_saf,595734,JADER,jader,10,18,13,7,710,54.6
+2025,B,vila_nova,432666,Bruno,bruno_cesar_xavier_sislo,17,20,13,8,709,54.5
+2025,B,amazonas_saf,177093,Rafa,rafa,10,13,11,9,707,64.3
+2025,B,amazonas_saf,919896,DIEGO TORRES,diego_joel_torres_garcete,29,12,9,8,701,77.9
+2025,B,paysandu,456887,Marcelinho,marcelinho,30,32,19,6,701,36.9
+2025,B,amazonas_saf,896410,LARRY VASQUEZ,larry_vasquez_ortega,5,13,9,8,700,77.8
+2025,B,volta_redonda,465539,Thallyson  ...,thallyson,8,11,10,9,700,70.0
+2025,B,vila_nova,379541,Arilson,arilson,18,14,13,7,699,53.8
+2025,B,paysandu,836501,Quintana,quintana,3,16,10,10,698,69.8
+2025,B,botafogo,387314,Jean Victor,jean_victor_barros,16,27,15,6,696,46.4
+2025,B,athletic_saf,382822,Jefferson,jefferson,12,26,8,7,695,86.9
+2025,B,remo,399284,Felipe Vizeu,felipe_vizeu,33,17,12,7,681,56.8
+2025,B,vila_nova,657282,Higor,higor_luiz_de_souza,16,29,14,7,679,48.5
+2025,B,ferroviaria,294486,Tarik,tarik,18,33,21,5,678,32.3
+2025,B,athletico_paranaense,929825,Carlos Diaz,carlos_teran_diaz,13,9,9,8,677,75.2
+2025,B,atletico_goianiense_saf,632604,Valdir,valdir,13,15,12,7,675,56.2
+2025,B,coritiba_s_a_f,756803,Carlos de  ...,carlos_de,27,37,28,2,675,24.1
+2025,B,athletico_paranaense,178486,Giuliano,giuliano_victor_de_paula,8,36,15,7,671,44.7
+2025,B,amazonas_saf,908823,CASTRILLON,castrillon,30,11,9,7,667,74.1
+2025,B,amazonas_saf,464569,Gabriel Do ...,gabriel_domingos_de_moura,35,13,9,7,665,73.9
+2025,B,amazonas_fc,399776,Luan,luan_santos_silva,9,18,12,8,663,55.2
+2025,B,gremio_novorizontino_saf,180083,Willian Fa ...,willian_roberto_de_farias,8,30,14,6,663,47.4
+2025,B,chapecoense,501375,Pedro,pedro,48,28,17,5,654,38.5
+2025,B,goias,292833,Arthur Caike,arthur_caike,45,26,21,5,653,31.1
+2025,B,crb,301087,Pottker,pottker,93,23,17,3,652,38.4
+2025,B,vila_nova,608651,Ruan Ribeiro,ruan_ribeiro_rodrigues,23,26,18,5,652,36.2
+2025,B,operario,318837,Thales,thales_bento_oleques,72,17,9,7,651,72.3
+2025,B,operario,597168,Léo Gaúcho,leo_gaucho,70,11,10,7,650,65.0
+2025,B,ferroviaria,610404,Ian,ian_luccas_baroni_boetto,7,27,16,6,646,40.4
+2025,B,operario,182380,Fransergio,fransergio,20,12,10,7,645,64.5
+2025,B,athletic_saf,432392,Alex Nasci ...,alex_nasci,16,18,8,7,644,80.5
+2025,B,crb,402405,Hayner,hayner,60,27,15,6,640,42.7
+2025,B,athletico_paranaense,505613,Leozinho,leonardo_caetano_silva,21,28,16,7,636,39.8
+2025,B,atletico_goianiense_saf,331532,Rai,rai_dos_reis_ramos,2,9,8,8,634,79.2
+2025,B,paysandu,671013,Ramon Mart ...,ramon_martinez_lopez,27,16,12,7,633,52.8
+2025,B,amazonas_fc,464872,Pedro,pedro,1,16,7,7,630,90.0
+2025,B,criciuma,292976,Jean Carlos,jean_carlos_vicente,92,27,21,5,629,30.0
+2025,B,chapecoense,430175,Mario Sergio,mario_sergio,9,8,7,7,622,88.9
+2025,B,cuiaba_saf,640575,GUILHERME,guilherme_mariano_barbosa,13,33,14,5,617,44.1
+2025,B,atletico_goianiense_saf,315653,Wallace,wallace,16,18,8,8,611,76.4
+2025,B,vila_nova,168387,Ralf,ralf_de_souza_teles,8,33,13,7,611,47.0
+2025,B,gremio_novorizontino_saf,460340,Airton Moises,airton_moises,20,22,16,5,602,37.6
+2025,B,cuiaba_saf,616665,Ataide,ataide,2,19,12,6,600,50.0
+2025,B,athletico_paranaense,398807,Falcão,falcao,98,12,8,7,597,74.6
+2025,B,athletico_paranaense,536286,Julimar,julimar,20,12,11,6,596,54.2
+2025,B,atletico_goianiense_saf,338777,Pedro Henr ...,pedro_henr,4,31,10,6,595,59.5
+2025,B,avai,523119,Railan,railan_reis_ferreira,2,28,17,4,587,34.5
+2025,B,volta_redonda,514089,Matheus Lucas,matheus_lucas,23,27,20,3,587,29.4
+2025,B,athletic_saf,441948,Jhonatan,jhonatan_paulo_da_silva,13,25,10,6,582,58.2
+2025,B,criciuma,540274,Juninho,juninho,50,32,14,5,582,41.6
+2025,B,amazonas_fc,317569,Rafael Vit ...,rafael_vit,15,8,7,7,581,83.0
+2025,B,amazonas_fc,335379,Bruno Ramires,bruno_edgar_silva_almeida,8,9,7,7,581,83.0
+2025,B,paysandu,357487,PK,pk,94,20,9,7,579,64.3
+2025,B,paysandu,434300,Vini Faria,vinicius_faria_dos_santos,99,24,17,4,579,34.1
+2025,B,coritiba_s_a_f,415367,Nicolas Ca ...,nicolas_mores_da_cruz,7,28,15,6,577,38.5
+2025,B,chapecoense,356403,Gabriel,gabriel,2,19,14,5,575,41.1
+2025,B,america_saf,348257,Emerson,emerson_raymundo_santos,2,15,12,6,572,47.7
+2025,B,remo,646521,Nathan Cam ...,nathan_camargo_dos_santos,48,16,11,7,571,51.9
+2025,B,cuiaba_saf,542491,Pedrinho,pedrinho,7,7,7,7,568,81.1
+2025,B,atletico_goianiense_saf,405061,Dudu,dudu,2,10,8,8,566,70.8
+2025,B,remo,931376,Panagiots,panagiots_tachtsidis,77,11,9,8,564,62.7
+2025,B,operario,526048,Marcos Paulo,marcos_paulo,32,11,11,6,562,51.1
+2025,B,chapecoense,441035,Marcinho,marcinho,95,33,21,4,559,26.6
+2025,B,remo,320593,Jorge,jorge,6,11,9,6,558,62.0
+2025,B,chapecoense,419436,Pedro,pedro_henrique_perotti,9,26,19,5,543,28.6
+2025,B,avai,686991,THAYLLON,thayllon,41,33,19,5,541,28.5
+2025,B,amazonas_fc,336531,Alyson Neves,alyson_neves,13,6,6,6,540,90.0
+2025,B,amazonas_saf,188424,Renan dos  ...,renan_dos_santos,33,6,6,6,540,90.0
+2025,B,amazonas_saf,366358,Ze Carlos,jose_carlos_miranda,1,8,6,6,540,90.0
+2025,B,cuiaba_saf,412411,Guilherme,guilherme,12,30,6,6,540,90.0
+2025,B,gremio_novorizontino_saf,460331,Igor Marqu ...,igor_marqu,31,18,10,6,539,53.9
+2025,B,amazonas_fc,909841,JOAQUIN TO ...,joaquin_eduardo_torres,20,13,9,6,535,59.4
+2025,B,ferroviaria,551564,Thayllon,thayllon_lopes_medeiros,39,15,12,6,534,44.5
+2025,B,avai,360443,Barreto,gustavo_bonatto_barreto,5,10,8,7,532,66.5
+2025,B,athletic_saf,923062,ALESSIO,alessio,17,14,11,6,531,48.3
+2025,B,volta_redonda,538097,Bruno Santos,bruno_santos_de_oliveira,9,8,8,5,530,66.2
+2025,B,coritiba_s_a_f,617418,Tiago Coser,tiago_coser,23,37,8,5,527,65.9
+2025,B,athletico_paranaense,650809,João Cruz,joao_victor_machado_cruz,57,27,14,4,526,37.6
+2025,B,vila_nova,647904,Mathiello,mathiello,22,30,16,4,521,32.6
+2025,B,botafogo,336063,Guilherme  ...,guilherme,22,16,13,5,520,40.0
+2025,B,volta_redonda,546406,Caio Roque,caio_alves_roque_gomes,16,18,7,6,517,73.9
+2025,B,gremio_novorizontino_saf,646494,Luiz,luiz_otavio_maria,18,24,11,5,515,46.8
+2025,B,amazonas_fc,895719,AKAPO,carlos_akapo_martinez,15,9,9,5,509,56.6
+2025,B,botafogo,448526,Matheus Regis,matheus_regis,19,28,17,4,502,29.5
+2025,B,paysandu,405112,Wendel,wendel,36,16,11,5,502,45.6
+2025,B,operario,527541,Pedrinho,pedro_veronez_vilhena,30,11,8,4,500,62.5
+2025,B,amazonas_fc,373689,Robertinho,robertinho,77,15,8,5,496,62.0
+2025,B,criciuma,616219,Werik Popó,werik_silva_pinto,45,7,7,6,494,70.6
+2025,B,atletico_goianiense_saf,301087,Pottker,pottker,11,8,8,6,493,61.6
+2025,B,gremio_novorizontino_saf,531144,Leonardo,leonardo,19,29,14,4,492,35.1
+2025,B,athletico_paranaense,528447,Fernando,fernando,6,22,8,6,490,61.2
+2025,B,remo,691641,Cantillo,cantillo,20,15,8,6,488,61.0
+2025,B,criciuma,599806,YAN,yan_da_cruz_souto,2,32,14,3,487,34.8
+2025,B,remo,401976,Pedro Costa,pedro_costa,2,23,10,4,486,48.6
+2025,B,amazonas_fc,621864,Rafael Mon ...,rafael_monteiro_reis,2,13,8,6,485,60.6
+2025,B,athletic_saf,547372,Alason,alason_azevedo_julio,27,22,16,4,484,30.2
+2025,B,athletic_saf,418697,Ezequiel,ezequiel_santos_da_silva,11,22,18,4,483,26.8
+2025,B,amazonas_fc,896802,NICOLAS,nicolas_hugo_linares,27,13,6,5,468,78.0
+2025,B,operario,631139,Andre,andre,34,15,10,4,459,45.9
+2025,B,criciuma,836673,Borasi,benjamin_manuel_borasi,19,20,15,2,456,30.4
+2025,B,paysandu,179934,Nicolas,nicolas_godinho_johann,11,8,8,5,456,57.0
+2025,B,operario,406069,Thiago Conti,thiago_conti,34,24,13,4,455,35.0
+2025,B,criciuma,427213,Lucas,lucas_vinicius_dias_costa,34,14,6,5,454,75.7
+2025,B,amazonas_fc,433682,Erick Varao,erick_de_souza_miranda,21,8,7,5,453,64.7
+2025,B,athletic_saf,924528,CHICO GERA ...,chico_gera,8,12,10,4,453,45.3
+2025,B,goias,418882,Brayann,brayann_brito_batista,91,12,9,6,452,50.2
+2025,B,paysandu,380640,Dudu Vieira,dudu_vieira,15,13,9,4,452,50.2
+2025,B,athletico_paranaense,894138,Hayen Pala ...,hayen_pala,18,6,5,5,450,90.0
+2025,B,gremio_novorizontino_saf,320196,Jordi,jordi_martins_almeida,93,35,5,5,450,90.0
+2025,B,crb,617935,Lucas Kallyel,lucas_kallyel,5,27,11,4,449,40.8
+2025,B,gremio_novorizontino_saf,369639,Caio,caio,90,15,8,5,447,55.9
+2025,B,amazonas_fc,401299,Alex Sandro,alex_sandro_de_oliveira,71,8,7,5,446,63.7
+2025,B,paysandu,836673,Borasi,benjamin_manuel_borasi,24,8,7,5,444,63.4
+2025,B,amazonas_saf,909841,JOAQUIN TO ...,joaquin_eduardo_torres,11,13,8,5,441,55.1
+2025,B,atletico_goianiense_saf,369639,Caio,caio,9,8,8,5,440,55.0
+2025,B,gremio_novorizontino_saf,292592,Lucca,lucca_borges_de_brito,9,30,15,5,440,29.3
+2025,B,vila_nova,779885,FACUNDO,facundo_labandeira_castro,96,9,7,6,439,62.7
+2025,B,vila_nova,577555,Miticov,diego_miticov_rocha,22,21,9,4,435,48.3
+2025,B,amazonas_fc,355730,Wellington,wellington,4,10,7,4,434,62.0
+2025,B,botafogo,344228,Matheus Ba ...,matheus_barbosa_teixeira,20,21,11,4,433,39.4
+2025,B,amazonas_saf,557490,Iverton,iverton_alves_passos,4,7,5,5,432,86.4
+2025,B,atletico_goianiense_saf,920789,Ezequiel Ham,ezequiel_naim_ham,8,17,10,5,431,43.1
+2025,B,criciuma,340169,Jonathan,jonathan_francisco_lemos,13,10,6,6,428,71.3
+2025,B,criciuma,456884,Joao Carlos,joao_carlos_barros_lopes,21,30,13,3,426,32.8
+2025,B,cuiaba_saf,307405,Edu,edu,9,13,9,4,421,46.8
+2025,B,athletic_saf,466378,Edson Alves,edson_alves,3,9,5,5,420,84.0
+2025,B,crb,550098,Fernando,fernando,30,14,9,4,420,46.7
+2025,B,volta_redonda,299778,Chay,chay,14,19,10,4,417,41.7
+2025,B,vila_nova,501939,Gabriel Silva,gabriel_santos_silva,19,15,9,4,415,46.1
+2025,B,athletico_paranaense,895198,Kevin Bonilla,kevin_bonilla,7,25,13,3,411,31.6
+2025,B,cuiaba_saf,711904,Jadson,jadson_alves_de_lima,77,22,16,1,411,25.7
+2025,B,ferroviaria,630422,Vitor Barreto,vitor_prado_barreto,11,16,13,3,400,30.8
+2025,B,amazonas_saf,895719,AKAPO,carlos_akapo_martinez,15,9,6,5,397,66.2
+2025,B,ferroviaria,502001,Kevin,kevin,7,34,13,3,397,30.5
+2025,B,volta_redonda,519525,Marcos Silva,marcos_vinicius_da_silva,18,11,9,3,395,43.9
+2025,B,ferroviaria,298282,Ronaldo,ronaldo_henrique_silva,21,30,18,2,393,21.8
+2025,B,america_saf,837571,ORTIZ,cristian_jonatan_ortiz,10,17,10,3,390,39.0
+2025,B,volta_redonda,430405,Lucas Toca ...,lucas_costa_da_silva,25,10,8,4,389,48.6
+2025,B,athletic_saf,438758,Gabriel,gabriel_ferreira_dias,3,8,5,4,386,77.2
+2025,B,atletico_goianiense_saf,650186,Talisson,talisson_de_almeida,22,19,10,3,386,38.6
+2025,B,amazonas_fc,716675,Diego,diego,57,9,5,4,384,76.8
+2025,B,amazonas_saf,312572,Xavier,xavier,17,14,8,4,384,48.0
+2025,B,remo,344314,Nathan,nathan_allan_de_souza,8,13,9,2,384,42.7
+2025,B,vila_nova,374375,Bruno Mendes,bruno_pereira_mendes,20,25,9,4,382,42.4
+2025,B,avai,300394,Wanderson,wanderson_santos_pereira,34,35,6,4,376,62.7
+2025,B,paysandu,755458,Pedro Henr ...,pedro_henr,15,15,5,4,375,75.0
+2025,B,athletico_paranaense,714839,Tevis Alves,tevis_alves,30,20,10,4,372,37.2
+2025,B,avai,619019,Pedrão,pedrao,35,15,5,4,370,74.0
+2025,B,remo,305723,Regis,regis_augusto_salmazzo,22,19,15,1,366,24.4
+2025,B,amazonas_saf,399776,Luan,luan_santos_silva,9,12,8,2,363,45.4
+2025,B,atletico_goianiense_saf,837089,Alejo Cruz,alejo_cruz_techera,18,10,7,3,362,51.7
+2025,B,volta_redonda,177071,Kayke,kayke,19,17,12,3,361,30.1
+2025,B,amazonas_fc,778423,Alexis Ivan,alexis_ivan_alvarino,14,4,4,4,360,90.0
+2025,B,botafogo,174755,Joao Carlos,joao_carlos_heidemann,1,38,4,4,360,90.0
+2025,B,criciuma,321780,Fellipe,fellipe,7,24,15,2,360,24.0
+2025,B,operario,170370,Vagner,vagner_da_silva,41,31,4,4,360,90.0
+2025,B,amazonas_fc,918525,ALDAIR,aldair,8,9,6,4,358,59.7
+2025,B,amazonas_fc,464569,Gabriel Do ...,gabriel_domingos_de_moura,20,8,5,5,356,71.2
+2025,B,avai,771074,JAMERSON,jamerson,16,34,9,2,356,39.6
+2025,B,ferroviaria,639615,João Ramos,joao_ramos,43,18,6,3,352,58.7
+2025,B,operario,403078,Jacy Maran ...,jacy_maranhao_oliveira,55,6,5,4,352,70.4
+2025,B,america_saf,328949,Maguinho,magno_jose_da_silva,26,6,5,4,351,70.2
+2025,B,volta_redonda,465545,Juninho,juninho,22,24,8,3,351,43.9
+2025,B,athletic_saf,540186,Lincoln,lincoln_correa_dos_santos,9,8,6,4,348,58.0
+2025,B,avai,366405,Anderson J ...,anderson_de_jesus_santos,3,16,5,3,346,69.2
+2025,B,paysandu,610193,Petterson,petterson_novaes_reis,38,14,7,3,346,49.4
+2025,B,coritiba_s_a_f,175223,Geovane,geovane_batista_de_faria,5,35,16,1,344,21.5
+2025,B,cuiaba_saf,183977,Nino Paraiba,nino_paraiba,22,18,9,4,344,38.2
+2025,B,cuiaba_saf,639428,Victor Hugo,victor_hugo,47,22,12,2,343,28.6
+2025,B,america_saf,318679,Rafael,rafael_da_silva,99,14,10,3,341,34.1
+2025,B,athletic_saf,543147,Cachoeira,cachoeira,47,14,9,3,337,37.4
+2025,B,athletico_paranaense,689146,Isaac,isaac_rodrigues_de_lima,11,11,9,3,336,37.3
+2025,B,amazonas_fc,919896,DIEGO TORRES,diego_joel_torres_garcete,19,9,5,4,334,66.8
+2025,B,goias,611583,Vitor Hugo,vitor_hugo,22,20,6,4,334,55.7
+2025,B,atletico_goianiense_saf,421138,Shaylon,shaylon_kallyson_cardozo,10,12,9,4,333,37.0
+2025,B,operario,509540,Kleiton,kleiton_pego_duarte,75,19,10,2,333,33.3
+2025,B,amazonas_fc,312572,Xavier,xavier,29,16,7,3,331,47.3
+2025,B,volta_redonda,588999,Mirandinha,mirandinha,27,10,7,4,329,47.0
+2025,B,chapecoense,629156,David,david_antunes_da_silva,19,14,5,4,328,65.6
+2025,B,atletico_goianiense_saf,504667,Ariel,ariel,17,15,9,4,327,36.3
+2025,B,amazonas_fc,321820,Fernando Neto,fernando_neto,29,8,5,3,326,65.2
+2025,B,america_saf,728103,Thauan,thauan,69,7,6,3,326,54.3
+2025,B,chapecoense,588139,Mailson,mailson_bezerra_silva,90,33,14,2,321,22.9
+2025,B,athletic_saf,691009,MIGUEL,miguel,20,9,5,5,318,63.6
+2025,B,america_saf,628314,Jhosefer,jhosefer_raphael_januario,21,29,12,2,315,26.2
+2025,B,cuiaba_saf,621114,Lucas Cardoso,lucas_cardoso_moreira,99,13,8,4,315,39.4
+2025,B,volta_redonda,307018,Hyuri,hyuri,29,11,6,4,310,51.7
+2025,B,gremio_novorizontino_saf,435371,Leo,leonardo_natel_vieira,38,16,6,5,302,50.3
+2025,B,goias,691463,Jean,jean,21,14,10,2,301,30.1
+2025,B,amazonas_fc,567402,Rodrigo Va ...,rodrigo_santos_varanda,30,4,4,4,300,75.0
+2025,B,gremio_novorizontino_saf,331532,Rai,rai_dos_reis_ramos,40,14,6,3,298,49.7
+2025,B,goias,695324,Guilherme  ...,guilherme,55,25,9,2,293,32.6
+2025,B,crb,630496,Darlisson,darlisson,34,22,5,3,289,57.8
+2025,B,crb,837033,Facundo Ba ...,facundo_barcelo_viera,32,14,6,3,288,48.0
+2025,B,crb,633802,Daniel Alves,daniel_alves_de_lima,99,10,7,2,286,40.9
+2025,B,crb,318493,Giovanni P ...,giovanni_piccolomo,11,21,12,0,284,23.7
+2025,B,vila_nova,534345,Thalys,thalys,2,16,5,3,284,56.8
+2025,B,crb,544247,Luis,luis,20,22,11,1,283,25.7
+2025,B,operario,307569,Nilson Junior,nilson_junior,36,22,4,3,283,70.8
+2025,B,paysandu,462686,Ramon Vini ...,ramon_vinicius_dos_santos,43,12,7,2,283,40.4
+2025,B,athletico_paranaense,816895,Tobias,tobias_pereira_figueiredo,4,14,4,3,277,69.2
+2025,B,vila_nova,633725,Diego Torres,diego_fabian_torres,10,8,5,3,276,55.2
+2025,B,amazonas_saf,306605,PH,philippe_guimaraes,55,13,4,3,272,68.0
+2025,B,amazonas_fc,394765,Joao Lopes,joao_vitor_lopes_da_silva,1,8,3,3,270,90.0
+2025,B,america_saf,392189,Dalberson,dalberson,31,8,3,3,270,90.0
+2025,B,america_saf,464516,Cassio,cassio,27,18,3,3,270,90.0
+2025,B,vila_nova,296645,Mauricio K ...,mauricio_kozlinski,30,24,3,3,270,90.0
+2025,B,avai,556082,Gaspar,gaspar,20,25,15,0,268,17.9
+2025,B,amazonas_saf,621864,Rafael Mon ...,rafael_monteiro_reis,35,8,4,3,265,66.2
+2025,B,gremio_novorizontino_saf,714444,Ruiz,oscar_ramon_ruiz_roa,22,26,14,1,265,18.9
+2025,B,operario,520881,Pedro Lucas,pedro_lucas,70,14,8,3,264,33.0
+2025,B,volta_redonda,417008,Ynaia,ynaia_kaire_alves_cardoso,30,9,6,2,262,43.7
+2025,B,volta_redonda,402139,Henrique,henrique_sanchotene_silva,21,26,7,2,257,36.7
+2025,B,atletico_goianiense_saf,384905,Radsley,radsley,7,9,6,2,256,42.7
+2025,B,amazonas_fc,427176,Matheus Blade,matheus_blade,4,5,3,3,255,85.0
+2025,B,volta_redonda,621747,RAMIRES,ramires,4,6,3,2,255,85.0
+2025,B,atletico_goianiense_saf,465048,Leo,leonardo_naldi_de_matos,17,7,4,2,253,63.2
+2025,B,america_saf,779885,FACUNDO,facundo_labandeira_castro,96,13,5,3,249,49.8
+2025,B,remo,778423,Alexis Ivan,alexis_ivan_alvarino,14,10,4,3,245,61.2
+2025,B,operario,400906,Jefferson  ...,jefferson,6,20,8,2,244,30.5
+2025,B,amazonas_fc,366358,Ze Carlos,jose_carlos_miranda,1,10,3,2,241,80.3
+2025,B,criciuma,383352,Neto,neto,9,8,5,3,241,48.2
+2025,B,paysandu,530666,Denilson,denilson,98,11,7,3,240,34.3
+2025,B,ferroviaria,521903,Wesley Pomba,wesley_pomba,11,16,7,2,239,34.1
+2025,B,america_saf,615494,Yago,yago_santos_de_andrade,33,27,10,2,238,23.8
+2025,B,crb,522984,David,david,11,6,4,3,238,59.5
+2025,B,athletic_saf,616199,KAUAN,kauan,28,12,7,2,236,33.7
+2025,B,america_saf,658375,SAMUEL ALVES,samuel_alves_barroso,71,13,5,2,235,47.0
+2025,B,paysandu,577475,Eliel,eliel,22,11,6,1,226,37.7
+2025,B,amazonas_saf,317569,Rafael Vit ...,rafael_vit,4,13,5,2,221,44.2
+2025,B,chapecoense,463027,Dentinho,lucas_baptista_felix,97,16,8,2,221,27.6
+2025,B,paysandu,652945,Carlos Edu ...,carlos_edu,38,10,6,2,217,36.2
+2025,B,goias,695297,Martin Ben ...,martin_nicolas_benitez,10,13,7,1,213,30.4
+2025,B,amazonas_fc,516783,Lucas,lucas,18,4,4,2,212,53.0
+2025,B,amazonas_fc,444253,Dener,dener_santos_silva,26,7,3,2,210,70.0
+2025,B,athletic_saf,587274,Luiz Filipe,luiz_filipe,23,6,4,2,208,52.0
+2025,B,goias,837209,Esli Garcia,esli_garcia,15,20,10,0,208,20.8
+2025,B,amazonas_fc,716563,Nildo,nildo,18,15,5,1,207,41.4
+2025,B,athletic_saf,438404,Matheus,matheus,20,25,9,1,206,22.9
+2025,B,coritiba_s_a_f,621745,Ruan Assis,ruan_lucas_de_assis,97,13,6,1,204,34.0
+2025,B,amazonas_fc,918557,RIZA,riza_durmisi,2,7,3,2,203,67.7
+2025,B,amazonas_saf,307680,Wiliam Barbio,wiliam_silva_gomes_barbio,20,7,4,2,203,50.8
+2025,B,volta_redonda,556606,Daniel Cabral,daniel_cabral_de_oliveira,29,10,5,1,203,40.6
+2025,B,athletic_saf,644044,GUSTAVO,gustavo,20,15,5,2,199,39.8
+2025,B,atletico_goianiense_saf,633802,Daniel Alves,daniel_alves_de_lima,9,6,4,2,198,49.5
+2025,B,volta_redonda,293419,Dener,dener_gomes_clemente,23,12,3,2,198,66.0
+2025,B,paysandu,318493,Giovanni P ...,giovanni_piccolomo,10,8,6,2,197,32.8
+2025,B,volta_redonda,344790,Heliardo,heliardo_vieira_da_silva,19,9,3,3,197,65.7
+2025,B,chapecoense,295548,Bressan,bressan,14,13,5,2,196,39.2
+2025,B,operario,671026,Brenno,brenno_pereira_silva,21,11,6,1,195,32.5
+2025,B,vila_nova,619065,EMERSON,emerson_lima_freitas,7,4,4,2,194,48.5
+2025,B,america_saf,396450,Aloisio,aloisio_de_souza_genezio,20,12,6,2,193,32.2
+2025,B,atletico_goianiense_saf,544039,30 - Danie ...,daniel_sergio_martins,21,10,3,2,192,64.0
+2025,B,amazonas_fc,389034,Gabriel No ...,gabriel_novaes_fernandes,9,5,3,2,183,61.0
+2025,B,amazonas_fc,687142,Victor Hugo,victor_hugo,27,9,4,1,183,45.8
+2025,B,goias,650675,Anthony,anthony,4,23,6,2,183,30.5
+2025,B,crb,440615,Rafael Bar ...,rafael_barbosa_silva,18,22,8,1,182,22.8
+2025,B,ferroviaria,504612,Jose Hugo,jose_hugo,17,15,8,1,182,22.8
+2025,B,volta_redonda,540826,10 - Léo C ...,10_leo_c,25,14,8,1,182,22.8
+2025,B,remo,591190,Edu,eduardo_de_queiroz_melo,39,7,6,2,181,30.2
+2025,B,amazonas_fc,366392,Leonardo,leonardo_henriques_coelho,3,2,2,2,180,90.0
+2025,B,amazonas_saf,394765,Joao Lopes,joao_vitor_lopes_da_silva,1,10,2,2,180,90.0
+2025,B,avai,313767,Judson,judson_silva_tavares,93,3,2,2,180,90.0
+2025,B,avai,341930,Otavio,otavio,21,11,2,2,180,90.0
+2025,B,crb,442225,Vitor,vitor_caetano_ferreira,1,37,2,2,180,90.0
+2025,B,crb,651849,Willian Jesus,willian_jesus_dos_santos,6,8,2,2,180,90.0
+2025,B,ferroviaria,669135,Erik,erik,83,13,2,2,180,90.0
+2025,B,goias,526646,Douglas,douglas_da_silva_teixeira,6,3,2,2,180,90.0
+2025,B,vila_nova,440420,Victor,victor_hugo_zorzenoni,1,17,2,2,180,90.0
+2025,B,volta_redonda,440937,Felipe,felipe_marco_avelino,1,22,2,2,180,90.0
+2025,B,operario,588145,José Vitor,jose_vitor,31,11,5,2,178,35.6
+2025,B,coritiba_s_a_f,438556,Everaldo,everaldo,37,26,11,0,176,16.0
+2025,B,criciuma,671907,Thales,thales,39,11,7,2,174,24.9
+2025,B,vila_nova,608822,Enzo,enzo_bizzotto_costa,18,10,4,2,173,43.2
+2025,B,goias,504612,Jose Hugo,jose_hugo,71,8,6,1,172,28.7
+2025,B,remo,926296,Cristian T ...,cristian_t,17,9,3,2,172,57.3
+2025,B,atletico_goianiense_saf,517451,99 - Maran ...,99_maran,18,9,5,1,170,34.0
+2025,B,remo,678667,Carlos Santos,carlos_santos,13,9,6,1,166,27.7
+2025,B,amazonas_fc,437739,Teixeira,teixeira,35,4,3,2,162,54.0
+2025,B,botafogo,374851,Jhony Douglas,jhony_douglas_santiago,23,10,3,2,162,54.0
+2025,B,atletico_goianiense_saf,533689,Heron Crespo,heron_crespo_da_silva,15,20,4,2,156,39.0
+2025,B,paysandu,894172,PEDRO DELV ...,pedro_delv,17,6,4,2,155,38.8
+2025,B,america_saf,609600,David José,david_jose_lopes_do_couto,25,12,6,1,154,25.7
+2025,B,criciuma,620577,Léo Mana,leonardo_mana_hernandes,15,15,3,1,154,51.3
+2025,B,paysandu,657114,Lucca,lucca,34,14,4,2,151,37.8
+2025,B,criciuma,389034,Gabriel No ...,gabriel_novaes_fernandes,11,5,4,2,150,37.5
+2025,B,chapecoense,350899,Getulio,getulio,11,9,5,2,148,29.6
+2025,B,operario,686715,KAUA,kaua_henrique_gomes_paiao,29,9,3,1,148,49.3
+2025,B,paysandu,387082,Gustavo Ni ...,gustavo_amorim_nicola,36,10,2,1,146,73.0
+2025,B,chapecoense,465413,Eduardo Pe ...,eduardo_luiz_person,27,11,4,2,145,36.2
+2025,B,vila_nova,382612,Igor Inoce ...,igor_inoce,6,16,4,1,143,35.8
+2025,B,avai,658542,Lucas Eduardo,lucas_eduardo,58,10,5,1,142,28.4
+2025,B,goias,730802,Luquinhas,luquinhas,25,25,3,1,142,47.3
+2025,B,america_saf,612799,Rafa,rafael_raul_barcelos,14,27,3,1,139,46.3
+2025,B,botafogo,463153,Pablo Thomaz,pablo_thomaz,17,13,5,1,139,27.8
+2025,B,chapecoense,442668,Jhonnathan,jhonnathan,32,12,3,1,139,46.3
+2025,B,criciuma,337172,Sassa,luiz_ricardo_alves,99,30,8,0,139,17.4
+2025,B,operario,548985,Leo Silva,leonardo_de_almeida_silva,22,22,6,1,138,23.0
+2025,B,america_saf,184155,Heber,heber_araujo_dos_santos,11,7,5,1,136,27.2
+2025,B,athletico_paranaense,658761,Diogo Riqu ...,diogo_riqu,63,5,3,1,136,45.3
+2025,B,coritiba_s_a_f,450033,Junior Bru ...,junior_bru,9,6,6,0,135,22.5
+2025,B,coritiba_s_a_f,356563,Rodrigo Ro ...,rodrigo_rodrigues_silva,99,5,4,2,132,33.0
+2025,B,cuiaba_saf,626986,RUAN,ruan_de_oliveira_ferreira,33,11,4,1,132,33.0
+2025,B,vila_nova,460566,Nathan,nathan_melo_silva,23,17,4,1,132,33.0
+2025,B,athletic_saf,718391,GABRIEL QU ...,gabriel_qu,15,11,5,1,130,26.0
+2025,B,criciuma,650186,Talisson,talisson_de_almeida,33,4,2,2,124,62.0
+2025,B,amazonas_fc,459114,Eliton,eliton,20,7,4,1,123,30.8
+2025,B,avai,546184,Mendes,gabriel_mendes_alves,90,15,6,1,123,20.5
+2025,B,avai,712568,Josmar,josmar_silva_miranda,70,4,3,1,121,40.3
+2025,B,paysandu,377355,Edinho,edinho,18,7,4,1,120,30.0
+2025,B,vila_nova,522740,Paulinho,paulinho,15,4,3,1,120,40.0
+2025,B,atletico_goianiense_saf,453857,Castro,luiz_felipe_castro_neto,15,11,4,1,116,29.0
+2025,B,avai,620337,LEO,leonardo_reis_fernandes,32,20,10,0,115,11.5
+2025,B,avai,422333,Quaresma,mateus_quaresma_correia,66,5,3,1,114,38.0
+2025,B,ferroviaria,707096,FAU,fabio_soares_dos_santos,80,10,3,1,114,38.0
+2025,B,cuiaba_saf,711281,NATHAN,nathan_cruz_da_silva_rosa,66,17,7,0,113,16.1
+2025,B,ferroviaria,926053,Hernâni,hernani,27,15,5,0,113,22.6
+2025,B,amazonas_fc,392058,Cametá,tiago_coelho_andrade,28,2,2,1,111,55.5
+2025,B,cuiaba_saf,783335,Luis,luis,91,10,3,1,111,37.0
+2025,B,operario,383244,Ronald,ronald,33,15,6,0,111,18.5
+2025,B,remo,427774,Emaxwell,emaxwell_souza_de_lima,77,10,5,0,109,21.8
+2025,B,volta_redonda,359865,Luciano,luciano_francisco_paulino,7,6,4,1,109,27.2
+2025,B,remo,315101,Dodo,dodo,31,21,7,1,104,14.9
+2025,B,remo,443489,Leonardo,leonardo_lang_lopes,30,7,2,1,104,52.0
+2025,B,criciuma,544845,Hudson,hudson,8,7,4,0,103,25.8
+2025,B,america_saf,522984,David,david,70,11,6,0,102,17.0
+2025,B,cuiaba_saf,744246,Gabriel,gabriel,21,8,6,0,102,17.0
+2025,B,criciuma,891213,Samuel,samuel,34,16,6,0,101,16.8
+2025,B,operario,655825,RYAN,ryan_santos_de_paulo,14,7,2,1,101,50.5
+2025,B,ferroviaria,525042,Vitor Mendes,vitor_mendes_alves,4,10,2,1,99,49.5
+2025,B,remo,694544,Freitas,freitas,35,14,3,0,99,33.0
+2025,B,operario,379565,Jhemerson,jhemerson,17,16,5,0,98,19.6
+2025,B,amazonas_fc,307680,Wiliam Barbio,wiliam_silva_gomes_barbio,19,16,5,0,97,19.4
+2025,B,amazonas_fc,517639,Vitor Alberto,vitor_alberto,21,10,3,0,96,32.0
+2025,B,america_saf,587060,Breno,breno,99,4,2,1,93,46.5
+2025,B,amazonas_fc,386023,Marcone,marcone,26,7,1,1,90,90.0
+2025,B,amazonas_saf,896802,NICOLAS,nicolas_hugo_linares,27,6,1,1,90,90.0
+2025,B,amazonas_saf,918557,RIZA,riza_durmisi,94,1,1,1,90,90.0
+2025,B,athletic_saf,324829,Glauco,glauco,25,27,1,1,90,90.0
+2025,B,atletico_goianiense_saf,311316,Anderson P ...,anderson_silva_da_paixao,12,8,1,1,90,90.0
+2025,B,atletico_goianiense_saf,518943,Leonardo,leonardo,1,9,1,1,90,90.0
+2025,B,atletico_goianiense_saf,666350,Lucas,lucas,12,4,1,1,90,90.0
+2025,B,coritiba_s_a_f,173551,Rodrigo Mo ...,rodrigo_mo,4,13,1,1,90,90.0
+2025,B,goias,178365,Thiago Rod ...,thiago_rod,1,37,1,1,90,90.0
+2025,B,operario,308871,Charles,charles,3,7,1,1,90,90.0
+2025,B,operario,376622,Talles,talles,12,5,1,1,90,90.0
+2025,B,operario,622943,BERNARDO,bernardo,4,1,1,1,90,90.0
+2025,B,avai,563757,Guilherme  ...,guilherme_santos_da_silva,30,12,5,0,86,17.2
+2025,B,botafogo,647656,Willian,willian,17,10,5,0,85,17.0
+2025,B,vila_nova,644527,LUAN,luan,20,6,2,1,84,42.0
+2025,B,crb,366405,Anderson S ...,anderson_de_jesus_santos,3,17,1,1,77,77.0
+2025,B,athletic_saf,404816,Andrey,andrey,18,13,5,0,76,15.2
+2025,B,atletico_goianiense_saf,727646,Rai,rai,21,12,6,0,76,12.7
+2025,B,operario,696216,JOAO,joao,31,3,1,1,75,75.0
+2025,B,volta_redonda,927375,LUCAS CHAVEZ,lucas_chavez,20,7,3,1,75,25.0
+2025,B,crb,667358,RODRIGO,rodrigo,33,11,4,0,74,18.5
+2025,B,amazonas_saf,903982,SANTIAGO,santiago,13,1,1,1,71,71.0
+2025,B,athletic_saf,671306,CAICK,caick_jose_ferreira_ramos,15,9,4,0,71,17.8
+2025,B,remo,556606,Daniel Cabral,daniel_cabral_de_oliveira,6,10,4,0,71,17.8
+2025,B,volta_redonda,501947,Adsson,adsson,26,8,2,1,71,35.5
+2025,B,america_saf,647713,Guilherme,guilherme,50,4,1,1,70,70.0
+2025,B,ferroviaria,605794,Igor Bolt,igor_luiz_costa_lemos,70,12,4,0,66,16.5
+2025,B,volta_redonda,593480,Matheus Costa,matheus_costa_martins,27,7,4,0,66,16.5
+2025,B,coritiba_s_a_f,621412,Felipe Gui ...,felipe_gui,22,21,3,0,64,21.3
+2025,B,paysandu,375834,Joao Marcos,joao_marcos,22,10,4,0,63,15.8
+2025,B,cuiaba_saf,305393,Arthur Rez ...,arthur_rodrigues_rezende,80,4,3,0,62,20.7
+2025,B,coritiba_s_a_f,556855,Geovane Me ...,geovane_santana_meurer,38,6,1,1,61,61.0
+2025,B,athletico_paranaense,321829,Madson,madson,22,16,1,0,58,58.0
+2025,B,amazonas_saf,386023,Marcone,marcone,26,13,4,0,56,14.0
+2025,B,crb,606086,BRALL,david_medeiros_dos_santos,33,6,2,0,55,27.5
+2025,B,chapecoense,421457,Marlon,marlon_silva_lacorte,8,11,3,0,54,18.0
+2025,B,volta_redonda,526949,Igor Maduro,igor_maduro_de_oliveira,18,8,4,0,54,13.5
+2025,B,gremio_novorizontino_saf,335513,Renato,renato_palm_da_silveira,33,4,3,1,53,17.7
+2025,B,atletico_goianiense_saf,923835,Luciano Co ...,luciano_co,20,5,3,0,52,17.3
+2025,B,avai,153924,Vagner Love,vagner_silva_de_souza,9,5,4,0,52,13.0
+2025,B,amazonas_fc,552845,Raimar,raimar_rodrigues_lopes,12,7,2,0,51,25.5
+2025,B,america_saf,350158,Dalbert,dalbert,36,6,3,1,51,17.0
+2025,B,america_saf,581782,Renato,renato,78,7,4,0,50,12.5
+2025,B,chapecoense,600164,Rubens,rubens,70,19,5,0,49,9.8
+2025,B,america_saf,695297,Martin Ben ...,martin_nicolas_benitez,10,5,2,0,48,24.0
+2025,B,goias,837033,Facundo Ba ...,facundo_barcelo_viera,31,18,7,0,46,6.6
+2025,B,amazonas_saf,517639,Vitor Alberto,vitor_alberto,8,5,3,0,45,15.0
+2025,B,ferroviaria,311813,Quirino,diego_de_souza_quirino,19,13,4,0,43,10.8
+2025,B,america_saf,531707,Pato,guilherme_nunes_rodrigues,19,5,2,0,42,21.0
+2025,B,operario,548842,Matheus,matheus,19,5,3,0,42,14.0
+2025,B,goias,668800,ALAN STENCE,alan_matheus_stence,18,5,2,0,41,20.5
+2025,B,operario,308283,Jean Lucas,jean_lucas_figueiredo,11,4,2,0,40,20.0
+2025,B,athletic_saf,586543,Nathan,nathan_mendes_da_silva,17,3,2,0,39,19.5
+2025,B,paysandu,711353,Iarley,iarley_brito_goncalves,15,2,1,0,39,39.0
+2025,B,amazonas_saf,922974,HANNER,hanner_rojas_santos,13,5,2,0,38,19.0
+2025,B,avai,544673,Del Piage,del_piage,5,2,2,1,38,19.0
+2025,B,crb,540824,Gazao,gazao,31,12,3,0,38,12.7
+2025,B,amazonas_fc,917285,VAGNER DIAS,vagner_dias,20,5,2,0,37,18.5
+2025,B,paysandu,894178,JOSEPH ESP ...,joseph_esp,6,4,2,0,37,18.5
+2025,B,chapecoense,525768,Márcio Kaí ...,marcio_kai,15,3,2,0,36,18.0
+2025,B,remo,169945,Ytalo,ytalo,19,10,3,0,36,12.0
+2025,B,cuiaba_saf,926295,Felipe,felipe_pasadore,16,8,4,0,35,8.8
+2025,B,operario,730724,DUDU,eduardo_franzon_mosconi,97,2,1,0,35,35.0
+2025,B,volta_redonda,646704,Caetano Dias,caetano_dias_dotto_breves,13,2,2,0,34,17.0
+2025,B,america_saf,539206,Gustavo,gustavo,30,11,2,0,33,16.5
+2025,B,avai,706054,RIGLEY,rigley,37,12,3,0,32,10.7
+2025,B,chapecoense,520331,Mancha,gianluca_piola_minozzo,6,16,4,0,32,8.0
+2025,B,criciuma,690741,Adriano,adriano,73,5,1,0,32,32.0
+2025,B,remo,424347,Madison,madison_araujo_costa,98,11,2,0,32,16.0
+2025,B,amazonas_saf,895842,ZABALA,zabala,8,4,1,0,31,31.0
+2025,B,avai,762635,Juninho,juninho,9,11,5,0,31,6.2
+2025,B,operario,321574,Cittadini,leonardo_cittadini,20,4,1,1,31,31.0
+2025,B,paysandu,785397,Matheus Souza,matheus_cardoso_de_souza,20,2,1,0,31,31.0
+2025,B,goias,736805,MURILO,murilo,29,3,1,0,30,30.0
+2025,B,chapecoense,307432,Thomas,thomas,30,12,3,0,29,9.7
+2025,B,cuiaba_saf,321636,Andre Luis,andre_luis,97,3,1,0,29,29.0
+2025,B,remo,344952,Rafael Castro,rafael_castro,38,9,2,0,29,14.5
+2025,B,amazonas_saf,444253,Dener,dener_santos_silva,20,4,2,0,28,14.0
+2025,B,ferroviaria,320834,Cassinho,cassinho,20,8,2,0,28,14.0
+2025,B,cuiaba_saf,658542,Lucas Eduardo,lucas_eduardo,5,7,1,0,26,26.0
+2025,B,remo,346401,Ygor Vinhas,ygor_vinhas_oliveira_lima,94,31,1,0,26,26.0
+2025,B,volta_redonda,753103,João Bom,joao_bom,19,2,1,0,26,26.0
+2025,B,amazonas_fc,393315,Diogo,diogo_carlos_santos,11,1,1,0,25,25.0
+2025,B,volta_redonda,666056,Lyncon,lyncon_correa_goncalves,14,2,1,0,25,25.0
+2025,B,volta_redonda,925758,LAUTARO BE ...,lautaro_jose_belleggia,8,2,1,0,25,25.0
+2025,B,america_saf,837336,PEDRO BARC ...,pedro_barc,4,13,1,0,24,24.0
+2025,B,cuiaba_saf,682292,Eduardo,eduardo,15,10,2,0,24,12.0
+2025,B,goias,733856,Danilo,danilo_cunha_da_silva,66,17,2,0,24,12.0
+2025,B,gremio_novorizontino_saf,648911,Pedro Balo ...,pedro_balo,18,5,1,0,24,24.0
+2025,B,amazonas_fc,903982,SANTIAGO,santiago,30,9,2,0,23,11.5
+2025,B,criciuma,539977,Gabriel Ba ...,gabriel_de_sousa_barros,20,4,1,0,23,23.0
+2025,B,criciuma,351526,Georgemy,georgemy_goncalves,95,12,1,0,21,21.0
+2025,B,amazonas_saf,918525,ALDAIR,aldair,15,5,2,0,20,10.0
+2025,B,goias,637237,Fábio,fabio,2,9,2,0,20,10.0
+2025,B,operario,734121,Gabriel,gabriel_cardozo_ferreira,35,1,1,0,20,20.0
+2025,B,vila_nova,723226,Caixeta,caixeta,21,3,1,0,19,19.0
+2025,B,vila_nova,736501,Breno,breno_da_costa_pereira,18,2,1,0,19,19.0
+2025,B,botafogo,628944,Pedro Tort ...,pedro_henrique_tortello,20,7,2,0,18,9.0
+2025,B,chapecoense,318165,Romulo,romulo,28,7,2,0,18,9.0
+2025,B,amazonas_saf,373689,Robertinho,robertinho,77,9,1,0,17,17.0
+2025,B,crb,308754,Luiz Fernando,luiz_fernando,30,14,2,0,16,8.0
+2025,B,crb,460566,Nathan,nathan_melo_silva,70,4,1,0,16,16.0
+2025,B,crb,614370,Dioran,dioran,27,1,1,0,16,16.0
+2025,B,goias,396450,Aloisio,aloisio_de_souza_genezio,16,7,1,0,16,16.0
+2025,B,america_saf,693546,Kauan Cris ...,kauan_cris,47,3,2,0,15,7.5
+2025,B,remo,633616,PH,darilson_gama_amador,91,4,2,0,15,7.5
+2025,B,remo,679802,Gabryel Ma ...,gabryel_da_silva_martins,17,3,1,0,15,15.0
+2025,B,vila_nova,746341,Lucas,lucas_henrique_soares,18,1,1,0,15,15.0
+2025,B,volta_redonda,515816,Du Fernandes,du_fernandes,23,3,1,0,15,15.0
+2025,B,amazonas_fc,306605,PH,philippe_guimaraes,4,5,1,0,14,14.0
+2025,B,atletico_goianiense_saf,755466,Klebert,klebert,13,1,1,0,14,14.0
+2025,B,goias,551111,Breno,breno_herculano_almeida,18,1,1,0,14,14.0
+2025,B,avai,384126,Weverton,weverton_almeida_silva,4,12,1,0,13,13.0
+2025,B,goias,633917,VITOR HUGO,vitor_hugo,22,5,1,0,12,12.0
+2025,B,atletico_goianiense_saf,655877,Gustavo Da ...,gustavo_da,15,5,1,0,11,11.0
+2025,B,vila_nova,798821,Raimundo Y ...,raimundo_y,23,4,1,0,11,11.0
+2025,B,america_saf,730199,Jhonnatan,jhonnatan_da_silva,44,3,1,0,9,9.0
+2025,B,volta_redonda,693842,KAUA,kaua_oliveira_souza,18,2,1,0,9,9.0
+2025,B,operario,711594,Filipe Cla ...,filipe_cla,77,4,1,0,8,8.0
+2025,B,amazonas_fc,892555,WENDEL,wendel,20,3,1,0,7,7.0
+2025,B,cuiaba_saf,895218,Yamil Asad,yamil_rodrigo_asad,32,2,1,0,7,7.0
+2025,B,criciuma,451549,Roca,heitor_roca_santo,36,6,1,0,6,6.0
+2025,B,paysandu,786580,Kaua Hinkel,kaua_hinkel_santos_vieira,38,6,2,0,6,3.0
+2025,B,botafogo,363149,Douglas Ba ...,douglas_ba,20,1,1,0,5,5.0
+2025,B,volta_redonda,696894,Kerlon,kerlon_conceicao_reis,17,2,1,0,5,5.0
+2025,B,crb,793846,WALLACE,wallace,82,5,1,0,4,4.0
+2025,B,criciuma,659022,Fabricio,fabricio_maceda_lentz,32,4,1,0,4,4.0
+2025,B,athletic_saf,647804,Carlito,carlito,14,2,1,0,3,3.0
+2025,B,criciuma,582600,Cauê,caue_vinicius_dos_santos,27,1,1,0,3,3.0
+2025,B,chapecoense,611457,Gustavo Ta ...,gustavo_talles_da_silva,20,5,1,0,2,2.0
+2025,B,paysandu,846219,SETTIMIO A ...,settimio_arthur_monteiro,32,3,1,0,2,2.0
+2025,B,amazonas_fc,437831,ERIVAN,erivan,35,2,0,0,0,
+2025,B,amazonas_fc,557490,Iverton,iverton_alves_passos,57,7,0,0,0,
+2025,B,amazonas_fc,559140,Pará,luis_felipe_rebelo_costa,26,3,0,0,0,
+2025,B,amazonas_saf,437739,Teixeira,teixeira,15,4,0,0,0,
+2025,B,amazonas_saf,464872,Pedro,pedro,33,5,0,0,0,
+2025,B,amazonas_saf,922972,JHAN CARLOS,jhan_carlos,29,2,0,0,0,
+2025,B,america_saf,427979,Joriwinnyson,joriwinnyson,12,20,0,0,0,
+2025,B,america_saf,629548,Baldissera,arthur_yan_baldissera,52,1,0,0,0,
+2025,B,america_saf,643996,Adyson Soares,adyson_soares,11,1,0,0,0,
+2025,B,america_saf,668363,Henrique B ...,henrique_braga_franca,51,1,0,0,0,
+2025,B,america_saf,671548,THALLYSON,thallyson,55,4,0,0,0,
+2025,B,america_saf,727809,Gustavo He ...,gustavo_henrique_correa,48,1,0,0,0,
+2025,B,athletic_saf,528036,João Adriano,joao_adriano,16,2,0,0,0,
+2025,B,athletic_saf,537346,Betão,betao,30,1,0,0,0,
+2025,B,athletic_saf,626968,Dourado,dourado,21,8,0,0,0,
+2025,B,athletic_saf,630721,Eduardo Fr ...,eduardo_freire_de_andrade,26,18,0,0,0,
+2025,B,athletic_saf,689240,Gabriel,gabriel,14,1,0,0,0,
+2025,B,athletic_saf,702829,RAFAEL C,rafael_da_conceicao,18,3,0,0,0,
+2025,B,athletic_saf,711232,Eduardo Fi ...,eduardo_fi,17,1,0,0,0,
+2025,B,athletic_saf,719270,SAMUELZINHO,samuel_ferreira_godinho,13,1,0,0,0,
+2025,B,athletic_saf,729768,Oliveira,oliveira,57,1,0,0,0,
+2025,B,athletic_saf,749762,FELIPE VIEIRA,felipe_vieira_da_silva,36,6,0,0,0,
+2025,B,athletic_saf,750681,Marlon,marlon,22,1,0,0,0,
+2025,B,athletic_saf,800624,VICTOR,victor,14,3,0,0,0,
+2025,B,athletico_paranaense,405061,Dudu,dudu,2,2,0,0,0,
+2025,B,athletico_paranaense,552406,Renan Viana,renan_viana,50,1,0,0,0,
+2025,B,athletico_paranaense,609731,Matheus So ...,matheus_soares_rocha,42,2,0,0,0,
+2025,B,athletico_paranaense,713451,Peralta,peralta,15,8,0,0,0,
+2025,B,athletico_paranaense,717810,Carlos Edu ...,carlos_edu,80,4,0,0,0,
+2025,B,athletico_paranaense,721817,Kayke,kayke,77,1,0,0,0,
+2025,B,athletico_paranaense,758598,Vitinho,vitinho,26,2,0,0,0,
+2025,B,athletico_paranaense,788343,Marcão,marcos_andre_paulino_maia,46,1,0,0,0,
+2025,B,athletico_paranaense,928902,Elan Ochoa,elan_joseph_ricardo_ochoa,77,6,0,0,0,
+2025,B,atletico_goianiense_saf,315637,Marcinho,marcinho,13,1,0,0,0,
+2025,B,atletico_goianiense_saf,621747,RAMIRES,ramires,14,2,0,0,0,
+2025,B,atletico_goianiense_saf,630655,Renato,renato_santos_da_cruz,13,1,0,0,0,
+2025,B,atletico_goianiense_saf,633271,Angelo Araos,angelo_araos,18,10,0,0,0,
+2025,B,atletico_goianiense_saf,716590,Luiz Guilh ...,luiz_guilh,13,2,0,0,0,
+2025,B,atletico_goianiense_saf,721207,Gustavo Dias,gustavo_dias,1,1,0,0,0,
+2025,B,atletico_goianiense_saf,726198,walace,walace,14,2,0,0,0,
+2025,B,atletico_goianiense_saf,895304,Franciso B ...,francisco_barrios_azzini,16,5,0,0,0,
+2025,B,avai,620962,Joaquim,joaquim_paolazzi_ananias,71,3,0,0,0,
+2025,B,avai,644619,João Pedro,joao_pedro,46,2,0,0,0,
+2025,B,avai,693896,Wanderson,wanderson_barros_de_sousa,6,1,0,0,0,
+2025,B,avai,717182,Tedesco,nicolas_tedesco_borba,17,7,0,0,0,
+2025,B,avai,741865,Adriel,adriel_lopes_da_silva,35,2,0,0,0,
+2025,B,avai,756863,Caua,caua_luis_teixeira_campos,45,1,0,0,0,
+2025,B,avai,763958,Kevin,kevin_da_silva_soares,47,1,0,0,0,
+2025,B,avai,771008,Carrielo,henrique_carrielo_gomes,25,1,0,0,0,
+2025,B,avai,777970,Devid Santos,devid_santos,76,2,0,0,0,
+2025,B,avai,894154,Burbano,burbano,40,1,0,0,0,
+2025,B,botafogo,459533,Matheus de ...,matheus_de_mello_costa,14,3,0,0,0,
+2025,B,botafogo,647284,Brenno Faro,brenno_faro_klippel,24,4,0,0,0,
+2025,B,botafogo,655869,Caique,caique_trindade_santos,19,1,0,0,0,
+2025,B,botafogo,676523,Badaró,badaro,14,1,0,0,0,
+2025,B,botafogo,691201,Pedro Henr ...,pedro_henr,17,1,0,0,0,
+2025,B,botafogo,714856,Yuri Felipe,yuri_felipe,21,2,0,0,0,
+2025,B,botafogo,740079,Rafinha,rafinha,23,9,0,0,0,
+2025,B,botafogo,788854,Iago Morais,iago_morais_da_silva,21,1,0,0,0,
+2025,B,botafogo,795209,Cauã,caua_lucas_ferreira,23,4,0,0,0,
+2025,B,chapecoense,345033,Andre,andre,31,5,0,0,0,
+2025,B,chapecoense,533292,Felipe,felipe_vieira_augusto,76,21,0,0,0,
+2025,B,chapecoense,599009,KAUAN,kauan_faria_gomes,21,11,0,0,0,
+2025,B,chapecoense,638135,GABRIEL,gabriel_werner,29,1,0,0,0,
+2025,B,chapecoense,733383,ALMER,almer,40,1,0,0,0,
+2025,B,coritiba_s_a_f,184460,Gabriel Leite,gabriel_christoni_leite,87,20,0,0,0,
+2025,B,coritiba_s_a_f,565654,Jean Gabriel,jean_gabriel_silveira,17,1,0,0,0,
+2025,B,coritiba_s_a_f,610699,Benassi,benassi,67,21,0,0,0,
+2025,B,coritiba_s_a_f,722883,Lucas Taverna,lucas_taverna,86,2,0,0,0,
+2025,B,coritiba_s_a_f,894885,Matias Fra ...,matias_fracchia_moreira,2,5,0,0,0,
+2025,B,crb,522702,Vitinho,victor_alexandre_de_souza,77,1,0,0,0,
+2025,B,crb,621414,Fabio Henr ...,fabio_henr,23,4,0,0,0,
+2025,B,crb,641082,Baranhas,baranhas,30,1,0,0,0,
+2025,B,crb,685012,Pablo,pablo_andrade_neves,23,1,0,0,0,
+2025,B,crb,693137,MATEUS,mateus_pureza_santos,6,4,0,0,0,
+2025,B,crb,693895,RUY,ruy,31,1,0,0,0,
+2025,B,crb,699064,MAYKINHO,maykinho,60,2,0,0,0,
+2025,B,criciuma,315254,Axel,axel_bernardes_lopes,22,9,0,0,0,
+2025,B,criciuma,383559,Caique,caique,97,3,0,0,0,
+2025,B,criciuma,523730,Gustavo Maia,gustavo_maia_da_silva,11,16,0,0,0,
+2025,B,criciuma,610857,Octavio,octavio,30,3,0,0,0,
+2025,B,criciuma,616854,Jota,jota,68,10,0,0,0,
+2025,B,criciuma,691592,Octavio Silva,octavio_silva,87,1,0,0,0,
+2025,B,criciuma,719175,HIAGO,hiago,37,5,0,0,0,
+2025,B,criciuma,726860,RUAN,ruan_rodrigues_carvalho,80,3,0,0,0,
+2025,B,criciuma,739804,THIAGUINHO,thiaguinho,59,1,0,0,0,
+2025,B,criciuma,779577,Lucas,lucas_vinicius_bugs,17,1,0,0,0,
+2025,B,criciuma,819230,Steven,steven_nufour,24,4,0,0,0,
+2025,B,cuiaba_saf,419243,Arthur,arthur,1,10,0,0,0,
+2025,B,cuiaba_saf,523119,Railan,railan_reis_ferreira,40,1,0,0,0,
+2025,B,cuiaba_saf,652958,Renan,renan_carrasco_veltri,35,1,0,0,0,
+2025,B,cuiaba_saf,671099,Patola,patola,37,1,0,0,0,
+2025,B,cuiaba_saf,675749,Silva,luiz_felipe_mathias_silva,97,5,0,0,0,
+2025,B,cuiaba_saf,691608,Pedro Henr ...,pedro_henr,78,1,0,0,0,
+2025,B,cuiaba_saf,768403,MARTINS,lorenzo_silva_martins,36,2,0,0,0,
+2025,B,ferroviaria,338847,Filipe,filipe_alexandre_da_costa,95,21,0,0,0,
+2025,B,ferroviaria,463514,Leonardo,leonardo_wall_dos_santos,12,22,0,0,0,
+2025,B,ferroviaria,537549,Weverton,weverton,22,1,0,0,0,
+2025,B,ferroviaria,630396,David,david,53,2,0,0,0,
+2025,B,ferroviaria,645400,Sorocaba,pedro_henrique_estevam,33,2,0,0,0,
+2025,B,ferroviaria,653879,EDUARDO AU ...,eduardo_au,18,1,0,0,0,
+2025,B,ferroviaria,696507,JOÃO VICTOR,joao_victor,17,4,0,0,0,
+2025,B,ferroviaria,721882,Thiago,thiago_montelo_pereira,23,1,0,0,0,
+2025,B,ferroviaria,725966,Jhonatan,jhonatan_garcia_da_silva,30,2,0,0,0,
+2025,B,ferroviaria,743140,Raoni,raoni_dos_santos_ramos,88,2,0,0,0,
+2025,B,goias,565684,Lustosa,lustosa,88,2,0,0,0,
+2025,B,goias,580984,Ezequiel,ezequiel,12,17,0,0,0,
+2025,B,gremio_novorizontino_saf,509383,Marcelo,marcelo_de_bem_dal_soler,23,6,0,0,0,
+2025,B,gremio_novorizontino_saf,622059,João Scapin,joao_scapin,12,1,0,0,0,
+2025,B,gremio_novorizontino_saf,630013,Gabriel Co ...,gabriel_correia_da_silva,14,11,0,0,0,
+2025,B,gremio_novorizontino_saf,671670,Victor,victor,21,3,0,0,0,
+2025,B,gremio_novorizontino_saf,829135,Antony,antony,16,5,0,0,0,
+2025,B,operario,401024,Lucas Wingert,lucas_leandro_wingert,91,5,0,0,0,
+2025,B,operario,620667,Marcio Filho,marcio_filho,41,2,0,0,0,
+2025,B,operario,622329,José Gabriel,jose_gabriel,35,3,0,0,0,
+2025,B,operario,622709,HENRIQUE,henrique,32,2,0,0,0,
+2025,B,operario,644286,Thiago Med ...,thiago_med,35,2,0,0,0,
+2025,B,operario,693983,Guilherme,guilherme,51,1,0,0,0,
+2025,B,operario,711396,Matheus Ga ...,matheus_galdino_silva,11,1,0,0,0,
+2025,B,operario,715428,LEONARDO,leonardo_borges_de_souza,36,1,0,0,0,
+2025,B,operario,738540,Renan Gustavo,renan_gustavo,93,1,0,0,0,
+2025,B,paysandu,318862,Iago Hass,iago_hass_ferreira,31,13,0,0,0,
+2025,B,paysandu,387358,Kevyn,kevyn,36,5,0,0,0,
+2025,B,paysandu,682526,Henrique S ...,henrique_viana_salomoni,16,1,0,0,0,
+2025,B,paysandu,797741,Thalyson,thalyson,18,2,0,0,0,
+2025,B,paysandu,894156,MATIAS CAV ...,matias_cav,32,9,0,0,0,
+2025,B,remo,534345,Thalys,thalys,20,1,0,0,0,
+2025,B,remo,566788,Yago,yago_de_paula_ferreira,28,1,0,0,0,
+2025,B,remo,617485,Kawan,kawan,54,5,0,0,0,
+2025,B,remo,715038,Guty,guty,23,1,0,0,0,
+2025,B,remo,740064,victor,victor,12,1,0,0,0,
+2025,B,vila_nova,311339,Marcondes,marcondes,13,4,0,0,0,
+2025,B,vila_nova,649189,Guilherme  ...,guilherme_vieira_miranda,22,1,0,0,0,
+2025,B,vila_nova,703371,KAUA,kaua,1,1,0,0,0,
+2025,B,vila_nova,771652,Rodrigo,rodrigo,13,1,0,0,0,
+2025,B,volta_redonda,466221,Yago,yago_oliveira_antonio,31,6,0,0,0,
+2025,B,volta_redonda,714165,Lucas Almeida,lucas_almeida,25,1,0,0,0,
+2025,B,volta_redonda,894359,CACERES,caceres,26,3,0,0,0,
 2026,B,sport_recife,432216,Thiago,thiago_couto_wenceslau,26,27,27,27,2430,90.0
 2026,B,botafogo,682166,4 - Vilar,gustavo_vilar_dos_santos,4,27,27,27,2415,89.4
 2026,B,atletico_goianiense_saf,183760,Paulo Vitor,paulo_vitor,1,26,26,26,2340,90.0
@@ -2888,7 +4539,7 @@ temporada,serie,clube_slug,registro_cbf,apelido,atleta_slug,num_camisa,partidas_
 2026,B,avai,763958,Kevin,kevin_da_silva_soares,90,1,0,0,0,
 2026,B,avai,943549,Nicolas Ca ...,nicolas_joaquin_cabral,6,10,0,0,0,
 2026,B,botafogo,628944,Pedro Tort ...,pedro_henrique_tortello,31,1,0,0,0,
-2026,B,botafogo,647284,Brenno Faro,brenno_faro_klippel,25,5,0,0,0,
+2026,B,botafogo,647284,Brenno Faro,brenno_faro_klippel,25,4,0,0,0,
 2026,B,botafogo,691208,Henrique,henrique_lovo_teles,32,2,0,0,0,
 2026,B,botafogo,697174,Adriano Va ...,adriano_va,25,3,0,0,0,
 2026,B,ceara,313131,Caique,caique_franca_godoy,23,2,0,0,0,
