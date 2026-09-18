@@ -48,6 +48,7 @@ import pandas as pd
 from src.analysis.escalacoes_e_minutos import minutos_em_campo
 from src.pipeline.camadas_de_exposicao import (
     CAMADA_ABERTA,
+    DIR_RESTRITO,
     aplicar_camada,
     salvar_mapa_pseudonimos,
 )
@@ -320,9 +321,16 @@ def executar():
     embaralhado.to_csv(os.path.join(TABLES_DIR, "tabela_23d_score_pre_jogo_ordem_embaralhada.csv"),
                        index=False, encoding="utf-8")
 
+    # F4-02: o quadro completo associa NOME a inferencia de risco. A versao versionada sai
+    # pseudonimizada; a identificada vai para data/restrito/, fora do repositorio. Fatos
+    # desportivos que a CBF publica — escalacao, cartoes — seguem nominados nas bases; o que
+    # nao pode circular com nome e a inferencia que o projeto produz SOBRE a pessoa.
     destino = os.path.join(PROCESSED, "integrity")
     os.makedirs(destino, exist_ok=True)
-    df.to_parquet(os.path.join(destino, "score_pre_jogo.parquet"), index=False)
+    os.makedirs(DIR_RESTRITO, exist_ok=True)
+    df.to_parquet(os.path.join(DIR_RESTRITO, "score_pre_jogo_identificado.parquet"), index=False)
+    aplicar_camada(df, CAMADA_ABERTA).to_parquet(
+        os.path.join(destino, "score_pre_jogo.parquet"), index=False)
     # F4-02: o ranking pre-jogo nomeia todo atleta relacionado. A versao publicada sai
     # pseudonimizada; o mapa de reidentificacao fica em data/restrito/.
     salvar_mapa_pseudonimos(ranking)
