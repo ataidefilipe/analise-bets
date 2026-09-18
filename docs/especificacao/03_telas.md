@@ -14,7 +14,7 @@ obrigatório em todo rótulo de tela.
 | # | Tela | Endpoint | Personas |
 | :---: | :--- | :--- | :--- |
 | T1 | Fila de triagem da rodada | `/rodadas/.../fila` | P2 federação, P1 clube |
-| T2 | Ficha do atleta | `/atletas/{id}` | P2, P1 |
+| T2 | Busca e ficha do atleta | `/atletas`, `/atletas/{id}` | P2, P1 |
 | T3 | Dossiê de partida | `/partidas/.../dossie` | P3 operadora, P2 |
 | T4 | Panorama agregado | `/agregados/...` | P5 imprensa, P3 |
 
@@ -109,11 +109,36 @@ ausência de casos na rodada.
 
 ---
 
-## 3. T2 — Ficha do atleta
+## 3. T2 — Busca e ficha do atleta
 
-Responde: *"este atleta tem histórico?"*
+Responde a duas perguntas de P1: *"este atleta do meu elenco tem histórico?"* e, sobretudo,
+*"o volante que vamos contratar da Série B — tem histórico?"*
 
-### Seções
+A segunda é a due diligence de contratação, e é a dor mais concreta da persona: tem gatilho
+claro (janela de transferências) e ciclo de decisão curto.
+
+### Busca
+
+Campo único de texto, no topo. Mínimo 3 caracteres, 20 resultados, sem paginação.
+
+```
+┌────────────────────────────────────────────────────────────┐
+│ Consulta de atleta                                         │
+│ [ nome ou apelido...                              ] 🔍      │
+├────────────────────────────────────────────────────────────┤
+│ Nome do Atleta        exemplo_fc, outro_fc      até 2025   │
+│ Outro Nome            terceiro_fc               até 2024   │
+└────────────────────────────────────────────────────────────┘
+```
+
+A lista de resultados traz **apenas identificação e clubes — nunca escore ou tier**. O perfil
+disciplinar aparece só ao abrir a ficha. Isso não é cerimônia: evita que uma busca ampla
+devolva um ranking de atipicidade pronto para varredura.
+
+Com menos de 3 caracteres, o botão fica inativo. Sem resultado: *"Nenhum atleta encontrado.
+A base cobre Série A desde 2003 e Série B desde 2022."*
+
+### Seções da ficha
 
 **Cabeçalho** — nome, clubes por onde passou, identificador.
 
@@ -189,7 +214,7 @@ Todas as telas precisam tratar estes casos. Vários são normais, não erros.
 | **Fila vazia** | Corte alto demais, nenhum atleta acima | *"Nenhum atleta acima do corte atual. Reduza o percentil para ampliar a fila."* |
 | **Base rasa** | Rodadas 1 a 5 | Faixa informativa: *"Histórico insuficiente nas primeiras rodadas; os escores são dominados pela média da liga."* |
 | **Sem permissão** (403) | Perfil sem acesso | *"Seu perfil não tem acesso a esta consulta."* Sem detalhe técnico |
-| **Fora do escopo** (403, clube) | Atleta de outro elenco | *"Seu perfil acessa apenas atletas do próprio elenco."* |
+| **Busca curta** (400) | Menos de 3 caracteres | *"Digite ao menos 3 caracteres para buscar."* |
 | **Não encontrado** (404) | Partida ou atleta inexistente | |
 | **Erro interno** (500) | | Mensagem genérica. Nunca stack trace |
 
@@ -199,9 +224,6 @@ Todas as telas precisam tratar estes casos. Vários são normais, não erros.
 
 Registrado para não ser confundido com esquecimento:
 
-* **Due diligence pré-contratação** — o caso de uso mais concreto de P1. Exige fluxo de
-  declaração de finalidade e prazo, que depende da F4-01. Ver
-  [01 §5](01_api_e_autorizacao.md#o-escopo-do-perfil-clube-mvp).
 * **Relatório semanal por e-mail** — formato que P1 declara preferir. *"Documento, não API."*
 * **Dossiê em PDF assinado** (F3-03).
 * **Alertas ativos** (push, e-mail) quando um atleta cruza o limiar.

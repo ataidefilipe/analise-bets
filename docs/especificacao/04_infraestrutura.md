@@ -108,14 +108,19 @@ O SQLite atual mapeia quase diretamente para Postgres. Tabelas, com índices que
 | `classificacao` | 598 | |
 | `avisos` | 1 | chave-valor |
 | **`clientes_api`** | — | **Nova.** Ver [01 §2](01_api_e_autorizacao.md) |
+| **`consultas_atleta`** | cresce | **Nova.** Registro de due diligence. Índices `(cliente_api_id, consultado_em)` e `(atleta_id)` |
+| **`execucoes_pipeline`** | ~365/ano | **Nova.** Ver [05 §6](05_automacao.md) |
 
-### Três acréscimos necessários
+### Acréscimos necessários
 
 1. **`clientes_api`** — não existe hoje. É o que sustenta toda a autorização.
-2. **Colunas de procedência em `partidas`** — `sumula_url`, `sumula_sha256`, `baixado_em`,
+2. **`consultas_atleta`** — registro de quem consultou qual atleta. Com a due diligence
+   liberada para consulta a terceiros, este log deixa de ser desejável e passa a ser o único
+   controle que resta. Retenção 12 meses.
+3. **Colunas de procedência em `partidas`** — `sumula_url`, `sumula_sha256`, `baixado_em`,
    `processado_em`. Os dados já existem em `data/raw/cbf/manifest_delta.json` e precisam ser
    promovidos a coluna, porque são o produto vendido a P3.
-3. **Colunas de percentil e tier** — `risco_pre_jogo` guarda o escore bruto; percentil e tier
+4. **Colunas de percentil e tier** — `risco_pre_jogo` guarda o escore bruto; percentil e tier
    são calculados no pipeline e devem ser **materializados**, não computados por requisição.
 
 ---
@@ -138,14 +143,27 @@ Requisitos mínimos:
 * Logs **não registram** payload de resposta nem nome de atleta. Logar `atleta_id`, nunca
   `atleta`.
 
-### 4.2 Trilha de acesso [MVP]
+### 4.2 Trilha de acesso
 
-Log de acesso com: timestamp, `cliente_api.id`, endpoint, parâmetros e código de resposta.
-Retenção 30 dias.
+Duas trilhas, com finalidades diferentes:
 
-> **[MVP] Dívida.** Sem log de *quais atletas* foram consultados por cada cliente. Para uma
-> eventual requisição de titular sob a LGPD, isso seria necessário — e a base legal em si
-> (F4-01) também não existe.
+| Trilha | Onde | Conteúdo | Retenção |
+| :--- | :--- | :--- | :--- |
+| Acesso técnico | CloudWatch | timestamp, `cliente_api.id`, endpoint, parâmetros, código | 30 dias |
+| **Consulta a atleta** | `consultas_atleta` (RDS) | quem consultou, qual atleta, próprio elenco ou não | **12 meses** |
+
+A segunda existe porque a due diligence permite consulta a atleta de terceiro **sem aprovação
+prévia**. Retirado o controle *a priori*, o registro *a posteriori* é o que sobra: é o que
+responde "quem consultou quem, e quando" se a pergunta for feita.
+
+A gravação é assíncrona e **não falha a requisição** — mas falha de gravação deve alarmar, já
+que um log que silenciosamente para de escrever é pior que não ter log.
+
+> **[MVP] Dívida.** Sem limite de taxa, o log registra a varredura **depois** que ela acontece.
+> Com a consulta a terceiros liberada, rate limiting por cliente passa a ser o primeiro item da
+> lista de produção — antes do OAuth, antes do ambiente de homologação.
+>
+> A base legal do tratamento (F4-01) continua não estabelecida.
 
 ---
 

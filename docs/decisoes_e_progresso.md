@@ -105,6 +105,7 @@
   * **O princípio de autorização foi invertido em relação ao código atual.** Hoje `aplicar_perfil` recebe o perfil e o clube como argumentos: quem chama declara quem é. Num serviço isso é falha de autorização, e a especificação exige que ambos venham da credencial.
   * **Três premissas registradas como não validadas:** as personas nunca foram entrevistadas, as capacidades operacionais que definem os limiares de alerta são estimativas, e o produto mede atipicidade e não fraude — esta última não é premissa, é resultado apurado.
   * **Pesquisa com usuários dispensada neste ciclo**, por decisão do responsável. As personas da análise de negócio são assumidas como estão.
+  * **Due diligence de contratação entra no MVP sem processo prévio.** O perfil `clube` consulta qualquer atleta da base, sem declaração de finalidade, aprovação ou prazo de validade — decisão do responsável, para não travar o caso de uso mais concreto da persona de clube atrás de burocracia que ninguém usaria. Em contrapartida, toda consulta é registrada em `consultas_atleta`: retirado o controle *a priori*, o registro *a posteriori* é o único que resta. Isso promove o limite de taxa a primeiro item da lista de produção, à frente do OAuth e do ambiente de homologação.
 
 ---
 

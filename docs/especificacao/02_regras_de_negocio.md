@@ -152,9 +152,16 @@ causar.
 
 ### 4.2 Escopo do perfil `clube`
 
-O clube vê apenas atletas que estão ou estiveram no seu elenco. Consulta a terceiros:
-**403**. A funcionalidade de due diligence pré-contratação **não está no MVP** — ver
-[01 §5](01_api_e_autorizacao.md#o-escopo-do-perfil-clube-mvp).
+**Fila de triagem:** só o próprio elenco. O backend filtra pela credencial.
+
+**Consulta individual:** qualquer atleta da base. É a due diligence de contratação, e não exige
+declaração de finalidade nem aprovação. Toda consulta é **registrada** em `consultas_atleta` —
+ver [01 §5](01_api_e_autorizacao.md#due-diligence-o-perfil-clube-consulta-qualquer-atleta).
+
+A distinção importa: a fila é **proativa** e empurra nomes para quem não pediu, então fica
+restrita ao elenco de quem já responde por aqueles atletas. A consulta é **reativa** e responde
+a uma pergunta que o usuário já tinha. Empurrar o nome de um atleta de terceiro para a tela de
+um clube é diferente de responder sobre ele quando perguntado.
 
 ### 4.3 O perfil de trading
 

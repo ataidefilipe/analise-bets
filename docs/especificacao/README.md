@@ -52,7 +52,7 @@ Derivado de `src/pipeline/perfis_de_acesso.py`, que já executa esta matriz em c
 | Perfil | Persona | Atendido | Camada de dados | Granularidade |
 | :--- | :--- | :---: | :--- | :--- |
 | `federacao_stjd` | P2 — analista de integridade | sim | identificada | partida + atleta |
-| `clube` | P1 — compliance de clube | sim | identificada | atleta, **só do próprio elenco** |
+| `clube` | P1 — compliance de clube | sim | identificada | atleta; fila só do próprio elenco, consulta a qualquer atleta |
 | `operadora_integrity` | P3 — integrity officer | sim | aberta | partida |
 | `imprensa_academia` | P5 — repórter de dados | sim | aberta | partida |
 | `operadora_trading` | P4 — head de trading | **não** | — | — |

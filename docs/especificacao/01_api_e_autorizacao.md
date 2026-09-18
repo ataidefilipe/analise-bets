@@ -100,7 +100,7 @@ qualquer camada. Hoje são os 10 atletas da Operação Penalidade Máxima. A lis
 
 ## 4. Endpoints [MVP]
 
-Seis endpoints. REST, JSON, prefixo `/v1`.
+Sete endpoints. REST, JSON, prefixo `/v1`.
 
 Convenções: datas em ISO-8601 com fuso; `serie` é `"A"` ou `"B"`; `temporada` é o ano com
 quatro dígitos; toda lista devolve `{ "dados": [...], "total": n }`.
@@ -181,14 +181,52 @@ estariam na fila geral.
 
 ---
 
-### 4.3 `GET /v1/atletas/{atleta_id}`
+### 4.3 `GET /v1/atletas`
+
+Busca de atleta por nome. Existe para viabilizar a due diligence: ninguém sabe o registro CBF
+de um alvo de contratação.
+
+Perfis: `federacao_stjd`, `clube`.
+
+| Parâmetro | Tipo | Obrigatório | Observação |
+| :--- | :--- | :---: | :--- |
+| `busca` | string | sim | **Mínimo 3 caracteres.** Casa nome completo e apelido, sem acento e sem caixa |
+| `serie` | enum | não | Filtra por série |
+| `temporada` | int | não | Filtra por temporada |
+
+```json
+{
+  "dados": [
+    {
+      "atleta_id": "459744",
+      "atleta": "Nome do Atleta",
+      "clubes": ["exemplo_fc", "outro_fc"],
+      "ultima_temporada": 2025
+    }
+  ],
+  "total": 1
+}
+```
+
+**Limites de desenho, não de burocracia:**
+
+* `limite` fixo em **20 resultados**, sem paginação. A busca serve para achar uma pessoa, não
+  para percorrer a base.
+* `busca` com menos de 3 caracteres → **400**. Impede varredura por letra.
+* A resposta traz identificação e clubes, **nunca escore**. Para ver o perfil disciplinar é
+  preciso abrir a ficha, e é a abertura da ficha que fica registrada.
+
+---
+
+### 4.4 `GET /v1/atletas/{atleta_id}`
 
 Consulta pontual. É a dor mais concreta da persona P1: *não contratar um problema*.
 
 Perfis: `federacao_stjd`, `clube`.
 
-Para `perfil = 'clube'`, o atleta precisa estar no elenco do clube **ou** o clube precisa ter
-declarado interesse — ver §5. Fora disso, **403**.
+O perfil `clube` consulta **qualquer atleta da base**, dentro ou fora do próprio elenco. É a
+due diligence de contratação, e é o caso de uso mais concreto da persona P1. Não há declaração
+de finalidade, aprovação prévia nem prazo de validade — ver §5.
 
 ```json
 {
@@ -224,7 +262,7 @@ ausência sem parecer defeito.
 
 ---
 
-### 4.4 `GET /v1/partidas/{serie}/{temporada}/{partida_id}/dossie`
+### 4.5 `GET /v1/partidas/{serie}/{temporada}/{partida_id}/dossie`
 
 Registro auditável de uma partida. É o que a persona P3 compra: **papel, não predição**.
 
@@ -261,7 +299,7 @@ partida, citando fonte oficial, hash e data. Os três campos já existem em
 
 ---
 
-### 4.5 `GET /v1/agregados/{serie}/{temporada}`
+### 4.6 `GET /v1/agregados/{serie}/{temporada}`
 
 Camada aberta. Serve P5 e a visão macro de P3.
 
@@ -287,7 +325,7 @@ Sem atleta, em nenhuma circunstância.
 
 ---
 
-### 4.6 `GET /v1/atletas/nominaveis`
+### 4.7 `GET /v1/atletas/nominaveis`
 
 Lista de atletas que podem ser nominados em qualquer camada, por condenação transitada em
 julgado. Consumida pelo front para decidir exibição de nome; **não é lista de suspeitos**.
@@ -309,24 +347,69 @@ julgado. Consumida pelo front para decidir exibição de nome; **não é lista d
 | :--- | :---: | :---: | :---: | :---: |
 | `/me` | ✅ | ✅ | ✅ | ✅ |
 | `/rodadas/.../fila` | ✅ | ✅ *(só o próprio elenco)* | ❌ 403 | ❌ 403 |
-| `/atletas/{id}` | ✅ | ⚠️ *(escopo, abaixo)* | ❌ 403 | ❌ 403 |
+| `/atletas` (busca) | ✅ | ✅ | ❌ 403 | ❌ 403 |
+| `/atletas/{id}` | ✅ | ✅ *(qualquer atleta, registrado)* | ❌ 403 | ❌ 403 |
 | `/partidas/.../dossie` | ✅ completo | ✅ completo | ✅ sem atletas | ✅ sem atletas |
 | `/agregados/...` | ✅ | ✅ | ✅ | ✅ |
 | `/atletas/nominaveis` | ✅ | ✅ | ✅ | ✅ |
 
-### O escopo do perfil `clube` [MVP]
+### Due diligence: o perfil `clube` consulta qualquer atleta
 
-A regra de negócio diz: *o clube vê o próprio elenco e alvos de contratação declarados*.
+A regra original previa *o próprio elenco e alvos de contratação declarados*. O fluxo de
+declaração — finalidade, aprovação, prazo de validade — **foi dispensado por decisão do
+responsável pelo projeto**, para não travar o caso de uso mais concreto de P1 atrás de
+burocracia que ninguém usaria.
 
-**No MVP, só a primeira metade é implementada.** O clube consulta atletas que estão ou
-estiveram no seu elenco em qualquer temporada da base. Consulta a terceiros retorna **403**.
+**O que vale no MVP:**
 
-> **[MVP] Dívida assumida.** Não há fluxo de declaração de alvo de contratação — nem tela, nem
-> registro, nem expiração. Isso remove do MVP justamente o caso de uso que a análise de negócio
-> aponta como a dor mais concreta de P1 (*due diligence antes de assinar*). É a maior lacuna
-> funcional desta especificação, e é deliberada: o fluxo exige registro de finalidade,
-> aprovação e prazo de validade, que são precisamente os controles que a tarefa F4-01 deveria
-> fundamentar — e F4-01 não foi feita.
+| | |
+| :--- | :--- |
+| Consulta ao próprio elenco | Liberada |
+| Consulta a atleta de terceiro | **Liberada** |
+| Declaração de finalidade | Não existe |
+| Aprovação prévia | Não existe |
+| Prazo de validade | Não existe |
+| **Registro da consulta** | **Obrigatório** |
+
+### O registro substitui o processo
+
+Retirar o controle *a priori* torna o controle *a posteriori* indispensável. Não é formalidade:
+é o que permite responder à pergunta "quem consultou quem, e quando" se ela algum dia for
+feita — por um atleta, por uma federação ou por uma autoridade.
+
+Toda chamada a `/v1/atletas/{id}` e a `/v1/atletas?busca=` grava uma linha em
+`consultas_atleta`:
+
+| Coluna | |
+| :--- | :--- |
+| `id` | uuid |
+| `cliente_api_id` | quem consultou |
+| `atleta_id` | quem foi consultado — nulo na busca |
+| `termo_busca` | o termo, nas buscas |
+| `proprio_elenco` | boolean, para separar rotina de due diligence |
+| `consultado_em` | timestamptz |
+
+**O registro é invisível ao usuário.** Sem tela, sem confirmação, sem fricção. É escrita do
+backend, e não deve falhar a requisição se a gravação falhar — mas deve alarmar.
+
+Retenção: 12 meses.
+
+### A fricção que permanece
+
+Três limites de desenho, que não pedem nada ao usuário e evitam que a consulta individual vire
+extração de base:
+
+1. Busca exige **3 caracteres**, devolve **20 resultados**, sem paginação.
+2. A busca **não retorna escore**. Perfil disciplinar só na ficha, uma pessoa por vez.
+3. Consulta individual, sem endpoint de lote. Reconstruir a base exigiria uma requisição por
+   atleta, o que o log tornaria evidente.
+
+> **[MVP] Dívida assumida.** Sem limite de taxa, os três itens acima são obstáculo, não
+> barreira: um cliente determinado ainda consegue varrer a base, e o log registraria o fato
+> **depois**. Com a due diligence liberada, o rate limiting deixa de ser melhoria e passa a ser
+> o primeiro item da lista de produção.
+>
+> Permanece válido que a base legal do tratamento (tarefa F4-01) não foi estabelecida.
 
 ---
 
@@ -334,9 +417,9 @@ estiveram no seu elenco em qualquer temporada da base. Consulta a terceiros reto
 
 | Código | Quando | Corpo |
 | :---: | :--- | :--- |
-| 400 | Parâmetro inválido, ou tentativa de passar `perfil`/`clube` na requisição | `{"erro": "parametro_invalido", "detalhe": "..."}` |
+| 400 | Parâmetro inválido, `busca` com menos de 3 caracteres, ou tentativa de passar `perfil`/`clube` na requisição | `{"erro": "parametro_invalido", "detalhe": "..."}` |
 | 401 | Chave ausente, malformada, desconhecida ou inativa | `{"erro": "nao_autenticado"}` |
-| 403 | Perfil sem acesso ao endpoint, ou fora do escopo do elenco | `{"erro": "sem_permissao", "detalhe": "..."}` |
+| 403 | Perfil sem acesso ao endpoint | `{"erro": "sem_permissao", "detalhe": "..."}` |
 | 404 | Rodada, partida ou atleta inexistente na base | `{"erro": "nao_encontrado"}` |
 | 422 | Rodada ainda sem escalação publicada | `{"erro": "sem_escalacao", "detalhe": "..."}` |
 | 500 | — | `{"erro": "erro_interno"}` — nunca vaza stack trace |
