@@ -36,13 +36,20 @@ cookie (`mock_persona`) só para permitir demonstrar/testar o menu com as 5
 personas do doc 03 (P1 a P5). Isso desaparece quando a autenticação real
 entrar — a origem do perfil passa a ser a sessão, não uma escolha manual.
 
-**Tiers e escores ainda não modelados.** O doc 03 é explícito que o front
+**Tier nunca é recalculado no front.** O doc 03 é explícito que o front
 nunca recalcula tier a partir do escore (§1.3) e nunca mostra o escore bruto
-do pré-jogo (§1.4) — ambos vêm prontos do backend. Como o formato exato
-desses campos depende do doc 01 (contrato da API) e do doc 02 (vocabulário de
-tier, §5), esses tipos só serão adicionados quando a tela que os usa (T1)
-for implementada, para não inventar um contrato que pode não bater com o
-real.
+do pré-jogo (§1.4) — ambos vêm prontos do backend. Os tipos de cada tela só
+foram adicionados quando a tela em si foi implementada (T1: `lib/types/fila-triagem.ts`;
+T2: `lib/types/atleta.ts`), para não inventar um contrato antes de precisar
+dele. O vocabulário de tier em si (`lib/mock/tier.ts`) é compartilhado entre
+telas, mas continua sendo só um placeholder de mock — o doc 02 §5, que
+define o vocabulário real, ainda não chegou.
+
+**Rotas espelham o formato do endpoint, não decisão de UI.** `/atletas/[id]`
+(ficha) é uma rota dinâmica própria, não um parâmetro de query em `/atletas`
+— assim como o doc 01 já separa `/atletas` de `/atletas/{id}`. Isso também dá
+à ficha uma URL compartilhável e histórico de navegação de verdade (o
+`BackButton` volta para a busca, não para a home).
 
 **Persona P4.** Aparece na numeração do doc 03 mas não é citada em nenhuma
 das 4 telas (§0). Está modelada em `lib/mock/me.ts` sem nenhuma tela

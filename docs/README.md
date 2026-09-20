@@ -12,6 +12,11 @@ foi entregue, para revisão antes de avançar para o próximo.
   das 4 telas.
 - [`passo-02-fila-triagem.md`](./passo-02-fila-triagem.md) — segundo passo:
   T1 (fila de triagem da rodada) implementada por completo.
+- [`passo-03-busca-e-ficha-atleta.md`](./passo-03-busca-e-ficha-atleta.md) —
+  terceiro passo: T2 (busca e ficha do atleta) implementada por completo.
+- [`passo-04-paginacao-busca.md`](./passo-04-paginacao-busca.md) — quarto
+  passo: paginação na busca de atleta, a pedido do usuário — diverge do
+  "sem paginação" do doc 03 §3, registrado como decisão deliberada.
 
 ## Convenção de componentes
 

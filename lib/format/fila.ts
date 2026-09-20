@@ -19,8 +19,3 @@ export function formatarJustificativa(item: FilaTriagemItem): string {
   });
   return `${cartoes1T} cartões no 1º tempo em ${minutos} minutos jogados · ${ROTULO_CONDICAO[item.condicao]} · taxa ajustada ${taxa}`;
 }
-
-/** Combina tier + percentil como no mockup ("Extrema (p99)") — nunca recalcula o tier em si. */
-export function formatarTier(item: Pick<FilaTriagemItem, "tier" | "percentil">): string {
-  return `${item.tier} (p${item.percentil})`;
-}

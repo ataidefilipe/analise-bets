@@ -2,6 +2,7 @@ import type { Condicao, FilaTriagemItem, FilaTriagemResponse } from "@/lib/types
 import { CLUBES_MOCK, type ClubeMock } from "@/lib/mock/clubes";
 import { gerarNome } from "@/lib/mock/nomes";
 import { criarGeradorAleatorio, seedFromString } from "@/lib/mock/random";
+import { tierPorPercentil } from "@/lib/mock/tier";
 
 export interface ParametrosFilaTriagem {
   competicao: string;
@@ -19,19 +20,6 @@ const RODADA_ATUAL_POR_COMPETICAO: Record<string, number> = {
 
 const AVISO_INTERPRETATIVO =
   "Este escore mede atipicidade estatística do perfil disciplinar do atleta, e não probabilidade de fraude. A finalidade é priorizar atenção humana.";
-
-/**
- * Vocabulário de tier ainda não confirmado pelo doc 02 (§5) — usado só para
- * o mock produzir rótulos plausíveis. Em produção o tier sempre vem pronto
- * do backend (doc 03, §1.3); o front nunca o recalcula a partir do escore.
- */
-function tierPorPercentil(percentil: number): string {
-  if (percentil >= 99) return "Extrema";
-  if (percentil >= 95) return "Muito alta";
-  if (percentil >= 85) return "Alta";
-  if (percentil >= 70) return "Moderada";
-  return "Baixa";
-}
 
 function gerarConfrontos(clubes: ClubeMock[], rand: () => number): Map<string, string> {
   const embaralhados = [...clubes];

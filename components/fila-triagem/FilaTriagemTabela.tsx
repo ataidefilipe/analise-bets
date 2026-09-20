@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Condicao, FilaTriagemItem } from "@/lib/types/fila-triagem";
-import { formatarJustificativa, formatarTier } from "@/lib/format/fila";
+import { formatarJustificativa } from "@/lib/format/fila";
+import { formatarTier } from "@/lib/format/tier";
 
 interface FilaTriagemTabelaProps {
   itens: FilaTriagemItem[];
@@ -42,7 +43,7 @@ export function FilaTriagemTabela({ itens }: FilaTriagemTabelaProps) {
                   </span>
                   <span className="text-xs text-zinc-500 dark:text-zinc-400">
                     {formatarJustificativa(item)} ·{" "}
-                    <Link href={`/atletas?atletaId=${item.atletaId}`} className="text-link hover:underline">
+                    <Link href={`/atletas/${item.atletaId}`} className="text-link hover:underline">
                       ver ficha
                     </Link>
                   </span>

@@ -1,0 +1,56 @@
+import type { CartaoEvento } from "@/lib/types/atleta";
+
+interface LinhaDoTempoCartoesProps {
+  eventos: CartaoEvento[];
+}
+
+const ROTULO_TIPO: Record<CartaoEvento["tipo"], string> = {
+  amarelo: "Amarelo",
+  vermelho: "Vermelho",
+};
+
+/**
+ * Doc 03, §3: onde `motivo_completo` for nulo (~86% da Série A), mostrar que
+ * é limitação da fonte, não falha do sistema — nunca um campo vazio que
+ * parece bug.
+ */
+export function LinhaDoTempoCartoes({ eventos }: LinhaDoTempoCartoesProps) {
+  if (eventos.length === 0) {
+    return <p className="text-sm text-zinc-500 dark:text-zinc-400">Nenhum cartão registrado.</p>;
+  }
+
+  const porAno = new Map<number, CartaoEvento[]>();
+  for (const evento of eventos) {
+    const lista = porAno.get(evento.ano) ?? [];
+    lista.push(evento);
+    porAno.set(evento.ano, lista);
+  }
+  const anos = [...porAno.keys()].sort((a, b) => b - a);
+
+  return (
+    <div>
+      <h2 className="mb-2 text-sm font-semibold text-zinc-900 dark:text-zinc-50">Linha do tempo de cartões</h2>
+      <div className="flex flex-col gap-4">
+        {anos.map((ano) => (
+          <div key={ano}>
+            <p className="mb-1 text-xs font-medium tracking-wide text-zinc-500 uppercase dark:text-zinc-400">
+              {ano}
+            </p>
+            <ul className="divide-y divide-zinc-200 rounded-md border border-zinc-200 dark:divide-zinc-800 dark:border-zinc-800">
+              {porAno.get(ano)!.map((evento, i) => (
+                <li key={i} className="flex flex-col gap-0.5 px-4 py-2 text-sm">
+                  <span className="text-zinc-700 dark:text-zinc-300">
+                    {evento.minuto}&apos; · {evento.periodo} · {ROTULO_TIPO[evento.tipo]} · {evento.categoria}
+                  </span>
+                  <span className="text-xs text-zinc-500 italic dark:text-zinc-400">
+                    {evento.motivoCompleto ?? "Motivo não registrado na súmula desta temporada."}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}

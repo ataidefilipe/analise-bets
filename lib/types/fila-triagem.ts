@@ -1,5 +1,4 @@
-/** Opaco (doc 03, §1.2) — o front não deriva nada dele nem assume formato. */
-export type AtletaId = string;
+import type { AtletaId } from "@/lib/types/atleta";
 
 export type Condicao = "titular" | "reserva";
 
