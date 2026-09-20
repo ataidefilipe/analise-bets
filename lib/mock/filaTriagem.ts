@@ -3,6 +3,7 @@ import { CLUBES_MOCK, type ClubeMock } from "@/lib/mock/clubes";
 import { gerarNome } from "@/lib/mock/nomes";
 import { criarGeradorAleatorio, seedFromString } from "@/lib/mock/random";
 import { tierPorPercentil } from "@/lib/mock/tier";
+import { AVISO_INTERPRETATIVO } from "@/lib/mock/avisoInterpretativo";
 
 export interface ParametrosFilaTriagem {
   competicao: string;
@@ -17,9 +18,6 @@ const RODADA_ATUAL_POR_COMPETICAO: Record<string, number> = {
   "serie-a": 30,
   "serie-b": 30,
 };
-
-const AVISO_INTERPRETATIVO =
-  "Este escore mede atipicidade estatística do perfil disciplinar do atleta, e não probabilidade de fraude. A finalidade é priorizar atenção humana.";
 
 function gerarConfrontos(clubes: ClubeMock[], rand: () => number): Map<string, string> {
   const embaralhados = [...clubes];

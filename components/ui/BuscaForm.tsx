@@ -4,18 +4,19 @@ import { useState, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import { MagnifyingGlass, X } from "@phosphor-icons/react";
 
-interface BuscaAtletaFormProps {
+interface BuscaFormProps {
+  basePath: string;
   valorInicial: string;
+  placeholder: string;
 }
 
 /**
- * Campo único + botão de busca (doc 03, §3). O botão fica inativo com menos
- * de 3 caracteres — é submissão explícita, não busca instantânea a cada
- * tecla, como o mockup do doc (campo + ícone de lupa) deixa claro. O "x"
- * dentro do campo limpa a busca e volta para a tabela com todos os atletas
- * (`/atletas`, sem `q` nem `pagina`).
+ * Campo único + botão de busca, genérico (usado por atletas e partidas).
+ * Botão de buscar inativo com menos de 3 caracteres — submissão explícita,
+ * não busca a cada tecla (doc 03, §3). O "x" dentro do campo limpa a busca
+ * e volta para `basePath` sem `q` nem `pagina`.
  */
-export function BuscaAtletaForm({ valorInicial }: BuscaAtletaFormProps) {
+export function BuscaForm({ basePath, valorInicial, placeholder }: BuscaFormProps) {
   const [valor, setValor] = useState(valorInicial);
   const router = useRouter();
   const podeBuscar = valor.trim().length >= 3;
@@ -23,12 +24,12 @@ export function BuscaAtletaForm({ valorInicial }: BuscaAtletaFormProps) {
   function buscar(e: FormEvent) {
     e.preventDefault();
     if (!podeBuscar) return;
-    router.push(`/atletas?q=${encodeURIComponent(valor.trim())}`);
+    router.push(`${basePath}?q=${encodeURIComponent(valor.trim())}`);
   }
 
   function limpar() {
     setValor("");
-    router.push("/atletas");
+    router.push(basePath);
   }
 
   return (
@@ -38,7 +39,7 @@ export function BuscaAtletaForm({ valorInicial }: BuscaAtletaFormProps) {
           type="text"
           value={valor}
           onChange={(e) => setValor(e.target.value)}
-          placeholder="nome ou apelido..."
+          placeholder={placeholder}
           className="w-full rounded border border-zinc-300 bg-white px-3 py-2 pr-9 text-sm text-zinc-900 focus-visible:border-brand focus-visible:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-50 dark:focus-visible:border-link"
         />
         {valor.length > 0 && (

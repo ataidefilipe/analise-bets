@@ -25,6 +25,12 @@ foi entregue, para revisão antes de avançar para o próximo.
 - [`passo-06-paginacao-classica-atletas.md`](./passo-06-paginacao-classica-atletas.md) —
   sexto passo: troca o "carregar mais" por paginação Anterior/Próxima de 10
   em 10, mantendo a tabela completa e a busca como filtro do passo 5.
+- [`passo-07-dossie-partida.md`](./passo-07-dossie-partida.md) — sétimo
+  passo: T3 (dossiê de partida) implementada por completo, com exportação
+  em PDF via impressão.
+- [`passo-08-busca-e-paginacao-partidas.md`](./passo-08-busca-e-paginacao-partidas.md) —
+  oitavo passo: busca e paginação na listagem de partidas, no mesmo padrão
+  da T2 — e generalização de `BuscaForm`/`Pager` para `components/ui`.
 
 ## Convenção de componentes
 

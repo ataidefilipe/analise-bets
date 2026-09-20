@@ -2,6 +2,7 @@ import Link from "next/link";
 import { CaretDoubleLeft, CaretDoubleRight } from "@phosphor-icons/react/dist/ssr";
 
 interface PagerProps {
+  basePath: string;
   consulta: string;
   pagina: number;
   totalPaginas: number;
@@ -12,21 +13,26 @@ const BOTAO_CLASSE =
 const BOTAO_DESATIVADO_CLASSE =
   "flex size-8 items-center justify-center rounded border border-zinc-200 text-zinc-300 dark:border-zinc-800 dark:text-zinc-700";
 
-function href(consulta: string, pagina: number): string {
+function href(basePath: string, consulta: string, pagina: number): string {
   const params = new URLSearchParams();
   if (consulta) params.set("q", consulta);
   params.set("pagina", String(pagina));
-  return `/atletas?${params.toString()}`;
+  return `${basePath}?${params.toString()}`;
 }
 
-/** Pagina a tabela de atletas (10 por página) mantendo a consulta atual na URL. */
-export function Pager({ consulta, pagina, totalPaginas }: PagerProps) {
+/** Pagina uma tabela (10 por página) mantendo a consulta atual na URL. Genérico — usado por atletas e partidas. */
+export function Pager({ basePath, consulta, pagina, totalPaginas }: PagerProps) {
   if (totalPaginas <= 1) return null;
 
   return (
     <div className="flex items-center justify-between gap-4">
       {pagina > 1 ? (
-        <Link href={href(consulta, pagina - 1)} aria-label="Página anterior" title="Página anterior" className={BOTAO_CLASSE}>
+        <Link
+          href={href(basePath, consulta, pagina - 1)}
+          aria-label="Página anterior"
+          title="Página anterior"
+          className={BOTAO_CLASSE}
+        >
           <CaretDoubleLeft size={16} weight="bold" />
         </Link>
       ) : (
@@ -38,7 +44,12 @@ export function Pager({ consulta, pagina, totalPaginas }: PagerProps) {
         Página {pagina} de {totalPaginas}
       </span>
       {pagina < totalPaginas ? (
-        <Link href={href(consulta, pagina + 1)} aria-label="Próxima página" title="Próxima página" className={BOTAO_CLASSE}>
+        <Link
+          href={href(basePath, consulta, pagina + 1)}
+          aria-label="Próxima página"
+          title="Próxima página"
+          className={BOTAO_CLASSE}
+        >
           <CaretDoubleRight size={16} weight="bold" />
         </Link>
       ) : (

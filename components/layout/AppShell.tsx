@@ -18,7 +18,7 @@ interface AppShellProps {
 export function AppShell({ perfil, children }: AppShellProps) {
   return (
     <div className="flex min-h-full flex-col">
-      <header className="border-b border-zinc-200 dark:border-zinc-800">
+      <header className="border-b border-zinc-200 print:hidden dark:border-zinc-800">
         <div className="flex flex-wrap items-center justify-between gap-2 px-4 py-3">
           <div className="flex items-center gap-2">
             <span aria-hidden className="size-2 rounded-full bg-brand" />

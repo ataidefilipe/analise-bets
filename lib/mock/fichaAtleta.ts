@@ -4,9 +4,8 @@ import { gerarNome } from "@/lib/mock/nomes";
 import { criarGeradorAleatorio, seedFromString } from "@/lib/mock/random";
 import { tierPorPercentil } from "@/lib/mock/tier";
 import { listarPoolBusca } from "@/lib/mock/buscaAtletas";
-
-const AVISO_INTERPRETATIVO =
-  "Este escore mede atipicidade estatística do perfil disciplinar do atleta, e não probabilidade de fraude. A finalidade é priorizar atenção humana.";
+import { AVISO_INTERPRETATIVO } from "@/lib/mock/avisoInterpretativo";
+import { sortearMotivoCartao } from "@/lib/mock/motivosCartao";
 
 const CATEGORIAS_MOCK = [
   "Reclamação",
@@ -15,14 +14,6 @@ const CATEGORIAS_MOCK = [
   "Demora no reinício de jogo",
   "Entrada violenta",
   "Simulação",
-];
-
-const MOTIVOS_MOCK = [
-  "Reclamação enérgica após marcação da arbitragem.",
-  "Interrompeu o avanço da jogada de forma proposital.",
-  "Entrada de sola no adversário em disputa de bola.",
-  "Atraso deliberado no reinício da partida.",
-  "Simulação de falta dentro da grande área.",
 ];
 
 /**
@@ -70,7 +61,6 @@ export async function getFichaAtleta(atletaId: string): Promise<FichaAtleta> {
       const noPrimeiroTempo = c < cartoes1T;
       const minuto = noPrimeiroTempo ? 1 + Math.floor(rand() * 45) : 46 + Math.floor(rand() * 49);
       const tipo: TipoCartao = rand() < 0.92 ? "amarelo" : "vermelho";
-      const temMotivo = rand() >= 0.86; // ~86% nulo na Série A — doc 03, §3
 
       linhaDoTempoCartoes.push({
         ano,
@@ -78,7 +68,7 @@ export async function getFichaAtleta(atletaId: string): Promise<FichaAtleta> {
         periodo: noPrimeiroTempo ? "1T" : "2T",
         tipo,
         categoria: CATEGORIAS_MOCK[Math.floor(rand() * CATEGORIAS_MOCK.length)],
-        motivoCompleto: temMotivo ? MOTIVOS_MOCK[Math.floor(rand() * MOTIVOS_MOCK.length)] : null,
+        motivoCompleto: sortearMotivoCartao(rand),
       });
     }
   }

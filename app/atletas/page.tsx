@@ -1,5 +1,5 @@
-import { BuscaAtletaForm } from "@/components/busca-atleta/BuscaAtletaForm";
-import { Pager } from "@/components/busca-atleta/Pager";
+import { BuscaForm } from "@/components/ui/BuscaForm";
+import { Pager } from "@/components/ui/Pager";
 import { ResultadoBuscaTabela } from "@/components/busca-atleta/ResultadoBuscaTabela";
 import { EmptyState } from "@/components/ui/EmptyState";
 import { listarAtletas } from "@/lib/mock/buscaAtletas";
@@ -29,7 +29,7 @@ export default async function AtletasPage({ searchParams }: PageProps<"/atletas"
     <div className="mx-auto flex max-w-2xl flex-col gap-4">
       <div className="flex flex-col gap-2">
         <h1 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">Consulta de atleta</h1>
-        <BuscaAtletaForm valorInicial={consulta} />
+        <BuscaForm basePath="/atletas" valorInicial={consulta} placeholder="nome ou apelido..." />
       </div>
 
       {buscaCurta ? (
@@ -43,7 +43,7 @@ export default async function AtletasPage({ searchParams }: PageProps<"/atletas"
         <>
           <p className="text-sm text-zinc-500 dark:text-zinc-400">{todos.length} atletas no total</p>
           <ResultadoBuscaTabela itens={itensDaPagina} />
-          <Pager consulta={consulta} pagina={pagina} totalPaginas={totalPaginas} />
+          <Pager basePath="/atletas" consulta={consulta} pagina={pagina} totalPaginas={totalPaginas} />
         </>
       )}
     </div>
