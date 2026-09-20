@@ -1,22 +1,58 @@
 @import "tailwindcss";
 
+/*
+ * Dark mode manual (classe .dark no <html>), não só media query — ver
+ * ThemeToggle. Precisa vir antes de qualquer uso de `dark:` no arquivo.
+ */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+ * Paleta extraída de pe.senac.br (ver docs/arquitetura.md, "Paleta de
+ * cores"): azul-marinho da logo/menu (#00386d) como cor de marca, azul
+ * médio do ícone da logo (#288bd0) como acento. Cores de severidade/tier
+ * das telas de escore NÃO usam esta paleta — o doc 03 exige tom neutro ali.
+ */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --brand: #00386d;
+  --brand-strong: #004587;
+  --brand-foreground: #ffffff;
+
+  --link: #00386d;
+  --link-strong: #004587;
+
+  --accent: #288bd0;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+
+  --brand: #00386d;
+  --brand-strong: #0a4a86;
+  --brand-foreground: #ffffff;
+
+  /* Azul-marinho não tem contraste suficiente como texto sobre fundo escuro;
+     usa-se o acento mais claro da própria logo para links/ícones aqui. */
+  --link: #5bb3ea;
+  --link-strong: #86c6ef;
+
+  --accent: #4fb3e8;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-link: var(--link);
+  --color-link-strong: var(--link-strong);
+  --color-accent: var(--accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {

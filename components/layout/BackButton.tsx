@@ -32,7 +32,7 @@ export function BackButton() {
       onClick={voltar}
       aria-label="Voltar"
       title="Voltar"
-      className="mb-4 flex size-8 items-center justify-center rounded-full border border-zinc-300 text-zinc-500 transition-colors hover:border-zinc-400 hover:bg-zinc-100 hover:text-zinc-900 dark:border-zinc-700 dark:text-zinc-400 dark:hover:border-zinc-600 dark:hover:bg-zinc-800 dark:hover:text-zinc-50"
+      className="mb-4 flex size-8 items-center justify-center rounded-full border border-zinc-300 text-zinc-500 transition-colors hover:border-brand hover:bg-zinc-100 hover:text-brand dark:border-zinc-700 dark:text-zinc-400 dark:hover:border-link dark:hover:bg-zinc-800 dark:hover:text-link"
     >
       <ArrowLeft size={16} weight="bold" />
     </button>

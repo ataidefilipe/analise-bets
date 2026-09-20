@@ -31,6 +31,12 @@ Status: pronto para avaliação.
   dependência de ícones do projeto. Usa o histórico do navegador em vez de
   sempre linkar para "/", para já se comportar bem quando telas futuras
   tiverem navegação mais profunda (ex.: da busca para a ficha do atleta).
+- Paleta de marca extraída de [pe.senac.br](https://www.pe.senac.br/)
+  (azul-marinho + acento azul claro) com versão dedicada para tema escuro, e
+  botão (`ThemeToggle`) para alternar entre os dois manualmente. Detalhes e
+  os hex exatos em [`arquitetura.md`](./arquitetura.md#paleta-de-cores). O
+  item de menu da tela atual agora usa essa cor para indicar onde o usuário
+  está.
 
 ## Como conferir
 
@@ -38,7 +44,8 @@ Status: pronto para avaliação.
 2. Trocar o perfil no seletor do cabeçalho e observar o menu mudando —
    P1 (Clube Exemplo FC) só vê triagem e busca de atleta; P5 (Imprensa) só
    vê o panorama agregado; P4 não vê nenhuma tela.
-3. Abrir cada rota placeholder pelo menu.
+3. Abrir cada rota placeholder pelo menu e conferir o item ativo destacado.
+4. Clicar no botão de sol/lua no cabeçalho e conferir o tema escuro.
 
 ## O que fica para os próximos passos
 

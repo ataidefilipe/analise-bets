@@ -29,7 +29,7 @@ export default async function Home() {
             <Link
               key={tela.id}
               href={tela.rota}
-              className="flex flex-col gap-1 rounded-md border border-zinc-200 px-4 py-3 hover:border-zinc-400 dark:border-zinc-800 dark:hover:border-zinc-600"
+              className="flex flex-col gap-1 rounded-md border border-zinc-200 px-4 py-3 transition-colors hover:border-brand dark:border-zinc-800 dark:hover:border-link"
             >
               <span className="font-medium text-zinc-900 dark:text-zinc-50">{tela.rotulo}</span>
               <span className="text-sm text-zinc-500 dark:text-zinc-400">{tela.descricaoCurta}</span>

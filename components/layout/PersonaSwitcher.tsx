@@ -29,7 +29,7 @@ export function PersonaSwitcher({ personas, ativa }: PersonaSwitcherProps) {
       <select
         value={ativa}
         onChange={(e) => trocarPersona(e.target.value)}
-        className="rounded border border-zinc-300 bg-white px-2 py-1 text-zinc-700 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300"
+        className="rounded border border-zinc-300 bg-white px-2 py-1 text-zinc-700 focus-visible:border-brand focus-visible:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:focus-visible:border-link"
       >
         {personas.map((perfil) => (
           <option key={perfil.persona} value={perfil.persona}>

@@ -27,7 +27,14 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
       lang="pt-BR"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-white text-zinc-900 dark:bg-black dark:text-zinc-50">
+      <body className="min-h-full flex flex-col bg-background text-foreground">
+        <script
+          // Evita flash de tema errado: aplica a classe antes da primeira pintura,
+          // a partir da preferência salva ou, na ausência dela, do SO.
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem("theme");var d=t?t==="dark":window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.classList.toggle("dark",d);}catch(e){}})();`,
+          }}
+        />
         <AppShell perfil={perfil}>{children}</AppShell>
       </body>
     </html>
