@@ -19,9 +19,12 @@ foi entregue, para revisão antes de avançar para o próximo.
   como histórico.
 - [`passo-05-tabela-completa-atletas.md`](./passo-05-tabela-completa-atletas.md) —
   quinto passo: a tela de busca virou uma tabela com todos os atletas por
-  padrão, ordenada alfabeticamente, com "carregar mais" — diverge do doc 03
-  §3 (que descreve só busca, sem listagem prévia), registrado como decisão
-  deliberada do usuário.
+  padrão, ordenada alfabeticamente — diverge do doc 03 §3 (que descreve só
+  busca, sem listagem prévia), registrado como decisão deliberada do
+  usuário. Navegação por "carregar mais" **superada pelo passo 6**.
+- [`passo-06-paginacao-classica-atletas.md`](./passo-06-paginacao-classica-atletas.md) —
+  sexto passo: troca o "carregar mais" por paginação Anterior/Próxima de 10
+  em 10, mantendo a tabela completa e a busca como filtro do passo 5.
 
 ## Convenção de componentes
 

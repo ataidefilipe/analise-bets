@@ -9,7 +9,8 @@ listagem prévia).
 | Componente | Para quê |
 | :--- | :--- |
 | `BuscaAtletaForm` | Campo + botão de busca. Botão inativo com menos de 3 caracteres; submissão explícita (não busca a cada tecla), navegando para `/atletas?q=...`. |
-| `ResultadoBuscaTabela` | Tabela (Atleta / Clubes / Até) — nunca escore ou tier. Mostra todos os atletas por padrão (ordem alfabética) ou só os relacionados à busca; 10 por vez, com botão "Carregar mais 10" que soma ao que já está na tela, sem navegação. |
+| `ResultadoBuscaTabela` | Tabela (Atleta / Clubes / Até) da página atual — nunca escore ou tier. `app/atletas/page.tsx` decide qual fatia de 10 mostrar. |
+| `Pager` | Botões com ícones `CaretDoubleLeft`/`CaretDoubleRight` (phosphor-icons, via `/dist/ssr` por ser componente de servidor) para trocar de página, mantendo a consulta (`q`) e a página (`pagina`) na URL. Ver [`docs/passo-06-paginacao-classica-atletas.md`](../../docs/passo-06-paginacao-classica-atletas.md). |
 
 A ficha em si (rota `/atletas/[id]`) usa os componentes de
 [`components/ficha-atleta`](../ficha-atleta/README.md).

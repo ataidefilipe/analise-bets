@@ -1,6 +1,10 @@
 # Passo 5 — Tabela completa de atletas, ordenada e com "carregar mais"
 
-Status: pronto para avaliação.
+Status: **o mecanismo de "carregar mais" foi substituído por paginação
+clássica no [passo 6](./passo-06-paginacao-classica-atletas.md)**. A parte
+de "tabela completa por padrão, ordenada, com busca como filtro" continua
+valendo — só a forma de navegar entre os resultados mudou. Mantido como
+registro histórico.
 
 Supera o [passo 4](./passo-04-paginacao-busca.md): troca a paginação
 Anterior/Próxima por uma tabela que já lista todos os atletas por padrão.
