@@ -31,6 +31,9 @@ foi entregue, para revisão antes de avançar para o próximo.
 - [`passo-08-busca-e-paginacao-partidas.md`](./passo-08-busca-e-paginacao-partidas.md) —
   oitavo passo: busca e paginação na listagem de partidas, no mesmo padrão
   da T2 — e generalização de `BuscaForm`/`Pager` para `components/ui`.
+- [`passo-09-panorama-agregado.md`](./passo-09-panorama-agregado.md) — nono
+  passo: T4 (panorama agregado) implementada por completo. **Fecha as 4
+  telas do MVP do doc 03.**
 
 ## Convenção de componentes
 

@@ -1,5 +1,5 @@
 import type { TemporadaResumo } from "@/lib/types/atleta";
-import { formatarProporcao1T } from "@/lib/format/atleta";
+import { formatarProporcao } from "@/lib/format/proporcao";
 import { formatarTier } from "@/lib/format/tier";
 
 interface HistoricoTemporadasProps {
@@ -45,7 +45,7 @@ export function HistoricoTemporadas({ temporadas }: HistoricoTemporadasProps) {
                 <td className={TD_NUMERICO}>{temporada.minutosJogados.toLocaleString("pt-BR")}</td>
                 <td className={TD_NUMERICO}>{temporada.cartoesTotais}</td>
                 <td className={TD_NUMERICO}>{temporada.cartoes1T}</td>
-                <td className={TD_NUMERICO}>{formatarProporcao1T(temporada.cartoes1T, temporada.cartoesTotais)}</td>
+                <td className={TD_NUMERICO}>{formatarProporcao(temporada.cartoes1T, temporada.cartoesTotais)}</td>
                 <td className="px-4 py-2 text-zinc-700 dark:text-zinc-300">{formatarTier(temporada)}</td>
               </tr>
             ))}
