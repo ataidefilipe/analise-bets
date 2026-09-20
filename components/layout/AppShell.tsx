@@ -1,6 +1,6 @@
 import type { Perfil } from "@/lib/types/perfil";
 import { listarPersonasMock } from "@/lib/mock/me";
-import { BackButton } from "@/components/layout/BackButton";
+import { HomeButton } from "@/components/layout/HomeButton";
 import { NavMenu } from "@/components/layout/NavMenu";
 import { PersonaSwitcher } from "@/components/layout/PersonaSwitcher";
 import { ThemeToggle } from "@/components/layout/ThemeToggle";
@@ -39,7 +39,7 @@ export function AppShell({ perfil, children }: AppShellProps) {
         <NavMenu perfil={perfil} />
       </header>
       <main className="flex-1 px-4 py-6">
-        <BackButton />
+        <HomeButton />
         {children}
       </main>
     </div>

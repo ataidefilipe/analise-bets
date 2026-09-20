@@ -17,6 +17,6 @@ as demais são usadas em `app/partidas/[id]/page.tsx` (o dossiê).
 
 ## Impressão
 
-`AppShell` (cabeçalho/menu) e `BackButton` ficam ocultos com `print:hidden`
+`AppShell` (cabeçalho/menu) e `HomeButton` ficam ocultos com `print:hidden`
 para que a impressão mostre só o conteúdo do dossiê. Qualquer componente
 novo que só faz sentido na tela (não no papel) deve usar a mesma classe.
