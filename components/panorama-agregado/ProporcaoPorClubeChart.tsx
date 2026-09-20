@@ -23,7 +23,7 @@ export function ProporcaoPorClubeChart({ dados }: ProporcaoPorClubeChartProps) {
   }
 
   return (
-    <div>
+    <div className="rounded-md border border-zinc-200 p-4 dark:border-zinc-800">
       <h2 className="text-sm font-semibold text-zinc-900 dark:text-zinc-50">
         Proporção de cartões no 1º tempo por clube
       </h2>

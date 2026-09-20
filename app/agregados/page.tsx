@@ -52,7 +52,7 @@ export default async function AgregadosPage({ searchParams }: PageProps<"/agrega
   }
 
   return (
-    <div className="mx-auto flex max-w-3xl flex-col gap-6">
+    <div className="mx-auto flex max-w-6xl flex-col gap-6">
       <div>
         <h1 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">Panorama agregado</h1>
         <p className="text-sm text-zinc-500 dark:text-zinc-400">
@@ -65,10 +65,10 @@ export default async function AgregadosPage({ searchParams }: PageProps<"/agrega
       {linhas.length === 0 ? (
         <EmptyState titulo="Nenhum dado agregado disponível." descricao="Tente outra competição." />
       ) : (
-        <>
+        <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-2">
           <AgregadoTabela linhas={linhas} rotuloColuna={rotuloColuna} />
           <ProporcaoPorClubeChart dados={dadosGrafico} />
-        </>
+        </div>
       )}
     </div>
   );
