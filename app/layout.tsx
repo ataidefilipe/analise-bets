@@ -26,8 +26,13 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="pt-BR"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground">
+      {/* suppressHydrationWarning: o <html> ganha a classe "dark" via script antes da
+          pintura (ver abaixo) e o <body> é alvo comum de extensões de navegador (ex.:
+          ColorZilla injeta `cz-shortcut-listen`) — ambos os casos são descasamentos
+          esperados entre servidor e cliente, não bugs deste app. */}
+      <body className="min-h-full flex flex-col bg-background text-foreground" suppressHydrationWarning>
         <script
           // Evita flash de tema errado: aplica a classe antes da primeira pintura,
           // a partir da preferência salva ou, na ausência dela, do SO.
