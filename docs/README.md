@@ -10,6 +10,8 @@ foi entregue, para revisão antes de avançar para o próximo.
 - [`passo-01-base-do-projeto.md`](./passo-01-base-do-projeto.md) — primeiro
   passo: estrutura base, tipos de perfil, menu dinâmico e páginas placeholder
   das 4 telas.
+- [`passo-02-fila-triagem.md`](./passo-02-fila-triagem.md) — segundo passo:
+  T1 (fila de triagem da rodada) implementada por completo.
 
 ## Convenção de componentes
 

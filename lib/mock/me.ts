@@ -1,4 +1,5 @@
 import type { Perfil, PersonaCodigo } from "@/lib/types/perfil";
+import { CLUBES_MOCK } from "@/lib/mock/clubes";
 
 /**
  * Simula `GET /v1/me` (doc 01, ainda não recebido neste repositório).
@@ -13,11 +14,12 @@ import type { Perfil, PersonaCodigo } from "@/lib/types/perfil";
 const PERFIS_MOCK: Record<PersonaCodigo, Perfil> = {
   P1: {
     persona: "P1",
-    nome: "Clube Exemplo FC",
+    nome: `Clube ${CLUBES_MOCK[0].nome}`,
     granularidade: "identificada",
     telasPermitidas: ["fila-triagem", "busca-atleta"],
     limiarPadrao: 80,
-    clube: { slug: "exemplo_fc", nome: "Exemplo FC" },
+    // Mesmo clube usado em lib/mock/filaTriagem.ts, para a fila escopada não ficar sempre vazia.
+    clube: CLUBES_MOCK[0],
   },
   P2: {
     persona: "P2",
