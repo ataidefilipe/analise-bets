@@ -3,6 +3,7 @@ import { Pager } from "@/components/ui/Pager";
 import { ResultadoPartidasTabela } from "@/components/dossie-partida/ResultadoPartidasTabela";
 import { EmptyState } from "@/components/ui/EmptyState";
 import { listarPartidas } from "@/lib/mock/partidas";
+import { exigirAcessoTela } from "@/lib/mock/acesso";
 
 const POR_PAGINA = 10;
 
@@ -22,6 +23,7 @@ function lerPagina(valor: string | string[] | undefined): number {
  * agora com busca e paginação equivalentes às da T2 (a pedido do usuário).
  */
 export default async function PartidasPage({ searchParams }: PageProps<"/partidas">) {
+  await exigirAcessoTela("dossie-partida");
   const sp = await searchParams;
   const consulta = (primeiro(sp.q) ?? "").trim();
   const buscaCurta = consulta.length > 0 && consulta.length < 3;

@@ -28,7 +28,12 @@ docs/           Esta pasta.
 perfil pode ver; o front nunca decide isso sozinho. `lib/types/perfil.ts`
 define o formato (`Perfil`, `TelaId`), `lib/mock/me.ts` simula a resposta e
 `components/layout/NavMenu.tsx` filtra os links por `perfil.telasPermitidas`.
-Uma tela fora da lista não vira link desabilitado — não existe no DOM.
+Uma tela fora da lista não vira link desabilitado — não existe no DOM. O
+menu é só a primeira camada: cada `page.tsx` protegida também chama
+`exigirAcessoTela(tela)` (`lib/mock/acesso.ts`) antes de buscar qualquer
+dado, para que acesso direto pela URL — ou trocar de perfil já estando na
+tela — também redirecione para `/` (doc 03, §0; passo 10). Toda tela nova
+precisa dessa chamada logo na primeira linha do componente.
 
 **Perfil mock trocável por cookie.** Sem doc 01, não há autenticação real.
 `components/layout/PersonaSwitcher.tsx` grava a persona escolhida em um

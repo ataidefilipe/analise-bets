@@ -3,6 +3,7 @@ import { Pager } from "@/components/ui/Pager";
 import { ResultadoBuscaTabela } from "@/components/busca-atleta/ResultadoBuscaTabela";
 import { EmptyState } from "@/components/ui/EmptyState";
 import { listarAtletas } from "@/lib/mock/buscaAtletas";
+import { exigirAcessoTela } from "@/lib/mock/acesso";
 
 const POR_PAGINA = 10;
 
@@ -16,6 +17,7 @@ function lerPagina(valor: string | string[] | undefined): number {
 }
 
 export default async function AtletasPage({ searchParams }: PageProps<"/atletas">) {
+  await exigirAcessoTela("busca-atleta");
   const sp = await searchParams;
   const consulta = (primeiro(sp.q) ?? "").trim();
   const buscaCurta = consulta.length > 0 && consulta.length < 3;

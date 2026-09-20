@@ -3,8 +3,10 @@ import { FichaCabecalho } from "@/components/ficha-atleta/FichaCabecalho";
 import { HistoricoTemporadas } from "@/components/ficha-atleta/HistoricoTemporadas";
 import { LinhaDoTempoCartoes } from "@/components/ficha-atleta/LinhaDoTempoCartoes";
 import { getFichaAtleta } from "@/lib/mock/fichaAtleta";
+import { exigirAcessoTela } from "@/lib/mock/acesso";
 
 export default async function FichaAtletaPage({ params }: PageProps<"/atletas/[id]">) {
+  await exigirAcessoTela("busca-atleta");
   const { id } = await params;
   const ficha = await getFichaAtleta(id);
 

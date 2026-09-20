@@ -6,11 +6,11 @@ import { EscoreAnomaliaPartida } from "@/components/dossie-partida/EscoreAnomali
 import { AtletasSinalizados } from "@/components/dossie-partida/AtletasSinalizados";
 import { ExportarPdfButton } from "@/components/dossie-partida/ExportarPdfButton";
 import { getDossiePartida } from "@/lib/mock/partidas";
-import { getPerfilAtual } from "@/lib/mock/perfilAtual";
+import { exigirAcessoTela } from "@/lib/mock/acesso";
 
 export default async function DossiePartidaPage({ params }: PageProps<"/partidas/[id]">) {
   const { id } = await params;
-  const [dossie, perfil] = await Promise.all([getDossiePartida(id), getPerfilAtual()]);
+  const [dossie, perfil] = await Promise.all([getDossiePartida(id), exigirAcessoTela("dossie-partida")]);
 
   return (
     <div className="mx-auto flex max-w-3xl flex-col gap-6">

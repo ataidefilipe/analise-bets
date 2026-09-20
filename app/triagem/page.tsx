@@ -4,7 +4,7 @@ import { RodadaFiltros } from "@/components/fila-triagem/RodadaFiltros";
 import { FilaTriagemPainel } from "@/components/fila-triagem/FilaTriagemPainel";
 import { getFilaTriagem } from "@/lib/mock/filaTriagem";
 import { ANOS_DISPONIVEIS, COMPETICOES, TOTAL_RODADAS } from "@/lib/mock/opcoesRodada";
-import { getPerfilAtual } from "@/lib/mock/perfilAtual";
+import { exigirAcessoTela } from "@/lib/mock/acesso";
 
 type ValorParam = string | string[] | undefined;
 
@@ -33,7 +33,7 @@ export default async function TriagemPage({ searchParams }: PageProps<"/triagem"
   const ano = lerAno(sp.ano);
   const rodada = lerRodada(sp.rodada);
 
-  const perfil = await getPerfilAtual();
+  const perfil = await exigirAcessoTela("fila-triagem");
   const fila = await getFilaTriagem({ competicao, ano, rodada, clubeSlug: perfil.clube?.slug });
 
   return (

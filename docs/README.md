@@ -34,6 +34,9 @@ foi entregue, para revisão antes de avançar para o próximo.
 - [`passo-09-panorama-agregado.md`](./passo-09-panorama-agregado.md) — nono
   passo: T4 (panorama agregado) implementada por completo. **Fecha as 4
   telas do MVP do doc 03.**
+- [`passo-10-controle-de-acesso-por-rota.md`](./passo-10-controle-de-acesso-por-rota.md) —
+  décimo passo: perfil sem acesso a uma tela é redirecionado para `/` ao
+  abrir a rota direto ou ao trocar de perfil já estando nela.
 
 ## Convenção de componentes
 

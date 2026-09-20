@@ -5,6 +5,7 @@ import { ProporcaoPorClubeChart } from "@/components/panorama-agregado/Proporcao
 import { getAgregadoPorClube, getAgregadoPorRodada } from "@/lib/mock/agregados";
 import { COMPETICOES } from "@/lib/mock/opcoesRodada";
 import type { ModoAgregacao } from "@/lib/types/agregado";
+import { exigirAcessoTela } from "@/lib/mock/acesso";
 
 function primeiro(valor: string | string[] | undefined): string | undefined {
   return Array.isArray(valor) ? valor[0] : valor;
@@ -15,6 +16,7 @@ function nomeCompeticao(slug: string): string {
 }
 
 export default async function AgregadosPage({ searchParams }: PageProps<"/agregados">) {
+  await exigirAcessoTela("panorama-agregado");
   const sp = await searchParams;
   const modo: ModoAgregacao = primeiro(sp.modo) === "rodada" ? "rodada" : "clube";
   const competicaoParam = primeiro(sp.competicao);
