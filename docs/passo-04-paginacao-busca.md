@@ -1,6 +1,9 @@
 # Passo 4 — Paginação na busca de atleta
 
-Status: pronto para avaliação.
+Status: **superado pelo passo 5** — [`passo-05-tabela-completa-atletas.md`](./passo-05-tabela-completa-atletas.md).
+O padrão Anterior/Próxima descrito aqui foi substituído por "carregar mais"
+sobre uma tabela que já lista todos os atletas por padrão. Mantido como
+registro histórico da decisão, não como comportamento atual.
 
 ## Atenção: isto diverge do doc 03
 

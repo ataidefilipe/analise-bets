@@ -1,30 +1,18 @@
 import { BuscaAtletaForm } from "@/components/busca-atleta/BuscaAtletaForm";
-import { Pager } from "@/components/busca-atleta/Pager";
-import { ResultadoBuscaLista } from "@/components/busca-atleta/ResultadoBuscaLista";
+import { ResultadoBuscaTabela } from "@/components/busca-atleta/ResultadoBuscaTabela";
 import { EmptyState } from "@/components/ui/EmptyState";
-import { buscarAtletas } from "@/lib/mock/buscaAtletas";
-
-const POR_PAGINA = 10;
+import { listarAtletas } from "@/lib/mock/buscaAtletas";
 
 function primeiro(valor: string | string[] | undefined): string | undefined {
   return Array.isArray(valor) ? valor[0] : valor;
 }
 
-function lerPagina(valor: string | string[] | undefined): number {
-  const n = Number(primeiro(valor));
-  return Number.isInteger(n) && n >= 1 ? n : 1;
-}
-
 export default async function AtletasPage({ searchParams }: PageProps<"/atletas">) {
   const sp = await searchParams;
   const consulta = (primeiro(sp.q) ?? "").trim();
-  const pagina = lerPagina(sp.pagina);
+  const buscaCurta = consulta.length > 0 && consulta.length < 3;
 
-  const resultado =
-    consulta.length >= 3
-      ? await buscarAtletas(consulta, pagina, POR_PAGINA)
-      : { itens: [], total: 0, pagina: 1, porPagina: POR_PAGINA };
-  const totalPaginas = Math.max(1, Math.ceil(resultado.total / POR_PAGINA));
+  const itens = buscaCurta ? [] : await listarAtletas(consulta);
 
   return (
     <div className="mx-auto flex max-w-2xl flex-col gap-4">
@@ -33,18 +21,15 @@ export default async function AtletasPage({ searchParams }: PageProps<"/atletas"
         <BuscaAtletaForm valorInicial={consulta} />
       </div>
 
-      {consulta.length === 0 ? null : consulta.length < 3 ? (
+      {buscaCurta ? (
         <p className="text-sm text-zinc-500 dark:text-zinc-400">Digite ao menos 3 caracteres para buscar.</p>
-      ) : resultado.itens.length === 0 ? (
+      ) : itens.length === 0 ? (
         <EmptyState
           titulo="Nenhum atleta encontrado."
           descricao="A base cobre Série A desde 2003 e Série B desde 2022."
         />
       ) : (
-        <>
-          <ResultadoBuscaLista itens={resultado.itens} />
-          <Pager consulta={consulta} pagina={resultado.pagina} totalPaginas={totalPaginas} />
-        </>
+        <ResultadoBuscaTabela itens={itens} />
       )}
     </div>
   );

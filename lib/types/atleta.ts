@@ -15,18 +15,6 @@ export interface AtletaResumo {
 }
 
 /**
- * Formato esperado de `GET /atletas?q=&pagina=` com paginação (pedido do
- * usuário — o doc 03 §3 originalmente descrevia 20 resultados sem
- * paginação; ver docs/passo-04-paginacao-busca.md sobre essa mudança).
- */
-export interface ResultadoBusca {
-  itens: AtletaResumo[];
-  total: number;
-  pagina: number;
-  porPagina: number;
-}
-
-/**
  * Uma linha do histórico por temporada (doc 03, §3): "é onde o padrão
  * aparece — proporção de 1º tempo consistentemente alta ao longo de
  * temporadas diz mais que um escore isolado".

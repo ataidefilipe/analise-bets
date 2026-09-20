@@ -12,7 +12,9 @@ Código sem JSX: tipos de domínio, dados/mocks e formatadores.
   `GET /v1/me`; `telas.ts` guarda os metadados fixos das 4 telas;
   `personaCookie.ts` e `perfilAtual.ts` sustentam o seletor de perfil de
   demonstração; `filaTriagem.ts` simula `GET /rodadas/.../fila` (T1);
-  `buscaAtletas.ts` simula `GET /atletas?q=` e `fichaAtleta.ts` simula
+  `buscaAtletas.ts` (`listarAtletas`) simula `GET /atletas?q=` — sem
+  consulta devolve a base inteira ordenada, ver
+  `docs/passo-05-tabela-completa-atletas.md` — e `fichaAtleta.ts` simula
   `GET /atletas/{id}` (T2, ambos apoiados no mesmo pool de nomes). Suporte
   compartilhado: `clubes.ts`, `nomes.ts`, `tier.ts` (vocabulário de tier,
   ainda placeholder — doc 02 §5 pendente), `random.ts` (gerador

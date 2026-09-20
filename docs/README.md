@@ -15,8 +15,13 @@ foi entregue, para revisão antes de avançar para o próximo.
 - [`passo-03-busca-e-ficha-atleta.md`](./passo-03-busca-e-ficha-atleta.md) —
   terceiro passo: T2 (busca e ficha do atleta) implementada por completo.
 - [`passo-04-paginacao-busca.md`](./passo-04-paginacao-busca.md) — quarto
-  passo: paginação na busca de atleta, a pedido do usuário — diverge do
-  "sem paginação" do doc 03 §3, registrado como decisão deliberada.
+  passo: paginação na busca de atleta. **Superado pelo passo 5**, mantido
+  como histórico.
+- [`passo-05-tabela-completa-atletas.md`](./passo-05-tabela-completa-atletas.md) —
+  quinto passo: a tela de busca virou uma tabela com todos os atletas por
+  padrão, ordenada alfabeticamente, com "carregar mais" — diverge do doc 03
+  §3 (que descreve só busca, sem listagem prévia), registrado como decisão
+  deliberada do usuário.
 
 ## Convenção de componentes
 

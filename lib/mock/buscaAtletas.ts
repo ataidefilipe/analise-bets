@@ -1,4 +1,4 @@
-import type { AtletaResumo, ResultadoBusca } from "@/lib/types/atleta";
+import type { AtletaResumo } from "@/lib/types/atleta";
 import { CLUBES_MOCK } from "@/lib/mock/clubes";
 import { gerarNome } from "@/lib/mock/nomes";
 import { criarGeradorAleatorio, seedFromString } from "@/lib/mock/random";
@@ -25,30 +25,16 @@ function gerarPool(): AtletaResumo[] {
 const POOL_BUSCA = gerarPool();
 
 /**
- * Simula `GET /atletas?q=&pagina=` (doc 01, ainda não recebido). Mínimo de 3
- * caracteres é responsabilidade do front (botão inativo, doc 03 §3); aqui é
- * só uma segunda barreira defensiva. Pagina o resultado inteiro da busca —
- * `pagina` não reinicia o filtro, só a fatia exibida.
+ * Simula `GET /atletas?q=` (doc 01, ainda não recebido). Sem `consulta` (ou
+ * com menos de 3 caracteres), devolve a base inteira em ordem alfabética —
+ * a pedido do usuário, a tela agora navega a base toda, não só o resultado
+ * de uma busca (ver docs/passo-05-tabela-completa-atletas.md). Com consulta
+ * de 3+ caracteres, filtra por nome antes de ordenar.
  */
-export async function buscarAtletas(
-  consulta: string,
-  pagina: number = 1,
-  porPagina: number = 10,
-): Promise<ResultadoBusca> {
+export async function listarAtletas(consulta: string = ""): Promise<AtletaResumo[]> {
   const termo = consulta.trim().toLowerCase();
-  if (termo.length < 3) {
-    return { itens: [], total: 0, pagina: 1, porPagina };
-  }
-
-  const encontrados = POOL_BUSCA.filter((atleta) => atleta.nome.toLowerCase().includes(termo));
-  const inicio = (pagina - 1) * porPagina;
-
-  return {
-    itens: encontrados.slice(inicio, inicio + porPagina),
-    total: encontrados.length,
-    pagina,
-    porPagina,
-  };
+  const base = termo.length >= 3 ? POOL_BUSCA.filter((atleta) => atleta.nome.toLowerCase().includes(termo)) : POOL_BUSCA;
+  return [...base].sort((a, b) => a.nome.localeCompare(b.nome, "pt-BR"));
 }
 
 /** Usado por `getFichaAtleta` para devolver nome/clubes consistentes com o resultado de busca. */
