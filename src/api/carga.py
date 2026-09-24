@@ -27,7 +27,7 @@ from sqlalchemy import func, select
 from src.api import config, db
 from src.api.clientes import criar_cliente
 from src.api.modelo import (
-    TABELAS_DE_LEITURA, TABELAS_OPERACIONAIS, anomalia_atleta, atletas, cartoes, clientes_api,
+    TABELAS_DE_LEITURA, TABELAS_OPERACIONAIS, anomalia_atleta, atletas, cartoes, clientes_api, clubes,
     escalacoes, metadata, minutos_em_campo, nominaveis, partidas, risco_pre_jogo,
 )
 from src.pipeline.camadas_de_exposicao import STATUS_CONDENADO, status_juridico_por_atleta
@@ -87,12 +87,20 @@ def montar_partidas(processado_em: str) -> pd.DataFrame:
     if procedencia:
         df = df.merge(pd.DataFrame(procedencia), on=["serie", "temporada", "partida_id"], how="left")
         df.loc[df["sumula_sha256"].notna(), "processado_em"] = processado_em
+    df["busca_texto"] = (df["clube_mandante"].map(normalizar) + " " + df["clube_visitante"].map(normalizar))
     colunas = [c.name for c in partidas.columns]
     for c in colunas:
         if c not in df.columns:
             df[c] = None
     df = df[colunas].replace({"": None})
     return df.drop_duplicates(["serie", "temporada", "partida_id"])
+
+
+def montar_clubes(tab_partidas: pd.DataFrame) -> pd.DataFrame:
+    lados = [tab_partidas[["temporada", f"clube_{lado}_slug", f"clube_{lado}"]]
+             .set_axis(["temporada", "clube_slug", "nome"], axis=1) for lado in ("mandante", "visitante")]
+    df = pd.concat(lados).dropna(subset=["clube_slug", "nome"]).sort_values("temporada")
+    return df.groupby("clube_slug", as_index=False).last()[["clube_slug", "nome"]]
 
 
 def montar_escalacoes() -> pd.DataFrame:
@@ -166,8 +174,10 @@ def carregar(com_demo: bool = True) -> dict:
     logger.info("Montando tabelas a partir de %s", PROCESSED)
     esc = montar_escalacoes()
     tab_atletas = montar_atletas(esc)
+    tab_partidas = montar_partidas(processado_em)
     quadros = {
-        partidas: montar_partidas(processado_em),
+        partidas: tab_partidas,
+        clubes: montar_clubes(tab_partidas),
         atletas: tab_atletas,
         escalacoes: esc[[c.name for c in escalacoes.columns if c.name != "id"]],
         cartoes: montar_cartoes(esc),

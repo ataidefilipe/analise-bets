@@ -90,10 +90,12 @@ GET /v1/atletas/900001   Authorization: Bearer ab_...
 | :--- | :--- | :--- |
 | `GET /saude` | nenhuma | — |
 | `GET /v1/me` | `contexto` | — |
+| `GET /v1/cobertura` | `contexto` | — (só temporadas e rodadas) |
 | `GET /v1/rodadas/{serie}/{temporada}/{rodada}/fila` | `exigir(federacao, clube)` | `clube`: `WHERE clube_slug = <credencial>` antes do corte |
 | `GET /v1/atletas?busca=` | `exigir(federacao, clube)` | sem escore; 20 resultados; registra consulta |
 | `GET /v1/atletas/{atleta_id}` | `exigir(federacao, clube)` | registra consulta com `proprio_elenco` |
 | `GET /v1/atletas/nominaveis` | `contexto` | — |
+| `GET /v1/partidas` | `contexto` | nenhuma (partida não é dado pessoal); paginada, até 50 por página |
 | `GET /v1/partidas/{serie}/{temporada}/{partida_id}/dossie` | `contexto` | aberta: cartões sem atleta (salvo nominável) e `atletas_sinalizados = null`; `clube`: sinalizados só do elenco |
 | `GET /v1/agregados/{serie}/{temporada}` | `contexto` | só agregados por clube ou rodada |
 
@@ -108,7 +110,7 @@ palavra "nominaveis" seria lida como id.
 
 | Grupo | Tabelas | Na recarga |
 | :--- | :--- | :--- |
-| **Leitura** | `partidas`, `atletas`, `escalacoes`, `cartoes`, `minutos_em_campo`, `risco_pre_jogo`, `anomalia_atleta`, `nominaveis` | Apagadas e recriadas numa transação |
+| **Leitura** | `partidas`, `clubes`, `atletas`, `escalacoes`, `cartoes`, `minutos_em_campo`, `risco_pre_jogo`, `anomalia_atleta`, `nominaveis` | Apagadas e recriadas numa transação |
 | **Operacional** | `clientes_api`, `consultas_atleta` | **Preservadas.** Contêm credenciais e a trilha de due diligence |
 
 ### 4.2 Relacionamento
@@ -149,6 +151,11 @@ Linhas da carga de 2026-09-23.
 | `match_anomaly_score`, `percentil_anomalia`, `tier_partida` | real, real, text | `integrity/partidas_anomaly_scored.parquet`. Só A 2015–2024 e B 2022–2023 |
 | `sumula_url`, `sumula_sha256`, `baixado_em` | text | `data/raw/cbf/manifest_delta.json`. Só A 2025–2026 e B 2024–2026 |
 | `processado_em` | text | Momento da carga, gravado onde há procedência |
+| `busca_texto` | text | Nomes dos dois clubes, sem acento e minúsculos. A listagem de partidas usa `LIKE` aqui |
+
+**`clubes`** — 87 linhas. PK `clube_slug`. Coluna `nome`: o nome da temporada mais recente em que
+o clube aparece em `partidas`. A API usa esta tabela para devolver `clube` ao lado de todo
+`clube_slug`.
 
 **`atletas`** — 3.350 linhas. PK `registro_cbf`. Derivada de `escalacoes`, um registro por atleta com os
 dados da última escalação.
@@ -263,13 +270,14 @@ perfil, com o `clube` apontando para `flamengo`. Para regenerar, apague o arquiv
 
 [`tests/test_api.py`](../tests/test_api.py) cria um banco SQLite num diretório temporário, insere um
 conjunto mínimo (duas equipes, dois atletas, uma partida) e troca o engine com `db.definir_engine()`.
-Os 15 testes cobrem:
+Os 18 testes cobrem:
 
 * 401 sem chave; 400 com `perfil`/`clube` na query; trading não cadastrável;
 * corte da fila, componentes obrigatórios, fila do clube restrita ao elenco, 403 para camada aberta, 422 sem escalação;
 * busca com 3 caracteres, sem escore, e registro de busca e de ficha em `consultas_atleta`;
 * dossiê sem identificação na camada aberta e com sinalizados na identificada;
-* agregados sem atleta; formato dos erros 400 e 404.
+* agregados sem atleta; formato dos erros 400 e 404;
+* nome de clube ao lado do slug; listagem de partidas com paginação e busca; cobertura.
 
 ---
 

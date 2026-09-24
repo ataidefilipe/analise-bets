@@ -20,7 +20,7 @@ from src.api import db
 from src.api.clientes import criar_cliente
 from src.api.main import app
 from src.api.modelo import (
-    atletas, cartoes, consultas_atleta, metadata, minutos_em_campo, nominaveis, partidas,
+    atletas, cartoes, clubes, consultas_atleta, metadata, minutos_em_campo, nominaveis, partidas,
     risco_pre_jogo,
 )
 
@@ -36,7 +36,11 @@ def api(tmp_path):
              "clube_visitante": "Beta", "clube_visitante_slug": "beta",
              "gols_mandante": 2, "gols_visitante": 1,
              "sumula_url": "https://conteudo.cbf.com.br/sumulas/2026/1421se.pdf",
-             "sumula_sha256": "ab" * 32, "baixado_em": "2026-05-02T05:00:00-03:00"},
+             "sumula_sha256": "ab" * 32, "baixado_em": "2026-05-02T05:00:00-03:00",
+             "busca_texto": "alfa beta"},
+        ])
+        conn.execute(clubes.insert(), [
+            {"clube_slug": "alfa", "nome": "Alfa"}, {"clube_slug": "beta", "nome": "Beta"},
         ])
         conn.execute(atletas.insert(), [
             {"registro_cbf": "111", "nome_completo": "João da Silva", "apelido": "Joãozinho",
@@ -182,3 +186,27 @@ def test_erro_de_validacao_segue_o_formato(api):
     r = api("/v1/agregados/C/2026", "imprensa_academia")
     assert r.status_code == 400 and r.json()["erro"] == "parametro_invalido"
     assert api("/v1/atletas/999", "federacao_stjd").json() == {"erro": "nao_encontrado"}
+
+
+def test_nomes_de_clube_acompanham_os_slugs(api):
+    fila = api(FILA, "clube").json()
+    assert fila["contexto"]["clube"] == "Alfa" and fila["dados"][0]["clube"] == "Alfa"
+    busca = api("/v1/atletas?busca=pedro", "federacao_stjd").json()
+    assert busca["dados"][0]["clubes"] == [{"clube_slug": "beta", "clube": "Beta"}]
+    assert api("/v1/me", "clube").json()["clube"] == "Alfa"
+
+
+def test_listagem_de_partidas_pagina_e_busca_por_clube(api):
+    corpo = api("/v1/partidas?serie=A&temporada=2026", "imprensa_academia").json()
+    assert corpo["paginacao"]["total_itens"] == 1
+    assert corpo["dados"][0]["placar"] == "2-1" and corpo["dados"][0]["tem_procedencia"] is True
+    assert api("/v1/partidas?serie=A&busca=gama", "imprensa_academia").json()["total"] == 0
+    assert api("/v1/partidas?serie=A&busca=BETA", "imprensa_academia").json()["total"] == 1
+    assert api("/v1/partidas?serie=A&busca=be", "imprensa_academia").status_code == 400
+
+
+def test_cobertura_lista_temporadas_e_rodadas(api):
+    corpo = api("/v1/cobertura", "imprensa_academia").json()
+    assert corpo["A"]["temporadas"] == [2026]
+    assert corpo["A"]["fila"] == [{"temporada": 2026, "ultima_rodada": 7}]
+    assert corpo["B"] == {"temporadas": [], "fila": []}

@@ -97,11 +97,18 @@ Uma tela negada **não aparece**, nem desabilitada (documento 03 §0). Monte o m
 | :--- | :--- | :--- |
 | T1 Fila de triagem | `/v1/rodadas/.../fila` | `camada === "identificada"` |
 | T2 Busca e ficha | `/v1/atletas`, `/v1/atletas/{id}` | `camada === "identificada"` |
-| T3 Dossiê de partida | `/v1/partidas/.../dossie` | sempre |
+| T3 Dossiê de partida | `/v1/partidas`, `/v1/partidas/.../dossie` | sempre |
 | T4 Panorama | `/v1/agregados/...` | sempre |
 
 Mesmo assim, o backend é quem decide: se a tela for chamada por um perfil sem acesso, a
 resposta é 403.
+
+Para montar os filtros de série, temporada e rodada, chame `GET /v1/cobertura` uma vez por
+sessão (§5.8). Não fixe anos no código: a cobertura muda a cada execução do pipeline.
+
+**Nomes de clube.** Todo objeto que traz `clube_slug` traz também `clube`, o nome legível.
+Exiba `clube`, nunca o slug. Em listas (`clubes` da busca e da ficha), cada item é
+`{"clube_slug": "...", "clube": "..."}`.
 
 ---
 
@@ -116,6 +123,7 @@ resposta é 403.
   "camada": "identificada",
   "granularidade": ["atleta"],
   "clube_slug": "exemplo_fc",
+  "clube": "Exemplo FC",
   "limiar_padrao": { "percentil": 90.0, "alertas_por_rodada_esperados": 1.0 },
   "aviso_interpretativo": "Este escore mede ATIPICIDADE ESTATÍSTICA ..."
 }
@@ -141,6 +149,7 @@ Perfis: `federacao_stjd`, `clube`.
     "serie": "A", "temporada": 2026, "rodada": 20,
     "percentil_aplicado": 70.0,
     "clube_slug": null,
+    "clube": null,
     "total_relacionados": 458,
     "total_sinalizados": 136,
     "base_rasa": false,
@@ -153,6 +162,7 @@ Perfis: `federacao_stjd`, `clube`.
       "nome_completo": "Fulano de Tal",
       "num_camisa": 5,
       "clube_slug": "exemplo_fc",
+      "clube": "Exemplo FC",
       "partida_id": 191,
       "confronto": "Exemplo FC x Outro FC",
       "condicao": "Titular",
@@ -213,7 +223,10 @@ Perfis: `federacao_stjd`, `clube`.
       "atleta_id": "900001",
       "atleta": "Fulano",
       "nome_completo": "Fulano de Tal",
-      "clubes": ["exemplo_fc", "outro_fc"],
+      "clubes": [
+        { "clube_slug": "exemplo_fc", "clube": "Exemplo FC" },
+        { "clube_slug": "outro_fc", "clube": "Outro FC" }
+      ],
       "ultima_temporada": 2026
     }
   ],
@@ -238,7 +251,7 @@ Perfis: `federacao_stjd`, `clube`. O `clube` pode consultar **qualquer** atleta 
   "atleta_id": "900001",
   "atleta": "Fulano",
   "nome_completo": "Fulano de Tal",
-  "clubes": ["exemplo_fc"],
+  "clubes": [{ "clube_slug": "exemplo_fc", "clube": "Exemplo FC" }],
   "clube_atual": "exemplo_fc",
   "historico": [
     {
@@ -272,6 +285,43 @@ Perfis: `federacao_stjd`, `clube`. O `clube` pode consultar **qualquer** atleta 
 * Enquadramento visual **neutro**: sem vermelho, sem ícone de alerta, sem selo (documento 03 §3).
 * Toda abertura de ficha e toda busca ficam registradas no backend. É invisível ao usuário:
   não mostre confirmação nem aviso.
+
+---
+
+### 5.5a `GET /v1/partidas` — T3, listagem
+
+Perfis: todos. Navegação até um dossiê. Partida não é dado pessoal, então não há restrição de
+camada.
+
+| Query | Obrigatório | Observação |
+| :--- | :---: | :--- |
+| `serie` | sim | `A` ou `B` |
+| `temporada` | não | ano; sem ele, todas as temporadas da série |
+| `rodada` | não | |
+| `busca` | não | Nome de qualquer um dos dois clubes. Mínimo 3 caracteres, sem acento nem caixa |
+| `pagina` | não | Começa em 1 |
+| `por_pagina` | não | Padrão 20, máximo 50 |
+
+```json
+{
+  "dados": [
+    {
+      "serie": "A", "temporada": 2026, "partida_id": 271, "rodada": 27, "data": "2026-09-14",
+      "clube_mandante": "Exemplo FC", "clube_mandante_slug": "exemplo_fc",
+      "clube_visitante": "Outro FC", "clube_visitante_slug": "outro_fc",
+      "placar": "2-1",
+      "tem_procedencia": true
+    }
+  ],
+  "total": 1,
+  "paginacao": { "pagina": 1, "por_pagina": 20, "total_itens": 380, "total_paginas": 19 }
+}
+```
+
+Ordem: mais recente primeiro. Aqui `total` é o tamanho da página; o total da busca está em
+`paginacao.total_itens`. Partidas sem clube na fonte (Série B 2022, rodada 0) não aparecem.
+A chave de cada partida é o trio `serie` + `temporada` + `partida_id`: use os três na rota
+do dossiê.
 
 ---
 
@@ -375,6 +425,26 @@ consulta interna do front, se precisar.
 
 ---
 
+### 5.8 `GET /v1/cobertura`
+
+Perfis: todos. O que existe na base, para montar os filtros.
+
+```json
+{
+  "A": {
+    "temporadas": [2026, 2025, 2024, "..."],
+    "fila": [{ "temporada": 2026, "ultima_rodada": 27 }, { "temporada": 2025, "ultima_rodada": 38 }]
+  },
+  "B": { "temporadas": ["..."], "fila": ["..."] }
+}
+```
+
+* `temporadas`: temporadas com partidas. Servem para T3 (listagem) e T4.
+* `fila`: temporadas com escore pré-jogo e a última rodada com escalação publicada. Servem
+  para a T1. Um bom padrão é abrir a fila em `fila[0].temporada` / `fila[0].ultima_rodada`.
+
+---
+
 ## 6. Regras de exibição obrigatórias
 
 | # | Regra |
@@ -446,7 +516,7 @@ escritos à mão a partir dos exemplos deste guia.
 | D4 | Cartões na ficha | Só os vinculados ao atleta pela escalação (camisa + clube + partida). Cerca de 7% dos cartões dessas temporadas não casam com a escalação e ficam fora da ficha, embora apareçam no dossiê e nos agregados |
 | D5 | Escore retrospectivo na ficha | A janela (A 2015–2024, B 2022–2023) quase não cruza com a das súmulas. Na prática, só atletas da Série B 2022–2023 têm `tier` no `historico` |
 | D6 | `atletas_sinalizados` no dossiê para `clube` | Filtrado para o próprio elenco, coerente com o documento 02 §4.2 (lista proativa só do próprio elenco). O documento 01 §5 dizia "completo" |
-| D7 | Campos extras | `nome_completo`, `clube`, `clube_atual`, `motivo_disponivel`, `aviso_partida`, `base_rasa`, `aviso_base_rasa`, `contexto.clube_slug`. São acréscimos que não quebram o contrato |
+| D7 | Campos e endpoints extras | `nome_completo`, `clube` (nome legível em todo objeto com `clube_slug`), `clube_atual`, `motivo_disponivel`, `aviso_partida`, `base_rasa`, `aviso_base_rasa`, `contexto.clube_slug`. Endpoints `GET /v1/partidas` (listagem) e `GET /v1/cobertura` (filtros). **Muda o contrato em um ponto:** `clubes`, na busca e na ficha, passou de lista de slugs para lista de objetos `{clube_slug, clube}` |
 | D8 | `processado_em` | Momento da carga no banco da API, não do parsing do PDF |
 | D8b | Cobertura da procedência | O manifesto de download só cobre A 2025–2026 e B 2024–2026. A Série B 2022–2023 tem súmula processada, mas sem registro de URL/hash. O manifesto de A 2024 não casa com os `partida_id` da base (origem diferente) |
 | D9 | Dados de origem | A Série B 2022 tem algumas partidas com `rodada = 0` e sem data ou clubes (defeito da fonte). Aparecem em agregados por rodada como rodada 0 |

@@ -84,6 +84,19 @@ def _registrar_consulta(ctx: Contexto, atleta_id: Optional[str] = None,
                         ctx.cliente_id, atleta_id, exc_info=True)
 
 
+def _padrao_like(termo: str) -> str:
+    """Termo normalizado como padrão LIKE, com curingas escapados (usar com ESCAPE '\\')."""
+    return "%" + termo.replace("\\", "\\\\").replace("%", "\\%").replace("_", "\\_") + "%"
+
+
+def _nomes_clubes() -> dict:
+    return {r["clube_slug"]: r["nome"] for r in _linhas("SELECT clube_slug, nome FROM clubes")}
+
+
+def _clubes(slugs, nomes: dict) -> list[dict]:
+    return [{"clube_slug": s, "clube": nomes.get(s)} for s in slugs]
+
+
 def _registros_nominaveis() -> set:
     return {r["registro_cbf"] for r in _linhas(
         "SELECT registro_cbf FROM nominaveis WHERE registro_cbf IS NOT NULL")}
@@ -97,6 +110,22 @@ def saude():
     return {"status": "ok"}
 
 
+@app.get("/v1/cobertura", tags=["sessão"])
+def cobertura(ctx: Contexto = Depends(contexto)):
+    """Temporadas e rodadas disponíveis, para montar os filtros do front."""
+    partidas = _linhas("SELECT DISTINCT serie, temporada FROM partidas ORDER BY serie, temporada DESC")
+    fila = _linhas("""SELECT serie, temporada, MAX(rodada) AS ultima_rodada FROM risco_pre_jogo
+                      GROUP BY serie, temporada ORDER BY serie, temporada DESC""")
+    return {
+        serie: {
+            "temporadas": [r["temporada"] for r in partidas if r["serie"] == serie],
+            "fila": [{"temporada": r["temporada"], "ultima_rodada": r["ultima_rodada"]}
+                     for r in fila if r["serie"] == serie],
+        }
+        for serie in ("A", "B")
+    }
+
+
 @app.get("/v1/me", tags=["sessão"])
 def me(ctx: Contexto = Depends(contexto)):
     return {
@@ -105,6 +134,7 @@ def me(ctx: Contexto = Depends(contexto)):
         "camada": ctx.camada,
         "granularidade": list(ctx.config["granularidade"]),
         "clube_slug": ctx.clube_slug,
+        "clube": _nomes_clubes().get(ctx.clube_slug) if ctx.clube_slug else None,
         "limiar_padrao": config.LIMIARES.get(ctx.perfil),
         "aviso_interpretativo": config.AVISO_INTERPRETATIVO,
     }
@@ -140,12 +170,14 @@ def fila(serie: Serie, temporada: int, rodada: int = Path(ge=1),
             ORDER BY r.percentil DESC, r.score_pre_jogo DESC LIMIT :limite""",
         corte=corte, limite=limite, **params)
 
+    nomes = _nomes_clubes()
     dados = [{
         "atleta_id": r["registro_cbf"],
         "atleta": _nome(r["apelido"], r["nome_completo"]),
         "nome_completo": r["nome_completo"],
         "num_camisa": r["num_camisa"],
         "clube_slug": r["clube_slug"],
+        "clube": nomes.get(r["clube_slug"]),
         "partida_id": r["partida_id"],
         "confronto": f"{r['clube_mandante']} x {r['clube_visitante']}" if r["clube_mandante"] else None,
         "condicao": r["condicao"],
@@ -165,6 +197,7 @@ def fila(serie: Serie, temporada: int, rodada: int = Path(ge=1),
             "serie": serie, "temporada": temporada, "rodada": rodada,
             "percentil_aplicado": corte,
             "clube_slug": ctx.clube_slug,
+            "clube": nomes.get(ctx.clube_slug) if ctx.clube_slug else None,
             "total_relacionados": total,
             "total_sinalizados": sinalizados,
             "base_rasa": rodada <= config.RODADAS_BASE_RASA,
@@ -195,8 +228,7 @@ def buscar_atletas(busca: str = Query(...), serie: Optional[Serie] = None,
         raise ErroApi(400, "parametro_invalido", "Digite ao menos 3 caracteres para buscar.")
     _registrar_consulta(ctx, termo=busca)
 
-    padrao = "%" + termo.replace("\\", "\\\\").replace("%", "\\%").replace("_", "\\_") + "%"
-    filtros, params = "", {"padrao": padrao}
+    filtros, params = "", {"padrao": _padrao_like(termo)}
     if serie or temporada:
         condicoes = ["e.registro_cbf = a.registro_cbf"]
         if serie:
@@ -211,8 +243,9 @@ def buscar_atletas(busca: str = Query(...), serie: Optional[Serie] = None,
     linhas = _linhas(f"""SELECT registro_cbf, apelido, nome_completo, clubes, ultima_temporada
                          FROM atletas a WHERE busca_texto LIKE :padrao ESCAPE '\\'{filtros}
                          ORDER BY ultima_temporada DESC, nome_completo LIMIT 20""", **params)
+    nomes = _nomes_clubes()
     dados = [{"atleta_id": r["registro_cbf"], "atleta": _nome(r["apelido"], r["nome_completo"]),
-              "nome_completo": r["nome_completo"], "clubes": r["clubes"].split(","),
+              "nome_completo": r["nome_completo"], "clubes": _clubes(r["clubes"].split(","), nomes),
               "ultima_temporada": r["ultima_temporada"]} for r in linhas]
     return {"dados": dados, "total": len(dados)}
 
@@ -239,6 +272,7 @@ def ficha_atleta(atleta_id: str, ctx: Contexto = Depends(exigir(*IDENTIFICADOS))
            FROM anomalia_atleta WHERE atleta_slug IN (:s1, :s2)""",
         s1=atleta["atleta_slug"], s2=atleta["apelido_slug"])}
 
+    nomes = _nomes_clubes()
     historico = []
     for m in sorted(minutos, key=lambda r: (r["temporada"], r["serie"]), reverse=True):
         chave = (m["serie"], m["temporada"], m["clube_slug"])
@@ -246,6 +280,7 @@ def ficha_atleta(atleta_id: str, ctx: Contexto = Depends(exigir(*IDENTIFICADOS))
         a = anomalia.get(chave, {})
         historico.append({
             "temporada": m["temporada"], "serie": m["serie"], "clube_slug": m["clube_slug"],
+            "clube": nomes.get(m["clube_slug"]),
             "partidas_jogadas": m["partidas_jogadas"], "minutos_em_campo": m["minutos_em_campo"],
             "cartoes_total": c["total"], "cartoes_1t": c["primeiro_tempo"] or 0,
             "prop_cartoes_1t": _r(c["primeiro_tempo"] / c["total"], 3) if c["total"] else None,
@@ -259,6 +294,7 @@ def ficha_atleta(atleta_id: str, ctx: Contexto = Depends(exigir(*IDENTIFICADOS))
                          FROM cartoes WHERE registro_cbf = :id
                          ORDER BY temporada DESC, rodada DESC, minuto_continuo""", id=atleta_id)
     for c in cartoes:
+        c["clube"] = nomes.get(c["clube_slug"])
         c["motivo_disponivel"] = bool(c["motivo_completo"])
         c["motivo_completo"] = c["motivo_completo"] or config.MOTIVO_AUSENTE
 
@@ -266,11 +302,53 @@ def ficha_atleta(atleta_id: str, ctx: Contexto = Depends(exigir(*IDENTIFICADOS))
         "atleta_id": atleta_id,
         "atleta": _nome(atleta["apelido"], atleta["nome_completo"]),
         "nome_completo": atleta["nome_completo"],
-        "clubes": atleta["clubes"].split(","),
+        "clubes": _clubes(atleta["clubes"].split(","), nomes),
         "clube_atual": atleta["clube_atual"],
         "historico": historico,
         "cartoes": cartoes,
         "aviso_interpretativo": config.AVISO_INTERPRETATIVO,
+    }
+
+
+@app.get("/v1/partidas", tags=["partidas"])
+def listar_partidas(serie: Serie, temporada: Optional[int] = None, rodada: Optional[int] = None,
+                    busca: Optional[str] = None, pagina: int = Query(1, ge=1),
+                    por_pagina: int = Query(20, ge=1, le=50), ctx: Contexto = Depends(contexto)):
+    """Navegação até um dossiê. Partida não é dado pessoal: vale para todos os perfis."""
+    # Partidas de origem sem clube (ex.: Série B 2022, rodada 0) ficam fora da navegação.
+    filtros, params = ["serie = :serie", "clube_mandante_slug IS NOT NULL"], {"serie": serie}
+    if temporada:
+        filtros.append("temporada = :temporada")
+        params["temporada"] = temporada
+    if rodada:
+        filtros.append("rodada = :rodada")
+        params["rodada"] = rodada
+    if busca:
+        termo = normalizar(busca)
+        if len(termo) < 3:
+            raise ErroApi(400, "parametro_invalido", "Digite ao menos 3 caracteres para buscar.")
+        filtros.append("busca_texto LIKE :padrao ESCAPE '\\'")
+        params["padrao"] = _padrao_like(termo)
+    onde = " AND ".join(filtros)
+
+    total = _linha(f"SELECT COUNT(*) AS n FROM partidas WHERE {onde}", **params)["n"]
+    linhas = _linhas(f"""SELECT serie, temporada, partida_id, rodada, data, clube_mandante,
+                                clube_mandante_slug, clube_visitante, clube_visitante_slug,
+                                gols_mandante, gols_visitante, sumula_sha256
+                         FROM partidas WHERE {onde}
+                         ORDER BY temporada DESC, rodada DESC, data DESC, partida_id DESC
+                         LIMIT :limite OFFSET :deslocamento""",
+                     limite=por_pagina, deslocamento=(pagina - 1) * por_pagina, **params)
+    campos = ("serie", "temporada", "partida_id", "rodada", "data", "clube_mandante",
+              "clube_mandante_slug", "clube_visitante", "clube_visitante_slug")
+    dados = [{**{k: r[k] for k in campos},
+              "placar": f"{r['gols_mandante']}-{r['gols_visitante']}",
+              "tem_procedencia": r["sumula_sha256"] is not None} for r in linhas]
+    return {
+        "dados": dados,
+        "total": len(dados),
+        "paginacao": {"pagina": pagina, "por_pagina": por_pagina, "total_itens": total,
+                      "total_paginas": max(1, -(-total // por_pagina))},
     }
 
 
@@ -287,7 +365,9 @@ def dossie(serie: Serie, temporada: int, partida_id: int, ctx: Contexto = Depend
                          FROM cartoes WHERE serie = :serie AND temporada = :temporada
                            AND partida_id = :partida_id ORDER BY minuto_continuo""", **chave)
     nominaveis = set() if ctx.identificada else _registros_nominaveis()
+    nomes = _nomes_clubes()
     for c in cartoes:
+        c["clube"] = nomes.get(c["clube_slug"])
         c["motivo_disponivel"] = bool(c["motivo_completo"])
         c["motivo_completo"] = c["motivo_completo"] or config.MOTIVO_AUSENTE
         registro = c.pop("registro_cbf")
@@ -302,7 +382,8 @@ def dossie(serie: Serie, temporada: int, partida_id: int, ctx: Contexto = Depend
         filtro_clube = " AND r.clube_slug = :clube" if ctx.perfil == "clube" else ""
         sinalizados = [{
             "atleta_id": r["registro_cbf"], "atleta": _nome(r["apelido"], r["nome_completo"]),
-            "num_camisa": r["num_camisa"], "clube_slug": r["clube_slug"], "condicao": r["condicao"],
+            "num_camisa": r["num_camisa"], "clube_slug": r["clube_slug"],
+            "clube": nomes.get(r["clube_slug"]), "condicao": r["condicao"],
             "percentil": _r(r["percentil"], 1), "tier": r["tier"],
         } for r in _linhas(
             f"""SELECT r.*, a.apelido, a.nome_completo FROM risco_pre_jogo r

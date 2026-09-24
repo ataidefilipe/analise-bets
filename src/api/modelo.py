@@ -47,7 +47,15 @@ partidas = Table(
     Column("sumula_sha256", String(64)),
     Column("baixado_em", String(40)),
     Column("processado_em", String(40)),
+    # Nomes dos dois clubes sem acento e em minúsculas: é onde a busca de partidas casa.
+    Column("busca_texto", Text),
     Index("ix_partidas_rodada", "serie", "temporada", "rodada"),
+)
+
+clubes = Table(
+    "clubes", metadata,
+    Column("clube_slug", String(64), primary_key=True),
+    Column("nome", Text),  # nome da temporada mais recente em que o clube aparece
 )
 
 atletas = Table(
@@ -160,7 +168,7 @@ nominaveis = Table(
 )
 
 TABELAS_DE_LEITURA = (
-    partidas, atletas, escalacoes, cartoes, minutos_em_campo, risco_pre_jogo,
+    partidas, clubes, atletas, escalacoes, cartoes, minutos_em_campo, risco_pre_jogo,
     anomalia_atleta, nominaveis,
 )
 
