@@ -1,1 +1,10 @@
--r requirements-api.txt
+# Railpack instala este arquivo antes de copiar o restante do projeto; mantenha
+# as dependências necessárias ao serviço listadas diretamente aqui.
+fastapi>=0.115
+uvicorn>=0.30
+sqlalchemy>=2.0
+psycopg[binary]>=3.2
+pandas>=2.2
+pyarrow>=18
+scipy>=1.14
+httpx>=0.27

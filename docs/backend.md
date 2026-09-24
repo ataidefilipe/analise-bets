@@ -380,10 +380,11 @@ de 5 GB em `sfo`. A API tem `DATABASE_URL` referenciando `${{Postgres.DATABASE_U
 `ANALISE_BETS_PSEUDONIMO_SECRET` foi gerado aleatoriamente e cadastrado sem expor seu valor. O
 Railway também recebeu start command, pré-deploy da carga, healthcheck `/saude` e política de restart.
 
-O commit `074043f` com a configuração foi publicado em `main` e o Railway iniciou um novo deploy da
-API, mas ele também terminou `FAILED`. Os logs MCP só mostram o agendamento do builder, sem causa ou
-logs de execução; portanto, o erro ainda precisa ser diagnosticado. Depois da correção, validar
-`/saude` e a carga inicial no PostgreSQL.
+O primeiro build após o commit `074043f` terminou `FAILED`: o Railpack copiou `requirements.txt`, mas
+não copiou o arquivo incluído por ele (`requirements-api.txt`) para a camada de instalação. O pip
+falhou com `Could not open requirements file: '/app/requirements-api.txt'`. A correção é listar as
+dependências diretamente no `requirements.txt` da raiz; depois do novo deploy, validar `/saude` e a
+carga inicial no PostgreSQL.
 
 Não foi criado domínio público para a API. A análise automática rejeitou essa exposição por tratar-se
 de uma API com dados identificados. Como o Next.js acessa a API no servidor, o front pode usar o DNS
@@ -393,8 +394,9 @@ precisar expor a API à internet. O serviço frontend ainda precisa ser criado e
 O serviço `frontend` foi criado em `/frontend`, com `pnpm build`, `pnpm start` e
 `ANALISE_BETS_API_URL` referenciando o DNS privado da API. O deploy terminou `SUCCESS`; o domínio
 [`https://frontend-production-ba88.up.railway.app`](https://frontend-production-ba88.up.railway.app)
-respondeu HTTP 200. A interface está publicada, mas a integração com os dados aguarda a API. Uma chave
-da API só deve ser criada quando o perfil e o cliente para validação forem definidos.
+respondeu HTTP 200. Um redeploy acionado pela atualização da documentação está em andamento. A
+interface está publicada, mas a integração com os dados aguarda a API. Uma chave da API só deve ser
+criada quando o perfil e o cliente para validação forem definidos.
 
 ---
 
