@@ -1,0 +1,1798 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Radar da Integridade — apresentacao de banca do TCC de Ciencia de Dados e IA. Anomalias disciplinares no futebol brasileiro a partir da sumula oficial da CBF.">
+<style>html{color-scheme:dark light}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Radar da Integridade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+/* ============================================================
+   TOKENS — dark-first. O deck é projetado numa sala escura;
+   o tema claro existe e é desenhado, não invertido.
+   ============================================================ */
+:root{
+  color-scheme: dark;
+  --ground:#080b1a;
+  --ground-2:#0b0f22;
+  --surface:rgba(255,255,255,.045);
+  --surface-2:rgba(255,255,255,.075);
+  --surface-solid:#11142a;
+  --line:rgba(255,255,255,.10);
+  --line-strong:rgba(255,255,255,.20);
+  --ink:#edefff;
+  --ink-2:#a9aecd;
+  --ink-3:#757b9f;
+  --accent:#8a7bff;
+  --accent-deep:#4f39f6;
+  --accent-2:#c27aff;
+  --accent-3:#4fd3ee;
+  --orb-a:#4f39f6; --orb-b:#c27aff; --orb-c:#22d3ee; --orb-d:#7dd3fc;
+  --orb-op:.40;
+  --s1:#8370f0; --s2:#189ab6; --s3:#d5751a;
+  --crit:#f0537a; --warn:#f08a2e; --mid:#d9b63c; --good:#3fb98f;
+  --shadow:0 28px 70px -26px rgba(0,0,0,.85);
+  --ring:rgba(138,123,255,.55);
+}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){
+    color-scheme: light;
+    --ground:#fbfbfe;
+    --ground-2:#f3f4fb;
+    --surface:rgba(255,255,255,.80);
+    --surface-2:rgba(16,20,50,.045);
+    --surface-solid:#ffffff;
+    --line:rgba(16,20,50,.11);
+    --line-strong:rgba(16,20,50,.22);
+    --ink:#0b1020;
+    --ink-2:#4a5173;
+    --ink-3:#6e7597;
+    --accent:#4f39f6;
+    --accent-deep:#4f39f6;
+    --accent-2:#8b3dd6;
+    --accent-3:#0e7490;
+    --orb-op:.20;
+    --s1:#6350e6; --s2:#0f8aa6; --s3:#c2650f;
+    --crit:#d11f4d; --warn:#b65c0c; --mid:#8a6a00; --good:#0f766e;
+    --shadow:0 22px 54px -26px rgba(30,32,80,.30);
+    --ring:rgba(79,57,246,.45);
+  }
+}
+:root[data-theme="light"]{
+  color-scheme: light;
+  --ground:#fbfbfe;
+  --ground-2:#f3f4fb;
+  --surface:rgba(255,255,255,.80);
+  --surface-2:rgba(16,20,50,.045);
+  --surface-solid:#ffffff;
+  --line:rgba(16,20,50,.11);
+  --line-strong:rgba(16,20,50,.22);
+  --ink:#0b1020;
+  --ink-2:#4a5173;
+  --ink-3:#6e7597;
+  --accent:#4f39f6;
+  --accent-deep:#4f39f6;
+  --accent-2:#8b3dd6;
+  --accent-3:#0e7490;
+  --orb-op:.20;
+  --s1:#6350e6; --s2:#0f8aa6; --s3:#c2650f;
+  --crit:#d11f4d; --warn:#b65c0c; --mid:#8a6a00; --good:#0f766e;
+  --shadow:0 22px 54px -26px rgba(30,32,80,.30);
+  --ring:rgba(79,57,246,.45);
+}
+
+/* escala tipográfica presa ao menor eixo do viewport: o slide cabe na tela */
+:root{
+  --fs-eyebrow: clamp(10px, min(.95vw, 1.4vh), 13px);
+  --fs-h1: clamp(26px, min(4.5vw, 6.4vh), 58px);
+  --fs-h2: clamp(20px, min(3.1vw, 4.4vh), 38px);
+  --fs-lead: clamp(14px, min(1.55vw, 2.2vh), 21px);
+  --fs-body: clamp(12.5px, min(1.12vw, 1.68vh), 16.5px);
+  --fs-small: clamp(10.5px, min(.92vw, 1.4vh), 13.5px);
+  --fs-stat: clamp(24px, min(3.3vw, 5vh), 50px);
+  --gap: clamp(9px, 1.7vh, 24px);
+  --pad-x: clamp(20px, 5vw, 92px);
+  --r: 20px;
+  --r-lg: 26px;
+}
+
+*, *::before, *::after{ box-sizing:border-box; }
+
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:"IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size:var(--fs-body);
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  overflow:hidden;
+  height:100dvh;
+}
+
+/* ============================================================
+   ATMOSFERA — orbs desfocadas (assinatura do Astrolus).
+   A cor muda por ato: índigo no pitch, ciano na evidência,
+   âmbar no produto.
+   ============================================================ */
+#atmos{ position:fixed; inset:0; z-index:0; overflow:hidden; pointer-events:none; }
+#atmos .orb{
+  position:absolute; border-radius:999px;
+  filter:blur(106px);
+  opacity:var(--orb-op);
+  transition:background 1200ms cubic-bezier(.4,0,.2,1), transform 1400ms cubic-bezier(.4,0,.2,1);
+  will-change:transform;
+}
+#atmos .orb-1{ width:46vw; height:34vw; top:-8vh; left:-6vw;
+  background:linear-gradient(135deg, var(--orb-a), var(--orb-b)); }
+#atmos .orb-2{ width:38vw; height:26vw; bottom:-12vh; right:-4vw;
+  background:linear-gradient(90deg, var(--orb-c), var(--orb-d)); }
+#atmos .orb-3{ width:26vw; height:26vw; top:38vh; left:52vw;
+  background:linear-gradient(200deg, var(--orb-b), var(--orb-a)); opacity:calc(var(--orb-op) * .55); }
+[data-act="2"] #atmos .orb-1{ background:linear-gradient(135deg, var(--orb-c), var(--orb-a)); transform:translate3d(6vw,4vh,0); }
+[data-act="2"] #atmos .orb-2{ background:linear-gradient(90deg, var(--orb-a), var(--orb-d)); transform:translate3d(-5vw,-4vh,0); }
+[data-act="3"] #atmos .orb-1{ background:linear-gradient(135deg, var(--orb-a), #f08a2e); transform:translate3d(-4vw,8vh,0); }
+[data-act="3"] #atmos .orb-2{ background:linear-gradient(90deg, var(--orb-b), var(--orb-c)); transform:translate3d(4vw,-6vh,0); }
+
+/* malha fina por cima, para o fundo não ficar liso demais */
+#grain{
+  position:fixed; inset:0; z-index:1; pointer-events:none;
+  background-image:
+    linear-gradient(to right, var(--line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--line) 1px, transparent 1px);
+  background-size:64px 64px;
+  -webkit-mask-image:radial-gradient(ellipse 80% 70% at 50% 40%, #000 20%, transparent 78%);
+  mask-image:radial-gradient(ellipse 80% 70% at 50% 40%, #000 20%, transparent 78%);
+  opacity:.5;
+}
+
+/* ============================================================
+   CHROME — barra superior, progresso, cronômetro
+   ============================================================ */
+#chrome{
+  position:fixed; top:0; left:0; right:0; z-index:40;
+  display:flex; align-items:center; gap:clamp(10px,2vw,22px);
+  padding:clamp(10px,1.6vh,18px) var(--pad-x);
+  font-family:"IBM Plex Mono", ui-monospace, monospace;
+  font-size:var(--fs-small);
+  color:var(--ink-3);
+}
+#chrome .brand{
+  display:flex; align-items:center; gap:8px;
+  color:var(--ink-2); letter-spacing:.06em; text-transform:uppercase;
+  white-space:nowrap;
+}
+#chrome .brand .dot{
+  width:8px; height:8px; border-radius:999px;
+  background:linear-gradient(135deg, var(--orb-a), var(--orb-c));
+  box-shadow:0 0 12px var(--ring);
+}
+#actLabel{ color:var(--accent); font-weight:600; }
+
+#progress{ display:flex; gap:6px; flex:1; min-width:60px; align-items:center; }
+#progress .seg{ display:flex; gap:3px; flex:var(--w) 0 0; }
+#progress .tick{
+  height:3px; flex:1; border-radius:999px;
+  background:var(--line-strong); transition:background 300ms ease;
+}
+#progress .tick.done{ background:var(--accent); }
+#progress .tick.now{ background:var(--accent); box-shadow:0 0 10px var(--ring); }
+
+#timer{
+  display:flex; align-items:center; gap:10px; white-space:nowrap;
+  padding:5px 12px; border-radius:999px;
+  border:1px solid var(--line-strong);
+  background:var(--surface);
+  backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
+  font-variant-numeric:tabular-nums; color:var(--ink-2);
+  cursor:pointer;
+}
+#timer:hover{ border-color:var(--ring); }
+#timer.running{ color:var(--ink); }
+#timer.over{ color:var(--warn); border-color:var(--warn); }
+#timer .pulse{
+  width:7px; height:7px; border-radius:999px; background:var(--ink-3);
+}
+#timer.running .pulse{ background:var(--good); animation:beat 2s ease-in-out infinite; }
+#timer.over .pulse{ background:var(--warn); }
+@keyframes beat{ 0%,100%{ opacity:1 } 50%{ opacity:.25 } }
+
+/* ============================================================
+   SLIDES
+   ============================================================ */
+#deck{ position:relative; z-index:10; height:100dvh; }
+.slide{
+  position:absolute; inset:0;
+  display:flex; align-items:center; justify-content:center;
+  padding:clamp(58px,9vh,96px) var(--pad-x) clamp(52px,8vh,82px);
+  opacity:0; visibility:hidden;
+  transform:translate3d(3.5%,0,0);
+  transition:opacity 420ms cubic-bezier(.4,0,.2,1), transform 520ms cubic-bezier(.4,0,.2,1), visibility 0s linear 520ms;
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.is-active{
+  opacity:1; visibility:visible; transform:translate3d(0,0,0);
+  transition:opacity 420ms cubic-bezier(.4,0,.2,1), transform 520ms cubic-bezier(.4,0,.2,1), visibility 0s;
+}
+.slide.is-prev{ transform:translate3d(-3.5%,0,0); }
+.inner{ width:min(1220px, 100%); display:flex; flex-direction:column; gap:var(--gap); }
+.inner.center{ align-items:center; text-align:center; }
+
+/* revelação encadeada */
+.r{ opacity:0; transform:translateY(14px); }
+.is-active .r{
+  opacity:1; transform:none;
+  transition:opacity 520ms cubic-bezier(.2,.7,.3,1), transform 560ms cubic-bezier(.2,.7,.3,1);
+  transition-delay:calc(var(--d, 0) * 70ms + 90ms);
+}
+
+/* ============================================================
+   TIPOGRAFIA
+   ============================================================ */
+.eyebrow{
+  font-family:"IBM Plex Mono", ui-monospace, monospace;
+  font-size:var(--fs-eyebrow); font-weight:500;
+  letter-spacing:.18em; text-transform:uppercase;
+  color:var(--accent);
+  display:flex; align-items:center; gap:10px;
+}
+.inner.center .eyebrow{ justify-content:center; }
+.eyebrow::after{
+  content:""; height:1px; width:clamp(24px,5vw,80px);
+  background:linear-gradient(90deg, var(--accent), transparent);
+}
+h1, h2, h3{ font-family:"Sora", "IBM Plex Sans", sans-serif; margin:0; text-wrap:balance; }
+h1{ font-size:var(--fs-h1); font-weight:700; line-height:1.04; letter-spacing:-.025em; }
+h2{ font-size:var(--fs-h2); font-weight:700; line-height:1.12; letter-spacing:-.02em; }
+h3{ font-size:var(--fs-body); font-weight:600; line-height:1.3; letter-spacing:-.005em; }
+p{ margin:0; }
+.lead{ font-size:var(--fs-lead); color:var(--ink-2); line-height:1.5; max-width:62ch; }
+.inner.center .lead{ margin-inline:auto; text-align:center; }
+.grad{
+  background:linear-gradient(100deg, var(--accent) 10%, var(--accent-2) 55%, var(--accent-3) 95%);
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+strong{ color:var(--ink); font-weight:600; }
+em{ color:var(--ink-2); }
+.mono{ font-family:"IBM Plex Mono", ui-monospace, monospace; font-variant-numeric:tabular-nums; }
+.note{
+  font-size:var(--fs-small); color:var(--ink-3); line-height:1.45; max-width:80ch;
+}
+.note.src{ font-family:"IBM Plex Mono", ui-monospace, monospace; letter-spacing:.01em; }
+
+/* ============================================================
+   CARDS E GRIDS
+   ============================================================ */
+.grid{ display:grid; gap:clamp(10px,1.4vw,18px); }
+.g2{ grid-template-columns:repeat(2, minmax(0,1fr)); }
+.g3{ grid-template-columns:repeat(3, minmax(0,1fr)); }
+.g4{ grid-template-columns:repeat(4, minmax(0,1fr)); }
+.split{ display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.05fr); gap:clamp(14px,2.4vw,40px); align-items:center; }
+.split.wide-left{ grid-template-columns:minmax(0,1.15fr) minmax(0,1fr); }
+
+.card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--r-lg);
+  padding:clamp(13px,1.9vh,24px) clamp(14px,1.5vw,26px);
+  backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px);
+  box-shadow:var(--shadow);
+  display:flex; flex-direction:column; gap:8px;
+  min-width:0;
+}
+.card.flat{ box-shadow:none; background:var(--surface-2); }
+.card p{ color:var(--ink-2); font-size:var(--fs-body); }
+.card .idx{
+  font-family:"IBM Plex Mono", ui-monospace, monospace;
+  font-size:var(--fs-small); font-weight:600; color:var(--accent);
+  letter-spacing:.1em;
+}
+
+.stat-row{ display:flex; flex-wrap:wrap; gap:clamp(12px,2.4vw,44px); }
+.stat{ display:flex; flex-direction:column; gap:2px; min-width:0; }
+.stat .v{
+  font-family:"Sora", sans-serif; font-weight:700;
+  font-size:var(--fs-stat); line-height:1; letter-spacing:-.035em;
+  font-variant-numeric:tabular-nums;
+}
+.stat .v.grad{ background:linear-gradient(100deg, var(--accent), var(--accent-2)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.stat .k{ font-size:var(--fs-small); color:var(--ink-3); line-height:1.35; max-width:26ch; }
+.stat .k b{ color:var(--ink-2); font-weight:500; }
+
+.pill{
+  display:inline-flex; align-items:center; gap:7px;
+  padding:4px 12px; border-radius:999px;
+  border:1px solid var(--line-strong); background:var(--surface-2);
+  font-family:"IBM Plex Mono", ui-monospace, monospace;
+  font-size:var(--fs-small); color:var(--ink-2); white-space:nowrap;
+}
+.pill .sq{ width:9px; height:9px; border-radius:3px; flex:none; }
+.pill.crit{ border-color:color-mix(in oklab, var(--crit) 55%, transparent); color:var(--crit); }
+.pill.warn{ border-color:color-mix(in oklab, var(--warn) 55%, transparent); color:var(--warn); }
+.pill.good{ border-color:color-mix(in oklab, var(--good) 55%, transparent); color:var(--good); }
+
+.rule{ height:1px; background:var(--line); border:0; margin:0; }
+
+.kicker{
+  border-left:2px solid var(--accent);
+  padding:2px 0 2px clamp(12px,1.4vw,20px);
+  font-size:var(--fs-lead); line-height:1.45; color:var(--ink);
+  max-width:74ch;
+}
+.kicker.quote{ font-style:italic; color:var(--ink-2); }
+
+/* lista com marcador desenhado */
+ul.ticks{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:clamp(7px,1.1vh,13px); }
+ul.ticks li{ position:relative; padding-left:17px; color:var(--ink-2); min-width:0; }
+ul.ticks li::before{
+  content:""; position:absolute; left:0; top:.55em; width:6px; height:6px; border-radius:2px;
+  background:var(--accent); transform:rotate(45deg);
+}
+ul.ticks li.no::before{ background:var(--crit); }
+ul.ticks li b{ color:var(--ink); }
+
+/* tabela */
+.tbl{ width:100%; border-collapse:collapse; font-size:var(--fs-small); }
+.tbl th, .tbl td{ text-align:left; padding:clamp(6px,1vh,11px) clamp(6px,.8vw,14px); border-bottom:1px solid var(--line); vertical-align:top; }
+.tbl thead th{
+  font-family:"IBM Plex Mono", ui-monospace, monospace;
+  font-weight:500; font-size:var(--fs-eyebrow); letter-spacing:.12em;
+  text-transform:uppercase; color:var(--ink-3); border-bottom-color:var(--line-strong);
+}
+.tbl td{ color:var(--ink-2); }
+.tbl td:first-child{ color:var(--ink); font-weight:500; }
+.tbl td.num{ font-family:"IBM Plex Mono", monospace; font-variant-numeric:tabular-nums; }
+.tbl tbody tr:last-child td{ border-bottom:0; }
+.scroll-x{ overflow-x:auto; }
+
+/* ============================================================
+   GRÁFICOS
+   ============================================================ */
+.chart-wrap{ position:relative; width:100%; }
+.chart-wrap svg{ display:block; width:100%; height:auto; overflow:visible; }
+.axis-txt{
+  font-family:"IBM Plex Mono", ui-monospace, monospace;
+  font-size:11px; fill:var(--ink-3); font-variant-numeric:tabular-nums;
+}
+.grid-line{ stroke:var(--line); stroke-width:1; }
+.grid-line.base{ stroke:var(--line-strong); stroke-dasharray:3 4; }
+.ser-label{ font-family:"IBM Plex Sans", sans-serif; font-size:12px; font-weight:600; }
+.ser-delta{ font-family:"IBM Plex Mono", monospace; font-size:11px; }
+.tip{
+  position:absolute; pointer-events:none; z-index:5;
+  background:var(--surface-solid); border:1px solid var(--line-strong);
+  border-radius:12px; padding:9px 12px;
+  box-shadow:var(--shadow);
+  font-size:var(--fs-small); color:var(--ink-2); white-space:nowrap;
+  opacity:0; transition:opacity 140ms ease;
+  font-variant-numeric:tabular-nums;
+}
+.tip.on{ opacity:1; }
+.tip .t-h{ font-family:"IBM Plex Mono", monospace; color:var(--ink); font-weight:600; margin-bottom:5px; }
+.tip .t-r{ display:flex; align-items:center; gap:7px; }
+.tip .t-r .sq{ width:9px; height:9px; border-radius:3px; flex:none; }
+.tip .t-r b{ color:var(--ink); font-weight:600; margin-left:auto; padding-left:14px; }
+.legend{ display:flex; flex-wrap:wrap; gap:clamp(10px,1.6vw,24px); }
+.legend .it{ display:flex; align-items:center; gap:8px; font-size:var(--fs-small); color:var(--ink-2); }
+.legend .sq{ width:11px; height:11px; border-radius:3px; flex:none; }
+.legend .ln{ width:16px; height:0; border-top:2px dashed var(--ink-3); flex:none; }
+
+/* ============================================================
+   SLIDER DE LIMIAR
+   ============================================================ */
+.thr{ display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px); }
+.thr-head{ display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+.thr-val{
+  font-family:"Sora", sans-serif; font-weight:700; letter-spacing:-.03em;
+  font-size:clamp(28px, min(3.6vw,5.4vh), 54px); line-height:1;
+  font-variant-numeric:tabular-nums;
+}
+input[type="range"]{
+  -webkit-appearance:none; appearance:none; width:100%; height:26px;
+  background:transparent; cursor:grab; margin:0;
+}
+input[type="range"]:active{ cursor:grabbing; }
+input[type="range"]::-webkit-slider-runnable-track{
+  height:6px; border-radius:999px;
+  background:linear-gradient(90deg, var(--accent) var(--fill,50%), var(--surface-2) var(--fill,50%));
+  border:1px solid var(--line);
+}
+input[type="range"]::-moz-range-track{
+  height:6px; border-radius:999px;
+  background:linear-gradient(90deg, var(--accent) var(--fill,50%), var(--surface-2) var(--fill,50%));
+  border:1px solid var(--line);
+}
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance:none; appearance:none;
+  width:22px; height:22px; border-radius:999px; margin-top:-9px;
+  background:var(--surface-solid); border:2px solid var(--accent);
+  box-shadow:0 0 0 5px color-mix(in oklab, var(--accent) 18%, transparent), var(--shadow);
+}
+input[type="range"]::-moz-range-thumb{
+  width:22px; height:22px; border-radius:999px;
+  background:var(--surface-solid); border:2px solid var(--accent);
+  box-shadow:0 0 0 5px color-mix(in oklab, var(--accent) 18%, transparent);
+}
+input[type="range"]:focus-visible::-webkit-slider-thumb{ outline:2px solid var(--accent-3); outline-offset:3px; }
+.thr-scale{
+  display:flex; justify-content:space-between;
+  font-family:"IBM Plex Mono", monospace; font-size:var(--fs-eyebrow); color:var(--ink-3);
+  letter-spacing:.06em; margin-top:-6px;
+}
+.dots{ display:flex; flex-wrap:wrap; gap:6px; }
+.dots .d{
+  width:clamp(11px,1.5vh,17px); height:clamp(11px,1.5vh,17px); border-radius:5px;
+  background:var(--surface-2); border:1px solid var(--line);
+  transition:background 220ms ease, border-color 220ms ease, transform 220ms ease;
+}
+.dots .d.on{ background:var(--warn); border-color:var(--warn); transform:scale(1.04); }
+.meter{ height:9px; border-radius:999px; background:var(--surface-2); border:1px solid var(--line); overflow:hidden; }
+.meter i{ display:block; height:100%; background:linear-gradient(90deg, var(--accent), var(--accent-2)); transition:width 260ms cubic-bezier(.4,0,.2,1); }
+.presets{ display:flex; flex-wrap:wrap; gap:7px; }
+.preset{
+  font-family:"IBM Plex Mono", monospace; font-size:var(--fs-small);
+  padding:5px 12px; border-radius:999px; cursor:pointer;
+  border:1px solid var(--line-strong); background:transparent; color:var(--ink-2);
+  transition:border-color 180ms ease, color 180ms ease, background 180ms ease;
+}
+.preset:hover{ border-color:var(--ring); color:var(--ink); }
+.preset.on{ border-color:var(--accent); color:var(--ink); background:color-mix(in oklab, var(--accent) 16%, transparent); }
+.preset:focus-visible{ outline:2px solid var(--accent-3); outline-offset:2px; }
+
+/* ============================================================
+   MOCK DA FILA DE TRIAGEM (T1)
+   ============================================================ */
+.mock{
+  border:1px solid var(--line-strong); border-radius:var(--r);
+  background:var(--surface); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px);
+  overflow:hidden; font-size:var(--fs-small); box-shadow:var(--shadow);
+}
+.mock .bar{
+  display:flex; align-items:center; gap:8px; padding:9px 14px;
+  border-bottom:1px solid var(--line); color:var(--ink-3);
+  font-family:"IBM Plex Mono", monospace; letter-spacing:.04em;
+}
+.mock .bar .dot3{ display:flex; gap:5px; }
+.mock .bar .dot3 i{ width:8px; height:8px; border-radius:999px; background:var(--line-strong); }
+.mock .warnrow{
+  padding:9px 14px; border-bottom:1px solid var(--line);
+  color:var(--ink-3); font-size:var(--fs-eyebrow); line-height:1.5;
+  background:var(--surface-2);
+}
+.mock .row{
+  display:grid; grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) auto;
+  gap:10px; align-items:center;
+  padding:10px 14px; border-bottom:1px solid var(--line);
+}
+.mock .row:last-child{ border-bottom:0; }
+.mock .row .nm{ color:var(--ink); font-weight:600; }
+.mock .row .sub{ color:var(--ink-3); font-family:"IBM Plex Mono", monospace; font-size:var(--fs-eyebrow); }
+.mock .row .mt{ color:var(--ink-2); font-family:"IBM Plex Mono", monospace; }
+.tier{
+  font-family:"IBM Plex Mono", monospace; font-size:var(--fs-eyebrow);
+  padding:3px 10px; border-radius:999px; white-space:nowrap; font-weight:500;
+}
+.tier.t1{ color:var(--crit); background:color-mix(in oklab, var(--crit) 15%, transparent); border:1px solid color-mix(in oklab, var(--crit) 40%, transparent); }
+.tier.t2{ color:var(--warn); background:color-mix(in oklab, var(--warn) 15%, transparent); border:1px solid color-mix(in oklab, var(--warn) 40%, transparent); }
+.tier.t3{ color:var(--mid); background:color-mix(in oklab, var(--mid) 15%, transparent); border:1px solid color-mix(in oklab, var(--mid) 40%, transparent); }
+
+/* linha do tempo regulatória */
+.tl{ position:relative; display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:clamp(10px,1.6vw,22px); padding-top:26px; }
+.tl::before{
+  content:""; position:absolute; top:8px; left:4%; right:4%; height:2px;
+  background:linear-gradient(90deg, var(--accent-3), var(--accent), var(--accent-2));
+  border-radius:999px; opacity:.6;
+}
+.tl .n{ position:relative; }
+.tl .n::before{
+  content:""; position:absolute; top:-24px; left:calc(50% - 6px);
+  width:12px; height:12px; border-radius:999px;
+  background:var(--ground); border:2px solid var(--accent);
+  box-shadow:0 0 0 4px color-mix(in oklab, var(--accent) 16%, transparent);
+}
+.tl .n{ text-align:center; }
+.tl .n .yr{ font-family:"IBM Plex Mono", monospace; font-size:var(--fs-small); color:var(--accent); letter-spacing:.08em; }
+.tl .n .ttl{ font-family:"Sora", sans-serif; font-weight:600; font-size:var(--fs-body); color:var(--ink); margin-top:2px; }
+.tl .n .dsc{ font-size:var(--fs-small); color:var(--ink-3); margin-top:3px; }
+
+/* bloco de fórmula */
+.formula{
+  font-family:"IBM Plex Mono", monospace; font-size:var(--fs-small);
+  background:var(--surface-2); border:1px solid var(--line);
+  border-radius:14px; padding:clamp(10px,1.5vh,16px) clamp(12px,1.2vw,20px);
+  color:var(--ink-2); line-height:1.7; overflow-x:auto;
+}
+.formula b{ color:var(--accent); font-weight:500; }
+
+/* equipe na capa */
+.team{
+  display:flex; flex-wrap:wrap; justify-content:center; align-items:center;
+  gap:6px clamp(10px,1.4vw,18px); margin-top:clamp(6px,1.6vh,18px);
+  font-size:var(--fs-body); color:var(--ink-2);
+}
+.team-lbl{
+  font-family:"IBM Plex Mono", monospace; font-size:var(--fs-eyebrow);
+  letter-spacing:.16em; text-transform:uppercase; color:var(--accent);
+}
+ul.ticks.sm{ gap:clamp(4px,.7vh,8px); font-size:var(--fs-body); }
+
+/* fluxo horizontal de passos */
+.flow{ display:flex; align-items:stretch; gap:6px; flex-wrap:wrap; }
+.fstep{
+  flex:1 1 0; min-width:120px; display:flex; flex-direction:column; gap:4px;
+  padding:clamp(8px,1.2vh,12px) clamp(10px,1vw,14px);
+  border:1px solid var(--line); border-radius:14px; background:var(--surface-2);
+  font-size:var(--fs-small); color:var(--ink-2); line-height:1.35;
+}
+.fstep.hl{ border-color:color-mix(in oklab, var(--accent) 50%, transparent); color:var(--ink); background:color-mix(in oklab, var(--accent) 12%, transparent); }
+.fstep .fn{ font-family:"IBM Plex Mono", monospace; font-size:var(--fs-eyebrow); color:var(--accent); font-weight:600; }
+.farr{ align-self:center; flex:none; width:14px; height:14px; position:relative; }
+.farr::before{
+  content:""; position:absolute; inset:3px; border-top:2px solid var(--ink-3); border-right:2px solid var(--ink-3);
+  transform:rotate(45deg);
+}
+.persona-tbl td:first-child{ white-space:nowrap; }
+.persona-tbl .tag{
+  display:block; margin-top:3px; font-family:"IBM Plex Mono", monospace; font-size:var(--fs-eyebrow);
+  color:var(--accent); font-weight:500; letter-spacing:.04em;
+}
+.persona-tbl tr.no-row td{ color:var(--ink-3); }
+.persona-tbl tr.no-row td:first-child{ color:var(--crit); }
+
+/* arquitetura */
+.arch{ display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1fr); gap:clamp(8px,1vw,14px); align-items:stretch; }
+.zone-col{
+  display:flex; flex-direction:column; align-items:stretch; gap:6px;
+  padding:clamp(10px,1.4vh,16px); border:1px dashed var(--line-strong); border-radius:var(--r);
+}
+.zlbl{ font-family:"IBM Plex Mono", monospace; font-size:var(--fs-eyebrow); letter-spacing:.14em; text-transform:uppercase; color:var(--accent); }
+.abox{
+  display:flex; flex-direction:column; gap:3px;
+  padding:clamp(8px,1.2vh,12px) clamp(10px,1vw,14px);
+  border:1px solid var(--line); border-radius:14px; background:var(--surface);
+  backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
+}
+.abox.hl{ border-color:color-mix(in oklab, var(--accent) 50%, transparent); }
+.abox .at{ font-family:"Sora", sans-serif; font-weight:600; color:var(--ink); font-size:var(--fs-body); }
+.abox .ad{ font-size:var(--fs-small); color:var(--ink-3); line-height:1.4; }
+.adown{ align-self:center; width:0; height:clamp(8px,1.4vh,14px); border-left:2px solid var(--line-strong); position:relative; }
+.adown::after{ content:""; position:absolute; left:-5px; bottom:-2px; border:4px solid transparent; border-top:5px solid var(--line-strong); }
+.aright{ align-self:center; width:clamp(12px,1.6vw,24px); height:0; border-top:2px solid var(--line-strong); position:relative; }
+.aright::after{ content:""; position:absolute; right:-2px; top:-5px; border:4px solid transparent; border-left:5px solid var(--line-strong); }
+.screens{ display:flex; flex-wrap:wrap; gap:6px; margin-top:4px; }
+.chips{ display:flex; flex-wrap:wrap; gap:6px; }
+
+/* ilustração do isolation forest */
+.iso{ display:flex; flex-direction:column; gap:7px; padding:6px 0 2px; }
+.iso-row{ display:grid; grid-template-columns:64px minmax(0,1fr) 110px; gap:10px; align-items:center; font-size:var(--fs-small); }
+.iso-k{ color:var(--ink-2); }
+.iso-v{ color:var(--ink-3); font-size:var(--fs-eyebrow); }
+.iso-bar{ height:9px; border-radius:999px; background:var(--surface-2); border:1px solid var(--line); overflow:hidden; }
+.iso-bar i{ display:block; height:100%; background:var(--s2); }
+.iso-bar.hot i{ background:var(--warn); }
+
+@media (max-width: 860px){
+  .arch{ grid-template-columns:minmax(0,1fr); }
+  .aright{ width:0; height:14px; border-top:0; border-left:2px solid var(--line-strong); }
+  .aright::after{ right:auto; left:-5px; top:auto; bottom:-2px; border:4px solid transparent; border-top:5px solid var(--line-strong); }
+  .farr{ transform:rotate(90deg); }
+  .flow{ flex-direction:column; }
+  .persona-tbl td:first-child{ white-space:normal; }
+}
+
+/* ============================================================
+   NAVEGAÇÃO
+   ============================================================ */
+#nav{
+  position:fixed; bottom:0; left:0; right:0; z-index:40;
+  display:flex; align-items:center; justify-content:space-between; gap:14px;
+  padding:clamp(9px,1.4vh,16px) var(--pad-x);
+  font-family:"IBM Plex Mono", monospace; font-size:var(--fs-small); color:var(--ink-3);
+}
+#hints{ display:flex; gap:clamp(8px,1.4vw,18px); flex-wrap:wrap; }
+#hints span{ white-space:nowrap; }
+kbd{
+  font-family:"IBM Plex Mono", monospace; font-size:.92em;
+  padding:1px 6px; border-radius:6px;
+  border:1px solid var(--line-strong); background:var(--surface-2); color:var(--ink-2);
+}
+#navbtns{ display:flex; align-items:center; gap:8px; }
+.nb{
+  width:34px; height:34px; border-radius:999px; cursor:pointer;
+  border:1px solid var(--line-strong); background:var(--surface);
+  color:var(--ink-2); display:grid; place-items:center;
+  backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
+  transition:border-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+.nb:hover{ border-color:var(--ring); color:var(--ink); transform:translateY(-1px); }
+.nb:focus-visible{ outline:2px solid var(--accent-3); outline-offset:2px; }
+.nb:disabled{ opacity:.3; cursor:default; transform:none; }
+.nb svg{ width:15px; height:15px; }
+#counter{ color:var(--ink-2); font-variant-numeric:tabular-nums; padding:0 4px; white-space:nowrap; }
+
+/* zonas de clique nas bordas — não roubam o clique dos controles */
+.zone{ position:fixed; top:0; bottom:0; width:min(5.5vw, 62px); z-index:20; cursor:pointer; }
+.zone.l{ left:0; } .zone.r{ right:0; }
+
+/* ============================================================
+   PAINÉIS: visão geral e notas
+   ============================================================ */
+#overview{
+  position:fixed; inset:0; z-index:60; display:none;
+  padding:clamp(44px,7vh,80px) var(--pad-x);
+  background:color-mix(in oklab, var(--ground) 86%, transparent);
+  backdrop-filter:blur(22px); -webkit-backdrop-filter:blur(22px);
+  overflow-y:auto;
+}
+#overview.on{ display:block; }
+#overview h2{ margin-bottom:clamp(12px,2vh,22px); }
+#ovGrid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(180px,1fr)); gap:clamp(8px,1.2vw,14px); }
+.ov{
+  text-align:left; cursor:pointer; min-height:74px;
+  border:1px solid var(--line); border-radius:16px; background:var(--surface-2);
+  padding:11px 13px; color:var(--ink-2);
+  display:flex; flex-direction:column; gap:5px;
+  font-family:inherit; font-size:var(--fs-small);
+  transition:border-color 160ms ease, transform 160ms ease, background 160ms ease;
+}
+.ov:hover{ border-color:var(--ring); transform:translateY(-2px); }
+.ov:focus-visible{ outline:2px solid var(--accent-3); outline-offset:2px; }
+.ov.on{ border-color:var(--accent); background:color-mix(in oklab, var(--accent) 12%, transparent); }
+.ov .n{ font-family:"IBM Plex Mono", monospace; font-size:var(--fs-eyebrow); color:var(--accent); letter-spacing:.1em; }
+.ov .t{ color:var(--ink); font-weight:500; line-height:1.3; }
+
+#notes{
+  position:fixed; left:0; right:0; bottom:0; z-index:50;
+  transform:translateY(101%); transition:transform 320ms cubic-bezier(.4,0,.2,1);
+  background:var(--surface-solid); border-top:1px solid var(--line-strong);
+  padding:clamp(12px,2vh,20px) var(--pad-x) clamp(46px,6vh,64px);
+  box-shadow:0 -20px 50px -24px rgba(0,0,0,.6);
+  max-height:42dvh; overflow-y:auto;
+}
+#notes.on{ transform:translateY(0); }
+#notes .lbl{
+  font-family:"IBM Plex Mono", monospace; font-size:var(--fs-eyebrow);
+  letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin-bottom:6px;
+}
+#notesBody{ color:var(--ink-2); font-size:var(--fs-body); max-width:88ch; line-height:1.6; }
+#notesBody b{ color:var(--ink); }
+
+@media (max-width: 860px){
+  .split, .split.wide-left{ grid-template-columns:minmax(0,1fr); }
+  .g3, .g4{ grid-template-columns:repeat(2, minmax(0,1fr)); }
+  #hints{ display:none; }
+  .zone{ display:none; }
+}
+@media (max-width: 560px){
+  .g2, .g3, .g4{ grid-template-columns:minmax(0,1fr); }
+  #chrome .brand span{ display:none; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  *, *::before, *::after{ animation-duration:.001ms !important; transition-duration:.001ms !important; }
+  .r{ opacity:1; transform:none; }
+}
+</style>
+</head>
+<body>
+<div id="atmos" aria-hidden="true">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+</div>
+<div id="grain" aria-hidden="true"></div>
+
+<header id="chrome">
+  <div class="brand"><i class="dot"></i><span>Radar&nbsp;da&nbsp;Integridade</span></div>
+  <div id="actLabel">Ato 1 · Pitch</div>
+  <div id="progress" aria-hidden="true"></div>
+  <button id="timer" type="button" title="Iniciar / pausar (S) · Zerar (R)">
+    <i class="pulse"></i><span id="clock">00:00</span><span style="color:var(--ink-3)">/ 15:00</span>
+  </button>
+</header>
+
+<main id="deck">
+
+<!-- ============ 1 · CAPA ============ -->
+<section class="slide" data-act="1" data-title="Capa">
+  <div class="inner center">
+    <div class="eyebrow r" style="--d:0">TCC · Ciência de Dados e IA · Setembro de 2026</div>
+    <h1 class="r" style="--d:1; font-size:clamp(34px, min(6.6vw, 9vh), 88px)">
+      Radar da <span class="grad">Integridade</span>
+    </h1>
+    <p class="lead r" style="--d:2; max-width:58ch">
+      Aplicação de Ciência de Dados e Inteligência Artificial na identificação de
+      anomalias disciplinares no futebol brasileiro
+    </p>
+    <div class="stat-row r" style="--d:3; justify-content:center; margin-top:clamp(6px,1.6vh,18px)">
+      <div class="stat"><span class="v grad" data-count="4559">4.559</span><span class="k">partidas na base</span></div>
+      <div class="stat"><span class="v grad" data-count="107990">107.990</span><span class="k">registros atleta × partida</span></div>
+      <div class="stat"><span class="v grad" data-count="210">210</span><span class="k">rodadas validadas</span></div>
+    </div>
+    <div class="r" style="--d:4; display:flex; gap:9px; flex-wrap:wrap; justify-content:center; margin-top:clamp(4px,1.2vh,14px)">
+      <span class="pill">Séries A e B · 2014–2026</span>
+    </div>
+    <div class="team r" style="--d:5">
+      <span class="team-lbl">Equipe</span>
+      <span>Filipe Ataide</span><span>Rebeka Lemos</span><span>Nickolas Gomes</span><span>Lacê Rene</span><span>Luan de Oliveira</span>
+    </div>
+    <p class="note r" style="--d:6; margin-top:clamp(4px,1.2vh,12px)">
+      <kbd>→</kbd> avança &nbsp;·&nbsp; <kbd>O</kbd> visão geral &nbsp;·&nbsp; <kbd>N</kbd> notas &nbsp;·&nbsp; <kbd>S</kbd> cronômetro
+    </p>
+  </div>
+  <template class="notes">Abrir com o problema, não com o método. <b>15 minutos: 5 de pitch (até o slide 6), 6 de fundamento, 4 de segurança e mercado.</b> Iniciar o cronômetro com S antes de falar. O "radar" é a ideia que amarra tudo: o sistema não acusa ninguém, aponta onde olhar primeiro.</template>
+</section>
+
+<!-- ============ 2 · O PROBLEMA ============ -->
+<section class="slide" data-act="1" data-title="O problema">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 1 · O problema</div>
+    <h1 class="r" style="--d:1">Não é preciso comprar o jogo.<br>Basta comprar <span class="grad">um cartão.</span></h1>
+    <p class="lead r" style="--d:2">
+      A manipulação clássica exige conluio. O micro-mercado, não: ele transfere o poder de
+      produzir o evento para um único atleta.
+    </p>
+    <div class="grid g3 r" style="--d:3">
+      <div class="card">
+        <div class="idx">MERCADO</div>
+        <h3>A aposta incide sobre o evento, não sobre o placar</h3>
+        <ul class="ticks sm">
+          <li>Amarelo por jogador</li>
+          <li>Amarelo por equipe e no 1º tempo</li>
+          <li>Pênalti em janela de tempo</li>
+          <li>Escanteios</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="idx">EXECUÇÃO</div>
+        <h3>Um atleta sozinho entrega o evento</h3>
+        <ul class="ticks sm">
+          <li>Falta intencional</li>
+          <li>Retardamento do reinício</li>
+          <li>Reclamação ostensiva</li>
+          <li>Sem anuência do time</li>
+          <li>Sem alterar o resultado de maneira visível</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="idx">LIQUIDAÇÃO</div>
+        <h3>Tudo se resolve no apito final</h3>
+        <ul class="ticks sm">
+          <li><b>Quem detecta durante ou após o jogo não recupera o prejuízo</b></li>
+          <li>A decisão útil é <em>antes</em> do jogo — e é aí que ninguém olha</li>
+        </ul>
+      </div>
+    </div>
+    <div class="split r" style="--d:4; align-items:stretch; margin-top:clamp(4px,1vh,12px)">
+      <div class="card" style="justify-content:center">
+        <div class="stat-row">
+          <div class="stat">
+            <span class="v" style="color:var(--warn)" data-count="28.9" data-suffix="%">28,9%</span>
+            <span class="k">dos <b>3.671 cartões</b> da Série B 2022–23 vêm de infração <b>não-física</b></span>
+          </div>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:7px; margin-top:6px">
+          <span class="pill"><i class="sq" style="background:var(--warn)"></i>Reclamação 15,8%</span>
+          <span class="pill"><i class="sq" style="background:var(--mid)"></i>Cera 8,4%</span>
+          <span class="pill"><i class="sq" style="background:var(--s3)"></i>Antidesportiva 4,8%</span>
+        </div>
+      </div>
+      <div class="card flat" style="justify-content:center">
+        <p style="color:var(--ink)">
+          Um cartão por falta temerária <strong>exige que o lance aconteça</strong>.
+          Um cartão por reclamação, não.
+        </p>
+        <p class="note">Categoria que não depende de disputa de bola é a mais fácil de encomendar — e é a que nenhum provedor comercial disponibiliza estruturada.</p>
+      </div>
+    </div>
+    <p class="note src r" style="--d:5">A Operação Penalidade Máxima (MP-GO / STJD) documentou 14 incidentes com atleta, confronto, minuto e valor da propina. Começou na Série B.</p>
+  </div>
+  <template class="notes">Este é o slide que estabelece <b>por que o problema é do atleta e não do clube</b>. Não gastar mais de 40 s. O número 28,9% é o gancho: ele só existe porque lemos o motivo textual do árbitro.</template>
+</section>
+
+<!-- ============ 3 · O PARADOXO ============ -->
+<section class="slide" data-act="1" data-title="O paradoxo disciplinar">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 1 · O sinal</div>
+    <h1 class="r" style="--d:1">O jogo ficou menos violento.<br>E muito <span class="grad">mais punido.</span></h1>
+    <div class="split wide-left r" style="--d:2; align-items:center">
+      <div class="chart-wrap" id="cw1">
+        <svg id="chart1" viewBox="0 0 780 330" role="img"
+             aria-label="Faltas por jogo e cartões a cada 10 faltas na Série A, 2015 a 2024, como variação em relação a 2017. Faltas caem 19,3 por cento e os cartões a cada 10 faltas sobem 35,9 por cento. Marcação da legalização das apostas em dezembro de 2018."></svg>
+        <div class="tip" id="tip1"></div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:var(--gap)">
+        <div class="stat-row" style="flex-direction:column; gap:clamp(8px,1.6vh,18px)">
+          <div class="stat"><span class="v" style="color:var(--s2)">25,4</span><span class="k">faltas por jogo em 2024 — <b>mínima da série histórica</b></span></div>
+          <div class="stat"><span class="v" style="color:var(--s3)">2,2</span><span class="k">cartões a cada 10 faltas em 2024 — <b>recorde absoluto</b> (eram 1,6 em 2017)</span></div>
+          <div class="stat"><span class="v" style="color:var(--crit)">128</span><span class="k">cartões vermelhos em 2024 — <b>recorde</b></span></div>
+        </div>
+      </div>
+    </div>
+    <p class="note src r" style="--d:3">Série A, 380 partidas por temporada. Para comparar as duas medidas na mesma régua, cada curva mostra a variação em relação a 2017 (2017 = 100): <b style="color:var(--ink-2)">81</b> significa 19% abaixo de 2017; <b style="color:var(--ink-2)">136</b>, 36% acima. Passe o cursor para ver os valores absolutos.</p>
+  </div>
+  <template class="notes">Deixar o gráfico desenhar e <b>não narrar ponto a ponto</b>. A frase única: "depois da legalização das bets, o jogo tem menos contato físico e mais punição — as duas curvas se separam a partir de 2022". Se perguntarem do "2017 = 100": é só uma régua comum — cada série dividida pelo seu próprio valor de 2017, porque faltas (~30 por jogo) e cartões a cada 10 faltas (~2) têm escalas muito diferentes. Não é causalidade; é o sinal que motivou o estudo.</template>
+</section>
+
+<!-- ============ 6 · O PRODUTO ============ -->
+<section class="slide" data-act="1" data-title="Três camadas">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 1 · O produto</div>
+    <h1 class="r" style="--d:1">Três camadas sobre a <span class="grad">mesma fonte.</span></h1>
+    <p class="lead r" style="--d:2">Em ordem crescente de valor e de dificuldade — cada uma financia a seguinte.</p>
+    <div class="grid g3 r" style="--d:3">
+      <div class="card">
+        <div class="idx">CAMADA 1 · DADO CANÔNICO</div>
+        <h3>Partidas, gols e cartões com minuto e motivo</h3>
+        <p>Base relacional das Séries A e B, atualização D+1, manifesto de proveniência.</p>
+        <hr class="rule">
+        <p class="note"><b style="color:var(--ink-2)">Compra:</b> mídia, fantasy, modelagem, pesquisa.<br>
+        <b style="color:var(--ink-2)">Natureza:</b> fácil de vender, fácil de copiar.</p>
+      </div>
+      <div class="card">
+        <div class="idx">CAMADA 2 · DOSSIÊ D+1</div>
+        <h3>Fila priorizada com a memória de cálculo aberta</h3>
+        <p>Qual subscore disparou, qual p-valor, qual minuto, qual motivo — e o link para a súmula-fonte com hash.</p>
+        <hr class="rule">
+        <p class="note"><b style="color:var(--ink-2)">Compra:</b> CBF, federações, STJD, compliance de clube.<br>
+        <b style="color:var(--ink-2)">Diferencial:</b> <b style="color:var(--ink-2)">admissibilidade</b> — cada alerta vem com a justificativa aberta, e caixa-preta não fundamenta despacho.</p>
+      </div>
+      <div class="card" style="border-color:color-mix(in oklab, var(--accent) 45%, transparent)">
+        <div class="idx" style="color:var(--accent-2)">CAMADA 3 · RISCO PRÉ-JOGO</div>
+        <h3>Perfil dos atletas relacionados, antes do apito</h3>
+        <p>Fonte de valor para clubes que desejam contratar: o histórico disciplinar do atleta avaliado antes de assinar o contrato — e antes de cada jogo.</p>
+        <hr class="rule">
+        <p class="note"><b style="color:var(--ink-2)">Compra:</b> clubes, entidades de integridade, operadoras (restrito).</p>
+      </div>
+    </div>
+    <div class="kicker quote r" style="--d:4">
+      Por que é possível antecipar: o comportamento disciplinar atípico de um atleta <strong>se repete ao longo das
+      temporadas, mesmo quando ele troca de clube</strong>. Um mesmo atleta ficou no topo do ranking em 2020 por um clube
+      e voltou ao topo em 2022 por outro. Um padrão que se repete pode ser antecipado; um episódio isolado, não.
+    </div>
+  </div>
+  <template class="notes">Numeração legítima: é uma <b>sequência real</b> de valor e dificuldade, não decoração. Se o tempo apertar, gastar 20 s: "dado, dossiê, pré-jogo". O exemplo de persistência (percentil 100,0 em 2020 e 99,67 em 2022, clubes diferentes) é anonimizado de propósito, e isso é parte do argumento de LGPD (slide 11).</template>
+</section>
+
+<!-- ============ 5 · PERSONAS E FLUXOS ============ -->
+<section class="slide" data-act="1" data-title="Personas e fluxos de decisão">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 1 · O cliente</div>
+    <h1 class="r" style="--d:1">Quem usa, o que pergunta<br>e <span class="grad">o que decide.</span></h1>
+    <div class="flow r" style="--d:2" aria-label="Fluxo comum de decisão">
+      <div class="fstep"><span class="fn">1</span>Súmula oficial publicada em D+1</div>
+      <i class="farr" aria-hidden="true"></i>
+      <div class="fstep"><span class="fn">2</span>Nota de atipicidade por atleta e por jogo</div>
+      <i class="farr" aria-hidden="true"></i>
+      <div class="fstep"><span class="fn">3</span>Corte pelo limiar de alerta do cliente</div>
+      <i class="farr" aria-hidden="true"></i>
+      <div class="fstep"><span class="fn">4</span>Análise humana com a justificativa aberta</div>
+      <i class="farr" aria-hidden="true"></i>
+      <div class="fstep hl"><span class="fn">5</span>Decisão do cliente</div>
+    </div>
+    <div class="card r" style="--d:3; padding-block:clamp(6px,1vh,12px)">
+      <div class="scroll-x">
+        <table class="tbl persona-tbl">
+          <thead><tr><th>Persona</th><th>A pergunta</th><th>O que recebe</th><th>A decisão</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Clube (SAF)<span class="tag">cliente principal</span></td>
+              <td>“Vou contratar este atleta? Alguém do meu elenco está com perfil atípico?”</td>
+              <td>Ficha do atleta e fila restrita ao próprio elenco</td>
+              <td>Seguir, aprofundar a <i>due diligence</i> ou não contratar</td>
+            </tr>
+            <tr>
+              <td>Federação, CBF, STJD</td>
+              <td>“Da rodada inteira, quais casos mando para revisão de vídeo?”</td>
+              <td>Fila priorizada da rodada, com a justificativa de cada alerta</td>
+              <td>Abrir procedimento ou arquivar, fundamentando no despacho</td>
+            </tr>
+            <tr>
+              <td>Operadora · integridade</td>
+              <td>“Se a SPA/MF perguntar, consigo provar que monitorei esta partida?”</td>
+              <td>Dossiê da partida, datado, com fonte oficial e hash — sem nome de atleta</td>
+              <td>Arquivar o registro como prova de diligência</td>
+            </tr>
+            <tr>
+              <td>Imprensa e academia</td>
+              <td>“Qual é o número?”</td>
+              <td>Panorama agregado aberto — sem nome de atleta</td>
+              <td>Publicar e pesquisar</td>
+            </tr>
+            <tr class="no-row">
+              <td>Operadora · mesa de <i>trading</i></td>
+              <td colspan="3">Não atendida. Dado por atleta alimentaria a precificação dos micro-mercados que o projeto existe para proteger.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p class="kicker r" style="--d:4">Em todos os fluxos a decisão é <strong>humana</strong>: o sistema ordena a atenção, não acusa ninguém.</p>
+  </div>
+  <template class="notes">Ler a tabela na horizontal, uma linha por vez, só as duas primeiras em voz alta: <b>clube</b> (cliente principal — a dor é não contratar um problema, com gatilho claro na janela de transferências) e <b>federação/STJD</b> (hoje o processo é reativo e por denúncia). A mesa de trading é recusada por conflito de interesse; se perguntarem, a decisão está no termo de uso.</template>
+</section>
+
+<!-- ============ 6 · LIMIAR DE ALERTA ============ -->
+<section class="slide" data-act="1" data-title="O limiar de alerta">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 1 · O limiar de alerta</div>
+    <h1 class="r" style="--d:1">Cada cliente escolhe<br><span class="grad">quantos alertas consegue analisar.</span></h1>
+    <div class="split r" style="--d:2; align-items:start">
+      <div style="display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px)">
+        <div class="card flat">
+          <div class="idx">O QUE É O LIMIAR</div>
+          <ul class="ticks">
+            <li>Cada rodada tem <b>10 jogos</b>. O sistema dá a cada um uma nota de atipicidade disciplinar e os ordena do mais para o menos atípico.</li>
+            <li>O limiar é a <b>linha de corte</b>, medida em percentil: só vira alerta o jogo que fica acima dela.</li>
+            <li><b>Percentil 70</b> = só os 30% mais atípicos viram alerta — cerca de <b>3 jogos por rodada</b>.</li>
+          </ul>
+        </div>
+        <div class="grid g2">
+          <div class="card flat">
+            <h3 style="color:var(--warn)">Corte mais baixo</h3>
+            <p class="note">Mais alertas, mais casos reais capturados — e mais alarme falso para alguém analisar.</p>
+          </div>
+          <div class="card flat">
+            <h3 style="color:var(--accent)">Corte mais alto</h3>
+            <p class="note">Menos alertas e menos ruído — mas casos reais ficam de fora.</p>
+          </div>
+        </div>
+        <p class="note">Não existe corte “certo”: existe o corte que cabe na equipe de cada cliente. Por isso o limiar é um parâmetro do produto, ajustável por perfil.</p>
+      </div>
+      <div class="card thr">
+        <div class="thr-head">
+          <div>
+            <div class="idx">LIMIAR DE ALERTA</div>
+            <div class="thr-val"><span id="thrP">70</span><span style="font-size:.45em; color:var(--ink-3); font-family:'IBM Plex Mono',monospace">&nbsp;percentil</span></div>
+          </div>
+          <span class="pill" id="thrBadge"><i class="sq" style="background:var(--good)"></i>medido</span>
+        </div>
+        <input id="thr" type="range" min="50" max="90" step="1" value="70"
+               aria-label="Percentil de corte do alerta, de 50 a 90">
+        <div class="thr-scale"><span>p50 · mais alertas</span><span>p90 · menos alertas</span></div>
+        <hr class="rule">
+        <div style="display:flex; flex-direction:column; gap:6px">
+          <div style="display:flex; align-items:baseline; justify-content:space-between; gap:10px">
+            <span class="note" style="color:var(--ink-2)">Jogos em alerta por rodada <span style="color:var(--ink-3)">(de 10)</span></span>
+            <span class="mono" style="color:var(--warn); font-weight:600" id="thrAl">3,0</span>
+          </div>
+          <div class="dots" id="thrDots"></div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:6px; margin-top:4px">
+          <div style="display:flex; align-items:baseline; justify-content:space-between; gap:10px">
+            <span class="note" style="color:var(--ink-2)">Casos reais da Penalidade Máxima que cairiam no alerta</span>
+            <span class="mono" style="color:var(--accent); font-weight:600" id="thrSe">38,5%</span>
+          </div>
+          <div class="meter"><i id="thrBar" style="width:38.5%"></i></div>
+          <span class="note" id="thrCases">5 de 13 incidentes capturados</span>
+        </div>
+        <hr class="rule">
+        <div class="presets" id="thrPresets">
+          <button class="preset on" type="button" data-p="70">Federação / STJD · p70</button>
+          <button class="preset" type="button" data-p="90">Clube · p90</button>
+          <button class="preset" type="button" data-p="50">Operadora · p50</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <template class="notes">Momento interativo — <b>arrastar o slider ao vivo</b>. A frase: "baixar o corte captura mais e produz mais alarme falso; o limiar é parâmetro do produto, não constante escondida". Clicar nos três perfis: federação analisa ~3 jogos por rodada, clube ~1, operadora ~5. <b>Se perguntarem:</b> p50, p70 e p90 são medidos (tabela 21c); os pontos intermediários são interpolados. No nível da partida o ganho sobre sortear jogos ao acaso não é estatisticamente significativo (p70: 1,28×, p = 0,35) — o sinal forte está no nível do atleta, slide 10. As capacidades por perfil ainda não foram validadas com usuário real. <b>Fim dos 5 minutos de pitch aqui.</b></template>
+</section>
+
+<!-- ============ 8 · A BASE ============ -->
+<section class="slide" data-act="2" data-title="A base de dados">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 2 · O fundamento</div>
+    <h1 class="r" style="--d:1">A base</h1>
+    <div class="card r" style="--d:2">
+      <div class="scroll-x">
+        <table class="tbl">
+          <thead><tr><th>Conjunto</th><th>Período</th><th>Volume</th><th>O que carrega</th><th>Origem</th></tr></thead>
+          <tbody>
+            <tr><td>Série A histórica</td><td class="num">2014–2024</td><td class="num">4.179 jogos · 20.953 cartões</td><td>Gols, cartões, minutos, árbitros, mando</td><td>CBF / Adão Duque / Sofascore</td></tr>
+            <tr><td>Súmulas CBF</td><td class="num">2022–2026</td><td class="num">Séries A e B, D+1</td><td><b style="color:var(--accent)">Minuto exato e motivo textual do árbitro</b></td><td>Súmula eletrônica oficial (PDF)</td></tr>
+            <tr><td><em>Ground truth</em> judicial</td><td class="num">2022</td><td class="num">14 incidentes</td><td>Atleta, confronto, minuto, evento pactuado, propina</td><td>GAECO/MP-GO · STJD · TJ-GO</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="tl r" style="--d:3; margin-top:clamp(4px,1vh,12px)">
+      <div class="n"><div class="yr">DEZ/2018</div><div class="ttl">Lei 13.756</div><div class="dsc">Apostas de quota fixa legalizadas.</div></div>
+      <div class="n"><div class="yr">2019–2023</div><div class="ttl">Vácuo regulatório</div><div class="dsc">Operadoras <i>offshore</i>, sem tributação nem fiscalização de integridade. Penalidade Máxima.</div></div>
+      <div class="n"><div class="yr">DEZ/2023</div><div class="ttl">Lei 14.790</div><div class="dsc">Marco regulatório, SPA/MF, obrigação de monitorar e reportar.</div></div>
+    </div>
+  </div>
+  <template class="notes">Aqui muda o registro: acabou o pitch, começa o fundamento técnico. O destaque da tabela é a segunda linha: o <b>motivo textual do árbitro</b> e o minuto exato, que nenhum provedor comercial entrega estruturado. A linha do tempo situa o período: legalização, vácuo regulatório (onde ocorreu a Penalidade Máxima) e o marco de 2023.</template>
+</section>
+
+<!-- ============ 8 · ARQUITETURA ============ -->
+<section class="slide" data-act="2" data-title="Arquitetura simplificada">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 2 · Arquitetura</div>
+    <h1 class="r" style="--d:1">Da súmula à tela,<br>em <span class="grad">três blocos.</span></h1>
+    <div class="arch r" style="--d:2">
+      <div class="zone-col">
+        <div class="zlbl">1 · Dados</div>
+        <div class="abox"><span class="at">Portal da CBF</span><span class="ad">Súmulas oficiais em PDF, publicadas em D+1</span></div>
+        <i class="adown" aria-hidden="true"></i>
+        <div class="abox"><span class="at">Coleta incremental</span><span class="ad">Baixa só o que mudou; impressão digital SHA-256 de cada arquivo</span></div>
+        <i class="adown" aria-hidden="true"></i>
+        <div class="abox"><span class="at">Processamento · Python</span><span class="ad">Leitura do PDF, limpeza, escores estatísticos e modelos de IA em avaliação</span></div>
+      </div>
+      <i class="aright" aria-hidden="true"></i>
+      <div class="zone-col">
+        <div class="zlbl">2 · Serviço</div>
+        <div class="abox"><span class="at">Banco PostgreSQL</span><span class="ad">Tabelas de leitura recarregadas a cada deploy + chaves de acesso e trilha de consultas preservadas</span></div>
+        <i class="adown" aria-hidden="true"></i>
+        <div class="abox hl"><span class="at">API · FastAPI</span><span class="ad">Só leitura. A credencial define o perfil e o que cada cliente pode ver</span></div>
+      </div>
+      <i class="aright" aria-hidden="true"></i>
+      <div class="zone-col">
+        <div class="zlbl">3 · Uso</div>
+        <div class="abox"><span class="at">Aplicação web · Next.js</span><span class="ad">Quatro telas, montadas conforme o perfil</span></div>
+        <div class="screens">
+          <span class="pill">Fila da rodada</span>
+          <span class="pill">Ficha do atleta</span>
+          <span class="pill">Dossiê da partida</span>
+          <span class="pill">Panorama agregado</span>
+        </div>
+      </div>
+    </div>
+    <div class="grid g3 r" style="--d:3">
+      <div class="card flat"><h3>Nada é calculado na consulta</h3><p class="note">O pipeline calcula; o banco guarda percentil e faixa; a API só lê. Resposta rápida e resultado reproduzível.</p></div>
+      <div class="card flat"><h3>POC no ar hoje</h3><p class="note">API e banco PostgreSQL gerenciado no Railway, com verificação de saúde e recarga automática dos dados.</p></div>
+      <div class="card flat"><h3>Produção desenhada</h3><p class="note">Na AWS: execução diária agendada, PDFs arquivados no S3, banco gerenciado e segredos em cofre.</p></div>
+    </div>
+  </div>
+  <template class="notes">Slide de 40 s: ler os três blocos da esquerda para a direita. A mensagem é <b>cadeia de custódia</b> — do PDF oficial até a tela, cada etapa é rastreável. Se perguntarem de custo ou escala: o processamento roda em minutos por dia, e o custo marginal por cliente adicional é próximo de zero.</template>
+</section>
+
+<!-- ============ 9 · MODELO FOREST ============ -->
+<section class="slide" data-act="2" data-title="IA testada e modelo escolhido">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 2 · Inteligência artificial</div>
+    <h1 class="r" style="--d:1">Testamos florestas de decisão.<br>A evidência escolheu <span class="grad">o modelo explicável.</span></h1>
+    <div class="grid g2 r" style="--d:2">
+      <div class="card">
+        <div class="idx">ISOLATION FOREST · SEM RÓTULO</div>
+        <h3>Quanto mais fácil de isolar, mais atípico</h3>
+        <p>Não precisa de nenhum exemplo de fraude. O modelo cria <b>300 árvores</b> que dividem os dados com cortes aleatórios. Um jogo ou atleta comum precisa de muitos cortes para ficar sozinho; um atípico fica isolado em poucos.</p>
+        <div class="iso" aria-hidden="true">
+          <div class="iso-row"><span class="iso-k">Comum</span><span class="iso-bar"><i style="width:88%"></i></span><span class="iso-v mono">muitos cortes</span></div>
+          <div class="iso-row"><span class="iso-k">Atípico</span><span class="iso-bar hot"><i style="width:22%"></i></span><span class="iso-v mono">poucos cortes</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="idx">RANDOM FOREST · APRENDIZADO PU</div>
+        <h3>Aprende com os poucos casos confirmados</h3>
+        <p>Os casos da Operação Penalidade Máxima são os <b>positivos</b>; o resto da base é tratado como <b>não rotulado</b> — não como inocente. Um comitê de <b>50 florestas</b> (60 árvores cada) vê todos os positivos e uma amostra diferente do resto, e a nota é a <b>média dos votos</b>.</p>
+        <p class="note">Variáveis: % de cartões no 1º tempo, cartões nos primeiros 30 min, minuto médio, total de cartões, reclamação e cera, pênaltis no 1º tempo.</p>
+      </div>
+    </div>
+    <div class="card flat r" style="--d:3; padding-block:clamp(8px,1.2vh,14px)">
+      <div class="idx">A DECISÃO · EVIDÊNCIA ANTES DE SOFISTICAÇÃO</div>
+      <div class="scroll-x">
+        <table class="tbl">
+          <thead><tr><th>Critério</th><th>Florestas de decisão</th><th style="color:var(--accent)">Escore pré-jogo · escolhido</th></tr></thead>
+          <tbody>
+            <tr><td>Validação</td><td>100% de acerto só <b>dentro do treino</b> — com 14 casos, número sem informação</td><td><b style="color:var(--good)">2,4× a 3× acima do acaso</b>, testado rodada a rodada sem olhar o futuro</td></tr>
+            <tr><td>Explicação</td><td>Média dos votos de 3.000 árvores</td><td>Uma conta que cabe num despacho: cartões por minuto × minutos esperados</td></tr>
+            <tr><td>Aprende com</td><td>Os 14 casos judiciais — poucos e raros</td><td>Cartão no 1º tempo — frequente e observável em toda rodada</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <template class="notes">A mensagem do slide: <b>a IA foi usada como método de investigação, e a validação decidiu o modelo</b>. Explicar a intuição, não a matemática: <b>Isolation Forest</b> — "o diferente se separa rápido"; <b>Random Forest PU</b> — "aprende com os poucos casos que a Justiça confirmou, sem assumir que todo o resto é inocente". Depois a tabela: com 14 positivos, qualquer classificador chega a 100% dentro da amostra; fora dela, não generalizou. O escore escolhido supera o acaso sem vazamento e é explicável — requisito para fundamentar despacho. As florestas seguem no pipeline como ferramenta exploratória e voltam à mesa quando houver mais casos rotulados. <b>Se perguntarem:</b> faixas da floresta — alerta com nota ≥ 0,60 (ou <i>outlier</i> e ≥ 0,45), monitoramento ≥ 0,35; a exposição a patrocínio foi retirada das variáveis para não confirmar a hipótese por construção. Transição: "e o modelo escolhido é o do próximo slide".</template>
+</section>
+
+<!-- ============ 11 · O PIVÔ ============ -->
+<section class="slide" data-act="2" data-title="Do jogo para o atleta">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 2 · O modelo escolhido</div>
+    <h1 class="r" style="--d:1">Do jogo para o atleta —<br>onde o sinal <span class="grad">existe.</span></h1>
+    <p class="lead r" style="--d:1">Olhar a partida inteira não separou jogos suspeitos do acaso. Olhar o histórico de cada atleta, sim.</p>
+    <div class="split wide-left r" style="--d:2; align-items:center">
+      <div class="chart-wrap" id="cw2">
+        <svg id="chart2" viewBox="0 0 780 300" role="img"
+             aria-label="Precisão nos k primeiros colocados da fila. O escore supera a linha de base em k igual a 1, 3, 5 e 10, e fica de 2,4 a 3,0 vezes acima da taxa do acaso de 4 por cento."></svg>
+        <div class="tip" id="tip2"></div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:var(--gap)">
+        <div class="legend">
+          <span class="it"><i class="sq" style="background:var(--s1)"></i>Nosso escore pré-jogo</span>
+          <span class="it"><i class="sq" style="background:var(--s2)"></i>Ranking simples por cartões acumulados</span>
+          <span class="it"><i class="ln"></i>Sorteio ao acaso · 4%</span>
+        </div>
+        <div class="stat-row" style="gap:clamp(10px,2vw,28px)">
+          <div class="stat"><span class="v grad">12%</span><span class="k">dos 10 primeiros da fila de cada rodada levam cartão no 1º tempo — <b>sorteando, seriam 4%</b></span></div>
+          <div class="stat"><span class="v" style="color:var(--good)">2,4× a 3×</span><span class="k">melhor que o acaso, e acima do ranking simples em todos os tamanhos de fila</span></div>
+        </div>
+        <div class="card flat">
+          <div class="idx">COMO O MODELO ESCOLHIDO FUNCIONA, SEM FÓRMULA</div>
+          <ul class="ticks sm">
+            <li>Antes de cada rodada, o sistema olha <b>só o passado</b> de cada atleta relacionado: quantos cartões no 1º tempo ele levou por minuto jogado.</li>
+            <li>Quem jogou pouco é puxado para a média da liga — um cartão em 20 minutos não faz ninguém “o mais indisciplinado do campeonato”.</li>
+            <li>Essa taxa é multiplicada pelo tempo que se espera que ele jogue. O resultado ordena a fila.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="note src r" style="--d:3">Testado rodada a rodada, sempre prevendo a próxima só com o que já tinha acontecido: 210 rodadas e 107.990 registros atleta × partida, Série A 2025–2026 e Série B 2022–2026. Passe o cursor nas barras.</p>
+  </div>
+  <template class="notes">Este é o modelo que venceu a comparação do slide anterior. Mensagem: olhar a partida inteira não separou jogos suspeitos do acaso; olhar o atleta, sim — modestamente e de forma mensurável. "k" no gráfico = tamanho do topo da fila (1, 3, 5 ou 10 atletas por rodada). Dizer a ressalva em voz alta: o ranking simples por cartões fica próximo, e o ganho mede <b>atipicidade disciplinar, não conduta</b>. O alvo do modelo é cartão no 1º tempo — frequente e observável —, nunca os 14 casos judiciais. <b>Para arguição técnica:</b> taxa com encolhimento bayesiano empírico (M₀ = 500 minutos) × minutos esperados; validação <i>walk-forward</i>; teste de vazamento com 75.291 linhas comparadas e 0 divergentes.</template>
+</section>
+
+<!-- ============ 11 · SEGURANÇA E LGPD ============ -->
+<section class="slide" data-act="3" data-title="Segurança e LGPD">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 3 · Segurança e LGPD</div>
+    <h1 class="r" style="--d:1">Apontar onde olhar<br><span class="grad">sem expor ninguém.</span></h1>
+    <p class="lead r" style="--d:2">A maioria dos atletas com perfil atípico nunca foi investigada. Nomeá-los num sistema sobre integridade seria exatamente o dano a evitar.</p>
+    <div class="grid g3 r" style="--d:3">
+      <div class="card">
+        <div class="idx">CAMADA ABERTA</div>
+        <h3>Nenhum atleta na resposta</h3>
+        <p class="note">Imprensa, academia e integridade de operadoras recebem só agregados por partida e por clube.</p>
+      </div>
+      <div class="card">
+        <div class="idx">CAMADA IDENTIFICADA</div>
+        <h3>Nome só para quem responde pelo atleta</h3>
+        <p class="note">Federação/STJD e o clube — este restrito ao próprio elenco. Toda consulta individual fica <b>registrada</b>.</p>
+      </div>
+      <div class="card">
+        <div class="idx">NOMINÁVEIS</div>
+        <h3>Só condenação transitada em julgado</h3>
+        <p class="note">Hoje, 10 atletas da Operação Penalidade Máxima. Quem é apenas estatisticamente atípico <b>nunca é nominado</b>.</p>
+      </div>
+    </div>
+    <div class="split r" style="--d:4; align-items:stretch">
+      <div class="card flat">
+        <div class="idx">SEGURANÇA NA API</div>
+        <ul class="ticks" style="margin-top:2px">
+          <li>Chave de acesso por cliente, guardada só como <b>hash SHA-256</b> — o banco não conhece a chave.</li>
+          <li>Perfil e clube vêm <b>da credencial</b>, nunca da requisição. Tentar informá-los na URL é recusado.</li>
+          <li>Tela sem permissão <b>não aparece</b> — nem desabilitada.</li>
+          <li>Atletas sem condenação saem <b>pseudonimizados</b>; a API se recusa a subir em produção sem o segredo.</li>
+        </ul>
+      </div>
+      <div class="card flat">
+        <div class="idx">LGPD NA PRÁTICA</div>
+        <ul class="ticks" style="margin-top:2px">
+          <li>O escore bruto nunca é exibido — só percentil e faixa, para não ser lido como probabilidade.</li>
+          <li>O aviso “mede atipicidade, não fraude” <b>viaja junto com o dado</b>, em toda resposta.</li>
+          <li>Vocabulário controlado: <b>atípico</b>, não suspeito; <b>prioridade</b>, não risco de fraude.</li>
+          <li>Art. 20 da LGPD: revisão de decisão automatizada com <b>canal e procedimento reais</b>.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <template class="notes">Se a banca tiver um jurista, é aqui que ele entra. Ponto central: o escore de atipicidade <b>não é dado sensível pelo art. 5º, II</b>, mas o efeito prático sobre a carreira de um atleta exige o mesmo cuidado — por isso a proteção é por camada e não por consentimento. Leis: 13.709/2018, 13.756/2018, 14.790/2023. <b>Pendências a admitir se perguntarem:</b> a base legal do tratamento ainda não está fixada, e o histórico do Git anterior à pseudonimização ainda contém listas nominais.</template>
+</section>
+
+<!-- ============ 15 · POSICIONAMENTO ============ -->
+<section class="slide" data-act="3" data-title="Posicionamento">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 3 · Mercado</div>
+    <h1 class="r" style="--d:1">Complementar, <span class="grad">não substituto.</span></h1>
+    <div class="card r" style="--d:2">
+      <div class="scroll-x">
+        <table class="tbl">
+          <thead><tr><th>Incumbente</th><th>Força</th><th>Onde não competimos</th><th>Onde competimos</th></tr></thead>
+          <tbody>
+            <tr><td>Sportradar (UFDS)</td><td>Monitoramento global de odds em tempo real</td><td>Tempo real e cobertura internacional</td><td>Fonte oficial, explicabilidade, motivo do árbitro, Série B</td></tr>
+            <tr><td>Genius Sports</td><td>Dado oficial de ligas, integração com operadoras</td><td>Relacionamento com operadoras e dado <i>in-play</i></td><td>Proveniência auditável, custo, nicho nacional</td></tr>
+            <tr><td>IBIA</td><td>Rede de alerta entre operadoras</td><td>Acesso a dado transacional de apostas</td><td>Base pública verificável, uso por clubes e federações</td></tr>
+            <tr><td>Sofascore, Opta</td><td>Cobertura ampla e granular de eventos</td><td>Volume e amplitude de dado esportivo</td><td>Motivo textual do árbitro, cadeia de custódia</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="split r" style="--d:3; align-items:center">
+      <div class="kicker">
+        Eles operam sobre <strong>sinal de mercado</strong> — movimentação de odds, que antecede o evento e reflete intenção.<br>
+        Nós operamos sobre <strong>registro oficial</strong> — o que o árbitro escreveu, com hash e carimbo de data.
+        <span style="color:var(--accent)">Só o segundo instrui procedimento disciplinar.</span>
+      </div>
+      <div class="card flat">
+        <h3>Onde entra a receita</h3>
+        <div class="scroll-x">
+          <table class="tbl">
+            <thead><tr><th>Produto</th><th>Cliente</th><th>Modelo</th></tr></thead>
+            <tbody>
+              <tr><td>API de dado canônico</td><td>Mídia, fantasy</td><td>SaaS por volume</td></tr>
+              <tr><td>Dossiê de rodada</td><td>Federação, STJD</td><td>Assinatura institucional</td></tr>
+              <tr><td>Elenco e <i>due diligence</i></td><td>Clube SAF</td><td>Assinatura + consulta avulsa</td></tr>
+              <tr><td>Laudo técnico pericial</td><td>MP, advocacia desportiva</td><td>Projeto</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <template class="notes">Slide de resposta a objeção, não de venda. A ordem importa: primeiro admitir onde <b>não</b> competimos — isso compra credibilidade para a coluna da direita. Se perguntarem sobre tamanho de mercado: poucas dezenas de operadoras relevantes, ciclo longo, decisão política em federação. Riscos a admitir se perguntarem: nenhuma entrevista com cliente ainda, fonte única (portal da CBF) e só 14 casos confirmados.</template>
+</section>
+
+<!-- ============ 17 · FECHO ============ -->
+<section class="slide" data-act="3" data-title="Fecho">
+  <div class="inner center">
+    <div class="eyebrow r" style="--d:0">Radar da Integridade · Obrigado</div>
+    <h1 class="r" style="--d:1">
+      O cliente não quer saber<br>se houve fraude.
+    </h1>
+    <h1 class="r grad" style="--d:2; font-size:clamp(30px, min(5.4vw, 7.6vh), 72px)">
+      Quer saber onde olhar primeiro.
+    </h1>
+    <p class="lead r" style="--d:3; margin-top:clamp(6px,1.6vh,16px)">
+      E essa é uma pergunta que a súmula oficial responde — com fórmula publicada,
+      memória de cálculo aberta e o PDF-fonte anexado com hash.
+    </p>
+    <p class="note r" style="--d:4; margin-top:clamp(8px,2vh,24px)">
+      Perguntas. &nbsp;·&nbsp; <kbd>O</kbd> abre a visão geral para saltar a qualquer slide.
+    </p>
+  </div>
+  <template class="notes">Parar de falar. Deixar a frase na tela durante as perguntas. Com <b>O</b> se salta direto ao slide que a pergunta pedir — 9 para a IA, 10 para o resultado, 11 para LGPD, 8 para arquitetura.</template>
+</section>
+
+</main>
+
+<div class="zone l" id="zoneL" aria-hidden="true"></div>
+<div class="zone r" id="zoneR" aria-hidden="true"></div>
+
+<nav id="nav">
+  <div id="hints">
+    <span><kbd>←</kbd><kbd>→</kbd> navegar</span>
+    <span><kbd>O</kbd> visão geral</span>
+    <span><kbd>N</kbd> notas</span>
+    <span><kbd>S</kbd> cronômetro</span>
+    <span><kbd>T</kbd> tema</span>
+  </div>
+  <div id="navbtns">
+    <button class="nb" id="btnPrev" type="button" aria-label="Slide anterior">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <span id="counter">01 / 13</span>
+    <button class="nb" id="btnNext" type="button" aria-label="Próximo slide">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+    <button class="nb" id="btnGrid" type="button" aria-label="Visão geral dos slides">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+    </button>
+    <button class="nb" id="btnTheme" type="button" aria-label="Alternar tema claro e escuro">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+  </div>
+</nav>
+
+<div id="overview" role="dialog" aria-label="Visão geral dos slides">
+  <h2>Visão geral</h2>
+  <div id="ovGrid"></div>
+</div>
+
+<div id="notes" aria-live="polite">
+  <div class="lbl">Notas do apresentador</div>
+  <div id="notesBody"></div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var slides = Array.prototype.slice.call(document.querySelectorAll(".slide"));
+  var N = slides.length;
+  var cur = 0;
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---------- trilha de progresso, segmentada por ato ---------- */
+  var acts = [1,2,3].map(function(a){
+    return { a:a, ids: slides.map(function(s,i){ return s.dataset.act === String(a) ? i : -1; }).filter(function(i){ return i>=0; }) };
+  });
+  var actNames = { "1":"Ato 1 · Pitch", "2":"Ato 2 · Fundamento", "3":"Ato 3 · Confiança e mercado" };
+  var progress = document.getElementById("progress");
+  acts.forEach(function(g){
+    var seg = document.createElement("div");
+    seg.className = "seg";
+    seg.style.setProperty("--w", g.ids.length);
+    g.ids.forEach(function(i){
+      var t = document.createElement("i");
+      t.className = "tick"; t.dataset.i = i;
+      seg.appendChild(t);
+    });
+    progress.appendChild(seg);
+  });
+  var ticks = Array.prototype.slice.call(progress.querySelectorAll(".tick"));
+
+  /* ---------- visão geral ---------- */
+  var ovGrid = document.getElementById("ovGrid");
+  slides.forEach(function(s, i){
+    var b = document.createElement("button");
+    b.className = "ov"; b.type = "button"; b.dataset.i = i;
+    b.innerHTML = '<span class="n">' + String(i+1).padStart(2,"0") + " · " + actNames[s.dataset.act].split(" · ")[0].toUpperCase() +
+                  '</span><span class="t"></span>';
+    b.querySelector(".t").textContent = s.dataset.title;
+    b.addEventListener("click", function(){ go(i); closeOverview(); });
+    ovGrid.appendChild(b);
+  });
+  var ovBtns = Array.prototype.slice.call(ovGrid.children);
+
+  /* ---------- contadores animados ---------- */
+  function fmt(n, dec){
+    return n.toLocaleString("pt-BR", { minimumFractionDigits: dec, maximumFractionDigits: dec });
+  }
+  function runCounters(slide){
+    slide.querySelectorAll("[data-count]").forEach(function(el){
+      var target = parseFloat(el.dataset.count);
+      var dec = (el.dataset.count.indexOf(".") >= 0) ? 1 : 0;
+      var sfx = el.dataset.suffix || "";
+      if (reduced){ el.textContent = fmt(target, dec) + sfx; return; }
+      var t0 = null, dur = 900;
+      function step(ts){
+        if (t0 === null) t0 = ts;
+        var p = Math.min(1, (ts - t0) / dur);
+        var e = 1 - Math.pow(1 - p, 3);
+        el.textContent = fmt(target * e, dec) + sfx;
+        if (p < 1) requestAnimationFrame(step);
+      }
+      el.textContent = fmt(0, dec) + sfx;
+      requestAnimationFrame(step);
+    });
+  }
+
+  /* ---------- navegação ---------- */
+  var notesBody = document.getElementById("notesBody");
+  var counter = document.getElementById("counter");
+  var actLabel = document.getElementById("actLabel");
+  var btnPrev = document.getElementById("btnPrev");
+  var btnNext = document.getElementById("btnNext");
+  var drawn = {};
+  var slideOf = function(id){ return slides.indexOf(document.getElementById(id).closest(".slide")); };
+  var I_PARADOXO = slideOf("chart1"), I_PRECISAO = slideOf("chart2");
+
+  function go(i){
+    i = Math.max(0, Math.min(N - 1, i));
+    slides.forEach(function(s, k){
+      s.classList.toggle("is-active", k === i);
+      s.classList.toggle("is-prev", k < i);
+      s.setAttribute("aria-hidden", k === i ? "false" : "true");
+    });
+    cur = i;
+    document.documentElement.setAttribute("data-act", slides[i].dataset.act);
+    actLabel.textContent = actNames[slides[i].dataset.act];
+    counter.textContent = String(i+1).padStart(2,"0") + " / " + String(N).padStart(2,"0");
+    ticks.forEach(function(t){
+      var ti = +t.dataset.i;
+      t.classList.toggle("done", ti < i);
+      t.classList.toggle("now", ti === i);
+    });
+    ovBtns.forEach(function(b, k){ b.classList.toggle("on", k === i); });
+    var tpl = slides[i].querySelector("template.notes");
+    notesBody.innerHTML = tpl ? tpl.innerHTML : "<em>Sem notas para este slide.</em>";
+    btnPrev.disabled = (i === 0);
+    btnNext.disabled = (i === N - 1);
+    slides[i].scrollTop = 0;
+
+    setTimeout(function(){ runCounters(slides[i]); }, reduced ? 0 : 260);
+    if (!drawn[i]) {
+      if (i === I_PARADOXO){ drawn[i] = true; setTimeout(drawParadoxo, reduced ? 0 : 320); }
+      if (i === I_PRECISAO){ drawn[i] = true; setTimeout(drawPrecisao, reduced ? 0 : 320); }
+    }
+  }
+  function next(){ go(cur + 1); }
+  function prev(){ go(cur - 1); }
+
+  btnNext.addEventListener("click", next);
+  btnPrev.addEventListener("click", prev);
+  document.getElementById("zoneR").addEventListener("click", next);
+  document.getElementById("zoneL").addEventListener("click", prev);
+
+  /* ---------- painéis ---------- */
+  var overview = document.getElementById("overview");
+  var notes = document.getElementById("notes");
+  function openOverview(){ overview.classList.add("on"); }
+  function closeOverview(){ overview.classList.remove("on"); }
+  function toggleOverview(){ overview.classList.toggle("on"); }
+  document.getElementById("btnGrid").addEventListener("click", toggleOverview);
+  overview.addEventListener("click", function(e){ if (e.target === overview) closeOverview(); });
+
+  /* ---------- tema ---------- */
+  function currentTheme(){
+    var set = document.documentElement.getAttribute("data-theme");
+    if (set) return set;
+    return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+  }
+  function toggleTheme(){
+    document.documentElement.setAttribute("data-theme", currentTheme() === "dark" ? "light" : "dark");
+    drawn = {};
+    if (cur === I_PARADOXO) drawParadoxo();
+    if (cur === I_PRECISAO) drawPrecisao();
+    drawn[cur] = true;
+  }
+  document.getElementById("btnTheme").addEventListener("click", toggleTheme);
+
+  /* ---------- cronômetro 15:00 ---------- */
+  var clock = document.getElementById("clock");
+  var timerEl = document.getElementById("timer");
+  var elapsed = 0, running = false, tick0 = null, raf = null;
+  function paint(){
+    var s = Math.floor(elapsed / 1000);
+    clock.textContent = String(Math.floor(s/60)).padStart(2,"0") + ":" + String(s%60).padStart(2,"0");
+    var act = +slides[cur].dataset.act;
+    var budget = act === 1 ? 300 : (act === 2 ? 660 : 900);
+    timerEl.classList.toggle("over", s > budget);
+    timerEl.title = act === 1
+      ? "Fase de pitch — orçamento 5:00 (S inicia/pausa, R zera)"
+      : "Orçamento total 15:00 (S inicia/pausa, R zera)";
+  }
+  function loop(ts){
+    if (!running) return;
+    if (tick0 === null) tick0 = ts;
+    elapsed += ts - tick0; tick0 = ts;
+    paint();
+    raf = requestAnimationFrame(loop);
+  }
+  function toggleTimer(){
+    running = !running; tick0 = null;
+    timerEl.classList.toggle("running", running);
+    if (running) raf = requestAnimationFrame(loop);
+    else if (raf) cancelAnimationFrame(raf);
+  }
+  function resetTimer(){
+    running = false; elapsed = 0; tick0 = null;
+    if (raf) cancelAnimationFrame(raf);
+    timerEl.classList.remove("running");
+    paint();
+  }
+  timerEl.addEventListener("click", toggleTimer);
+
+  /* botao com foco nao deve capturar a barra de espaco, que avanca o slide */
+  document.querySelectorAll(".nb, #timer, .preset").forEach(function(b){
+    b.addEventListener("click", function(){ b.blur(); });
+  });
+
+  /* ---------- teclado ---------- */
+  document.addEventListener("keydown", function(e){
+    if (e.target && /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName)) {
+      if (e.key !== "Escape") return;
+    }
+    var k = e.key;
+    if (k === "ArrowRight" || k === "PageDown" || k === " " || k === "Spacebar"){ e.preventDefault(); next(); }
+    else if (k === "ArrowLeft" || k === "PageUp"){ e.preventDefault(); prev(); }
+    else if (k === "Home"){ e.preventDefault(); go(0); }
+    else if (k === "End"){ e.preventDefault(); go(N-1); }
+    else if (k === "Escape"){ closeOverview(); notes.classList.remove("on"); }
+    else if (k === "o" || k === "O"){ toggleOverview(); }
+    else if (k === "n" || k === "N"){ notes.classList.toggle("on"); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "s" || k === "S"){ toggleTimer(); }
+    else if (k === "r" || k === "R"){ resetTimer(); }
+    else if (/^[0-9]$/.test(k)) {
+      // dígitos encadeados: 1 -> slide 1, 12 dentro de 900ms -> slide 12
+      typed += k;
+      clearTimeout(typeTimer);
+      typeTimer = setTimeout(function(){
+        var n = parseInt(typed, 10); typed = "";
+        if (n >= 1 && n <= N) go(n - 1);
+      }, 550);
+    }
+  });
+  var typed = "", typeTimer = null;
+
+  /* ---------- toque ---------- */
+  var tx = 0, ty = 0;
+  document.addEventListener("touchstart", function(e){
+    tx = e.changedTouches[0].clientX; ty = e.changedTouches[0].clientY;
+  }, { passive:true });
+  document.addEventListener("touchend", function(e){
+    var dx = e.changedTouches[0].clientX - tx;
+    var dy = e.changedTouches[0].clientY - ty;
+    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.6) { dx < 0 ? next() : prev(); }
+  }, { passive:true });
+
+  /* ============================================================
+     GRÁFICO 1 — Paradoxo disciplinar (índice, base 2017 = 100)
+     Duas medidas de escalas diferentes: indexadas a uma base
+     comum, nunca em dois eixos y.
+     ============================================================ */
+  var PARADOXO = [
+    { ano:2015, faltas:29.19, tau:0.1857 },
+    { ano:2016, faltas:31.22, tau:0.1584 },
+    { ano:2017, faltas:31.41, tau:0.1617 },
+    { ano:2018, faltas:31.11, tau:0.1686 },
+    { ano:2019, faltas:27.57, tau:0.1650 },
+    { ano:2020, faltas:31.22, tau:0.1550 },
+    { ano:2021, faltas:29.92, tau:0.1625 },
+    { ano:2022, faltas:26.88, tau:0.1994 },
+    { ano:2023, faltas:28.67, tau:0.1978 },
+    { ano:2024, faltas:25.36, tau:0.2198 }
+  ];
+  var css = function(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); };
+  var SVGNS = "http://www.w3.org/2000/svg";
+  function el(tag, attrs){
+    var n = document.createElementNS(SVGNS, tag);
+    for (var k in attrs) if (attrs.hasOwnProperty(k)) n.setAttribute(k, attrs[k]);
+    return n;
+  }
+
+  function drawParadoxo(){
+    var svg = document.getElementById("chart1");
+    var tip = document.getElementById("tip1");
+    var wrap = document.getElementById("cw1");
+    svg.textContent = "";
+
+    var W = 780, H = 330, L = 40, R = 170, T = 34, B = 34;
+    var base = PARADOXO[2];
+    var data = PARADOXO.map(function(d){
+      return { ano:d.ano, faltas:d.faltas, tau:d.tau,
+               iF: d.faltas / base.faltas * 100,
+               iT: d.tau / base.tau * 100 };
+    });
+    var yMin = 76, yMax = 142;
+    var x = function(i){ return L + i * (W - L - R) / (data.length - 1); };
+    var y = function(v){ return T + (yMax - v) / (yMax - yMin) * (H - T - B); };
+
+    [80,90,100,110,120,130,140].forEach(function(v){
+      var isBase = (v === 100);
+      svg.appendChild(el("line", { x1:L, x2:W-R+8, y1:y(v), y2:y(v),
+        class:"grid-line" + (isBase ? " base" : "") }));
+      var t = el("text", { x:L-8, y:y(v)+4, class:"axis-txt", "text-anchor":"end" });
+      t.textContent = v;
+      svg.appendChild(t);
+    });
+    var bl = el("text", { x:L+6, y:y(100)-8, class:"axis-txt" });
+    bl.textContent = "2017 = 100";
+    bl.setAttribute("fill", css("--ink-3"));
+    svg.appendChild(bl);
+
+    /* marco: legalizacao das apostas (Lei 13.756, dez/2018), entre '18 e '19 */
+    var xb = x(3) + (x(4) - x(3)) * 0.95;
+    svg.appendChild(el("rect", { x:xb, y:T, width:(W-R+8)-xb, height:H-T-B,
+      fill:css("--accent"), opacity:0.05 }));
+    svg.appendChild(el("line", { x1:xb, x2:xb, y1:T-14, y2:H-B,
+      stroke:css("--accent"), "stroke-width":1.6, "stroke-dasharray":"5 4" }));
+    var bt = el("text", { x:xb + 7, y:T - 4, class:"ser-label", fill:css("--accent") });
+    bt.textContent = "Início das bets · Lei 13.756 (dez/2018)";
+    svg.appendChild(bt);
+
+    data.forEach(function(d, i){
+      var t = el("text", { x:x(i), y:H-10, class:"axis-txt", "text-anchor":"middle" });
+      t.textContent = "'" + String(d.ano).slice(2);
+      svg.appendChild(t);
+    });
+
+    var series = [
+      { key:"iF", color:css("--s2"), label:"Faltas por jogo",
+        delta:"−19,3% desde 2017", dy:0 },
+      { key:"iT", color:css("--s3"), label:"Cartões a cada 10 faltas",
+        delta:"+35,9% desde 2017", dy:0 }
+    ];
+
+    series.forEach(function(s){
+      var d = data.map(function(p, i){ return (i ? "L" : "M") + x(i) + " " + y(p[s.key]); }).join(" ");
+      var path = el("path", { d:d, fill:"none", stroke:s.color, "stroke-width":2.4,
+        "stroke-linecap":"round", "stroke-linejoin":"round" });
+      svg.appendChild(path);
+      if (!reduced) {
+        var len = path.getTotalLength();
+        path.style.strokeDasharray = len; path.style.strokeDashoffset = len;
+        path.style.transition = "stroke-dashoffset 1100ms cubic-bezier(.4,0,.2,1)";
+        requestAnimationFrame(function(){ path.style.strokeDashoffset = 0; });
+      }
+      data.forEach(function(p, i){
+        var last = (i === data.length - 1);
+        svg.appendChild(el("circle", { cx:x(i), cy:y(p[s.key]), r:last ? 5.5 : 3.4,
+          fill:s.color, stroke:css("--ground"), "stroke-width":2 }));
+      });
+      var lx = x(data.length - 1) + 12, ly = y(data[data.length-1][s.key]);
+      var lbl = el("text", { x:lx, y:ly - 2, class:"ser-label", fill:s.color });
+      lbl.textContent = s.label;
+      svg.appendChild(lbl);
+      var dl = el("text", { x:lx, y:ly + 14, class:"ser-delta", fill:css("--ink-3") });
+      dl.textContent = s.delta;
+      svg.appendChild(dl);
+    });
+
+    /* camada de hover: crosshair + tooltip */
+    var cross = el("line", { x1:0, x2:0, y1:T, y2:H-B, stroke:css("--line-strong"),
+      "stroke-width":1, "stroke-dasharray":"3 3", opacity:0 });
+    svg.appendChild(cross);
+    var hitR = el("rect", { x:L-10, y:T, width:(W-R+10)-(L-10), height:H-T-B,
+      fill:"transparent", style:"cursor:crosshair" });
+    svg.appendChild(hitR);
+
+    function hide(){ tip.classList.remove("on"); cross.setAttribute("opacity", 0); }
+    hitR.addEventListener("mouseleave", hide);
+    hitR.addEventListener("mousemove", function(ev){
+      var box = svg.getBoundingClientRect();
+      var px = (ev.clientX - box.left) / box.width * W;
+      var i = Math.max(0, Math.min(data.length - 1,
+        Math.round((px - L) / ((W - L - R) / (data.length - 1)))));
+      var d = data[i];
+      cross.setAttribute("x1", x(i)); cross.setAttribute("x2", x(i));
+      cross.setAttribute("opacity", 1);
+      tip.innerHTML =
+        '<div class="t-h">' + d.ano + '</div>' +
+        '<div class="t-r"><i class="sq" style="background:' + css("--s2") + '"></i>Faltas por jogo<b>' + fmt(d.faltas,2) + '</b></div>' +
+        '<div class="t-r"><i class="sq" style="background:' + css("--s3") + '"></i>Cartões a cada 10 faltas<b>' + fmt(d.tau * 10,2) + '</b></div>' +
+        '<div class="t-r" style="margin-top:5px; color:var(--ink-3)">vs. 2017 = 100<b style="color:var(--ink-3)">' +
+          fmt(d.iF,1) + " · " + fmt(d.iT,1) + '</b></div>';
+      tip.classList.add("on");
+      var tw = tip.offsetWidth, px2 = x(i) / W * box.width;
+      tip.style.left = Math.max(0, Math.min(box.width - tw, px2 - tw/2)) + "px";
+      tip.style.top = Math.max(0, (y(Math.max(d.iF, d.iT)) / H * box.height) - tip.offsetHeight - 14) + "px";
+    });
+    wrap.addEventListener("mouseleave", hide);
+  }
+
+  /* ============================================================
+     GRÁFICO 2 — Precisão@k do escore pré-jogo
+     ============================================================ */
+  var PREC = [
+    { k:1,  escore:9.5,  base:9.1, hits:"20/210",   ganho:"2,37×" },
+    { k:3,  escore:10.8, base:9.1, hits:"68/630",   ganho:"2,69×" },
+    { k:5,  escore:11.2, base:9.2, hits:"118/1050", ganho:"2,80×" },
+    { k:10, escore:11.9, base:8.6, hits:"250/2100", ganho:"2,96×" }
+  ];
+  function topRounded(x, y, w, h, r){
+    r = Math.min(r, w/2, h);
+    return "M" + x + " " + (y+h) + " L" + x + " " + (y+r) +
+           " Q" + x + " " + y + " " + (x+r) + " " + y +
+           " L" + (x+w-r) + " " + y +
+           " Q" + (x+w) + " " + y + " " + (x+w) + " " + (y+r) +
+           " L" + (x+w) + " " + (y+h) + " Z";
+  }
+  function drawPrecisao(){
+    var svg = document.getElementById("chart2");
+    var tip = document.getElementById("tip2");
+    var wrap = document.getElementById("cw2");
+    svg.textContent = "";
+
+    var W = 780, H = 300, L = 42, R = 14, T = 26, B = 46;
+    var yMax = 14;
+    var y = function(v){ return T + (1 - v / yMax) * (H - T - B); };
+    var gw = (W - L - R) / PREC.length;
+    var bw = (gw * 0.60 - 2) / 2;
+
+    [0,2,4,6,8,10,12,14].forEach(function(v){
+      svg.appendChild(el("line", { x1:L, x2:W-R, y1:y(v), y2:y(v), class:"grid-line" }));
+      var t = el("text", { x:L-8, y:y(v)+4, class:"axis-txt", "text-anchor":"end" });
+      t.textContent = v + "%";
+      svg.appendChild(t);
+    });
+
+    var COL = { escore: css("--s1"), base: css("--s2") };
+    PREC.forEach(function(d, gi){
+      var cx = L + gi * gw + gw / 2;
+      [["escore", -1], ["base", 1]].forEach(function(pair){
+        var key = pair[0], side = pair[1];
+        var bx = cx + (side < 0 ? -(bw + 1) : 1);
+        var v = d[key], h = (H - T - B) * v / yMax;
+        var p = el("path", { d:topRounded(bx, y(v), bw, h, 4), fill:COL[key] });
+        svg.appendChild(p);
+        if (!reduced){
+          p.style.transformOrigin = "0 " + (H - B) + "px";
+          p.style.transform = "scaleY(0)";
+          p.style.transition = "transform 680ms cubic-bezier(.3,.8,.3,1) " + (gi * 70 + (side<0?0:60)) + "ms";
+          requestAnimationFrame(function(){ p.style.transform = "scaleY(1)"; });
+        }
+        var vl = el("text", { x:bx + bw/2, y:y(v) - 7, class:"ser-delta",
+          fill: key === "escore" ? COL.escore : css("--ink-3"), "text-anchor":"middle",
+          "font-weight": key === "escore" ? 600 : 400 });
+        vl.textContent = fmt(v,1) + "%";
+        svg.appendChild(vl);
+      });
+      var kl = el("text", { x:cx, y:H-24, class:"axis-txt", "text-anchor":"middle" });
+      kl.textContent = "k = " + d.k;
+      svg.appendChild(kl);
+      var gl = el("text", { x:cx, y:H-8, class:"ser-delta", "text-anchor":"middle", fill:css("--accent") });
+      gl.textContent = d.ganho + " o acaso";
+      svg.appendChild(gl);
+
+      var hit = el("rect", { x:L + gi*gw, y:T, width:gw, height:H-T-B, fill:"transparent" });
+      hit.addEventListener("mousemove", function(ev){
+        var box = svg.getBoundingClientRect();
+        tip.innerHTML =
+          '<div class="t-h">k = ' + d.k + ' primeiros da fila</div>' +
+          '<div class="t-r"><i class="sq" style="background:' + COL.escore + '"></i>Escore pré-jogo<b>' + fmt(d.escore,1) + '%</b></div>' +
+          '<div class="t-r"><i class="sq" style="background:' + COL.base + '"></i>Linha de base<b>' + fmt(d.base,1) + '%</b></div>' +
+          '<div class="t-r" style="margin-top:5px; color:var(--ink-3)">acertos<b style="color:var(--ink-3)">' + d.hits + '</b></div>';
+        tip.classList.add("on");
+        var tw = tip.offsetWidth;
+        var px = (L + gi*gw + gw/2) / W * box.width;
+        tip.style.left = Math.max(0, Math.min(box.width - tw, px - tw/2)) + "px";
+        tip.style.top = Math.max(0, (y(Math.max(d.escore, d.base)) / H * box.height) - tip.offsetHeight - 22) + "px";
+      });
+      hit.addEventListener("mouseleave", function(){ tip.classList.remove("on"); });
+      svg.appendChild(hit);
+    });
+
+    /* linha de referência do acaso */
+    svg.appendChild(el("line", { x1:L, x2:W-R, y1:y(4.0), y2:y(4.0),
+      stroke:css("--ink-3"), "stroke-width":2, "stroke-dasharray":"6 5" }));
+
+    wrap.addEventListener("mouseleave", function(){ tip.classList.remove("on"); });
+  }
+
+  /* ============================================================
+     SLIDER DE LIMIAR — trade-off captura × carga
+     Âncoras medidas em p50, p70, p90; entre elas, interpolação.
+     ============================================================ */
+  var ANCHORS = [
+    { p:50, al:5.0, casos:6 },
+    { p:70, al:3.0, casos:5 },
+    { p:90, al:1.0, casos:2 }
+  ];
+  var TOTAL_CASOS = 13;
+  function interp(p){
+    for (var i = 0; i < ANCHORS.length - 1; i++){
+      var a = ANCHORS[i], b = ANCHORS[i+1];
+      if (p >= a.p && p <= b.p){
+        var f = (p - a.p) / (b.p - a.p);
+        return { al: a.al + (b.al - a.al) * f, casos: a.casos + (b.casos - a.casos) * f };
+      }
+    }
+    return { al: ANCHORS[ANCHORS.length-1].al, casos: ANCHORS[ANCHORS.length-1].casos };
+  }
+  var thr = document.getElementById("thr");
+  var thrP = document.getElementById("thrP");
+  var thrAl = document.getElementById("thrAl");
+  var thrSe = document.getElementById("thrSe");
+  var thrBar = document.getElementById("thrBar");
+  var thrCases = document.getElementById("thrCases");
+  var thrDots = document.getElementById("thrDots");
+  var thrBadge = document.getElementById("thrBadge");
+  var presets = Array.prototype.slice.call(document.querySelectorAll(".preset"));
+
+  for (var i = 0; i < 10; i++){
+    var d = document.createElement("i");
+    d.className = "d";
+    thrDots.appendChild(d);
+  }
+  var dotEls = Array.prototype.slice.call(thrDots.children);
+
+  function renderThr(){
+    var p = +thr.value;
+    var r = interp(p);
+    var sens = r.casos / TOTAL_CASOS * 100;
+    var measured = ANCHORS.some(function(a){ return a.p === p; });
+
+    thr.style.setProperty("--fill", ((p - 50) / 40 * 100) + "%");
+    thrP.textContent = p;
+    thrAl.textContent = fmt(r.al, 1);
+    thrSe.textContent = fmt(sens, 1) + "%";
+    thrBar.style.width = sens + "%";
+    thrCases.textContent = measured
+      ? (Math.round(r.casos) + " de " + TOTAL_CASOS + " incidentes capturados")
+      : ("≈ " + fmt(r.casos, 1) + " de " + TOTAL_CASOS + " incidentes — valor interpolado");
+    thrBadge.innerHTML = measured
+      ? '<i class="sq" style="background:' + css("--good") + '"></i>medido'
+      : '<i class="sq" style="background:' + css("--ink-3") + '"></i>interpolado';
+    var lit = Math.round(r.al);
+    dotEls.forEach(function(el2, k){ el2.classList.toggle("on", k < lit); });
+    presets.forEach(function(b){ b.classList.toggle("on", +b.dataset.p === p); });
+  }
+  thr.addEventListener("input", renderThr);
+  presets.forEach(function(b){
+    b.addEventListener("click", function(){ thr.value = b.dataset.p; renderThr(); });
+  });
+  renderThr();
+
+  /* ---------- redesenho responsivo ---------- */
+  var rz = null;
+  window.addEventListener("resize", function(){
+    clearTimeout(rz);
+    rz = setTimeout(function(){
+      if (cur === I_PARADOXO && drawn[I_PARADOXO]) drawParadoxo();
+      if (cur === I_PRECISAO && drawn[I_PRECISAO]) drawPrecisao();
+    }, 220);
+  });
+
+  /* ---------- arranque ---------- */
+  paint();
+  go(0);
+})();
+</script>
+</body>
+</html>
