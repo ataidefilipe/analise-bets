@@ -382,9 +382,13 @@ Railway também recebeu start command, pré-deploy da carga, healthcheck `/saude
 
 O primeiro build após o commit `074043f` terminou `FAILED`: o Railpack copiou `requirements.txt`, mas
 não copiou o arquivo incluído por ele (`requirements-api.txt`) para a camada de instalação. O pip
-falhou com `Could not open requirements file: '/app/requirements-api.txt'`. A correção é listar as
-dependências diretamente no `requirements.txt` da raiz; depois do novo deploy, validar `/saude` e a
-carga inicial no PostgreSQL.
+falhou com `Could not open requirements file: '/app/requirements-api.txt'`. As dependências foram
+listadas diretamente no `requirements.txt` da raiz, e o build passou.
+
+A carga seguinte falhou ao inserir cartões: alguns textos dos Parquets contêm NUL (`0x00`), proibido
+em campos de texto PostgreSQL. `src/api/carga.py` agora remove esse caractere somente dos valores de
+texto no momento da inserção e registra a quantidade removida. O deploy seguinte precisa confirmar a
+carga completa, a inicialização da API e o healthcheck `/saude`.
 
 Não foi criado domínio público para a API. A análise automática rejeitou essa exposição por tratar-se
 de uma API com dados identificados. Como o Next.js acessa a API no servidor, o front pode usar o DNS

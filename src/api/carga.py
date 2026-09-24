@@ -195,8 +195,19 @@ def carregar(com_demo: bool = True) -> dict:
         for tabela, df in quadros.items():
             df = df.astype(object).where(pd.notna(df), None)
             registros = df.to_dict("records")
+            nuls_removidos = 0
             for i in range(0, len(registros), 5000):
-                conn.execute(tabela.insert(), registros[i:i + 5000])
+                lote = registros[i:i + 5000]
+                # PostgreSQL não aceita NUL (0x00) em colunas textuais; algumas súmulas
+                # carregadas nos Parquets contêm esse caractere em campos de texto.
+                for registro in lote:
+                    for coluna, valor in registro.items():
+                        if isinstance(valor, str) and "\x00" in valor:
+                            nuls_removidos += valor.count("\x00")
+                            registro[coluna] = valor.replace("\x00", "")
+                conn.execute(tabela.insert(), lote)
+            if nuls_removidos:
+                logger.warning("  %s: removidos %d caracteres NUL", tabela.name, nuls_removidos)
             contagens[tabela.name] = len(registros)
             logger.info("  %-18s %8d linhas", tabela.name, len(registros))
 
