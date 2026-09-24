@@ -1,0 +1,44 @@
+import Link from "next/link";
+import { redirect } from "next/navigation";
+import { getPerfilAtual } from "@/lib/api/sessao";
+import { TELAS } from "@/lib/telas";
+import { EmptyState } from "@/components/ui/EmptyState";
+
+export default async function Home() {
+  const perfil = await getPerfilAtual();
+  if (!perfil) redirect("/entrar");
+  const telasVisiveis = TELAS.filter((tela) => perfil.telasPermitidas.includes(tela.id));
+
+  return (
+    <div className="mx-auto flex max-w-3xl flex-col gap-6">
+      <div>
+        <h1 className="text-xl font-semibold text-zinc-900 dark:text-zinc-50">
+          Olá, {perfil.nome}
+        </h1>
+        <p className="text-sm text-zinc-500 dark:text-zinc-400">
+          Estas são as telas disponíveis para o seu perfil.
+        </p>
+      </div>
+
+      {telasVisiveis.length === 0 ? (
+        <EmptyState
+          titulo="Nenhuma tela disponível"
+          descricao="Este perfil ainda não tem acesso a nenhuma das telas do MVP."
+        />
+      ) : (
+        <div className="grid gap-3 sm:grid-cols-2">
+          {telasVisiveis.map((tela) => (
+            <Link
+              key={tela.id}
+              href={tela.rota}
+              className="flex flex-col gap-1 rounded-md border border-zinc-200 px-4 py-3 transition-colors hover:border-brand dark:border-zinc-800 dark:hover:border-link"
+            >
+              <span className="font-medium text-zinc-900 dark:text-zinc-50">{tela.rotulo}</span>
+              <span className="text-sm text-zinc-500 dark:text-zinc-400">{tela.descricaoCurta}</span>
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
