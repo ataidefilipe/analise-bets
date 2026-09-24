@@ -386,9 +386,10 @@ falhou com `Could not open requirements file: '/app/requirements-api.txt'`. As d
 listadas diretamente no `requirements.txt` da raiz, e o build passou.
 
 A carga seguinte falhou ao inserir cartões: alguns textos dos Parquets contêm NUL (`0x00`), proibido
-em campos de texto PostgreSQL. `src/api/carga.py` agora remove esse caractere somente dos valores de
-texto no momento da inserção e registra a quantidade removida. O deploy seguinte precisa confirmar a
-carga completa, a inicialização da API e o healthcheck `/saude`.
+em campos de texto PostgreSQL. `src/api/carga.py` remove esse caractere somente dos valores de texto
+no momento da inserção e registra a quantidade removida. O deploy do commit `6879a5d` concluiu
+`SUCCESS`: removeu 14 NULs, carregou as nove tabelas de leitura e iniciou o Uvicorn. O Railway
+confirmou `GET /saude` com HTTP 200.
 
 Não foi criado domínio público para a API. A análise automática rejeitou essa exposição por tratar-se
 de uma API com dados identificados. Como o Next.js acessa a API no servidor, o front pode usar o DNS
@@ -398,9 +399,11 @@ precisar expor a API à internet. O serviço frontend ainda precisa ser criado e
 O serviço `frontend` foi criado em `/frontend`, com `pnpm build`, `pnpm start` e
 `ANALISE_BETS_API_URL` referenciando o DNS privado da API. O deploy terminou `SUCCESS`; o domínio
 [`https://frontend-production-ba88.up.railway.app`](https://frontend-production-ba88.up.railway.app)
-respondeu HTTP 200. Um redeploy acionado pela atualização da documentação está em andamento. A
-interface está publicada, mas a integração com os dados aguarda a API. Uma chave da API só deve ser
-criada quando o perfil e o cliente para validação forem definidos.
+respondeu HTTP 200 em `/entrar`. API e front estão ativos. O domínio público foi atribuído somente ao
+front; a API permanece acessível pelo DNS privado e protegida pela chave Bearer. Os watch paths do
+Railway foram limitados aos arquivos de backend/dados e a `frontend/**`, evitando que mudanças só em
+documentação reconstruam os serviços e recarreguem os dados. Uma chave da API só deve ser criada
+quando o perfil e o cliente para validação forem definidos.
 
 ---
 
