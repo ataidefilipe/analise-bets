@@ -75,7 +75,7 @@
 * **Fase 10 Concluída (White Paper Acadêmico e Relatório Final):**
   * Redação do White Paper acadêmico unificado em `reports/white_paper_impacto_bets_futebol_brasileiro.md`.
 * **Fase 11 Concluída (Fundamentação Teórica e Revisão Bibliográfica):**
-  * Sistematização teórica em `docs/revisao_bibliografica.md` cobrindo 20+ obras e referências acadêmicas.
+  * Sistematização teórica em `docs/arquivo/revisao_bibliografica.md` cobrindo 20+ obras e referências acadêmicas.
 * **Fase 12 Concluída (Modelo de Classificação de Integridade por Machine Learning):**
   * Implementação de pipeline de ML em [`src/models/integrity_classifier.py`](file:///d:/Python%20Projetos/analise-bets/src/models/integrity_classifier.py) com **Isolation Forest Multidimensional** e **Bagging PU-Learning** (50 estimators) para partidas e atletas.
   * Validação contra os 14 casos da Penalidade Máxima com **100% de captura (14/14)** no tier prioritário (`Classe 2: Alto Risco / Alerta Investigativo`) — métrica **in-sample**: os mesmos 14 casos formam o rótulo positivo do treino PU. Estimativa fora da amostra é objeto da tarefa F1-03.
@@ -87,7 +87,7 @@
   * **Fase 2 parcial (F2-01, F2-03 parcial, F2-04).** Motivo do cartão recuperado para a Série A, 519 cartões perdidos da Série B recuperados, e relação de atletas, substituições e minutos em campo extraídos da súmula — 57.406 registros de atleta-partida.
   * **Fase 3 (F3-01).** Escore de risco pré-jogo por atleta, primeiro componente com poder preditivo demonstrado sem vazamento temporal: ganho de 2,4× a 2,7× sobre sorteio.
   * **Fase 4 antecipada (F4-03).** Matriz de granularidade por perfil de cliente, executável em código, com a mesa de trading explicitamente não atendida.
-  * **Treze defeitos de dados encontrados e corrigidos**, nenhum deles previsto no backlog, todos afetando resultados já publicados. Inventário completo em [`docs/relatorio_de_execucao_2026-09-16.md`](file:///d:/Python%20Projetos/analise-bets/docs/relatorio_de_execucao_2026-09-16.md).
+  * **Treze defeitos de dados encontrados e corrigidos**, nenhum deles previsto no backlog, todos afetando resultados já publicados. Inventário completo em [`docs/arquivo/relatorio_de_execucao_2026-09-16.md`](file:///d:/Python%20Projetos/analise-bets/docs/arquivo/relatorio_de_execucao_2026-09-16.md).
   * **Suíte ampliada de 67 para 139 testes**, sem que nenhum precisasse ser reescrito para acomodar números novos quando a base mudou 14% de volume.
 
 * **Ativo de dados — Sessão de 2026-09-18 (F2-02 e fechamento da F2-03, branch `main`):**
@@ -97,10 +97,10 @@
   * **Um quarto defeito criado e corrigido na mesma sessão:** a primeira correção limitou o número de camisa a 1–99 e apagou atletas reais — o Ceará usou a camisa 100 em 2025, o Palmeiras a 188. O critério correto é o tamanho do campo, não a magnitude. Os dois defeitos originais vinham se anulando mutuamente na junção entre evento e escalação, e corrigir um só fez o outro aparecer.
   * **A janela de modelagem da Fase 1 não foi estendida.** 2025 está na base e fora dos modelos, por decisão explícita: estender mudaria todos os números publicados e deve ser deliberado, não efeito colateral de uma ingestão.
   * **Súmulas brutas fora do versionamento.** Os PDFs deixaram de ser versionados: são ~2.400 arquivos e dezenas de MB, e `manifest_delta.json` guarda URL, ETag e SHA-256 de cada um, de modo que `run_delta_pipeline.py` reconstitui o conjunto. Os 1.308 PDFs já versionados em sessões anteriores continuam no índice — a remoção afeta quem já clonou e fica registrada como decisão pendente.
-  * **Suíte ampliada de 149 para 153 testes.** Inventário completo em [`docs/relatorio_de_execucao_2026-09-18.md`](relatorio_de_execucao_2026-09-18.md).
+  * **Suíte ampliada de 149 para 153 testes.** Inventário completo em [`docs/arquivo/relatorio_de_execucao_2026-09-18.md`](relatorio_de_execucao_2026-09-18.md).
 
 * **Especificação do MVP — Sessão de 2026-09-18 (etapa 2 do plano de trabalho):**
-  * **Cinco documentos em [`docs/especificacao/`](especificacao/README.md)** que servem de contrato para as etapas de infraestrutura, backend, front-end e automação: contrato de API e modelo de autorização, regras de negócio e limiares, telas, infraestrutura e automação de alimentação.
+  * **Cinco documentos em [`docs/especificacao/`](../especificacao/README.md)** que servem de contrato para as etapas de infraestrutura, backend, front-end e automação: contrato de API e modelo de autorização, regras de negócio e limiares, telas, infraestrutura e automação de alimentação.
   * **Escopo declarado como protótipo/MVP.** Cada simplificação está marcada como `[MVP]` com a dívida explicitada — chave de API estática sem rotação nem limite de taxa, ambiente único sem homologação, e ausência do fluxo de due diligence pré-contratação, que é justamente o caso de uso mais concreto da persona de clube.
   * **O princípio de autorização foi invertido em relação ao código atual.** Hoje `aplicar_perfil` recebe o perfil e o clube como argumentos: quem chama declara quem é. Num serviço isso é falha de autorização, e a especificação exige que ambos venham da credencial.
   * **Três premissas registradas como não validadas:** as personas nunca foram entrevistadas, as capacidades operacionais que definem os limiares de alerta são estimativas, e o produto mede atipicidade e não fraude — esta última não é premissa, é resultado apurado.
@@ -124,7 +124,7 @@ Classificadas conforme a taxonomia da Seção 17 do `.agent.md`:
   * *Decisão:* Não estimar modelos de regressão, efeitos fixos ou diferença-em-diferenças antes de esgotar a análise exploratória profunda e os testes de quebra estrutural.
   * *Justificativa:* Evita especificação espúria de modelos sem conhecimento prévio da distribuição empírica das séries temporais.
 * **D-EST-04: Matriz Histórica de Patrocínios Auditável (MVP 2):**
-  * *Decisão:* Compilar a matriz de 200 registros clube $\times$ temporada da Série A (2015–2024) com base nos dados censitários do IBOPE Repucom (*Mapa do Patrocínio*), balanços patrimoniais oficiais dos clubes e imprensa de negócios esportivos, preservando rastreabilidade de marca, tipo de propriedade e fonte documental (`docs/sources.md`).
+  * *Decisão:* Compilar a matriz de 200 registros clube $\times$ temporada da Série A (2015–2024) com base nos dados censitários do IBOPE Repucom (*Mapa do Patrocínio*), balanços patrimoniais oficiais dos clubes e imprensa de negócios esportivos, preservando rastreabilidade de marca, tipo de propriedade e fonte documental (`docs/arquivo/sources.md`).
 * **D-EST-05: Resolução da Dualidade Contratual vs. Transbordamento Macro (Questão 3.1):**
   * *Decisão:* O usuário aprovou a recomendação técnica de gerar duas métricas complementares no cálculo do `BET_EXPOSURE`: uma dimensão estritamente contratual (`bet_exposure_clube`), onde clubes sem patrocínio possuem índice zero absoluto, e uma dimensão combinada (`bet_exposure_total`), que incorpora o transbordamento macroeconômico do interesse digital nacional via Google Trends.
 * **D-EST-06: Adoção do Dataset Sofascore para Faltas 2024 e Priorização da Série B:**
@@ -331,7 +331,7 @@ Classificadas conforme a taxonomia da Seção 17 do `.agent.md`:
 * **Q5 (Sistema de Triagem e Anomaly Scoring de Integridade):** **[CONCLUÍDO NA FASE 8]** Desenvolvimento dos índices de partida e atleta, validação empírica contra os 14 casos da Operação Penalidade Máxima, tabelas 15, 16 e 17, e 3 figuras de alta resolução. **Fórmula reconciliada e artefatos regenerados em 2026-09-16 (F1-01/F1-02).**
 * **Q6 (Cadernos Executáveis e Reprodutibilidade):** **[CONCLUÍDO NA FASE 9]** Criação e validação automatizada de 4 cadernos Jupyter em `notebooks/` cobrindo ETL, EDA, Econometria Causal e Anomaly Scoring, validados por 39 testes unitários (100% passing).
 * **Q7 (White Paper Acadêmico e Relatório Final):** **[CONCLUÍDO NA FASE 10]** Elaboração da síntese acadêmica unificada em `reports/white_paper_impacto_bets_futebol_brasileiro.md`, integrando arcabouço regulatório, inferência causal, triagem de integridade e recomendações para Ministério da Fazenda, CBF e STJD.
-* **Q8 (Fundamentação Teórica e Revisão Bibliográfica):** **[CONCLUÍDO NA FASE 11]** Sistematização de 20+ obras e artigos seminais em `docs/revisao_bibliografica.md` abrangendo Econometria Forense, Spot-Fixing e Inferência Causal.
+* **Q8 (Fundamentação Teórica e Revisão Bibliográfica):** **[CONCLUÍDO NA FASE 11]** Sistematização de 20+ obras e artigos seminais em `docs/arquivo/revisao_bibliografica.md` abrangendo Econometria Forense, Spot-Fixing e Inferência Causal.
 * **Q9 (Classificador de Integridade e Suspeição por Machine Learning):** **[CONCLUÍDO NA FASE 12]** Implementação dos modelos `IsolationForest` e `BaggingPUClassifier` em `src/models/integrity_classifier.py`, persistência serializada em `data/processed/integrity/models/`, geração das Tabelas 18, 19 e 20 e datasets `partidas_ml_classified.parquet` e `atletas_ml_classified.parquet`, validados com 100% de aprovação em 50 testes unitários.
 
 ---
@@ -348,7 +348,7 @@ Classificadas conforme a taxonomia da Seção 17 do `.agent.md`:
 > * **7 Relatórios Técnicos Temáticos:** Em `reports/analysis/`;
 > * **4 Modelos Serializados de ML:** Salvos em `data/processed/integrity/models/`;
 > * **1 White Paper Unificado:** Em `reports/white_paper_impacto_bets_futebol_brasileiro.md`;
-> * **1 Documento de Revisão Bibliográfica:** Em `docs/revisao_bibliografica.md`.
+> * **1 Documento de Revisão Bibliográfica:** Em `docs/arquivo/revisao_bibliografica.md`.
 
 
 

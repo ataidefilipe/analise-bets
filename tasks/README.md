@@ -74,7 +74,7 @@ F4-01 → F4-02 → F4-03   (paralelo; F4-02 trava F6-02 se houver nome de atlet
 A sessão de 2026-09-16 executou oito tarefas e encontrou treze defeitos de dados que não
 estavam no backlog. O registro consolidado — o que mudou nos resultados publicados, os defeitos
 corrigidos e o que permanece aberto — está em
-[`docs/relatorio_de_execucao_2026-09-16.md`](../docs/relatorio_de_execucao_2026-09-16.md).
+[`docs/arquivo/relatorio_de_execucao_2026-09-16.md`](../docs/arquivo/relatorio_de_execucao_2026-09-16.md).
 
 | Fase | Situação |
 | :--- | :--- |

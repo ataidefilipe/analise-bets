@@ -55,7 +55,7 @@ evitar duas regerações consecutivas das tabelas.
       expressam a mesma fórmula, incluindo `S_volume` e `S_penalti`.
 - [x] Tabelas 15, 16 e 17 regeradas a partir do código corrigido.
 - [x] Figuras em `reports/figures/integrity/` regeradas.
-- [x] Números citados em `docs/decisoes_e_progresso.md` e no white paper conferidos contra
+- [x] Números citados em `docs/arquivo/decisoes_e_progresso.md` e no white paper conferidos contra
       as tabelas novas e corrigidos onde divergirem.
 - [x] Teste unitário em `tests/test_anomaly_detection.py` que fixa os pesos e falha se a
       soma dos coeficientes ≠ 1,0 ou se algum peso for alterado sem atualização do teste.

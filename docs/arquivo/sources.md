@@ -1,7 +1,7 @@
 # Mapeamento de Fontes de Dados e Auditoria Documental
 
 **Projeto:** Impacto das Apostas Esportivas no Futebol Brasileiro  
-**Documento de Governança de Fontes:** `docs/sources.md`  
+**Documento de Governança de Fontes:** `docs/arquivo/sources.md`  
 **Última Atualização:** 2026-09-10  
 
 ---
@@ -150,13 +150,13 @@ A presença das marcas segue estritamente a cronologia legal do Brasil:
 | **Patrocínios Clubes** | IBOPE Repucom / Balanços | 2015–2024 | **Alto** (200 registros auditados)| Cálculo do `BET_EXPOSURE` (MVP 2) |
 | **Interesse Público** | Google Trends Brasil | 2015–2025 | **Alto** (Normalizado [0, 100]) | Efeito macro e transbordamento |
 | **Volume de Apostas** | Sigiloso (Operadoras) | Não público | **Fora do Caminho Crítico** | Substituído por proxies públicas |
-| **Literatura & Integridade** | Artigos Peer-Reviewed / ONU / Macolin | 2002–2024 | **Científica / Tratados** | Fundamentação teórica e causal (`docs/revisao_bibliografica.md`) |
+| **Literatura & Integridade** | Artigos Peer-Reviewed / ONU / Macolin | 2002–2024 | **Científica / Tratados** | Fundamentação teórica e causal (`docs/arquivo/revisao_bibliografica.md`) |
 
 ---
 
 ## 6. Literatura Científica e Documentos Institucionais de Referência
 
-A fundamentação teórica completa, catalogação de artigos e matriz de vinculação aos módulos do projeto encontram-se sistematizados em [`docs/revisao_bibliografica.md`](file:///d:/Python%20Projetos/analise-bets/docs/revisao_bibliografica.md).
+A fundamentação teórica completa, catalogação de artigos e matriz de vinculação aos módulos do projeto encontram-se sistematizados em [`docs/arquivo/revisao_bibliografica.md`](file:///d:/Python%20Projetos/analise-bets/docs/arquivo/revisao_bibliografica.md).
 
 * **Econometria Forense:** Duggan & Levitt (2002, AER), Wolfers (2006, AER), Preston & Szymanski (2003).
 * **Micro-Apostas & Spot-Fixing:** Carpenter (2012), Forrest (2012), Hill (2010), Haberfeld & Sheehan (2013).

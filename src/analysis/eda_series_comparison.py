@@ -4,7 +4,7 @@ src/analysis/eda_series_comparison.py
 Análise Comparativa de Integridade e Disciplina: Série A vs. Série B (2022–2023)
 e Contraste com os Casos Reais da Operação Penalidade Máxima.
 
-Metodologia (.agent.md e docs/methodology.md):
+Metodologia (.agent.md e docs/arquivo/methodology.md):
 - Comparação estatística formal (Teste t de Welch, Mann-Whitney U, Cohen's d)
 - Análise de minutagem contínua (KDE e blocos de 15 minutos)
 - Decomposição das categorias de infração (faltas de jogo vs. infrações disciplinares/cera)

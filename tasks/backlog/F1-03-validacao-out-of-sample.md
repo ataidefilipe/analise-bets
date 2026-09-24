@@ -32,7 +32,7 @@ métrica in-sample que hoje sustenta a principal afirmação do projeto.
 
 Com 14 positivos conhecidos, qualquer classificador supervisionado ou semi-supervisionado
 consegue 100% de sensibilidade in-sample — o número não carrega informação. A afirmação
-"100% de sensibilidade" aparece hoje no relatório 07, em `docs/decisoes_e_progresso.md`, na
+"100% de sensibilidade" aparece hoje no relatório 07, em `docs/arquivo/decisoes_e_progresso.md`, na
 proposta de projeto e no white paper, e é o principal argumento de eficácia do sistema.
 Se ela cair em avaliação honesta, todos esses documentos precisam ser ajustados.
 
@@ -57,7 +57,7 @@ com sua sensibilidade original preservada. Essa distinção deve ficar explícit
 - [x] Sensibilidade out-of-sample reportada em tabela nova, lado a lado com a in-sample.
 - [x] Distinção explícita, no código e no relatório, entre os escores estatísticos fechados
       (não treinados no ground truth) e o classificador de ML (treinado).
-- [x] `reports/analysis/07_*.md` e `docs/decisoes_e_progresso.md` atualizados com os números
+- [x] `reports/analysis/07_*.md` e `docs/arquivo/decisoes_e_progresso.md` atualizados com os números
       reais; a afirmação "100% de sensibilidade" qualificada ou substituída.
 - [x] Testes unitários cobrindo o novo protocolo em `tests/test_integrity_classifier.py`.
 - [x] Suíte `pytest` passando.

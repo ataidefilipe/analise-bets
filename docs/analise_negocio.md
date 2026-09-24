@@ -333,7 +333,7 @@ ground truth da Operação Penalidade Máxima para construir os rótulos, e a av
 treino.**
 
 Com 14 positivos, qualquer classificador atinge 100% in-sample — o número não carrega
-informação. A afirmação aparece hoje no relatório 07, em `docs/decisoes_e_progresso.md`, na
+informação. A afirmação aparece hoje no relatório 07, em `docs/arquivo/decisoes_e_progresso.md`, na
 proposta de projeto e no white paper.
 
 Ressalva importante: os escores estatísticos fechados (`MATCH_ANOMALY_SCORE` e
@@ -460,4 +460,4 @@ diferentes, e a segunda é a que instrui procedimento disciplinar.
 * Tipologia de infrações da Série B: [`reports/analysis/05_comparacao_series_a_b_e_penalidade_maxima.md`](../reports/analysis/05_comparacao_series_a_b_e_penalidade_maxima.md)
 * Evidência causal: [`reports/analysis/06_modelagem_econometrica_painel_did.md`](../reports/analysis/06_modelagem_econometrica_painel_did.md)
 * Síntese acadêmica: [`reports/white_paper_impacto_bets_futebol_brasileiro.md`](../reports/white_paper_impacto_bets_futebol_brasileiro.md)
-* Proposta original do projeto: [`docs/proposta_projeto.md`](proposta_projeto.md)
+* Proposta original do projeto: [`docs/arquivo/proposta_projeto.md`](arquivo/proposta_projeto.md)
