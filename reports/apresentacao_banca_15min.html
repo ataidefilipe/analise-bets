@@ -1,0 +1,1856 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Apresentacao de banca — 15 minutos, 5 de pitch. Integridade do futebol brasileiro sobre a sumula oficial da CBF.">
+<style>html{color-scheme:dark light}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Onde Eu Olho Primeiro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+/* ============================================================
+   TOKENS — dark-first. O deck é projetado numa sala escura;
+   o tema claro existe e é desenhado, não invertido.
+   ============================================================ */
+:root{
+  color-scheme: dark;
+  --ground:#080b1a;
+  --ground-2:#0b0f22;
+  --surface:rgba(255,255,255,.045);
+  --surface-2:rgba(255,255,255,.075);
+  --surface-solid:#11142a;
+  --line:rgba(255,255,255,.10);
+  --line-strong:rgba(255,255,255,.20);
+  --ink:#edefff;
+  --ink-2:#a9aecd;
+  --ink-3:#757b9f;
+  --accent:#8a7bff;
+  --accent-deep:#4f39f6;
+  --accent-2:#c27aff;
+  --accent-3:#4fd3ee;
+  --orb-a:#4f39f6; --orb-b:#c27aff; --orb-c:#22d3ee; --orb-d:#7dd3fc;
+  --orb-op:.40;
+  --s1:#8370f0; --s2:#189ab6; --s3:#d5751a;
+  --crit:#f0537a; --warn:#f08a2e; --mid:#d9b63c; --good:#3fb98f;
+  --shadow:0 28px 70px -26px rgba(0,0,0,.85);
+  --ring:rgba(138,123,255,.55);
+}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){
+    color-scheme: light;
+    --ground:#fbfbfe;
+    --ground-2:#f3f4fb;
+    --surface:rgba(255,255,255,.80);
+    --surface-2:rgba(16,20,50,.045);
+    --surface-solid:#ffffff;
+    --line:rgba(16,20,50,.11);
+    --line-strong:rgba(16,20,50,.22);
+    --ink:#0b1020;
+    --ink-2:#4a5173;
+    --ink-3:#6e7597;
+    --accent:#4f39f6;
+    --accent-deep:#4f39f6;
+    --accent-2:#8b3dd6;
+    --accent-3:#0e7490;
+    --orb-op:.20;
+    --s1:#6350e6; --s2:#0f8aa6; --s3:#c2650f;
+    --crit:#d11f4d; --warn:#b65c0c; --mid:#8a6a00; --good:#0f766e;
+    --shadow:0 22px 54px -26px rgba(30,32,80,.30);
+    --ring:rgba(79,57,246,.45);
+  }
+}
+:root[data-theme="light"]{
+  color-scheme: light;
+  --ground:#fbfbfe;
+  --ground-2:#f3f4fb;
+  --surface:rgba(255,255,255,.80);
+  --surface-2:rgba(16,20,50,.045);
+  --surface-solid:#ffffff;
+  --line:rgba(16,20,50,.11);
+  --line-strong:rgba(16,20,50,.22);
+  --ink:#0b1020;
+  --ink-2:#4a5173;
+  --ink-3:#6e7597;
+  --accent:#4f39f6;
+  --accent-deep:#4f39f6;
+  --accent-2:#8b3dd6;
+  --accent-3:#0e7490;
+  --orb-op:.20;
+  --s1:#6350e6; --s2:#0f8aa6; --s3:#c2650f;
+  --crit:#d11f4d; --warn:#b65c0c; --mid:#8a6a00; --good:#0f766e;
+  --shadow:0 22px 54px -26px rgba(30,32,80,.30);
+  --ring:rgba(79,57,246,.45);
+}
+
+/* escala tipográfica presa ao menor eixo do viewport: o slide cabe na tela */
+:root{
+  --fs-eyebrow: clamp(10px, min(.95vw, 1.4vh), 13px);
+  --fs-h1: clamp(26px, min(4.5vw, 6.4vh), 58px);
+  --fs-h2: clamp(20px, min(3.1vw, 4.4vh), 38px);
+  --fs-lead: clamp(14px, min(1.55vw, 2.2vh), 21px);
+  --fs-body: clamp(12.5px, min(1.12vw, 1.68vh), 16.5px);
+  --fs-small: clamp(10.5px, min(.92vw, 1.4vh), 13.5px);
+  --fs-stat: clamp(24px, min(3.3vw, 5vh), 50px);
+  --gap: clamp(9px, 1.7vh, 24px);
+  --pad-x: clamp(20px, 5vw, 92px);
+  --r: 20px;
+  --r-lg: 26px;
+}
+
+*, *::before, *::after{ box-sizing:border-box; }
+
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:"IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size:var(--fs-body);
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  overflow:hidden;
+  height:100dvh;
+}
+
+/* ============================================================
+   ATMOSFERA — orbs desfocadas (assinatura do Astrolus).
+   A cor muda por ato: índigo no pitch, ciano na evidência,
+   âmbar no produto.
+   ============================================================ */
+#atmos{ position:fixed; inset:0; z-index:0; overflow:hidden; pointer-events:none; }
+#atmos .orb{
+  position:absolute; border-radius:999px;
+  filter:blur(106px);
+  opacity:var(--orb-op);
+  transition:background 1200ms cubic-bezier(.4,0,.2,1), transform 1400ms cubic-bezier(.4,0,.2,1);
+  will-change:transform;
+}
+#atmos .orb-1{ width:46vw; height:34vw; top:-8vh; left:-6vw;
+  background:linear-gradient(135deg, var(--orb-a), var(--orb-b)); }
+#atmos .orb-2{ width:38vw; height:26vw; bottom:-12vh; right:-4vw;
+  background:linear-gradient(90deg, var(--orb-c), var(--orb-d)); }
+#atmos .orb-3{ width:26vw; height:26vw; top:38vh; left:52vw;
+  background:linear-gradient(200deg, var(--orb-b), var(--orb-a)); opacity:calc(var(--orb-op) * .55); }
+[data-act="2"] #atmos .orb-1{ background:linear-gradient(135deg, var(--orb-c), var(--orb-a)); transform:translate3d(6vw,4vh,0); }
+[data-act="2"] #atmos .orb-2{ background:linear-gradient(90deg, var(--orb-a), var(--orb-d)); transform:translate3d(-5vw,-4vh,0); }
+[data-act="3"] #atmos .orb-1{ background:linear-gradient(135deg, var(--orb-a), #f08a2e); transform:translate3d(-4vw,8vh,0); }
+[data-act="3"] #atmos .orb-2{ background:linear-gradient(90deg, var(--orb-b), var(--orb-c)); transform:translate3d(4vw,-6vh,0); }
+
+/* malha fina por cima, para o fundo não ficar liso demais */
+#grain{
+  position:fixed; inset:0; z-index:1; pointer-events:none;
+  background-image:
+    linear-gradient(to right, var(--line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--line) 1px, transparent 1px);
+  background-size:64px 64px;
+  -webkit-mask-image:radial-gradient(ellipse 80% 70% at 50% 40%, #000 20%, transparent 78%);
+  mask-image:radial-gradient(ellipse 80% 70% at 50% 40%, #000 20%, transparent 78%);
+  opacity:.5;
+}
+
+/* ============================================================
+   CHROME — barra superior, progresso, cronômetro
+   ============================================================ */
+#chrome{
+  position:fixed; top:0; left:0; right:0; z-index:40;
+  display:flex; align-items:center; gap:clamp(10px,2vw,22px);
+  padding:clamp(10px,1.6vh,18px) var(--pad-x);
+  font-family:"IBM Plex Mono", ui-monospace, monospace;
+  font-size:var(--fs-small);
+  color:var(--ink-3);
+}
+#chrome .brand{
+  display:flex; align-items:center; gap:8px;
+  color:var(--ink-2); letter-spacing:.06em; text-transform:uppercase;
+  white-space:nowrap;
+}
+#chrome .brand .dot{
+  width:8px; height:8px; border-radius:999px;
+  background:linear-gradient(135deg, var(--orb-a), var(--orb-c));
+  box-shadow:0 0 12px var(--ring);
+}
+#actLabel{ color:var(--accent); font-weight:600; }
+
+#progress{ display:flex; gap:6px; flex:1; min-width:60px; align-items:center; }
+#progress .seg{ display:flex; gap:3px; flex:var(--w) 0 0; }
+#progress .tick{
+  height:3px; flex:1; border-radius:999px;
+  background:var(--line-strong); transition:background 300ms ease;
+}
+#progress .tick.done{ background:var(--accent); }
+#progress .tick.now{ background:var(--accent); box-shadow:0 0 10px var(--ring); }
+
+#timer{
+  display:flex; align-items:center; gap:10px; white-space:nowrap;
+  padding:5px 12px; border-radius:999px;
+  border:1px solid var(--line-strong);
+  background:var(--surface);
+  backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
+  font-variant-numeric:tabular-nums; color:var(--ink-2);
+  cursor:pointer;
+}
+#timer:hover{ border-color:var(--ring); }
+#timer.running{ color:var(--ink); }
+#timer.over{ color:var(--warn); border-color:var(--warn); }
+#timer .pulse{
+  width:7px; height:7px; border-radius:999px; background:var(--ink-3);
+}
+#timer.running .pulse{ background:var(--good); animation:beat 2s ease-in-out infinite; }
+#timer.over .pulse{ background:var(--warn); }
+@keyframes beat{ 0%,100%{ opacity:1 } 50%{ opacity:.25 } }
+
+/* ============================================================
+   SLIDES
+   ============================================================ */
+#deck{ position:relative; z-index:10; height:100dvh; }
+.slide{
+  position:absolute; inset:0;
+  display:flex; align-items:center; justify-content:center;
+  padding:clamp(58px,9vh,96px) var(--pad-x) clamp(52px,8vh,82px);
+  opacity:0; visibility:hidden;
+  transform:translate3d(3.5%,0,0);
+  transition:opacity 420ms cubic-bezier(.4,0,.2,1), transform 520ms cubic-bezier(.4,0,.2,1), visibility 0s linear 520ms;
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.is-active{
+  opacity:1; visibility:visible; transform:translate3d(0,0,0);
+  transition:opacity 420ms cubic-bezier(.4,0,.2,1), transform 520ms cubic-bezier(.4,0,.2,1), visibility 0s;
+}
+.slide.is-prev{ transform:translate3d(-3.5%,0,0); }
+.inner{ width:min(1220px, 100%); display:flex; flex-direction:column; gap:var(--gap); }
+.inner.center{ align-items:center; text-align:center; }
+
+/* revelação encadeada */
+.r{ opacity:0; transform:translateY(14px); }
+.is-active .r{
+  opacity:1; transform:none;
+  transition:opacity 520ms cubic-bezier(.2,.7,.3,1), transform 560ms cubic-bezier(.2,.7,.3,1);
+  transition-delay:calc(var(--d, 0) * 70ms + 90ms);
+}
+
+/* ============================================================
+   TIPOGRAFIA
+   ============================================================ */
+.eyebrow{
+  font-family:"IBM Plex Mono", ui-monospace, monospace;
+  font-size:var(--fs-eyebrow); font-weight:500;
+  letter-spacing:.18em; text-transform:uppercase;
+  color:var(--accent);
+  display:flex; align-items:center; gap:10px;
+}
+.inner.center .eyebrow{ justify-content:center; }
+.eyebrow::after{
+  content:""; height:1px; width:clamp(24px,5vw,80px);
+  background:linear-gradient(90deg, var(--accent), transparent);
+}
+h1, h2, h3{ font-family:"Sora", "IBM Plex Sans", sans-serif; margin:0; text-wrap:balance; }
+h1{ font-size:var(--fs-h1); font-weight:700; line-height:1.04; letter-spacing:-.025em; }
+h2{ font-size:var(--fs-h2); font-weight:700; line-height:1.12; letter-spacing:-.02em; }
+h3{ font-size:var(--fs-body); font-weight:600; line-height:1.3; letter-spacing:-.005em; }
+p{ margin:0; }
+.lead{ font-size:var(--fs-lead); color:var(--ink-2); line-height:1.5; max-width:62ch; }
+.inner.center .lead{ margin-inline:auto; text-align:center; }
+.grad{
+  background:linear-gradient(100deg, var(--accent) 10%, var(--accent-2) 55%, var(--accent-3) 95%);
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+strong{ color:var(--ink); font-weight:600; }
+em{ color:var(--ink-2); }
+.mono{ font-family:"IBM Plex Mono", ui-monospace, monospace; font-variant-numeric:tabular-nums; }
+.note{
+  font-size:var(--fs-small); color:var(--ink-3); line-height:1.45; max-width:80ch;
+}
+.note.src{ font-family:"IBM Plex Mono", ui-monospace, monospace; letter-spacing:.01em; }
+
+/* ============================================================
+   CARDS E GRIDS
+   ============================================================ */
+.grid{ display:grid; gap:clamp(10px,1.4vw,18px); }
+.g2{ grid-template-columns:repeat(2, minmax(0,1fr)); }
+.g3{ grid-template-columns:repeat(3, minmax(0,1fr)); }
+.g4{ grid-template-columns:repeat(4, minmax(0,1fr)); }
+.split{ display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.05fr); gap:clamp(14px,2.4vw,40px); align-items:center; }
+.split.wide-left{ grid-template-columns:minmax(0,1.15fr) minmax(0,1fr); }
+
+.card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--r-lg);
+  padding:clamp(13px,1.9vh,24px) clamp(14px,1.5vw,26px);
+  backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px);
+  box-shadow:var(--shadow);
+  display:flex; flex-direction:column; gap:8px;
+  min-width:0;
+}
+.card.flat{ box-shadow:none; background:var(--surface-2); }
+.card p{ color:var(--ink-2); font-size:var(--fs-body); }
+.card .idx{
+  font-family:"IBM Plex Mono", ui-monospace, monospace;
+  font-size:var(--fs-small); font-weight:600; color:var(--accent);
+  letter-spacing:.1em;
+}
+
+.stat-row{ display:flex; flex-wrap:wrap; gap:clamp(12px,2.4vw,44px); }
+.stat{ display:flex; flex-direction:column; gap:2px; min-width:0; }
+.stat .v{
+  font-family:"Sora", sans-serif; font-weight:700;
+  font-size:var(--fs-stat); line-height:1; letter-spacing:-.035em;
+  font-variant-numeric:tabular-nums;
+}
+.stat .v.grad{ background:linear-gradient(100deg, var(--accent), var(--accent-2)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.stat .k{ font-size:var(--fs-small); color:var(--ink-3); line-height:1.35; max-width:26ch; }
+.stat .k b{ color:var(--ink-2); font-weight:500; }
+
+.pill{
+  display:inline-flex; align-items:center; gap:7px;
+  padding:4px 12px; border-radius:999px;
+  border:1px solid var(--line-strong); background:var(--surface-2);
+  font-family:"IBM Plex Mono", ui-monospace, monospace;
+  font-size:var(--fs-small); color:var(--ink-2); white-space:nowrap;
+}
+.pill .sq{ width:9px; height:9px; border-radius:3px; flex:none; }
+.pill.crit{ border-color:color-mix(in oklab, var(--crit) 55%, transparent); color:var(--crit); }
+.pill.warn{ border-color:color-mix(in oklab, var(--warn) 55%, transparent); color:var(--warn); }
+.pill.good{ border-color:color-mix(in oklab, var(--good) 55%, transparent); color:var(--good); }
+
+.rule{ height:1px; background:var(--line); border:0; margin:0; }
+
+.kicker{
+  border-left:2px solid var(--accent);
+  padding:2px 0 2px clamp(12px,1.4vw,20px);
+  font-size:var(--fs-lead); line-height:1.45; color:var(--ink);
+  max-width:74ch;
+}
+.kicker.quote{ font-style:italic; color:var(--ink-2); }
+
+/* lista com marcador desenhado */
+ul.ticks{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:clamp(7px,1.1vh,13px); }
+ul.ticks li{ display:flex; gap:11px; align-items:flex-start; color:var(--ink-2); min-width:0; }
+ul.ticks li::before{
+  content:""; flex:none; width:6px; height:6px; margin-top:.55em; border-radius:2px;
+  background:var(--accent); transform:rotate(45deg);
+}
+ul.ticks li.no::before{ background:var(--crit); }
+ul.ticks li b{ color:var(--ink); }
+
+/* tabela */
+.tbl{ width:100%; border-collapse:collapse; font-size:var(--fs-small); }
+.tbl th, .tbl td{ text-align:left; padding:clamp(6px,1vh,11px) clamp(6px,.8vw,14px); border-bottom:1px solid var(--line); vertical-align:top; }
+.tbl thead th{
+  font-family:"IBM Plex Mono", ui-monospace, monospace;
+  font-weight:500; font-size:var(--fs-eyebrow); letter-spacing:.12em;
+  text-transform:uppercase; color:var(--ink-3); border-bottom-color:var(--line-strong);
+}
+.tbl td{ color:var(--ink-2); }
+.tbl td:first-child{ color:var(--ink); font-weight:500; }
+.tbl td.num{ font-family:"IBM Plex Mono", monospace; font-variant-numeric:tabular-nums; }
+.tbl tbody tr:last-child td{ border-bottom:0; }
+.scroll-x{ overflow-x:auto; }
+
+/* ============================================================
+   GRÁFICOS
+   ============================================================ */
+.chart-wrap{ position:relative; width:100%; }
+.chart-wrap svg{ display:block; width:100%; height:auto; overflow:visible; }
+.axis-txt{
+  font-family:"IBM Plex Mono", ui-monospace, monospace;
+  font-size:11px; fill:var(--ink-3); font-variant-numeric:tabular-nums;
+}
+.grid-line{ stroke:var(--line); stroke-width:1; }
+.grid-line.base{ stroke:var(--line-strong); stroke-dasharray:3 4; }
+.ser-label{ font-family:"IBM Plex Sans", sans-serif; font-size:12px; font-weight:600; }
+.ser-delta{ font-family:"IBM Plex Mono", monospace; font-size:11px; }
+.tip{
+  position:absolute; pointer-events:none; z-index:5;
+  background:var(--surface-solid); border:1px solid var(--line-strong);
+  border-radius:12px; padding:9px 12px;
+  box-shadow:var(--shadow);
+  font-size:var(--fs-small); color:var(--ink-2); white-space:nowrap;
+  opacity:0; transition:opacity 140ms ease;
+  font-variant-numeric:tabular-nums;
+}
+.tip.on{ opacity:1; }
+.tip .t-h{ font-family:"IBM Plex Mono", monospace; color:var(--ink); font-weight:600; margin-bottom:5px; }
+.tip .t-r{ display:flex; align-items:center; gap:7px; }
+.tip .t-r .sq{ width:9px; height:9px; border-radius:3px; flex:none; }
+.tip .t-r b{ color:var(--ink); font-weight:600; margin-left:auto; padding-left:14px; }
+.legend{ display:flex; flex-wrap:wrap; gap:clamp(10px,1.6vw,24px); }
+.legend .it{ display:flex; align-items:center; gap:8px; font-size:var(--fs-small); color:var(--ink-2); }
+.legend .sq{ width:11px; height:11px; border-radius:3px; flex:none; }
+.legend .ln{ width:16px; height:0; border-top:2px dashed var(--ink-3); flex:none; }
+
+/* ============================================================
+   SLIDER DE LIMIAR
+   ============================================================ */
+.thr{ display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px); }
+.thr-head{ display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+.thr-val{
+  font-family:"Sora", sans-serif; font-weight:700; letter-spacing:-.03em;
+  font-size:clamp(28px, min(3.6vw,5.4vh), 54px); line-height:1;
+  font-variant-numeric:tabular-nums;
+}
+input[type="range"]{
+  -webkit-appearance:none; appearance:none; width:100%; height:26px;
+  background:transparent; cursor:grab; margin:0;
+}
+input[type="range"]:active{ cursor:grabbing; }
+input[type="range"]::-webkit-slider-runnable-track{
+  height:6px; border-radius:999px;
+  background:linear-gradient(90deg, var(--accent) var(--fill,50%), var(--surface-2) var(--fill,50%));
+  border:1px solid var(--line);
+}
+input[type="range"]::-moz-range-track{
+  height:6px; border-radius:999px;
+  background:linear-gradient(90deg, var(--accent) var(--fill,50%), var(--surface-2) var(--fill,50%));
+  border:1px solid var(--line);
+}
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance:none; appearance:none;
+  width:22px; height:22px; border-radius:999px; margin-top:-9px;
+  background:var(--surface-solid); border:2px solid var(--accent);
+  box-shadow:0 0 0 5px color-mix(in oklab, var(--accent) 18%, transparent), var(--shadow);
+}
+input[type="range"]::-moz-range-thumb{
+  width:22px; height:22px; border-radius:999px;
+  background:var(--surface-solid); border:2px solid var(--accent);
+  box-shadow:0 0 0 5px color-mix(in oklab, var(--accent) 18%, transparent);
+}
+input[type="range"]:focus-visible::-webkit-slider-thumb{ outline:2px solid var(--accent-3); outline-offset:3px; }
+.thr-scale{
+  display:flex; justify-content:space-between;
+  font-family:"IBM Plex Mono", monospace; font-size:var(--fs-eyebrow); color:var(--ink-3);
+  letter-spacing:.06em; margin-top:-6px;
+}
+.dots{ display:flex; flex-wrap:wrap; gap:6px; }
+.dots .d{
+  width:clamp(11px,1.5vh,17px); height:clamp(11px,1.5vh,17px); border-radius:5px;
+  background:var(--surface-2); border:1px solid var(--line);
+  transition:background 220ms ease, border-color 220ms ease, transform 220ms ease;
+}
+.dots .d.on{ background:var(--warn); border-color:var(--warn); transform:scale(1.04); }
+.meter{ height:9px; border-radius:999px; background:var(--surface-2); border:1px solid var(--line); overflow:hidden; }
+.meter i{ display:block; height:100%; background:linear-gradient(90deg, var(--accent), var(--accent-2)); transition:width 260ms cubic-bezier(.4,0,.2,1); }
+.presets{ display:flex; flex-wrap:wrap; gap:7px; }
+.preset{
+  font-family:"IBM Plex Mono", monospace; font-size:var(--fs-small);
+  padding:5px 12px; border-radius:999px; cursor:pointer;
+  border:1px solid var(--line-strong); background:transparent; color:var(--ink-2);
+  transition:border-color 180ms ease, color 180ms ease, background 180ms ease;
+}
+.preset:hover{ border-color:var(--ring); color:var(--ink); }
+.preset.on{ border-color:var(--accent); color:var(--ink); background:color-mix(in oklab, var(--accent) 16%, transparent); }
+.preset:focus-visible{ outline:2px solid var(--accent-3); outline-offset:2px; }
+
+/* ============================================================
+   MOCK DA FILA DE TRIAGEM (T1)
+   ============================================================ */
+.mock{
+  border:1px solid var(--line-strong); border-radius:var(--r);
+  background:var(--surface); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px);
+  overflow:hidden; font-size:var(--fs-small); box-shadow:var(--shadow);
+}
+.mock .bar{
+  display:flex; align-items:center; gap:8px; padding:9px 14px;
+  border-bottom:1px solid var(--line); color:var(--ink-3);
+  font-family:"IBM Plex Mono", monospace; letter-spacing:.04em;
+}
+.mock .bar .dot3{ display:flex; gap:5px; }
+.mock .bar .dot3 i{ width:8px; height:8px; border-radius:999px; background:var(--line-strong); }
+.mock .warnrow{
+  padding:9px 14px; border-bottom:1px solid var(--line);
+  color:var(--ink-3); font-size:var(--fs-eyebrow); line-height:1.5;
+  background:var(--surface-2);
+}
+.mock .row{
+  display:grid; grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) auto;
+  gap:10px; align-items:center;
+  padding:10px 14px; border-bottom:1px solid var(--line);
+}
+.mock .row:last-child{ border-bottom:0; }
+.mock .row .nm{ color:var(--ink); font-weight:600; }
+.mock .row .sub{ color:var(--ink-3); font-family:"IBM Plex Mono", monospace; font-size:var(--fs-eyebrow); }
+.mock .row .mt{ color:var(--ink-2); font-family:"IBM Plex Mono", monospace; }
+.tier{
+  font-family:"IBM Plex Mono", monospace; font-size:var(--fs-eyebrow);
+  padding:3px 10px; border-radius:999px; white-space:nowrap; font-weight:500;
+}
+.tier.t1{ color:var(--crit); background:color-mix(in oklab, var(--crit) 15%, transparent); border:1px solid color-mix(in oklab, var(--crit) 40%, transparent); }
+.tier.t2{ color:var(--warn); background:color-mix(in oklab, var(--warn) 15%, transparent); border:1px solid color-mix(in oklab, var(--warn) 40%, transparent); }
+.tier.t3{ color:var(--mid); background:color-mix(in oklab, var(--mid) 15%, transparent); border:1px solid color-mix(in oklab, var(--mid) 40%, transparent); }
+
+/* linha do tempo regulatória */
+.tl{ position:relative; display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:clamp(10px,1.6vw,22px); padding-top:26px; }
+.tl::before{
+  content:""; position:absolute; top:8px; left:4%; right:4%; height:2px;
+  background:linear-gradient(90deg, var(--accent-3), var(--accent), var(--accent-2));
+  border-radius:999px; opacity:.6;
+}
+.tl .n{ position:relative; }
+.tl .n::before{
+  content:""; position:absolute; top:-24px; left:calc(50% - 6px);
+  width:12px; height:12px; border-radius:999px;
+  background:var(--ground); border:2px solid var(--accent);
+  box-shadow:0 0 0 4px color-mix(in oklab, var(--accent) 16%, transparent);
+}
+.tl .n{ text-align:center; }
+.tl .n .yr{ font-family:"IBM Plex Mono", monospace; font-size:var(--fs-small); color:var(--accent); letter-spacing:.08em; }
+.tl .n .ttl{ font-family:"Sora", sans-serif; font-weight:600; font-size:var(--fs-body); color:var(--ink); margin-top:2px; }
+.tl .n .dsc{ font-size:var(--fs-small); color:var(--ink-3); margin-top:3px; }
+
+/* bloco de fórmula */
+.formula{
+  font-family:"IBM Plex Mono", monospace; font-size:var(--fs-small);
+  background:var(--surface-2); border:1px solid var(--line);
+  border-radius:14px; padding:clamp(10px,1.5vh,16px) clamp(12px,1.2vw,20px);
+  color:var(--ink-2); line-height:1.7; overflow-x:auto;
+}
+.formula b{ color:var(--accent); font-weight:500; }
+
+/* ============================================================
+   NAVEGAÇÃO
+   ============================================================ */
+#nav{
+  position:fixed; bottom:0; left:0; right:0; z-index:40;
+  display:flex; align-items:center; justify-content:space-between; gap:14px;
+  padding:clamp(9px,1.4vh,16px) var(--pad-x);
+  font-family:"IBM Plex Mono", monospace; font-size:var(--fs-small); color:var(--ink-3);
+}
+#hints{ display:flex; gap:clamp(8px,1.4vw,18px); flex-wrap:wrap; }
+#hints span{ white-space:nowrap; }
+kbd{
+  font-family:"IBM Plex Mono", monospace; font-size:.92em;
+  padding:1px 6px; border-radius:6px;
+  border:1px solid var(--line-strong); background:var(--surface-2); color:var(--ink-2);
+}
+#navbtns{ display:flex; align-items:center; gap:8px; }
+.nb{
+  width:34px; height:34px; border-radius:999px; cursor:pointer;
+  border:1px solid var(--line-strong); background:var(--surface);
+  color:var(--ink-2); display:grid; place-items:center;
+  backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
+  transition:border-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+.nb:hover{ border-color:var(--ring); color:var(--ink); transform:translateY(-1px); }
+.nb:focus-visible{ outline:2px solid var(--accent-3); outline-offset:2px; }
+.nb:disabled{ opacity:.3; cursor:default; transform:none; }
+.nb svg{ width:15px; height:15px; }
+#counter{ color:var(--ink-2); font-variant-numeric:tabular-nums; padding:0 4px; white-space:nowrap; }
+
+/* zonas de clique nas bordas — não roubam o clique dos controles */
+.zone{ position:fixed; top:0; bottom:0; width:min(5.5vw, 62px); z-index:20; cursor:pointer; }
+.zone.l{ left:0; } .zone.r{ right:0; }
+
+/* ============================================================
+   PAINÉIS: visão geral e notas
+   ============================================================ */
+#overview{
+  position:fixed; inset:0; z-index:60; display:none;
+  padding:clamp(44px,7vh,80px) var(--pad-x);
+  background:color-mix(in oklab, var(--ground) 86%, transparent);
+  backdrop-filter:blur(22px); -webkit-backdrop-filter:blur(22px);
+  overflow-y:auto;
+}
+#overview.on{ display:block; }
+#overview h2{ margin-bottom:clamp(12px,2vh,22px); }
+#ovGrid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(180px,1fr)); gap:clamp(8px,1.2vw,14px); }
+.ov{
+  text-align:left; cursor:pointer; min-height:74px;
+  border:1px solid var(--line); border-radius:16px; background:var(--surface-2);
+  padding:11px 13px; color:var(--ink-2);
+  display:flex; flex-direction:column; gap:5px;
+  font-family:inherit; font-size:var(--fs-small);
+  transition:border-color 160ms ease, transform 160ms ease, background 160ms ease;
+}
+.ov:hover{ border-color:var(--ring); transform:translateY(-2px); }
+.ov:focus-visible{ outline:2px solid var(--accent-3); outline-offset:2px; }
+.ov.on{ border-color:var(--accent); background:color-mix(in oklab, var(--accent) 12%, transparent); }
+.ov .n{ font-family:"IBM Plex Mono", monospace; font-size:var(--fs-eyebrow); color:var(--accent); letter-spacing:.1em; }
+.ov .t{ color:var(--ink); font-weight:500; line-height:1.3; }
+
+#notes{
+  position:fixed; left:0; right:0; bottom:0; z-index:50;
+  transform:translateY(101%); transition:transform 320ms cubic-bezier(.4,0,.2,1);
+  background:var(--surface-solid); border-top:1px solid var(--line-strong);
+  padding:clamp(12px,2vh,20px) var(--pad-x) clamp(46px,6vh,64px);
+  box-shadow:0 -20px 50px -24px rgba(0,0,0,.6);
+  max-height:42dvh; overflow-y:auto;
+}
+#notes.on{ transform:translateY(0); }
+#notes .lbl{
+  font-family:"IBM Plex Mono", monospace; font-size:var(--fs-eyebrow);
+  letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin-bottom:6px;
+}
+#notesBody{ color:var(--ink-2); font-size:var(--fs-body); max-width:88ch; line-height:1.6; }
+#notesBody b{ color:var(--ink); }
+
+@media (max-width: 860px){
+  .split, .split.wide-left{ grid-template-columns:minmax(0,1fr); }
+  .g3, .g4{ grid-template-columns:repeat(2, minmax(0,1fr)); }
+  #hints{ display:none; }
+  .zone{ display:none; }
+}
+@media (max-width: 560px){
+  .g2, .g3, .g4{ grid-template-columns:minmax(0,1fr); }
+  #chrome .brand span{ display:none; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  *, *::before, *::after{ animation-duration:.001ms !important; transition-duration:.001ms !important; }
+  .r{ opacity:1; transform:none; }
+}
+</style>
+</head>
+<body>
+<div id="atmos" aria-hidden="true">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+</div>
+<div id="grain" aria-hidden="true"></div>
+
+<header id="chrome">
+  <div class="brand"><i class="dot"></i><span>Integridade&nbsp;·&nbsp;CBF</span></div>
+  <div id="actLabel">Ato 1 · Pitch</div>
+  <div id="progress" aria-hidden="true"></div>
+  <button id="timer" type="button" title="Iniciar / pausar (S) · Zerar (R)">
+    <i class="pulse"></i><span id="clock">00:00</span><span style="color:var(--ink-3)">/ 15:00</span>
+  </button>
+</header>
+
+<main id="deck">
+
+<!-- ============ 1 · CAPA ============ -->
+<section class="slide" data-act="1" data-title="Capa">
+  <div class="inner center">
+    <div class="eyebrow r" style="--d:0">TCC · Ciência de Dados · Setembro de 2026</div>
+    <h1 class="r" style="--d:1; font-size:clamp(34px, min(6.6vw, 9vh), 88px)">
+      Onde eu olho <span class="grad">primeiro?</span>
+    </h1>
+    <p class="lead r" style="--d:2">
+      Um instrumento de medição de atipicidade disciplinar para o futebol brasileiro,
+      construído sobre a súmula oficial da CBF — com cadeia de custódia auditável do PDF ao escore.
+    </p>
+    <div class="stat-row r" style="--d:3; justify-content:center; margin-top:clamp(6px,1.6vh,18px)">
+      <div class="stat"><span class="v grad" data-count="4559">4.559</span><span class="k">partidas na base</span></div>
+      <div class="stat"><span class="v grad" data-count="107990">107.990</span><span class="k">registros atleta × partida</span></div>
+      <div class="stat"><span class="v grad" data-count="210">210</span><span class="k">rodadas validadas</span></div>
+    </div>
+    <div class="r" style="--d:4; display:flex; gap:9px; flex-wrap:wrap; justify-content:center; margin-top:clamp(4px,1.2vh,14px)">
+      <span class="pill">Séries A e B · 2014–2026</span>
+      <span class="pill">Econometria de painel · TWFE</span>
+      <span class="pill">POC com API em operação</span>
+    </div>
+    <p class="note r" style="--d:5; margin-top:clamp(6px,1.6vh,16px)">
+      <kbd>→</kbd> avança &nbsp;·&nbsp; <kbd>O</kbd> visão geral &nbsp;·&nbsp; <kbd>N</kbd> notas &nbsp;·&nbsp; <kbd>S</kbd> cronômetro
+    </p>
+  </div>
+  <template class="notes">Abrir com a pergunta, não com o método. <b>15 minutos: 5 de pitch (até o slide 7), 6 de fundamento, 4 de produto.</b> Iniciar o cronômetro com S antes de falar. A frase que amarra tudo no fim é a mesma do título.</template>
+</section>
+
+<!-- ============ 2 · O PROBLEMA ============ -->
+<section class="slide" data-act="1" data-title="O problema">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 1 · O problema</div>
+    <h1 class="r" style="--d:1">Não é preciso comprar o jogo.<br>Basta comprar <span class="grad">um cartão.</span></h1>
+    <p class="lead r" style="--d:2">
+      A manipulação clássica exige conluio. O micro-mercado, não: ele transfere o poder de
+      produzir o evento para um único atleta.
+    </p>
+    <div class="grid g3 r" style="--d:3">
+      <div class="card">
+        <div class="idx">MERCADO</div>
+        <h3>A aposta incide sobre o cartão, não sobre o placar</h3>
+        <p>Amarelo por jogador, por equipe, no 1º tempo. Pênalti em janela de tempo. Escanteios.</p>
+      </div>
+      <div class="card">
+        <div class="idx">EXECUÇÃO</div>
+        <h3>Um atleta sozinho entrega o evento</h3>
+        <p>Falta intencional, retardamento do reinício, reclamação ostensiva. Sem anuência do time e sem alterar o resultado.</p>
+      </div>
+      <div class="card">
+        <div class="idx">LIQUIDAÇÃO</div>
+        <h3>Tudo se resolve no apito final</h3>
+        <p>Quem detecta em D+1 não recupera prejuízo. Decisão útil é <em>antes</em> do jogo — e é aí que ninguém olha.</p>
+      </div>
+    </div>
+    <div class="split r" style="--d:4; align-items:stretch; margin-top:clamp(4px,1vh,12px)">
+      <div class="card" style="justify-content:center">
+        <div class="stat-row">
+          <div class="stat">
+            <span class="v" style="color:var(--warn)" data-count="28.9" data-suffix="%">28,9%</span>
+            <span class="k">dos <b>3.671 cartões</b> da Série B 2022–23 vêm de infração <b>não-física</b></span>
+          </div>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:7px; margin-top:6px">
+          <span class="pill"><i class="sq" style="background:var(--warn)"></i>Reclamação 15,8%</span>
+          <span class="pill"><i class="sq" style="background:var(--mid)"></i>Cera 8,4%</span>
+          <span class="pill"><i class="sq" style="background:var(--s3)"></i>Antidesportiva 4,8%</span>
+        </div>
+      </div>
+      <div class="card flat" style="justify-content:center">
+        <p style="color:var(--ink)">
+          Um cartão por falta temerária <strong>exige que o lance aconteça</strong>.
+          Um cartão por reclamação, não.
+        </p>
+        <p class="note">Categoria que não depende de disputa de bola é a mais fácil de encomendar — e é a que nenhum provedor comercial disponibiliza estruturada.</p>
+      </div>
+    </div>
+    <p class="note src r" style="--d:5">A Operação Penalidade Máxima (MP-GO / STJD) documentou 14 incidentes com atleta, confronto, minuto e valor da propina. Começou na Série B.</p>
+  </div>
+  <template class="notes">Este é o slide que estabelece <b>por que o problema é do atleta e não do clube</b> — a econometria confirma isso depois, no slide 4. Não gastar mais de 40 s. O número 28,9% é o gancho: ele só existe porque lemos o motivo textual do árbitro.</template>
+</section>
+
+<!-- ============ 3 · O PARADOXO ============ -->
+<section class="slide" data-act="1" data-title="O paradoxo disciplinar">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 1 · O sinal</div>
+    <h1 class="r" style="--d:1">O jogo ficou menos violento.<br>E muito <span class="grad">mais punido.</span></h1>
+    <div class="split wide-left r" style="--d:2; align-items:center">
+      <div class="chart-wrap" id="cw1">
+        <svg id="chart1" viewBox="0 0 780 330" role="img"
+             aria-label="Faltas por jogo e taxa de conversão de faltas em cartões na Série A, 2015 a 2024, indexados a 2017 igual a 100. Faltas caem para 80,7 e a conversão sobe para 135,9."></svg>
+        <div class="tip" id="tip1"></div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:var(--gap)">
+        <div class="legend">
+          <span class="it"><i class="sq" style="background:var(--s2)"></i>Faltas por jogo</span>
+          <span class="it"><i class="sq" style="background:var(--s3)"></i>Cartões por falta</span>
+        </div>
+        <div class="stat-row" style="flex-direction:column; gap:clamp(8px,1.6vh,18px)">
+          <div class="stat"><span class="v" style="color:var(--s2)">25,36</span><span class="k">faltas por jogo em 2024 — <b>mínima da série histórica</b></span></div>
+          <div class="stat"><span class="v" style="color:var(--s3)">0,2198</span><span class="k">cartões por falta — <b>recorde absoluto</b>: 1 cartão a cada 4,5 faltas</span></div>
+          <div class="stat"><span class="v" style="color:var(--crit)">128</span><span class="k">cartões vermelhos em 2024 — <b>recorde</b></span></div>
+        </div>
+      </div>
+    </div>
+    <p class="note src r" style="--d:3">Série A, 380 partidas por temporada. Índice com base 2017 = 100. Fonte: white paper §3.1 (CBF / Adão Duque / Sofascore). Passe o cursor sobre a série para ver os valores absolutos.</p>
+  </div>
+  <template class="notes">Deixar o gráfico desenhar e <b>não narrar ponto a ponto</b>. A frase única: "o jogo tem menos contato físico e mais punição — as duas curvas se separam a partir de 2022". Passar o mouse em 2022 se houver pergunta. Não é causalidade ainda; é o sinal que motivou o estudo.</template>
+</section>
+
+<!-- ============ 4 · A EVIDÊNCIA CAUSAL ============ -->
+<section class="slide" data-act="1" data-title="A evidência causal">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 1 · A evidência</div>
+    <h1 class="r" style="--d:1">A exposição a apostas eleva os cartões.<br>E <span class="grad">não é o clube</span> que manipula.</h1>
+    <div class="grid g3 r" style="--d:2">
+      <div class="card">
+        <div class="stat">
+          <span class="v" style="color:var(--s1)">+0,2665</span>
+          <span class="k">cartão por equipe/jogo a cada ponto de exposição ao patrocínio</span>
+        </div>
+        <div class="pill good" style="align-self:flex-start"><span class="mono">p = 0,00642</span></div>
+        <p class="note">TWFE, 7.598 observações clube × partida, erros-padrão clusterizados por clube.</p>
+      </div>
+      <div class="card">
+        <div class="stat">
+          <span class="v" style="color:var(--s3)">+0,533</span>
+          <span class="k">cartões na partida quando <b>os dois lados</b> têm patrocínio máster</span>
+        </div>
+        <div class="pill" style="align-self:flex-start"><span class="mono">18 de 20 clubes em 2024</span></div>
+        <p class="note">Controlado por efeitos fixos de clube e ano, mando, saldo de gols e clássico estadual.</p>
+      </div>
+      <div class="card" style="border-color:color-mix(in oklab, var(--accent) 40%, transparent)">
+        <div class="stat">
+          <span class="v" style="color:var(--ink-3)">β = −0,0129</span>
+          <span class="k">efeito da exposição sobre a <b>fração de cartões no 1º tempo</b></span>
+        </div>
+        <div class="pill" style="align-self:flex-start"><span class="mono">p = 0,5916 · nulo</span></div>
+        <p class="note">Nenhum viés coletivo. O clube patrocinado não antecipa cartões.</p>
+      </div>
+    </div>
+    <div class="split r" style="--d:3; align-items:center; margin-top:clamp(2px,.8vh,10px)">
+      <div class="kicker">
+        O efeito coletivo existe e é <strong>comercial</strong>.<br>
+        O risco de manipulação é <strong>individual e criminoso</strong>.
+        <span style="color:var(--accent)">→ a unidade de análise é o atleta, não a partida.</span>
+      </div>
+      <div class="card flat">
+        <h3>Tendências paralelas validadas</h3>
+        <p class="note">Estudo de eventos com adoção escalonada. Coeficientes pré-tratamento conjuntamente indistinguíveis de zero:
+        <span class="mono" style="color:var(--ink-2)">F = 0,366 (p = 0,696)</span> para a taxa de conversão e
+        <span class="mono" style="color:var(--ink-2)">F = 2,430 (p = 0,104)</span> para cartões totais.
+        Sem isso, a quebra pós-contrato não sustentaria leitura causal.</p>
+      </div>
+    </div>
+  </div>
+  <template class="notes">O slide mais importante do pitch. A terceira caixa — o <b>efeito nulo</b> — é o achado que redireciona o produto inteiro: se fosse o clube, o produto seria um ranking de clubes; como é o indivíduo, o produto é uma fila de atletas. É daqui que sai a Camada 3.</template>
+</section>
+
+<!-- ============ 5 · O ATIVO ============ -->
+<section class="slide" data-act="1" data-title="O ativo defensável">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 1 · O ativo</div>
+    <h1 class="r" style="--d:1">O diferencial não é o modelo.<br>É a <span class="grad">esteira.</span></h1>
+    <p class="lead r" style="--d:2">Qualquer um reimplementa um escore. Ninguém tem a base — e a base é a única coisa que não se copia num fim de semana.</p>
+    <div class="grid g3 r" style="--d:3">
+      <div class="card">
+        <div class="idx">PROVENIÊNCIA</div>
+        <h3>Súmula oficial da CBF, em D+1</h3>
+        <p>Detecção incremental por HTTP HEAD e ETag, <span class="mono">SHA-256</span> por arquivo, manifesto de origem. Cadeia de custódia do PDF ao escore.</p>
+      </div>
+      <div class="card" style="border-color:color-mix(in oklab, var(--accent) 40%, transparent)">
+        <div class="idx">O CAMPO QUE SÓ NÓS TEMOS</div>
+        <h3>O motivo textual digitado pelo árbitro</h3>
+        <p>Mais o minuto exato. Nenhum provedor comercial — Sportradar, Opta, Sofascore — disponibiliza esse campo estruturado.</p>
+      </div>
+      <div class="card">
+        <div class="idx">COBERTURA</div>
+        <h3>Série B com o mesmo rigor da Série A</h3>
+        <p>Onde a Penalidade Máxima começou, onde o risco é maior — e onde o provedor global cobre mal a divisão de acesso.</p>
+      </div>
+    </div>
+    <div class="split r" style="--d:4; align-items:center">
+      <div class="stat-row">
+        <div class="stat"><span class="v grad" data-count="380">380</span><span class="k">partidas inspecionadas na última execução</span></div>
+        <div class="stat"><span class="v grad" data-count="216">216</span><span class="k">súmulas novas, <b>zero erros</b></span></div>
+        <div class="stat"><span class="v grad">≈ 0</span><span class="k">custo marginal por cliente adicional</span></div>
+      </div>
+      <p class="note">Fonte pública, processamento automatizado, margem estrutural alta. O gargalo do negócio é aquisição de cliente — nunca entrega.</p>
+    </div>
+  </div>
+  <template class="notes">Responder à objeção antes que ela venha: "por que não a Sportradar?". A resposta é <b>complementar, não superior</b> — eles têm sinal transacional de odds, nós temos registro oficial com proveniência. Só o segundo instrui procedimento disciplinar. Detalhar no slide 15 se perguntarem.</template>
+</section>
+
+<!-- ============ 6 · O PRODUTO ============ -->
+<section class="slide" data-act="1" data-title="Três camadas">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 1 · O produto</div>
+    <h1 class="r" style="--d:1">Três camadas sobre a <span class="grad">mesma fonte.</span></h1>
+    <p class="lead r" style="--d:2">Em ordem crescente de valor e de dificuldade — cada uma financia a seguinte.</p>
+    <div class="grid g3 r" style="--d:3">
+      <div class="card">
+        <div class="idx">CAMADA 1 · DADO CANÔNICO</div>
+        <h3>Partidas, gols e cartões com minuto e motivo</h3>
+        <p>Base relacional das Séries A e B, atualização D+1, manifesto de proveniência.</p>
+        <hr class="rule">
+        <p class="note"><b style="color:var(--ink-2)">Compra:</b> mídia, fantasy, modelagem, pesquisa.<br>
+        <b style="color:var(--ink-2)">Natureza:</b> fácil de vender, fácil de copiar.</p>
+      </div>
+      <div class="card">
+        <div class="idx">CAMADA 2 · DOSSIÊ D+1</div>
+        <h3>Fila priorizada com a memória de cálculo aberta</h3>
+        <p>Qual subscore disparou, qual p-valor, qual minuto, qual motivo — e o link para a súmula-fonte com hash.</p>
+        <hr class="rule">
+        <p class="note"><b style="color:var(--ink-2)">Compra:</b> CBF, federações, STJD, compliance de clube.<br>
+        <b style="color:var(--ink-2)">Diferencial:</b> não é acurácia, é <b style="color:var(--ink-2)">admissibilidade</b>. Caixa-preta não fundamenta despacho.</p>
+      </div>
+      <div class="card" style="border-color:color-mix(in oklab, var(--accent) 45%, transparent)">
+        <div class="idx" style="color:var(--accent-2)">CAMADA 3 · RISCO PRÉ-JOGO</div>
+        <h3>Perfil dos atletas relacionados, antes do apito</h3>
+        <p>A única camada que responde ao problema de timing — a decisão útil acontece antes do jogo.</p>
+        <hr class="rule">
+        <p class="note"><b style="color:var(--ink-2)">Compra:</b> clubes, entidades de integridade, operadoras (restrito).<br>
+        <b style="color:var(--ink-2)">Estado:</b> <b style="color:var(--good)">construída e medida</b> — slide 11.</p>
+      </div>
+    </div>
+    <div class="kicker quote r" style="--d:4">
+      Base empírica da Camada 3: o perfil de atipicidade <strong>persiste entre temporadas e clubes</strong> —
+      percentil 100,0 em 2020 por um clube, 99,67 em 2022 por outro. Traço persistente é previsível; evento isolado, não.
+    </div>
+  </div>
+  <template class="notes">Numeração legítima: é uma <b>sequência real</b> de valor e dificuldade, não decoração. Se o tempo apertar, gastar 20 s: "dado, dossiê, pré-jogo — e a terceira é a que já está medida". O exemplo de persistência é anonimizado de propósito, e isso é parte do argumento de governança (slide 13).</template>
+</section>
+
+<!-- ============ 7 · O CLIENTE + SLIDER ============ -->
+<section class="slide" data-act="1" data-title="O cliente e o limiar">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 1 · O cliente</div>
+    <h1 class="r" style="--d:1">A pergunta não é “qual o corte certo”.<br>É <span class="grad">“quantos casos você trata por rodada?”</span></h1>
+    <div class="split r" style="--d:2; align-items:start">
+      <div style="display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px)">
+        <ul class="ticks">
+          <li><b>Clube (SAF) — ICP primário.</b> A dor concreta não é monitorar o elenco: é <b>não contratar um problema</b>. Gatilho claro na janela, ciclo curto.</li>
+          <li><b>Federação, CBF, STJD — alto prestígio.</b> Hoje o processo é reativo e por denúncia. Precisa de triagem sistemática e fundamentável em despacho.</li>
+          <li><b>Operadora, área de integridade — restrito.</b> Compra <b>papel</b>, não predição: registro datado, com fonte oficial e hash, para provar diligência à SPA/MF.</li>
+          <li class="no"><b>Operadora, mesa de trading — não atendido.</b> É quem mais pagaria. Vender granularidade de atleta à precificação de micro-mercado alimentaria exatamente a vulnerabilidade que o projeto existe para reduzir.</li>
+        </ul>
+        <p class="note src">Decisão formalizada em termo de uso e licenciamento, com controle técnico por perfil de credencial.</p>
+      </div>
+      <div class="card thr">
+        <div class="thr-head">
+          <div>
+            <div class="idx">LIMIAR DE ALERTA</div>
+            <div class="thr-val"><span id="thrP">70</span><span style="font-size:.45em; color:var(--ink-3); font-family:'IBM Plex Mono',monospace">&nbsp;percentil</span></div>
+          </div>
+          <span class="pill" id="thrBadge"><i class="sq" style="background:var(--good)"></i>medido</span>
+        </div>
+        <input id="thr" type="range" min="50" max="90" step="1" value="70"
+               aria-label="Percentil de corte do alerta, de 50 a 90">
+        <div class="thr-scale"><span>p50 · mais captura</span><span>p90 · menos ruído</span></div>
+        <hr class="rule">
+        <div style="display:flex; flex-direction:column; gap:6px">
+          <div style="display:flex; align-items:baseline; justify-content:space-between; gap:10px">
+            <span class="note" style="color:var(--ink-2)">Alertas por rodada</span>
+            <span class="mono" style="color:var(--warn); font-weight:600" id="thrAl">3,0</span>
+          </div>
+          <div class="dots" id="thrDots"></div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:6px; margin-top:4px">
+          <div style="display:flex; align-items:baseline; justify-content:space-between; gap:10px">
+            <span class="note" style="color:var(--ink-2)">Sensibilidade sobre os incidentes conhecidos</span>
+            <span class="mono" style="color:var(--accent); font-weight:600" id="thrSe">38,5%</span>
+          </div>
+          <div class="meter"><i id="thrBar" style="width:38.5%"></i></div>
+          <span class="note" id="thrCases">5 de 13 incidentes capturados</span>
+        </div>
+        <hr class="rule">
+        <div class="presets" id="thrPresets">
+          <button class="preset on" type="button" data-p="70">Federação / STJD · 3 por rodada</button>
+          <button class="preset" type="button" data-p="90">Clube · 1 por rodada</button>
+          <button class="preset" type="button" data-p="50">Operadora · 10 por rodada</button>
+        </div>
+      </div>
+    </div>
+    <p class="note src r" style="--d:3">Valores medidos em p50, p70 e p90; posições intermediárias são interpoladas. A capacidade assumida por persona é <b>premissa não validada</b> — é o primeiro número a corrigir quando houver usuário real.</p>
+  </div>
+  <template class="notes">Momento interativo do pitch — <b>arrastar o slider ao vivo</b>. A frase: "baixar o corte captura mais e produz mais alarme falso; o limiar é parâmetro do produto, não constante escondida". Clicar nos três presets mostra que cada persona compra um produto diferente com o mesmo motor. <b>Fim dos 5 minutos de pitch aqui.</b></template>
+</section>
+
+<!-- ============ 8 · A BASE ============ -->
+<section class="slide" data-act="2" data-title="A base de dados">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 2 · O fundamento</div>
+    <h1 class="r" style="--d:1">A base</h1>
+    <div class="card r" style="--d:2">
+      <div class="scroll-x">
+        <table class="tbl">
+          <thead><tr><th>Conjunto</th><th>Período</th><th>Volume</th><th>O que carrega</th><th>Origem</th></tr></thead>
+          <tbody>
+            <tr><td>Série A histórica</td><td class="num">2014–2024</td><td class="num">4.179 jogos · 20.953 cartões</td><td>Gols, cartões, minutos, árbitros, mando</td><td>CBF / Adão Duque / Sofascore</td></tr>
+            <tr><td>Súmulas CBF</td><td class="num">2022–2026</td><td class="num">Séries A e B, D+1</td><td><b style="color:var(--accent)">Minuto exato e motivo textual do árbitro</b></td><td>Súmula eletrônica oficial (PDF)</td></tr>
+            <tr><td>Exposição a apostas</td><td class="num">2015–2024</td><td class="num">200 clube-temporadas</td><td>Posição no uniforme, exclusividade, vigência</td><td>Contratos e monitoramento de mídia</td></tr>
+            <tr><td><em>Ground truth</em> judicial</td><td class="num">2022</td><td class="num">14 incidentes</td><td>Atleta, confronto, minuto, evento pactuado, propina</td><td>GAECO/MP-GO · STJD · TJ-GO</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="split r" style="--d:3; align-items:center">
+      <div class="tl">
+        <div class="n"><div class="yr">DEZ/2018</div><div class="ttl">Lei 13.756</div><div class="dsc">Quota fixa legalizada. Pré-tratamento basal.</div></div>
+        <div class="n"><div class="yr">2019–2023</div><div class="ttl">Vácuo regulatório</div><div class="dsc">Operadoras <i>offshore</i>, sem tributação nem fiscalização de integridade. Penalidade Máxima.</div></div>
+        <div class="n"><div class="yr">DEZ/2023</div><div class="ttl">Lei 14.790</div><div class="dsc">Marco regulatório, SPA/MF, obrigação de monitorar e reportar.</div></div>
+      </div>
+      <div class="card flat">
+        <h3>Três falhas encontradas na auditoria — e corrigidas</h3>
+        <p class="note">O motivo do cartão da Série A estava sendo <b>descartado na gravação</b> por falta de coluna no schema herdado. A temporada 2025 estava <b>inteiramente ausente</b>. A Série B 2024 foi ingerida com <b>27 cartões</b> contra ~1.900 esperados — sem disparar alerta algum.</p>
+        <p class="note" style="color:var(--ink-2)">Para um produto vendido sobre a promessa de base auditável, uma ingestão parcial silenciosa é falha mais grave que o dado ausente.</p>
+      </div>
+    </div>
+  </div>
+  <template class="notes">Aqui muda o registro: acabou o pitch, começa a defesa técnica. Mostrar que a auditoria do próprio repositório encontrou as três falhas <b>e que elas foram corrigidas</b> — é o que dá crédito ao resto. A correção da 2025 e da Série B 2024 quase dobrou a base, e isso importa no slide 11.</template>
+</section>
+
+<!-- ============ 9 · MÉTODO ============ -->
+<section class="slide" data-act="2" data-title="Identificação causal">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 2 · Método</div>
+    <h1 class="r" style="--d:1">Como a causalidade é <span class="grad">identificada</span></h1>
+    <div class="split r" style="--d:2; align-items:start">
+      <div style="display:flex; flex-direction:column; gap:var(--gap)">
+        <div class="card">
+          <div class="idx">ESTIMADOR</div>
+          <h3>Efeitos Fixos Bidirecionais (TWFE)</h3>
+          <div class="formula">
+            cartões<sub>c,p</sub> = <b>β</b>·exposição<sub>c,t</sub> + <b>α</b><sub>clube</sub> + <b>γ</b><sub>ano</sub> + <b>X</b><sub>c,p</sub> + ε
+          </div>
+          <p class="note"><b style="color:var(--ink-2)">α</b> absorve tudo que é fixo do clube (estilo, torcida, orçamento). <b style="color:var(--ink-2)">γ</b> absorve o ano (VAR, mudança de diretriz de arbitragem, pandemia). <b style="color:var(--ink-2)">X</b> controla mando, saldo de gols e clássico estadual. Erros clusterizados por clube.</p>
+        </div>
+        <div class="card flat">
+          <div class="idx">MEDIDA DE TRATAMENTO</div>
+          <p class="note">A exposição é <b>contínua</b>, não binária: 0,75 pela posição da marca no uniforme e 0,25 pela quantidade de contratos. Um patrocínio máster exclusivo vale 1,0; uma marca na manga, muito menos.</p>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:var(--gap)">
+        <div class="card">
+          <div class="idx">A PERGUNTA QUE DERRUBA UM DiD</div>
+          <h3>Os clubes que fecharam contrato já estavam ficando mais indisciplinados antes?</h3>
+          <p class="note">Se sim, o efeito estimado é seleção, não causa. O teste é o estudo de eventos com adoção escalonada — os clubes assinam em anos diferentes, e cada um é alinhado ao seu próprio ano zero.</p>
+          <hr class="rule">
+          <div style="display:flex; flex-direction:column; gap:7px">
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:10px">
+              <span class="note">Coef. pré-tratamento · taxa de conversão</span>
+              <span class="pill good"><span class="mono">F = 0,366 · p = 0,696</span></span>
+            </div>
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:10px">
+              <span class="note">Coef. pré-tratamento · cartões totais</span>
+              <span class="pill good"><span class="mono">F = 2,430 · p = 0,104</span></span>
+            </div>
+          </div>
+          <p class="note" style="color:var(--ink-2); margin-top:4px">Conjuntamente indistinguíveis de zero. Tendências paralelas sustentadas — a quebra só aparece a partir de <span class="mono">e ≥ 0</span>.</p>
+        </div>
+        <div class="kicker">Sem esse teste, <strong>+0,2665</strong> seria uma correlação bem vestida.</div>
+      </div>
+    </div>
+  </div>
+  <template class="notes">Slide de arguição. Se a banca perguntar sobre Goodman-Bacon / heterogeneidade de efeito no TWFE escalonado: reconhecer a limitação, apontar que o estudo de eventos alinhado ao ano zero de cada clube é a mitigação adotada, e que estimadores robustos (Callaway-Sant'Anna) ficam como trabalho futuro. <b>Não inventar resultado que não foi rodado.</b></template>
+</section>
+
+<!-- ============ 10 · O QUE FOI REFUTADO ============ -->
+<section class="slide" data-act="2" data-title="O que foi refutado">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 2 · A honestidade</div>
+    <h1 class="r" style="--d:1">O que medimos e tivemos de <span class="grad">abandonar.</span></h1>
+    <p class="lead r" style="--d:2">A hipótese de partida era um priorizador de partidas suspeitas. Ela foi testada e não se sustentou.</p>
+    <div class="grid g3 r" style="--d:3">
+      <div class="card" style="border-color:color-mix(in oklab, var(--crit) 38%, transparent)">
+        <div class="idx" style="color:var(--crit)">REFUTADO · NÍVEL DA PARTIDA</div>
+        <div class="stat"><span class="v" style="color:var(--crit)">p = 0,118</span><span class="k">melhor ponto de toda a curva operacional</span></div>
+        <p class="note">Nenhum limiar captura mais casos conhecidos do que <b>sortear a mesma quantidade de partidas</b>. Nos tiers Top 1% e Top 5%, a captura é <b>zero</b>.</p>
+        <p class="note" style="color:var(--ink-3)">455 partidas sinalizadas em 4.559 para 14 incidentes.</p>
+      </div>
+      <div class="card" style="border-color:color-mix(in oklab, var(--crit) 38%, transparent)">
+        <div class="idx" style="color:var(--crit)">REFUTADO · CLASSIFICADOR</div>
+        <div class="stat"><span class="v" style="color:var(--crit)">100%</span><span class="k">de sensibilidade — medida <b>dentro da amostra de treino</b></span></div>
+        <p class="note">O <i>ground truth</i> entrava na construção dos rótulos e na avaliação. Com 14 positivos, qualquer classificador atinge 100% <i>in-sample</i>: o número não carregava informação. Fora da amostra, não generaliza.</p>
+      </div>
+      <div class="card" style="border-color:color-mix(in oklab, var(--crit) 38%, transparent)">
+        <div class="idx" style="color:var(--crit)">REMOVIDO · CIRCULARIDADE</div>
+        <h3>O índice embutia a exposição a apostas como <i>feature</i></h3>
+        <p class="note">Usar a mesma variável que a econometria <i>estima</i> como insumo de suspeição <b>confirma a hipótese por construção</b>. E é indefensável comercialmente: nenhum clube compra um produto que o penaliza pelo patrocinador na camisa.</p>
+      </div>
+    </div>
+    <div class="split r" style="--d:4; align-items:center">
+      <div class="kicker quote">
+        “Um trabalho que apresenta hipótese como evidência é frágil sob arguição.
+        Um que declara o que sabe e o que ainda supõe, não.”
+      </div>
+      <div class="card flat">
+        <h3>O que sobreviveu à medição</h3>
+        <p class="note">Os escores estatísticos de forma fechada <b>não</b> são treinados no <i>ground truth</i> — são fórmulas calibradas em distribuição basal, com teste binomial explícito. E a unidade de análise com sinal mudou: <b style="color:var(--accent)">do jogo para o atleta</b>.</p>
+      </div>
+    </div>
+  </div>
+  <template class="notes">O slide que mais vale numa defesa. Apresentar <b>com tranquilidade, não como desculpa</b>: a medição foi feita, refutou a hipótese, e o projeto mudou de posicionamento por causa dela. Se a banca já tinha essa crítica engatilhada, ela sai da mesa aqui. Emenda direta para o slide 11: "e o que sobrou, sobrou medido".</template>
+</section>
+
+<!-- ============ 11 · O PIVÔ ============ -->
+<section class="slide" data-act="2" data-title="Do jogo para o atleta">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 2 · O resultado</div>
+    <h1 class="r" style="--d:1">Do jogo para o atleta —<br>onde o sinal <span class="grad">existe.</span></h1>
+    <div class="split wide-left r" style="--d:2; align-items:center">
+      <div class="chart-wrap" id="cw2">
+        <svg id="chart2" viewBox="0 0 780 300" role="img"
+             aria-label="Precisão nos k primeiros colocados da fila. O escore supera a linha de base em k igual a 1, 3, 5 e 10, e fica de 2,4 a 3,0 vezes acima da taxa do acaso de 4 por cento."></svg>
+        <div class="tip" id="tip2"></div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:var(--gap)">
+        <div class="legend">
+          <span class="it"><i class="sq" style="background:var(--s1)"></i>Escore pré-jogo</span>
+          <span class="it"><i class="sq" style="background:var(--s2)"></i>Linha de base (cartões acumulados)</span>
+          <span class="it"><i class="ln"></i>Acaso · 4,0%</span>
+        </div>
+        <div class="stat-row" style="gap:clamp(10px,2vw,28px)">
+          <div class="stat"><span class="v grad">2,4×–3,0×</span><span class="k">acima de sortear entre os atletas relacionados</span></div>
+          <div class="stat"><span class="v" style="color:var(--good)">4 de 4</span><span class="k">valores de <span class="mono">k</span> em que supera a linha de base</span></div>
+        </div>
+        <div class="formula">
+          λ̂<sub>i</sub> = ( C<sup>1ºT</sup><sub>i,&lt;r</sub> + <b>M₀</b>·λ<sub>0,&lt;r</sub> ) / ( minutos<sub>i,&lt;r</sub> + <b>M₀</b> )
+          &nbsp;&nbsp;·&nbsp;&nbsp; escore = λ̂<sub>i</sub> × E[minutos<sub>i</sub>]
+        </div>
+        <p class="note">Encolhimento bayesiano empírico com <span class="mono">M₀ = 500</span> minutos. Sem ele, um atleta com um cartão em vinte minutos teria a maior taxa da liga por construção. Alvo observável e frequente — <b>cartão no 1º tempo</b> —, nunca os 14 casos judiciais.</p>
+      </div>
+    </div>
+    <p class="note src r" style="--d:3">Validação <i>walk-forward</i> sobre 210 rodadas e 107.990 registros atleta × partida. Base: Série A 2025–2026 e Série B 2022–2026. Passe o cursor nas barras.</p>
+  </div>
+  <template class="notes">O contraste com o slide 10 <b>é o argumento</b>: o índice de partida não superava o acaso em limiar nenhum; o nível do atleta supera — modestamente e de forma mensurável. Dizer a ressalva em voz alta: a linha de base continua próxima, e o ganho mede <b>atipicidade disciplinar, não conduta</b>. Se perguntarem por que 2,8× é pouco: é o único número do projeto medido sem vazamento, e é maior que zero, que era o do nível da partida.</template>
+</section>
+
+<!-- ============ 12 · VAZAMENTO ============ -->
+<section class="slide" data-act="2" data-title="Teste de vazamento">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 2 · Validação</div>
+    <h1 class="r" style="--d:1">Por que acreditamos <span class="grad">nesse número.</span></h1>
+    <p class="lead r" style="--d:2">Usar qualquer estatística da temporada completa para pontuar uma rodada dessa mesma temporada invalida o resultado. É o maior risco técnico do trabalho.</p>
+    <div class="split r" style="--d:3; align-items:stretch">
+      <div class="card" style="border-color:color-mix(in oklab, var(--good) 42%, transparent)">
+        <div class="idx" style="color:var(--good)">O TESTE QUE DECIDE</div>
+        <h3>Corromper o futuro e exigir que o passado não se mova</h3>
+        <p class="note">Todo o alvo a partir de um corte cronológico passa a marcar cartão no 1º tempo em <b>todas</b> as linhas seguintes, e o pipeline é recalculado. Os escores anteriores ao corte têm de ficar idênticos, bit a bit.</p>
+        <hr class="rule">
+        <div class="stat-row">
+          <div class="stat"><span class="v" style="color:var(--ink-2)">75.291</span><span class="k">linhas comparadas</span></div>
+          <div class="stat"><span class="v" style="color:var(--good)">0</span><span class="k">linhas divergentes</span></div>
+        </div>
+        <p class="note">O corte é feito sobre a ordem cronológica global de cada série, não sobre o número da rodada — a rodada 10 de 2023 vem depois da rodada 30 de 2022. A primeira versão do teste cometia esse erro.</p>
+      </div>
+      <div class="card">
+        <div class="idx">O TESTE QUE DESCARTAMOS</div>
+        <h3>Embaralhar a ordem temporal não testa nada</h3>
+        <p class="note">Ao destruir a cronologia, o embaralhamento faz a janela “anterior” de cada atleta conter partidas futuras. Isso <b>dá</b> informação ao modelo em vez de tirar — e o desempenho chegava a <b>subir</b>.</p>
+        <hr class="rule">
+        <div class="scroll-x">
+          <table class="tbl">
+            <thead><tr><th>k</th><th>Cronologia real</th><th>Ordem embaralhada</th></tr></thead>
+            <tbody>
+              <tr><td class="num">1</td><td class="num">2,37×</td><td class="num">2,25×</td></tr>
+              <tr><td class="num">3</td><td class="num">2,69×</td><td class="num">2,63×</td></tr>
+              <tr><td class="num">5</td><td class="num">2,80×</td><td class="num">2,67×</td></tr>
+              <tr><td class="num">10</td><td class="num">2,96×</td><td class="num">2,68×</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">Um teste que passa tanto com vazamento quanto sem ele não é uma guarda. Permanece publicado como <b>diagnóstico</b>; quem decide é a corrupção determinística.</p>
+      </div>
+    </div>
+    <p class="note src r" style="--d:4">Também não há parâmetro ajustado ao alvo: a taxa populacional λ₀ é ela própria acumulada no tempo. Estimá-la sobre a base inteira pareceria inofensivo — e a primeira versão do teste de vazamento a pegou.</p>
+  </div>
+  <template class="notes">Slide para quem vai perguntar "como sabemos que não há <i>data leakage</i>?". A resposta é que o teste ingênuo previsto na tarefa foi <b>rodado, reprovado como guarda e substituído</b>. Mostrar que o rigor sobreviveu até quando contrariou a conveniência — inclusive descobrindo que a λ₀ global vazava.</template>
+</section>
+
+<!-- ============ 13 · GOVERNANÇA ============ -->
+<section class="slide" data-act="2" data-title="Governança e LGPD">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 2 · Governança</div>
+    <h1 class="r" style="--d:1">O dano que o produto existe<br>para <span class="grad">não causar.</span></h1>
+    <p class="lead r" style="--d:2">Um ranking de atipicidade é composto majoritariamente por atletas que nunca foram investigados. Nomeá-los num sistema sobre integridade é exatamente o dano a evitar.</p>
+    <div class="grid g3 r" style="--d:3">
+      <div class="card">
+        <div class="idx">CAMADA ABERTA</div>
+        <h3>Não há atleta na resposta</h3>
+        <p class="note">Imprensa, academia e a área de integridade de operadoras recebem agregado em nível de partida. Sem granularidade que sirva como sinal de aposta.</p>
+      </div>
+      <div class="card">
+        <div class="idx">CAMADA IDENTIFICADA</div>
+        <h3>Nome apenas para quem já responde por aquelas pessoas</h3>
+        <p class="note">Federação/STJD e o clube, restrito ao próprio elenco na fila. A consulta individual de <i>due diligence</i> é reativa, responde a uma pergunta que o usuário já tinha — e fica <b>registrada</b>.</p>
+      </div>
+      <div class="card">
+        <div class="idx">NOMINÁVEIS</div>
+        <h3>Só condenação transitada em julgado</h3>
+        <p class="note">Hoje, 10 atletas da Operação Penalidade Máxima. Investigado sem condenação: ambiente restrito. Apenas estatisticamente atípico: <b>nunca nominado</b> — é o grupo mais numeroso e mais exposto.</p>
+      </div>
+    </div>
+    <div class="split r" style="--d:4; align-items:stretch">
+      <div class="card flat">
+        <div class="idx">A PALAVRA NA TELA VIRA PALAVRA NO DESPACHO</div>
+        <div class="scroll-x">
+          <table class="tbl">
+            <thead><tr><th>Não usar</th><th>Usar</th></tr></thead>
+            <tbody>
+              <tr><td style="color:var(--crit)">Suspeito, suspeição</td><td style="color:var(--good)">Atípico, atipicidade</td></tr>
+              <tr><td style="color:var(--crit)">Risco de fraude</td><td style="color:var(--good)">Prioridade de escrutínio</td></tr>
+              <tr><td style="color:var(--crit)">Detecção</td><td style="color:var(--good)">Triagem, priorização</td></tr>
+              <tr><td style="color:var(--crit)">Probabilidade</td><td style="color:var(--good)">Escore, percentil</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card flat">
+        <h3>Controles em operação</h3>
+        <ul class="ticks" style="margin-top:2px">
+          <li>O aviso interpretativo <b>viaja com o dado</b> — vem do JSON e da tabela <span class="mono">avisos</span>, não é texto fixo na tela.</li>
+          <li>Perfil e clube vêm <b>da credencial</b>, nunca da requisição. Tentar informá-los na URL devolve <span class="mono">400</span>.</li>
+          <li>O escore bruto nunca é exibido: é contagem esperada de cartões, e “0,18” seria lido como 18%. Mostra-se percentil e <i>tier</i>.</li>
+          <li>Art. 20 da LGPD — revisão de decisão automatizada exige <b>canal e procedimento reais</b>, não menção formal.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <template class="notes">Se a banca tiver um jurista, é aqui que ele entra. Ponto central: o escore de atipicidade <b>não é dado sensível pelo art. 5º, II</b>, mas o efeito prático de uma sinalização sobre a carreira de um atleta exige o mesmo nível de cuidado — por isso a anonimização é por camada e não por consentimento. Leis a citar na redação vigente: 13.709/2018, 13.756/2018, 14.790/2023.</template>
+</section>
+
+<!-- ============ 14 · A POC ============ -->
+<section class="slide" data-act="3" data-title="A POC">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 3 · Entrega</div>
+    <h1 class="r" style="--d:1">Quatro telas e uma API<br>que <span class="grad">já responde.</span></h1>
+    <div class="split r" style="--d:2; align-items:start">
+      <div style="display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px)">
+        <div class="grid g2">
+          <div class="card flat"><div class="idx">T1</div><h3>Fila de triagem da rodada</h3><p class="note">A tela principal. Federação e clube.</p></div>
+          <div class="card flat"><div class="idx">T2</div><h3>Busca e ficha do atleta</h3><p class="note"><i>Due diligence</i> antes de assinar contrato.</p></div>
+          <div class="card flat"><div class="idx">T3</div><h3>Dossiê de partida</h3><p class="note">Registro auditável para a operadora.</p></div>
+          <div class="card flat"><div class="idx">T4</div><h3>Panorama agregado</h3><p class="note">Camada aberta. Imprensa e academia.</p></div>
+        </div>
+        <ul class="ticks">
+          <li>O menu é montado a partir de <span class="mono">GET /v1/me</span>: <b>tela negada não aparece desabilitada — não aparece</b>.</li>
+          <li>FastAPI sobre SQLite com WAL, <i>schema</i> OpenAPI publicado, cliente tipado gerado do contrato.</li>
+          <li>A API <b>recusa subir</b> fora de <i>dev</i> se o segredo de pseudonimização não estiver configurado.</li>
+        </ul>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:10px">
+        <div class="mock">
+          <div class="bar"><span class="dot3"><i></i><i></i><i></i></span><span>T1 · Triagem da rodada — Série A · 2026 · Rodada 28</span></div>
+          <div class="warnrow">ⓘ Este escore mede <b style="color:var(--ink-2)">atipicidade estatística</b> do perfil disciplinar do atleta, e não probabilidade de fraude. A finalidade é priorizar atenção humana.</div>
+          <div class="row" style="background:var(--surface-2); border-bottom-color:var(--line-strong)">
+            <span class="sub">Corte: percentil 70</span><span class="sub">3 de 920 relacionados</span><span class="sub">ordenado por percentil</span>
+          </div>
+          <div class="row">
+            <span><span class="nm">Atleta A.</span><br><span class="sub">7 cartões no 1ºT · 2.430 min · titular</span></span>
+            <span class="mt">EXE × OUT</span><span class="tier t1">Extrema · p99</span>
+          </div>
+          <div class="row">
+            <span><span class="nm">Atleta B.</span><br><span class="sub">5 cartões no 1ºT · 1.980 min · titular</span></span>
+            <span class="mt">DEM × MOD</span><span class="tier t2">Alta · p95</span>
+          </div>
+          <div class="row">
+            <span><span class="nm">Atleta C.</span><br><span class="sub">4 cartões no 1ºT · 1.510 min · reserva</span></span>
+            <span class="mt">EXE × DEM</span><span class="tier t3">Média · p90</span>
+          </div>
+        </div>
+        <p class="note src">Nomes e confrontos fictícios. Na camada aberta esta mesma consulta não traz atleta algum.</p>
+      </div>
+    </div>
+  </div>
+  <template class="notes">Se houver rede e tempo, <b>abrir a API ao vivo</b> em /docs e bater na fila com a chave de federação, depois com a de operadora, para mostrar o mesmo endpoint devolvendo camadas diferentes. Se não houver, este mock basta. Frase: "o controle de exposição não está na tela, está na credencial".</template>
+</section>
+
+<!-- ============ 15 · POSICIONAMENTO ============ -->
+<section class="slide" data-act="3" data-title="Posicionamento">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 3 · Mercado</div>
+    <h1 class="r" style="--d:1">Complementar, <span class="grad">não substituto.</span></h1>
+    <div class="card r" style="--d:2">
+      <div class="scroll-x">
+        <table class="tbl">
+          <thead><tr><th>Incumbente</th><th>Força</th><th>Onde não competimos</th><th>Onde competimos</th></tr></thead>
+          <tbody>
+            <tr><td>Sportradar (UFDS)</td><td>Monitoramento global de odds em tempo real</td><td>Tempo real e cobertura internacional</td><td>Fonte oficial, explicabilidade, motivo do árbitro, Série B</td></tr>
+            <tr><td>Genius Sports</td><td>Dado oficial de ligas, integração com operadoras</td><td>Relacionamento com operadoras e dado <i>in-play</i></td><td>Proveniência auditável, custo, nicho nacional</td></tr>
+            <tr><td>IBIA</td><td>Rede de alerta entre operadoras</td><td>Acesso a dado transacional de apostas</td><td>Base pública verificável, uso por clubes e federações</td></tr>
+            <tr><td>Sofascore, Opta</td><td>Cobertura ampla e granular de eventos</td><td>Volume e amplitude de dado esportivo</td><td>Motivo textual do árbitro, cadeia de custódia</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="split r" style="--d:3; align-items:center">
+      <div class="kicker">
+        Eles operam sobre <strong>sinal de mercado</strong> — movimentação de odds, que antecede o evento e reflete intenção.<br>
+        Nós operamos sobre <strong>registro oficial</strong> — o que o árbitro escreveu, com hash e carimbo de data.
+        <span style="color:var(--accent)">Só o segundo instrui procedimento disciplinar.</span>
+      </div>
+      <div class="card flat">
+        <h3>Onde entra a receita</h3>
+        <div class="scroll-x">
+          <table class="tbl">
+            <thead><tr><th>Produto</th><th>Cliente</th><th>Modelo</th></tr></thead>
+            <tbody>
+              <tr><td>API de dado canônico</td><td>Mídia, fantasy</td><td>SaaS por volume</td></tr>
+              <tr><td>Dossiê de rodada</td><td>Federação, STJD</td><td>Assinatura institucional</td></tr>
+              <tr><td>Elenco e <i>due diligence</i></td><td>Clube SAF</td><td>Assinatura + consulta avulsa</td></tr>
+              <tr><td>Laudo técnico pericial</td><td>MP, advocacia desportiva</td><td>Projeto</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <template class="notes">Slide de resposta a objeção, não de venda. A ordem importa: primeiro admitir onde <b>não</b> competimos — isso compra credibilidade para a coluna da direita. Se perguntarem sobre tamanho de mercado: poucas dezenas de operadoras relevantes, ciclo longo, decisão política em federação — está declarado nos riscos, slide 16.</template>
+</section>
+
+<!-- ============ 16 · O QUE FALTA ============ -->
+<section class="slide" data-act="3" data-title="O que ainda não sabemos">
+  <div class="inner">
+    <div class="eyebrow r" style="--d:0">Ato 3 · Limites e encaminhamento</div>
+    <h1 class="r" style="--d:1">O que ainda <span class="grad">não sabemos.</span></h1>
+    <div class="split r" style="--d:2; align-items:start">
+      <div class="card" style="border-color:color-mix(in oklab, var(--warn) 34%, transparent)">
+        <div class="idx" style="color:var(--warn)">RISCOS DECLARADOS</div>
+        <ul class="ticks" style="margin-top:2px">
+          <li class="no"><b>Nenhuma entrevista com cliente potencial até aqui.</b> Tudo sobre dor, disposição a pagar e prioridade de compra é hipótese fundamentada — e está rotulado como tal no documento de análise.</li>
+          <li class="no"><b>Fonte única.</b> Todo o produto depende do portal da CBF. Mudança de layout do PDF ou de padrão de URL interrompe a operação.</li>
+          <li class="no"><b>Confundidores esportivos legítimos.</b> Arbitragem rigorosa no início, falta tática para conter contra-ataque, clássico de alta rivalidade. Cada um é um falso positivo com nome e sobrenome.</li>
+          <li class="no"><b>14 positivos é pouco.</b> Poder estatístico baixo para qualquer afirmação sobre manipulação — por isso o alvo do modelo é cartão no 1º tempo, não fraude.</li>
+          <li class="no"><b>As capacidades por persona</b> (3, 1 e 10 alertas por rodada) nunca foram medidas com usuário real.</li>
+        </ul>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:var(--gap)">
+        <div class="card">
+          <div class="idx">PRÓXIMA FASE · EVIDÊNCIA DE DEMANDA</div>
+          <ul class="ticks" style="margin-top:2px">
+            <li>Roteiro e execução de <b>entrevistas com as cinco personas</b>.</li>
+            <li>Teste das três hipóteses críticas de produto — a começar pela que sustenta o ICP: <i>due diligence</i> na janela de transferências.</li>
+            <li>Dossiê de evidência de demanda, que passa a substituir a hipótese no documento de visão.</li>
+          </ul>
+        </div>
+        <div class="card flat">
+          <h3>O que já está fora de dúvida</h3>
+          <p class="note">A esteira de súmulas opera em produção. O efeito causal está estimado com tendências paralelas validadas. O escore pré-jogo tem ganho medido <b>sem vazamento temporal</b>. A arquitetura de exposição por camada está implementada na API.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <template class="notes">Nunca terminar na fraqueza. A ordem é: riscos à esquerda, plano e o que está firme à direita, e <b>emenda imediata para o slide 17</b>. Se perguntarem "por que apresentar sem validação de mercado?": porque a Fase 1 mostrou que validar demanda sobre um produto tecnicamente insustentável teria sido desperdício — primeiro o número, depois o cliente.</template>
+</section>
+
+<!-- ============ 17 · FECHO ============ -->
+<section class="slide" data-act="3" data-title="Fecho">
+  <div class="inner center">
+    <div class="eyebrow r" style="--d:0">Obrigado</div>
+    <h1 class="r" style="--d:1">
+      O cliente não quer saber<br>se houve fraude.
+    </h1>
+    <h1 class="r grad" style="--d:2; font-size:clamp(30px, min(5.4vw, 7.6vh), 72px)">
+      Quer saber onde olhar primeiro.
+    </h1>
+    <p class="lead r" style="--d:3; margin-top:clamp(6px,1.6vh,16px)">
+      E essa é uma pergunta que a súmula oficial responde — com fórmula publicada,
+      memória de cálculo aberta e o PDF-fonte anexado com hash.
+    </p>
+    <div class="r" style="--d:4; display:flex; gap:9px; flex-wrap:wrap; justify-content:center; margin-top:clamp(6px,1.8vh,20px)">
+      <span class="pill"><i class="sq" style="background:var(--good)"></i>Esteira em produção</span>
+      <span class="pill"><i class="sq" style="background:var(--good)"></i>Efeito causal estimado</span>
+      <span class="pill"><i class="sq" style="background:var(--good)"></i>Escore validado sem vazamento</span>
+      <span class="pill"><i class="sq" style="background:var(--warn)"></i>Demanda: a próxima fase</span>
+    </div>
+    <p class="note r" style="--d:5; margin-top:clamp(8px,2vh,24px)">
+      Perguntas. &nbsp;·&nbsp; <kbd>O</kbd> abre a visão geral para saltar a qualquer slide.
+    </p>
+  </div>
+  <template class="notes">Parar de falar. Deixar a frase na tela durante as perguntas. Com <b>O</b> se salta direto ao slide que a pergunta pedir — 10 para a refutação, 11 para o resultado, 13 para LGPD, 9 para método.</template>
+</section>
+
+</main>
+
+<div class="zone l" id="zoneL" aria-hidden="true"></div>
+<div class="zone r" id="zoneR" aria-hidden="true"></div>
+
+<nav id="nav">
+  <div id="hints">
+    <span><kbd>←</kbd><kbd>→</kbd> navegar</span>
+    <span><kbd>O</kbd> visão geral</span>
+    <span><kbd>N</kbd> notas</span>
+    <span><kbd>S</kbd> cronômetro</span>
+    <span><kbd>T</kbd> tema</span>
+  </div>
+  <div id="navbtns">
+    <button class="nb" id="btnPrev" type="button" aria-label="Slide anterior">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <span id="counter">01 / 17</span>
+    <button class="nb" id="btnNext" type="button" aria-label="Próximo slide">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+    <button class="nb" id="btnGrid" type="button" aria-label="Visão geral dos slides">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+    </button>
+    <button class="nb" id="btnTheme" type="button" aria-label="Alternar tema claro e escuro">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+  </div>
+</nav>
+
+<div id="overview" role="dialog" aria-label="Visão geral dos slides">
+  <h2>Visão geral</h2>
+  <div id="ovGrid"></div>
+</div>
+
+<div id="notes" aria-live="polite">
+  <div class="lbl">Notas do apresentador</div>
+  <div id="notesBody"></div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var slides = Array.prototype.slice.call(document.querySelectorAll(".slide"));
+  var N = slides.length;
+  var cur = 0;
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---------- trilha de progresso, segmentada por ato ---------- */
+  var acts = [1,2,3].map(function(a){
+    return { a:a, ids: slides.map(function(s,i){ return s.dataset.act === String(a) ? i : -1; }).filter(function(i){ return i>=0; }) };
+  });
+  var actNames = { "1":"Ato 1 · Pitch", "2":"Ato 2 · Fundamento", "3":"Ato 3 · Produto" };
+  var progress = document.getElementById("progress");
+  acts.forEach(function(g){
+    var seg = document.createElement("div");
+    seg.className = "seg";
+    seg.style.setProperty("--w", g.ids.length);
+    g.ids.forEach(function(i){
+      var t = document.createElement("i");
+      t.className = "tick"; t.dataset.i = i;
+      seg.appendChild(t);
+    });
+    progress.appendChild(seg);
+  });
+  var ticks = Array.prototype.slice.call(progress.querySelectorAll(".tick"));
+
+  /* ---------- visão geral ---------- */
+  var ovGrid = document.getElementById("ovGrid");
+  slides.forEach(function(s, i){
+    var b = document.createElement("button");
+    b.className = "ov"; b.type = "button"; b.dataset.i = i;
+    b.innerHTML = '<span class="n">' + String(i+1).padStart(2,"0") + " · " + actNames[s.dataset.act].split(" · ")[0].toUpperCase() +
+                  '</span><span class="t"></span>';
+    b.querySelector(".t").textContent = s.dataset.title;
+    b.addEventListener("click", function(){ go(i); closeOverview(); });
+    ovGrid.appendChild(b);
+  });
+  var ovBtns = Array.prototype.slice.call(ovGrid.children);
+
+  /* ---------- contadores animados ---------- */
+  function fmt(n, dec){
+    return n.toLocaleString("pt-BR", { minimumFractionDigits: dec, maximumFractionDigits: dec });
+  }
+  function runCounters(slide){
+    slide.querySelectorAll("[data-count]").forEach(function(el){
+      var target = parseFloat(el.dataset.count);
+      var dec = (el.dataset.count.indexOf(".") >= 0) ? 1 : 0;
+      var sfx = el.dataset.suffix || "";
+      if (reduced){ el.textContent = fmt(target, dec) + sfx; return; }
+      var t0 = null, dur = 900;
+      function step(ts){
+        if (t0 === null) t0 = ts;
+        var p = Math.min(1, (ts - t0) / dur);
+        var e = 1 - Math.pow(1 - p, 3);
+        el.textContent = fmt(target * e, dec) + sfx;
+        if (p < 1) requestAnimationFrame(step);
+      }
+      el.textContent = fmt(0, dec) + sfx;
+      requestAnimationFrame(step);
+    });
+  }
+
+  /* ---------- navegação ---------- */
+  var notesBody = document.getElementById("notesBody");
+  var counter = document.getElementById("counter");
+  var actLabel = document.getElementById("actLabel");
+  var btnPrev = document.getElementById("btnPrev");
+  var btnNext = document.getElementById("btnNext");
+  var drawn = {};
+
+  function go(i){
+    i = Math.max(0, Math.min(N - 1, i));
+    slides.forEach(function(s, k){
+      s.classList.toggle("is-active", k === i);
+      s.classList.toggle("is-prev", k < i);
+      s.setAttribute("aria-hidden", k === i ? "false" : "true");
+    });
+    cur = i;
+    document.documentElement.setAttribute("data-act", slides[i].dataset.act);
+    actLabel.textContent = actNames[slides[i].dataset.act];
+    counter.textContent = String(i+1).padStart(2,"0") + " / " + String(N).padStart(2,"0");
+    ticks.forEach(function(t){
+      var ti = +t.dataset.i;
+      t.classList.toggle("done", ti < i);
+      t.classList.toggle("now", ti === i);
+    });
+    ovBtns.forEach(function(b, k){ b.classList.toggle("on", k === i); });
+    var tpl = slides[i].querySelector("template.notes");
+    notesBody.innerHTML = tpl ? tpl.innerHTML : "<em>Sem notas para este slide.</em>";
+    btnPrev.disabled = (i === 0);
+    btnNext.disabled = (i === N - 1);
+    slides[i].scrollTop = 0;
+
+    setTimeout(function(){ runCounters(slides[i]); }, reduced ? 0 : 260);
+    if (!drawn[i]) {
+      if (i === 2) { drawn[i] = true; setTimeout(drawParadoxo, reduced ? 0 : 320); }
+      if (i === 10){ drawn[i] = true; setTimeout(drawPrecisao, reduced ? 0 : 320); }
+    }
+  }
+  function next(){ go(cur + 1); }
+  function prev(){ go(cur - 1); }
+
+  btnNext.addEventListener("click", next);
+  btnPrev.addEventListener("click", prev);
+  document.getElementById("zoneR").addEventListener("click", next);
+  document.getElementById("zoneL").addEventListener("click", prev);
+
+  /* ---------- painéis ---------- */
+  var overview = document.getElementById("overview");
+  var notes = document.getElementById("notes");
+  function openOverview(){ overview.classList.add("on"); }
+  function closeOverview(){ overview.classList.remove("on"); }
+  function toggleOverview(){ overview.classList.toggle("on"); }
+  document.getElementById("btnGrid").addEventListener("click", toggleOverview);
+  overview.addEventListener("click", function(e){ if (e.target === overview) closeOverview(); });
+
+  /* ---------- tema ---------- */
+  function currentTheme(){
+    var set = document.documentElement.getAttribute("data-theme");
+    if (set) return set;
+    return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+  }
+  function toggleTheme(){
+    document.documentElement.setAttribute("data-theme", currentTheme() === "dark" ? "light" : "dark");
+    drawn = {};
+    if (cur === 2) drawParadoxo();
+    if (cur === 10) drawPrecisao();
+    drawn[cur] = true;
+  }
+  document.getElementById("btnTheme").addEventListener("click", toggleTheme);
+
+  /* ---------- cronômetro 15:00 ---------- */
+  var clock = document.getElementById("clock");
+  var timerEl = document.getElementById("timer");
+  var elapsed = 0, running = false, tick0 = null, raf = null;
+  function paint(){
+    var s = Math.floor(elapsed / 1000);
+    clock.textContent = String(Math.floor(s/60)).padStart(2,"0") + ":" + String(s%60).padStart(2,"0");
+    var act = +slides[cur].dataset.act;
+    var budget = act === 1 ? 300 : (act === 2 ? 660 : 900);
+    timerEl.classList.toggle("over", s > budget);
+    timerEl.title = act === 1
+      ? "Fase de pitch — orçamento 5:00 (S inicia/pausa, R zera)"
+      : "Orçamento total 15:00 (S inicia/pausa, R zera)";
+  }
+  function loop(ts){
+    if (!running) return;
+    if (tick0 === null) tick0 = ts;
+    elapsed += ts - tick0; tick0 = ts;
+    paint();
+    raf = requestAnimationFrame(loop);
+  }
+  function toggleTimer(){
+    running = !running; tick0 = null;
+    timerEl.classList.toggle("running", running);
+    if (running) raf = requestAnimationFrame(loop);
+    else if (raf) cancelAnimationFrame(raf);
+  }
+  function resetTimer(){
+    running = false; elapsed = 0; tick0 = null;
+    if (raf) cancelAnimationFrame(raf);
+    timerEl.classList.remove("running");
+    paint();
+  }
+  timerEl.addEventListener("click", toggleTimer);
+
+  /* botao com foco nao deve capturar a barra de espaco, que avanca o slide */
+  document.querySelectorAll(".nb, #timer, .preset").forEach(function(b){
+    b.addEventListener("click", function(){ b.blur(); });
+  });
+
+  /* ---------- teclado ---------- */
+  document.addEventListener("keydown", function(e){
+    if (e.target && /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName)) {
+      if (e.key !== "Escape") return;
+    }
+    var k = e.key;
+    if (k === "ArrowRight" || k === "PageDown" || k === " " || k === "Spacebar"){ e.preventDefault(); next(); }
+    else if (k === "ArrowLeft" || k === "PageUp"){ e.preventDefault(); prev(); }
+    else if (k === "Home"){ e.preventDefault(); go(0); }
+    else if (k === "End"){ e.preventDefault(); go(N-1); }
+    else if (k === "Escape"){ closeOverview(); notes.classList.remove("on"); }
+    else if (k === "o" || k === "O"){ toggleOverview(); }
+    else if (k === "n" || k === "N"){ notes.classList.toggle("on"); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "s" || k === "S"){ toggleTimer(); }
+    else if (k === "r" || k === "R"){ resetTimer(); }
+    else if (/^[0-9]$/.test(k)) {
+      // dígitos encadeados: 1 -> slide 1, 12 dentro de 900ms -> slide 12
+      typed += k;
+      clearTimeout(typeTimer);
+      typeTimer = setTimeout(function(){
+        var n = parseInt(typed, 10); typed = "";
+        if (n >= 1 && n <= N) go(n - 1);
+      }, 550);
+    }
+  });
+  var typed = "", typeTimer = null;
+
+  /* ---------- toque ---------- */
+  var tx = 0, ty = 0;
+  document.addEventListener("touchstart", function(e){
+    tx = e.changedTouches[0].clientX; ty = e.changedTouches[0].clientY;
+  }, { passive:true });
+  document.addEventListener("touchend", function(e){
+    var dx = e.changedTouches[0].clientX - tx;
+    var dy = e.changedTouches[0].clientY - ty;
+    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.6) { dx < 0 ? next() : prev(); }
+  }, { passive:true });
+
+  /* ============================================================
+     GRÁFICO 1 — Paradoxo disciplinar (índice, base 2017 = 100)
+     Duas medidas de escalas diferentes: indexadas a uma base
+     comum, nunca em dois eixos y.
+     ============================================================ */
+  var PARADOXO = [
+    { ano:2015, faltas:29.19, tau:0.1857 },
+    { ano:2016, faltas:31.22, tau:0.1584 },
+    { ano:2017, faltas:31.41, tau:0.1617 },
+    { ano:2018, faltas:31.11, tau:0.1686 },
+    { ano:2019, faltas:27.57, tau:0.1650 },
+    { ano:2020, faltas:31.22, tau:0.1550 },
+    { ano:2021, faltas:29.92, tau:0.1625 },
+    { ano:2022, faltas:26.88, tau:0.1994 },
+    { ano:2023, faltas:28.67, tau:0.1978 },
+    { ano:2024, faltas:25.36, tau:0.2198 }
+  ];
+  var css = function(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); };
+  var SVGNS = "http://www.w3.org/2000/svg";
+  function el(tag, attrs){
+    var n = document.createElementNS(SVGNS, tag);
+    for (var k in attrs) if (attrs.hasOwnProperty(k)) n.setAttribute(k, attrs[k]);
+    return n;
+  }
+
+  function drawParadoxo(){
+    var svg = document.getElementById("chart1");
+    var tip = document.getElementById("tip1");
+    var wrap = document.getElementById("cw1");
+    svg.textContent = "";
+
+    var W = 780, H = 330, L = 40, R = 122, T = 16, B = 34;
+    var base = PARADOXO[2];
+    var data = PARADOXO.map(function(d){
+      return { ano:d.ano, faltas:d.faltas, tau:d.tau,
+               iF: d.faltas / base.faltas * 100,
+               iT: d.tau / base.tau * 100 };
+    });
+    var yMin = 76, yMax = 142;
+    var x = function(i){ return L + i * (W - L - R) / (data.length - 1); };
+    var y = function(v){ return T + (yMax - v) / (yMax - yMin) * (H - T - B); };
+
+    [80,90,100,110,120,130,140].forEach(function(v){
+      var isBase = (v === 100);
+      svg.appendChild(el("line", { x1:L, x2:W-R+8, y1:y(v), y2:y(v),
+        class:"grid-line" + (isBase ? " base" : "") }));
+      var t = el("text", { x:L-8, y:y(v)+4, class:"axis-txt", "text-anchor":"end" });
+      t.textContent = v;
+      svg.appendChild(t);
+    });
+    var bl = el("text", { x:L+6, y:y(100)-8, class:"axis-txt" });
+    bl.textContent = "2017 = 100";
+    bl.setAttribute("fill", css("--ink-3"));
+    svg.appendChild(bl);
+
+    data.forEach(function(d, i){
+      var t = el("text", { x:x(i), y:H-10, class:"axis-txt", "text-anchor":"middle" });
+      t.textContent = "'" + String(d.ano).slice(2);
+      svg.appendChild(t);
+    });
+
+    var series = [
+      { key:"iF", color:css("--s2"), label:"Faltas por jogo",
+        delta:"−19,3% desde 2017", dy:0 },
+      { key:"iT", color:css("--s3"), label:"Cartões por falta",
+        delta:"+35,9% desde 2017", dy:0 }
+    ];
+
+    series.forEach(function(s){
+      var d = data.map(function(p, i){ return (i ? "L" : "M") + x(i) + " " + y(p[s.key]); }).join(" ");
+      var path = el("path", { d:d, fill:"none", stroke:s.color, "stroke-width":2.4,
+        "stroke-linecap":"round", "stroke-linejoin":"round" });
+      svg.appendChild(path);
+      if (!reduced) {
+        var len = path.getTotalLength();
+        path.style.strokeDasharray = len; path.style.strokeDashoffset = len;
+        path.style.transition = "stroke-dashoffset 1100ms cubic-bezier(.4,0,.2,1)";
+        requestAnimationFrame(function(){ path.style.strokeDashoffset = 0; });
+      }
+      data.forEach(function(p, i){
+        var last = (i === data.length - 1);
+        svg.appendChild(el("circle", { cx:x(i), cy:y(p[s.key]), r:last ? 5.5 : 3.4,
+          fill:s.color, stroke:css("--ground"), "stroke-width":2 }));
+      });
+      var lx = x(data.length - 1) + 12, ly = y(data[data.length-1][s.key]);
+      var lbl = el("text", { x:lx, y:ly - 2, class:"ser-label", fill:s.color });
+      lbl.textContent = s.label;
+      svg.appendChild(lbl);
+      var dl = el("text", { x:lx, y:ly + 14, class:"ser-delta", fill:css("--ink-3") });
+      dl.textContent = s.delta;
+      svg.appendChild(dl);
+    });
+
+    /* camada de hover: crosshair + tooltip */
+    var cross = el("line", { x1:0, x2:0, y1:T, y2:H-B, stroke:css("--line-strong"),
+      "stroke-width":1, "stroke-dasharray":"3 3", opacity:0 });
+    svg.appendChild(cross);
+    var hitR = el("rect", { x:L-10, y:T, width:(W-R+10)-(L-10), height:H-T-B,
+      fill:"transparent", style:"cursor:crosshair" });
+    svg.appendChild(hitR);
+
+    function hide(){ tip.classList.remove("on"); cross.setAttribute("opacity", 0); }
+    hitR.addEventListener("mouseleave", hide);
+    hitR.addEventListener("mousemove", function(ev){
+      var box = svg.getBoundingClientRect();
+      var px = (ev.clientX - box.left) / box.width * W;
+      var i = Math.max(0, Math.min(data.length - 1,
+        Math.round((px - L) / ((W - L - R) / (data.length - 1)))));
+      var d = data[i];
+      cross.setAttribute("x1", x(i)); cross.setAttribute("x2", x(i));
+      cross.setAttribute("opacity", 1);
+      tip.innerHTML =
+        '<div class="t-h">' + d.ano + '</div>' +
+        '<div class="t-r"><i class="sq" style="background:' + css("--s2") + '"></i>Faltas por jogo<b>' + fmt(d.faltas,2) + '</b></div>' +
+        '<div class="t-r"><i class="sq" style="background:' + css("--s3") + '"></i>Cartões por falta<b>' + fmt(d.tau,4) + '</b></div>' +
+        '<div class="t-r" style="margin-top:5px; color:var(--ink-3)">índice<b style="color:var(--ink-3)">' +
+          fmt(d.iF,1) + " · " + fmt(d.iT,1) + '</b></div>';
+      tip.classList.add("on");
+      var tw = tip.offsetWidth, px2 = x(i) / W * box.width;
+      tip.style.left = Math.max(0, Math.min(box.width - tw, px2 - tw/2)) + "px";
+      tip.style.top = Math.max(0, (y(Math.max(d.iF, d.iT)) / H * box.height) - tip.offsetHeight - 14) + "px";
+    });
+    wrap.addEventListener("mouseleave", hide);
+  }
+
+  /* ============================================================
+     GRÁFICO 2 — Precisão@k do escore pré-jogo
+     ============================================================ */
+  var PREC = [
+    { k:1,  escore:9.5,  base:9.1, hits:"20/210",   ganho:"2,37×" },
+    { k:3,  escore:10.8, base:9.1, hits:"68/630",   ganho:"2,69×" },
+    { k:5,  escore:11.2, base:9.2, hits:"118/1050", ganho:"2,80×" },
+    { k:10, escore:11.9, base:8.6, hits:"250/2100", ganho:"2,96×" }
+  ];
+  function topRounded(x, y, w, h, r){
+    r = Math.min(r, w/2, h);
+    return "M" + x + " " + (y+h) + " L" + x + " " + (y+r) +
+           " Q" + x + " " + y + " " + (x+r) + " " + y +
+           " L" + (x+w-r) + " " + y +
+           " Q" + (x+w) + " " + y + " " + (x+w) + " " + (y+r) +
+           " L" + (x+w) + " " + (y+h) + " Z";
+  }
+  function drawPrecisao(){
+    var svg = document.getElementById("chart2");
+    var tip = document.getElementById("tip2");
+    var wrap = document.getElementById("cw2");
+    svg.textContent = "";
+
+    var W = 780, H = 300, L = 42, R = 14, T = 26, B = 46;
+    var yMax = 14;
+    var y = function(v){ return T + (1 - v / yMax) * (H - T - B); };
+    var gw = (W - L - R) / PREC.length;
+    var bw = (gw * 0.60 - 2) / 2;
+
+    [0,2,4,6,8,10,12,14].forEach(function(v){
+      svg.appendChild(el("line", { x1:L, x2:W-R, y1:y(v), y2:y(v), class:"grid-line" }));
+      var t = el("text", { x:L-8, y:y(v)+4, class:"axis-txt", "text-anchor":"end" });
+      t.textContent = v + "%";
+      svg.appendChild(t);
+    });
+
+    var COL = { escore: css("--s1"), base: css("--s2") };
+    PREC.forEach(function(d, gi){
+      var cx = L + gi * gw + gw / 2;
+      [["escore", -1], ["base", 1]].forEach(function(pair){
+        var key = pair[0], side = pair[1];
+        var bx = cx + (side < 0 ? -(bw + 1) : 1);
+        var v = d[key], h = (H - T - B) * v / yMax;
+        var p = el("path", { d:topRounded(bx, y(v), bw, h, 4), fill:COL[key] });
+        svg.appendChild(p);
+        if (!reduced){
+          p.style.transformOrigin = "0 " + (H - B) + "px";
+          p.style.transform = "scaleY(0)";
+          p.style.transition = "transform 680ms cubic-bezier(.3,.8,.3,1) " + (gi * 70 + (side<0?0:60)) + "ms";
+          requestAnimationFrame(function(){ p.style.transform = "scaleY(1)"; });
+        }
+        var vl = el("text", { x:bx + bw/2, y:y(v) - 7, class:"ser-delta",
+          fill: key === "escore" ? COL.escore : css("--ink-3"), "text-anchor":"middle",
+          "font-weight": key === "escore" ? 600 : 400 });
+        vl.textContent = fmt(v,1) + "%";
+        svg.appendChild(vl);
+      });
+      var kl = el("text", { x:cx, y:H-24, class:"axis-txt", "text-anchor":"middle" });
+      kl.textContent = "k = " + d.k;
+      svg.appendChild(kl);
+      var gl = el("text", { x:cx, y:H-8, class:"ser-delta", "text-anchor":"middle", fill:css("--accent") });
+      gl.textContent = d.ganho + " o acaso";
+      svg.appendChild(gl);
+
+      var hit = el("rect", { x:L + gi*gw, y:T, width:gw, height:H-T-B, fill:"transparent" });
+      hit.addEventListener("mousemove", function(ev){
+        var box = svg.getBoundingClientRect();
+        tip.innerHTML =
+          '<div class="t-h">k = ' + d.k + ' primeiros da fila</div>' +
+          '<div class="t-r"><i class="sq" style="background:' + COL.escore + '"></i>Escore pré-jogo<b>' + fmt(d.escore,1) + '%</b></div>' +
+          '<div class="t-r"><i class="sq" style="background:' + COL.base + '"></i>Linha de base<b>' + fmt(d.base,1) + '%</b></div>' +
+          '<div class="t-r" style="margin-top:5px; color:var(--ink-3)">acertos<b style="color:var(--ink-3)">' + d.hits + '</b></div>';
+        tip.classList.add("on");
+        var tw = tip.offsetWidth;
+        var px = (L + gi*gw + gw/2) / W * box.width;
+        tip.style.left = Math.max(0, Math.min(box.width - tw, px - tw/2)) + "px";
+        tip.style.top = Math.max(0, (y(Math.max(d.escore, d.base)) / H * box.height) - tip.offsetHeight - 22) + "px";
+      });
+      hit.addEventListener("mouseleave", function(){ tip.classList.remove("on"); });
+      svg.appendChild(hit);
+    });
+
+    /* linha de referência do acaso */
+    svg.appendChild(el("line", { x1:L, x2:W-R, y1:y(4.0), y2:y(4.0),
+      stroke:css("--ink-3"), "stroke-width":2, "stroke-dasharray":"6 5" }));
+    var rl = el("text", { x:W-R, y:y(4.0)-8, class:"ser-delta", fill:css("--ink-3"), "text-anchor":"end" });
+    rl.textContent = "acaso · 4,0%";
+    svg.appendChild(rl);
+
+    wrap.addEventListener("mouseleave", function(){ tip.classList.remove("on"); });
+  }
+
+  /* ============================================================
+     SLIDER DE LIMIAR — trade-off captura × carga
+     Âncoras medidas em p50, p70, p90; entre elas, interpolação.
+     ============================================================ */
+  var ANCHORS = [
+    { p:50, al:5.0, casos:6 },
+    { p:70, al:3.0, casos:5 },
+    { p:90, al:1.0, casos:2 }
+  ];
+  var TOTAL_CASOS = 13;
+  function interp(p){
+    for (var i = 0; i < ANCHORS.length - 1; i++){
+      var a = ANCHORS[i], b = ANCHORS[i+1];
+      if (p >= a.p && p <= b.p){
+        var f = (p - a.p) / (b.p - a.p);
+        return { al: a.al + (b.al - a.al) * f, casos: a.casos + (b.casos - a.casos) * f };
+      }
+    }
+    return { al: ANCHORS[ANCHORS.length-1].al, casos: ANCHORS[ANCHORS.length-1].casos };
+  }
+  var thr = document.getElementById("thr");
+  var thrP = document.getElementById("thrP");
+  var thrAl = document.getElementById("thrAl");
+  var thrSe = document.getElementById("thrSe");
+  var thrBar = document.getElementById("thrBar");
+  var thrCases = document.getElementById("thrCases");
+  var thrDots = document.getElementById("thrDots");
+  var thrBadge = document.getElementById("thrBadge");
+  var presets = Array.prototype.slice.call(document.querySelectorAll(".preset"));
+
+  for (var i = 0; i < 10; i++){
+    var d = document.createElement("i");
+    d.className = "d";
+    thrDots.appendChild(d);
+  }
+  var dotEls = Array.prototype.slice.call(thrDots.children);
+
+  function renderThr(){
+    var p = +thr.value;
+    var r = interp(p);
+    var sens = r.casos / TOTAL_CASOS * 100;
+    var measured = ANCHORS.some(function(a){ return a.p === p; });
+
+    thr.style.setProperty("--fill", ((p - 50) / 40 * 100) + "%");
+    thrP.textContent = p;
+    thrAl.textContent = fmt(r.al, 1);
+    thrSe.textContent = fmt(sens, 1) + "%";
+    thrBar.style.width = sens + "%";
+    thrCases.textContent = measured
+      ? (Math.round(r.casos) + " de " + TOTAL_CASOS + " incidentes capturados")
+      : ("≈ " + fmt(r.casos, 1) + " de " + TOTAL_CASOS + " incidentes — valor interpolado");
+    thrBadge.innerHTML = measured
+      ? '<i class="sq" style="background:' + css("--good") + '"></i>medido'
+      : '<i class="sq" style="background:' + css("--ink-3") + '"></i>interpolado';
+    var lit = Math.round(r.al);
+    dotEls.forEach(function(el2, k){ el2.classList.toggle("on", k < lit); });
+    presets.forEach(function(b){ b.classList.toggle("on", +b.dataset.p === p); });
+  }
+  thr.addEventListener("input", renderThr);
+  presets.forEach(function(b){
+    b.addEventListener("click", function(){ thr.value = b.dataset.p; renderThr(); });
+  });
+  renderThr();
+
+  /* ---------- redesenho responsivo ---------- */
+  var rz = null;
+  window.addEventListener("resize", function(){
+    clearTimeout(rz);
+    rz = setTimeout(function(){
+      if (cur === 2 && drawn[2]) drawParadoxo();
+      if (cur === 10 && drawn[10]) drawPrecisao();
+    }, 220);
+  });
+
+  /* ---------- arranque ---------- */
+  paint();
+  go(0);
+})();
+</script>
+</body>
+</html>
