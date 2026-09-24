@@ -2,39 +2,45 @@ import { Callout } from "@/components/ui/Callout";
 import { EmptyState } from "@/components/ui/EmptyState";
 import { RodadaFiltros } from "@/components/fila-triagem/RodadaFiltros";
 import { FilaTriagemPainel } from "@/components/fila-triagem/FilaTriagemPainel";
-import { getFilaTriagem } from "@/lib/mock/filaTriagem";
-import { ANOS_DISPONIVEIS, COMPETICOES, TOTAL_RODADAS } from "@/lib/mock/opcoesRodada";
-import { exigirAcessoTela } from "@/lib/mock/acesso";
+import { exigirAcessoTela } from "@/lib/api/sessao";
+import { getCobertura } from "@/lib/api/cobertura";
+import { getFilaTriagem } from "@/lib/api/fila";
+import { TOTAL_RODADAS, lerInteiro, lerSerie, primeiroParam } from "@/lib/opcoes";
 
-type ValorParam = string | string[] | undefined;
-
-function primeiro(valor: ValorParam): string | undefined {
-  return Array.isArray(valor) ? valor[0] : valor;
-}
-
-function lerCompeticao(valor: ValorParam): string {
-  const v = primeiro(valor);
-  return COMPETICOES.some((c) => c.slug === v) ? (v as string) : COMPETICOES[0].slug;
-}
-
-function lerAno(valor: ValorParam): number {
-  const n = Number(primeiro(valor));
-  return (ANOS_DISPONIVEIS as readonly number[]).includes(n) ? n : ANOS_DISPONIVEIS[0];
-}
-
-function lerRodada(valor: ValorParam): number {
-  const n = Number(primeiro(valor));
-  return Number.isInteger(n) && n >= 1 && n <= TOTAL_RODADAS ? n : 1;
+function lerPercentil(valor: string | string[] | undefined): number | undefined {
+  const n = Number(primeiroParam(valor));
+  return primeiroParam(valor) !== undefined && Number.isFinite(n) && n >= 0 && n <= 100 ? n : undefined;
 }
 
 export default async function TriagemPage({ searchParams }: PageProps<"/triagem">) {
-  const sp = await searchParams;
-  const competicao = lerCompeticao(sp.competicao);
-  const ano = lerAno(sp.ano);
-  const rodada = lerRodada(sp.rodada);
-
   const perfil = await exigirAcessoTela("fila-triagem");
-  const fila = await getFilaTriagem({ competicao, ano, rodada, clubeSlug: perfil.clube?.slug });
+  const [sp, cobertura] = await Promise.all([searchParams, getCobertura()]);
+
+  // Sem filtro na URL, abre na temporada mais recente com escore, na última rodada com escalação.
+  const serie = lerSerie(sp.serie);
+  const temporadas = cobertura[serie].fila;
+  const anoPedido = lerInteiro(sp.ano);
+  const temporada = temporadas.find((t) => t.temporada === anoPedido) ?? temporadas[0];
+
+  if (!temporada) {
+    return (
+      <EmptyState
+        titulo="Sem escore pré-jogo para esta série."
+        descricao="A fila de triagem depende da escalação publicada na súmula eletrônica."
+      />
+    );
+  }
+
+  const rodadaPedida = lerInteiro(sp.rodada);
+  const rodada = rodadaPedida && rodadaPedida <= TOTAL_RODADAS ? rodadaPedida : temporada.ultima_rodada;
+
+  const fila = await getFilaTriagem({
+    serie,
+    ano: temporada.temporada,
+    rodada,
+    percentil: lerPercentil(sp.percentil),
+    avisoInterpretativo: perfil.avisoInterpretativo,
+  });
 
   return (
     <div className="mx-auto flex max-w-4xl flex-col gap-4">
@@ -43,7 +49,12 @@ export default async function TriagemPage({ searchParams }: PageProps<"/triagem"
           Triagem da rodada
           {fila.clubeEscopo ? ` — Elenco do ${fila.clubeEscopo.nome}` : ""}
         </h1>
-        <RodadaFiltros competicao={competicao} ano={ano} rodada={rodada} />
+        <RodadaFiltros
+          serie={serie}
+          ano={temporada.temporada}
+          rodada={rodada}
+          anos={temporadas.map((t) => t.temporada)}
+        />
       </div>
 
       {!fila.escalacaoPublicada ? (
@@ -60,9 +71,12 @@ export default async function TriagemPage({ searchParams }: PageProps<"/triagem"
             </Callout>
           )}
           <FilaTriagemPainel
+            // Remonta quando a rodada muda, para o slider voltar ao corte que o backend aplicou.
+            key={`${serie}-${temporada.temporada}-${rodada}`}
             itens={fila.itens}
             totalRelacionados={fila.totalRelacionados}
-            percentilInicial={perfil.limiarPadrao}
+            totalSinalizados={fila.totalSinalizados}
+            percentilAplicado={fila.percentilAplicado}
           />
         </>
       )}

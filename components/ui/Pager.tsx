@@ -6,6 +6,8 @@ interface PagerProps {
   consulta: string;
   pagina: number;
   totalPaginas: number;
+  /** Outros filtros da tela, mantidos ao trocar de página (ex.: série e temporada). */
+  parametros?: Record<string, string>;
 }
 
 const BOTAO_CLASSE =
@@ -13,22 +15,22 @@ const BOTAO_CLASSE =
 const BOTAO_DESATIVADO_CLASSE =
   "flex size-8 items-center justify-center rounded border border-zinc-200 text-zinc-300 dark:border-zinc-800 dark:text-zinc-700";
 
-function href(basePath: string, consulta: string, pagina: number): string {
-  const params = new URLSearchParams();
+function href(basePath: string, consulta: string, pagina: number, parametros: Record<string, string> = {}): string {
+  const params = new URLSearchParams(parametros);
   if (consulta) params.set("q", consulta);
   params.set("pagina", String(pagina));
   return `${basePath}?${params.toString()}`;
 }
 
-/** Pagina uma tabela (10 por página) mantendo a consulta atual na URL. Genérico — usado por atletas e partidas. */
-export function Pager({ basePath, consulta, pagina, totalPaginas }: PagerProps) {
+/** Pagina uma tabela mantendo a consulta e os filtros atuais na URL. Genérico, sem conhecimento de domínio. */
+export function Pager({ basePath, consulta, pagina, totalPaginas, parametros }: PagerProps) {
   if (totalPaginas <= 1) return null;
 
   return (
     <div className="flex items-center justify-between gap-4">
       {pagina > 1 ? (
         <Link
-          href={href(basePath, consulta, pagina - 1)}
+          href={href(basePath, consulta, pagina - 1, parametros)}
           aria-label="Página anterior"
           title="Página anterior"
           className={BOTAO_CLASSE}
@@ -45,7 +47,7 @@ export function Pager({ basePath, consulta, pagina, totalPaginas }: PagerProps) 
       </span>
       {pagina < totalPaginas ? (
         <Link
-          href={href(basePath, consulta, pagina + 1)}
+          href={href(basePath, consulta, pagina + 1, parametros)}
           aria-label="Próxima página"
           title="Próxima página"
           className={BOTAO_CLASSE}

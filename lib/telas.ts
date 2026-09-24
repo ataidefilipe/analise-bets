@@ -37,11 +37,3 @@ export const TELAS: readonly TelaConfig[] = [
     descricaoCurta: "Cartões por clube ou rodada, sem nenhum atleta.",
   },
 ];
-
-export function getTelaConfig(id: TelaId): TelaConfig {
-  const tela = TELAS.find((t) => t.id === id);
-  if (!tela) {
-    throw new Error(`Tela desconhecida: ${id}`);
-  }
-  return tela;
-}

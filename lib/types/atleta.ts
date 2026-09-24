@@ -1,3 +1,5 @@
+import type { Serie } from "@/lib/opcoes";
+
 /** Opaco (doc 03, §1.2) — o front não deriva nada dele nem assume formato. */
 export type AtletaId = string;
 
@@ -21,14 +23,19 @@ export interface AtletaResumo {
  */
 export interface TemporadaResumo {
   ano: number;
+  serie: Serie;
   clubeNome: string;
   partidasJogadas: number;
   minutosJogados: number;
   cartoesTotais: number;
   cartoes1T: number;
-  /** Rótulo pronto vindo do backend — o front nunca recalcula (doc 03, §1.3). */
-  tier: string;
-  percentil: number;
+  /**
+   * Rótulo pronto vindo do backend — o front nunca recalcula (doc 03, §1.3).
+   * `null` fora da janela do escore retrospectivo (doc 02, §7): a tela não
+   * promete escore que não existe.
+   */
+  tier: string | null;
+  percentil: number | null;
 }
 
 export type TipoCartao = "amarelo" | "vermelho";
@@ -38,12 +45,12 @@ export interface CartaoEvento {
   minuto: number;
   periodo: "1T" | "2T";
   tipo: TipoCartao;
-  categoria: string;
+  categoria: string | null;
   /** null = não registrado na súmula (doc 03, §3: ~86% dos casos na Série A). */
   motivoCompleto: string | null;
 }
 
-/** Formato esperado de `GET /atletas/{id}` (doc 01, ainda não recebido). */
+/** `GET /v1/atletas/{id}`, já adaptado. */
 export interface FichaAtleta {
   atletaId: AtletaId;
   nome: string;

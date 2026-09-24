@@ -38,6 +38,11 @@ foi entregue, para revisão antes de avançar para o próximo.
   décimo passo: perfil sem acesso a uma tela é redirecionado para `/` ao
   abrir a rota direto ou ao trocar de perfil já estando nela.
 
+- [`passo-11-integracao-api.md`](./passo-11-integracao-api.md) — décimo
+  primeiro passo: troca dos mocks pela API real, entrada por chave, corte da
+  fila no backend e matriz de perfis corrigida. **Supera a listagem completa
+  de atletas dos passos 5 e 6.**
+
 ## Convenção de componentes
 
 Cada pasta de componentes (`components/ui`, `components/layout`, e as que

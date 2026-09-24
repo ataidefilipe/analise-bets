@@ -1,57 +1,64 @@
 import { BuscaForm } from "@/components/ui/BuscaForm";
 import { Pager } from "@/components/ui/Pager";
+import { SerieTemporadaFiltros } from "@/components/ui/SerieTemporadaFiltros";
 import { ResultadoPartidasTabela } from "@/components/dossie-partida/ResultadoPartidasTabela";
 import { EmptyState } from "@/components/ui/EmptyState";
-import { listarPartidas } from "@/lib/mock/partidas";
-import { exigirAcessoTela } from "@/lib/mock/acesso";
-
-const POR_PAGINA = 10;
-
-function primeiro(valor: string | string[] | undefined): string | undefined {
-  return Array.isArray(valor) ? valor[0] : valor;
-}
-
-function lerPagina(valor: string | string[] | undefined): number {
-  const n = Number(primeiro(valor));
-  return Number.isInteger(n) && n >= 1 ? n : 1;
-}
+import { exigirAcessoTela } from "@/lib/api/sessao";
+import { getCobertura } from "@/lib/api/cobertura";
+import { listarPartidas } from "@/lib/api/partidas";
+import { lerInteiro, lerSerie, primeiroParam } from "@/lib/opcoes";
 
 /**
  * O doc 03 não descreve uma tela de listagem para a T3 — assume que P3
  * chega numa partida específica por referência externa. Esta lista existe
- * só para permitir navegar até um dossiê durante o desenvolvimento/demo,
- * agora com busca e paginação equivalentes às da T2 (a pedido do usuário).
+ * para navegar até um dossiê, agora sobre `GET /v1/partidas`: busca por nome
+ * de clube e paginação feitas no backend.
  */
 export default async function PartidasPage({ searchParams }: PageProps<"/partidas">) {
   await exigirAcessoTela("dossie-partida");
-  const sp = await searchParams;
-  const consulta = (primeiro(sp.q) ?? "").trim();
+  const [sp, cobertura] = await Promise.all([searchParams, getCobertura()]);
+  const serie = lerSerie(sp.serie);
+  const anoPedido = lerInteiro(sp.ano);
+  const ano = anoPedido && cobertura[serie].temporadas.includes(anoPedido) ? anoPedido : undefined;
+  const consulta = (primeiroParam(sp.q) ?? "").trim();
   const buscaCurta = consulta.length > 0 && consulta.length < 3;
 
-  const todas = buscaCurta ? [] : await listarPartidas(consulta);
-  const totalPaginas = Math.max(1, Math.ceil(todas.length / POR_PAGINA));
-  const pagina = Math.min(lerPagina(sp.pagina), totalPaginas);
-  const itensDaPagina = todas.slice((pagina - 1) * POR_PAGINA, pagina * POR_PAGINA);
+  const pagina = buscaCurta
+    ? null
+    : await listarPartidas({ serie, ano, consulta: consulta || undefined, pagina: lerInteiro(sp.pagina) });
+
+  const filtros: Record<string, string> = ano ? { serie, ano: String(ano) } : { serie };
 
   return (
     <div className="mx-auto flex max-w-2xl flex-col gap-4">
       <div className="flex flex-col gap-2">
         <h1 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">Partidas monitoradas</h1>
-        <BuscaForm basePath="/partidas" valorInicial={consulta} placeholder="nome de um dos clubes..." />
+        <SerieTemporadaFiltros
+          serie={serie}
+          ano={ano}
+          anosPorSerie={{ A: cobertura.A.temporadas, B: cobertura.B.temporadas }}
+          permitirTodas
+        />
+        <BuscaForm basePath="/partidas" valorInicial={consulta} placeholder="nome de um dos clubes..." parametros={filtros} />
       </div>
 
-      {buscaCurta ? (
+      {buscaCurta || !pagina ? (
         <p className="text-sm text-zinc-500 dark:text-zinc-400">Digite ao menos 3 caracteres para buscar.</p>
-      ) : todas.length === 0 ? (
-        <EmptyState
-          titulo="Nenhuma partida encontrada."
-          descricao="Tente buscar pelo nome de um dos clubes."
-        />
+      ) : pagina.itens.length === 0 ? (
+        <EmptyState titulo="Nenhuma partida encontrada." descricao="Tente buscar pelo nome de um dos clubes ou mudar a temporada." />
       ) : (
         <>
-          <p className="text-sm text-zinc-500 dark:text-zinc-400">{todas.length} partidas no total</p>
-          <ResultadoPartidasTabela itens={itensDaPagina} />
-          <Pager basePath="/partidas" consulta={consulta} pagina={pagina} totalPaginas={totalPaginas} />
+          <p className="text-sm text-zinc-500 dark:text-zinc-400">
+            {pagina.totalItens.toLocaleString("pt-BR")} partidas no total
+          </p>
+          <ResultadoPartidasTabela itens={pagina.itens} />
+          <Pager
+            basePath="/partidas"
+            consulta={consulta}
+            pagina={pagina.pagina}
+            totalPaginas={pagina.totalPaginas}
+            parametros={filtros}
+          />
         </>
       )}
     </div>

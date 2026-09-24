@@ -1,10 +1,12 @@
 import Link from "next/link";
-import { getPerfilAtual } from "@/lib/mock/perfilAtual";
-import { TELAS } from "@/lib/mock/telas";
+import { redirect } from "next/navigation";
+import { getPerfilAtual } from "@/lib/api/sessao";
+import { TELAS } from "@/lib/telas";
 import { EmptyState } from "@/components/ui/EmptyState";
 
 export default async function Home() {
   const perfil = await getPerfilAtual();
+  if (!perfil) redirect("/entrar");
   const telasVisiveis = TELAS.filter((tela) => perfil.telasPermitidas.includes(tela.id));
 
   return (

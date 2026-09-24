@@ -1,8 +1,7 @@
 import type { Perfil } from "@/lib/types/perfil";
-import { listarPersonasMock } from "@/lib/mock/me";
+import { sair } from "@/lib/api/acoes";
 import { HomeButton } from "@/components/layout/HomeButton";
 import { NavMenu } from "@/components/layout/NavMenu";
-import { PersonaSwitcher } from "@/components/layout/PersonaSwitcher";
 import { ThemeToggle } from "@/components/layout/ThemeToggle";
 
 interface AppShellProps {
@@ -27,13 +26,20 @@ export function AppShell({ perfil, children }: AppShellProps) {
                 Análise de integridade
               </p>
               <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                {perfil.nome} · {perfil.granularidade === "identificada" ? "dados identificados" : "dados agregados"}
+                {perfil.nome} · {perfil.camada === "identificada" ? "dados identificados" : "dados agregados"}
               </p>
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <PersonaSwitcher personas={listarPersonasMock()} ativa={perfil.persona} />
             <ThemeToggle />
+            <form action={sair}>
+              <button
+                type="submit"
+                className="rounded border border-zinc-300 px-3 py-1 text-xs text-zinc-600 transition-colors hover:border-brand hover:text-brand dark:border-zinc-700 dark:text-zinc-400 dark:hover:border-link dark:hover:text-link"
+              >
+                Sair
+              </button>
+            </form>
           </div>
         </div>
         <NavMenu perfil={perfil} />

@@ -3,7 +3,8 @@ import { formatarData } from "@/lib/format/partida";
 import { CopiarTexto } from "@/components/ui/CopiarTexto";
 
 interface ProcedenciaPartidaProps {
-  procedencia: Procedencia;
+  /** `null` onde não há súmula eletrônica com URL e hash registrados. */
+  procedencia: Procedencia | null;
 }
 
 const LINHA = "flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:gap-2";
@@ -15,6 +16,18 @@ const ROTULO = "shrink-0 text-xs font-medium tracking-wide text-zinc-500 upperca
  * de copiar, em vez de virar um rodapé técnico ilegível.
  */
 export function ProcedenciaPartida({ procedencia }: ProcedenciaPartidaProps) {
+  if (!procedencia) {
+    return (
+      <div className="flex flex-col gap-1 rounded-md border border-zinc-200 p-4 dark:border-zinc-800">
+        <h2 className="text-sm font-semibold text-zinc-900 dark:text-zinc-50">Procedência</h2>
+        <p className="text-sm text-zinc-500 dark:text-zinc-400">
+          Procedência documental não disponível para esta partida. A base registra URL e hash da súmula para a Série A
+          desde 2025 e a Série B desde 2024.
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div className="flex flex-col gap-2 rounded-md border border-zinc-200 p-4 dark:border-zinc-800">
       <h2 className="text-sm font-semibold text-zinc-900 dark:text-zinc-50">Procedência</h2>

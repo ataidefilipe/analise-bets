@@ -1,4 +1,5 @@
 import type { AtletaId } from "@/lib/types/atleta";
+import type { Serie } from "@/lib/opcoes";
 
 export type Condicao = "titular" | "reserva";
 
@@ -10,6 +11,7 @@ export interface ComponentesEscore {
   cartoes1T: number;
   minutosJogados: number;
   taxaAjustada: number;
+  minutosEsperados: number;
 }
 
 export interface FilaTriagemItem {
@@ -19,6 +21,7 @@ export interface FilaTriagemItem {
   numCamisa?: number;
   clubeSlug: string;
   clubeNome: string;
+  partidaId: number;
   confronto: string;
   condicao: Condicao;
   /** Rótulo pronto vindo do backend — o front nunca recalcula (doc 03, §1.3). */
@@ -27,18 +30,22 @@ export interface FilaTriagemItem {
   componentes: ComponentesEscore;
 }
 
-/** Formato esperado de `GET /rodadas/.../fila` (doc 01, ainda não recebido). */
+/** `GET /v1/rodadas/{serie}/{temporada}/{rodada}/fila`, já adaptado. */
 export interface FilaTriagemResponse {
-  competicao: string;
+  serie: Serie;
   ano: number;
   rodada: number;
-  /** false = súmula ainda não publicada pela CBF (doc 03, §6, 422) — não é erro. */
+  /** false = súmula ainda não publicada pela CBF (resposta 422, doc 03 §6) — não é erro. */
   escalacaoPublicada: boolean;
   /** true nas rodadas 1–5 (doc 03, §6, "Base rasa"). */
   baseRasa: boolean;
   avisoInterpretativo: string;
+  /** Corte que o backend aplicou — a fila vem recortada do servidor. */
+  percentilAplicado: number;
   totalRelacionados: number;
+  /** Quantos passaram do corte. `itens` pode trazer menos, limitado a 200. */
+  totalSinalizados: number;
   itens: FilaTriagemItem[];
-  /** Presente quando a resposta já vem escopada a um clube (perfil P1). */
+  /** Presente quando a resposta já vem escopada a um clube (perfil clube). */
   clubeEscopo?: { slug: string; nome: string };
 }

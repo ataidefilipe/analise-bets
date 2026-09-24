@@ -1,64 +1,71 @@
 # Arquitetura do front
 
 Base: Next.js 16 (App Router), React 19, TypeScript, Tailwind v4. Fonte da
-especificação de produto: `03_telas.md`, que por sua vez depende de
-`01_api_e_autorizacao.md` e `02_regras_de_negocio.md` — nenhum dos dois está
-neste repositório ainda, então tudo que hoje é "mock" está marcado como tal e
-isolado para ser trocado sem tocar em componente de tela.
+especificação de produto: `docs/especificacao/` do repositório `analise-bets`
+(01 — API e autorização, 02 — regras de negócio, 03 — telas). O contrato da
+API implementada está em `docs/integracao_frontend.md` do mesmo repositório.
+
+Desde o passo 11, o front consome a API real; não há mais dado simulado.
 
 ## Estrutura de pastas
 
 ```
 app/            Só roteamento (page/layout por rota) — sem lógica de negócio.
+  entrar/       Tela de entrada pela chave de API.
 components/
   ui/           Primitivos genéricos, sem conhecimento de domínio (Callout, EmptyState...).
-  layout/       Casca da aplicação: AppShell, menu, seletor de perfil de demonstração.
-  <tela>/       Uma pasta por tela (T1, T2...), criada quando a tela é implementada.
+  layout/       Casca da aplicação: AppShell, menu, formulário de entrada.
+  <tela>/       Uma pasta por tela (T1, T2...).
 lib/
-  types/        Tipos de domínio (Perfil, TelaId...).
-  mock/         Camada que hoje simula a API (docs 01/02 pendentes). Único lugar
-                a trocar quando a API real existir.
-  format/       Formatadores de exibição (criado conforme necessário).
+  api/          Cliente HTTP e adaptadores da API (só servidor). Único lugar que
+                conhece o formato de resposta da API.
+  types/        Tipos de domínio que os componentes consomem.
+  format/       Formatadores de exibição.
+  opcoes.ts     Séries e leitura de parâmetros de URL.
+  telas.ts      Metadados das 4 telas.
 docs/           Esta pasta.
 ```
 
 ## Decisões
 
-**Perfil e menu dinâmico (doc 03, §0).** `GET /v1/me` retorna quais telas o
-perfil pode ver; o front nunca decide isso sozinho. `lib/types/perfil.ts`
-define o formato (`Perfil`, `TelaId`), `lib/mock/me.ts` simula a resposta e
-`components/layout/NavMenu.tsx` filtra os links por `perfil.telasPermitidas`.
-Uma tela fora da lista não vira link desabilitado — não existe no DOM. O
-menu é só a primeira camada: cada `page.tsx` protegida também chama
-`exigirAcessoTela(tela)` (`lib/mock/acesso.ts`) antes de buscar qualquer
-dado, para que acesso direto pela URL — ou trocar de perfil já estando na
-tela — também redirecione para `/` (doc 03, §0; passo 10). Toda tela nova
-precisa dessa chamada logo na primeira linha do componente.
+**A chave de API nunca chega ao navegador.** Toda chamada à API acontece em
+componente de servidor ou Server Action (`lib/api/`). A chave fica num cookie
+`httpOnly` (`ab_api_key`), gravado por `lib/api/acoes.ts::entrar` só depois de
+validada em `GET /v1/me`. O JavaScript do navegador não consegue lê-la.
+`ANALISE_BETS_API_URL` aponta para a API (padrão `http://localhost:8000`).
 
-**Perfil mock trocável por cookie.** Sem doc 01, não há autenticação real.
-`components/layout/PersonaSwitcher.tsx` grava a persona escolhida em um
-cookie (`mock_persona`) só para permitir demonstrar/testar o menu com as 5
-personas do doc 03 (P1 a P5). Isso desaparece quando a autenticação real
-entrar — a origem do perfil passa a ser a sessão, não uma escolha manual.
+**Adaptadores isolam o formato da API.** Cada arquivo de `lib/api/` converte a
+resposta (`snake_case`, campos nulos) para os tipos de `lib/types/`. Os
+componentes de tela não conhecem a API: mudou o contrato, muda o adaptador.
+
+**Perfil e menu dinâmico (doc 03, §0).** A API não devolve lista de telas: o
+menu sai da `camada` de `/v1/me` (`lib/api/sessao.ts::montarPerfil`) —
+`identificada` vê as 4 telas; `aberta` vê só dossiê e panorama.
+`components/layout/NavMenu.tsx` filtra os links por `perfil.telasPermitidas`.
+Uma tela fora da lista não vira link desabilitado — não existe no DOM. Cada
+`page.tsx` protegida também chama `exigirAcessoTela(tela)` antes de buscar
+qualquer dado: sem sessão vai para `/entrar`, sem acesso vai para `/`. O
+backend recusa com 403 de qualquer forma — o front é só a primeira camada.
+
+**Estados de erro vêm do status HTTP** (`lib/api/cliente.ts::apiGet`): 401 →
+`/entrar`; 403 → `/`; 404 → `app/not-found.tsx`; 422 na fila → "escalação
+ainda não publicada", tratado como estado normal; resto → `app/error.tsx`,
+com mensagem genérica.
 
 **Tier nunca é recalculado no front.** O doc 03 é explícito que o front
 nunca recalcula tier a partir do escore (§1.3) e nunca mostra o escore bruto
-do pré-jogo (§1.4) — ambos vêm prontos do backend. Os tipos de cada tela só
-foram adicionados quando a tela em si foi implementada (T1: `lib/types/fila-triagem.ts`;
-T2: `lib/types/atleta.ts`), para não inventar um contrato antes de precisar
-dele. O vocabulário de tier em si (`lib/mock/tier.ts`) é compartilhado entre
-telas, mas continua sendo só um placeholder de mock — o doc 02 §5, que
-define o vocabulário real, ainda não chegou.
+do pré-jogo (§1.4) — ambos vêm prontos do backend. Fora da janela do escore
+retrospectivo, tier e percentil chegam nulos e a tela mostra "—".
+
+**O corte da fila é do backend.** A API devolve no máximo 200 itens e uma
+rodada tem ~450 relacionados; filtrar no navegador perderia gente. O slider
+grava `?percentil=` na URL e a página busca de novo (passo 11).
 
 **Rotas espelham o formato do endpoint, não decisão de UI.** `/atletas/[id]`
 (ficha) é uma rota dinâmica própria, não um parâmetro de query em `/atletas`
-— assim como o doc 01 já separa `/atletas` de `/atletas/{id}`. Isso também dá
-à ficha uma URL compartilhável e histórico de navegação de verdade (o
-`BackButton` volta para a busca, não para a home).
-
-**Persona P4.** Aparece na numeração do doc 03 mas não é citada em nenhuma
-das 4 telas (§0). Está modelada em `lib/mock/me.ts` sem nenhuma tela
-permitida, até o doc 02 esclarecer seu papel.
+— assim como a API separa `/atletas` de `/atletas/{id}`. O dossiê é
+`/partidas/[serie]/[temporada]/[id]`, porque `partida_id` sozinho repete entre
+séries e anos.
 
 ## Paleta de cores
 
@@ -95,6 +102,6 @@ operacional.
 
 ## Pendências conhecidas
 
-- Trocar `lib/mock/*` por chamadas reais assim que os docs 01/02 chegarem.
-- Vocabulário de tier (doc 02, §5) precisa validar os rótulos usados nas
-  telas quando forem implementadas.
+- Semântica do percentil da fila (pendência D1 do guia de integração): o p70
+  padrão coloca ~30% da rodada na fila. Decisão de produto em aberto.
+- Sem rate limiting nem expiração de chave na API: não expor fora de rede local.

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { AppShell } from "@/components/layout/AppShell";
-import { getPerfilAtual } from "@/lib/mock/perfilAtual";
+import { getPerfilAtual } from "@/lib/api/sessao";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -40,7 +40,12 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
             __html: `(function(){try{var t=localStorage.getItem("theme");var d=t?t==="dark":window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.classList.toggle("dark",d);}catch(e){}})();`,
           }}
         />
-        <AppShell perfil={perfil}>{children}</AppShell>
+        {perfil ? (
+          <AppShell perfil={perfil}>{children}</AppShell>
+        ) : (
+          // Sem sessão só existe a tela de entrada — ela não tem menu nem perfil a mostrar.
+          <main className="flex flex-1 items-center justify-center px-4 py-6">{children}</main>
+        )}
       </body>
     </html>
   );

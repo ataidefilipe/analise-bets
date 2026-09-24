@@ -8,6 +8,8 @@ interface BuscaFormProps {
   basePath: string;
   valorInicial: string;
   placeholder: string;
+  /** Outros filtros da tela, mantidos ao buscar e ao limpar (ex.: série e temporada). */
+  parametros?: Record<string, string>;
 }
 
 /**
@@ -16,7 +18,7 @@ interface BuscaFormProps {
  * não busca a cada tecla (doc 03, §3). O "x" dentro do campo limpa a busca
  * e volta para `basePath` sem `q` nem `pagina`.
  */
-export function BuscaForm({ basePath, valorInicial, placeholder }: BuscaFormProps) {
+export function BuscaForm({ basePath, valorInicial, placeholder, parametros = {} }: BuscaFormProps) {
   const [valor, setValor] = useState(valorInicial);
   const router = useRouter();
   const podeBuscar = valor.trim().length >= 3;
@@ -24,12 +26,13 @@ export function BuscaForm({ basePath, valorInicial, placeholder }: BuscaFormProp
   function buscar(e: FormEvent) {
     e.preventDefault();
     if (!podeBuscar) return;
-    router.push(`${basePath}?q=${encodeURIComponent(valor.trim())}`);
+    router.push(`${basePath}?${new URLSearchParams({ ...parametros, q: valor.trim() }).toString()}`);
   }
 
   function limpar() {
     setValor("");
-    router.push(basePath);
+    const params = new URLSearchParams(parametros).toString();
+    router.push(params ? `${basePath}?${params}` : basePath);
   }
 
   return (

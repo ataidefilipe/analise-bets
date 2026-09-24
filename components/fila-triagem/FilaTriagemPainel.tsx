@@ -1,6 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useRef, useState, useTransition } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import type { FilaTriagemItem } from "@/lib/types/fila-triagem";
 import { EmptyState } from "@/components/ui/EmptyState";
 import { FilaTriagemTabela } from "@/components/fila-triagem/FilaTriagemTabela";
@@ -8,25 +9,44 @@ import { FilaTriagemTabela } from "@/components/fila-triagem/FilaTriagemTabela";
 interface FilaTriagemPainelProps {
   itens: FilaTriagemItem[];
   totalRelacionados: number;
-  percentilInicial: number;
+  totalSinalizados: number;
+  /** Corte que o backend aplicou nesta resposta — ponto de partida do slider. */
+  percentilAplicado: number;
 }
 
-/** Doc 03, §2: "sem paginação no MVP — o corte já limita a fila a poucas dezenas". */
-const LIMITE_EXIBICAO = 200;
+/** Espera o usuário parar de arrastar antes de pedir a fila de novo. */
+const ESPERA_MS = 350;
 
 /**
  * O controle de corte (doc 03, §2): "a funcionalidade mais importante desta
  * tela, porque a decisão de produto é a carga de alerta, não o algoritmo".
- * Filtra no cliente a lista já carregada — sem round-trip ao servidor a
- * cada arraste — para dar a resposta "em tempo real" que o doc pede.
+ *
+ * O corte é aplicado no backend (a API devolve no máximo 200 itens e uma
+ * rodada tem ~450 relacionados, então filtrar no navegador perderia gente).
+ * O slider grava `?percentil=` na URL e a página de servidor busca a fila de
+ * novo; o contador vem de `totalSinalizados`, não do tamanho da lista.
  */
-export function FilaTriagemPainel({ itens, totalRelacionados, percentilInicial }: FilaTriagemPainelProps) {
-  const [percentil, setPercentil] = useState(percentilInicial);
+export function FilaTriagemPainel({ itens, totalRelacionados, totalSinalizados, percentilAplicado }: FilaTriagemPainelProps) {
+  const [percentil, setPercentil] = useState(Math.round(percentilAplicado));
+  const [carregando, iniciarTransicao] = useTransition();
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const espera = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
 
-  const filtrados = useMemo(
-    () => itens.filter((item) => item.percentil >= percentil).slice(0, LIMITE_EXIBICAO),
-    [itens, percentil],
-  );
+  useEffect(() => () => clearTimeout(espera.current), []);
+
+  function mudarCorte(valor: number) {
+    setPercentil(valor);
+    clearTimeout(espera.current);
+    espera.current = setTimeout(() => {
+      const params = new URLSearchParams(searchParams.toString());
+      params.set("percentil", String(valor));
+      iniciarTransicao(() => router.replace(`${pathname}?${params.toString()}`, { scroll: false }));
+    }, ESPERA_MS);
+  }
+
+  const truncada = totalSinalizados > itens.length;
 
   return (
     <div className="flex flex-col gap-4">
@@ -35,8 +55,8 @@ export function FilaTriagemPainel({ itens, totalRelacionados, percentilInicial }
           <label htmlFor="corte-percentil" className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
             Corte: percentil {percentil}
           </label>
-          <span className="text-sm text-zinc-500 dark:text-zinc-400">
-            {filtrados.length} de {totalRelacionados} relacionados
+          <span className="text-sm text-zinc-500 dark:text-zinc-400" aria-live="polite">
+            {carregando ? "atualizando..." : `${totalSinalizados} de ${totalRelacionados} relacionados`}
           </span>
         </div>
         <input
@@ -45,7 +65,7 @@ export function FilaTriagemPainel({ itens, totalRelacionados, percentilInicial }
           min={0}
           max={99}
           value={percentil}
-          onChange={(e) => setPercentil(Number(e.target.value))}
+          onChange={(e) => mudarCorte(Number(e.target.value))}
           className="accent-brand"
         />
         <p className="text-xs text-zinc-500 dark:text-zinc-400">
@@ -53,13 +73,22 @@ export function FilaTriagemPainel({ itens, totalRelacionados, percentilInicial }
         </p>
       </div>
 
-      {filtrados.length === 0 ? (
+      {itens.length === 0 ? (
         <EmptyState
           titulo="Nenhum atleta acima do corte atual."
           descricao="Reduza o percentil para ampliar a fila."
         />
       ) : (
-        <FilaTriagemTabela itens={filtrados} />
+        <>
+          {truncada && (
+            <p className="text-xs text-zinc-500 dark:text-zinc-400">
+              Exibindo os {itens.length} de maior percentil. Suba o corte para ver uma fila completa.
+            </p>
+          )}
+          <div className={carregando ? "opacity-60 transition-opacity" : undefined}>
+            <FilaTriagemTabela itens={itens} />
+          </div>
+        </>
       )}
     </div>
   );

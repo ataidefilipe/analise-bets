@@ -6,7 +6,11 @@ interface AtletasSinalizadosProps {
   atletas: AtletaSinalizado[];
 }
 
-/** Seção 5 do dossiê (doc 03, §4) — só camada identificada; quem chama decide se renderiza, via `perfil.granularidade`. */
+/**
+ * Seção 5 do dossiê (doc 03, §4) — só camada identificada; quem chama decide
+ * se renderiza, via `perfil.camada`. O corte é o limiar padrão do perfil, e
+ * para o perfil clube o backend já restringe ao próprio elenco.
+ */
 export function AtletasSinalizados({ atletas }: AtletasSinalizadosProps) {
   if (atletas.length === 0) {
     return (

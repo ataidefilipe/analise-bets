@@ -3,6 +3,21 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 Documentação do que foi construído (arquitetura, decisões e progresso por
 passo): [`docs/README.md`](./docs/README.md).
 
+## Rodando com a API
+
+O front consome a API do repositório `analise-bets` (`src/api`). Com ela no ar
+em `http://localhost:8000`:
+
+```bash
+cp .env.example .env.local
+pnpm install
+pnpm dev
+```
+
+Entre em `http://localhost:3000` com uma chave de API. As chaves de
+demonstração ficam em `data/restrito/chaves_api_poc.json` no repositório do
+backend. Detalhes em [`docs/passo-11-integracao-api.md`](./docs/passo-11-integracao-api.md).
+
 ## Getting Started
 
 First, run the development server:

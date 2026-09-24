@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { Perfil } from "@/lib/types/perfil";
-import { TELAS } from "@/lib/mock/telas";
+import { TELAS } from "@/lib/telas";
 
 interface NavMenuProps {
   perfil: Perfil;

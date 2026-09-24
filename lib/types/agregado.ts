@@ -1,3 +1,5 @@
+import type { Serie } from "@/lib/opcoes";
+
 export type ModoAgregacao = "clube" | "rodada";
 
 /**
@@ -13,7 +15,7 @@ export interface AgregadoClube {
 }
 
 export interface AgregadoRodada {
-  competicao: string;
+  serie: Serie;
   ano: number;
   rodada: number;
   partidas: number;

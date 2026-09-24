@@ -40,7 +40,8 @@ export function LinhaDoTempoCartoes({ eventos }: LinhaDoTempoCartoesProps) {
               {porAno.get(ano)!.map((evento, i) => (
                 <li key={i} className="flex flex-col gap-0.5 px-4 py-2 text-sm">
                   <span className="text-zinc-700 dark:text-zinc-300">
-                    {evento.minuto}&apos; · {evento.periodo} · {ROTULO_TIPO[evento.tipo]} · {evento.categoria}
+                    {evento.minuto}&apos; · {evento.periodo} · {ROTULO_TIPO[evento.tipo]}
+                    {evento.categoria ? ` · ${evento.categoria}` : ""}
                   </span>
                   <span className="text-xs text-zinc-500 italic dark:text-zinc-400">
                     {evento.motivoCompleto ?? "Motivo não registrado na súmula desta temporada."}

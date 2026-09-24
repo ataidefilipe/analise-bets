@@ -6,9 +6,8 @@ interface ResultadoBuscaTabelaProps {
 }
 
 /**
- * Tabela de atletas em ordem alfabética (já vem ordenada de
- * `listarAtletas`) — só a página atual (10 itens), decidida pelo servidor.
- * Só identificação e clubes — nunca escore ou tier (doc 03, §3).
+ * Resultado da busca, na ordem da API (atuação mais recente primeiro), no
+ * máximo 20 itens. Só identificação e clubes — nunca escore ou tier (doc 03, §3).
  */
 export function ResultadoBuscaTabela({ itens }: ResultadoBuscaTabelaProps) {
   return (

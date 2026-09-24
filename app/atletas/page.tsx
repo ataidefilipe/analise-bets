@@ -1,31 +1,22 @@
 import { BuscaForm } from "@/components/ui/BuscaForm";
-import { Pager } from "@/components/ui/Pager";
 import { ResultadoBuscaTabela } from "@/components/busca-atleta/ResultadoBuscaTabela";
 import { EmptyState } from "@/components/ui/EmptyState";
-import { listarAtletas } from "@/lib/mock/buscaAtletas";
-import { exigirAcessoTela } from "@/lib/mock/acesso";
+import { exigirAcessoTela } from "@/lib/api/sessao";
+import { LIMITE_BUSCA, buscarAtletas } from "@/lib/api/atletas";
+import { primeiroParam } from "@/lib/opcoes";
 
-const POR_PAGINA = 10;
-
-function primeiro(valor: string | string[] | undefined): string | undefined {
-  return Array.isArray(valor) ? valor[0] : valor;
-}
-
-function lerPagina(valor: string | string[] | undefined): number {
-  const n = Number(primeiro(valor));
-  return Number.isInteger(n) && n >= 1 ? n : 1;
-}
-
+/**
+ * T2, busca (doc 03, §3). Não há listagem prévia de atletas: a API só
+ * responde a uma busca de 3+ caracteres, com até 20 resultados e sem escore
+ * — a busca acha uma pessoa, não percorre a base (doc 01, §5). Por isso a
+ * tabela completa com paginação dos passos 5 e 6 foi retirada.
+ */
 export default async function AtletasPage({ searchParams }: PageProps<"/atletas">) {
   await exigirAcessoTela("busca-atleta");
   const sp = await searchParams;
-  const consulta = (primeiro(sp.q) ?? "").trim();
+  const consulta = (primeiroParam(sp.q) ?? "").trim();
   const buscaCurta = consulta.length > 0 && consulta.length < 3;
-
-  const todos = buscaCurta ? [] : await listarAtletas(consulta);
-  const totalPaginas = Math.max(1, Math.ceil(todos.length / POR_PAGINA));
-  const pagina = Math.min(lerPagina(sp.pagina), totalPaginas);
-  const itensDaPagina = todos.slice((pagina - 1) * POR_PAGINA, pagina * POR_PAGINA);
+  const resultados = consulta.length >= 3 ? await buscarAtletas(consulta) : [];
 
   return (
     <div className="mx-auto flex max-w-2xl flex-col gap-4">
@@ -34,18 +25,26 @@ export default async function AtletasPage({ searchParams }: PageProps<"/atletas"
         <BuscaForm basePath="/atletas" valorInicial={consulta} placeholder="nome ou apelido..." />
       </div>
 
-      {buscaCurta ? (
+      {consulta.length === 0 ? (
+        <EmptyState
+          titulo="Busque um atleta pelo nome ou apelido."
+          descricao="Digite ao menos 3 caracteres. A busca cobre atletas com súmula eletrônica: Série A desde 2025 e Série B desde 2022."
+        />
+      ) : buscaCurta ? (
         <p className="text-sm text-zinc-500 dark:text-zinc-400">Digite ao menos 3 caracteres para buscar.</p>
-      ) : todos.length === 0 ? (
+      ) : resultados.length === 0 ? (
         <EmptyState
           titulo="Nenhum atleta encontrado."
-          descricao="A base cobre Série A desde 2003 e Série B desde 2022."
+          descricao="A busca cobre atletas com súmula eletrônica: Série A desde 2025 e Série B desde 2022."
         />
       ) : (
         <>
-          <p className="text-sm text-zinc-500 dark:text-zinc-400">{todos.length} atletas no total</p>
-          <ResultadoBuscaTabela itens={itensDaPagina} />
-          <Pager basePath="/atletas" consulta={consulta} pagina={pagina} totalPaginas={totalPaginas} />
+          <ResultadoBuscaTabela itens={resultados} />
+          {resultados.length >= LIMITE_BUSCA && (
+            <p className="text-sm text-zinc-500 dark:text-zinc-400">
+              Mostrando os {LIMITE_BUSCA} primeiros resultados. Refine a busca para encontrar outro atleta.
+            </p>
+          )}
         </>
       )}
     </div>

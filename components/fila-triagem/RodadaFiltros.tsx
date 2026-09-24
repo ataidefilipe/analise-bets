@@ -1,12 +1,14 @@
 "use client";
 
 import { usePathname, useRouter } from "next/navigation";
-import { ANOS_DISPONIVEIS, COMPETICOES, TOTAL_RODADAS } from "@/lib/mock/opcoesRodada";
+import { SERIES, TOTAL_RODADAS, type Serie } from "@/lib/opcoes";
 
 interface RodadaFiltrosProps {
-  competicao: string;
+  serie: Serie;
   ano: number;
   rodada: number;
+  /** Temporadas com escore pré-jogo na série, vindas de `/v1/cobertura`. */
+  anos: number[];
 }
 
 const RODADAS = Array.from({ length: TOTAL_RODADAS }, (_, i) => i + 1);
@@ -14,31 +16,33 @@ const RODADAS = Array.from({ length: TOTAL_RODADAS }, (_, i) => i + 1);
 const CAMPO_SELECT_CLASSE =
   "rounded border border-zinc-300 bg-white px-2 py-1 text-sm text-zinc-700 focus-visible:border-brand focus-visible:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:focus-visible:border-link";
 
-/** Filtros de competição/ano/rodada (doc 03, §2). Cada troca navega para a mesma rota com a query atualizada, deixando o servidor buscar a nova fila. */
-export function RodadaFiltros({ competicao, ano, rodada }: RodadaFiltrosProps) {
+/**
+ * Filtros de série/ano/rodada (doc 03, §2). Cada troca navega para a mesma
+ * rota com a query atualizada, deixando o servidor buscar a nova fila. Trocar
+ * série ou ano limpa a rodada e o corte, para abrir na última rodada disponível.
+ */
+export function RodadaFiltros({ serie, ano, rodada, anos }: RodadaFiltrosProps) {
   const router = useRouter();
   const pathname = usePathname();
 
-  function atualizar(campo: "competicao" | "ano" | "rodada", valor: string) {
-    const params = new URLSearchParams({
-      competicao: campo === "competicao" ? valor : competicao,
-      ano: campo === "ano" ? valor : String(ano),
-      rodada: campo === "rodada" ? valor : String(rodada),
-    });
+  function atualizar(campo: "serie" | "ano" | "rodada", valor: string) {
+    const params = new URLSearchParams({ serie: campo === "serie" ? valor : serie });
+    if (campo !== "serie") params.set("ano", campo === "ano" ? valor : String(ano));
+    if (campo === "rodada") params.set("rodada", valor);
     router.push(`${pathname}?${params.toString()}`);
   }
 
   return (
     <div className="flex flex-wrap gap-2">
       <select
-        value={competicao}
-        onChange={(e) => atualizar("competicao", e.target.value)}
+        value={serie}
+        onChange={(e) => atualizar("serie", e.target.value)}
         className={CAMPO_SELECT_CLASSE}
-        aria-label="Competição"
+        aria-label="Série"
       >
-        {COMPETICOES.map((c) => (
-          <option key={c.slug} value={c.slug}>
-            {c.nome}
+        {SERIES.map((s) => (
+          <option key={s.codigo} value={s.codigo}>
+            {s.nome}
           </option>
         ))}
       </select>
@@ -48,7 +52,7 @@ export function RodadaFiltros({ competicao, ano, rodada }: RodadaFiltrosProps) {
         className={CAMPO_SELECT_CLASSE}
         aria-label="Ano"
       >
-        {ANOS_DISPONIVEIS.map((a) => (
+        {anos.map((a) => (
           <option key={a} value={a}>
             {a}
           </option>

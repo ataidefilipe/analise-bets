@@ -1,20 +1,41 @@
+import type { Serie } from "@/lib/opcoes";
+
 export interface Placar {
   mandante: number;
   visitante: number;
 }
 
-export interface IdentificacaoPartida {
-  partidaId: string;
-  competicao: string;
+/**
+ * A chave de uma partida é o trio série + temporada + id: `partida_id`
+ * sozinho repete entre séries e anos (guia do backend, §4.2).
+ */
+export interface ChavePartida {
+  serie: Serie;
   ano: number;
+  partidaId: number;
+}
+
+export interface IdentificacaoPartida extends ChavePartida {
   rodada: number;
-  /** ISO (AAAA-MM-DD). */
-  data: string;
-  arena: string;
-  arbitro: string;
+  /** ISO (AAAA-MM-DD). Pode faltar em partidas antigas da fonte. */
+  data: string | null;
+  arena: string | null;
+  arbitro: string | null;
   clubeMandante: string;
   clubeVisitante: string;
   placar: Placar;
+}
+
+/** Item da listagem `GET /v1/partidas` — navegação até um dossiê. */
+export interface PartidaResumo extends IdentificacaoPartida {
+  temProcedencia: boolean;
+}
+
+export interface PaginaPartidas {
+  itens: PartidaResumo[];
+  pagina: number;
+  totalPaginas: number;
+  totalItens: number;
 }
 
 /**
@@ -25,10 +46,10 @@ export interface Procedencia {
   fonte: string;
   urlSumula: string;
   sha256: string;
-  /** ISO (AAAA-MM-DD). */
-  dataDownload: string;
-  /** ISO (AAAA-MM-DD). */
-  dataProcessamento: string;
+  /** ISO-8601 com fuso. */
+  dataDownload: string | null;
+  /** ISO-8601 com fuso. */
+  dataProcessamento: string | null;
 }
 
 export type TipoCartaoPartida = "amarelo" | "vermelho";
@@ -51,15 +72,18 @@ export interface AtletaSinalizado {
   percentil: number;
 }
 
-/** Formato esperado de `GET /partidas/{id}/dossie` (doc 01, ainda não recebido). */
+/** `GET /v1/partidas/{serie}/{temporada}/{id}/dossie`, já adaptado. */
 export interface DossiePartida {
   identificacao: IdentificacaoPartida;
-  procedencia: Procedencia;
+  /** `null` onde não há súmula eletrônica com URL e hash registrados. */
+  procedencia: Procedencia | null;
   eventos: EventoPartida[];
   avisoInterpretativo: string;
-  escoreAnomaliaPercentil: number;
+  /** `null` fora da janela do escore de anomalia de partida (doc 02, §7). */
+  escoreAnomaliaPercentil: number | null;
+  tierPartida: string | null;
   /** Doc 03, §4: sem esta ressalva, a tela promete o que a validação não sustenta. */
   ressalvaPartida: string;
-  /** Ausente quando a granularidade do perfil não permite identificar (doc 03, §1.5). */
+  /** Ausente na camada aberta — a seção nem é renderizada (doc 03, §1.5). */
   atletasSinalizados?: AtletaSinalizado[];
 }
