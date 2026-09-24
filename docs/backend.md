@@ -380,19 +380,21 @@ de 5 GB em `sfo`. A API tem `DATABASE_URL` referenciando `${{Postgres.DATABASE_U
 `ANALISE_BETS_PSEUDONIMO_SECRET` foi gerado aleatoriamente e cadastrado sem expor seu valor. O
 Railway também recebeu start command, pré-deploy da carga, healthcheck `/saude` e política de restart.
 
-O deploy da API continua `FAILED`: ele ainda usa o commit remoto `9444f97`, sem `railway.json`,
-`requirements.txt` e os ajustes locais de PostgreSQL. Os logs não trouxeram a causa além de iniciar o
-builder. A publicação desses arquivos e um novo deploy são necessários para validar a API. Depois do
-deploy, validar `/saude` e a carga inicial no PostgreSQL.
+O commit `074043f` com a configuração foi publicado em `main` e o Railway iniciou um novo deploy da
+API, mas ele também terminou `FAILED`. Os logs MCP só mostram o agendamento do builder, sem causa ou
+logs de execução; portanto, o erro ainda precisa ser diagnosticado. Depois da correção, validar
+`/saude` e a carga inicial no PostgreSQL.
 
 Não foi criado domínio público para a API. A análise automática rejeitou essa exposição por tratar-se
 de uma API com dados identificados. Como o Next.js acessa a API no servidor, o front pode usar o DNS
 privado Railway da API por `ANALISE_BETS_API_URL`; isso mantém os dados atrás da autenticação sem
 precisar expor a API à internet. O serviço frontend ainda precisa ser criado em `/frontend`.
 
-O build local do front foi aprovado. Para disponibilizar as telas, criar o serviço Next.js e configurar
-`ANALISE_BETS_API_URL` com a URL privada da API. Uma chave da API só deve ser criada quando o perfil e
-o cliente para validação forem definidos.
+O serviço `frontend` foi criado em `/frontend`, com `pnpm build`, `pnpm start` e
+`ANALISE_BETS_API_URL` referenciando o DNS privado da API. O deploy terminou `SUCCESS`; o domínio
+[`https://frontend-production-ba88.up.railway.app`](https://frontend-production-ba88.up.railway.app)
+respondeu HTTP 200. A interface está publicada, mas a integração com os dados aguarda a API. Uma chave
+da API só deve ser criada quando o perfil e o cliente para validação forem definidos.
 
 ---
 
