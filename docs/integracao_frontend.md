@@ -1,6 +1,7 @@
 # Guia de integração do front-end — API da POC
 
-**Para:** time de front-end (etapa 5).
+**Para:** time de front-end (etapa 5). O front implementado vive em [`frontend/`](../frontend/README.md)
+e consome esta API pelos adaptadores de `frontend/lib/api/`.
 **Escopo:** POC. Não é contrato de produção. Onde a implementação difere da
 [especificação](especificacao/README.md), a diferença está listada na [§9](#9-diferenças-em-relação-à-especificação-e-limitações-da-poc).
 

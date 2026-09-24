@@ -7,6 +7,7 @@ documento descreve **o que foi implementado** e onde isso difere do contrato.
 | Se você quer... | Leia |
 | :--- | :--- |
 | Consumir a API pelo front | [integracao_frontend.md](integracao_frontend.md) |
+| Mexer no front (`frontend/`) | [frontend/docs/arquitetura.md](../frontend/docs/arquitetura.md) |
 | Entender o que o contrato previa | [especificacao/](especificacao/README.md) |
 | Saber de onde vêm as colunas de entrada | [data_dictionary.md](data_dictionary.md) |
 

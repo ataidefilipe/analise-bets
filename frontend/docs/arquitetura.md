@@ -1,9 +1,13 @@
 # Arquitetura do front
 
 Base: Next.js 16 (App Router), React 19, TypeScript, Tailwind v4. Fonte da
-especificação de produto: `docs/especificacao/` do repositório `analise-bets`
+especificação de produto: `docs/especificacao/` na raiz do monólito
 (01 — API e autorização, 02 — regras de negócio, 03 — telas). O contrato da
-API implementada está em `docs/integracao_frontend.md` do mesmo repositório.
+API implementada está em `docs/integracao_frontend.md`, também na raiz.
+
+Este front vive em `frontend/` do repositório `analise-bets`, ao lado do
+backend (`src/api/`). Veio de `rennegomes/front-analise-bets`, incorporado com
+`git subtree` — o histórico original está preservado.
 
 Desde o passo 11, o front consome a API real; não há mais dado simulado.
 

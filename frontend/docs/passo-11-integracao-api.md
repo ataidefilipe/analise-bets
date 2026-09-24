@@ -1,8 +1,8 @@
 # Passo 11 — Integração com a API real
 
-**Objetivo:** trocar `lib/mock/` pela API da POC (`analise-bets`, `src/api/`),
-sem reescrever as telas. Contrato: `docs/integracao_frontend.md` do
-repositório do backend.
+**Objetivo:** trocar `lib/mock/` pela API da POC (`src/api/`, na raiz do
+monólito), sem reescrever as telas. Contrato: `docs/integracao_frontend.md`
+na raiz.
 
 ## O que mudou
 
@@ -45,17 +45,18 @@ perfil P4 (trading) que o produto recusa. Agora vale a matriz do doc 01 §5.
 ## Como rodar
 
 ```bash
-# no repositório analise-bets
+# na raiz do monólito
 python -m src.api.carga
 ANALISE_BETS_AMBIENTE=dev uvicorn src.api.main:app --port 8000
 
-# neste repositório
+# em frontend/
 cp .env.example .env.local     # ajuste ANALISE_BETS_API_URL se preciso
+pnpm install
 pnpm dev
 ```
 
 As chaves de demonstração (uma por perfil) ficam em
-`data/restrito/chaves_api_poc.json` no repositório do backend, fora do Git.
+`data/restrito/chaves_api_poc.json`, na raiz, fora do Git.
 
 ## Verificado
 

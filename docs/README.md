@@ -17,6 +17,7 @@ Organizada pelo processo de construção do produto: **do negócio à especifica
 | :--- | :--- |
 | [backend.md](backend.md) | Backend e banco da POC: módulos, schema, operação, testes, segurança |
 | [integracao_frontend.md](integracao_frontend.md) | Como o front consome a API: endpoints, exemplos, erros, regras de exibição |
+| [../frontend/docs/](../frontend/docs/README.md) | Front (Next.js) em `frontend/`: arquitetura e registro de cada passo |
 | [data_dictionary.md](data_dictionary.md) | Colunas das bases processadas (`data/processed/`), que alimentam a carga da API |
 
 ## Governança

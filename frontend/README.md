@@ -5,8 +5,8 @@ passo): [`docs/README.md`](./docs/README.md).
 
 ## Rodando com a API
 
-O front consome a API do repositório `analise-bets` (`src/api`). Com ela no ar
-em `http://localhost:8000`:
+Este front vive em `frontend/` do monólito e consome a API em `src/api/`, na
+raiz. Com ela no ar em `http://localhost:8000` (ver `docs/backend.md` na raiz):
 
 ```bash
 cp .env.example .env.local
@@ -15,8 +15,7 @@ pnpm dev
 ```
 
 Entre em `http://localhost:3000` com uma chave de API. As chaves de
-demonstração ficam em `data/restrito/chaves_api_poc.json` no repositório do
-backend. Detalhes em [`docs/passo-11-integracao-api.md`](./docs/passo-11-integracao-api.md).
+demonstração ficam em `data/restrito/chaves_api_poc.json`, na raiz. Detalhes em [`docs/passo-11-integracao-api.md`](./docs/passo-11-integracao-api.md).
 
 ## Getting Started
 

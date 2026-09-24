@@ -1297,6 +1297,8 @@ bet-football-impact/
 │   ├── tables/
 │   └── drafts/
 │
+├── frontend/                # front Next.js (T1–T4), consome src/api
+│
 ├── docs/                    # índice em docs/README.md
 │   ├── especificacao/       # contrato do MVP (etapas 3 a 6)
 │   ├── backend.md
