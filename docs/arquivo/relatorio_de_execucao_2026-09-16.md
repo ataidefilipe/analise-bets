@@ -274,7 +274,7 @@ python -m src.pipeline.serve_product_feed
 
 Relatórios técnicos: `reports/analysis/07_*.md` (triagem, reconciliação e carga operacional) e
 `reports/analysis/08_*.md` (escore pré-jogo). Decisões numeradas em
-`docs/decisoes_e_progresso.md`. Termo de uso em `docs/termo_de_uso_e_licenciamento.md`.
+`docs/arquivo/decisoes_e_progresso.md`. Termo de uso em `docs/termo_de_uso_e_licenciamento.md`.
 
 ---
 

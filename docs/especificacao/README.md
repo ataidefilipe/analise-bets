@@ -98,6 +98,11 @@ ou granularidade por atleta para operadora deve ser recusado no backend, não ne
 
 Os documentos 01 a 05 especificam exatamente essa lacuna.
 
+> **Atualização de 2026-09-23.** A API, a autenticação por chave e o modelo de perfil vindo da
+> credencial foram implementados na POC da etapa 4. O que foi feito, e onde difere deste
+> contrato, está em [`docs/backend.md`](../backend.md) e
+> [`docs/integracao_frontend.md`](../integracao_frontend.md). A interface continua não existindo.
+
 ---
 
 > **LGPD.** O sistema trata dado pessoal de atletas — nome, registro CBF, histórico

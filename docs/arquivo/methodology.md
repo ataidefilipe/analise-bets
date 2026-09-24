@@ -1,7 +1,7 @@
 # Metodologia e Modelagem Estatística
 
 **Projeto:** Impacto das Apostas Esportivas no Futebol Brasileiro  
-**Documento de Referência Metodológica:** `docs/methodology.md`  
+**Documento de Referência Metodológica:** `docs/arquivo/methodology.md`  
 **Última Atualização:** 2026-09-05  
 
 ---

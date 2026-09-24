@@ -1297,10 +1297,12 @@ bet-football-impact/
 │   ├── tables/
 │   └── drafts/
 │
-├── docs/
+├── docs/                    # índice em docs/README.md
+│   ├── especificacao/       # contrato do MVP (etapas 3 a 6)
+│   ├── backend.md
+│   ├── integracao_frontend.md
 │   ├── data_dictionary.md
-│   ├── methodology.md
-│   └── sources.md
+│   └── arquivo/             # fase acadêmica e relatórios de sessão (methodology, sources, ...)
 │
 ├── tests/
 │

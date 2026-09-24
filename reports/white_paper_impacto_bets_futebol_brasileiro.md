@@ -348,7 +348,7 @@ Em estrito alinhamento com os padrões de ciência aberta e reprodutibilidade, t
 
 ## 9. Fundamentação Teórica e Referências Bibliográficas
 
-A fundamentação teórica integral, com fichamento analítico dos 6 eixos conceituais e conexão com os achados empíricos deste estudo, encontra-se documentada em [`docs/revisao_bibliografica.md`](file:///d:/Python%20Projetos/analise-bets/docs/revisao_bibliografica.md).
+A fundamentação teórica integral, com fichamento analítico dos 6 eixos conceituais e conexão com os achados empíricos deste estudo, encontra-se documentada em [`docs/arquivo/revisao_bibliografica.md`](file:///d:/Python%20Projetos/analise-bets/docs/arquivo/revisao_bibliografica.md).
 
 ### Principais Obras e Estudos de Referência:
 1. **Econometria Forense e Anomalias:**

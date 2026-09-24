@@ -1,7 +1,7 @@
 # Revisão Bibliográfica e Fundamentação Teórica
 
 **Projeto:** Impacto das Apostas Esportivas no Futebol Brasileiro (2015–2024)  
-**Documento de Governança Acadêmica:** `docs/revisao_bibliografica.md`  
+**Documento de Governança Acadêmica:** `docs/arquivo/revisao_bibliografica.md`  
 **Última Atualização:** 2026-09-11  
 
 ---
