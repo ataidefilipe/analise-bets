@@ -222,6 +222,7 @@ feed. `execucoes_pipeline` (documento 05 §6) pertence à etapa 6.
 | Variável | Padrão | Efeito |
 | :--- | :--- | :--- |
 | `ANALISE_BETS_DATABASE_URL` | `sqlite:///data/api/analise_bets_api.db` | Banco. Para Postgres: `postgresql+psycopg://usuario:senha@host/banco` (instale `psycopg[binary]`) |
+| `DATABASE_URL` | — | Alternativa de `ANALISE_BETS_DATABASE_URL`; aceita a URL PostgreSQL injetada pelo Railway |
 | `ANALISE_BETS_AMBIENTE` | `producao` | `dev` libera subir com o segredo de desenvolvimento |
 | `ANALISE_BETS_PSEUDONIMO_SECRET` | valor de desenvolvimento | Fora de `dev`, **a API recusa subir** se não estiver definido (documento 04 §5) |
 | `ANALISE_BETS_CORS` | `*` | Origens do front, separadas por vírgula |
@@ -264,6 +265,134 @@ o fim da transação.
 Criadas só se `clientes_api` estiver vazia, e gravadas em `data/restrito/chaves_api_poc.json`: uma por
 perfil, com o `clube` apontando para `flamengo`. Para regenerar, apague o arquivo e as linhas de
 `clientes_api`, depois rode a carga.
+
+### 5.5 Deploy Railway da POC
+
+Esta configuração é para a POC Railway e não substitui a arquitetura AWS descrita em
+[`especificacao/04_infraestrutura.md`](especificacao/04_infraestrutura.md).
+
+O repositório inclui `railway.json` e `requirements.txt`. O Railway instala as dependências da
+API e, antes de cada deploy, executa `python -m src.api.carga --sem-demo` contra o PostgreSQL.
+Essa carga recria as tabelas de leitura a partir dos Parquets versionados em `data/processed/`,
+mas preserva `clientes_api` e `consultas_atleta`. Em seguida, inicia o Uvicorn usando `PORT` e
+verifica `/saude`.
+
+No Railway:
+
+1. Adicione um serviço PostgreSQL ao projeto.
+2. No serviço da API, crie `DATABASE_URL` como referência à variável `DATABASE_URL` do serviço
+   PostgreSQL (por exemplo, `${{Postgres.DATABASE_URL}}`). Não defina `ANALISE_BETS_DATABASE_URL`
+   no Railway, pois ela tem precedência.
+3. Defina `ANALISE_BETS_PSEUDONIMO_SECRET` com um segredo aleatório forte. A API recusa iniciar
+   sem ele.
+4. O front atual (`frontend/`) chama a API do servidor Next.js, então CORS não é necessário para
+   esse fluxo. Se no futuro o navegador chamar a API diretamente, defina `ANALISE_BETS_CORS` com
+   as origens permitidas.
+5. Faça o primeiro deploy. Cadastre cada chave necessária uma única vez com o Railway CLI,
+   ligado ao serviço da API, por exemplo:
+
+   ```bash
+   railway run python -m src.api.clientes criar --nome "STJD" --perfil federacao_stjd
+   ```
+
+   A chave é exibida uma vez; guarde-a fora do repositório. Repita com o perfil e o clube
+   adequados para cada cliente.
+
+A carga pré-deploy substitui as tabelas de leitura do banco e preserva as tabelas operacionais;
+durante esse passo, a API da versão anterior pode ter uma breve interrupção ao consultar os dados.
+Ela não cria chaves de demonstração no serviço, evitando depender de um arquivo local efêmero para
+recuperar credenciais. A POC passa a persistir as chaves e a trilha de consultas no PostgreSQL; os
+dados de leitura continuam sendo reconstruídos dos Parquets em cada deploy.
+
+### 5.6 Decisão, tamanho dos dados e próximos passos
+
+**Decisão da POC:** usar PostgreSQL gerenciado no Railway por persistência de `clientes_api` e
+`consultas_atleta`. A API local continua usando SQLite por padrão. Os dados analíticos permanecem
+nos Parquets do repositório e são carregados no PostgreSQL antes de cada deploy; não adicionar
+armazenamento externo nem automação de pipeline nesta etapa.
+
+**Medição em 2026-09-23:** `data/processed/` ocupa 109,14 MB em 61 arquivos. Distribuição por
+pasta: `product_feed` 56,98 MB; `serie_a` 14,68 MB; `serie_b` 17,05 MB; `integrity` 18,61 MB;
+`panel` 1,75 MB; `betting` 0,06 MB. O conteúdo inclui 43,09 MB de SQLite de feed, além de CSV,
+JSON e modelos que a carga da API não lê. A carga lê arquivos Parquet; o conjunto Parquet totaliza
+6,98 MB. Portanto, o caminho simples é viável e não exige um bucket para esta POC. Uma redução
+futura do contexto do deploy pode excluir os artefatos que a API não consome.
+
+**Estado:** a configuração e a documentação estão no repositório; PostgreSQL, variáveis e domínio
+ainda não foram configurados no painel Railway, e não foi feito deploy.
+
+O pull de `origin/main` (commit `9444f97`) trouxe o front para `frontend/` e completou a integração
+com a API. Também adicionou `clubes`, `partidas.busca_texto`, `/v1/partidas` e `/v1/cobertura`.
+`src.api.carga` agora carrega a tabela `clubes`, que está incluída em `TABELAS_DE_LEITURA`; por
+isso, o comando pré-deploy existente permanece compatível com o schema novo. Não houve conflito
+com a configuração Railway/PostgreSQL local.
+
+**Próximas ações:**
+
+1. Sincronizar a branch de trabalho atual do front com `main`; o front integrado recebido está em
+   `frontend/`.
+2. Criar o serviço PostgreSQL e referenciar sua `DATABASE_URL` no serviço da API.
+3. Definir `ANALISE_BETS_PSEUDONIMO_SECRET` e fazer o primeiro deploy; verificar `/saude` e a
+   carga inicial das tabelas.
+4. Cadastrar as chaves de API necessárias via Railway CLI e guardar cada chave retornada.
+5. Ao hospedar o front, definir `ANALISE_BETS_API_URL` no serviço Next.js com o domínio público da
+   API e validar o fluxo ponta a ponta. CORS só precisa ser configurado se o navegador chamar a API
+   diretamente.
+
+**Limitação conhecida:** a carga pré-deploy substitui as tabelas de leitura enquanto a versão
+anterior pode continuar recebendo tráfego; pode ocorrer uma breve falha de consulta durante esse
+passo. As tabelas operacionais e suas chaves permanecem no PostgreSQL.
+
+### 5.7 Avaliação do Railway e do front (2026-09-24)
+
+O plugin Railway ficou disponível nesta sessão e confirmou a conta Railway autenticada. O projeto
+`fortunate-charisma` contém o serviço `analise-bets`, ligado ao repositório `ataidefilipe/analise-bets`
+na branch `main`; o primeiro deploy está `FAILED`. Ainda não há variáveis de aplicação, domínio
+público nem PostgreSQL nesse projeto.
+
+A criação do PostgreSQL pelo agente Railway foi tentada e recusada pela plataforma: o workspace
+está no plano Free e atingiu o limite de provisionamento de recursos. Nenhum serviço adicional ou
+alteração de cobrança foi criado. É necessário o usuário atualizar o plano no Railway antes de
+continuar com API e banco.
+
+**Front:** `frontend/` é um app Next.js 16 com React 19, `pnpm@11.4.0`, lockfile próprio e scripts
+`build`/`start`. Está apto a ser configurado como um serviço separado do mesmo repositório, com
+root directory `/frontend`. Requer `ANALISE_BETS_API_URL` apontando para o domínio público da API.
+As chamadas à API são feitas no servidor Next.js, portanto CORS não é necessário para o fluxo atual.
+O serviço chamado `frontend` encontrado em outro projeto Railway aponta para outro repositório e
+não foi reutilizado.
+
+As dependências do front foram instaladas com `pnpm install --frozen-lockfile` e o build de produção
+`pnpm build` foi concluído com sucesso (Next.js compilou, verificou TypeScript e gerou as rotas).
+O primeiro build local sem rede falhou ao buscar Geist e Geist Mono do Google Fonts; com acesso à rede,
+o build passou. O Railway ainda não recebeu esses arquivos locais porque as alterações desta branch
+não foram publicadas no GitHub.
+
+**Retomada depois da atualização de plano:** provisionar PostgreSQL em `fortunate-charisma`, ligar
+`DATABASE_URL` e o segredo na API, publicar as alterações locais do backend/configuração e validar
+`/saude`; então criar o serviço Next.js com root `/frontend`, configurar o domínio da API em
+`ANALISE_BETS_API_URL` e validar a entrada e as telas com uma chave de API.
+
+### 5.8 Railway após a atualização do plano (2026-09-24)
+
+O serviço `Postgres` foi provisionado em `fortunate-charisma` e está `SUCCESS`, com volume persistente
+de 5 GB em `sfo`. A API tem `DATABASE_URL` referenciando `${{Postgres.DATABASE_URL}}` e o segredo
+`ANALISE_BETS_PSEUDONIMO_SECRET` foi gerado aleatoriamente e cadastrado sem expor seu valor. O
+Railway também recebeu start command, pré-deploy da carga, healthcheck `/saude` e política de restart.
+
+O deploy da API continua `FAILED`: ele ainda usa o commit remoto `9444f97`, sem `railway.json`,
+`requirements.txt` e os ajustes locais de PostgreSQL. Os logs não trouxeram a causa além de iniciar o
+builder. A publicação desses arquivos e um novo deploy são necessários para validar a API. Depois do
+deploy, validar `/saude` e a carga inicial no PostgreSQL.
+
+Não foi criado domínio público para a API. A análise automática rejeitou essa exposição por tratar-se
+de uma API com dados identificados. Como o Next.js acessa a API no servidor, o front pode usar o DNS
+privado Railway da API por `ANALISE_BETS_API_URL`; isso mantém os dados atrás da autenticação sem
+precisar expor a API à internet. O serviço frontend ainda precisa ser criado em `/frontend`.
+
+O build local do front foi aprovado. Para disponibilizar as telas, criar o serviço Next.js e configurar
+`ANALISE_BETS_API_URL` com a URL privada da API. Uma chave da API só deve ser criada quando o perfil e
+o cliente para validação forem definidos.
 
 ---
 

@@ -16,7 +16,18 @@ from src.pipeline.serve_product_feed import AVISO_INTERPRETATIVO
 
 # O banco da API contém dado pessoal identificado: fica fora do versionamento (.gitignore).
 CAMINHO_BANCO_PADRAO = Path("data") / "api" / "analise_bets_api.db"
-DATABASE_URL = os.environ.get("ANALISE_BETS_DATABASE_URL", f"sqlite:///{CAMINHO_BANCO_PADRAO.as_posix()}")
+_database_url = (
+    os.environ.get("ANALISE_BETS_DATABASE_URL")
+    or os.environ.get("DATABASE_URL")
+    or f"sqlite:///{CAMINHO_BANCO_PADRAO.as_posix()}"
+)
+# Railway exposes PostgreSQL as DATABASE_URL; select psycopg v3 explicitly because the
+# unqualified `postgresql://` SQLAlchemy URL otherwise defaults to the psycopg2 driver.
+if _database_url.startswith("postgres://"):
+    _database_url = "postgresql+psycopg://" + _database_url.removeprefix("postgres://")
+elif _database_url.startswith("postgresql://"):
+    _database_url = "postgresql+psycopg://" + _database_url.removeprefix("postgresql://")
+DATABASE_URL = _database_url
 
 # Origens liberadas para o front. Lista separada por vírgula; "*" libera qualquer uma (POC).
 CORS_ORIGENS = [o.strip() for o in os.environ.get("ANALISE_BETS_CORS", "*").split(",") if o.strip()]

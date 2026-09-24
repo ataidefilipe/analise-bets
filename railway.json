@@ -1,0 +1,13 @@
+{
+  "$schema": "https://railway.com/railway.schema.json",
+  "deploy": {
+    "preDeployCommand": [
+      "python -m src.api.carga --sem-demo"
+    ],
+    "startCommand": "uvicorn src.api.main:app --host 0.0.0.0 --port $PORT",
+    "healthcheckPath": "/saude",
+    "healthcheckTimeout": 300,
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 5
+  }
+}
