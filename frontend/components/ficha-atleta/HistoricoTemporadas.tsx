@@ -7,7 +7,7 @@ interface HistoricoTemporadasProps {
 }
 
 const TH_NUMERICO = "px-4 py-2 text-right font-medium";
-const TD_NUMERICO = "px-4 py-2 text-right text-zinc-700 dark:text-zinc-300";
+const TD_NUMERICO = "px-4 py-2 text-right text-body";
 
 /**
  * Uma linha por temporada (doc 03, §3): "é onde o padrão aparece — proporção
@@ -18,16 +18,16 @@ export function HistoricoTemporadas({ temporadas }: HistoricoTemporadasProps) {
   const semTier = temporadas.every((t) => t.tier === null);
 
   if (temporadas.length === 0) {
-    return <p className="text-sm text-zinc-500 dark:text-zinc-400">Sem temporadas registradas.</p>;
+    return <p className="text-sm text-muted">Sem temporadas registradas.</p>;
   }
 
   return (
     <div>
-      <h2 className="mb-2 text-sm font-semibold text-zinc-900 dark:text-zinc-50">Histórico por temporada</h2>
-      <div className="overflow-x-auto rounded-md border border-zinc-200 dark:border-zinc-800">
+      <h2 className="mb-2 text-sm font-semibold text-ink">Histórico por temporada</h2>
+      <div className="overflow-x-auto rounded-2xl border border-line bg-surface shadow-card">
         <table className="w-full min-w-[600px] text-sm">
           <thead>
-            <tr className="border-b border-zinc-200 text-xs tracking-wide text-zinc-500 uppercase dark:border-zinc-800 dark:text-zinc-400">
+            <tr className="border-b border-line text-xs tracking-wide text-muted uppercase">
               <th className="px-4 py-2 text-left font-medium">Temporada</th>
               <th className="px-4 py-2 text-left font-medium">Série</th>
               <th className="px-4 py-2 text-left font-medium">Clube</th>
@@ -43,23 +43,23 @@ export function HistoricoTemporadas({ temporadas }: HistoricoTemporadasProps) {
             {temporadas.map((temporada) => (
               <tr
                 key={`${temporada.ano}-${temporada.serie}-${temporada.clubeNome}`}
-                className="border-b border-zinc-100 last:border-0 dark:border-zinc-900">
-                <td className="px-4 py-2 text-zinc-900 dark:text-zinc-50">{temporada.ano}</td>
-                <td className="px-4 py-2 text-zinc-700 dark:text-zinc-300">{temporada.serie}</td>
-                <td className="px-4 py-2 text-zinc-700 dark:text-zinc-300">{temporada.clubeNome}</td>
+                className="border-b border-line-soft last:border-0">
+                <td className="px-4 py-2 text-ink">{temporada.ano}</td>
+                <td className="px-4 py-2 text-body">{temporada.serie}</td>
+                <td className="px-4 py-2 text-body">{temporada.clubeNome}</td>
                 <td className={TD_NUMERICO}>{temporada.partidasJogadas}</td>
                 <td className={TD_NUMERICO}>{temporada.minutosJogados.toLocaleString("pt-BR")}</td>
                 <td className={TD_NUMERICO}>{temporada.cartoesTotais}</td>
                 <td className={TD_NUMERICO}>{temporada.cartoes1T}</td>
                 <td className={TD_NUMERICO}>{formatarProporcao(temporada.cartoes1T, temporada.cartoesTotais)}</td>
-                <td className="px-4 py-2 text-zinc-700 dark:text-zinc-300">{formatarTier(temporada)}</td>
+                <td className="px-4 py-2 text-body">{formatarTier(temporada)}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
       {semTier && (
-        <p className="mt-2 text-xs text-zinc-500 dark:text-zinc-400">
+        <p className="mt-2 text-xs text-muted">
           Tier só existe na janela do escore retrospectivo (Série A 2015–2024, Série B 2022–2023).
         </p>
       )}

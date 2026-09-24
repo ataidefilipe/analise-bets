@@ -14,7 +14,7 @@ interface RodadaFiltrosProps {
 const RODADAS = Array.from({ length: TOTAL_RODADAS }, (_, i) => i + 1);
 
 const CAMPO_SELECT_CLASSE =
-  "rounded border border-zinc-300 bg-white px-2 py-1 text-sm text-zinc-700 focus-visible:border-brand focus-visible:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:focus-visible:border-link";
+  "rounded-full border border-line-strong bg-surface px-3 py-1.5 text-sm text-body focus-visible:border-link focus-visible:outline-none";
 
 /**
  * Filtros de série/ano/rodada (doc 03, §2). Cada troca navega para a mesma

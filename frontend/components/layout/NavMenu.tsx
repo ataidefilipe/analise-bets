@@ -20,14 +20,14 @@ export function NavMenu({ perfil }: NavMenuProps) {
 
   if (telasVisiveis.length === 0) {
     return (
-      <p className="px-4 py-3 text-sm text-zinc-500 dark:text-zinc-400">
+      <p className="px-4 py-3 text-sm text-muted">
         Nenhuma tela disponível para este perfil.
       </p>
     );
   }
 
   return (
-    <nav className="flex flex-wrap gap-1 px-4 py-2">
+    <nav className="flex flex-wrap gap-1 px-4 pb-3">
       {telasVisiveis.map((tela) => {
         const ativa = pathname.startsWith(tela.rota);
         return (
@@ -37,8 +37,8 @@ export function NavMenu({ perfil }: NavMenuProps) {
             aria-current={ativa ? "page" : undefined}
             className={
               ativa
-                ? "rounded bg-brand px-3 py-1.5 text-sm font-medium text-brand-foreground"
-                : "rounded px-3 py-1.5 text-sm text-zinc-700 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800"
+                ? "rounded-full bg-brand px-4 py-1.5 text-sm font-medium text-brand-foreground shadow-sm"
+                : "rounded-full px-4 py-1.5 text-sm text-body transition-colors hover:bg-surface-muted hover:text-ink"
             }
           >
             {tela.rotulo}

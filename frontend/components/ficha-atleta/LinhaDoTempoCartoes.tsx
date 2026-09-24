@@ -16,7 +16,7 @@ const ROTULO_TIPO: Record<CartaoEvento["tipo"], string> = {
  */
 export function LinhaDoTempoCartoes({ eventos }: LinhaDoTempoCartoesProps) {
   if (eventos.length === 0) {
-    return <p className="text-sm text-zinc-500 dark:text-zinc-400">Nenhum cartão registrado.</p>;
+    return <p className="text-sm text-muted">Nenhum cartão registrado.</p>;
   }
 
   const porAno = new Map<number, CartaoEvento[]>();
@@ -29,21 +29,21 @@ export function LinhaDoTempoCartoes({ eventos }: LinhaDoTempoCartoesProps) {
 
   return (
     <div>
-      <h2 className="mb-2 text-sm font-semibold text-zinc-900 dark:text-zinc-50">Linha do tempo de cartões</h2>
+      <h2 className="mb-2 text-sm font-semibold text-ink">Linha do tempo de cartões</h2>
       <div className="flex flex-col gap-4">
         {anos.map((ano) => (
           <div key={ano}>
-            <p className="mb-1 text-xs font-medium tracking-wide text-zinc-500 uppercase dark:text-zinc-400">
+            <p className="mb-1 text-xs font-medium tracking-wide text-muted uppercase">
               {ano}
             </p>
-            <ul className="divide-y divide-zinc-200 rounded-md border border-zinc-200 dark:divide-zinc-800 dark:border-zinc-800">
+            <ul className="divide-y divide-line overflow-hidden rounded-2xl border border-line bg-surface shadow-card">
               {porAno.get(ano)!.map((evento, i) => (
                 <li key={i} className="flex flex-col gap-0.5 px-4 py-2 text-sm">
-                  <span className="text-zinc-700 dark:text-zinc-300">
+                  <span className="text-body">
                     {evento.minuto}&apos; · {evento.periodo} · {ROTULO_TIPO[evento.tipo]}
                     {evento.categoria ? ` · ${evento.categoria}` : ""}
                   </span>
-                  <span className="text-xs text-zinc-500 italic dark:text-zinc-400">
+                  <span className="text-xs text-muted italic">
                     {evento.motivoCompleto ?? "Motivo não registrado na súmula desta temporada."}
                   </span>
                 </li>

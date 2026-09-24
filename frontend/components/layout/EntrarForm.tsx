@@ -13,7 +13,7 @@ export function EntrarForm() {
 
   return (
     <form action={acao} className="flex flex-col gap-3">
-      <label htmlFor="chave" className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
+      <label htmlFor="chave" className="text-sm font-medium text-body">
         Chave de acesso
       </label>
       <input
@@ -22,13 +22,13 @@ export function EntrarForm() {
         type="password"
         autoComplete="off"
         required
-        className="w-full rounded border border-zinc-300 bg-white px-3 py-2 font-mono text-sm text-zinc-900 focus-visible:border-brand focus-visible:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-50 dark:focus-visible:border-link"
+        className="w-full rounded-full border border-line-strong bg-surface px-4 py-2 font-mono text-sm text-ink focus-visible:border-link focus-visible:outline-none"
       />
-      {estado.erro && <p className="text-sm text-zinc-600 dark:text-zinc-400">{estado.erro}</p>}
+      {estado.erro && <p className="text-sm text-muted">{estado.erro}</p>}
       <button
         type="submit"
         disabled={enviando}
-        className="rounded bg-brand px-3 py-2 text-sm font-medium text-brand-foreground transition-opacity disabled:opacity-60"
+        className="rounded-full bg-brand px-5 py-2.5 text-sm font-medium text-brand-foreground shadow-lg shadow-brand/20 transition hover:bg-brand-strong disabled:opacity-60 disabled:hover:bg-brand"
       >
         {enviando ? "Verificando..." : "Entrar"}
       </button>

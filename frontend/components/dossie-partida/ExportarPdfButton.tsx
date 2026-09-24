@@ -13,7 +13,7 @@ export function ExportarPdfButton() {
     <button
       type="button"
       onClick={() => window.print()}
-      className="flex shrink-0 items-center gap-2 rounded border border-zinc-300 px-3 py-1.5 text-sm text-zinc-700 transition-colors hover:border-brand hover:text-brand print:hidden dark:border-zinc-700 dark:text-zinc-300 dark:hover:border-link dark:hover:text-link"
+      className="flex shrink-0 items-center gap-2 rounded-full border border-line-strong px-3 py-1.5 text-sm text-body transition-colors hover:border-link hover:text-link print:hidden"
     >
       <FilePdf size={16} weight="bold" />
       Exportar PDF

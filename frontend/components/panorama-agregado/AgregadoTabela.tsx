@@ -83,16 +83,16 @@ export function AgregadoTabela({ linhas, rotuloColuna }: AgregadoTabelaProps) {
   };
 
   return (
-    <div className="overflow-x-auto rounded-md border border-zinc-200 dark:border-zinc-800">
+    <div className="overflow-x-auto rounded-2xl border border-line bg-surface shadow-card">
       <table className="w-full min-w-120 text-sm">
         <thead>
-          <tr className="border-b border-zinc-200 text-xs tracking-wide text-zinc-500 uppercase dark:border-zinc-800 dark:text-zinc-400">
+          <tr className="border-b border-line text-xs tracking-wide text-muted uppercase">
             {COLUNAS.map(({ campo, alinhamento }) => (
               <th key={campo} className={`px-4 py-2 font-medium ${alinhamento === "right" ? "text-right" : "text-left"}`}>
                 <button
                   type="button"
                   onClick={() => alternar(campo)}
-                  className={`inline-flex items-center gap-1 hover:text-zinc-900 dark:hover:text-zinc-50 ${
+                  className={`inline-flex items-center gap-1 hover:text-ink ${
                     alinhamento === "right" ? "flex-row-reverse" : ""
                   }`}
                 >
@@ -110,15 +110,15 @@ export function AgregadoTabela({ linhas, rotuloColuna }: AgregadoTabelaProps) {
         </thead>
         <tbody>
           {ordenadas.map((linha) => (
-            <tr key={linha.chave} className="border-b border-zinc-100 last:border-0 dark:border-zinc-900">
-              <td className="px-4 py-2 text-zinc-900 dark:text-zinc-50">{linha.rotulo}</td>
-              <td className="px-4 py-2 text-right text-zinc-700 dark:text-zinc-300">{linha.partidas}</td>
-              <td className="px-4 py-2 text-right text-zinc-700 dark:text-zinc-300">{linha.cartoesTotais}</td>
-              <td className="px-4 py-2 text-right text-zinc-700 dark:text-zinc-300">{linha.cartoes1T}</td>
-              <td className="px-4 py-2 text-right text-zinc-700 dark:text-zinc-300">
+            <tr key={linha.chave} className="border-b border-line-soft last:border-0">
+              <td className="px-4 py-2 text-ink">{linha.rotulo}</td>
+              <td className="px-4 py-2 text-right text-body">{linha.partidas}</td>
+              <td className="px-4 py-2 text-right text-body">{linha.cartoesTotais}</td>
+              <td className="px-4 py-2 text-right text-body">{linha.cartoes1T}</td>
+              <td className="px-4 py-2 text-right text-body">
                 {formatarProporcao(linha.cartoes1T, linha.cartoesTotais)}
               </td>
-              <td className="px-4 py-2 text-right text-zinc-700 dark:text-zinc-300">
+              <td className="px-4 py-2 text-right text-body">
                 {formatarMedia(linha.cartoesTotais, linha.partidas)}
               </td>
             </tr>

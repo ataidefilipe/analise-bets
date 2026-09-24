@@ -13,11 +13,11 @@ interface FichaCabecalhoProps {
 export function FichaCabecalho({ ficha }: FichaCabecalhoProps) {
   return (
     <div className="flex flex-col gap-1">
-      <h1 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">{ficha.nome}</h1>
-      <p className="text-sm text-zinc-500 dark:text-zinc-400">
+      <h1 className="text-lg font-semibold text-ink">{ficha.nome}</h1>
+      <p className="text-sm text-muted">
         {ficha.clubes.map((clube) => clube.nome).join(" · ")}
       </p>
-      <p className="font-mono text-xs text-zinc-400 dark:text-zinc-600">{ficha.atletaId}</p>
+      <p className="font-mono text-xs text-subtle">{ficha.atletaId}</p>
     </div>
   );
 }

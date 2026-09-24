@@ -11,9 +11,9 @@ interface PagerProps {
 }
 
 const BOTAO_CLASSE =
-  "flex size-8 items-center justify-center rounded border border-zinc-300 text-zinc-500 transition-colors hover:border-brand hover:text-brand dark:border-zinc-700 dark:text-zinc-400 dark:hover:border-link dark:hover:text-link";
+  "flex size-8 items-center justify-center rounded-full border border-line-strong text-muted transition-colors hover:border-link hover:text-link";
 const BOTAO_DESATIVADO_CLASSE =
-  "flex size-8 items-center justify-center rounded border border-zinc-200 text-zinc-300 dark:border-zinc-800 dark:text-zinc-700";
+  "flex size-8 items-center justify-center rounded-full border border-line text-faint";
 
 function href(basePath: string, consulta: string, pagina: number, parametros: Record<string, string> = {}): string {
   const params = new URLSearchParams(parametros);
@@ -42,7 +42,7 @@ export function Pager({ basePath, consulta, pagina, totalPaginas, parametros }: 
           <CaretDoubleLeft size={16} weight="bold" />
         </span>
       )}
-      <span className="text-sm text-zinc-500 dark:text-zinc-400">
+      <span className="text-sm text-muted">
         Página {pagina} de {totalPaginas}
       </span>
       {pagina < totalPaginas ? (

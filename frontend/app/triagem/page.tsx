@@ -45,7 +45,7 @@ export default async function TriagemPage({ searchParams }: PageProps<"/triagem"
   return (
     <div className="mx-auto flex max-w-4xl flex-col gap-4">
       <div className="flex flex-col gap-2">
-        <h1 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">
+        <h1 className="text-lg font-semibold text-ink">
           Triagem da rodada
           {fila.clubeEscopo ? ` — Elenco do ${fila.clubeEscopo.nome}` : ""}
         </h1>

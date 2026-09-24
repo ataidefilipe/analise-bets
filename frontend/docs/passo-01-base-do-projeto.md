@@ -31,7 +31,7 @@ Status: pronto para avaliação.
   dependência de ícones do projeto. Usa o histórico do navegador em vez de
   sempre linkar para "/", para já se comportar bem quando telas futuras
   tiverem navegação mais profunda (ex.: da busca para a ficha do atleta).
-- Paleta de marca extraída de [pe.senac.br](https://www.pe.senac.br/)
+- Paleta de marca extraída de [pe.senac.br](https://www.pe.senac.br/) (substituída depois pelo tema Astrolus — ver `arquitetura.md`)
   (azul-marinho + acento azul claro) com versão dedicada para tema escuro, e
   botão (`ThemeToggle`) para alternar entre os dois manualmente. Detalhes e
   os hex exatos em [`arquitetura.md`](./arquitetura.md#paleta-de-cores). O

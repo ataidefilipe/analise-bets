@@ -11,9 +11,9 @@ interface TelaPendenteProps {
 export function TelaPendente({ rotulo, descricaoCurta }: TelaPendenteProps) {
   return (
     <div className="mx-auto flex max-w-2xl flex-col gap-2">
-      <h1 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">{rotulo}</h1>
-      <p className="text-sm text-zinc-500 dark:text-zinc-400">{descricaoCurta}</p>
-      <p className="mt-4 text-sm text-zinc-400 dark:text-zinc-500">
+      <h1 className="text-lg font-semibold text-ink">{rotulo}</h1>
+      <p className="text-sm text-muted">{descricaoCurta}</p>
+      <p className="mt-4 text-sm text-subtle">
         Tela ainda não implementada — será construída em um passo dedicado.
       </p>
     </div>

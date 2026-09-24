@@ -50,12 +50,12 @@ export function FilaTriagemPainel({ itens, totalRelacionados, totalSinalizados, 
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex flex-col gap-2 rounded-md border border-zinc-200 px-4 py-3 dark:border-zinc-800">
+      <div className="flex flex-col gap-2 rounded-3xl border border-line bg-surface shadow-card px-4 py-3">
         <div className="flex flex-wrap items-center justify-between gap-2">
-          <label htmlFor="corte-percentil" className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
+          <label htmlFor="corte-percentil" className="text-sm font-medium text-body">
             Corte: percentil {percentil}
           </label>
-          <span className="text-sm text-zinc-500 dark:text-zinc-400" aria-live="polite">
+          <span className="text-sm text-muted" aria-live="polite">
             {carregando ? "atualizando..." : `${totalSinalizados} de ${totalRelacionados} relacionados`}
           </span>
         </div>
@@ -68,7 +68,7 @@ export function FilaTriagemPainel({ itens, totalRelacionados, totalSinalizados, 
           onChange={(e) => mudarCorte(Number(e.target.value))}
           className="accent-brand"
         />
-        <p className="text-xs text-zinc-500 dark:text-zinc-400">
+        <p className="text-xs text-muted">
           Baixar o corte captura mais casos conhecidos e também mais alarme falso.
         </p>
       </div>
@@ -81,7 +81,7 @@ export function FilaTriagemPainel({ itens, totalRelacionados, totalSinalizados, 
       ) : (
         <>
           {truncada && (
-            <p className="text-xs text-zinc-500 dark:text-zinc-400">
+            <p className="text-xs text-muted">
               Exibindo os {itens.length} de maior percentil. Suba o corte para ver uma fila completa.
             </p>
           )}

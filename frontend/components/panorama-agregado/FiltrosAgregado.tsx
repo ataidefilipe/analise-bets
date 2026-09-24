@@ -7,9 +7,9 @@ interface FiltrosAgregadoProps {
   modo: ModoAgregacao;
 }
 
-const BOTAO_ATIVO = "rounded bg-brand px-3 py-1.5 text-sm font-medium text-brand-foreground";
+const BOTAO_ATIVO = "rounded-full bg-brand px-4 py-1.5 text-sm font-medium text-brand-foreground shadow-sm";
 const BOTAO_INATIVO =
-  "rounded px-3 py-1.5 text-sm text-zinc-700 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800";
+  "rounded-full px-4 py-1.5 text-sm text-body hover:bg-surface-muted";
 
 /**
  * Alterna entre agregação por clube e por rodada (doc 03, §5), mantendo a

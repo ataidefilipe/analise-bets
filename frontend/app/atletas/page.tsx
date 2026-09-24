@@ -21,7 +21,7 @@ export default async function AtletasPage({ searchParams }: PageProps<"/atletas"
   return (
     <div className="mx-auto flex max-w-2xl flex-col gap-4">
       <div className="flex flex-col gap-2">
-        <h1 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">Consulta de atleta</h1>
+        <h1 className="text-lg font-semibold text-ink">Consulta de atleta</h1>
         <BuscaForm basePath="/atletas" valorInicial={consulta} placeholder="nome ou apelido..." />
       </div>
 
@@ -31,7 +31,7 @@ export default async function AtletasPage({ searchParams }: PageProps<"/atletas"
           descricao="Digite ao menos 3 caracteres. A busca cobre atletas com súmula eletrônica: Série A desde 2025 e Série B desde 2022."
         />
       ) : buscaCurta ? (
-        <p className="text-sm text-zinc-500 dark:text-zinc-400">Digite ao menos 3 caracteres para buscar.</p>
+        <p className="text-sm text-muted">Digite ao menos 3 caracteres para buscar.</p>
       ) : resultados.length === 0 ? (
         <EmptyState
           titulo="Nenhum atleta encontrado."
@@ -41,7 +41,7 @@ export default async function AtletasPage({ searchParams }: PageProps<"/atletas"
         <>
           <ResultadoBuscaTabela itens={resultados} />
           {resultados.length >= LIMITE_BUSCA && (
-            <p className="text-sm text-zinc-500 dark:text-zinc-400">
+            <p className="text-sm text-muted">
               Mostrando os {LIMITE_BUSCA} primeiros resultados. Refine a busca para encontrar outro atleta.
             </p>
           )}

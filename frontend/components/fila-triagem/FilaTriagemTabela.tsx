@@ -12,7 +12,7 @@ const ROTULO_CONDICAO: Record<Condicao, string> = {
   reserva: "Reserva",
 };
 
-const CELULA_CLASSE = "px-4 py-3 align-top text-zinc-700 dark:text-zinc-300";
+const CELULA_CLASSE = "px-4 py-3 align-top text-body";
 
 /**
  * Tabela da fila (doc 03, §2). A linha de justificativa embaixo do nome não
@@ -21,10 +21,10 @@ const CELULA_CLASSE = "px-4 py-3 align-top text-zinc-700 dark:text-zinc-300";
  */
 export function FilaTriagemTabela({ itens }: FilaTriagemTabelaProps) {
   return (
-    <div className="overflow-x-auto rounded-md border border-zinc-200 dark:border-zinc-800">
+    <div className="overflow-x-auto rounded-2xl border border-line bg-surface shadow-card">
       <table className="w-full min-w-[720px] text-sm">
         <thead>
-          <tr className="border-b border-zinc-200 text-left text-xs tracking-wide text-zinc-500 uppercase dark:border-zinc-800 dark:text-zinc-400">
+          <tr className="border-b border-line text-left text-xs tracking-wide text-muted uppercase bg-surface-muted">
             <th className="px-4 py-2 font-medium">Atleta</th>
             <th className="px-4 py-2 font-medium">Clube</th>
             <th className="px-4 py-2 font-medium">Confronto</th>
@@ -34,14 +34,14 @@ export function FilaTriagemTabela({ itens }: FilaTriagemTabelaProps) {
         </thead>
         <tbody>
           {itens.map((item) => (
-            <tr key={item.atletaId} className="border-b border-zinc-100 last:border-0 dark:border-zinc-900">
+            <tr key={item.atletaId} className="border-b border-line-soft last:border-0">
               <td className="px-4 py-3 align-top">
                 <div className="flex flex-col gap-0.5">
-                  <span className="font-medium text-zinc-900 dark:text-zinc-50">
+                  <span className="font-medium text-ink">
                     {item.atleta ?? "Identificação não disponível"}
                     {item.numCamisa ? ` · #${item.numCamisa}` : ""}
                   </span>
-                  <span className="text-xs text-zinc-500 dark:text-zinc-400">
+                  <span className="text-xs text-muted">
                     {formatarJustificativa(item)} ·{" "}
                     <Link href={`/atletas/${item.atletaId}`} className="text-link hover:underline">
                       ver ficha

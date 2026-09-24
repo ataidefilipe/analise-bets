@@ -57,8 +57,8 @@ export default async function AgregadosPage({ searchParams }: PageProps<"/agrega
   return (
     <div className="mx-auto flex max-w-6xl flex-col gap-6">
       <div>
-        <h1 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">Panorama agregado</h1>
-        <p className="text-sm text-zinc-500 dark:text-zinc-400">
+        <h1 className="text-lg font-semibold text-ink">Panorama agregado</h1>
+        <p className="text-sm text-muted">
           Cartões agregados por clube ou por rodada — camada aberta, sem nenhum atleta.
           {ano ? ` ${nomeSerie(serie)} ${ano}.` : ""}
         </p>

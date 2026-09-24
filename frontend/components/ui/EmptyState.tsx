@@ -11,9 +11,9 @@ interface EmptyStateProps {
  */
 export function EmptyState({ titulo, descricao }: EmptyStateProps) {
   return (
-    <div className="flex flex-col items-center gap-1 rounded-md border border-dashed border-zinc-300 px-6 py-10 text-center dark:border-zinc-700">
-      <p className="font-medium text-zinc-700 dark:text-zinc-300">{titulo}</p>
-      <p className="max-w-md text-sm text-zinc-500 dark:text-zinc-400">{descricao}</p>
+    <div className="flex flex-col items-center gap-1 rounded-3xl border border-dashed border-line-strong px-6 py-10 text-center">
+      <p className="font-medium text-body">{titulo}</p>
+      <p className="max-w-md text-sm text-muted">{descricao}</p>
     </div>
   );
 }

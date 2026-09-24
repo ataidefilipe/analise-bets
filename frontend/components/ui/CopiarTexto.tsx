@@ -32,7 +32,7 @@ export function CopiarTexto({ valor }: CopiarTextoProps) {
       onClick={copiar}
       aria-label="Copiar"
       title="Copiar"
-      className="inline-flex shrink-0 items-center text-zinc-400 transition-colors hover:text-brand print:hidden dark:text-zinc-500 dark:hover:text-link"
+      className="inline-flex shrink-0 items-center text-subtle transition-colors hover:text-link print:hidden"
     >
       {copiado ? <Check size={14} weight="bold" /> : <Copy size={14} weight="bold" />}
     </button>

@@ -43,7 +43,7 @@ export function BuscaForm({ basePath, valorInicial, placeholder, parametros = {}
           value={valor}
           onChange={(e) => setValor(e.target.value)}
           placeholder={placeholder}
-          className="w-full rounded border border-zinc-300 bg-white px-3 py-2 pr-9 text-sm text-zinc-900 focus-visible:border-brand focus-visible:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-50 dark:focus-visible:border-link"
+          className="w-full rounded-full border border-line-strong bg-surface px-4 py-2 pr-9 text-sm text-ink focus-visible:border-link focus-visible:outline-none"
         />
         {valor.length > 0 && (
           <button
@@ -51,7 +51,7 @@ export function BuscaForm({ basePath, valorInicial, placeholder, parametros = {}
             onClick={limpar}
             aria-label="Limpar busca"
             title="Limpar busca"
-            className="absolute inset-y-0 right-2 flex items-center text-zinc-400 transition-colors hover:text-brand dark:text-zinc-500 dark:hover:text-link"
+            className="absolute inset-y-0 right-2 flex items-center text-subtle transition-colors hover:text-link"
           >
             <X size={16} weight="bold" />
           </button>
@@ -62,7 +62,7 @@ export function BuscaForm({ basePath, valorInicial, placeholder, parametros = {}
         disabled={!podeBuscar}
         aria-label="Buscar"
         title="Buscar"
-        className="flex size-10 shrink-0 items-center justify-center rounded border border-zinc-300 text-zinc-500 transition-colors enabled:hover:border-brand enabled:hover:text-brand disabled:cursor-not-allowed disabled:opacity-40 dark:border-zinc-700 dark:text-zinc-400 dark:enabled:hover:border-link dark:enabled:hover:text-link"
+        className="flex size-10 shrink-0 items-center justify-center rounded-full border border-line-strong text-muted transition-colors enabled:hover:border-link enabled:hover:text-link disabled:cursor-not-allowed disabled:opacity-40"
       >
         <MagnifyingGlass size={18} weight="bold" />
       </button>

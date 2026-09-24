@@ -15,9 +15,9 @@ interface EscoreAnomaliaPartidaProps {
 export function EscoreAnomaliaPartida({ percentil, tier, ressalva }: EscoreAnomaliaPartidaProps) {
   return (
     <div className="flex flex-col gap-2">
-      <h2 className="text-sm font-semibold text-zinc-900 dark:text-zinc-50">Escore de anomalia da partida</h2>
+      <h2 className="text-sm font-semibold text-ink">Escore de anomalia da partida</h2>
       {percentil !== null && (
-        <p className="text-sm text-zinc-700 dark:text-zinc-300">
+        <p className="text-sm text-body">
           Percentil {percentil.toLocaleString("pt-BR", { maximumFractionDigits: 1 })}
           {tier ? ` · ${tier}` : ""}
         </p>

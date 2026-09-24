@@ -41,7 +41,7 @@ export default async function DossiePartidaPage({ params }: PageProps<"/partidas
         <AtletasSinalizados atletas={dossie.atletasSinalizados} />
       )}
 
-      <p className="text-xs text-zinc-400 italic print:hidden dark:text-zinc-600">
+      <p className="text-xs text-subtle italic print:hidden">
         [MVP] Este PDF é gerado por impressão de página — não é um registro auditável assinado (dívida registrada no
         doc 03, §4).
       </p>

@@ -73,20 +73,29 @@ séries e anos.
 
 ## Paleta de cores
 
-Cores extraídas de [pe.senac.br](https://www.pe.senac.br/) a pedido: a análise
-do CSS ao vivo do site (menu responsivo e presets de ícone, não a paleta
-genérica do tema WordPress que ele usa por baixo) mostrou consistentemente um
-azul-marinho como cor de texto/link (`#00386d`, hover `#004587`) e um azul
-mais claro como acento, o mesmo tom do ícone da logo (`#288bd0`). Definidas
-em `app/globals.css` como tokens (`--brand`, `--brand-strong`, `--link`,
-`--accent`) registrados no `@theme` do Tailwind, então viram utilitários
-normais: `bg-brand`, `text-link`, `border-l-accent` etc.
+Tema inspirado no template [Astrolus](https://themewagon.github.io/astrolus/)
+(só visual: cores, tipografia e formas — nenhuma mudança de comportamento).
+Substituiu a paleta anterior, extraída de pe.senac.br. Os tokens ficam em
+`app/globals.css`, registrados no `@theme` do Tailwind, e viram utilitários
+normais (`bg-brand`, `text-muted`, `border-line`, `shadow-card` etc.). Todos
+trocam de valor sozinhos no modo escuro — os componentes não repetem pares
+`dark:`; as cores fixas do Tailwind (zinc, gray...) não são usadas direto.
 
 | Token | Uso pretendido | Claro | Escuro |
 | :--- | :--- | :--- | :--- |
-| `brand` / `brand-strong` | Preenchimento sólido (item de menu ativo, indicador de marca) — sempre com texto branco por cima, então o mesmo tom funciona nos dois temas. | `#00386d` / `#004587` | `#00386d` / `#0a4a86` |
-| `link` / `link-strong` | Texto/ícone interativo direto sobre o fundo da página (hover de botão, foco). Precisa mudar no escuro: azul-marinho sobre preto não tem contraste suficiente. | `#00386d` / `#004587` | `#5bb3ea` / `#86c6ef` |
-| `accent` | Destaque decorativo (borda do `Callout`) — funciona sobre fundo claro e escuro por não ser texto pequeno. | `#288bd0` | `#4fb3e8` |
+| `brand` / `brand-strong` | Preenchimento sólido (item de menu ativo, botão primário, barra da marca), sempre com texto branco. | `#4f46e5` / `#4338ca` | `#4f46e5` / `#6366f1` |
+| `link` / `link-strong` | Texto/ícone interativo sobre o fundo (hover, foco). No escuro usa indigo-400: o indigo-600 não tem contraste como texto sobre preto. | `#4f46e5` / `#4338ca` | `#818cf8` / `#a5b4fc` |
+| `accent` | Destaque decorativo (borda do `Callout`, barras do gráfico). | `#6366f1` | `#818cf8` |
+| `ink` / `body` / `muted` / `subtle` / `faint` | Texto: título, corpo, secundário, terciário, desativado. | gray 900/700/500/400/300 | branco, gray 300/400/500/700 |
+| `line-soft` / `line` / `line-strong` | Bordas e divisórias, da mais leve à mais marcada. | gray 100/200/300 | gray 900/800/700 |
+| `surface` / `surface-muted` / `track` | Card e campo; fundo alternado, cabeçalho de tabela e hover; trilho de barra/skeleton. | branco, gray 50, gray 200 | gray 900, gray 800, gray 800 |
+| `background` | Fundo da página. | branco | `#030712` (gray-950) |
+
+Formas: cards `rounded-2xl`/`rounded-3xl` com `shadow-card` (sombra suave
+só no claro), botões, campos e itens de menu em pílula (`rounded-full`).
+Fonte Urbanist (`next/font`), Geist Mono para trechos monoespaçados.
+`components/ui/FundoDecorativo.tsx` desenha as manchas em degradê do
+Astrolus apenas na home e na entrada.
 
 **Fora do escopo desta paleta:** cor de severidade/tier nas telas de escore.
 O doc 03 (§3, "Cuidado de design") exige tom neutro e factual na ficha do

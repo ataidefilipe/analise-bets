@@ -32,7 +32,7 @@ export default async function PartidasPage({ searchParams }: PageProps<"/partida
   return (
     <div className="mx-auto flex max-w-2xl flex-col gap-4">
       <div className="flex flex-col gap-2">
-        <h1 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">Partidas monitoradas</h1>
+        <h1 className="text-lg font-semibold text-ink">Partidas monitoradas</h1>
         <SerieTemporadaFiltros
           serie={serie}
           ano={ano}
@@ -43,12 +43,12 @@ export default async function PartidasPage({ searchParams }: PageProps<"/partida
       </div>
 
       {buscaCurta || !pagina ? (
-        <p className="text-sm text-zinc-500 dark:text-zinc-400">Digite ao menos 3 caracteres para buscar.</p>
+        <p className="text-sm text-muted">Digite ao menos 3 caracteres para buscar.</p>
       ) : pagina.itens.length === 0 ? (
         <EmptyState titulo="Nenhuma partida encontrada." descricao="Tente buscar pelo nome de um dos clubes ou mudar a temporada." />
       ) : (
         <>
-          <p className="text-sm text-zinc-500 dark:text-zinc-400">
+          <p className="text-sm text-muted">
             {pagina.totalItens.toLocaleString("pt-BR")} partidas no total
           </p>
           <ResultadoPartidasTabela itens={pagina.itens} />

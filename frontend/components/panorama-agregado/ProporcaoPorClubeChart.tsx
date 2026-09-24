@@ -23,18 +23,18 @@ export function ProporcaoPorClubeChart({ dados }: ProporcaoPorClubeChartProps) {
   }
 
   return (
-    <div className="rounded-md border border-zinc-200 p-4 dark:border-zinc-800">
-      <h2 className="text-sm font-semibold text-zinc-900 dark:text-zinc-50">
+    <div className="rounded-3xl border border-line bg-surface shadow-card p-4">
+      <h2 className="text-sm font-semibold text-ink">
         Proporção de cartões no 1º tempo por clube
       </h2>
-      <p className="mb-3 text-xs text-zinc-500 dark:text-zinc-400">
+      <p className="mb-3 text-xs text-muted">
         Percentual dos cartões de cada clube que aconteceram até o intervalo.
       </p>
       <div className="flex flex-col gap-1.5">
         {linhas.map((item) => (
           <div key={item.clubeNome} className="flex items-center gap-2">
             <span
-              className="w-28 shrink-0 truncate text-xs text-zinc-600 dark:text-zinc-400"
+              className="w-28 shrink-0 truncate text-xs text-muted"
               title={item.clubeNome}
             >
               {item.clubeNome}
@@ -46,7 +46,7 @@ export function ProporcaoPorClubeChart({ dados }: ProporcaoPorClubeChartProps) {
                 title={`${item.clubeNome}: ${item.proporcao}%`}
               />
             </div>
-            <span className="w-10 shrink-0 text-right text-xs text-zinc-700 tabular-nums dark:text-zinc-300">
+            <span className="w-10 shrink-0 text-right text-xs text-body tabular-nums">
               {item.proporcao}%
             </span>
           </div>

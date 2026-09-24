@@ -11,10 +11,10 @@ interface ResultadoBuscaTabelaProps {
  */
 export function ResultadoBuscaTabela({ itens }: ResultadoBuscaTabelaProps) {
   return (
-    <div className="overflow-x-auto rounded-md border border-zinc-200 dark:border-zinc-800">
+    <div className="overflow-x-auto rounded-2xl border border-line bg-surface shadow-card">
       <table className="w-full min-w-120 text-sm">
         <thead>
-          <tr className="border-b border-zinc-200 text-left text-xs tracking-wide text-zinc-500 uppercase dark:border-zinc-800 dark:text-zinc-400">
+          <tr className="border-b border-line text-left text-xs tracking-wide text-muted uppercase bg-surface-muted">
             <th className="px-4 py-2 font-medium">Atleta</th>
             <th className="px-4 py-2 font-medium">Clubes</th>
             <th className="px-4 py-2 font-medium">Até</th>
@@ -22,19 +22,19 @@ export function ResultadoBuscaTabela({ itens }: ResultadoBuscaTabelaProps) {
         </thead>
         <tbody>
           {itens.map((atleta) => (
-            <tr key={atleta.atletaId} className="border-b border-zinc-100 last:border-0 dark:border-zinc-900">
+            <tr key={atleta.atletaId} className="border-b border-line-soft last:border-0">
               <td className="px-4 py-2">
                 <Link
                   href={`/atletas/${atleta.atletaId}`}
-                  className="font-medium text-zinc-900 hover:text-brand dark:text-zinc-50 dark:hover:text-link"
+                  className="font-medium text-ink hover:text-link"
                 >
                   {atleta.nome}
                 </Link>
               </td>
-              <td className="px-4 py-2 text-zinc-700 dark:text-zinc-300">
+              <td className="px-4 py-2 text-body">
                 {atleta.clubes.map((clube) => clube.nome).join(", ")}
               </td>
-              <td className="px-4 py-2 text-zinc-500 dark:text-zinc-400">{atleta.ultimoAno}</td>
+              <td className="px-4 py-2 text-muted">{atleta.ultimoAno}</td>
             </tr>
           ))}
         </tbody>

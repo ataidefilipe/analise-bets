@@ -7,56 +7,120 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 /*
- * Paleta extraída de pe.senac.br (ver docs/arquitetura.md, "Paleta de
- * cores"): azul-marinho da logo/menu (#00386d) como cor de marca, azul
- * médio do ícone da logo (#288bd0) como acento. Cores de severidade/tier
- * das telas de escore NÃO usam esta paleta — o doc 03 exige tom neutro ali.
+ * Tema inspirado no template Astrolus (themewagon.github.io/astrolus — ver
+ * docs/arquitetura.md, "Paleta de cores"): indigo como cor de marca, escala
+ * gray (levemente azulada) para neutros, fundo quase preto no modo escuro.
+ * Cores de severidade/tier das telas de escore NÃO usam esta paleta — o doc
+ * 03 exige tom neutro ali.
+ *
+ * Os neutros são tokens semânticos (ink, body, muted, line, surface...) que
+ * já trocam de valor no modo escuro — os componentes não repetem pares
+ * `dark:`.
  */
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #111827;
 
-  --brand: #00386d;
-  --brand-strong: #004587;
+  /* Texto: título, corpo, secundário, terciário, desativado */
+  --ink: #111827;
+  --body: #374151;
+  --muted: #6b7280;
+  --subtle: #9ca3af;
+  --faint: #d1d5db;
+
+  /* Bordas */
+  --line-soft: #f3f4f6;
+  --line: #e5e7eb;
+  --line-strong: #d1d5db;
+
+  /* Superfícies: card/campo, fundo alternado/hover, trilho de barra */
+  --surface: #ffffff;
+  --surface-muted: #f9fafb;
+  --track: #e5e7eb;
+
+  --brand: #4f46e5;
+  --brand-strong: #4338ca;
   --brand-foreground: #ffffff;
 
-  --link: #00386d;
-  --link-strong: #004587;
+  --link: #4f46e5;
+  --link-strong: #4338ca;
 
-  --accent: #288bd0;
+  --accent: #6366f1;
+
+  /* Manchas decorativas (home e entrada) */
+  --glow-a-from: #4f46e5;
+  --glow-a-to: #c084fc;
+  --glow-b-from: #22d3ee;
+  --glow-b-to: #7dd3fc;
+  --glow-opacity: 0.4;
+
+  --card-shadow: 0 25px 50px -12px rgb(75 85 99 / 0.1);
 }
 
 .dark {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  --background: #030712;
+  --foreground: #f9fafb;
 
-  --brand: #00386d;
-  --brand-strong: #0a4a86;
+  --ink: #ffffff;
+  --body: #d1d5db;
+  --muted: #9ca3af;
+  --subtle: #6b7280;
+  --faint: #374151;
+
+  --line-soft: #111827;
+  --line: #1f2937;
+  --line-strong: #374151;
+
+  --surface: #111827;
+  --surface-muted: #1f2937;
+  --track: #1f2937;
+
+  --brand: #4f46e5;
+  --brand-strong: #6366f1;
   --brand-foreground: #ffffff;
 
-  /* Azul-marinho não tem contraste suficiente como texto sobre fundo escuro;
-     usa-se o acento mais claro da própria logo para links/ícones aqui. */
-  --link: #5bb3ea;
-  --link-strong: #86c6ef;
+  /* Indigo-600 não tem contraste suficiente como texto sobre fundo escuro;
+     links/ícones usam o indigo-400. */
+  --link: #818cf8;
+  --link-strong: #a5b4fc;
 
-  --accent: #4fb3e8;
+  --accent: #818cf8;
+
+  --glow-a-from: #1d4ed8;
+  --glow-a-to: #c084fc;
+  --glow-b-from: #22d3ee;
+  --glow-b-to: #4f46e5;
+  --glow-opacity: 0.2;
+
+  --card-shadow: none;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-ink: var(--ink);
+  --color-body: var(--body);
+  --color-muted: var(--muted);
+  --color-subtle: var(--subtle);
+  --color-faint: var(--faint);
+  --color-line-soft: var(--line-soft);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-track: var(--track);
   --color-brand: var(--brand);
   --color-brand-strong: var(--brand-strong);
   --color-brand-foreground: var(--brand-foreground);
   --color-link: var(--link);
   --color-link-strong: var(--link-strong);
   --color-accent: var(--accent);
-  --font-sans: var(--font-geist-sans);
+  --shadow-card: var(--card-shadow);
+  --font-sans: var(--font-urbanist);
   --font-mono: var(--font-geist-mono);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
