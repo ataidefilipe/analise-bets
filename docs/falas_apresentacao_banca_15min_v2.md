@@ -1,6 +1,7 @@
 # Falas — Apresentação de banca (15 min, v2)
 
-**Deck:** [`apresentacao_banca_15min_v2.html`](apresentacao_banca_15min_v2.html) · 13 slides
+**Deck:** [`apresentacao_banca_15min_v3.html`](apresentacao_banca_15min_v3.html) · 13 slides
+(as falas valem igualmente para a v2, exceto o slide 5, reescrito para as capturas reais da v3)
 **Data:** 24 de setembro de 2026
 
 Duas opções de fala por slide. Elas não são variações de redação — mudam o **registro**:
@@ -23,7 +24,9 @@ para uma banca, porque acompanha a mudança de registro que o próprio deck faz.
    A palavra dita na banca é a mesma que iria no despacho.
 2. **Slide 3 não afirma causalidade.** A v2 tirou o resultado econométrico dos slides de propósito.
    A fala fica no contexto: o mercado cresce, o cartão vira produto, a lei passa a exigir monitoramento.
-3. **Nenhum nome real de atleta**, nem como exemplo verbal. A tela usa nomes fictícios pelo mesmo motivo.
+3. **Nenhum nome real de atleta**, nem como exemplo verbal. As capturas de tela do slide 5 estão
+   pseudonimizadas quanto ao nome e ao registro CBF pelo mesmo motivo — dizer isso em voz alta **fortalece**
+   o argumento de governança, não o enfraquece.
 4. **A decisão é sempre humana.** Sempre que a fala chegar perto de "o sistema identifica",
    corrigir para "o sistema ordena a atenção".
 
@@ -31,7 +34,7 @@ para uma banca, porque acompanha a mudança de registro que o próprio deck faz.
 
 | Ato | Slides | Tempo | Ritmo |
 | :--- | :--- | :---: | :--- |
-| **1 · Pitch** | 1 – 7 | 5 min | ~40 s por slide, sem parar |
+| **1 · Pitch** | 1 – 7 | 5 min | ~40 s por slide; o 5 pede ~60 s, porque tem duas telas para olhar |
 | **2 · Como funciona** | 8 – 10 | 6 min | slide 8 rápido; 9 e 10 são os longos |
 | **3 · Confiança e mercado** | 11 – 13 | 4 min | ~80 s por slide |
 
@@ -162,37 +165,47 @@ Iniciar o cronômetro com <kbd>S</kbd> antes da primeira palavra. Ele fica âmba
 
 ---
 
-## Slide 5 — O sistema hoje · ~45 s
+## Slide 5 — O sistema hoje · ~60 s · **DUAS TELAS REAIS**
 
 **A · Direta**
 
-> Isso aqui é o sistema rodando. É a fila de uma rodada: **458 atletas relacionados**, e o Radar
-> entrega os três primeiros.
-> Reparem no que aparece junto de cada nome — quantos cartões no 1º tempo, quantos minutos jogados,
-> se é titular. Não é uma nota solta: é uma conta que dá para conferir.
-> E reparem no aviso do topo: isso mede **atipicidade estatística**, não probabilidade de fraude.
-> Esse aviso não é enfeite. Ele viaja junto com o dado, em toda resposta da API.
-> São quatro telas, e cada perfil vê só a sua: a federação vê a rodada inteira, o clube vê só o
-> próprio elenco, a operadora vê o dossiê da partida sem nome nenhum.
-> Os nomes aqui são fictícios de propósito — mostrar um atleta real sem condenação numa apresentação
-> pública seria exatamente o dano que o sistema existe para evitar.
+> Isso não é maquete — são duas telas do sistema rodando.
+> À esquerda, a fila de uma rodada da Série A. O corte está no **percentil 98**, e isso deixa
+> **12 atletas de 459 relacionados**. Quem decide esse corte é o usuário, conforme o que a equipe
+> dele dá conta de analisar.
+> E junto de cada linha vêm os cartões no 1º tempo, os minutos jogados e a taxa ajustada —
+> a conta que dá para conferir.
+> Em cima de tudo, o aviso: isso mede **atipicidade estatística**, não probabilidade de fraude.
+> Ele não é enfeite, viaja junto com o dado em toda resposta da API.
+> À direita, a ficha do atleta: é o que o clube abre antes de assinar contrato. Histórico por
+> temporada e por clube. E reparem que a coluna de tier está **vazia** — a ficha serve tanto para
+> acender o alerta quanto para apagá-lo.
+> Os nomes e o registro da CBF estão pseudonimizados. A captura veio da camada identificada,
+> que é legítima para um usuário de federação — e não para um slide.
 
 **B · Formal**
 
-> Esta é a tela principal, a fila da rodada. De **458 atletas relacionados**, o corte entrega os três
-> de maior percentil, cada um com a base do cálculo à vista: cartões no 1º tempo, minutos em campo
-> e condição de titular ou reserva.
-> O aviso interpretativo do topo é servido pela API em toda resposta — não é texto fixo da interface,
-> de modo que alterá-lo não exige nova publicação do front.
-> São quatro telas, e o menu é montado a partir do perfil da credencial: federação e STJD veem a
-> rodada completa; o clube, apenas o próprio elenco na fila; a operadora recebe o dossiê da partida
-> sem identificação de atleta; e a camada aberta atende imprensa e academia com agregados.
-> Os nomes exibidos são fictícios: a exposição nominal de atleta não condenado é vedada por desenho.
+> São duas das quatro telas do sistema, em operação.
+> À esquerda, a fila de triagem da rodada, no perfil federação. O corte está no **percentil 98**,
+> o que seleciona **12 atletas entre 459 relacionados**; o limiar é controle explícito do usuário.
+> Cada linha exibe a base do cálculo — cartões no 1º tempo, minutos em campo, condição de titular
+> e taxa ajustada — além do tier e do percentil.
+> O aviso interpretativo do topo é servido pela API em toda resposta, não é texto fixo da interface.
+> À direita, a ficha individual, que atende à consulta de *due diligence*. O histórico é apresentado
+> por temporada e por clube, com minutos, cartões e proporção no 1º tempo.
+> Registro que nesta ficha **nenhuma temporada recebe tier**: a consulta também serve para afastar
+> suspeição, não apenas para levantá-la.
+> As duas capturas estão pseudonimizadas quanto ao nome e ao registro CBF. Foram obtidas na camada
+> identificada, cujo acesso é legítimo para federação e clube, mas não para material de divulgação.
 
 *Emenda:* "Quatro telas, quatro perfis. Vale ver quem é cada um e o que ele decide."
 
 *Se houver rede e tempo:* abrir o sistema ao vivo com a chave de federação e depois com a de operadora,
 mostrando a mesma consulta devolver camadas diferentes.
+
+*Se perguntarem por que os nomes estão trocados:* "Porque a maioria dos atletas com perfil atípico
+nunca foi investigada. Nominá-los num material público seria exatamente o dano que o sistema existe
+para evitar — e a regra vale para nós também."
 
 ---
 
