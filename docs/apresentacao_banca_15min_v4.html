@@ -700,6 +700,67 @@ kbd{
 .telas{ display:flex; flex-wrap:wrap; gap:7px; }
 .telas .pill.off{ opacity:.55; }
 @media (max-width: 860px){ .shots{ grid-template-columns:minmax(0,1fr); } }
+
+/* ============================================================
+   SISTEMA AO VIVO — quadro de demonstração do slide final
+   ============================================================ */
+.slide.demo{
+  padding:clamp(44px,6.6vh,68px) clamp(12px,1.8vw,28px) clamp(38px,5.6vh,58px);
+  align-items:stretch;
+}
+.slide.demo .inner{ width:min(1720px,100%); height:100%; gap:clamp(6px,1vh,13px); }
+.demo-head{ display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:8px clamp(14px,2vw,30px); }
+.demo-line{
+  font-family:"Sora", sans-serif; font-weight:700; letter-spacing:-.022em; margin:0;
+  font-size:clamp(15px, min(2.1vw, 2.9vh), 29px); line-height:1.15; text-wrap:balance;
+}
+.live{
+  width:100%; flex:1; min-height:0; display:flex; flex-direction:column;
+  border:1px solid var(--line-strong); border-radius:var(--r);
+  overflow:hidden; background:var(--surface-solid); box-shadow:var(--shadow);
+}
+.live.full{
+  position:fixed; inset:0; z-index:80;
+  border-radius:0; border-width:0; box-shadow:none;
+}
+.live .bar{
+  display:flex; align-items:center; gap:9px; padding:7px 10px;
+  border-bottom:1px solid var(--line);
+  font-family:"IBM Plex Mono", ui-monospace, monospace;
+  font-size:var(--fs-eyebrow); color:var(--ink-3);
+}
+.live .bar .dot3{ display:flex; gap:5px; flex:none; }
+.live .bar .dot3 i{ width:7px; height:7px; border-radius:999px; background:var(--line-strong); }
+.live .url{
+  flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  padding:3px 11px; border-radius:999px;
+  background:var(--surface-2); border:1px solid var(--line); color:var(--ink-2);
+}
+.live .st{ display:flex; align-items:center; gap:6px; white-space:nowrap; flex:none; }
+.live .st i{ width:7px; height:7px; border-radius:999px; background:var(--mid); flex:none;
+  animation:beat 2s ease-in-out infinite; }
+.live.on .st i{ background:var(--good); animation:none; }
+.live.off .st i{ background:var(--crit); animation:none; }
+.live .lb{
+  flex:none; cursor:pointer; text-decoration:none; white-space:nowrap;
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:var(--fs-eyebrow);
+  padding:4px 11px; border-radius:999px;
+  border:1px solid var(--line-strong); background:transparent; color:var(--ink-2);
+  transition:border-color 160ms ease, color 160ms ease, background 160ms ease;
+}
+.live .lb:hover{ border-color:var(--ring); color:var(--ink); }
+.live .lb:focus-visible{ outline:2px solid var(--accent-3); outline-offset:2px; }
+.live .lb.go{ border-color:var(--accent); color:var(--ink);
+  background:color-mix(in oklab, var(--accent) 18%, transparent); }
+.live iframe{
+  display:block; width:100%; border:0; background:var(--ground-2);
+  flex:1; min-height:0;
+}
+.live .bar{ flex:none; }
+@media (max-width: 860px){
+  .live .url{ display:none; }
+  .demo-head .note{ text-align:left; }
+}
 </style>
 </head>
 <body>
@@ -745,7 +806,7 @@ kbd{
       <kbd>→</kbd> avança &nbsp;·&nbsp; <kbd>O</kbd> visão geral &nbsp;·&nbsp; <kbd>N</kbd> notas &nbsp;·&nbsp; <kbd>S</kbd> cronômetro
     </p>
   </div>
-  <template class="notes">Abrir com o problema, não com o método. <b>15 minutos: 5 de pitch (até o slide 7), 6 de como funciona, 4 de confiança e mercado.</b> Iniciar o cronômetro com S antes de falar. O "radar" amarra tudo: o sistema não acusa ninguém, aponta onde olhar primeiro.</template>
+  <template class="notes">Abrir com o problema, não com o método. <b>Esta é a versão curta: <b>11 slides</b>, sem o motor e sem a validação. 5 minutos de pitch (até o slide 7), depois arquitetura, governança e mercado — roda em cerca de <b>10 minutos</b>, deixando folga para a arguição.</b> Iniciar o cronômetro com S antes de falar. O "radar" amarra tudo: o sistema não acusa ninguém, aponta onde olhar primeiro.</template>
 </section>
 
 <!-- ============ 2 · O PROBLEMA ============ -->
@@ -879,7 +940,7 @@ kbd{
       temporadas, mesmo quando ele troca de clube</strong>. Um padrão que se repete pode ser antecipado; um episódio isolado, não.
     </div>
   </div>
-  <template class="notes">Se o tempo apertar, 20 s: "dados, dossiê, pré-jogo". Exemplo de persistência, se perguntarem: um mesmo atleta ficou no topo do ranking (percentil 100) em 2020 por um clube e voltou ao topo (99,67) em 2022 por outro — anonimizado de propósito (slide 11).</template>
+  <template class="notes">Se o tempo apertar, 20 s: "dados, dossiê, pré-jogo". Exemplo de persistência, se perguntarem: um mesmo atleta ficou no topo do ranking (percentil 100) em 2020 por um clube e voltou ao topo (99,67) em 2022 por outro — anonimizado de propósito (slide 9).</template>
 </section>
 
 <!-- ============ 5 · O SISTEMA HOJE ============ -->
@@ -1084,70 +1145,7 @@ kbd{
 </section>
 
 <!-- ============ 9 · O MOTOR ============ -->
-<section class="slide" data-act="2" data-title="O motor do Radar">
-  <div class="inner">
-    <div class="eyebrow r" style="--d:0">Ato 2 · Ciência de dados e IA</div>
-    <h1 class="r" style="--d:1">Um motor que <span class="grad">se explica</span><br>— e a IA que vem a seguir.</h1>
-    <div class="split r" style="--d:2; align-items:stretch">
-      <div class="card" style="border-color:color-mix(in oklab, var(--accent) 45%, transparent)">
-        <div class="idx">HOJE · ESCORE PRÉ-JOGO</div>
-        <h3>Como o Radar pontua cada atleta, sem fórmula</h3>
-        <ul class="ticks sm">
-          <li>Antes de cada rodada, olha <b>só o passado</b> de cada atleta relacionado: quantos cartões no 1º tempo ele levou por minuto jogado.</li>
-          <li>Quem jogou pouco é puxado para a média da liga — um cartão em 20 minutos não faz ninguém “o mais indisciplinado do campeonato”.</li>
-          <li>Essa taxa é multiplicada pelo tempo que se espera que ele jogue. O resultado ordena a fila.</li>
-        </ul>
-        <hr class="rule">
-        <p class="note"><b style="color:var(--ink-2)">Por que este motor:</b> cada nota vira uma conta que cabe num despacho, e ele aprende com um evento frequente — cartão no 1º tempo —, observável em toda rodada.</p>
-      </div>
-      <div class="card">
-        <div class="idx">PRÓXIMA CAMADA · FLORESTAS DE DECISÃO</div>
-        <h3>IA para encontrar padrões que a fórmula não vê</h3>
-        <div class="iso" aria-hidden="true">
-          <div class="iso-row"><span class="iso-k">Comum</span><span class="iso-bar"><i style="width:88%"></i></span><span class="iso-v mono">muitos cortes</span></div>
-          <div class="iso-row"><span class="iso-k">Atípico</span><span class="iso-bar hot"><i style="width:22%"></i></span><span class="iso-v mono">poucos cortes</span></div>
-        </div>
-        <ul class="ticks sm">
-          <li><b>Isolation Forest:</b> 300 árvores com cortes aleatórios. O atípico fica isolado em poucos cortes — sem precisar de nenhum exemplo de fraude.</li>
-          <li><b>Random Forest com aprendizado PU:</b> aprende com os casos confirmados pela Justiça, sem assumir que todo o resto é inocente.</li>
-        </ul>
-        <hr class="rule">
-        <p class="note"><b style="color:var(--ink-2)">Quando entra no produto:</b> quando houver casos confirmados suficientes para comprovar o ganho fora da amostra de treino.</p>
-      </div>
-    </div>
-  </div>
-  <template class="notes">Explicar a intuição, não a matemática. Motor atual: taxa de cartões no 1º tempo por minuto, com encolhimento bayesiano empírico (M₀ = 500 minutos), × minutos esperados. Próxima camada: <b>Isolation Forest</b> — "o diferente se separa rápido"; <b>Random Forest PU</b> — "aprende com os poucos casos confirmados". <b>Se a banca perguntar por que a floresta ainda não está no produto:</b> com 14 casos confirmados, qualquer classificador chega a 100% dentro da amostra de treino, e esse número não prova nada; o critério para entrar é ganho medido fora da amostra, como o que o escore atual tem (próximo slide).</template>
-</section>
-
 <!-- ============ 10 · A PROVA ============ -->
-<section class="slide" data-act="2" data-title="O resultado">
-  <div class="inner">
-    <div class="eyebrow r" style="--d:0">Ato 2 · O resultado</div>
-    <h1 class="r" style="--d:1">O Radar antecipa quem leva cartão<br><span class="grad">até 3× melhor que o acaso.</span></h1>
-    <div class="split wide-left r" style="--d:2; align-items:center">
-      <div class="chart-wrap" id="cw2">
-        <svg id="chart2" viewBox="0 0 780 300" role="img"
-             aria-label="Acerto nos primeiros colocados da fila. O escore supera a linha de base em fila de 1, 3, 5 e 10 atletas, e fica de 2,4 a 3,0 vezes acima da taxa do acaso de 4 por cento."></svg>
-        <div class="tip" id="tip2"></div>
-      </div>
-      <div style="display:flex; flex-direction:column; gap:var(--gap)">
-        <div class="legend">
-          <span class="it"><i class="sq" style="background:var(--s1)"></i>Radar · escore pré-jogo</span>
-          <span class="it"><i class="sq" style="background:var(--s2)"></i>Contar cartões acumulados</span>
-          <span class="it"><i class="ln"></i>Sorteio ao acaso · 4%</span>
-        </div>
-        <div class="stat-row" style="gap:clamp(10px,2vw,28px)">
-          <div class="stat"><span class="v grad">12%</span><span class="k">dos 10 primeiros da fila de cada rodada levam cartão no 1º tempo — <b>sorteando, seriam 4%</b></span></div>
-          <div class="stat"><span class="v" style="color:var(--good)">210</span><span class="k">rodadas testadas, sempre prevendo a próxima <b>só com o que já tinha acontecido</b></span></div>
-        </div>
-        <p class="note">O Radar supera também a simples contagem de cartões acumulados, porque considera os minutos jogados e evita falsos extremos de quem jogou pouco.</p>
-      </div>
-    </div>
-    <p class="note src r" style="--d:3">107.990 registros atleta × partida · Série A 2025–2026 e Série B 2022–2026. Passe o cursor nas barras.</p>
-  </div>
-  <template class="notes">"k" no gráfico é o tamanho da fila (1, 3, 5 ou 10 atletas por rodada). Dizer a ressalva em voz alta: o ganho mede <b>atipicidade disciplinar, não conduta</b>. Se perguntarem "por que não só contar cartões?": a contagem simples fica próxima no topo 1 (9,1% contra 9,5%); a diferença cresce com a fila (8,6% contra 11,9% no topo 10), porque o Radar corrige por minutos jogados. <b>Para arguição técnica:</b> validação <i>walk-forward</i>; teste de vazamento com 75.291 linhas comparadas e 0 divergentes.</template>
-</section>
-
 <!-- ============ 11 · SEGURANÇA E LGPD ============ -->
 <section class="slide" data-act="3" data-title="Segurança e LGPD">
   <div class="inner">
@@ -1240,28 +1238,33 @@ kbd{
 </section>
 
 <!-- ============ 13 · FECHO ============ -->
-<section class="slide" data-act="3" data-title="Fecho">
-  <div class="inner center">
-    <div class="eyebrow r" style="--d:0">Radar da Integridade · Obrigado</div>
-    <h1 class="r" style="--d:1">
-      O Radar não diz se houve fraude.
-    </h1>
-    <h1 class="r grad" style="--d:2; font-size:clamp(30px, min(5.4vw, 7.6vh), 72px)">
-      Diz onde olhar primeiro.
-    </h1>
-    <p class="lead r" style="--d:3; margin-top:clamp(6px,1.6vh,16px)">
-      Com a súmula oficial como fonte, a justificativa aberta em cada alerta
-      e o PDF de origem anexado com hash.
-    </p>
-    <p class="lead r" style="--d:4; margin-top:clamp(4px,1.2vh,12px); font-size:var(--fs-body)">
-      <b style="color:var(--accent)">Próximos passos:</b> validar a demanda com clubes e federações ·
-      ampliar os casos confirmados para a camada de IA · levar a operação para a AWS.
-    </p>
-    <p class="note r" style="--d:5; margin-top:clamp(8px,2vh,24px)">
-      Perguntas. &nbsp;·&nbsp; <kbd>O</kbd> abre a visão geral para saltar a qualquer slide.
-    </p>
+<section class="slide demo" data-act="3" data-title="Fecho e demonstração">
+  <div class="inner">
+    <div class="demo-head r" style="--d:0">
+      <div style="min-width:0">
+        <div class="eyebrow" style="margin-bottom:3px">Radar da Integridade · Obrigado</div>
+        <p class="demo-line">O Radar não diz se houve fraude. <span class="grad">Diz onde olhar primeiro.</span></p>
+      </div>
+      <p class="note" style="margin:0; max-width:46ch; text-align:right">
+        <b style="color:var(--accent)">Próximos passos:</b> validar a demanda com clubes e federações ·
+        ampliar os casos confirmados para a camada de IA · levar a operação para a AWS.
+      </p>
+    </div>
+    <div class="live r" id="live" style="--d:1">
+      <div class="bar">
+        <span class="dot3"><i></i><i></i><i></i></span>
+        <span class="url">frontend-production-ba88.up.railway.app</span>
+        <span class="st"><i></i><span id="liveSt">conectando…</span></span>
+        <button type="button" class="lb" id="liveReload" title="Recarregar o sistema">Recarregar</button>
+        <button type="button" class="lb" id="liveFullBtn" title="Tela cheia (tecla F · Esc para sair)">Tela cheia</button>
+        <a class="lb go" href="https://frontend-production-ba88.up.railway.app/" target="_blank" rel="noopener noreferrer">Nova aba&nbsp;↗</a>
+      </div>
+      <iframe id="liveFrame" src="https://frontend-production-ba88.up.railway.app/"
+              title="Radar da Integridade — sistema em produção"
+              referrerpolicy="no-referrer"></iframe>
+    </div>
   </div>
-  <template class="notes">Parar de falar. Deixar a frase na tela durante as perguntas. Com <b>O</b> se salta direto ao slide que a pergunta pedir — 9 para a IA, 10 para o resultado, 11 para LGPD, 8 para arquitetura, 5 para as telas.</template>
+  <template class="notes"><b>É aqui que o sistema entra ao vivo.</b> O quadro começa a carregar assim que o deck abre, então ao chegar neste slide ele já está acordado — o Railway hiberna o contêiner, e essa espera some se ele foi aquecido. Para operar, apertar <b>F</b> ou o botão <b>Tela cheia</b>: o quadro cobre a tela inteira e <b>Esc</b> volta ao deck. Se o indicador disser "sem resposta", apertar <b>Recarregar</b>; se ainda assim falhar, <b>Nova aba</b>. O sistema abre na tela de entrar: a chave está em <span class="mono">data/restrito/chaves_api_poc.json</span> e não vai por chat nem por repositório — <b>ter a chave copiada antes de subir ao palco</b>. Roteiro curto: entrar com a chave de federação, mostrar a fila da rodada, mexer no corte por percentil, abrir a ficha de um atleta; depois entrar com a de operadora e repetir a mesma consulta para a resposta vir sem nome — isso demonstra o controle por credencial melhor que qualquer slide. <b>Atenção:</b> ao vivo e com a chave de federação a tela mostra nomes reais — aceitável diante de uma banca fechada, mas se a defesa for gravada ou transmitida, usar a chave de operadora. Com o cursor dentro do quadro o teclado pertence ao sistema: para navegar o deck, usar os botões do canto ou clicar na borda da tela.</template>
 </section>
 
 </main>
@@ -1276,6 +1279,7 @@ kbd{
     <span><kbd>N</kbd> notas</span>
     <span><kbd>S</kbd> cronômetro</span>
     <span><kbd>T</kbd> tema</span>
+    <span><kbd>F</kbd> demo em tela cheia</span>
   </div>
   <div id="navbtns">
     <button class="nb" id="btnPrev" type="button" aria-label="Slide anterior">
@@ -1376,7 +1380,7 @@ kbd{
   var btnNext = document.getElementById("btnNext");
   var drawn = {};
   var slideOf = function(id){ return slides.indexOf(document.getElementById(id).closest(".slide")); };
-  var I_PARADOXO = slideOf("chart1"), I_PRECISAO = slideOf("chart2");
+  var I_PARADOXO = slideOf("chart1");
 
   function go(i){
     i = Math.max(0, Math.min(N - 1, i));
@@ -1404,7 +1408,6 @@ kbd{
     setTimeout(function(){ runCounters(slides[i]); }, reduced ? 0 : 260);
     if (!drawn[i]) {
       if (i === I_PARADOXO){ drawn[i] = true; setTimeout(drawParadoxo, reduced ? 0 : 320); }
-      if (i === I_PRECISAO){ drawn[i] = true; setTimeout(drawPrecisao, reduced ? 0 : 320); }
     }
   }
   function next(){ go(cur + 1); }
@@ -1434,7 +1437,6 @@ kbd{
     document.documentElement.setAttribute("data-theme", currentTheme() === "dark" ? "light" : "dark");
     drawn = {};
     if (cur === I_PARADOXO) drawParadoxo();
-    if (cur === I_PRECISAO) drawPrecisao();
     drawn[cur] = true;
   }
   document.getElementById("btnTheme").addEventListener("click", toggleTheme);
@@ -1489,10 +1491,14 @@ kbd{
     else if (k === "ArrowLeft" || k === "PageUp"){ e.preventDefault(); prev(); }
     else if (k === "Home"){ e.preventDefault(); go(0); }
     else if (k === "End"){ e.preventDefault(); go(N-1); }
-    else if (k === "Escape"){ closeOverview(); notes.classList.remove("on"); }
+    else if (k === "Escape"){
+      if (liveBox && liveBox.classList.contains("full")) liveCheio(false);
+      else { closeOverview(); notes.classList.remove("on"); }
+    }
     else if (k === "o" || k === "O"){ toggleOverview(); }
     else if (k === "n" || k === "N"){ notes.classList.toggle("on"); }
     else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "f" || k === "F"){ e.preventDefault(); liveCheio(); }
     else if (k === "s" || k === "S"){ toggleTimer(); }
     else if (k === "r" || k === "R"){ resetTimer(); }
     else if (/^[0-9]$/.test(k)) {
@@ -1654,95 +1660,6 @@ kbd{
   }
 
   /* ============================================================
-     GRÁFICO 2 — Precisão@k do escore pré-jogo
-     ============================================================ */
-  var PREC = [
-    { k:1,  escore:9.5,  base:9.1, hits:"20/210",   ganho:"2,37×" },
-    { k:3,  escore:10.8, base:9.1, hits:"68/630",   ganho:"2,69×" },
-    { k:5,  escore:11.2, base:9.2, hits:"118/1050", ganho:"2,80×" },
-    { k:10, escore:11.9, base:8.6, hits:"250/2100", ganho:"2,96×" }
-  ];
-  function topRounded(x, y, w, h, r){
-    r = Math.min(r, w/2, h);
-    return "M" + x + " " + (y+h) + " L" + x + " " + (y+r) +
-           " Q" + x + " " + y + " " + (x+r) + " " + y +
-           " L" + (x+w-r) + " " + y +
-           " Q" + (x+w) + " " + y + " " + (x+w) + " " + (y+r) +
-           " L" + (x+w) + " " + (y+h) + " Z";
-  }
-  function drawPrecisao(){
-    var svg = document.getElementById("chart2");
-    var tip = document.getElementById("tip2");
-    var wrap = document.getElementById("cw2");
-    svg.textContent = "";
-
-    var W = 780, H = 300, L = 42, R = 14, T = 26, B = 46;
-    var yMax = 14;
-    var y = function(v){ return T + (1 - v / yMax) * (H - T - B); };
-    var gw = (W - L - R) / PREC.length;
-    var bw = (gw * 0.60 - 2) / 2;
-
-    [0,2,4,6,8,10,12,14].forEach(function(v){
-      svg.appendChild(el("line", { x1:L, x2:W-R, y1:y(v), y2:y(v), class:"grid-line" }));
-      var t = el("text", { x:L-8, y:y(v)+4, class:"axis-txt", "text-anchor":"end" });
-      t.textContent = v + "%";
-      svg.appendChild(t);
-    });
-
-    var COL = { escore: css("--s1"), base: css("--s2") };
-    PREC.forEach(function(d, gi){
-      var cx = L + gi * gw + gw / 2;
-      [["escore", -1], ["base", 1]].forEach(function(pair){
-        var key = pair[0], side = pair[1];
-        var bx = cx + (side < 0 ? -(bw + 1) : 1);
-        var v = d[key], h = (H - T - B) * v / yMax;
-        var p = el("path", { d:topRounded(bx, y(v), bw, h, 4), fill:COL[key] });
-        svg.appendChild(p);
-        if (!reduced){
-          p.style.transformOrigin = "0 " + (H - B) + "px";
-          p.style.transform = "scaleY(0)";
-          p.style.transition = "transform 680ms cubic-bezier(.3,.8,.3,1) " + (gi * 70 + (side<0?0:60)) + "ms";
-          requestAnimationFrame(function(){ p.style.transform = "scaleY(1)"; });
-        }
-        var vl = el("text", { x:bx + bw/2, y:y(v) - 7, class:"ser-delta",
-          fill: key === "escore" ? COL.escore : css("--ink-3"), "text-anchor":"middle",
-          "font-weight": key === "escore" ? 600 : 400 });
-        vl.textContent = fmt(v,1) + "%";
-        svg.appendChild(vl);
-      });
-      var kl = el("text", { x:cx, y:H-24, class:"axis-txt", "text-anchor":"middle" });
-      kl.textContent = "k = " + d.k;
-      svg.appendChild(kl);
-      var gl = el("text", { x:cx, y:H-8, class:"ser-delta", "text-anchor":"middle", fill:css("--accent") });
-      gl.textContent = d.ganho + " o acaso";
-      svg.appendChild(gl);
-
-      var hit = el("rect", { x:L + gi*gw, y:T, width:gw, height:H-T-B, fill:"transparent" });
-      hit.addEventListener("mousemove", function(ev){
-        var box = svg.getBoundingClientRect();
-        tip.innerHTML =
-          '<div class="t-h">Fila com os ' + d.k + ' primeiros</div>' +
-          '<div class="t-r"><i class="sq" style="background:' + COL.escore + '"></i>Radar · escore pré-jogo<b>' + fmt(d.escore,1) + '%</b></div>' +
-          '<div class="t-r"><i class="sq" style="background:' + COL.base + '"></i>Contar cartões acumulados<b>' + fmt(d.base,1) + '%</b></div>' +
-          '<div class="t-r" style="margin-top:5px; color:var(--ink-3)">acertos<b style="color:var(--ink-3)">' + d.hits + '</b></div>';
-        tip.classList.add("on");
-        var tw = tip.offsetWidth;
-        var px = (L + gi*gw + gw/2) / W * box.width;
-        tip.style.left = Math.max(0, Math.min(box.width - tw, px - tw/2)) + "px";
-        tip.style.top = Math.max(0, (y(Math.max(d.escore, d.base)) / H * box.height) - tip.offsetHeight - 22) + "px";
-      });
-      hit.addEventListener("mouseleave", function(){ tip.classList.remove("on"); });
-      svg.appendChild(hit);
-    });
-
-    /* linha de referência do acaso */
-    svg.appendChild(el("line", { x1:L, x2:W-R, y1:y(4.0), y2:y(4.0),
-      stroke:css("--ink-3"), "stroke-width":2, "stroke-dasharray":"6 5" }));
-
-    wrap.addEventListener("mouseleave", function(){ tip.classList.remove("on"); });
-  }
-
-  /* ============================================================
      SLIDER DE LIMIAR — trade-off captura × carga
      Âncoras medidas em p50, p70, p90; entre elas, interpolação.
      ============================================================ */
@@ -1793,9 +1710,48 @@ kbd{
     clearTimeout(rz);
     rz = setTimeout(function(){
       if (cur === I_PARADOXO && drawn[I_PARADOXO]) drawParadoxo();
-      if (cur === I_PRECISAO && drawn[I_PRECISAO]) drawPrecisao();
     }, 220);
   });
+
+
+  /* ---------- sistema ao vivo no slide final ---------- */
+  var liveBox = document.getElementById("live");
+  var liveFrame = document.getElementById("liveFrame");
+  var liveLbl = document.getElementById("liveSt");
+  var liveBtn = document.getElementById("liveFullBtn");
+  var livePrazo;
+
+  function liveAguardar(){
+    if (!liveBox) return;
+    liveBox.classList.remove("on", "off");
+    liveLbl.textContent = "conectando…";
+    clearTimeout(livePrazo);
+    livePrazo = setTimeout(function(){
+      if (!liveBox.classList.contains("on")){
+        liveBox.classList.add("off"); liveLbl.textContent = "sem resposta";
+      }
+    }, 25000);
+  }
+  function liveCheio(ligar){
+    if (!liveBox) return false;
+    var on = (ligar === undefined) ? !liveBox.classList.contains("full") : !!ligar;
+    if (on && cur !== N - 1) go(N - 1);
+    liveBox.classList.toggle("full", on);
+    liveBtn.textContent = on ? "Sair da tela cheia" : "Tela cheia";
+    return on;
+  }
+  if (liveBox){
+    liveFrame.addEventListener("load", function(){
+      clearTimeout(livePrazo);
+      liveBox.classList.remove("off"); liveBox.classList.add("on");
+      liveLbl.textContent = "no ar";
+    });
+    document.getElementById("liveReload").addEventListener("click", function(){
+      this.blur(); liveAguardar(); liveFrame.src = liveFrame.src;
+    });
+    liveBtn.addEventListener("click", function(){ this.blur(); liveCheio(); });
+    liveAguardar();
+  }
 
   /* ---------- arranque ---------- */
   paint();
