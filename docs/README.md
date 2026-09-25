@@ -4,6 +4,12 @@ Organizada pelo processo de construção do produto: **do negócio à especifica
 à implementação.** O que pertence à fase acadêmica, ou registra sessões já encerradas, está em
 [`arquivo/`](arquivo/).
 
+## Visão consolidada
+
+| Documento | Para quê |
+| :--- | :--- |
+| [relatorio_tecnico.md](relatorio_tecnico.md) | Relatório técnico: execução, arquitetura, decisões, testes, resultados, limitações e evolução |
+
 ## Produto e especificação
 
 | Documento | Para quê |
